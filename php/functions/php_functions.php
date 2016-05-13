@@ -4,7 +4,7 @@
 //*fonction de connexion a la bdd
 //------------------------------------------------------------------------------//
 function get_connexion(){
-	$PARAM_hote='your_host'; // chemin vers le serveur
+	$PARAM_hote='your_host2'; // chemin vers le serveur
 	$PARAM_nom_bd='your_db_name'; // nom de la base de données 
 	$PARAM_utilisateur='your_username'; // nom d'utilisateur pour se connecter
 	$PARAM_mot_passe='your_passwordname'; // mot de passe de l'utilisateur pour se connecter
