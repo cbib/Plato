@@ -1,0 +1,124 @@
+<?php 
+
+function html_header ($path) {
+
+echo '<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>PLATO DataBase</title>
+		<meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+		<!-- ***** CSS ***** -->
+
+		<!-- -->
+		<!-- bootstrap 3.0.2 -->
+		<!-- Datatable plugin bootstrap -->
+			
+			<link rel="stylesheet" type="text/css" href="'.$path.'libs/css/bootstrap.min.css"/>
+			<link rel="stylesheet" type="text/css" href="'.$path.'libs/css/dataTables.bootstrap.css"/>
+			
+
+		<!-- theme less -->
+			<link rel="stylesheet/less" type="text/css" href="'.$path.'libs/themes/less/bootstrap.less"/>
+			<link rel="stylesheet" type="text/css" href="'.$path.'libs/themes/style/delta.main.css" />
+			<link rel="stylesheet" type="text/css" href="'.$path.'libs/themes/style/delta.grey.css"/>
+
+			<script type="text/javascript" language="javascript" src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+			<script type="text/javascript" language="javascript" src="'.$path.'libs/js/bootstrap.min.js"></script>			
+			<script type="text/javascript" language="javascript" src="//cdn.datatables.net/1.10.5/js/jquery.dataTables.min.js"></script>
+			<script type="text/javascript" language="javascript" src="//cdn.datatables.net/plug-ins/f2c75b7247b/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+
+		<!-- JS -->
+
+			<script type="text/javascript" language="javascript" src="'.$path.'libs/js/jquery.dataTables.editable.js"></script>
+			<script type="text/javascript" language="javascript" src="'.$path.'libs/js/jquery.jeditable.js"></script>
+			<script type="text/javascript" language="javascript" src="'.$path.'libs/TableTools-master/js/dataTables.tableTools.js"></script>
+
+		<!-- theme js -->
+			<script type="text/javascript" language="javascript" src="'.$path.'libs/themes/js/less/less.js"></script>
+
+</head>
+	<body>
+		<br>
+		<div id="sidebar"> 
+			<h1 id="logo"><a href="'.$path.'index.php">PLATO</a></h1>  
+			<a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
+			<ul>
+				<li class="active"><a href="'.$path.'index.php"><i class="icon icon-home"></i> <span>Dashboard</span></a></li>
+				<li class="submenu">
+					<a href="#"><i class="icon icon-th-list"></i> <span>Database</span> <span class="label">5</span></a>
+					<ul>
+						<li><a href="'.$path.'php/standards_view/standards.php">Standards</a></li>
+						<li><a href="#">Fresh Weights</a></li>
+						<li><a href="#">Batches</a></li>
+						<li><a href="#">Raw Data Processing</a></li>
+						<li><a href="#">Export</a></li>
+					</ul>
+				</li>
+				<li><a href="#"><i class="icon icon-pencil"></i> <span>Admin Panel</span></a></li>
+				<li><a href="#"><i class="icon icon-th"></i> <span>Stocks</span></a></li>
+				<li><a href="#"><i class="icon icon-th"></i> <span>Protocols</span></a></li>
+				<li><a href="#"><i class="icon icon-th-list"></i> <span>Equations</span></a></li>
+				<li><a href="#"><i class="icon icon-signal"></i> <span>Charts &amp; graphs</span></a></li>
+			</ul>
+		</div>
+';
+}
+
+function html_top_page($pagename) {
+	echo '
+		<div id="mainBody">
+			<h1>'.$pagename.'
+				<div class="pull-right">
+					<a class="btn btn-large" title="" href="#"><i class="icon icon-user"></i> <span>Profile</span></a>
+					<a class="btn btn-large" title="" href="#"><i class="icon icon-cog"></i> Settings</a>
+					<a class="btn btn-large btn-danger" title="" href="#"><i class="icon-off"></i></a>
+				</div>
+			</h1>
+			<div id="breadcrumb">
+				<a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i>'.$pagename.'</a>
+			</div>';
+}
+
+function standards_html_top_page($pagename) {
+	echo '<div id="mainBody">
+				<h1>'.$pagename.'
+					<div class="pull-right">
+						<a class="btn btn-large" title="" href="#"><i class="icon icon-user"></i> <span>Profile</span></a>
+						<a class="btn btn-large" title="" href="#"><i class="icon icon-cog"></i> Settings</a>
+						<a class="btn btn-large btn-danger" title="" href="#"><i class="icon-off"></i></a>
+					</div>
+				</h1>
+				<div id="breadcrumb">
+					<a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i>'.$pagename.'</a>
+					<a href="#" title="Declare a new standard" class="tip-bottom"><i class="icon-plus"></i>Add Standard</a>
+				</div>';
+}
+
+function html_footer($path) {
+echo'			
+				<div class="row-fluid">
+					<div id="footer" class="span12">
+						2012 - 2013 &copy; Free Bootstrappage Admin. Brought to you by <a id="poweredBy" href="http://www.bootstrappage.com" target="_blank" title="Free Admin template design and developments"> Free bootstrappage admin template</a>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+            <script src="'.$path.'libs/themes/js/jquery.ui.custom.js"></script>
+            <script src="'.$path.'libs/themes/js/jquery.flot.min.js"></script>
+            <script src="'.$path.'libs/themes/js/jquery.flot.resize.min.js"></script>
+            <script src="'.$path.'libs/themes/js/jquery.peity.min.js"></script>
+            <script src="'.$path.'libs/themes/js/fullcalendar.min.js"></script>
+            <script src="'.$path.'libs/themes/js/delta.js"></script>
+	</body>
+</html>';
+}
+
+
+?>

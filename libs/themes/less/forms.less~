@@ -1,0 +1,10 @@
+.dataTables_filter input {
+  width:400px;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-top-color: rgb(204, 204, 204);
+    border-top-style: solid;
+    border-top-width: 1px;
+}

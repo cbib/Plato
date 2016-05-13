@@ -1,0 +1,20 @@
+<div class="row-fluid">
+				<div id="footer" class="span12">
+					2012 - 2013 &copy; Free Bootstrappage Admin. Brought to you by <a id="poweredBy" href="http://www.bootstrappage.com" target="_blank" title="Free Admin template design and developments"> Free bootstrappage admin template</a>
+				</div>
+			</div>
+		</div>
+		</div>
+
+            <script src="themes/js/excanvas.min.js"></script>
+            <script src="themes/js/jquery.min.js"></script>
+            <script src="themes/js/jquery.ui.custom.js"></script>
+            <script src="themes/js/bootstrap.min.js"></script>
+            <script src="themes/js/jquery.flot.min.js"></script>
+            <script src="themes/js/jquery.flot.resize.min.js"></script>
+            <script src="themes/js/jquery.peity.min.js"></script>
+            <script src="themes/js/fullcalendar.min.js"></script>
+            <script src="themes/js/delta.js"></script>
+            <script src="themes/js/delta.dashboard.js"></script>
+	</body>
+</html>
