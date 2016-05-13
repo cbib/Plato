@@ -140,11 +140,29 @@ You may encounter some problems...
 ## Use of Perl scripts
 To use the perl scripts in perl/ you will need to complete the step above.
 
-Create a MySQL database.
-
-Command line :
+###### In plato_sql_structure.sql
+Change the name of the database :
 <pre>
-./generate_database.pl database_name
+CREATE DATABASE IF NOT EXISTS `dababase_name` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `dababase_name`;
 </pre>
 
-This will take a while depending how much datas you have. Better launch it on friday...
+Then import into mysql :
+<pre>
+mysql -u username -ppasswd < plato_sql_structure.sql
+</pre>
+
+Change database name in the following scripts :
+* reset.pl
+* export_db.pl
+* free_inuse.pl
+
+Launch the scripts
+
+<pre>
+* ./reset.pl  #format the database
+* ./export_db.pl # export data from the MSSQL database
+* ./free_inuse.pl # fix some lacking informations
+</pre>
+
+export_db.pl may take a while depending how much datas you have. Better launch it on friday...
