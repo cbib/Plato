@@ -4,10 +4,10 @@
 //*fonction de connexion a la bdd
 //------------------------------------------------------------------------------//
 function get_connexion(){
-	$PARAM_hote='localhost'; // chemin vers le serveur
-	$PARAM_nom_bd='plato_export_02052016'; // nom de la base de données 
-	$PARAM_utilisateur='root'; // nom d'utilisateur pour se connecter
-	$PARAM_mot_passe='r00t'; // mot de passe de l'utilisateur pour se connecter
+	$PARAM_hote='your_host'; // chemin vers le serveur
+	$PARAM_nom_bd='your_db_name'; // nom de la base de données 
+	$PARAM_utilisateur='your_username'; // nom d'utilisateur pour se connecter
+	$PARAM_mot_passe='your_passwordname'; // mot de passe de l'utilisateur pour se connecter
 	
 	try {
 			$connexion = new PDO('mysql:host='.$PARAM_hote.';dbname='.$PARAM_nom_bd, $PARAM_utilisateur, $PARAM_mot_passe, array(PDO::ATTR_PERSISTENT => true)); // Persistent connection
