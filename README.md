@@ -136,3 +136,13 @@ Setup = /usr/local/lib/libtdsodbc.so
 FileUsage = 1
 
 You may encounter some problems...
+
+## Use of Perl scripts
+To use the perl scripts in perl/ you will need to complete the step above.
+
+Command line :
+<pre>
+./data_transfert.pl database_name
+</pre>
+
+This will take a while depending how much datas you have. Better launch it on friday...
