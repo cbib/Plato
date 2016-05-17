@@ -1,0 +1,423 @@
+
+
+
+
+-- ---
+-- Globals
+-- ---
+
+-- SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+-- SET FOREIGN_KEY_CHECKS=0;
+
+-- ---
+-- Table 'standard'
+-- Table of standards (material)
+-- ---
+
+DROP TABLE IF EXISTS `standard`;
+		
+CREATE TABLE `standard` (
+  `std_id` INT(10) NOT NULL AUTO_INCREMENT,
+  `std_name` VARCHAR(99) NOT NULL,
+  `std_genius` VARCHAR(50) NOT NULL,
+  `std_species` VARCHAR(50) NOT NULL,
+  `std_nature` VARCHAR(100) NOT NULL,
+  `std_uri` VARCHAR(100) NULL DEFAULT NULL,
+  PRIMARY KEY (`std_id`)
+) COMMENT 'Table of standards (material)';
+
+-- ---
+-- Table 'enzyme'
+-- Table of enzymes and metabolites
+-- ---
+
+DROP TABLE IF EXISTS `enzyme`;
+		
+CREATE TABLE `enzyme` (
+  `ez_id` INT(5) NOT NULL AUTO_INCREMENT,
+  `ez_analyte` VARCHAR(100) NOT NULL,
+  `ez_slope` INT(1) NOT NULL,
+  `ez_code` VARCHAR(50) NOT NULL,
+  `ez_is_enzyme` INT(1) NOT NULL,
+  PRIMARY KEY (`ez_id`)
+) COMMENT 'Table of enzymes and metabolites';
+
+-- ---
+-- Table 'standard_enzyme'
+-- join standard to enzyme
+-- ---
+
+DROP TABLE IF EXISTS `standard_enzyme`;
+		
+CREATE TABLE `standard_enzyme` (
+  `std_ez_id` INT(10) NOT NULL AUTO_INCREMENT,
+  `std_ez_unit_FK` INT(10) NOT NULL,
+  `std_ez_standard_FK` INT(10) NOT NULL,
+  `std_ez_value` FLOAT(10) NOT NULL,
+  `std_ez_enzyme_FK` INT(5) NOT NULL,
+  PRIMARY KEY (`std_ez_id`)
+) COMMENT 'join standard to enzyme';
+
+-- ---
+-- Table 'unit'
+-- Table of units
+-- ---
+
+DROP TABLE IF EXISTS `unit`;
+		
+CREATE TABLE `unit` (
+  `unit_id` INT(10) NOT NULL AUTO_INCREMENT,
+  `unit_name` VARCHAR(30) NOT NULL,
+  PRIMARY KEY (`unit_id`)
+) COMMENT 'Table of units';
+
+-- ---
+-- Table 'protocol'
+-- TODO
+-- ---
+
+DROP TABLE IF EXISTS `protocol`;
+		
+CREATE TABLE `protocol` (
+  `ptcl_id` INT(10) NOT NULL AUTO_INCREMENT,
+  `ptcl_path` VARCHAR(100) NULL DEFAULT NULL,
+  PRIMARY KEY (`ptcl_id`)
+) COMMENT 'TODO';
+
+-- ---
+-- Table 'freshweight'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `freshweight`;
+		
+CREATE TABLE `freshweight` (
+  `fw_id` INT(10) NOT NULL AUTO_INCREMENT,
+  `fw_name` VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`fw_id`)
+);
+
+-- ---
+-- Table 'experiment'
+-- Table of experimentations, an experimentation is composed by standard and fresh weights
+-- ---
+
+DROP TABLE IF EXISTS `experiment`;
+		
+CREATE TABLE `experiment` (
+  `exp_id` INT(10) NOT NULL AUTO_INCREMENT,
+  `exp_name` VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`exp_id`)
+) COMMENT 'Table of experimentations, an experimentation is composed by';
+
+-- ---
+-- Table 'experiment_freshweight'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `experiment_freshweight`;
+		
+CREATE TABLE `experiment_freshweight` (
+  `exp_fw_id` INT(10) NOT NULL AUTO_INCREMENT,
+  `exp_fw_experiment_FK` INT(10) NOT NULL,
+  `exp_fw_freshweight_FK` INT(10) NOT NULL,
+  PRIMARY KEY (`exp_fw_id`)
+);
+
+-- ---
+-- Table 'experiment_standard'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `experiment_standard`;
+		
+CREATE TABLE `experiment_standard` (
+  `exp_std_id` INT(10) NOT NULL AUTO_INCREMENT,
+  `exp_std_standard_FK` INT(10) NOT NULL,
+  `exp_std_experiment_FK` INT(10) NOT NULL,
+  PRIMARY KEY (`exp_std_id`)
+);
+
+-- ---
+-- Table 'sample'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `sample`;
+		
+CREATE TABLE `sample` (
+  `spl_id` INT(10) NOT NULL AUTO_INCREMENT,
+  `spl_number` INT(10) NOT NULL,
+  `spl_location_FK` INT(10) NOT NULL,
+  PRIMARY KEY (`spl_id`)
+);
+
+-- ---
+-- Table 'aliquot'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `aliquot`;
+		
+CREATE TABLE `aliquot` (
+  `alq_id` INT(10) NOT NULL AUTO_INCREMENT,
+  `alq_number` INT(10) NOT NULL,
+  `alq_value` FLOAT(10) NOT NULL,
+  `alq_state` VARCHAR(10) NOT NULL,
+  `alq_location_FK` INT(10) NOT NULL,
+  PRIMARY KEY (`alq_id`)
+);
+
+-- ---
+-- Table 'sample_aliquot'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `sample_aliquot`;
+		
+CREATE TABLE `sample_aliquot` (
+  `spl_alq_id` INT(10) NOT NULL AUTO_INCREMENT,
+  `spl_alq_sample_FK` INT(10) NOT NULL,
+  `spl_alq_aliquot_FK` INT(10) NOT NULL,
+  PRIMARY KEY (`spl_alq_id`)
+);
+
+-- ---
+-- Table 'freshweight_sample'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `freshweight_sample`;
+		
+CREATE TABLE `freshweight_sample` (
+  `fw_spl_id` INT(10) NOT NULL AUTO_INCREMENT,
+  `fw_spl_freshweight_FK` INT(10) NOT NULL,
+  `fw_spl_sample_FK` INT(10) NOT NULL,
+  PRIMARY KEY (`fw_spl_id`)
+);
+
+-- ---
+-- Table 'location'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `location`;
+		
+CREATE TABLE `location` (
+  `loc_id` INT(10) NOT NULL AUTO_INCREMENT,
+  `loc_fridge` VARCHAR(30) NULL DEFAULT NULL,
+  `loc_etage` VARCHAR(10) NULL DEFAULT NULL,
+  `loc_box` VARCHAR(100) NULL DEFAULT NULL,
+  `loc_comment` VARCHAR(500) NULL DEFAULT NULL,
+  PRIMARY KEY (`loc_id`)
+);
+
+-- ---
+-- Table 'batch'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `batch`;
+		
+CREATE TABLE `batch` (
+  `bat_id` INT(10) NOT NULL AUTO_INCREMENT,
+  `bat_name` VARCHAR(150) NULL DEFAULT NULL,
+  `bat_number` INT(10) NOT NULL,
+  `bat_date` DATE NOT NULL,
+  `bat_layout` VARCHAR(5) NOT NULL,
+  PRIMARY KEY (`bat_id`)
+);
+
+-- ---
+-- Table 'enzyme_protocol'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `enzyme_protocol`;
+		
+CREATE TABLE `enzyme_protocol` (
+  `ez_ptcl_id` INT(10) NOT NULL AUTO_INCREMENT,
+  `ez_ptcl_enzyme_FK` INT(5) NOT NULL,
+  `ez_ptcl_protocol_FK` INT(10) NOT NULL,
+  PRIMARY KEY (`ez_ptcl_id`)
+);
+
+-- ---
+-- Table 'rawdata'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `rawdata`;
+		
+CREATE TABLE `rawdata` (
+  `rawdata_id` INT(10) NOT NULL AUTO_INCREMENT,
+  `data_value` FLOAT(10) NOT NULL,
+  `data_is_excluded` INT(1) NOT NULL,
+  `data_velocity` VARCHAR(50) NULL DEFAULT NULL,
+  `data_is_proved` INT(1) NULL DEFAULT NULL,
+  `data_enzyme_FK` INT(5) NULL DEFAULT NULL,
+  PRIMARY KEY (`rawdata_id`)
+);
+
+-- ---
+-- Table 'batch_data'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `batch_data`;
+		
+CREATE TABLE `batch_data` (
+  `bat_data_id` INT(10) NOT NULL AUTO_INCREMENT,
+  `bat_data_batch_FK` INT(10) NOT NULL,
+  `bat_data_rawdata_FK` INT(10) NOT NULL,
+  `bat_data_experiment_FK` INT(10) NOT NULL,
+  `bat_data_sample_aliquot_FK` INT(5) NULL DEFAULT NULL,
+  `bat_data_position` INT(2) NULL DEFAULT NULL,
+  `bat_data_row` INT(2) NULL DEFAULT NULL,
+  `bat_data_col` INT(2) NULL DEFAULT NULL,
+  PRIMARY KEY (`bat_data_id`)
+);
+
+-- ---
+-- Table 'equation'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `equation`;
+		
+CREATE TABLE `equation` (
+  `equ_id` INT(10) NOT NULL AUTO_INCREMENT,
+  `equ_name` VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`equ_id`)
+);
+
+-- ---
+-- Table 'processdata'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `processdata`;
+		
+CREATE TABLE `processdata` (
+  `pro_id` INT(5) NOT NULL AUTO_INCREMENT DEFAULT NULL,
+  `pro_value` FLOAT(10) NULL DEFAULT NULL,
+  PRIMARY KEY (`pro_id`)
+);
+
+-- ---
+-- Table 'raw_equ_proc'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `raw_equ_proc`;
+		
+CREATE TABLE `raw_equ_proc` (
+  `id_raw_equ_proc` INT(5) NULL AUTO_INCREMENT DEFAULT NULL,
+  `raw_equ_proc_rawdata_FK` INT(10) NOT NULL,
+  `raw_equ_proc_equation_FK` INT(10) NOT NULL,
+  `raw_equ_proc_processdata_FK` INT(5) NOT NULL DEFAULT NULL,
+  PRIMARY KEY (`id_raw_equ_proc`)
+);
+
+-- ---
+-- Foreign Keys 
+-- ---
+
+ALTER TABLE `standard_enzyme` ADD FOREIGN KEY (std_ez_unit_FK) REFERENCES `unit` (`unit_id`)ON DELETE CASCADE;
+ALTER TABLE `standard_enzyme` ADD FOREIGN KEY (std_ez_standard_FK) REFERENCES `standard` (`std_id`) ON DELETE CASCADE;
+ALTER TABLE `standard_enzyme` ADD FOREIGN KEY (std_ez_enzyme_FK) REFERENCES `enzyme` (`ez_id`) ON DELETE CASCADE;
+ALTER TABLE `experiment_freshweight` ADD FOREIGN KEY (exp_fw_experiment_FK) REFERENCES `experiment` (`exp_id`) ON DELETE CASCADE;
+ALTER TABLE `experiment_freshweight` ADD FOREIGN KEY (exp_fw_freshweight_FK) REFERENCES `freshweight` (`fw_id`) ON DELETE CASCADE;
+ALTER TABLE `experiment_standard` ADD FOREIGN KEY (exp_std_standard_FK) REFERENCES `standard` (`std_id`) ON DELETE CASCADE;
+ALTER TABLE `experiment_standard` ADD FOREIGN KEY (exp_std_experiment_FK) REFERENCES `experiment` (`exp_id`) ON DELETE CASCADE;
+ALTER TABLE `sample` ADD FOREIGN KEY (spl_location_FK) REFERENCES `location` (`loc_id`) ON DELETE CASCADE;
+ALTER TABLE `aliquot` ADD FOREIGN KEY (alq_location_FK) REFERENCES `location` (`loc_id`) ON DELETE CASCADE;
+ALTER TABLE `sample_aliquot` ADD FOREIGN KEY (spl_alq_sample_FK) REFERENCES `sample` (`spl_id`) ON DELETE CASCADE;
+ALTER TABLE `sample_aliquot` ADD FOREIGN KEY (spl_alq_aliquot_FK) REFERENCES `aliquot` (`alq_id`) ON DELETE CASCADE;
+ALTER TABLE `freshweight_sample` ADD FOREIGN KEY (fw_spl_freshweight_FK) REFERENCES `freshweight` (`fw_id`) ON DELETE CASCADE;
+ALTER TABLE `freshweight_sample` ADD FOREIGN KEY (fw_spl_sample_FK) REFERENCES `sample` (`spl_id`) ON DELETE CASCADE;
+ALTER TABLE `enzyme_protocol` ADD FOREIGN KEY (ez_ptcl_enzyme_FK) REFERENCES `enzyme` (`ez_id`) ON DELETE CASCADE;
+ALTER TABLE `enzyme_protocol` ADD FOREIGN KEY (ez_ptcl_protocol_FK) REFERENCES `protocol` (`ptcl_id`) ON DELETE CASCADE;
+ALTER TABLE `rawdata` ADD FOREIGN KEY (data_enzyme_FK) REFERENCES `enzyme` (`ez_id`) ON DELETE CASCADE;
+ALTER TABLE `batch_data` ADD FOREIGN KEY (bat_data_batch_FK) REFERENCES `batch` (`bat_id`) ON DELETE CASCADE;
+ALTER TABLE `batch_data` ADD FOREIGN KEY (bat_data_rawdata_FK) REFERENCES `rawdata` (`rawdata_id`) ON DELETE CASCADE;
+ALTER TABLE `batch_data` ADD FOREIGN KEY (bat_data_experiment_FK) REFERENCES `experiment` (`exp_id`) ON DELETE CASCADE;
+ALTER TABLE `batch_data` ADD FOREIGN KEY (bat_data_sample_aliquot_FK) REFERENCES `sample_aliquot` (`spl_alq_id`) ON DELETE CASCADE;
+ALTER TABLE `raw_equ_proc` ADD FOREIGN KEY (raw_equ_proc_rawdata_FK) REFERENCES `rawdata` (`rawdata_id`) ON DELETE CASCADE;
+ALTER TABLE `raw_equ_proc` ADD FOREIGN KEY (raw_equ_proc_equation_FK) REFERENCES `equation` (`equ_id`) ON DELETE CASCADE;
+ALTER TABLE `raw_equ_proc` ADD FOREIGN KEY (raw_equ_proc_processdata_FK) REFERENCES `processdata` (`pro_id`) ON DELETE CASCADE;
+
+-- ---
+-- Table Properties
+-- ---
+
+ ALTER TABLE `standard` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+ ALTER TABLE `enzyme` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+ ALTER TABLE `standard_enzyme` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+ ALTER TABLE `unit` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+ ALTER TABLE `protocol` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+ ALTER TABLE `freshweight` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+ ALTER TABLE `experiment` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+ ALTER TABLE `experiment_freshweight` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+ ALTER TABLE `experiment_standard` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+ ALTER TABLE `sample` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+ ALTER TABLE `aliquot` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+ ALTER TABLE `sample_aliquot` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+ ALTER TABLE `freshweight_sample` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+ ALTER TABLE `location` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+ ALTER TABLE `batch` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+ ALTER TABLE `enzyme_protocol` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+ ALTER TABLE `rawdata` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+ ALTER TABLE `batch_data` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+ ALTER TABLE `equation` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+ ALTER TABLE `processdata` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+ ALTER TABLE `raw_equ_proc` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+-- ---
+-- Test Data
+-- ---
+
+-- INSERT INTO `standard` (`std_id`,`std_name`,`std_genius`,`std_species`,`std_nature`,`std_uri`) VALUES
+-- ('','','','','','');
+-- INSERT INTO `enzyme` (`ez_id`,`ez_analyte`,`ez_slope`,`ez_code`,`ez_is_enzyme`) VALUES
+-- ('','','','','');
+-- INSERT INTO `standard_enzyme` (`std_ez_id`,`std_ez_unit_FK`,`std_ez_standard_FK`,`std_ez_value`,`std_ez_enzyme_FK`) VALUES
+-- ('','','','','');
+-- INSERT INTO `unit` (`unit_id`,`unit_name`) VALUES
+-- ('','');
+-- INSERT INTO `protocol` (`ptcl_id`,`ptcl_path`) VALUES
+-- ('','');
+-- INSERT INTO `freshweight` (`fw_id`,`fw_name`) VALUES
+-- ('','');
+-- INSERT INTO `experiment` (`exp_id`,`exp_name`) VALUES
+-- ('','');
+-- INSERT INTO `experiment_freshweight` (`exp_fw_id`,`exp_fw_experiment_FK`,`exp_fw_freshweight_FK`) VALUES
+-- ('','','');
+-- INSERT INTO `experiment_standard` (`exp_std_id`,`exp_std_standard_FK`,`exp_std_experiment_FK`) VALUES
+-- ('','','');
+-- INSERT INTO `sample` (`spl_id`,`spl_number`,`spl_location_FK`) VALUES
+-- ('','','');
+-- INSERT INTO `aliquot` (`alq_id`,`alq_number`,`alq_value`,`alq_state`,`alq_location_FK`) VALUES
+-- ('','','','','');
+-- INSERT INTO `sample_aliquot` (`spl_alq_id`,`spl_alq_sample_FK`,`spl_alq_aliquot_FK`) VALUES
+-- ('','','');
+-- INSERT INTO `freshweight_sample` (`fw_spl_id`,`fw_spl_freshweight_FK`,`fw_spl_sample_FK`) VALUES
+-- ('','','');
+-- INSERT INTO `location` (`loc_id`,`loc_fridge`,`loc_etage`,`loc_box`,`loc_comment`) VALUES
+-- ('','','','','');
+-- INSERT INTO `batch` (`bat_id`,`bat_name`,`bat_number`,`bat_date`,`bat_layout`) VALUES
+-- ('','','','','');
+-- INSERT INTO `enzyme_protocol` (`ez_ptcl_id`,`ez_ptcl_enzyme_FK`,`ez_ptcl_protocol_FK`) VALUES
+-- ('','','');
+-- INSERT INTO `rawdata` (`rawdata_id`,`data_value`,`data_is_excluded`,`data_velocity`,`data_is_proved`,`data_enzyme_FK`) VALUES
+-- ('','','','','','');
+-- INSERT INTO `batch_data` (`bat_data_id`,`bat_data_batch_FK`,`bat_data_rawdata_FK`,`bat_data_experiment_FK`,`bat_data_sample_aliquot_FK`,`bat_data_position`,`bat_data_row`,`bat_data_col`) VALUES
+-- ('','','','','','','','');
+-- INSERT INTO `equation` (`equ_id`,`equ_name`) VALUES
+-- ('','');
+-- INSERT INTO `processdata` (`pro_id`,`pro_value`) VALUES
+-- ('','');
+-- INSERT INTO `raw_equ_proc` (`id_raw_equ_proc`,`raw_equ_proc_rawdata_FK`,`raw_equ_proc_equation_FK`,`raw_equ_proc_processdata_FK`) VALUES
+-- ('','','','');
+
+

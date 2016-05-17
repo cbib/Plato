@@ -84,7 +84,12 @@ echo '
 				<li><a href="#"><i class="icon icon-th"></i> <span>Stocks</span></a></li>
 				<li><a href="#"><i class="icon icon-th"></i> <span>Protocols</span></a></li>
 				<li><a href="#"><i class="icon icon-th-list"></i> <span>Equations</span></a></li>
-				<li><a href="#"><i class="icon icon-signal"></i> <span>Charts &amp; graphs</span></a></li>
+				<li class="submenu" id="chartsPanel">
+					<a href="#"><i class="icon icon-signal"></i> <span>Charts &amp; graphs</span> <span class="label">1</span></a>
+					<ul>
+						<li><a href="'.$path.'php/charts/chart1.php">Standards</a></li>
+					</ul>
+				</li>
 			</ul>
 		</div>
 ';
@@ -157,6 +162,8 @@ echo'
 		<script src="'.$path.'libs/themes/js/fullcalendar.min.js"></script>
 		<script src="'.$path.'libs/themes/js/delta.js"></script>
 		<script src="'.$path.'libs/js/highcharts.js"></script>
+		<script src="'.$path.'libs/js/highcharts-more.js"></script>
+		<script src="'.$path.'libs/js//solid-gauge.js"></script>
 		<script src="'.$path.'libs/js/exporting.js"></script>
 	</body>
 </html>';

@@ -4,64 +4,47 @@
 function user_ctp(){
 	$conn=get_connexion();
 	$query ='
-		SELECT count(*)
+		SELECT  *
 		FROM user
 	';
-	$req = $conn->query($query)->fetchColumn();
-	echo ($req);
+
+	//echo $query."\n\n";
+	$req=$conn->prepare($query);
+	$req -> setFetchMode(PDO::FETCH_ASSOC);
+	$req->execute();
+	$rows=$req->fetchAll();
+
+	echo sizeof($rows);
 }
 
-
-
-function sample_cpt(){
-	$conn=get_connexion();
-	$query ='
-		SELECT count(*)
-		FROM sample
-	';
-	$req = $conn->query($query)->fetchColumn();
-	echo ($req);
-}
 
 
 function batch_ctp(){
 	$conn=get_connexion();
 	$query ='
-		SELECT count(*)
+		SELECT  *
 		FROM batch
 	';
-	$req = $conn->query($query)->fetchColumn();
-	echo ($req);
+
+	//echo $query."\n\n";
+	$req=$conn->prepare($query);
+	$req -> setFetchMode(PDO::FETCH_ASSOC);
+	$req->execute();
+	$rows=$req->fetchAll();
+
+	echo sizeof($rows);
 }
 
 
-function experiment_cpt(){
+function sizeOfDb(){
 	$conn=get_connexion();
-	$query ='
-		SELECT count(*)
-		FROM experiment
-	';
-	$req = $conn->query($query)->fetchColumn();
-	echo ($req);
-}
-
-
-function rawdata_cpt(){
-	$conn=get_connexion();
-	$query ='
-		SELECT  count(*)
-		FROM rawdata
-	';
-	$req = $conn->query($query)->fetchColumn();
-	echo ($req);
-}
-
-function batch_number_per_date(){
-	$conn=get_connexion();
-	$query ="
-		SELECT  DATE_FORMAT(bat_date,'%Y-%m-%d') AS bat_date, count(bat_date) as nb
-		FROM batch
-		GROUP BY bat_date;";
+	$query ="SELECT 
+		table_schema 'plato', 
+		Round(Sum(data_length + index_length) / 1024 / 1024, 1) 'dbsize'
+	FROM
+		information_schema.tables 
+	GROUP BY
+		table_schema;";
 
 	$output = array();
 
@@ -71,9 +54,7 @@ function batch_number_per_date(){
 	$req->execute();
 	$rows=$req->fetchAll();
 	foreach($rows as $row){
-		// $timestamp = strtotime($row['bat_date']);
-		$nb = intval($row['nb']);
-		$output[] = [$row['bat_date'], $nb];
+		$output[$row['plato']] = $row['dbsize'];
 	}
 	$json=json_encode($output);
 	echo $json;
@@ -106,8 +87,8 @@ function batch_cumul_per_date(){
 
 
 
-if($_GET["fonction"] == "user_ctp"){
-	user_ctp();
+if($_GET["fonction"] == "sizeOfDb"){
+	sizeOfDb();
 }
 if($_GET["fonction"] == "batch_ctp"){
 	batch_ctp();
@@ -118,13 +99,5 @@ if($_GET["fonction"] == "batch_number_per_date"){
 if($_GET["fonction"] == "batch_cumul_per_date"){
 	batch_cumul_per_date();
 }
-if($_GET["fonction"] == "sample_cpt"){
-	sample_cpt();
-}
-if($_GET["fonction"] == "rawdata_cpt"){
-	rawdata_cpt();
-}
-if($_GET["fonction"] == "experiment_cpt"){
-	experiment_cpt();
-}
+
 ?>

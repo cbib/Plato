@@ -1,0 +1,134 @@
+#!/usr/bin/perl
+
+#############################################################################################
+#
+# Script name : dl_database.pl
+# -----------
+# Dev environment : - Ubuntu 14.04 x64
+# ---------------   - perl, v5.18.2 built for x86_64-linux-gnu-thread-multi
+#
+#############################################################################################
+
+use strict;
+use warnings;
+use Data::Dumper;
+use DBI;    
+use DBD::ODBC;
+use Encode qw(encode_utf8);
+use utf8;
+use Carp;
+
+
+
+#--------------------------------------------------------------- remote connection
+# Paramètres de connection à la base de données
+	# Paramètres de connection à la base de données
+	my $bd		= 'PlatoDB';
+	my $serveur	= '147.100.103.188';	  # Il est possible de mettre une adresse IP
+	my $identifiant = 'labdesigner';	  # identifiant 
+	my $motdepasse	= 'glucose';
+	my $port	= '1433';
+	my $dsn="dbi:ODBC:DSN=plato";
+	print "Connexion à la base de données $bd\n";
+	my $rconn = DBI->connect($dsn, $identifiant, $motdepasse);
+	if (! defined($rconn) ) {
+		 print "***Error connecting to DSN\n";
+		 print "***Error was:\n";
+		 print "***$DBI::errstr\n";         # $DBI::errstr is the error
+	}
+
+
+my @querys =(
+"SELECT * FROM FreshWeights;",
+"SELECT * FROM Experiments;",
+"SELECT * FROM Material;",
+"SELECT * FROM BatchCompilation;",
+"SELECT * FROM RawData;",
+"SELECT * FROM Batches;",
+"SELECT * FROM Unit;",
+"SELECT * FROM Activity;",
+"SELECT * FROM EnzymeCode;",
+"SELECT * FROM ProcessedData;",
+"SELECT * FROM Protocol;",
+"SELECT * FROM ProtocolSetting;",
+"SELECT * FROM Parameter;");
+
+
+
+
+my $i=0;
+foreach my $line (@querys){
+ 	my @result = @{ $rconn->selectall_arrayref($line, { Slice => {} }) or die "\nERR=Sysdate\n $! \n $@\nDBI:errstr" };
+	open(FILE, ">$line") || die "Erreur E/S:$!\n";
+	foreach my $ligne (@result) {
+		 chomp $ligne;
+#		 print FILE "$ligne\n";
+			hashRecursif($ligne);
+	}
+	$i++;
+	print STDERR "$i/".$#querys."\r";
+}
+
+print STDERR "Reset complete.\n";
+
+sub hashRecursif {
+	my $hash=shift @_;
+	foreach ( keys %{$hash} ){
+		#print "$_ \n";
+		if (ref $hash->{$_} eq 'HASH') {
+			hashRecursif($hash->{$_});
+		}
+		elsif (ref $hash->{$_} eq 'ARRAY'){
+			foreach my $val (@{$hash->{$_}}) {
+				if (defined ($val)){
+					print "\t$val";
+				}
+				else {
+					print "\tno values\n";
+				}
+			}
+		}
+		else {
+			print  "\t".$hash->{$_}."";
+		}
+		print "\n";
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1;
