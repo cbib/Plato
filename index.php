@@ -189,8 +189,6 @@ $(document).ready(function() {
 				Date.UTC(parseInt(arr[0],10),parseInt(arr[1],10),parseInt(arr[2],10))
 				serie1[index]=[Date.UTC(parseInt(arr[0],10),parseInt(arr[1],10),parseInt(arr[2],10)),datum[1]*10];
 			});
-
-
 			$.ajax({
 				url: 'php/index_functions/index_refresh.php',
 				type: 'GET',

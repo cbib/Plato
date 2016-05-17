@@ -11,9 +11,11 @@ echo'
 <div class="row">
   <div class="col-md-12 col-lg-12 col-xl-12" id="analytesUse"></div>
 </div>
+<hr/>
 <div class="row">
   <div class="col-md-12 col-lg-12 col-xl-12" id="sizeOfDatabase"></div>
 </div>
+<hr/>
 ';
 
 html_footer("../../");
@@ -30,9 +32,8 @@ $(document).ready(function() {
 		data: {
 			fonction:'sizeOfDb',
 		},
-		success: function (data) {
-			console.log("toto");
-			printSize(parseInt(data["plato_export_02052016"]));
+		success: function (dataSize) {
+			printSize(parseInt(dataSize["plato_export_02052016"]));
 		}
 	});
 
@@ -60,7 +61,7 @@ function printAnalyteDistrib(data){
             zoomType: 'x'
         },
         title: {
-            text: ''
+            text: 'How often Analytes are used ?'
         },
         xAxis: {
             type: 'category',
@@ -93,7 +94,7 @@ function printAnalyteDistrib(data){
                 color: '#FFFFFF',
                 align: 'right',
                 format: '{point.y}', // one decimal
-                y: 10, // 10 pixels down from the top
+                y: 9, // 10 pixels down from the top
                 style: {
                     fontSize: '10px',
                     fontFamily: 'Verdana, sans-serif'
@@ -111,7 +112,7 @@ function printSize(dataSize) {
         chart: {
             type: 'solidgauge'
         },
-        title : null,
+        title : 'Free space in db',
         pane: {
             center: ['50%', '85%'],
             size: '140%',
@@ -164,7 +165,7 @@ function printSize(dataSize) {
             min: 0,
             max: 20000,
             title: {
-                text: 'Used space'
+                text: 'Space used'
             }
         },
         credits: {
@@ -176,7 +177,7 @@ function printSize(dataSize) {
             dataLabels: {
                 format: '<div style="text-align:center"><span style="font-size:25px;color:' +
                     ((Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black') + '">{y}</span><br/>' +
-                       '<span style="font-size:12px;color:silver">Mb</span></div>'
+                       '<span style="font-size:12px;color:silver">Mb used over 20Gb</span></div>'
             },
             tooltip: {
                 valueSuffix: ' Mb'

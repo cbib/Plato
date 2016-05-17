@@ -14,7 +14,7 @@ function sizeOfDb(){
 
 	$output = array();
 
-	//echo $query."\n\n";
+	// error_log($query);
 	$req=$conn->prepare($query);
 	$req -> setFetchMode(PDO::FETCH_ASSOC);
 	$req->execute();
@@ -48,14 +48,12 @@ function analyte_distribution(){
 }
 
 
-
-
 if($_GET["fonction"] == "analyte_distribution"){
 	analyte_distribution();
 }
-// if($_GET["fonction"] == "batch_ctp"){
-// 	batch_ctp();
-// }
+if($_GET["fonction"] == "sizeOfDb"){
+	sizeOfDb();
+}
 // if($_GET["fonction"] == "batch_number_per_date"){
 // 	batch_number_per_date();
 // }
