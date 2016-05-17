@@ -87,7 +87,7 @@ echo '
 				<li class="submenu" id="chartsPanel">
 					<a href="#"><i class="icon icon-signal"></i> <span>Charts &amp; graphs</span> <span class="label">1</span></a>
 					<ul>
-						<li><a href="'.$path.'php/charts/chart1.php">Standards</a></li>
+						<li><a href="'.$path.'php/charts/chart1.php">Charts</a></li>
 					</ul>
 				</li>
 			</ul>

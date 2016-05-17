@@ -1,40 +1,6 @@
 <?php
 	include '../functions/php_functions.php';
 
-function user_ctp(){
-	$conn=get_connexion();
-	$query ='
-		SELECT  *
-		FROM user
-	';
-
-	//echo $query."\n\n";
-	$req=$conn->prepare($query);
-	$req -> setFetchMode(PDO::FETCH_ASSOC);
-	$req->execute();
-	$rows=$req->fetchAll();
-
-	echo sizeof($rows);
-}
-
-
-
-function batch_ctp(){
-	$conn=get_connexion();
-	$query ='
-		SELECT  *
-		FROM batch
-	';
-
-	//echo $query."\n\n";
-	$req=$conn->prepare($query);
-	$req -> setFetchMode(PDO::FETCH_ASSOC);
-	$req->execute();
-	$rows=$req->fetchAll();
-
-	echo sizeof($rows);
-}
-
 
 function sizeOfDb(){
 	$conn=get_connexion();
@@ -61,11 +27,11 @@ function sizeOfDb(){
 }
 
 
-function batch_cumul_per_date(){
+function analyte_distribution(){
 	$conn=get_connexion();
 	$nb =0;
 	$query ="
-		SELECT DATE_FORMAT(bat_date,'%Y-%m-%d') AS bat_date, count(bat_date) as nb FROM batch GROUP BY bat_date;";
+		SELECT enzyme.ez_analyte, COUNT(rawdata.data_enzyme_FK) AS ez_number from enzyme LEFT JOIN rawdata ON(enzyme.ez_id = rawdata.data_enzyme_FK ) GROUP BY enzyme.ez_id;";
 
 	$output = array();
 
@@ -75,10 +41,7 @@ function batch_cumul_per_date(){
 	$req->execute();
 	$rows=$req->fetchAll();
 	foreach($rows as $row){
-		//$timestamp = strtotime($row['bat_date']);
-		$nb += intval($row['nb']);
-		//error_log($nb);
-		$output[] = [$row['bat_date'], $nb];
+		$output[] = [$row['ez_analyte'], intval($row["ez_number"])];
 	}
 	$json=json_encode($output);
 	echo $json;
@@ -87,17 +50,17 @@ function batch_cumul_per_date(){
 
 
 
-if($_GET["fonction"] == "sizeOfDb"){
-	sizeOfDb();
+if($_GET["fonction"] == "analyte_distribution"){
+	analyte_distribution();
 }
-if($_GET["fonction"] == "batch_ctp"){
-	batch_ctp();
-}
-if($_GET["fonction"] == "batch_number_per_date"){
-	batch_number_per_date();
-}
-if($_GET["fonction"] == "batch_cumul_per_date"){
-	batch_cumul_per_date();
-}
+// if($_GET["fonction"] == "batch_ctp"){
+// 	batch_ctp();
+// }
+// if($_GET["fonction"] == "batch_number_per_date"){
+// 	batch_number_per_date();
+// }
+// if($_GET["fonction"] == "batch_cumul_per_date"){
+// 	batch_cumul_per_date();
+// }
 
 ?>

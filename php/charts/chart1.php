@@ -7,8 +7,12 @@ html_header("../../",  $_SESSION['login']);
 
 generic_html_top_page("../../","Charts");
 
-echo' <div style="width: 100%; height: 600px; margin: 0 auto">
-    <div id="container-speed" style="width: 40%; height: 500px; float: left"></div>
+echo' 
+<div class="row">
+  <div class="col-md-12 col-lg-12 col-xl-12" id="analytesUse"></div>
+</div>
+<div class="row">
+  <div class="col-md-12 col-lg-12 col-xl-12" id="sizeOfDatabase"></div>
 </div>
 ';
 
@@ -27,15 +31,82 @@ $(document).ready(function() {
 			fonction:'sizeOfDb',
 		},
 		success: function (data) {
+			console.log("toto");
 			printSize(parseInt(data["plato_export_02052016"]));
+		}
+	});
+
+	$.ajax({
+		url: 'charts_functions.php',
+		type: 'GET',
+		async: true,
+		dataType: "json",
+		data: {
+			fonction:'analyte_distribution',
+		},
+		success: function (data) {
+			// console.log(data);
+			printAnalyteDistrib(data);
 		}
 	});
 });
 
 
+function printAnalyteDistrib(data){
+	// console.log(data);
+    $('#analytesUse').highcharts({
+        chart: {
+            type: 'column',
+            zoomType: 'x'
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            type: 'category',
+            labels: {
+                rotation: -60,
+                style: {
+                    fontSize: '11px',
+                    fontFamily: 'Verdana, sans-serif'
+                }
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Use of analytes'
+            }
+        },
+        legend: {
+            enabled: false
+        },
+        tooltip: {
+            pointFormat: 'Used: <b>{point.y} times</b>'
+        },
+        series: [{
+            name: 'Number',
+            data: data,
+            dataLabels: {
+                enabled: true,
+                rotation: -90,
+                color: '#FFFFFF',
+                align: 'right',
+                format: '{point.y}', // one decimal
+                y: 10, // 10 pixels down from the top
+                style: {
+                    fontSize: '10px',
+                    fontFamily: 'Verdana, sans-serif'
+                }
+            }
+        }]
+    });
+}
+
+
 
 function printSize(dataSize) {
-
+	console.log(dataSize);
     var gaugeOptions = {
         chart: {
             type: 'solidgauge'
@@ -88,10 +159,10 @@ function printSize(dataSize) {
     };
 
     // The speed gauge
-    $('#container-speed').highcharts(Highcharts.merge(gaugeOptions, {
+    $('#sizeOfDatabase').highcharts(Highcharts.merge(gaugeOptions, {
         yAxis: {
             min: 0,
-            max: 2000,
+            max: 20000,
             title: {
                 text: 'Used space'
             }
