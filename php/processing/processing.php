@@ -3,7 +3,7 @@ require('../functions/check_login.php');
 include '../functions/html_functions.php';
 include '../functions/php_functions.php';
 
-html_header("../../", $_SESSION['login');
+html_header("../../", $_SESSION['login']);
 
 generic_html_top_page("../../","Raw Data Processing");
 echo'
