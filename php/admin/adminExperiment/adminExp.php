@@ -223,7 +223,7 @@ function construct_create_modal(data, action, select){
 	'<div class="modal-content">'+
 		'<div class="modal-header">'+
 			'<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>'+
-			'<h4 class="modal-title">New Standard</h4>'+
+			'<h4 class="modal-title">New Experiment</h4>'+
 		'</div>'+
 		'<div class="modal-body">'+
 			'<input type="hidden" class="form-control required" id="action" name="action" value="'+action+'">'+
@@ -233,7 +233,7 @@ function construct_create_modal(data, action, select){
 
 			'<label class="control-label">Select standard</label>'+
 			'<select id="selectStd" class="form-control" name="selectStd">'+
-				'<option value=""> ----- Select ----- </option>';
+				'<option value="-1"> ----- Select ----- </option>';
 
 		var modal2 ='</select></div> <!-- /.modal-body -->'+
 		'<div class="modal-footer">'+

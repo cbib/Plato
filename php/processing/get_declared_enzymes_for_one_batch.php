@@ -13,12 +13,13 @@
 		FROM 
 			enzyme, batch_data, experiment, experiment_standard, standard_enzyme
 		WHERE 
-			batch_data.bat_data_batch_FK ='.$batchID.'
-			AND exp_id = bat_data_experiment_FK
-			AND exp_std_experiment_FK = bat_data_experiment_FK
-			AND std_ez_standard_FK = exp_std_standard_FK
-			AND ez_id = std_ez_enzyme_FK
-			ORDER BY ez_analyte;';
+			batch_data.bat_data_batch_FK ='.$batchID.' AND
+			exp_id = bat_data_experiment_FK AND
+			exp_std_experiment_FK = bat_data_experiment_FK AND
+			std_ez_standard_FK = exp_std_standard_FK AND
+			ez_id = std_ez_enzyme_FK
+			ORDER BY enzyme.ez_analyte;';
+
 
 	try {
 		$sth=$conn->prepare($query);

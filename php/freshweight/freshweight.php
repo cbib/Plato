@@ -10,9 +10,9 @@ html_header("../../",  $_SESSION['login']);
  * Editable top page allow to create button in the navbar
  * Dont forget to close the div when you use it
  */
-editable_html_top_page("../../","Freshweights");
-echo '<a href="#" id="createExpButton" title="Declare a new Experiment" class="tip-bottom"><i class="icon-plus"></i>Add Materials</a>
-</div>';
+generic_html_top_page("../../","Freshweights");
+// echo '<a href="#" id="createExpButton" title="Declare a new Experiment" class="tip-bottom"><i class="icon-plus"></i>Add Materials</a>
+// </div>';
 
 /**
  * Use to display informations to the user
@@ -549,6 +549,7 @@ function setup_experiment_datatable(){
 		}
 		],
 		createdRow: function( row, data, dataIndex ) {
+			console.log(data);
 			if ( data[2] == "" ) {
 				$(row).css('background-color', '#FDFEFE');
 			}

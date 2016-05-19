@@ -410,6 +410,7 @@ html_footer("../../");
 	var split="";
 	var activity=-1;
 	var ezMap = new Array();
+	var ezNameMap = new Array();
 	var rawIDMap =  new Array();
 	var currentEzID=-1;
 
@@ -466,36 +467,16 @@ $(document).ready(function() {
 		excludMap[row][col] = exclud;
 		//console.log(excludMap[row][col]);
 		displayRawData(rawDataMap, dataTypeMap, excludMap, split);
-		//console.log(split);
+		console.log(split);
 		if (split == "FULL"){
 			processDataMap=processMetabolites(rawDataMap, dataTypeMap, excludMap, split, processDataMap, activity, fwMap);
 		}
 		else if (split == "SPLIT"){
 			processDataMap= processEnzyme(rawDataMap, dataTypeMap, excludMap, split, processDataMap, activity, fwMap);
 		}
+		console.log(processDataMap);
 		displayProcessData(processDataMap, dataTypeMap, excludMap, split);
 		$( "button" ).filter( "#saveProcessedData" ).prop("disabled",false);
-	});
-
-	/* Listener on enzyme table */
-	$('#ezTable').on( 'click', 'td', function () {
-		if ($(this).index() != Object.keys(ezMap).length) {
-			myColIndex = $('#ezTable td').eq($(this).index()).html();
-			currentEzID = ezMap[myColIndex];
-			redraw(currentEzID);
-			// // makeMap(ezMap[myColIndex]);
-			// makeMap(currentEzID);
-			// //console.log(split);
-			// if (split == "FULL"){
-			// 	processDataMap=processMetabolites(rawDataMap, dataTypeMap, excludMap, split, processDataMap, activity, fwMap);
-			// }
-			// else if (split == "SPLIT"){
-			// 	processDataMap= processEnzyme(rawDataMap, dataTypeMap, excludMap, split, processDataMap, activity, fwMap);
-			// }
-			// displayProcessData(processDataMap, dataTypeMap, excludMap, split);
-			// displayRawData(rawDataMap, dataTypeMap, excludMap, split);
-		}
-
 	});
 
 	/* Listener on batch selection */
@@ -504,15 +485,6 @@ $(document).ready(function() {
 		batchName = $("#selectBatch option:selected").text();
 		currentEzID=-1;
 		redraw(currentEzID);
-		// makeMap(currentEzID);
-		// if (split == "FULL"){
-		// 	processDataMap=processMetabolites(rawDataMap, dataTypeMap, excludMap, split, processDataMap, activity, fwMap);
-		// }
-		// else if (split == "SPLIT"){
-		// 	processDataMap= processEnzyme(rawDataMap, dataTypeMap, excludMap, split, processDataMap, activity, fwMap);
-		// }
-		// displayProcessData(processDataMap, dataTypeMap, excludMap, split);
-		// displayRawData(rawDataMap, dataTypeMap, excludMap, split);
 	});
 
 	/* Listener on the experiment table expander */
@@ -534,6 +506,19 @@ $(document).ready(function() {
 //						//
 //		Listeners		//
 //						// 
+
+/* Listener on enzyme table */
+$(document).on( 'click', "#ezTable > tbody > tr >td ", function (e) {
+	console.log("index : "+$(this).index());
+	if ($(this).index() != Object.keys(ezMap).length) {
+		$('#ezTable').find('tr').eq(1).find('td').eq($(this).index()).css('background-color', 'green');
+		redraw(ezMap[$('#ezTable td').eq($(this).index()).html()]);
+		console.log("ezmap : "+ezMap[$('#ezTable td').eq($(this).index()).html()]);
+		
+	}
+});
+
+
 $(document).on("click", "#addDataButton", function(e){
 	batchID = $( "#selectBatch" ).val();
 	create_addRawData_modal(batchID);
@@ -549,13 +534,6 @@ $(document).bind("paste", "#col1", function(e){
 $(document).on("click", "#rawDataSubmit", function(e){
 	console.log("INSERT DATA");
 	dataInsert("addrawDataValue", expID, batchID);
-	// console.log("Make Map");
-	// makeMap(currentEzID);
-	// console.log("displayRawData");
-	// displayRawData(rawDataMap, dataTypeMap, excludMap, split);
-	// console.log("displayProcessData");
-	// displayProcessData(processDataMap, dataTypeMap, excludMap, split);
-	// console.log("update");
 	redraw(currentEzID);
 	update(currentEzID, batchID, processDataMap, excludMap);
 	$("#addRawDataModal").modal("hide");
@@ -612,6 +590,7 @@ function hideWaitModal(){
 
 
 function redraw(err){
+	console.log("\n");
 	console.log("REDRAW");
 	console.log("EzId redraw debut => "+currentEzID);
 	var debut=0;
@@ -636,7 +615,6 @@ function redraw(err){
 		displayProcessData(processDataMap, dataTypeMap, excludMap, split);
 		console.log("EzId redraw fin => "+currentEzID);
 	}
-
 }
 
 /**
@@ -649,6 +627,7 @@ function redraw(err){
  * @param      {<type>}  excludMap       { description }
  */
 function update(ezID, batchID, processDataMap, excludMap){
+	console.log("\n");
 	console.log("ezID Update : "+ezID);
 	console.log("BatchID update : "+batchID);
 	console.log("update processDataMap");
@@ -954,6 +933,35 @@ function create_addRawData_modal(batchID){
 	$("#addRawDataModal").modal("show");
 }
 
+
+function drawAnalyteTable(data, enzymeID){
+
+	var content = '<table id="ezTable" class="table table-bordered table-condensed table-body-center table-striped" style="width:100%"><tr>';
+	for(i=0; i<data.length; i++){
+		content += '<td>' + data[i].split('|||')[3] + '</td>';
+		ezMap[data[i].split('|||')[3]]=data[i].split('|||')[1];
+		ezNameMap[data[i].split('|||')[1]]=data[i].split('|||')[2];
+	}
+	content += '<td style="background-color:transparent" align="center">';
+	content += '<button type="button" id ="addDataButton" class="btn btn-sm btn-info"><i class="icon-plus"></i> Add Data</button>';
+	content += '</td>';
+	content += "</tr></table>";
+
+	$('#ezTable').html(content);
+	$("#ezTable").css("fontSize", 11);
+	$('#head-wrapper').show();
+	$('#expender-wrapper').show();
+	$('#datatable-wrapper').hide();
+
+	if(enzymeID == -1){
+		enzymeID = data[data.length-1].split('|||')[1];
+		currentEzID = enzymeID;
+		console.log("MakeMap changeEzID => "+currentEzID);
+		$("#ezTable td:contains('" + data[data.length-1].split('|||')[3] + "')").css('background-color', 'green');
+	}
+}
+
+
 /**
  * make the map of the raw data
  *
@@ -963,160 +971,110 @@ function create_addRawData_modal(batchID){
 function makeMap(enzymeID) {
 	console.log("Make Map : enzymeID => "+enzymeID);
 	var ezID=0;
-	var ezNameMap=[];
 	$.ajax({
         url: "processing_get_enzymes.php",
         type: "post",
         data: { batchID : batchID},
 		success: function(data) {
-			//console.log(data);
-			if ((data.length == 0) || (typeof data == "undefined")){
-				console.log("table vide");
-				var content = '<table id="ezTable" class="table table-bordered table-condensed table-body-center table-striped" style="width:100%"><tr>';
-				content += '<td style="background-color:transparent" align="center">';
-				content += '<button type="button" id ="addDataButton" class="btn btn-sm btn-info"><i class="icon-plus"></i> Add Data</button>';
-				content += '</td>';
-				content += "</tr></table>";
-				$('#ezTable').html(content);
-				$("#ezTable").css("fontSize", 11);
-				$('#head-wrapper').show();
-				$('#expender-wrapper').show();
-				$('#datatable-wrapper').hide();
-			}
-			else {
-				var content = '<table id="ezTable" class="table table-bordered table-condensed table-body-center table-striped" style="width:100%"><tr>';
-				for(i=0; i<data.length; i++){
-					if(enzymeID != -1){
-						if(data[i].split('|||')[1]==enzymeID){
-							content += '<td style="background-color:green">' + data[i].split('|||')[3] + '</td>';
-						}
-						else {
-							content += '<td>' + data[i].split('|||')[3] + '</td>';
-						}
+			drawAnalyteTable(data, enzymeID);
+			$( "p" ).html( "<b>Batch Infos</b> | Name : " + batchName + " | Analyte : "+ezNameMap[ezID]);
+			$.ajax({
+				url: "processing_get_rawData.php",
+				type: "post",
+				data: { batchID : batchID, ezID : ezID },
+				success: function(data) {
+					if(data=="error"){
+						console.log("Get raw data Error : batch id => "+batchID+" ezID => "+ezID);
 					}
 					else{
-						content += '<td>' + data[i].split('|||')[3] + '</td>';
-					}
-				    ezMap[data[i].split('|||')[3]]=data[i].split('|||')[1];
-				    ezNameMap[data[i].split('|||')[1]]=data[i].split('|||')[2];
-				}
-
-				content += '<td style="background-color:transparent" align="center">';
-				content += '<button type="button" id ="addDataButton" class="btn btn-sm btn-info"><i class="icon-plus"></i> Add Data</button>';
-				content += '</td>';
-				content += "</tr></table>";
-				$('#ezTable').html(content);
-				$("#ezTable").css("fontSize", 11);
-
-				if(enzymeID == -1){
-					ezID = data[data.length-1].split('|||')[1];
-					currentEzID = ezID;
-					console.log("MakeMap changeEzID => "+currentEzID);
-					$("#ezTable td:contains('" + data[data.length-1].split('|||')[3] + "')").css('background-color', 'green');
-				}
-				else {
-					ezID = currentEzID;
-				}
-				$( "p" ).html( "<b>Batch Infos</b> | Name : " + batchName + " | Enzyme : "+ezNameMap[ezID]);
-				$.ajax({
-			        url: "processing_get_rawData.php",
-			        type: "post",
-			        data: { batchID : batchID, ezID : ezID },
-					success: function(data) {
-						if(data=="error"){
-							console.log("Get raw data Error : batch id => "+batchID+" ezID => "+ezID);
-
+						var hashMap = new Object();
+						for(var i=0;i<data.length; i++){
+							hashMap[data[i].split('#')[1]]=0;
 						}
-						else{
-							var hashMap = new Object();
-							for(var i=0;i<data.length; i++){
-								hashMap[data[i].split('#')[1]]=0;
+						for(var i=0;i<data.length; i++){
+							hashMap[data[i].split('#')[1]]++;
+						}
+						delete hashMap["EB"];
+						delete hashMap["?"];
+						var min=96;
+						var minname="";
+						for (var key in hashMap) {
+							if (hashMap[key]<min){
+								min = hashMap[key];
+								minname=key;
+								$.ajax({
+							        url: "get_activity.php",
+							        type: "post",
+							        data: { minname : minname, ezID : ezID },
+									success: function(data) {
+										activity=data;
+									}
+								});
 							}
-							for(var i=0;i<data.length; i++){
-								hashMap[data[i].split('#')[1]]++;
-							}
-							delete hashMap["EB"];
-							delete hashMap["?"];
-							var min=96;
-							var minname="";
-							for (var key in hashMap) {
-								if (hashMap[key]<min){
-									min = hashMap[key];
-									minname=key;
-									$.ajax({
-								        url: "get_activity.php",
-								        type: "post",
-								        data: { minname : minname, ezID : ezID },
-										success: function(data) {
-											activity=data;
-										}
-									});
+						}
+
+						for(var i=0;i<data.length; i++){
+							var expName = data[i].split('#')[1];
+							var row = parseInt(data[i].split('#')[2]);
+							var col = parseInt(data[i].split('#')[3]);
+							var rawvalue = parseFloat(data[i].split('#')[4]);
+							var velocity = data[i].split('#')[5];
+							var enzymeID = parseInt(data[i].split('#')[6]);
+							var excluded = parseInt(data[i].split('#')[7]);
+							var rawDataID =  parseInt(data[i].split('#')[8]);
+							var layout =  data[i].split('#')[9];
+							split=layout;
+							var procValue =  data[i].split('#')[10] == "" ? "NA" : data[i].split('#')[10];
+							var fw = parseFloat(data[i].split('#')[11]);
+
+							if(velocity == "max"){
+								rawDataMap[row+4][col]=rawvalue;
+								excludMap[row+4][col]=excluded;
+								fwMap[row+4][col] = fw;
+								rawIDMap[row+4][col] = rawDataID;
+								if(expName === "EB"){
+									dataTypeMap[row+4][col] =  1;
 								}
-							}
-
-							for(var i=0;i<data.length; i++){
-								var expName = data[i].split('#')[1];
-								var row = parseInt(data[i].split('#')[2]);
-								var col = parseInt(data[i].split('#')[3]);
-								var rawvalue = parseFloat(data[i].split('#')[4]);
-								var velocity = data[i].split('#')[5];
-								var enzymeID = parseInt(data[i].split('#')[6]);
-								var excluded = parseInt(data[i].split('#')[7]);
-								var rawDataID =  parseInt(data[i].split('#')[8]);
-								var layout =  data[i].split('#')[9];
-								split=layout;
-								var procValue =  data[i].split('#')[10] == "" ? "NA" : data[i].split('#')[10];
-								var fw = parseFloat(data[i].split('#')[11]);
-
-								if(velocity == "max"){
-									rawDataMap[row+4][col]=rawvalue;
-									excludMap[row+4][col]=excluded;
-									fwMap[row+4][col] = fw;
-									rawIDMap[row+4][col] = rawDataID;
-									if(expName === "EB"){
-										dataTypeMap[row+4][col] =  1;
-									}
-									else if(expName === "?"){
-										dataTypeMap[row+4][col] =  2;
-									}
-									else if(expName === minname){
-										dataTypeMap[row+4][col] =  3;
-									}
-									else {
-										dataTypeMap[row+4][col] =  0;
-									}
+								else if(expName === "?"){
+									dataTypeMap[row+4][col] =  2;
+								}
+								else if(expName === minname){
+									dataTypeMap[row+4][col] =  3;
 								}
 								else {
-									rawDataMap[row][col]=rawvalue;
-									excludMap[row][col]=excluded;
-									fwMap[row][col] = fw;
-									rawIDMap[row][col] = rawDataID;
-									if(expName === "EB"){
-										dataTypeMap[row][col] =  1;
-									}
-									else if(expName === "?"){
-										dataTypeMap[row][col] =  2;
-									}
-									else if(expName === minname){
-										dataTypeMap[row][col] =  3;
-									}
-									else {
-										dataTypeMap[row][col] =  0;
-									}
-									processDataMap[row][col]=procValue;
+									dataTypeMap[row+4][col] =  0;
 								}
-								
 							}
-							displayRawData(rawDataMap, dataTypeMap, excludMap, layout);
-							displayProcessData(processDataMap, dataTypeMap, excludMap, layout);
-							$('#table-wrapper').show();
-							$('#head-wrapper').show();
-							$('#expender-wrapper').show();
-							$('#datatable-wrapper').hide();
+							else {
+								rawDataMap[row][col]=rawvalue;
+								excludMap[row][col]=excluded;
+								fwMap[row][col] = fw;
+								rawIDMap[row][col] = rawDataID;
+								if(expName === "EB"){
+									dataTypeMap[row][col] =  1;
+								}
+								else if(expName === "?"){
+									dataTypeMap[row][col] =  2;
+								}
+								else if(expName === minname){
+									dataTypeMap[row][col] =  3;
+								}
+								else {
+									dataTypeMap[row][col] =  0;
+								}
+								processDataMap[row][col]=procValue;
+							}
+							
 						}
+						displayRawData(rawDataMap, dataTypeMap, excludMap, layout);
+						displayProcessData(processDataMap, dataTypeMap, excludMap, layout);
+						$('#table-wrapper').show();
+						$('#head-wrapper').show();
+						$('#expender-wrapper').show();
+						$('#datatable-wrapper').hide();
 					}
-				});
-			}
+				}
+			});
 		}
 	});
 	return 1;
@@ -1296,6 +1254,7 @@ function getStdDev(processDataMap, dataTypeMap, excludMap){
 
 function processEnzyme(rawDataMap, dataTypeMap, excludMap, layout, processDataMap, activity, fwMap){
 	/* Needed vars... */
+	console.log("EZ processing...");
 	var slopeRatio = 1.0;
 	var blankRawDataMap = rawDataMap.slice(0, 4);
 	var blankDataTypeMap = dataTypeMap.slice(0, 4);

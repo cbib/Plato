@@ -32,8 +32,12 @@
 
 			$conn->exec($query);
 			$lastExpId=$conn->lastInsertId();
-
-			$queryexpStd = "INSERT INTO `experiment_standard`(`exp_std_id`, `exp_std_standard_FK`, `exp_std_experiment_FK`) VALUES ('', '".$stdID."', '".$lastExpId."');";
+			if ((isset($_POST['stdID'])) && ($_POST['stdID'] != -1)) {
+				$queryexpStd = "INSERT INTO `experiment_standard`(`exp_std_id`, `exp_std_standard_FK`, `exp_std_experiment_FK`) VALUES ('', '".$stdID."', '".$lastExpId."');";
+			}
+			else{
+				$queryexpStd = "INSERT INTO `experiment_standard`(`exp_std_id`, `exp_std_standard_FK`, `exp_std_experiment_FK`) VALUES ('', '1', '".$lastExpId."');";
+			}
 			$conn->exec($queryexpStd);
 			
 			$conn->commit();

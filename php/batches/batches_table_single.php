@@ -5,7 +5,6 @@
 
 
 	$expID = $_POST['expID'];
-
 	$query ='
 		SELECT  distinct batch.bat_id AS ID, CONCAT(batch.bat_number, "	-	", batch.bat_name, "	-	", batch.bat_date) AS numbname
 		FROM batch_data, batch

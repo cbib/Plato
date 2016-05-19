@@ -477,25 +477,7 @@ $(document).ready(function() {
 		$( "button" ).filter( "#saveProcessedData" ).prop("disabled",false);
 	});
 
-	/* Listener on enzyme table */
-	$('#ezTable').on( 'click', 'td', function () {
-		if ($(this).index() != Object.keys(ezMap).length) {
-			myColIndex = $('#ezTable td').eq($(this).index()).html();
-			currentEzID = ezMap[myColIndex];
-			// makeMap(ezMap[myColIndex]);
-			makeMap(currentEzID);
-			//console.log(split);
-			if (split == "FULL"){
-				processDataMap=processMetabolites(rawDataMap, dataTypeMap, excludMap, split, processDataMap, activity, fwMap);
-			}
-			else if (split == "SPLIT"){
-				processDataMap= processEnzyme(rawDataMap, dataTypeMap, excludMap, split, processDataMap, activity, fwMap);
-			}
-			displayProcessData(processDataMap, dataTypeMap, excludMap, split);
-			displayRawData(rawDataMap, dataTypeMap, excludMap, split);
-		}
 
-	});
 
 	/* Listener on batch selection */
 	$( "#selectBatch" ).click(function() {
@@ -535,6 +517,28 @@ $(document).on("click", "#addDataButton", function(e){
 	batchID = $( "#selectBatch" ).val();
 	create_addRawData_modal(batchID);
 });
+
+
+	/* Listener on enzyme table */
+$(document).on( 'click', "#ezTable > tbody > tr >td ", function (e) {
+	if ($(this).index() != Object.keys(ezMap).length) {
+		myColIndex = $('#ezTable td').eq($(this).index()).html();
+		currentEzID = ezMap[myColIndex];
+		// makeMap(ezMap[myColIndex]);
+		makeMap(currentEzID);
+		//console.log(split);
+		if (split == "FULL"){
+			processDataMap=processMetabolites(rawDataMap, dataTypeMap, excludMap, split, processDataMap, activity, fwMap);
+		}
+		else if (split == "SPLIT"){
+			processDataMap= processEnzyme(rawDataMap, dataTypeMap, excludMap, split, processDataMap, activity, fwMap);
+		}
+		displayProcessData(processDataMap, dataTypeMap, excludMap, split);
+		displayRawData(rawDataMap, dataTypeMap, excludMap, split);
+	}
+});
+
+
 
 /* When data are pasted in the first cell of the modal */
 $(document).bind("paste", "#col1", function(e){
@@ -827,6 +831,29 @@ function dispatchAddBatchDatas(data, dataTypeMap, excludMap) {
 	$("#addrawDataValue").css("fontSize", 11);
 }
 
+function createSelectAnalyte(){
+	var modal ="";
+	$.ajax({
+		async: false,
+		url: "get_declared_enzymes_for_one_batch.php",
+		type: "post",
+		data: { 
+			batchID : batchID
+		},
+		success: function(data) {
+			console.log(data);
+			for(var i = 0; i < data.length; i++) {
+				var line = data[i];
+					modal += '<option value="'+line.ez_id+'">'+line.ez_analyte+"&nbsp;&nbsp;"+line.ez_code+'</option>';
+			}
+		},
+		error: function(xhr, status, error) {
+		}
+	});
+	return modal;
+}
+
+
 /**
  * create modal for rawdata adding
  *
@@ -849,22 +876,7 @@ function create_addRawData_modal(batchID){
 					'<div class="col-lg-3">'+
 						'<label class="control-label" for="selectAnalyte">Select Analyte</label>'+
 						'<select id="selectAnalyte" class="form-control" name="selectAnalyte">';
-							$.ajax({
-								async: false,
-								url: "get_declared_enzymes_for_one_batch.php",
-								type: "post",
-								data: { 
-									batchID : batchID
-								},
-								success: function(data) {
-									for(var i = 0; i < data.length; i++) {
-										var line = data[i];
-											modal += '<option value="'+line.ez_id+'">'+line.ez_analyte+"&nbsp;&nbsp;"+line.ez_code+'</option>';
-									}
-								},
-								error: function(xhr, status, error) {
-								}
-							});
+						modal += createSelectAnalyte();
 						modal += '</select>'+
 						'<span  style="color:red" id="help-selectAnalyte"></span>'+
 					'</div><!-- /.col-lg-5 -->'+
