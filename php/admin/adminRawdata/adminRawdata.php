@@ -23,7 +23,7 @@ echo'
 					<button type="button" class="btn btn-xs btn-info" id ="expender" style="width:100%"><i class="icon-list"></i> &nbsp; Expend experiment table </button>
 				</div>
 				<div id="datatable-wrapper">
-					<table id="expTable" class="table display table-striped table-bordered table-hover" style="width:100%">
+					<table id="expTable" class="table display table-bordered table-hover" style="width:100%">
 						<thead>
 							<tr>
 								<th>ID</th>

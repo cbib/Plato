@@ -29,7 +29,7 @@ echo'
 					<button type="button" class="btn btn-xs btn-info" id ="expender" style="width:100%"><i class="icon-list"></i> &nbsp; Expend experiment table </button>
 				</div>
 				<div id="datatable-wrapper">
-					<table id="expTable" class="table display table-striped table-bordered table-hover" style="width:100%">
+					<table id="expTable" class="table display table-bordered table-hover" style="width:100%">
 						<thead>
 							<tr>
 								<th>ID</th>
@@ -76,7 +76,7 @@ echo'
 							<div class="responsive-table-line">
 								<h4>Raw Data </h4>
 								<p></p>
-									<table id="rawTable" class="table table-bordered table-condensed table-body-center table-striped" style="width:100%">
+									<table id="rawTable" class="table table-bordered table-condensed table-body-center" style="width:100%">
 										<thead>
 											<tr>
 												<th>#</th>
@@ -234,7 +234,7 @@ echo'
 										<div class="col-lg-6"> <h4>Processed Data </h4></div> 
 										<div class="col-lg-6" id="errorsInCtrl"></div>
 									</div>
-									<table id="processTable" class="table table-bordered table-condensed table-body-center table-striped" style="width:100%">
+									<table id="processTable" class="table table-bordered table-condensed table-body-center" style="width:100%">
 										<thead>
 											<tr>
 												<th>#</th>
@@ -951,7 +951,7 @@ function makeMap(enzymeID) {
 			console.log(data);
 			if ((data.length == 0) || (typeof data == "undefined")){
 				console.log("table vide");
-				var content = '<table id="ezTable" class="table table-bordered table-condensed table-body-center table-striped" style="width:100%"><tr>';
+				var content = '<table id="ezTable" class="table table-bordered table-condensed table-body-center" style="width:100%"><tr>';
 				content += '<td style="background-color:transparent" align="center">';
 				content += '<button type="button" id ="addDataButton" class="btn btn-sm btn-info"><i class="icon-plus"></i> Add Data</button>';
 				content += '</td>';
@@ -963,7 +963,7 @@ function makeMap(enzymeID) {
 				$('#datatable-wrapper').hide();
 			}
 			else {
-				var content = '<table id="ezTable" class="table table-bordered table-condensed table-body-center table-striped" style="width:100%"><tr>';
+				var content = '<table id="ezTable" class="table table-bordered table-condensed table-body-center" style="width:100%"><tr>';
 				for(i=0; i<data.length; i++){
 					if(enzymeID != -1){
 						if(data[i].split('|||')[1]==enzymeID){

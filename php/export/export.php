@@ -40,7 +40,7 @@ echo'
 					<button type="button" class="btn btn-xs btn-info" id ="expender" style="width:100%"><i class="icon-list"></i> &nbsp; Expend experiment table </button>
 				</div>
 				<div id="experiment-wrapper">
-					<table id="expTable" class="table display table-striped table-bordered table-hover " style="width:100%">
+					<table id="expTable" class="table display table-bordered table-hover " style="width:100%">
 						<thead>
 							<tr>
 								<th>ID</th>
@@ -57,7 +57,7 @@ echo'
 <div class="row-fluid">
 	<div id="rawtable-wrapper">
 		<div id="reloadRawTable">
-			<table id="RawTable" cellpadding="0" cellspacing="0" class="table table-bordered nowrap table-condensed table-body-center table-striped" style="width:100%">
+			<table id="RawTable" cellpadding="0" cellspacing="0" class="table table-bordered nowrap table-condensed table-body-center" style="width:100%">
 			</table>
 		</div>
 	</div>
@@ -66,7 +66,7 @@ echo'
 <div class="row-fluid">
 	<div id="mergedTable-wrapper">
 		<div id="reloadMergedTable">
-			<table id="MergedTable" cellpadding="0" cellspacing="0" class="table table-bordered nowrap table-condensed table-body-center table-striped" style="width:100%">
+			<table id="MergedTable" cellpadding="0" cellspacing="0" class="table table-bordered nowrap table-condensed table-body-center" style="width:100%">
 			</table>
 		</div>
 	</div>
@@ -75,7 +75,7 @@ echo'
 <!--<div class="row-fluid">
 	<div id="interbatchTable-wrapper">
 		<div id="reloadInterbatchTable">
-			<table id="InterbatchTable" cellpadding="0" cellspacing="0" class="table table-bordered nowrap table-condensed table-body-center table-striped" style="width:100%">
+			<table id="InterbatchTable" cellpadding="0" cellspacing="0" class="table table-bordered nowrap table-condensed table-body-center" style="width:100%">
 			</table>
 		</div>
 	</div>
@@ -84,7 +84,7 @@ echo'
 <div class="row-fluid">
 	<div id="cvTable-wrapper">
 		<div id="reloadCvTable">
-			<table id="CvTable" cellpadding="0" cellspacing="0" class="table table-bordered nowrap table-condensed table-body-center table-striped" style="width:100%">
+			<table id="CvTable" cellpadding="0" cellspacing="0" class="table table-bordered nowrap table-condensed table-body-center" style="width:100%">
 			</table>
 		</div>
 	</div>
@@ -330,7 +330,7 @@ function generate_data(expID, expName){
  */
 function clearTable(tableID){
 	$(tableID).remove();
-	$('#reload'+tableID).html('<table id="'+tableID+'" cellpadding="0" cellspacing="0" class="table table-bordered nowrap table-condensed table-body-center table-striped" style="width:100%"></table>');
+	$('#reload'+tableID).html('<table id="'+tableID+'" cellpadding="0" cellspacing="0" class="table table-bordered nowrap table-condensed table-body-center" style="width:100%"></table>');
 }
 
 /**

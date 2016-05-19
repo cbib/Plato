@@ -36,7 +36,7 @@ echo'
 	<div class="span5">
 		<div class="widget-box" style="background : transparent">
 			<div class="widget-content nopadding">
-				<table id="expTable" class="table display table-striped dt-right table-bordered" style="width:100%">
+				<table id="expTable" class="table display dt-right table-bordered" style="width:100%">
 					<thead>
 						<tr>
 							<th>ID</th>
@@ -59,7 +59,7 @@ echo'
 						<button type="button" class="btn btn-sm btn-info" id ="addRow" style="width:50%"><i class="icon-plus"></i> Add Single Row</button>
 						<button type="button" class="btn btn-sm btn-info" id ="addRows" style="width:50%"><i class="icon-plus"></i> Add Multiple Rows</button>
 					</div>
-					<table id="spl_alq_table" class="table display table-striped dt-right table-bordered">
+					<table id="spl_alq_table" class="table display dt-right table-bordered">
 						<thead>
 							<tr>
 								<th>splID</th>
@@ -530,35 +530,43 @@ function setup_freshweight_datatable(expID){
  */
 function setup_experiment_datatable(){
 	$('#expTable').dataTable().fnDestroy();
-	var table = $('#expTable').DataTable({
-		scrollY :	600,
-		scroller :	true,
-		select :	"single",
-		paging : 	true,
-		dom : 		'TB<"clear">frtip',
-		ajax : 		'get_all_experiment.php',
-		buttons: [
-			'copy', 'csv', 'excel', 'pdf', 'print'
-		],
-		order: [[ 1, 'asc' ]],
-		columnDefs: [
-		{
-			"targets": -1,
-			"visible": false,
-			"searchable":false
-		}
-		],
+		var table = $('#expTable').DataTable({
+			scrollY :	600,
+			scroller :	true,
+			select :	"single",
+			paging : 	true,
+			dom : 		'TB<"clear">frtip',
+			ajax : 		'get_all_experiment.php',
+			buttons: [
+				'copy', 'csv', 'excel', 'pdf', 'print'
+			],
+			order: [[ 1, 'asc' ]],
+			columnDefs: [
+				{
+					"targets": -1,
+					"visible": false,
+					"searchable":false
+				}
+			],
 		createdRow: function( row, data, dataIndex ) {
+			console.log(row);
+			console.log(dataIndex);
 			console.log(data);
-			if ( data[2] == "" ) {
+
+			if ( data[2] == "") {
+				console.log("stdName : "+data[2]);
 				$(row).css('background-color', '#FDFEFE');
 			}
 			else{
+				console.log("stdName : "+data[2]);
 				$(row).css('background-color', '#D5F5E3');
 			}
 		}
 	});
 }
+
+
+
 
 
 /**

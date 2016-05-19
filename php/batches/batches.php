@@ -31,7 +31,7 @@ echo'
 					<button type="button" class="btn btn-xs btn-info" id ="expender" style="width:100%"><i class="icon-list"></i> &nbsp; Expend experiment table </button>
 				</div>
 				<div id="datatable-wrapper">
-					<table id="expTable" class="table display table-striped table-bordered table-hover" style="width:100%">
+					<table id="expTable" class="table display table-bordered table-hover" style="width:100%">
 						<thead>
 							<tr>
 								<th>ID</th>
@@ -73,7 +73,7 @@ echo'
 						<div class="widget-content nopadding">
 							<div class="container-fluid">
 								<div class="responsive-table-line">
-									<table id="batchTable" class="table table-bordered table-condensed table-body-center table-striped cell-border row-border" style="width:100%">
+									<table id="batchTable" class="table table-bordered table-condensed table-body-center cell-border row-border" style="width:100%">
 										<thead>
 											<tr>
 												<th>#</th>
