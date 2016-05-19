@@ -24,7 +24,7 @@ echo'
 	<div class="span10">
 		<div class="widget-box" style="background : transparent">
 			<div class="widget-content nopadding">
-				<table class="table display table-bordered table-hover" id="expTable" width="100%">
+				<table class="table display table-striped table-bordered table-hover" id="expTable" width="100%">
 					<thead>
 						<tr>
 							<th>ID</th>

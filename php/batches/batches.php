@@ -73,7 +73,7 @@ echo'
 						<div class="widget-content nopadding">
 							<div class="container-fluid">
 								<div class="responsive-table-line">
-									<table id="batchTable" class="table table-bordered table-condensed table-body-center cell-border row-border" style="width:100%">
+									<table id="batchTable" class="table table-bordered table-striped table-condensed table-body-center cell-border row-border" style="width:100%">
 										<thead>
 											<tr>
 												<th>#</th>
@@ -531,7 +531,6 @@ function create_addBatch_modal() {
  * @param      {<type>}  tableID  { description }
  */
 function batchInsert(tableID){
-	showWaitModal();
 	var table=document.getElementById(tableID);
 	var boolOK = true;
 	var rawdatas = [];
@@ -567,6 +566,9 @@ function batchInsert(tableID){
 			type: "post",
 			data: { rawdatas : rawdatas, batchName : batchName.val(), batchLayout : batchLayout, expID : expID, batchNumber : batchNumber.val() },
 			dataType : 'text',
+			beforeSend: function(){
+				showWaitModal();
+			},
 			success: function(data) {
 				var obj = JSON.parse(data);
 				if(obj.status == 'success'){
@@ -580,10 +582,13 @@ function batchInsert(tableID){
 			error: function(xhr, status, error) {
 				$('addBatchTips').html('<div class="alert alert-error">Insertion Error : '+xhr.responseText+error+'<a href="#" data-dismiss="alert" class="close">×</a></div>');
 				alert(data);
+			},
+			complete: function(){
+				hideWaitModal();
 			}
 		});
 	}
-	hideWaitModal();
+
 }
 
 /**

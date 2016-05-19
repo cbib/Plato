@@ -59,7 +59,7 @@ echo'
 						<button type="button" class="btn btn-sm btn-info" id ="addRow" style="width:50%"><i class="icon-plus"></i> Add Single Row</button>
 						<button type="button" class="btn btn-sm btn-info" id ="addRows" style="width:50%"><i class="icon-plus"></i> Add Multiple Rows</button>
 					</div>
-					<table id="spl_alq_table" class="table display dt-right table-bordered">
+					<table id="spl_alq_table" class="table display table-striped dt-right table-bordered">
 						<thead>
 							<tr>
 								<th>splID</th>
