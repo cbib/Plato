@@ -519,6 +519,11 @@ $(document).on("click", "#addDataButton", function(e){
 });
 
 
+$(document).on("click", "ul > li > a", function(e){
+alert("woot");
+});
+
+
 	/* Listener on enzyme table */
 $(document).on( 'click', "#ezTable > tbody > tr >td ", function (e) {
 	if ($(this).index() != Object.keys(ezMap).length) {
@@ -634,6 +639,9 @@ function update(ezID, batchID, processDataMap, excludMap){
 		type: "post",
 		data: { procdatas : processDataMap, excludMap : excludMap, batchID : batchID, ezID : ezID, rawIDMap : rawIDMap },
 		dataType : 'text',
+		beforeSend: function(){
+			showWaitModal();
+		},
 		success: function(data) {
 			var obj = JSON.parse(data);
 			if(obj.status == 'success'){
@@ -649,6 +657,9 @@ function update(ezID, batchID, processDataMap, excludMap){
 			hideWaitModal();
 			$('statusSpan').html('<div class="alert alert-error">Insertion Error : '+xhr.responseText+error+'<a href="#" data-dismiss="alert" class="close">×</a></div>');
 			alert(data);
+		},
+		complete: function(){
+			hideWaitModal();
 		}
 	});
 }
@@ -695,7 +706,6 @@ function dataInsert(tableID, expID, batchID){
     	currentEzID=ezID
     }
 	//prend les données de la table pour les mettre dans un tableau a deux dimensions
-	showWaitModal();
 	for(var i=1; i<table.rows.length;i++){
 		for (var j=1; j <=12; j++){
 			//console.log(table.rows[i].cells[j].firstChild.value);
@@ -710,21 +720,25 @@ function dataInsert(tableID, expID, batchID){
 			type: "post",
 			data: { rawdatas : rawdatas, expID : expID, batchID : batchID, ezID : ezID },
 			dataType : 'text',
-			async : true,
+			//async : true,
+			beforeSend: function(){
+				showWaitModal();
+			},
 			success: function(data) {
 				var obj = jQuery.parseJSON(data);
 				if(obj.status == 'success'){
 					$('#statusSpan').html('<div class="alert alert-success">Insertion Successful<a href="#" data-dismiss="alert" class="close">×</a></div>');
-					hideWaitModal();
 					$('#addRawDataModal').empty();
 					$("#addRawDataModal").modal("hide");
 				}
 				else if( obj.status == 'error' ){
-					hideWaitModal();
 					$('#addDataTips').html('<div class="alert alert-error">'+obj.message+'<a href="#" data-dismiss="alert" class="close">×</a></div>');
 				}
 			},
 			error: function(xhr, status, error) {
+			},
+			complete: function(){
+				hideWaitModal();
 			}
 		});
 	}
@@ -997,7 +1011,7 @@ function makeMap(enzymeID) {
 					ezID = currentEzID;
 					enzymeID = ezID;
 				}
-				$( "p" ).html( "<b>Batch Infos</b> | Name : " + batchName + " | Enzyme : "+ezNameMap[ezID]);
+				$( "p" ).html( "<b>Batch Infos</b> | Name : " + batchName + " | Analyte : "+ezNameMap[ezID]);
 				$.ajax({
 			        url: "processing_get_rawData.php",
 			        type: "post",

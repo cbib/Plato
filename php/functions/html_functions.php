@@ -156,15 +156,15 @@ echo'
 					</div>
 				</div>
 			</div>
-		<script src="'.$path.'libs/themes/js/jquery.flot.min.js"></script>
-		<script src="'.$path.'libs/themes/js/jquery.flot.resize.min.js"></script>
-		<script src="'.$path.'libs/themes/js/jquery.peity.min.js"></script>
-		<script src="'.$path.'libs/themes/js/fullcalendar.min.js"></script>
-		<script src="'.$path.'libs/themes/js/delta.js"></script>
-		<script src="'.$path.'libs/js/highcharts.js"></script>
-		<script src="'.$path.'libs/js/highcharts-more.js"></script>
-		<script src="'.$path.'libs/js//solid-gauge.js"></script>
-		<script src="'.$path.'libs/js/exporting.js"></script>
+		<script type="text/javascript" src="'.$path.'libs/themes/js/jquery.flot.min.js"></script>
+		<script type="text/javascript" src="'.$path.'libs/themes/js/jquery.flot.resize.min.js"></script>
+		<script type="text/javascript" src="'.$path.'libs/themes/js/jquery.peity.min.js"></script>
+		<script type="text/javascript" src="'.$path.'libs/themes/js/fullcalendar.min.js"></script>
+		<script type="text/javascript" src="'.$path.'libs/themes/js/delta.js"></script>
+		<script type="text/javascript" src="'.$path.'libs/js/highcharts.js"></script>
+		<script type="text/javascript" src="'.$path.'libs/js/highcharts-more.js"></script>
+		<script type="text/javascript" src="'.$path.'libs/js//solid-gauge.js"></script>
+		<script type="text/javascript" src="'.$path.'libs/js/exporting.js"></script>
 	</body>
 </html>';
 }

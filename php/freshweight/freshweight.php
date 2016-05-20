@@ -10,9 +10,9 @@ html_header("../../",  $_SESSION['login']);
  * Editable top page allow to create button in the navbar
  * Dont forget to close the div when you use it
  */
-generic_html_top_page("../../","Freshweights");
-// echo '<a href="#" id="createExpButton" title="Declare a new Experiment" class="tip-bottom"><i class="icon-plus"></i>Add Materials</a>
-// </div>';
+editable_html_top_page("../../","Freshweights");
+echo '<a href="#" id="createExpButton" title="Declare a new Experiment" class="tip-bottom"><i class="icon-plus"></i>Add Experiment</a>
+</div>';
 
 /**
  * Use to display informations to the user
@@ -214,6 +214,9 @@ $(document).on("click", "#materialSubmit", function(e){
 		url: "insert_exp.php",
 		type: "post",
 		data: { expName : expName },
+		beforeSend: function(){
+				showWaitModal();
+		},
 		success: function(data) {
 			var obj = data;
 			if(obj.status == 'success'){
@@ -227,6 +230,9 @@ $(document).on("click", "#materialSubmit", function(e){
 		},
 		error: function(xhr, status, error) {
 			$('statusSpan').html('<div class="alert alert-error">Insertion Error : '+xhr.responseText+error+'<a href="#" data-dismiss="alert" class="close">×</a></div>');
+		},
+		complete: function(){
+			hideWaitModal();
 		}
 	}); 
 	setup_experiment_datatable();

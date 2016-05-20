@@ -6,7 +6,7 @@
 
 	$stdId="";
 	$stdName ="";
-	$expNameLinkToStd="";
+	//$expNameLinkToStd="";
 	$stdGenius ="";
 	$stdSpecies ="";
 	$stdGenotype ="";
@@ -21,7 +21,7 @@
 	}
 	if (isset($_POST['stdName'])) {
 		$stdName = $_POST['stdName'];
-		$expNameLinkToStd = $stdName."_exp";
+		//$expNameLinkToStd = $stdName."_exp";
 	}
 	if (isset($_POST['stdGenius'])) {
 		$stdGenius = $_POST['stdGenius'];
@@ -49,7 +49,7 @@
 
 		$queryStd = "INSERT INTO `standard`(`std_id`, `std_name`, `std_genius`, `std_species`, `std_genotype`, `std_nature`, `std_owner`, `std_comment`) 
 		VALUES ('', '$stdName', '$stdGenius', '$stdSpecies', '$stdGenotype', '$stdNature', '$stdOwner', '$stdComment');";
-		$queryExp = "INSERT INTO `experiment`(`exp_id`, `exp_name`) VALUES ('','$expNameLinkToStd');";
+		$queryExp = "INSERT INTO `experiment`(`exp_id`, `exp_name`) VALUES ('','$stdName');";
 
 
 		try {

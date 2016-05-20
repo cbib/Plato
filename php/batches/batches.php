@@ -305,6 +305,7 @@ $(document).ready(function() {
 $(document).bind("paste", '#col1', function(e){
 	console.log("paste !!");
 	if (e.originalEvent.target.id=="col1"){
+		showWaitModal();
 		var data = e.originalEvent.clipboardData.getData('Text');
 		data=chomp(data);
 		data = data.replace(/\r\n/g, '\n');
@@ -313,6 +314,7 @@ $(document).bind("paste", '#col1', function(e){
 	else {
 		console.log(e.originalEvent.srcElement.id);
 	}
+	hideWaitModal();
 });
 
 /**
@@ -601,7 +603,6 @@ function batchInsert(tableID){
 function batchEdition(batchID, tableID){
 	var table=document.getElementById(tableID);
 	var rawdatas = [];
-	showWaitModal();
 	/* Take data to make a 2D array */
 	for(var i=1; i<table.rows.length;i++){
 		for (var j=1; j <=12; j++){
@@ -614,6 +615,9 @@ function batchEdition(batchID, tableID){
 		type: "post",
 		data: { rawdatas : rawdatas, batchID : batchID },
 		dataType : 'text',
+		beforeSend: function(){
+			showWaitModal();
+		},
 		success: function(data) {
 			var obj = JSON.parse(data);
 			if(obj.status == 'success'){
@@ -622,11 +626,12 @@ function batchEdition(batchID, tableID){
 			else if(obj.status == 'error'){
 				$('#statusSpan').html('<div class="alert alert-error">'+obj.action+' Failure<a href="#" data-dismiss="alert" class="close">×</a></div>');
 			}
-			hideWaitModal();
 		},
 		error: function(xhr, status, error) {
 			$('statusSpan').html('<div class="alert alert-error">Insertion Error : '+xhr.responseText+error+'<a href="#" data-dismiss="alert" class="close">×</a></div>');
 			alert(data);
+		},
+		complete: function(){
 			hideWaitModal();
 		}
 	});
@@ -732,7 +737,6 @@ function setup_experiment_datatable(){
  * @param      {(number|string)}  data    { description }
  */
 function dispatchAddBatchDatas(data) {
-	showWaitModal();
 	var rowsDatas = data.split(/(?:\n)+/);
 	var dataLength = rowsDatas.length;
 	var newRowContent="";
@@ -862,7 +866,6 @@ function dispatchAddBatchDatas(data) {
 	}
 	$("#addBatchTable tbody").html(newRowContent);
 	$("#addBatchTable").css("fontSize", 11);
-	hideWaitModal();
 }
 
 /**

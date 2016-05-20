@@ -155,6 +155,7 @@ $(document).ready(function() {
 		$('#experiment-wrapper').show();
 	});
 
+
 	/* Listener on the button group */
 	$('#buttonGroup button').click(function() {
 		var selectedButton = $(this).attr('id')
@@ -278,6 +279,9 @@ function generate_data(expID, expName){
 		url: "export_get_exp_data.php",
 		type: "post",
 		data: { expID : expID, expName : expName},
+		beforeSend: function(){
+			showWaitModal();
+		},
 		success: function(data) {
 			if(data == ""){
 				alert("ERROR experience vide");
@@ -318,6 +322,9 @@ function generate_data(expID, expName){
 				/*  */
 				setup_rawtable_datatable(colDef, jsonArray);
 			}
+		},
+		complete: function(){
+			hideWaitModal();
 		}
 	});
 }
