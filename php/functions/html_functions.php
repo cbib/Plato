@@ -32,23 +32,7 @@ echo '
 			
 			<script type="text/javascript" src="'.$path.'libs/datatables/jQuery-2.1.4/jquery-2.1.4.min.js"></script>
 			<script type="text/javascript" src="'.$path.'libs/datatables/Bootstrap-3.3.5/js/bootstrap.min.js"></script>
-			<script type="text/javascript" src="'.$path.'libs/datatables/pdfmake-0.1.18/build/pdfmake.min.js"></script>
-			<script type="text/javascript" src="'.$path.'libs/datatables/pdfmake-0.1.18/build/vfs_fonts.js"></script>
-			<script type="text/javascript" src="'.$path.'libs/datatables/DataTables-1.10.10/js/jquery.dataTables.min.js"></script>
-			<script type="text/javascript" src="'.$path.'libs/datatables/DataTables-1.10.10/js/dataTables.bootstrap.min.js"></script>
-			<script type="text/javascript" src="'.$path.'libs/datatables/Buttons-1.1.0/js/dataTables.buttons.min.js"></script>
-			<script type="text/javascript" src="'.$path.'libs/datatables/Buttons-1.1.0/js/buttons.bootstrap.min.js"></script>
-			<script type="text/javascript" src="'.$path.'libs/datatables/Buttons-1.1.0/js/buttons.colVis.min.js"></script>
-			<script type="text/javascript" src="'.$path.'libs/datatables/Buttons-1.1.0/js/buttons.flash.min.js"></script>
-			<script type="text/javascript" src="'.$path.'libs/datatables/Buttons-1.1.0/js/buttons.html5.min.js"></script>
-			<script type="text/javascript" src="'.$path.'libs/datatables/Buttons-1.1.0/js/buttons.print.min.js"></script>
-			<script type="text/javascript" src="'.$path.'libs/datatables/Responsive-2.0.0/js/dataTables.responsive.min.js"></script>
-			<script type="text/javascript" src="'.$path.'libs/datatables/Responsive-2.0.0/js/responsive.bootstrap.min.js"></script>
-			<script type="text/javascript" src="'.$path.'libs/datatables/Scroller-1.4.0/js/dataTables.scroller.min.js"></script>
-			<script type="text/javascript" src="'.$path.'libs/datatables/Select-1.1.0/js/dataTables.select.min.js"></script>
 
-
-			
 
 	</head>
 	<body>
@@ -156,6 +140,20 @@ echo'
 					</div>
 				</div>
 			</div>
+			<script type="text/javascript" src="'.$path.'libs/datatables/pdfmake-0.1.18/build/pdfmake.min.js"></script>
+			<script type="text/javascript" src="'.$path.'libs/datatables/pdfmake-0.1.18/build/vfs_fonts.js"></script>
+			<script type="text/javascript" src="'.$path.'libs/datatables/DataTables-1.10.10/js/jquery.dataTables.min.js"></script>
+			<script type="text/javascript" src="'.$path.'libs/datatables/DataTables-1.10.10/js/dataTables.bootstrap.min.js"></script>
+			<script type="text/javascript" src="'.$path.'libs/datatables/Buttons-1.1.0/js/dataTables.buttons.min.js"></script>
+			<script type="text/javascript" src="'.$path.'libs/datatables/Buttons-1.1.0/js/buttons.bootstrap.min.js"></script>
+			<script type="text/javascript" src="'.$path.'libs/datatables/Buttons-1.1.0/js/buttons.colVis.min.js"></script>
+			<script type="text/javascript" src="'.$path.'libs/datatables/Buttons-1.1.0/js/buttons.flash.min.js"></script>
+			<script type="text/javascript" src="'.$path.'libs/datatables/Buttons-1.1.0/js/buttons.html5.min.js"></script>
+			<script type="text/javascript" src="'.$path.'libs/datatables/Buttons-1.1.0/js/buttons.print.min.js"></script>
+			<script type="text/javascript" src="'.$path.'libs/datatables/Responsive-2.0.0/js/dataTables.responsive.min.js"></script>
+			<script type="text/javascript" src="'.$path.'libs/datatables/Responsive-2.0.0/js/responsive.bootstrap.min.js"></script>
+			<script type="text/javascript" src="'.$path.'libs/datatables/Scroller-1.4.0/js/dataTables.scroller.min.js"></script>
+			<script type="text/javascript" src="'.$path.'libs/datatables/Select-1.1.0/js/dataTables.select.min.js"></script>
 		<script type="text/javascript" src="'.$path.'libs/themes/js/jquery.flot.min.js"></script>
 		<script type="text/javascript" src="'.$path.'libs/themes/js/jquery.flot.resize.min.js"></script>
 		<script type="text/javascript" src="'.$path.'libs/themes/js/jquery.peity.min.js"></script>

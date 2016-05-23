@@ -48,10 +48,10 @@ echo'
 								<div class="span4">
 									<ul class="site-stats">
 										<li><i class="icon-user"></i><strong><span id="user_compteur"></span></strong><small>Total Users</small></li>
-										<li><i class="icon-arrow-right"></i> <strong><span id="experiment_compteur"></span></strong> <small>Experiments</small></li>
-										<li><i class="icon-arrow-right"></i> <strong><span id="batch_compteur"></span></span></strong> <small>Batch</small></li>
+										<li><i class="icon-arrow-right"></i> <strong><span id="experiment_compteur"></span></strong><small>Experiments</small></li>
+										<li><i class="icon-arrow-right"></i> <strong><span id="batch_compteur"></span></span></strong><small>Batch</small></li>
 										<li><i class="icon-arrow-right"></i><strong><span id="sample_compteur"></span></strong><small>Samples</small></li>
-										<li><i class="icon-arrow-right"></i> <strong><span id="data_compteur"></span></strong> <small>Data entered</small></li>
+										<li><i class="icon-arrow-right"></i> <strong><span id="data_compteur"></span></strong> <small>Raw Data entered</small></li>
 									</ul>
 								</div>
 								<div class="span8">
@@ -71,7 +71,7 @@ echo'
 							<ul class="recent-posts">
 								<li>
 									<div class="user-thumb">
-										<img width="40" height="40" alt="User" src="libs/themes/images/avatar2.png">
+										<img alt="User" src="libs/themes/images/avatar2.png">
 									</div>
 									<div class="article-post">
 										<span class="user-info"> By : Labadmin</span>
