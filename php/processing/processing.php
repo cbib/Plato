@@ -412,6 +412,7 @@ html_footer("../../");
 	var ezMap = new Array();
 	var rawIDMap =  new Array();
 	var currentEzID=-1;
+	var OkToQuitPage="ok";
 
 	/* Create 2D arrays */
 	for (var i = 0; i < 10; i++) {
@@ -454,6 +455,24 @@ $(document).ready(function() {
 		});
 	});
 
+	/* Listener on batch selection */
+	$( "#selectBatch" ).click(function() {
+		batchID = $( "#selectBatch" ).val();
+		batchName = $("#selectBatch option:selected").text();
+		makeMap(-1);
+		if (split == "FULL"){
+			processDataMap=processMetabolites(rawDataMap, dataTypeMap, excludMap, split, processDataMap, activity, fwMap);
+		}
+		else if (split == "SPLIT"){
+			processDataMap= processEnzyme(rawDataMap, dataTypeMap, excludMap, split, processDataMap, activity, fwMap);
+		}
+		displayProcessData(processDataMap, dataTypeMap, excludMap, split);
+		displayRawData(rawDataMap, dataTypeMap, excludMap, split);
+		$( "button" ).filter( "#saveProcessedData" ).prop("disabled",true);
+		OkToQuitPage="ok";
+	});
+
+
 	/* If the user dblclick on a raw value, the processed data are re-calculated  */
 	$('#rawTable tbody').on( 'dblclick', 'td', function () {
 		myRowIndex = $(this).parent().find('td').html().trim();
@@ -475,24 +494,9 @@ $(document).ready(function() {
 		}
 		displayProcessData(processDataMap, dataTypeMap, excludMap, split);
 		$( "button" ).filter( "#saveProcessedData" ).prop("disabled",false);
+		OkToQuitPage="nope";
 	});
 
-
-
-	/* Listener on batch selection */
-	$( "#selectBatch" ).click(function() {
-		batchID = $( "#selectBatch" ).val();
-		batchName = $("#selectBatch option:selected").text();
-		makeMap(-1);
-		if (split == "FULL"){
-			processDataMap=processMetabolites(rawDataMap, dataTypeMap, excludMap, split, processDataMap, activity, fwMap);
-		}
-		else if (split == "SPLIT"){
-			processDataMap= processEnzyme(rawDataMap, dataTypeMap, excludMap, split, processDataMap, activity, fwMap);
-		}
-		displayProcessData(processDataMap, dataTypeMap, excludMap, split);
-		displayRawData(rawDataMap, dataTypeMap, excludMap, split);
-	});
 
 	/* Listener on the experiment table expander */
 	$( "#expender" ).click(function() {
@@ -519,9 +523,14 @@ $(document).on("click", "#addDataButton", function(e){
 });
 
 
-$(document).on("click", "ul > li > a", function(e){
-alert("woot");
-});
+
+	console.log(OkToQuitPage);
+	window.onbeforeunload = function(event) {
+		if (OkToQuitPage=="nope"){
+			event.returnValue = "Some changes are not saved";
+		}
+	};
+
 
 
 	/* Listener on enzyme table */
@@ -577,7 +586,7 @@ $(document).on("click", "#clearProcessedData", function(e){
 $(document).on("click", "#saveProcessedData", function(e){
 	update(currentEzID, batchID, processDataMap , excludMap);
 	$( "button" ).filter( "#saveProcessedData" ).prop("disabled",true);
-
+	OkToQuitPage="ok";
 });
 
 /**
