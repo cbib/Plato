@@ -582,7 +582,7 @@ function interBatchCentering(tableID){
 			.column( values.colIdx )
 			.data()
 			.each( function ( value, index ) {
-				var newValue = Math.round((value/ hashBatch[table.rows[index+1].cells[0].innerText][analytes].mean*values.meanOfMeans)*100)/100;
+				var newValue = Math.round((value/ hashBatch[table.rows[index+1].cells[0].innerText][analytes].mean*values.meanOfMeans)*1000)/1000;
 				dtable.cell( index, values.colIdx ).data( newValue );
 		})
 		.draw();

@@ -24,7 +24,7 @@ echo'
 	<div class="span10">
 		<div class="widget-box" style="background : transparent">
 			<div class="widget-content nopadding">
-				<table class="table display table-striped table-bordered table-hover" id="expTable" width="100%">
+				<table class="table display table-bordered table-hover" id="expTable" width="100%">
 					<thead>
 						<tr>
 							<th>ID</th>
@@ -151,7 +151,15 @@ function setup_experiment_datatable(){
 				"defaultContent": "<button type=\"button\" id=\"editButton\" class=\"tabledit-edit-button btn btn-info btn-sm btn-default\" style=\"float: none;\"> <span class=\"glyphicon glyphicon-pencil\"> </span> </button>"+
 				"&nbsp <button type= \"submit\" id=\"deleteButton\" class=\"tabledit-edit-button btn btn-danger btn-sm btn-default\" style=\"float: none;\"> <span class=\"glyphicon glyphicon-trash\"> </span> </button>"
 	        }
-        ]
+        ],
+        createdRow: function( row, data, dataIndex ) {
+			if ( data[2] == "undefinedStandard" ) {
+				$(row).css('background-color', '#FDFEFE');
+			}
+			else{
+				$(row).css('background-color', '#D5F5E3');
+			}
+		}
 	});
 }
 

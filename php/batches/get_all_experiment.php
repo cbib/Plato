@@ -30,7 +30,7 @@
 	    	if($value =="undefinedStandard"){
 	    		$value ="";
 	    	}
-	    	error_log($value);
+	    	//error_log($value);
 			$r[] = "$value";
 		}
 		$output['aaData'][] = $r;

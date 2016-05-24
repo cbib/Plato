@@ -298,6 +298,31 @@ $(document).ready(function() {
 
 });
 
+$(document).on("change", "#batchName" , function(e){
+	$.ajax({
+		url: "controlBatchNameAndNumber.php",
+		type: "post",
+		data: {batchName : $('#batchName').val()},
+		dataType : 'text',
+		success: function(data) {
+			var obj = JSON.parse(data);
+			if(obj.status == 'success'){
+				if(obj.value !=null){
+					$("#info-batchNumber").html(function(){
+						return "The last batch with this name has the number : "+obj.value; 
+						console.log("The last batch with this name has the number : "+obj.value);
+					});
+				}
+				else{
+					$("#info-batchNumber").html(function(){
+						return ""; 
+					});
+				}
+			}
+		}
+	});
+});
+
 
 /**
  * Get data paste on the first cell of the add data table
@@ -491,6 +516,7 @@ function create_addBatch_modal() {
 						'<div class="input-group">'+
 							'<input class="form-control name" type="text" placeholder="Batch Number" id="batchNumber" name="batchNumber" required="required" />'+
 							'<span  style="color:red" id="help-batchNumber"></span>'+
+							'<span  style="color:green" id="info-batchNumber"></span>'+
 						'</div><!-- /input-group -->'+
 					'</div><!-- /.col-lg-2 -->'+
 					'<div class="col-lg-1">'+

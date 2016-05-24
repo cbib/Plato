@@ -23,7 +23,7 @@ echo'
 					<button type="button" class="btn btn-xs btn-info" id ="expender" style="width:100%"><i class="icon-list"></i> &nbsp; Expend experiment table </button>
 				</div>
 				<div id="datatable-wrapper">
-					<table id="expTable" class="table display table-bordered table-hover" style="width:100%">
+					<table id="expTable" class="table display table-striped table-bordered table-hover" style="width:100%">
 						<thead>
 							<tr>
 								<th>ID</th>
@@ -47,7 +47,7 @@ echo'
 			</div>
 		</div>
 		<div id="select-ez-wrapper">
-			<h4> Select Enzyme </h4>
+			<h4> Select Data </h4>
 			<div class="form-group">
 				<select id="selectEz" class="form-control">';
 					echo '<option value=""> ----- Select ----- </option>';
@@ -121,7 +121,6 @@ $(document).ready(function() {
 		ezID = $( "#selectEz" ).val();
 		ezName = $( "#selectEz option:selected").text();
 		construct_delete_modal(ezName, ezID, expID, batchID, "remove");
-
 	});
 
 });
@@ -141,6 +140,7 @@ $(document).on("click", "#editSubmit", function(e){
 		},
 		success: function(data) {
 			console.log("ok");
+			$('#statusSpan').html('<div class="alert alert-success"> Deletion Successful<a href="#" data-dismiss="alert" class="close">×</a></div>');
 		}
 	});
 	$("#editRowModal").modal("hide");
