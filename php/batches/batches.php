@@ -7,7 +7,8 @@ html_header("../../",  $_SESSION['login']);
 
 editable_html_top_page("../../","Batches");
 
-echo '<a href="#" title="Declare a new Batch" class="tip-bottom" id="createAddBatchButton"><i class="icon-plus"></i>Create Batch</a>
+echo '	<a href="#" title="Declare a new Batch" class="tip-bottom" id="createAddBatchButton"><i class="icon-plus"></i>Create Batch</a>
+		<!--<a href="#" title="Show all batches" class="tip-bottom" id="displayBatchList"><i class="icon icon-th-list"></i>Display Batch list</a>-->
 </div>
 
 <div id="statusSpan">
@@ -17,6 +18,7 @@ echo'
 <!-- Modal -->
 <div class="modal fade" id="addBatchModal" tabindex="-1" role="dialog" aria-hidden="true">
 </div> 
+
 <div class="modal fade" id="waitModal" tabindex="1" role="dialog" aria-hidden="true">
 </div>
 <!-- /.modal -->
@@ -296,6 +298,10 @@ $(document).ready(function() {
 		create_addBatch_modal();
 	});
 
+	$("#displayBatchList").click(function(){
+		fullbatchTableSetup();
+	});
+
 });
 
 $(document).on("change", "#batchName" , function(e){
@@ -369,6 +375,7 @@ $(document).on("click", "#saveBatch", function(e){
 	batchEdition(currentBatchID, "batchTable");
 	makeBatchUnEditable();
 });
+
 
 /**
  * Reset the table in the modal of batch creation
@@ -449,6 +456,7 @@ function showWaitModal(){
 function hideWaitModal(){
 	$("#waitModal").modal("hide");
 }
+
 
 /**
  * create and show a modal window for batch creation
