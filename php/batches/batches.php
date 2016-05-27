@@ -589,6 +589,7 @@ function batchInsert(tableID){
 
 	/* Data insertion */
 	if(boolOK) {
+		$( "button" ).filter( "#addBatchSubmit" ).prop("disabled",true);
 		$.ajax({
 			url: "insert_batch.php",
 			type: "post",
