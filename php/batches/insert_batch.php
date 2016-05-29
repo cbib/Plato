@@ -28,7 +28,7 @@
 	if(isset($_POST['batchID'])){
 		$batchID = $_POST['batchID'];
 		$action ="edition";
-		error_log("EDITION");
+		//error_log("EDITION");
 	} 
 	else{ //creation
 		error_log("CREATION");
@@ -80,27 +80,27 @@
 			if ((preg_match("/^EB$/", $line)) || (preg_match("/^\?$/", $line))) {
 				$expID = get_experiment_id_from_name($line, $conn);
 				$spl_alq_id = 1;
-				error_log("EB : ".$line);
+				//error_log("EB : ".$line);
 			}
 			elseif (empty($line)){
 				$expID = "1";
 			}
 			else {
-				error_log("OTHERS : ".$line);
+				//error_log("OTHERS : ".$line);
 				$pos_exist = batch_pos_exist_in_db($line, $conn);
 				$spl_alq_id = get_sample_aliquot_id($line, $conn);
 				$expID = get_experiment_id_from_name($line, $conn);
-				error_log("EXPID = ".$expID);
+				//error_log("EXPID = ".$expID);
 			}
 			//if ($pos_exist!=0) { // if the sample and aliquot not exists
 			
 			if ($spl_alq_id == -1) {
-				error_log("No sample aliquot ID : ".$line);
+				//error_log("No sample aliquot ID : ".$line);
 				$status="error";
 			}
 			else {
 				if ($expID==""){
-					error_log("No Experiment ID found : ".$line);
+					//error_log("No Experiment ID found : ".$line);
 					$status="error";
 				}
 				else {
@@ -120,7 +120,7 @@
 				}
 			}
 			// else{
-			// 	error_log("No sample aliquot ID : ".$line);
+			 	error_log("No sample aliquot ID : ".$line);
 			// 	$status="error";
 			// }
 			$pos++;
@@ -190,7 +190,7 @@ function get_experiment_id_from_name($line, $conn){
 			`exp_name` REGEXP '^".$info[0]."$';
 		";
 	}
-	error_log($selectIdQuery);
+	//error_log($selectIdQuery);
 	$req = $conn->query($selectIdQuery)->fetchColumn();
 	//error_log("EXP ID  : ".$req);
 	return $req;
