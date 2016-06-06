@@ -233,7 +233,7 @@ function batchDataPrint(data, data2){
             }
         },
         tooltip: {
-            pointFormat: '{series.name} <b>{point.y:,.0f}</b>'
+            pointFormat: '{series.name} <b>{point.y/10:,.0f}</b>'
         },
         plotOptions: {
             area: {
