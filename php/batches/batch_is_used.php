@@ -65,10 +65,10 @@
 			$stmt->bindValue(':infos2', $infos[2], PDO::PARAM_INT);
 			$stmt->execute();
 
-			$sth->debugDumpParams();
+			$stmt->debugDumpParams();
 
 			$result = $stmt->fetchColumn();
-			if ($result > 0) {
+			if ($stmt->rowCount() > 0) {
 				$status="success";
 			}
 		}
