@@ -837,6 +837,7 @@ function dispatchAddBatchDatas(data) {
 	for (var i=0; i < dataLength; i++) {
 		var rowDatas = rowsDatas[i].split(/(?:\t)+/);
 		$('input:radio[name=layout]:nth(0)').attr('checked',true);
+		$('input:radio[name=layout]').attr('disabled',true);
 		if (rowDatas.length < 12) {
 			$('#addBatchTips').html('<div class="alert alert-error"> Row '+(i+1)+' is not correct <a href="#" data-dismiss="alert" class="close">×</a></div>');
 			boolOK =false;
@@ -878,6 +879,7 @@ function dispatchAddBatchDatas(data) {
 		for (var i=4; i < dataLength+4; i++) {
 			var rowDatas = rowsDatas[i-4].split(/(?:\t)+/);
 			$('input:radio[name=layout]:nth(1)').attr('checked',true);
+			$('input:radio[name=layout]').attr('disabled',true);
 			if (rowDatas.length < 12) {
 				$('#addBatchTips').html('<div class="alert alert-error"> Row '+i+' is not correct <a href="#" data-dismiss="alert" class="close">×</a></div>');
 				//return;
