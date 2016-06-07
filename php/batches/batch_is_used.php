@@ -67,7 +67,7 @@
 
 			error_log($stmt->debugDumpParams());
 
-			$result = $stmt->fetch();
+/*			$result = $stmt->fetch();*/
 			if ($stmt->rowCount() > 0) {
 				$status="success";
 			}
