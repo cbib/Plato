@@ -43,7 +43,7 @@
 			$status = "error";
 		}
 	}*/
-
+	else{
 		try 
 		{
 			$stmt = $conn->prepare("SELECT 
