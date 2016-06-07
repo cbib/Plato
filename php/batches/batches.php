@@ -791,12 +791,12 @@ function dispatchAddBatchDatas(data) {
 	/* Dont allow user to add incomplete rows */
 	if (dataLength == 4){
 		$('#addBatchTips').html('<div class="alert alert-success"> Batch Map process <a href="#" data-dismiss="alert" class="close">×</a></div>');
-		$("#split").prop("checked", true)
-		$("#input:radio").attr('disabled',true);
+		$("#input[name=split]").prop("checked", true)
+		$("#input[name='layout']:radio").attr('disabled',true);
 	}
 	else if (dataLength == 8 ) {
 		$('#addBatchTips').html('<div class="alert alert-success"> Batch Map process <a href="#" data-dismiss="alert" class="close">×</a></div>');
-		$("#full").prop("checked", true)
+		$("#input[name=full]").prop("checked", true)
 		$("#input:radio").attr('disabled',true);
 	}
 	else {
