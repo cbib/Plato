@@ -47,18 +47,18 @@
 		try 
 		{
 			$stmt = $conn->prepare("SELECT 
-			count(*) 
+				freshweight.fw_id
 			FROM
 			freshweight, freshweight_sample, sample, sample_aliquot, aliquot 
 			WHERE 
-			freshweight.fw_name like '%:infos0%' AND 
+			freshweight.fw_name like :infos0 AND 
 			freshweight_sample.fw_spl_freshweight_FK = freshweight.fw_id AND
 			sample.spl_id = freshweight_sample.fw_spl_sample_FK AND
 			sample_aliquot.spl_alq_sample_FK =sample.spl_id AND
 			sample.spl_number = :infos1 AND 
 			aliquot.alq_id = sample_aliquot.spl_alq_aliquot_FK AND
 			sample_aliquot.spl_alq_state like '%free%' AND
-			aliquot.alq_number = :infos2");
+			aliquot.alq_number = :infos2 ");
 
 			$stmt->bindParam(':infos0', $infos[0], PDO::PARAM_STR);
 			$stmt->bindParam(':infos1', $infos[1], PDO::PARAM_INT);
@@ -67,7 +67,7 @@
 
 			error_log($stmt->debugDumpParams());
 
-			$result = $stmt->fetchColumn();
+			$result = $stmt->fetch();
 			if ($stmt->rowCount() > 0) {
 				$status="success";
 			}
