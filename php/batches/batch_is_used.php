@@ -64,7 +64,7 @@
 			$stmt->bindParam(':infos2', $infos[2], PDO::PARAM_INT);
 			$stmt->execute();
 
-			$result = $sth->fetch(PDO::FETCH_ASSOC);
+			$result = $stmt->fetch(PDO::FETCH_ASSOC);
 /*			if ($stmt->rowCount() > 0) {
 				$status="success";
 			}*/
