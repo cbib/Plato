@@ -791,13 +791,9 @@ function dispatchAddBatchDatas(data) {
 	/* Dont allow user to add incomplete rows */
 	if (dataLength == 4){
 		$('#addBatchTips').html('<div class="alert alert-success"> Batch Map process <a href="#" data-dismiss="alert" class="close">×</a></div>');
-		$("#input[name=split]").prop("checked", true)
-		$("#input[name='layout']:radio").attr('disabled',true);
 	}
 	else if (dataLength == 8 ) {
 		$('#addBatchTips').html('<div class="alert alert-success"> Batch Map process <a href="#" data-dismiss="alert" class="close">×</a></div>');
-		$("#input[name=full]").prop("checked", true)
-		$("#input:radio").attr('disabled',true);
 	}
 	else {
 		$('#addBatchTips').html('<div class="alert alert-error"> Batch Size is not correct <a href="#" data-dismiss="alert" class="close">×</a></div>');
@@ -881,6 +877,7 @@ function dispatchAddBatchDatas(data) {
 		for (var i=4; i < dataLength+4; i++) {
 			var rowDatas = rowsDatas[i-4].split(/(?:\t)+/);
 			//console.log(rowDatas);
+			$( "radio" ).filter( "#split" ).prop("checked",true);
 			if (rowDatas.length < 12) {
 				$('#addBatchTips').html('<div class="alert alert-error"> Row '+i+' is not correct <a href="#" data-dismiss="alert" class="close">×</a></div>');
 				//return;
