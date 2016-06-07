@@ -789,10 +789,11 @@ function dispatchAddBatchDatas(data) {
 	var hashMap = new Object();
 	var boolOK = true;
 	/* Dont allow user to add incomplete rows */
-	if (dataLength == 4)
+	if (dataLength == 4){
 		$('#addBatchTips').html('<div class="alert alert-success"> Batch Map process <a href="#" data-dismiss="alert" class="close">×</a></div>');
 		$("#split").prop("checked", true)
 		$("#input:radio").attr('disabled',true);
+	}
 	else if (dataLength == 8 ) {
 		$('#addBatchTips').html('<div class="alert alert-success"> Batch Map process <a href="#" data-dismiss="alert" class="close">×</a></div>');
 		$("#full").prop("checked", true)
