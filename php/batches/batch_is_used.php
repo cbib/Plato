@@ -71,6 +71,7 @@
 			if ($stmt->rowCount() > 0) {
 				$status="success";
 			}
+			$conn->finish()
 		}
 		catch ( Exception $e ) {
 			error_log("failure est survenue lors de $query".$e->getMessage());
