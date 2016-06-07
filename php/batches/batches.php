@@ -599,7 +599,7 @@ function batchInsert(tableID){
     	$('#help-batchNumber').html("");
     }
 
-    if ((batchLayout == "split") && (table.rows.length>4)){
+    if ((batchLayout == "SPLIT") && (table.rows.length>4)){
 		$('#help-layout').html("Split must be <= 4 rows");
 		boolOK = false;
     } else {
@@ -789,8 +789,14 @@ function dispatchAddBatchDatas(data) {
 	var hashMap = new Object();
 	var boolOK = true;
 	/* Dont allow user to add incomplete rows */
-	if (dataLength == 4 || dataLength == 8 ) {
+	if (dataLength == 4)
 		$('#addBatchTips').html('<div class="alert alert-success"> Batch Map process <a href="#" data-dismiss="alert" class="close">×</a></div>');
+		$("#split").prop("checked", true)
+		$("#input:radio").attr('disabled',true);
+	else if (dataLength == 8 ) {
+		$('#addBatchTips').html('<div class="alert alert-success"> Batch Map process <a href="#" data-dismiss="alert" class="close">×</a></div>');
+		$("#full").prop("checked", true)
+		$("#input:radio").attr('disabled',true);
 	}
 	else {
 		$('#addBatchTips').html('<div class="alert alert-error"> Batch Size is not correct <a href="#" data-dismiss="alert" class="close">×</a></div>');
