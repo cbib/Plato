@@ -65,7 +65,7 @@
 			$stmt->bindParam(':infos2', $infos[2], PDO::PARAM_INT);
 			$stmt->execute();
 
-			error_log($stmt->debugDumpParams());
+			
 
 /*			$result = $stmt->fetch();*/
 			if ($stmt->rowCount() > 0) {
