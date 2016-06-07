@@ -60,9 +60,9 @@
 			sample_aliquot.spl_alq_state like '%free%' AND
 			aliquot.alq_number = :infos2");
 
-			$stmt->bindValue(':infos0', $infos[0], PDO::PARAM_STR);
-			$stmt->bindValue(':infos1', $infos[1], PDO::PARAM_INT);
-			$stmt->bindValue(':infos2', $infos[2], PDO::PARAM_INT);
+			$stmt->bindParam(':infos0', $infos[0], PDO::PARAM_STR);
+			$stmt->bindParam(':infos1', $infos[1], PDO::PARAM_INT);
+			$stmt->bindParam(':infos2', $infos[2], PDO::PARAM_INT);
 			$stmt->execute();
 
 			error_log($stmt->debugDumpParams());
