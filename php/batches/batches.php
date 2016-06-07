@@ -463,6 +463,7 @@ function hideWaitModal(){
  *
  * @method     create_addBatch_modal
  */
+    
 function create_addBatch_modal() {
 	var modal ='<div class="modal-dialog-addBatch">'+
 		'<div class="modal-content">'+
@@ -470,7 +471,7 @@ function create_addBatch_modal() {
 	    		'<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>'+
 	    		'<h4 class="modal-title">Create Batch</h4>'+
 	  		'</div>'+
-	  		'<div class="modal-body">'+
+	  		'<div class="modal-body" style="overflow-y:auto;">'+
 	  			'<span id="addBatchTips">'+
 	    			'<div class="alert alert-success"> Please paste all your data in the first field of the table <a href="#" data-dismiss="alert" class="close">×</a></div>'+
 	    		'</span>'+
@@ -926,7 +927,7 @@ function dispatchAddBatchDatas(data) {
  */
 function checkUse(line){
 	var retour;
-	//console.log(line);
+	console.log(line);
 	$.ajax({
 		url: "batch_is_used.php",
 		type: "post",
@@ -934,6 +935,7 @@ function checkUse(line){
 		async : false,
 		success: function(data) {
 			var obj = JSON.parse(data);
+			console.log(obj);
 			if(obj.result == 'free'){
 				retour=true;
 			}
