@@ -817,6 +817,7 @@ function dispatchAddBatchDatas(data) {
 	var min=96;
 	var minname="";
 	/* Find the standard name (minname), it's based on the fact that standards are less present than data of interest*/
+	console.log("hashmap length : "+Object.keys(hashMap).length);
 	if(Object.keys(hashMap).length >2 ){
 		console.log("to much standards");
 	}
