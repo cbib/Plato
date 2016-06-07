@@ -475,13 +475,13 @@ function construct_addAnalyte_modal(standardID){
 										for(var i = 0; i < data.length; i++) {
 											var line = data[i];
 											if(line.ez_is_enzyme == "Metabolite"){
-												modal += '<option  style="background: #039099; color:#FFF" value = "'+line.ez_id+'">'+line.ez_analyte+'</option>';
+												modal += '<option  style="background: #039099; color:#FFF" value = "'+line.ez_id+'">'+line.ez_analyte+' - '+line.ez_code+'</option>';
 											}
 											else if(line.ez_is_enzyme == "Enzyme"){
-												modal += '<option  style="background: #ccffe6;" value = "'+line.ez_id+'">'+line.ez_analyte+'</option>';
+												modal += '<option  style="background: #ccffe6;" value = "'+line.ez_id+'">'+line.ez_analyte+' - '+line.ez_code+'</option>';
 											}
 											else {
-												modal += '<option  style="background: #e6ffcc;" value = "'+line.ez_id+'">'+line.ez_analyte+'</option>';
+												modal += '<option  style="background: #e6ffcc;" value = "'+line.ez_id+'">'+line.ez_analyte+' - '+line.ez_code+'</option>';
 											}
 										}
 									},

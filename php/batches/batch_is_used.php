@@ -47,7 +47,7 @@
 		try 
 		{
 			$stmt = $conn->prepare("SELECT 
-				freshweight.fw_id
+				sample_aliquot.spl_alq_state
 			FROM
 			freshweight, freshweight_sample, sample, sample_aliquot, aliquot 
 			WHERE 
@@ -57,7 +57,6 @@
 			sample_aliquot.spl_alq_sample_FK =sample.spl_id AND
 			sample.spl_number = :infos1 AND 
 			aliquot.alq_id = sample_aliquot.spl_alq_aliquot_FK AND
-			sample_aliquot.spl_alq_state like '%free%' AND
 			aliquot.alq_number = :infos2 ");
 
 			$stmt->bindParam(':infos0', $infos[0], PDO::PARAM_STR);
@@ -65,17 +64,17 @@
 			$stmt->bindParam(':infos2', $infos[2], PDO::PARAM_INT);
 			$stmt->execute();
 
-			
-
-/*			$result = $stmt->fetch();*/
-			if ($stmt->rowCount() > 0) {
+			$result = $sth->fetch(PDO::FETCH_ASSOC);
+/*			if ($stmt->rowCount() > 0) {
 				$status="success";
-			}
+			}*/
+			$response_array['result']=$result;
 			
 		}
 		catch ( Exception $e ) {
 			error_log("failure est survenue lors de $query".$e->getMessage());
 			$status = "error";
+			$response_array['result']="null";
 		}
 	}
 

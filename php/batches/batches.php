@@ -541,7 +541,10 @@ function create_addBatch_modal() {
 								'<input type="radio" name="layout" id="split" value="SPLIT">'+
 								'Split'+
 							'</label>'+
+							'<span  style="color:red" id="help-layout"></span>'+
+							'<span  style="color:green" id="info-layout"></span>'+
 						'</div>'+
+
 					'</div><!-- /.col-lg-1 -->'+
 						'<span  style="color:red" id="help-layout"></span>'+
 					'</div><!-- /.col-lg-2 -->'+
@@ -593,6 +596,13 @@ function batchInsert(tableID){
 		boolOK = false;
     } else {
     	$('#help-batchNumber').html("");
+    }
+
+    if ((batchLayout == "split") && (table.rows.length>4)){
+		$('#help-layout').html("Split must be <= 4 rows");
+		boolOK = false;
+    } else {
+    	$('#help-layout').html("");
     }
 
 	/* Data insertion */
@@ -807,6 +817,9 @@ function dispatchAddBatchDatas(data) {
 	var min=96;
 	var minname="";
 	/* Find the standard name (minname), it's based on the fact that standards are less present than data of interest*/
+	if(Object.keys(hashMap).length >2 ){
+		console.log("to much standards");
+	}
 	for (var key in hashMap) {
 		if (hashMap[key]<min){
 			min = hashMap[key];
@@ -920,10 +933,10 @@ function checkUse(line){
 		async : false,
 		success: function(data) {
 			var obj = JSON.parse(data);
-			if(obj.status == 'success'){
+			if(obj.result == 'free'){
 				retour=true;
 			}
-			if(obj.status == 'error'){
+			if(obj.result == 'in use'){
 				retour =false;
 			}
 		},
