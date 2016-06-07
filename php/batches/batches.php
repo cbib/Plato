@@ -819,8 +819,9 @@ function dispatchAddBatchDatas(data) {
 	var minname="";
 	/* Find the standard name (minname), it's based on the fact that standards are less present than data of interest*/
 	console.log("hashmap length : "+Object.keys(hashMap).length);
-	if(Object.keys(hashMap).length >2 ){
-		console.log("to much standards");
+	if(Object.keys(hashMap).length > 2 ){
+		$('#addBatchTips').html('<div class="alert alert-error"> Only one control is allowed <a href="#" data-dismiss="alert" class="close">×</a></div>');
+		boolOK =false;
 	}
 	for (var key in hashMap) {
 		if (hashMap[key]<min){

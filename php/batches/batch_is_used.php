@@ -68,7 +68,8 @@
 /*			if ($stmt->rowCount() > 0) {
 				$status="success";
 			}*/
-			$response_array['result']=$result;
+			$status="success";
+			$response_array['result']=$result['spl_alq_state'];
 			
 		}
 		catch ( Exception $e ) {
