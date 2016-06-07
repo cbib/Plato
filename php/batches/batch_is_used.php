@@ -15,7 +15,7 @@
 	elseif($infos[0] =="?"){
 		$status="success";
 	}
-	else {
+	/*else {
 /*		$query = "
 		SELECT 
 		count(*) 
@@ -29,7 +29,7 @@
 		sample.spl_number = ".$infos[1]." AND 
 		aliquot.alq_id = sample_aliquot.spl_alq_aliquot_FK AND
 		sample_aliquot.spl_alq_state like '%free%' AND
-		aliquot.alq_number = ".$infos[2].";";*/
+		aliquot.alq_number = ".$infos[2].";";
 
 
 		try 
@@ -54,6 +54,35 @@
 			$stmt->execute();
 			$result = $stmt->fetchColumn();
 			if ($result > 0) {
+				$status="success";
+			}
+		}
+		catch ( Exception $e ) {
+			error_log("failure est survenue lors de $query".$e->getMessage());
+			$status = "error";
+		}
+	}*/
+
+	else {
+		$query = "
+		SELECT 
+		count(*) 
+		FROM
+		freshweight, freshweight_sample, sample, sample_aliquot, aliquot 
+		WHERE 
+		freshweight.fw_name like '%".$infos[0]."%' AND 
+		freshweight_sample.fw_spl_freshweight_FK = freshweight.fw_id AND
+		sample.spl_id = freshweight_sample.fw_spl_sample_FK AND
+		sample_aliquot.spl_alq_sample_FK =sample.spl_id AND
+		sample.spl_number = ".$infos[1]." AND 
+		aliquot.alq_id = sample_aliquot.spl_alq_aliquot_FK AND
+		sample_aliquot.spl_alq_state like '%free%' AND
+		aliquot.alq_number = ".$infos[2].";";
+		try 
+		{
+			$req = $conn->query($query)->fetchColumn();
+			error_log("COUNT : ".$req);
+			if ($req > 0) {
 				$status="success";
 			}
 		}
