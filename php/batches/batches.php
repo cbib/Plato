@@ -878,6 +878,7 @@ function dispatchAddBatchDatas(data) {
 		for (var i=4; i < dataLength+4; i++) {
 			var rowDatas = rowsDatas[i-4].split(/(?:\t)+/);
 			document.getElementById('split').checked
+			$('input:radio[name=split]').attr('checked', true);
 			if (rowDatas.length < 12) {
 				$('#addBatchTips').html('<div class="alert alert-error"> Row '+i+' is not correct <a href="#" data-dismiss="alert" class="close">×</a></div>');
 				//return;
@@ -888,29 +889,29 @@ function dispatchAddBatchDatas(data) {
 				'<td>'+ (i+1) +'</td>';
 				for (var j=0; j < rowDatas.length; j++){
 					var name=chomp(rowDatas[j]);
-					if(checkUse(name)==false){
+/*					if(checkUse(name)==false){
 						newRowContent += '<td><input style="background-color :#EB9018" class="form-control input-sm" type="text" id="1" value="'+name+'" ></td>';
 						boolOK =false;
 						$('#addBatchTips').html('<div class="alert alert-error"> Some freshweights are already used or not created <a href="#" data-dismiss="alert" class="close">×</a></div>');
+					}*/
+					//else{
+					if(name === "EB"){
+						newRowContent += '<td bgcolor="#A4A4A4"><input style="background-color :#BDE5F8" class="form-control input-sm" type="text" id="1" value="'+name+'" ></td>';
 					}
-					else{
-						if(name === "EB"){
-							newRowContent += '<td bgcolor="#A4A4A4"><input style="background-color :#BDE5F8" class="form-control input-sm" type="text" id="1" value="'+name+'" ></td>';
-						}
-						else if(name === "?"){
-							newRowContent += '<td bgcolor="#A4A4A4"><input style="background-color :#686868" class="form-control input-sm" type="text" id="1" value="'+name+'" ></td>';
-						}
-						else if(name.split('-')[0] === minname){
-							newRowContent += '<td bgcolor="#A4A4A4"><input style="background-color :#B7FFAF" class="form-control input-sm" type="text" id="1" value="'+name+'" ></td>';
-						}
-						else if (name ==""){
-							// console.log("void");
-							newRowContent += '<td><input style="background-color :#686868" class="form-control input-sm" type="text" id="1" value="?" ></td>';
-						}
-						else {
-							newRowContent += '<td bgcolor="#A4A4A4"><input  class="form-control input-sm" type="text" id="1" value="'+name+'" ></td>';
-						}
+					else if(name === "?"){
+						newRowContent += '<td bgcolor="#A4A4A4"><input style="background-color :#686868" class="form-control input-sm" type="text" id="1" value="'+name+'" ></td>';
 					}
+					else if(name.split('-')[0] === minname){
+						newRowContent += '<td bgcolor="#A4A4A4"><input style="background-color :#B7FFAF" class="form-control input-sm" type="text" id="1" value="'+name+'" ></td>';
+					}
+					else if (name ==""){
+						// console.log("void");
+						newRowContent += '<td><input style="background-color :#686868" class="form-control input-sm" type="text" id="1" value="?" ></td>';
+					}
+					else {
+						newRowContent += '<td bgcolor="#A4A4A4"><input  class="form-control input-sm" type="text" id="1" value="'+name+'" ></td>';
+					}
+					//}
 				}
 				newRowContent += '</tr>';
 		}
