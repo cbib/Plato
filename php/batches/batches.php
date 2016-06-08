@@ -463,6 +463,7 @@ function hideWaitModal(){
  *
  * @method     create_addBatch_modal
  */
+    
 function create_addBatch_modal() {
 	var modal ='<div class="modal-dialog-addBatch">'+
 		'<div class="modal-content">'+
@@ -470,7 +471,7 @@ function create_addBatch_modal() {
 	    		'<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>'+
 	    		'<h4 class="modal-title">Create Batch</h4>'+
 	  		'</div>'+
-	  		'<div class="modal-body">'+
+	  		'<div class="modal-body" style="overflow-y:auto;">'+
 	  			'<span id="addBatchTips">'+
 	    			'<div class="alert alert-success"> Please paste all your data in the first field of the table <a href="#" data-dismiss="alert" class="close">×</a></div>'+
 	    		'</span>'+
@@ -541,7 +542,10 @@ function create_addBatch_modal() {
 								'<input type="radio" name="layout" id="split" value="SPLIT">'+
 								'Split'+
 							'</label>'+
+							'<span  style="color:red" id="help-layout"></span>'+
+							'<span  style="color:green" id="info-layout"></span>'+
 						'</div>'+
+
 					'</div><!-- /.col-lg-1 -->'+
 						'<span  style="color:red" id="help-layout"></span>'+
 					'</div><!-- /.col-lg-2 -->'+
@@ -593,6 +597,13 @@ function batchInsert(tableID){
 		boolOK = false;
     } else {
     	$('#help-batchNumber').html("");
+    }
+
+    if ((batchLayout == "SPLIT") && (table.rows.length>4)){
+		$('#help-layout').html("Split must be <= 4 rows");
+		boolOK = false;
+    } else {
+    	$('#help-layout').html("");
     }
 
 	/* Data insertion */
@@ -778,7 +789,10 @@ function dispatchAddBatchDatas(data) {
 	var hashMap = new Object();
 	var boolOK = true;
 	/* Dont allow user to add incomplete rows */
-	if (dataLength == 4 || dataLength == 8 ) {
+	if (dataLength == 4){
+		$('#addBatchTips').html('<div class="alert alert-success"> Batch Map process <a href="#" data-dismiss="alert" class="close">×</a></div>');
+	}
+	else if (dataLength == 8 ) {
 		$('#addBatchTips').html('<div class="alert alert-success"> Batch Map process <a href="#" data-dismiss="alert" class="close">×</a></div>');
 	}
 	else {
@@ -807,6 +821,11 @@ function dispatchAddBatchDatas(data) {
 	var min=96;
 	var minname="";
 	/* Find the standard name (minname), it's based on the fact that standards are less present than data of interest*/
+	console.log("hashmap length : "+Object.keys(hashMap).length);
+	if(Object.keys(hashMap).length > 2 ){
+		$('#addBatchTips').html('<div class="alert alert-error"> Only one control is allowed <a href="#" data-dismiss="alert" class="close">×</a></div>');
+		boolOK =false;
+	}
 	for (var key in hashMap) {
 		if (hashMap[key]<min){
 			min = hashMap[key];
@@ -817,6 +836,8 @@ function dispatchAddBatchDatas(data) {
 	/* Controls on data */
 	for (var i=0; i < dataLength; i++) {
 		var rowDatas = rowsDatas[i].split(/(?:\t)+/);
+		$('input:radio[name=layout]:nth(0)').attr('checked',true);
+		$('input:radio[name=layout]').attr('disabled',true);
 		if (rowDatas.length < 12) {
 			$('#addBatchTips').html('<div class="alert alert-error"> Row '+(i+1)+' is not correct <a href="#" data-dismiss="alert" class="close">×</a></div>');
 			boolOK =false;
@@ -857,7 +878,8 @@ function dispatchAddBatchDatas(data) {
 	if(dataLength == 4){
 		for (var i=4; i < dataLength+4; i++) {
 			var rowDatas = rowsDatas[i-4].split(/(?:\t)+/);
-			//console.log(rowDatas);
+			$('input:radio[name=layout]:nth(1)').attr('checked',true);
+			$('input:radio[name=layout]').attr('disabled',true);
 			if (rowDatas.length < 12) {
 				$('#addBatchTips').html('<div class="alert alert-error"> Row '+i+' is not correct <a href="#" data-dismiss="alert" class="close">×</a></div>');
 				//return;
@@ -868,29 +890,29 @@ function dispatchAddBatchDatas(data) {
 				'<td>'+ (i+1) +'</td>';
 				for (var j=0; j < rowDatas.length; j++){
 					var name=chomp(rowDatas[j]);
-					if(checkUse(name)==false){
+/*					if(checkUse(name)==false){
 						newRowContent += '<td><input style="background-color :#EB9018" class="form-control input-sm" type="text" id="1" value="'+name+'" ></td>';
 						boolOK =false;
 						$('#addBatchTips').html('<div class="alert alert-error"> Some freshweights are already used or not created <a href="#" data-dismiss="alert" class="close">×</a></div>');
+					}*/
+					//else{
+					if(name === "EB"){
+						newRowContent += '<td bgcolor="#A4A4A4"><input style="background-color :#BDE5F8" class="form-control input-sm" type="text" id="1" value="'+name+'" ></td>';
 					}
-					else{
-						if(name === "EB"){
-							newRowContent += '<td bgcolor="#A4A4A4"><input style="background-color :#BDE5F8" class="form-control input-sm" type="text" id="1" value="'+name+'" ></td>';
-						}
-						else if(name === "?"){
-							newRowContent += '<td bgcolor="#A4A4A4"><input style="background-color :#686868" class="form-control input-sm" type="text" id="1" value="'+name+'" ></td>';
-						}
-						else if(name.split('-')[0] === minname){
-							newRowContent += '<td bgcolor="#A4A4A4"><input style="background-color :#B7FFAF" class="form-control input-sm" type="text" id="1" value="'+name+'" ></td>';
-						}
-						else if (name ==""){
-							// console.log("void");
-							newRowContent += '<td><input style="background-color :#686868" class="form-control input-sm" type="text" id="1" value="?" ></td>';
-						}
-						else {
-							newRowContent += '<td bgcolor="#A4A4A4"><input  class="form-control input-sm" type="text" id="1" value="'+name+'" ></td>';
-						}
+					else if(name === "?"){
+						newRowContent += '<td bgcolor="#A4A4A4"><input style="background-color :#686868" class="form-control input-sm" type="text" id="1" value="'+name+'" ></td>';
 					}
+					else if(name.split('-')[0] === minname){
+						newRowContent += '<td bgcolor="#A4A4A4"><input style="background-color :#B7FFAF" class="form-control input-sm" type="text" id="1" value="'+name+'" ></td>';
+					}
+					else if (name ==""){
+						// console.log("void");
+						newRowContent += '<td><input style="background-color :#686868" class="form-control input-sm" type="text" id="1" value="?" ></td>';
+					}
+					else {
+						newRowContent += '<td bgcolor="#A4A4A4"><input  class="form-control input-sm" type="text" id="1" value="'+name+'" ></td>';
+					}
+					//}
 				}
 				newRowContent += '</tr>';
 		}
@@ -912,7 +934,7 @@ function dispatchAddBatchDatas(data) {
  */
 function checkUse(line){
 	var retour;
-	//console.log(line);
+	console.log(line);
 	$.ajax({
 		url: "batch_is_used.php",
 		type: "post",
@@ -920,10 +942,11 @@ function checkUse(line){
 		async : false,
 		success: function(data) {
 			var obj = JSON.parse(data);
-			if(obj.status == 'success'){
+			console.log(obj);
+			if(obj.result == 'free'){
 				retour=true;
 			}
-			if(obj.status == 'error'){
+			if(obj.result == 'in use'){
 				retour =false;
 			}
 		},

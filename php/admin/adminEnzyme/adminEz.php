@@ -73,6 +73,7 @@ $(document).ready(function() {
 		var id = $("#id").val();
 		var analyte = $("#analyte").val();
 		var code = $("#code").val();
+		console.log(code);
 		var slope = $("#slope").val();
 		var nature = $("#nature").val();
 		var action = $("#action").val();
@@ -219,9 +220,9 @@ function construct_create_modal(data, action){
 							'<label class="control-label" for="number">Analyte Name</label>'+
 								'<input type="text" class="form-control required" id="analyte" name="analyte" placeholder="ex: Lactate" required="required" /><br>'+
 							'<label class="control-label" for="number">Code</label>'+
-								'<input type="text" class="form-control required" id="slope" name="slope" placeholder="ex: A08" required="required" /><br>'+
+								'<input type="text" class="form-control required" id="code" name="code" placeholder="ex: A08" required="required" /><br>'+
 							'<label class="control-label" for="number">Slope</label>'+
-								'<input type="text" class="form-control required" id="code" name="code" placeholder="ex : 1" required="required" /><br>'+
+								'<input type="text" class="form-control required" id="slope" name="slope" placeholder="ex : 1" required="required" /><br>'+
 							'<label class="control-label" for="number">Nature</label>'+
 							'<select id="nature" class="form-control">'+
 								'<option value="Metabolite">Metabolite</option>'+
