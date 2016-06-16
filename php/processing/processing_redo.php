@@ -505,10 +505,14 @@ window.onbeforeunload = function(event) {
 /* Listener on enzyme table */
 $(document).on( 'click', "#ezTable > tbody > tr >td ", function (e) {
 	if ($(this).index() != Object.keys(ezMap).length) {
-		myColIndex = $('#ezTable td').eq($(this).index()).html();
-		currentEzID = ezMap[myColIndex];
+		var dfd = $.Deferred();
+		dfd.done( myColIndex = $('#ezTable td').eq($(this).index()).html())
+			.done( currentEzID = ezMap[myColIndex])
+			.done(dfd.resolve())
+			.done(makeMap().done(launchProcessing(split).done(displayData())))
+
 		console.log("change current ez id :"+currentEzID);
-		makeMap().done(launchProcessing(split).done(displayData()));
+		// makeMap().done(launchProcessing(split).done(displayData()));
 		$("#ezTable > tbody > tr >td ").eq($(this).index()).css({'background-color':'green'}).siblings("td").css("background", "");
 	}
 });
@@ -554,19 +558,6 @@ $(document).on("click", "#rawDataSubmit", function(e){
 		.done(update())
 		.done(createEzTab)
 
-
-
-	// dataInsert("addrawDataValue", expID, batchID).done(
-	// 	makeMap().done(
-	// 		launchProcessing(split).done(
-	// 			displayData().done(
-	// 				update().done(
-	// 					createEzTab()
-	// 				)
-	// 			)
-	// 		)
-	// 	)
-	// )
 });
 
 
