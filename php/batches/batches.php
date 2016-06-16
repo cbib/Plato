@@ -599,12 +599,12 @@ function batchInsert(tableID){
     	$('#help-batchNumber').html("");
     }
 
-    if ((batchLayout == "SPLIT") && (table.rows.length>4)){
-		$('#help-layout').html("Split must be <= 4 rows");
-		boolOK = false;
-    } else {
-    	$('#help-layout').html("");
-    }
+  //   if ((batchLayout == "SPLIT") && (table.rows.length>4)){
+		// $('#help-layout').html("Split must be <= 4 rows");
+		// boolOK = false;
+  //   } else {
+  //   	$('#help-layout').html("");
+  //   }
 
 	/* Data insertion */
 	if(boolOK) {
