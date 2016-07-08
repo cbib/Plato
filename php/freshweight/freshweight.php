@@ -750,8 +750,8 @@ function resetModalTable (){
 						'<th>Sample</th>'+
 						'<th>Aliquot</th>'+
 						'<th>Value</th>'+
-						'<th>State</th>'+
 						'<th>Location</th>'+
+						'<th>State</th>'+
 					'</tr>'+
 				'</thead>'+
 				'<tbody>'+
@@ -759,8 +759,8 @@ function resetModalTable (){
 					'<td><input class="form-control input-sm" type="text" id="sampleNbAddRows" value="" placeholder="Paste all Data Here"></td>'+
 					'<td><input class="form-control input-sm" type="text" id="aliquotNbAddRows" value="" disabled></td>'+
 					'<td><input class="form-control input-sm" type="text" id="valueAddRows" value="" disabled></td>'+
-					'<td><input class="form-control input-sm" type="text" id="locationAddRows" value="free" disabled></td>'+
-					'<td><input class="form-control input-sm" type="text" id="stateAddRows" value="UndefLocation" disabled></td>'+
+					'<td><input class="form-control input-sm" type="text" id="locationAddRows" value="UndefLocation" disabled></td>'+
+					'<td><input class="form-control input-sm" type="text" id="stateAddRows" value="free" disabled></td>'+
 					'</tr>'+
 				'</tbody>';
 

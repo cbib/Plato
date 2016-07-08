@@ -584,6 +584,7 @@ function batchInsert(tableID){
 			rawdatas.push(table.rows[i].cells[j].firstChild.value);
 		}
 	}
+	console.log(rawdatas);
 	/* Controls on insert data */
     if((!batchName.val()) || ($.isNumeric(batchName.val()))) {
 		$('#help-batchName').html("Please add a correct Name");
@@ -935,25 +936,33 @@ function dispatchAddBatchDatas(data) {
 function checkUse(line){
 	var retour;
 	console.log(line);
-	$.ajax({
-		url: "batch_is_used.php",
-		type: "post",
-		data: {line : line},
-		async : false,
-		success: function(data) {
-			var obj = JSON.parse(data);
-			console.log(obj);
-			if(obj.result == 'free'){
-				retour=true;
+	if(line =="EB"){
+		retour = true;
+	}
+	else{
+		$.ajax({
+			url: "batch_is_used.php",
+			type: "post",
+			data: {line : line},
+			async : false,
+			success: function(data) {
+				var obj = JSON.parse(data);
+				console.log(obj);
+				if(obj.result == 'free'){
+					retour=true;
+				}
+				else{
+					retour =false;
+				}
+				// if(obj.result == 'in use'){
+				// 	retour =false;
+				// }
+			},
+			error: function(xhr, status, error) {
+				retour = false;
 			}
-			if(obj.result == 'in use'){
-				retour =false;
-			}
-		},
-		error: function(xhr, status, error) {
-			retour = false;
-		}
-	});
+		});
+	}
 	return retour;
 }
 

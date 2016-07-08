@@ -157,7 +157,10 @@ $(document).on("click", "#AnalyteSubmit", function(){
 	/* coma are not accepted for the database */
 	analyteValue = analyteValue.replace(/,/g, '.');
 	if((analyteValue =="") || ( ! $.isNumeric(analyteValue))) {
-		$('#help-inline').html("Please add a number");
+		$('#help-inline-value').html("Please add a number");
+	}
+	if(dilutionValue =="") {
+		$('#help-inline-volume').html("Please add a value");
 	}
 	else {
 	  	$.ajax({
@@ -513,11 +516,11 @@ function construct_addAnalyte_modal(standardID){
 								'<br/>'+
 								'<label class="control-label" for="analyteValue">Insert Value</label>'+
 								'<input class="form-control" value"" id="analyteValue" type="text" placeholder="Value" required="required">'+
-								'<span  style="color:red" id="help-inline"></span>'+
+								'<span  style="color:red" id="help-inline-value"></span>'+
 								'<br/>'+
 								'<label class="control-label" for="dilutionValue">Dilution or Volume value</label>'+
 								'<input class="form-control" value"" id="dilutionValue" type="text" placeholder="Value" required="required">'+
-								'<span  style="color:red" id="help-inline"></span>'+
+								'<span  style="color:red" id="help-inline-volume"></span>'+
 								'<br/>'+
 				            '</div>'+
 				        '</div>'+
