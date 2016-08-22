@@ -709,14 +709,53 @@ sub insert_freshweight {
 
 
 
+sub convertUTF8{
+	my $dbh = @_;
+	ALTER TABLE batch CONVERT TO CHARACTER SET utf8;
 
 
+	my @querys =(
+		"ALTER TABLE aliquot CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
+		"ALTER TABLE batch CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
+		"ALTER TABLE batch_data CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
+		"ALTER TABLE enzyme CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
+		"ALTER TABLE enzyme_protocol CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
+		"ALTER TABLE equation CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
+		"ALTER TABLE experiment CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
+		"ALTER TABLE experiment_freshweight CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
+		"ALTER TABLE experiment_standard CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
+		"ALTER TABLE freshweight CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
+		"ALTER TABLE freshweight_sample CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
+		"ALTER TABLE location CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
+		"ALTER TABLE processdata CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
+		"ALTER TABLE protocol CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
+		"ALTER TABLE raw_equ_proc CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
+		"ALTER TABLE rawdata CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
+		"ALTER TABLE sample CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
+		"ALTER TABLE sample_aliquot CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
+		"ALTER TABLE standard CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
+		"ALTER TABLE standard_enzyme CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
+		"ALTER TABLE unit CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
+		"ALTER TABLE user CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
+		"ALTER TABLE batch CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
+		"ALTER TABLE batch CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
+		"ALTER TABLE batch CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
+		"ALTER TABLE batch CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
+		"ALTER TABLE batch CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
+		"ALTER TABLE batch CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;"
+	);
 
+	my $i=0;
+	foreach my $line (@querys){
+		my $sth = $dbh->prepare($line);
+		$sth->execute or die "Can't Add record : $dbh->errstr";
+		$sth->finish;
+		$i++;
+	}
+	$sth->finish();
+	$dbh->disconnect();
 
-
-
-
-
+}
 
 
 

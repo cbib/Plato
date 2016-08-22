@@ -11,13 +11,11 @@ echo'
 </span>';
 
 echo'
-<!-- Modal -->
 <div class="modal fade" id="addRawDataModal" tabindex="-1" role="dialog" aria-hidden="true">
 </div>
 
 <div class="modal fade" id="waitModal" tabindex="1" role="dialog" aria-hidden="true">
 </div>
- <!-- /.modal -->
 ';
 
 echo'
@@ -59,7 +57,7 @@ echo'
 
 	echo'
 	<div class="row-fluid">
-		<div id="head-wrapper">
+		<div id="analyte-wrapper">
 			<h4>Analytes</h4>
 			<div id="ezTable">
 			</div>
@@ -76,7 +74,7 @@ echo'
 							<div class="responsive-table-line">
 								<h4>Raw Data </h4>
 								<p></p>
-									<table id="rawTable" class="table table-bordered table-condensed table-body-center" style="width:100%">
+									<table id="rawTable" class="table table-bordered table-condensed table-body-center" style="width:100%; background-color:white">
 										<thead>
 											<tr>
 												<th>#</th>
@@ -234,7 +232,7 @@ echo'
 										<div class="col-lg-6"> <h4>Processed Data </h4></div> 
 										<div class="col-lg-6" id="errorsInCtrl"></div>
 									</div>
-									<table id="processTable" class="table table-bordered table-condensed table-body-center" style="width:100%">
+									<table id="processTable" class="table table-bordered table-condensed table-body-center" style="width:100% background-color:white">
 										<thead>
 											<tr>
 												<th>#</th>
@@ -409,6 +407,7 @@ html_footer("../../");
 	var fwMap = new Array(12);
 	var split="";
 	var activity=-1;
+	var ezNameMap = new Array();
 	var ezMap = new Array();
 	var rawIDMap =  new Array();
 	var currentEzID=-1;
@@ -428,7 +427,7 @@ $(document).ready(function() {
 	$('#userPanel').removeClass('submenu');
 	$('#userPanel').addClass('submenu open');
 	$('#table-wrapper').hide();
-	$('#head-wrapper').hide();
+	$('#analyte-wrapper').hide();
 	$('#select-wrapper').hide();
 	$('#expender-wrapper').hide();
 
@@ -441,6 +440,7 @@ $(document).ready(function() {
 		$.ajax({
 			url: "processing_get_single_batch.php",
 			type: "post",
+			async : false,
 			data: { expID : expID },
 			success: function(data) {
 				var output = [];
@@ -455,44 +455,16 @@ $(document).ready(function() {
 		});
 	});
 
-	/* Listener on batch selection */
-	$( "#selectBatch" ).click(function() {
-		batchID = $( "#selectBatch" ).val();
-		batchName = $("#selectBatch option:selected").text();
-		makeMap(-1);
-		if (split == "FULL"){
-			processDataMap=processMetabolites(rawDataMap, dataTypeMap, excludMap, split, processDataMap, activity, fwMap);
-		}
-		else if (split == "SPLIT"){
-			processDataMap= processEnzyme(rawDataMap, dataTypeMap, excludMap, split, processDataMap, activity, fwMap);
-		}
-		displayProcessData(processDataMap, dataTypeMap, excludMap, split);
-		displayRawData(rawDataMap, dataTypeMap, excludMap, split);
-		$( "button" ).filter( "#saveProcessedData" ).prop("disabled",true);
-		OkToQuitPage="ok";
-	});
-
-
 	/* If the user dblclick on a raw value, the processed data are re-calculated  */
 	$('#rawTable tbody').on( 'dblclick', 'td', function () {
 		myRowIndex = $(this).parent().find('td').html().trim();
 		myColIndex = $('#rawTable thead tr th').eq($(this).index()).html().trim();
 		row=myRowIndex-1;
 		col=myColIndex-1;
-		//console.log("Row: " + (row) + "\nColumn: " + (col));
 		var exclud = (excludMap[row][col]==0) ? 1 : 0;
-		//console.log(exclud);
 		excludMap[row][col] = exclud;
-		//console.log(excludMap[row][col]);
-		displayRawData(rawDataMap, dataTypeMap, excludMap, split);
-		//console.log(split);
-		if (split == "FULL"){
-			processDataMap=processMetabolites(rawDataMap, dataTypeMap, excludMap, split, processDataMap, activity, fwMap);
-		}
-		else if (split == "SPLIT"){
-			processDataMap= processEnzyme(rawDataMap, dataTypeMap, excludMap, split, processDataMap, activity, fwMap);
-		}
-		displayProcessData(processDataMap, dataTypeMap, excludMap, split);
+		launchProcessing(split);
+		displayData();
 		$( "button" ).filter( "#saveProcessedData" ).prop("disabled",false);
 		OkToQuitPage="nope";
 	});
@@ -501,15 +473,16 @@ $(document).ready(function() {
 	/* Listener on the experiment table expander */
 	$( "#expender" ).click(function() {
 		$('#table-wrapper').hide();
-		$('#head-wrapper').hide();
+		$('#analyte-wrapper').hide();
 		$('#expender-wrapper').hide();
 		$('#datatable-wrapper').show();
 	});
 
-	$( "#addBatch" ).click(function() {
-		$('#addRawDataModal').text("for "+ expName);
-		$('#batchName').attr("placeholder",expName);
-	});
+	// $( "#addBatch" ).click(function() {
+	// 	$('#addRawDataModal').text("for "+ expName);
+	// 	$('#batchName').attr("placeholder",expName);
+	// });
+
 
 }); 
 // END OF DOCUMENT READY EVENTS
@@ -523,33 +496,36 @@ $(document).on("click", "#addDataButton", function(e){
 });
 
 
+window.onbeforeunload = function(event) {
+	if (OkToQuitPage=="nope"){
+		event.returnValue = "Some changes are not saved";
+	}
+};
 
-	console.log(OkToQuitPage);
-	window.onbeforeunload = function(event) {
-		if (OkToQuitPage=="nope"){
-			event.returnValue = "Some changes are not saved";
-		}
-	};
-
-
-	/* Listener on enzyme table */
+/* Listener on enzyme table */
 $(document).on( 'click', "#ezTable > tbody > tr >td ", function (e) {
+
+	// console.log("Compare this click index : ");
+	// console.log($(this).index());
+	// console.log("To length map : ");
+	// console.log(Object.keys(ezMap).length);
+	// console.log(ezMap);
+
 	if ($(this).index() != Object.keys(ezMap).length) {
 		myColIndex = $('#ezTable td').eq($(this).index()).html();
+		// console.log("colidx : "+myColIndex);
 		currentEzID = ezMap[myColIndex];
-		// makeMap(ezMap[myColIndex]);
-		makeMap(currentEzID);
-		//console.log(split);
-		if (split == "FULL"){
-			processDataMap=processMetabolites(rawDataMap, dataTypeMap, excludMap, split, processDataMap, activity, fwMap);
-		}
-		else if (split == "SPLIT"){
-			processDataMap= processEnzyme(rawDataMap, dataTypeMap, excludMap, split, processDataMap, activity, fwMap);
-		}
-		displayProcessData(processDataMap, dataTypeMap, excludMap, split);
-		displayRawData(rawDataMap, dataTypeMap, excludMap, split);
+		makeMap();
+		launchProcessing(split);
+		displayData();
+
+		// console.log("change current ez id :"+currentEzID);
+		// makeMap().done(launchProcessing(split).done(displayData()));
+		$("#ezTable > tbody > tr >td ").eq($(this).index()).css({'background-color':'green'}).siblings("td").css("background", "");
 	}
 });
+
+
 
 /* When data are pasted in the first cell of the modal */
 $(document).bind("paste", "#col1", function(e){
@@ -558,90 +534,16 @@ $(document).bind("paste", "#col1", function(e){
 	dispatchAddBatchDatas(data, dataTypeMap, excludMap);
 });
 
-$(document).on("click", "#rawDataSubmit", function(e){
-	// console.log("INSERT DATA");
-	// dataInsert("addrawDataValue", expID, batchID);
-	// console.log("Make Map");
-	// makeMap(currentEzID);
-	// if (split == "FULL"){
-	// 	console.log("Process data after insert :  metabolites");
-	// 	processDataMap=processMetabolites(rawDataMap, dataTypeMap, excludMap, split, processDataMap, activity, fwMap);
-	// }
-	// else if (split == "SPLIT"){
-	// 	console.log("Process data after insert :  enzymes");
-	// 	processDataMap= processEnzyme(rawDataMap, dataTypeMap, excludMap, split, processDataMap, activity, fwMap);
-	// }
-	// console.log("displayRawData");
-	// displayRawData(rawDataMap, dataTypeMap, excludMap, split);
-	// console.log("displayProcessData");
-	// displayProcessData(processDataMap, dataTypeMap, excludMap, split);
-	// console.log(processDataMap);
-	// console.log("update");
-	// update(currentEzID, batchID, processDataMap, excludMap)
-	// $("#addBatchModal").modal("hide");
 
-// On appel la fonction
-	rawdatasubmit( 
-		function(){
-			console.log("INSERT DATA");
-			dataInsert("addrawDataValue", expID, batchID);
-		},
-		function(){
-			console.log("Make Map");
-			makeMap(currentEzID);
-		},
-		function(){
-			console.log("SPLIIIIIIIIIIIIIIt : "+split);
-			if (split == "FULL"){
-				console.log("Process data after insert :  metabolites");
-				processDataMap=processMetabolites(rawDataMap, dataTypeMap, excludMap, split, processDataMap, activity, fwMap);
-				console.log(processDataMap);
-			}
-			if (split == "SPLIT"){
-				console.log("Process data after insert :  enzymes");
-				processDataMap= processEnzyme(rawDataMap, dataTypeMap, excludMap, split, processDataMap, activity, fwMap);
-			}
-		},
-		function(){
-			console.log("displayRawData");
-			displayRawData(rawDataMap, dataTypeMap, excludMap, split);
-
-			console.log("displayProcessData");
-			displayProcessData(processDataMap, dataTypeMap, excludMap, split);
-			console.log(processDataMap);
-		},
-		function(){
-			console.log("update");
-			update(currentEzID, batchID, processDataMap, excludMap)
-			$("#addBatchModal").modal("hide");
-		}
-	);
+$(document).on("click", "#selectBatch", function(e){
+	getBatchInfo();
+	currentEzID=-1;
+	createEzTab();
+	makeMap();
+	launchProcessing(split);
+	displayData();
+	// console.log(rawDataMap, dataTypeMap, excludMap);
 });
-
-
-function rawdatasubmit(onInsert, onMakeMap, onProcessData, onDisplay, onUpdate) {
-
-	if(onInsert) {
-		onInsert();
-	}
-
-	if(onMakeMap) {
-		onMakeMap();
-	}
-
-	if(onProcessData) {
-		onProcessData();
-	}
-
-	if(onDisplay) {
-		onDisplay();
-	}
-
-	if(onUpdate) {
-		onUpdate();
-	}
-}
-
 
 
 $(document).on("click", "#clearRawData", function(e){
@@ -653,10 +555,453 @@ $(document).on("click", "#clearProcessedData", function(e){
 });
 
 $(document).on("click", "#saveProcessedData", function(e){
-	update(currentEzID, batchID, processDataMap , excludMap);
+	update();
 	$( "button" ).filter( "#saveProcessedData" ).prop("disabled",true);
 	OkToQuitPage="ok";
 });
+
+
+$(document).on("click", "#rawDataSubmit", function(e){
+	showWaitModal();
+	dataInsert("addrawDataValue", expID, batchID);
+	createEzTab();
+	makeMap();
+	launchProcessing(split);
+	displayData();
+	update();
+	hideWaitModal();
+});
+
+
+
+
+/**
+ * Process data update (click on save under the process data table)
+ *
+ * @method     update
+ * @param      {<type>}  ezID            { description }
+ * @param      {<type>}  batchID         { description }
+ * @param      {<type>}  processDataMap  { description }
+ * @param      {<type>}  excludMap       { description }
+ */
+function update(){
+	console.log("current Ez ID for update of processdata : "+currentEzID);
+	console.log("BatchID update : "+batchID);
+	console.log("update processDataMap : ");
+	console.log(processDataMap);
+	$.ajax({
+		url: "save_edit.php",
+		type: "post",
+		data: { procdatas : processDataMap, excludMap : excludMap, batchID : batchID, ezID : currentEzID, rawIDMap : rawIDMap },
+		dataType : 'text',
+		async : false,
+		beforeSend: function(){
+			// showWaitModal();
+		},
+		success: function(data) {
+			var obj = JSON.parse(data);
+			if(obj.status == 'success'){
+				$('#statusSpan').html('<div class="alert alert-success">'+obj.action+' Successful<a href="#" data-dismiss="alert" class="close">×</a></div>');
+			}
+			else if(obj.status == 'error'){
+				$('#statusSpan').html('<div class="alert alert-error">'+obj.action+' Failure<a href="#" data-dismiss="alert" class="close">×</a></div>');
+			}
+		},
+		error: function(xhr, status, error) {
+			$('statusSpan').html('<div class="alert alert-error">Insertion Error : '+xhr.responseText+error+'<a href="#" data-dismiss="alert" class="close">×</a></div>');
+			alert(data);
+		},
+		complete: function(){
+			console.log("update complete");
+			// hideWaitModal();
+		}
+	});
+}
+
+/**
+ * Insert new raw values
+ *
+ * @method     dataInsert
+ * @param      {<type>}  tableID  { description }
+ * @param      {<type>}  expID    { description }
+ * @param      {<type>}  batchID  { description }
+ */
+function dataInsert(tableID, expID, batchID){
+	var rawdatas=tableToArray2D(tableID);
+	currentEzID = $('#selectAnalyte option:selected').val();
+	// console.log("Current Ez ID for rawdata insertion : "+currentEzID)
+	var table=document.getElementById(tableID);
+
+	// console.log("Insert ez : "+currentEzID);
+	$.ajax({
+		url: "insert_raw_data.php",
+		type: "post",
+		data: { rawdatas : rawdatas, expID : expID, batchID : batchID, ezID : currentEzID},
+		dataType : 'text',
+		async: false,
+		beforeSend: function(){
+			showWaitModal();
+		},
+		success: function(data) {
+			var obj = jQuery.parseJSON(data);
+			if(obj.status == 'success'){
+				$('#statusSpan').html('<div class="alert alert-success">Insertion Successful<a href="#" data-dismiss="alert" class="close">×</a></div>');
+				$('#addRawDataModal').empty();
+				$("#addRawDataModal").modal("hide");
+				// console.log("succes insert");
+			}
+			else if( obj.status == 'error' ){
+				$('#addDataTips').html('<div class="alert alert-error">'+obj.message+'<a href="#" data-dismiss="alert" class="close">×</a></div>');
+			}
+		},
+		error: function(xhr, status, error) {
+		},
+		complete: function(){
+			hideWaitModal();
+			console.log("insert complete");
+		}
+	});
+
+}
+
+function tableToArray2D(tableID){
+	var table=document.getElementById(tableID);
+	var rawdatas = [];
+	//prend les données de la table pour les mettre dans un tableau a deux dimensions
+	for(var i=1; i<table.rows.length;i++){
+		for (var j=1; j <=12; j++){
+			rawdatas.push(table.rows[i].cells[j].firstChild.value.replace(/,/g, '.'));
+		}
+	}
+	return rawdatas
+}
+
+
+/**
+ * make the map of the raw data
+ *
+ * @method     makeMap
+ * @param      {(number|string)}  enzymeID  { description }
+ */
+function makeMap() {
+	console.log("MakeMap ez id: "+currentEzID);
+	// console.log(ezNameMap);
+	$( "p" ).html( "<b>Batch Infos</b> | Name : " + batchName + " | Analyte : "+ezNameMap[currentEzID]);
+	$.ajax({
+        url: "processing_get_rawData.php",
+        type: "post",
+        async: false,
+        data: { batchID : batchID, ezID : currentEzID },
+		success: function(data) {
+			if(data=="error"){
+				console.log("Get raw data Error");
+			}
+			else{
+				console.log("Get raw data in makemap : ");
+				console.log(data);
+				var hashMap = new Object();
+				for(var i=0;i<data.length; i++){
+					hashMap[data[i].split('#')[1]]=0;
+				}
+				for(var i=0;i<data.length; i++){
+					hashMap[data[i].split('#')[1]]++;
+				}
+				delete hashMap["EB"];
+				delete hashMap["?"];
+				var min=96;
+				var minname="";
+				for (var key in hashMap) {
+					if (hashMap[key]<min){
+						min = hashMap[key];
+						minname=key;
+						$.ajax({
+							url: "get_activity.php",
+							type: "post",
+							data: { minname : minname, ezID : currentEzID },
+							async: false,
+							success: function(data) {
+								activity=data;
+							}
+						});
+					}
+				}
+
+				for(var i=0;i<data.length; i++){
+					var expName = data[i].split('#')[1];
+					var row = parseInt(data[i].split('#')[2]);
+					var col = parseInt(data[i].split('#')[3]);
+					var rawvalue = parseFloat(data[i].split('#')[4]);
+					var velocity = data[i].split('#')[5];
+					var enzymeID = parseInt(data[i].split('#')[6]);
+					var excluded = parseInt(data[i].split('#')[7]);
+					var rawDataID =  parseInt(data[i].split('#')[8]);
+					var layout =  data[i].split('#')[9];
+					split=layout;
+					var procValue =  data[i].split('#')[10] == "" ? "NA" : data[i].split('#')[10];
+					var fw = parseFloat(data[i].split('#')[11]);
+
+					if(velocity == "max"){
+						rawDataMap[row+4][col]=rawvalue;
+						excludMap[row+4][col]=excluded;
+						fwMap[row+4][col] = fw;
+						rawIDMap[row+4][col] = rawDataID;
+						if(expName === "EB"){
+							dataTypeMap[row+4][col] =  1;
+						}
+						else if(expName === "?"){
+							dataTypeMap[row+4][col] =  2;
+						}
+						else if(expName === minname){
+							dataTypeMap[row+4][col] =  3;
+						}
+						else {
+							dataTypeMap[row+4][col] =  0;
+						}
+					}
+					else {
+						rawDataMap[row][col]=rawvalue;
+						excludMap[row][col]=excluded;
+						fwMap[row][col] = fw;
+						rawIDMap[row][col] = rawDataID;
+						if(expName === "EB"){
+							dataTypeMap[row][col] =  1;
+						}
+						else if(expName === "?"){
+							dataTypeMap[row][col] =  2;
+						}
+						else if(expName === minname){
+							dataTypeMap[row][col] =  3;
+						}
+						else {
+							dataTypeMap[row][col] =  0;
+						}
+						// processDataMap[row][col]=procValue;
+					}
+					
+				}
+
+				if ((data.length != 0) || (typeof data != "undefined")){
+					// displayRawData(rawDataMap, dataTypeMap, excludMap, layout);
+					// displayProcessData(processDataMap, dataTypeMap, excludMap, layout);
+					$('#table-wrapper').show();
+					$('#head-wrapper').show();
+					$('#expender-wrapper').show();
+					$('#datatable-wrapper').hide();
+				}
+			}
+		}
+	});
+}
+
+/**
+ * Calculs for processing values
+ *
+ * @method     processMetabolites
+ * @param      {<type>}  rawDataMap      { description }
+ * @param      {<type>}  dataTypeMap     { description }
+ * @param      {<type>}  excludMap       { description }
+ * @param      {<type>}  layout          { description }
+ * @param      {<type>}  processDataMap  { description }
+ * @param      {number}  activity        { description }
+ * @param      {number}  fwMap           { description }
+ * @return     {<type>}  { description_of_the_return_value }
+ */
+function processMetabolites(){
+	/* Corrected_Val = (rawVal-AverageOf(buffer)) / frehsweight */
+	var TemprawDataMap = rawDataMap.slice(0, 8);
+	var averageOfBuffer = bufferAvg(TemprawDataMap, excludMap, dataTypeMap);
+	/* Corrected_Control         = AverageOf((control - AverageOf(buffer))/freshweight) */
+	var controlCorrected = correctedControlAvg(TemprawDataMap, excludMap, dataTypeMap, fwMap, averageOfBuffer);
+	for(var i=0;i<8; i++){
+		for(var j=0;j<12; j++){
+			if((excludMap[i][j]==0) && (dataTypeMap[i][j]!=1)) {
+				/* Final_Val   = ((Corrected_Val) / (Corrected_Control)) * Activation */
+				var correctedRawData = (TemprawDataMap[i][j]-averageOfBuffer)/fwMap[i][j];
+				correctedRawData = correctedRawData/controlCorrected;
+				correctedRawData = correctedRawData*activity;
+				processDataMap[i][j] = correctedRawData;
+				/* processDataMap[i][j]= (rawDataMap[i][j] - averageOfBuffer)/fwMap[i][j]; */
+			}
+		}
+	}
+}
+
+/**
+ * Process value for enzymes
+ *
+ * @method     processEnzyme
+ */
+function processEnzyme(){
+	/* Needed vars... */
+	var slopeRatio = 1.0;
+	var blankRawDataMap = rawDataMap.slice(0, 4);
+	var blankDataTypeMap = dataTypeMap.slice(0, 4);
+	var blankExcludMap = excludMap.slice(0, 4);
+	var blankFwMap = fwMap.slice(0, 4);
+	var maxRawDataMap = rawDataMap.slice(4, 8);
+	var maxDataTypeMap = dataTypeMap.slice(4, 8);
+	var maxExcludMap = excludMap.slice(4, 8);
+	var maxFwMap = fwMap.slice(4, 8);
+	var avgBlankBuffer = bufferAvg(blankRawDataMap, blankExcludMap, blankDataTypeMap);
+	var avgMaxBuffer = bufferAvg(maxRawDataMap, maxExcludMap, maxDataTypeMap);
+
+	/* Corrected_MAX_Control     = AverageOf((MAX_control - AverageOf(MAX_buffer))/freshweight/SloapRatio) */
+	var corrMaxControl = corrControlMaxAverage (maxRawDataMap, maxExcludMap, maxDataTypeMap, maxFwMap, avgMaxBuffer, slopeRatio);
+	/* Corrected_BLANK_Control   = AverageOf((BLANK_control - AverageOf(BLANK_buffer))/freshweight) */
+	var corrBlankControl = corrControlBlankAverage (blankRawDataMap, blankExcludMap, blankDataTypeMap, blankFwMap, avgBlankBuffer);
+
+	for(var i=0;i<4; i++){
+		for(var j=0;j<12; j++){
+			if((excludMap[i][j]==0) && (dataTypeMap[i][j]!=1)) {
+		        /*Corrected_BLANK_Val = (rawBLANK-AverageOf(BLANK_buffer)) / frehsweight */
+		        var corrBlankValue = blankRawDataMap[i][j]-avgBlankBuffer;
+		        corrBlankValue = corrBlankValue/blankFwMap[i][j];
+				/* Corrected_MAX_Val = ((rawMAX-AverageOf(BLANK_buffer) / SloapRatio) / frehsweight */
+				var corrMaxValue = maxRawDataMap[i][j]-avgMaxBuffer;
+				corrMaxValue = corrMaxValue/slopeRatio;
+				corrMaxValue = corrMaxValue/maxFwMap[i][j];
+				/* Final_Val  = ((Corrected_MAX_Val - Corrected_BLANK_Val) / (Corrected_MAX_Control - Corrected_BLANK_Control)) * Activation */
+				var procValue = ((corrMaxValue-corrBlankValue)/(corrMaxControl-corrBlankControl))*activity;
+				processDataMap[i][j]=procValue;
+			}
+		}
+	}
+}
+
+
+/**
+ * { function_description }
+ *
+ * @method     displayData
+ * @return     {<type>}  { description_of_the_return_value }
+ */
+function displayData(){
+	displayProcessData();
+	displayRawData();
+}
+
+/**
+ * { function_description }
+ *
+ * @method     launchProcessing
+ * @param      {string}  layout  { description }
+ * @return     {<type>}  { description_of_the_return_value }
+ */
+function launchProcessing(layout){
+	if (layout == "FULL"){
+		processMetabolites();
+	}
+	else if (layout == "SPLIT"){
+		processEnzyme();
+	}
+}
+
+/**
+ * { function_description }
+ *
+ * @method     getBatchInfo
+ * @return     {<type>}  { description_of_the_return_value }
+ */
+var getBatchInfo = function (){
+	batchID = $( "#selectBatch" ).val(); 
+	batchName = $("#selectBatch option:selected").text();
+
+}
+
+
+/**
+ * { function_description }
+ *
+ * @method     createEzTab
+ */
+function createEzTab(){
+	ezNameMap = new Array();
+	ezMap = new Array();
+	$.ajax({
+        url: "processing_get_enzymes.php",
+        type: "post",
+        async: false,
+        data: { batchID : batchID},
+		success: function(data) {
+			// console.log(data);
+			if ((data.length == 0) || (typeof data == "undefined")){
+				var content = '<table id="ezTable" class="table table-bordered table-condensed table-body-center" style="width:100%"><tr>';
+				content += '<td style="background-color:transparent" align="center">';
+				content += '<button type="button" id ="addDataButton" class="btn btn-sm btn-info"><i class="icon-plus"></i> Add Data</button>';
+				content += '</td>';
+				content += "</tr></table>";
+			}
+			else {
+				if(currentEzID == -1){
+					var content = '<table id="ezTable" class="table table-bordered table-condensed table-body-center" style="width:100%"><tr>';
+					content += '<td style="background-color:green">' + data[0].split('|||')[3] + '</td>';
+					ezNameMap[data[0].split('|||')[1]]=data[0].split('|||')[2];
+					ezMap[data[0].split('|||')[3]]=data[0].split('|||')[1];
+					for(i=1; i<data.length; i++){
+						content += '<td>' + data[i].split('|||')[3] + '</td>';
+						ezNameMap[data[i].split('|||')[1]]=data[i].split('|||')[2];
+						ezMap[data[i].split('|||')[3]]=data[i].split('|||')[1];
+					}
+					content += '<td style="background-color:transparent" align="center">';
+					content += '<button type="button" id ="addDataButton" class="btn btn-sm btn-info"><i class="icon-plus"></i> Add Data</button>';
+					content += '</td>';
+					content += '</tr>';
+					content += '</table>';
+					currentEzID = data[0].split('|||')[1];
+					// console.log("data ezymo");
+					// console.log(data);
+					// console.log("createEzTab ez id : "+currentEzID);
+				}
+				else{
+					var content = '<table id="ezTable" class="table table-bordered table-condensed table-body-center" style="width:100%"><tr>';
+					
+					for(i=0; i<data.length; i++){
+						if(data[i].split('|||')[1]==currentEzID){
+							// console.log ("trying to match : "+data[i].split('|||')[1]+" with current ez : "+currentEzID);
+							content += '<td style="background-color:green">' + data[0].split('|||')[3] + '</td>';
+						}
+						else{
+							// console.log ("trying to match : "+data[i].split('|||')[1]+" with current ez : "+currentEzID);
+							content += '<td>' + data[i].split('|||')[3] + '</td>';
+						}
+						
+						ezNameMap[data[i].split('|||')[1]]=data[i].split('|||')[2];
+						ezMap[data[i].split('|||')[3]]=data[i].split('|||')[1];
+					}
+					content += '<td style="background-color:transparent" align="center">';
+					content += '<button type="button" id ="addDataButton" class="btn btn-sm btn-info"><i class="icon-plus"></i> Add Data</button>';
+					content += '</td>';
+					content += '</tr>';
+					content += '</table>';
+					currentEzID = data[data.length-1].split('|||')[1];
+					// console.log("createEzTab ez id non -1 : "+currentEzID);
+				}
+			}
+
+			$('#ezTable').html(content);
+			$("#ezTable").css("fontSize", 11);
+			$('#analyte-wrapper').show();
+			$('#expender-wrapper').show();
+			$('#datatable-wrapper').hide();
+		}
+	});
+}
+
+/**
+ * Reset a table
+ *
+ * @method     resetTable
+ * @param      {string}  tableID  { description }
+ */
+function resetTable(tableID){
+	var table=document.getElementById(tableID);
+	for(var i=0;i<8; i++){
+		for(var j=0;j<12; j++){
+			$('#'+tableID).find('tr').eq(i+1).find('td').eq(j+1).text("").css('background-color', '');
+			$('#'+tableID).css("fontSize", 11);
+		}
+	}
+}
 
 /**
  * Show a progress bar
@@ -694,136 +1039,6 @@ function hideWaitModal(){
 }
 
 /**
- * Process data update (click on save under the process data table)
- *
- * @method     update
- * @param      {<type>}  ezID            { description }
- * @param      {<type>}  batchID         { description }
- * @param      {<type>}  processDataMap  { description }
- * @param      {<type>}  excludMap       { description }
- */
-function update(ezID, batchID, processDataMap, excludMap){
-	console.log("ezID Update : "+ezID);
-	console.log("BatchID update : "+batchID);
-	console.log("update processDataMap");
-	console.log(processDataMap);
-	console.log("update excludMap");
-	console.log(excludMap);
-	console.log("update rawIDMap");
-	console.log(rawIDMap);
-	showWaitModal();
-	$.ajax({
-		url: "save_edit.php",
-		type: "post",
-		data: { procdatas : processDataMap, excludMap : excludMap, batchID : batchID, ezID : ezID, rawIDMap : rawIDMap },
-		dataType : 'text',
-		beforeSend: function(){
-			showWaitModal();
-		},
-		success: function(data) {
-			var obj = JSON.parse(data);
-			if(obj.status == 'success'){
-				$('#statusSpan').html('<div class="alert alert-success">'+obj.action+' Successful<a href="#" data-dismiss="alert" class="close">×</a></div>');
-				hideWaitModal();
-			}
-			else if(obj.status == 'error'){
-				$('#statusSpan').html('<div class="alert alert-error">'+obj.action+' Failure<a href="#" data-dismiss="alert" class="close">×</a></div>');
-				hideWaitModal();
-			}
-		},
-		error: function(xhr, status, error) {
-			hideWaitModal();
-			$('statusSpan').html('<div class="alert alert-error">Insertion Error : '+xhr.responseText+error+'<a href="#" data-dismiss="alert" class="close">×</a></div>');
-			alert(data);
-		},
-		complete: function(){
-			hideWaitModal();
-		}
-	});
-}
-
-/**
- * Reset a table
- *
- * @method     resetTable
- * @param      {string}  tableID  { description }
- */
-function resetTable(tableID){
-	var table=document.getElementById(tableID);
-	for(var i=0;i<8; i++){
-		for(var j=0;j<12; j++){
-			$('#'+tableID).find('tr').eq(i+1).find('td').eq(j+1).text("").css('background-color', '');
-			$('#'+tableID).css("fontSize", 11);
-		}
-	}
-}
-
-/**
- * Insert new raw values
- *
- * @method     dataInsert
- * @param      {<type>}  tableID  { description }
- * @param      {<type>}  expID    { description }
- * @param      {<type>}  batchID  { description }
- */
-function dataInsert(tableID, expID, batchID){
-	//var rawdata = $('#addrawDataValue').val();
-	//var rawdatas = rawdata.split(/(?:\t|\n)+/);
-	var ezSelected = $('#selectAnalyte option:selected');
-	var table=document.getElementById(tableID);
-	var boolOK = true;
-	var rawdatas = [];
-	var ezID="";
-
-	if(! ezSelected.val()) {
-		$('#help-selectAnalyte').html("Please choose an analyte");
-		boolOK = false;
-	} else {
-		$('#help-selectAnalyte').html("");
-		ezID = ezSelected.val();
-		currentEzID=ezID
-	}
-	//prend les données de la table pour les mettre dans un tableau a deux dimensions
-	for(var i=1; i<table.rows.length;i++){
-		for (var j=1; j <=12; j++){
-			//console.log(table.rows[i].cells[j].firstChild.value);
-			var value = table.rows[i].cells[j].firstChild.value.replace(/,/g, '.');
-			rawdatas.push(value);
-		}
-	}
-	//console.log(rawdatas);
-	if(boolOK) {
-		$.ajax({
-			url: "insert_raw_data.php",
-			type: "post",
-			data: { rawdatas : rawdatas, expID : expID, batchID : batchID, ezID : ezID },
-			dataType : 'text',
-			//async : true,
-			beforeSend: function(){
-				showWaitModal();
-			},
-			success: function(data) {
-				var obj = jQuery.parseJSON(data);
-				if(obj.status == 'success'){
-					$('#statusSpan').html('<div class="alert alert-success">Insertion Successful<a href="#" data-dismiss="alert" class="close">×</a></div>');
-					$('#addRawDataModal').empty();
-					$("#addRawDataModal").modal("hide");
-				}
-				else if( obj.status == 'error' ){
-					$('#addDataTips').html('<div class="alert alert-error">'+obj.message+'<a href="#" data-dismiss="alert" class="close">×</a></div>');
-				}
-			},
-			error: function(xhr, status, error) {
-			},
-			complete: function(){
-				hideWaitModal();
-			}
-		});
-	}
-}
-
-
-/**
  * setup the table of experiments
  *
  * @method     setup_experiment_datatable
@@ -858,7 +1073,6 @@ function setup_experiment_datatable(){
 		}
 	});
 }
-
 
 /**
  * chomp a string
@@ -923,6 +1137,12 @@ function dispatchAddBatchDatas(data, dataTypeMap, excludMap) {
 	$("#addrawDataValue").css("fontSize", 11);
 }
 
+/**
+ * { function_description }
+ *
+ * @method     createSelectAnalyte
+ * @return     {string}  { description_of_the_return_value }
+ */
 function createSelectAnalyte(){
 	var modal ="";
 	$.ajax({
@@ -933,7 +1153,7 @@ function createSelectAnalyte(){
 			batchID : batchID
 		},
 		success: function(data) {
-			console.log(data);
+			// console.log(data);
 			for(var i = 0; i < data.length; i++) {
 				var line = data[i];
 					modal += '<option value="'+line.ez_id+'">'+line.ez_analyte+"&nbsp;&nbsp;"+line.ez_code+'</option>';
@@ -944,7 +1164,6 @@ function createSelectAnalyte(){
 	});
 	return modal;
 }
-
 
 /**
  * create modal for rawdata adding
@@ -1026,176 +1245,6 @@ function create_addRawData_modal(batchID){
 }
 
 /**
- * make the map of the raw data
- *
- * @method     makeMap
- * @param      {(number|string)}  enzymeID  { description }
- */
-function makeMap(enzymeID) {
-	console.log("enzymeID : "+enzymeID);
-	var ezID=0;
-	var ezNameMap=[];
-	$.ajax({
-        url: "processing_get_enzymes.php",
-        type: "post",
-        data: { batchID : batchID},
-		success: function(data) {
-			console.log(data);
-			if ((data.length == 0) || (typeof data == "undefined")){
-				console.log("table vide");
-				var content = '<table id="ezTable" class="table table-bordered table-condensed table-body-center" style="width:100%"><tr>';
-				content += '<td style="background-color:transparent" align="center">';
-				content += '<button type="button" id ="addDataButton" class="btn btn-sm btn-info"><i class="icon-plus"></i> Add Data</button>';
-				content += '</td>';
-				content += "</tr></table>";
-				$('#ezTable').html(content);
-				$("#ezTable").css("fontSize", 11);
-				$('#head-wrapper').show();
-				$('#expender-wrapper').show();
-				$('#datatable-wrapper').hide();
-			}
-			else {
-				var content = '<table id="ezTable" class="table table-bordered table-condensed table-body-center" style="width:100%"><tr>';
-				for(i=0; i<data.length; i++){
-					if(enzymeID != -1){
-						if(data[i].split('|||')[1]==enzymeID){
-							content += '<td style="background-color:green">' + data[i].split('|||')[3] + '</td>';
-						}
-						else {
-							content += '<td>' + data[i].split('|||')[3] + '</td>';
-						}
-					}
-					else{
-						content += '<td>' + data[i].split('|||')[3] + '</td>';
-					}
-				    ezMap[data[i].split('|||')[3]]=data[i].split('|||')[1];
-				    ezNameMap[data[i].split('|||')[1]]=data[i].split('|||')[2];
-				}
-				console.log(ezMap);
-
-				content += '<td style="background-color:transparent" align="center">';
-				content += '<button type="button" id ="addDataButton" class="btn btn-sm btn-info"><i class="icon-plus"></i> Add Data</button>';
-				content += '</td>';
-
-				content += "</tr></table>";
-				$('#ezTable').html(content);
-				$("#ezTable").css("fontSize", 11);
-
-				if(enzymeID == -1){
-					ezID = data[data.length-1].split('|||')[1];
-					$("#ezTable td:contains('" + data[data.length-1].split('|||')[3] + "')").css('background-color', 'green');
-				}
-				else {
-					ezID = currentEzID;
-					enzymeID = ezID;
-				}
-			}
-			$( "p" ).html( "<b>Batch Infos</b> | Name : " + batchName + " | Analyte : "+ezNameMap[ezID]);
-			$.ajax({
-		        url: "processing_get_rawData.php",
-		        type: "post",
-		        data: { batchID : batchID, ezID : ezID },
-				success: function(data) {
-					if(data=="error"){
-						console.log("Get raw data Error");
-					}
-					else{
-						var hashMap = new Object();
-						for(var i=0;i<data.length; i++){
-							hashMap[data[i].split('#')[1]]=0;
-						}
-						for(var i=0;i<data.length; i++){
-							hashMap[data[i].split('#')[1]]++;
-						}
-						delete hashMap["EB"];
-						delete hashMap["?"];
-						var min=96;
-						var minname="";
-						for (var key in hashMap) {
-							if (hashMap[key]<min){
-								min = hashMap[key];
-								minname=key;
-								$.ajax({
-									url: "get_activity.php",
-									type: "post",
-									data: { minname : minname, ezID : ezID },
-									success: function(data) {
-										activity=data;
-									}
-								});
-							}
-						}
-
-						for(var i=0;i<data.length; i++){
-							var expName = data[i].split('#')[1];
-							var row = parseInt(data[i].split('#')[2]);
-							var col = parseInt(data[i].split('#')[3]);
-							var rawvalue = parseFloat(data[i].split('#')[4]);
-							var velocity = data[i].split('#')[5];
-							var enzymeID = parseInt(data[i].split('#')[6]);
-							var excluded = parseInt(data[i].split('#')[7]);
-							var rawDataID =  parseInt(data[i].split('#')[8]);
-							var layout =  data[i].split('#')[9];
-							split=layout;
-							var procValue =  data[i].split('#')[10] == "" ? "NA" : data[i].split('#')[10];
-							var fw = parseFloat(data[i].split('#')[11]);
-
-							if(velocity == "max"){
-								rawDataMap[row+4][col]=rawvalue;
-								excludMap[row+4][col]=excluded;
-								fwMap[row+4][col] = fw;
-								rawIDMap[row+4][col] = rawDataID;
-								if(expName === "EB"){
-									dataTypeMap[row+4][col] =  1;
-								}
-								else if(expName === "?"){
-									dataTypeMap[row+4][col] =  2;
-								}
-								else if(expName === minname){
-									dataTypeMap[row+4][col] =  3;
-								}
-								else {
-									dataTypeMap[row+4][col] =  0;
-								}
-							}
-							else {
-								rawDataMap[row][col]=rawvalue;
-								excludMap[row][col]=excluded;
-								fwMap[row][col] = fw;
-								rawIDMap[row][col] = rawDataID;
-								if(expName === "EB"){
-									dataTypeMap[row][col] =  1;
-								}
-								else if(expName === "?"){
-									dataTypeMap[row][col] =  2;
-								}
-								else if(expName === minname){
-									dataTypeMap[row][col] =  3;
-								}
-								else {
-									dataTypeMap[row][col] =  0;
-								}
-								processDataMap[row][col]=procValue;
-							}
-							
-						}
-
-						if ((data.length != 0) || (typeof data != "undefined")){
-							displayRawData(rawDataMap, dataTypeMap, excludMap, layout);
-							displayProcessData(processDataMap, dataTypeMap, excludMap, layout);
-							$('#table-wrapper').show();
-							$('#head-wrapper').show();
-							$('#expender-wrapper').show();
-							$('#datatable-wrapper').hide();
-						}
-					}
-				}
-			});
-		}
-	});
-}
-
-/**
  * Display raw values
  *
  * @method     displayRawData
@@ -1204,7 +1253,7 @@ function makeMap(enzymeID) {
  * @param      {<type>}  excludMap    { description }
  * @param      {string}  layout       { description }
  */
-function displayRawData(rawDataMap, dataTypeMap, excludMap, layout) {
+function displayRawData() {
 
 	$("#rawTable tbody tr td").css('text-decoration', 'none');
 	$("#rawTable tbody tr td").css('background-color', '');
@@ -1229,7 +1278,7 @@ function displayRawData(rawDataMap, dataTypeMap, excludMap, layout) {
 			$("#rawTable").css("fontSize", 11);
 		}
 	}
-	if (layout==="SPLIT") {
+	if (split==="SPLIT") {
 		for(var i=4;i<8; i++){
 			for(var j=0;j<12; j++){
 				if(dataTypeMap[i][j] == 1){
@@ -1262,9 +1311,9 @@ function displayRawData(rawDataMap, dataTypeMap, excludMap, layout) {
  * @param      {<type>}  excludMap       { description }
  * @param      {string}  layout          { description }
  */
-function displayProcessData(processDataMap, dataTypeMap, excludMap, layout) {
-	// console.log("DISPLAY  : processdata");
-	// console.log(processDataMap);
+function displayProcessData() {
+	console.log("DISPLAY  : processdata");
+	console.log(processDataMap);
 	getStdDev(processDataMap, dataTypeMap, excludMap);
 	$("#processTable tbody tr td").css('text-decoration', 'none');
 	$("#processTable tbody tr td").css('background-color', '');
@@ -1280,7 +1329,7 @@ function displayProcessData(processDataMap, dataTypeMap, excludMap, layout) {
 				$('#processTable').find('tr').eq(i+1).find('td').eq(j+1).text("NA").css('background-color', '#BDE5F8');
 			}
 			else if(dataTypeMap[i][j] == 2){
-				console.log("i"+i+" : j"+j);
+				// console.log("i"+i+" : j"+j);
 				$('#processTable').find('tr').eq(i+1).find('td').eq(j+1).text("?").css('background-color', '#686868');
 			}
 			else if(dataTypeMap[i][j] == 3){
@@ -1295,7 +1344,7 @@ function displayProcessData(processDataMap, dataTypeMap, excludMap, layout) {
 			$("#processTable").css("fontSize", 11);
 		}
 	}
-	if (layout==="SPLIT") {
+	if (split==="SPLIT") {
 		for(var i=4;i<8; i++){
 			for(var j=0;j<12; j++){
 				$('#processTable').find('tr').eq(i+1).find('td').eq(j+1).text('').css('background-color', '#D7D7D7');
@@ -1306,40 +1355,6 @@ function displayProcessData(processDataMap, dataTypeMap, excludMap, layout) {
 			}
 		}
 	}
-}
-
-/**
- * Calculs for processing values
- *
- * @method     processMetabolites
- * @param      {<type>}  rawDataMap      { description }
- * @param      {<type>}  dataTypeMap     { description }
- * @param      {<type>}  excludMap       { description }
- * @param      {<type>}  layout          { description }
- * @param      {<type>}  processDataMap  { description }
- * @param      {number}  activity        { description }
- * @param      {number}  fwMap           { description }
- * @return     {<type>}  { description_of_the_return_value }
- */
-function processMetabolites(rawDataMap, dataTypeMap, excludMap, layout, processDataMap, activity, fwMap){
-	/* Corrected_Val = (rawVal-AverageOf(buffer)) / frehsweight */
-	var rawDataMap = rawDataMap.slice(0, 8);
-	var averageOfBuffer = bufferAvg(rawDataMap, excludMap, dataTypeMap);
-	/* Corrected_Control         = AverageOf((control - AverageOf(buffer))/freshweight) */
-	var controlCorrected = correctedControlAvg(rawDataMap, excludMap, dataTypeMap, fwMap, averageOfBuffer);
-	for(var i=0;i<8; i++){
-		for(var j=0;j<12; j++){
-			if((excludMap[i][j]==0) && (dataTypeMap[i][j]!=1)) {
-				/* Final_Val   = ((Corrected_Val) / (Corrected_Control)) * Activation */
-				var correctedRawData = (rawDataMap[i][j]-averageOfBuffer)/fwMap[i][j];
-				correctedRawData = correctedRawData/controlCorrected;
-				correctedRawData = correctedRawData*activity;
-				processDataMap[i][j] = correctedRawData;
-				/* processDataMap[i][j]= (rawDataMap[i][j] - averageOfBuffer)/fwMap[i][j]; */
-			}
-		}
-	}
-	return processDataMap;
 }
 
 /**
@@ -1367,44 +1382,6 @@ function getStdDev(processDataMap, dataTypeMap, excludMap){
 	if (isNaN(stdDev))
 		stdDev = isNaN(stdDev) ? "NA" : stdDev;
 	$('#errorsInCtrl').html("Errors in control : "+stdDev); 
-}
-
-function processEnzyme(rawDataMap, dataTypeMap, excludMap, layout, processDataMap, activity, fwMap){
-	/* Needed vars... */
-	var slopeRatio = 1.0;
-	var blankRawDataMap = rawDataMap.slice(0, 4);
-	var blankDataTypeMap = dataTypeMap.slice(0, 4);
-	var blankExcludMap = excludMap.slice(0, 4);
-	var blankFwMap = fwMap.slice(0, 4);
-	var maxRawDataMap = rawDataMap.slice(4, 8);
-	var maxDataTypeMap = dataTypeMap.slice(4, 8);
-	var maxExcludMap = excludMap.slice(4, 8);
-	var maxFwMap = fwMap.slice(4, 8);
-	var avgBlankBuffer = bufferAvg(blankRawDataMap, blankExcludMap, blankDataTypeMap);
-	var avgMaxBuffer = bufferAvg(maxRawDataMap, maxExcludMap, maxDataTypeMap);
-
-	/* Corrected_MAX_Control     = AverageOf((MAX_control - AverageOf(MAX_buffer))/freshweight/SloapRatio) */
-	var corrMaxControl = corrControlMaxAverage (maxRawDataMap, maxExcludMap, maxDataTypeMap, maxFwMap, avgMaxBuffer, slopeRatio);
-	/* Corrected_BLANK_Control   = AverageOf((BLANK_control - AverageOf(BLANK_buffer))/freshweight) */
-	var corrBlankControl = corrControlBlankAverage (blankRawDataMap, blankExcludMap, blankDataTypeMap, blankFwMap, avgBlankBuffer);
-
-	for(var i=0;i<4; i++){
-		for(var j=0;j<12; j++){
-			if((excludMap[i][j]==0) && (dataTypeMap[i][j]!=1)) {
-		        /*Corrected_BLANK_Val = (rawBLANK-AverageOf(BLANK_buffer)) / frehsweight */
-		        var corrBlankValue = blankRawDataMap[i][j]-avgBlankBuffer;
-		        corrBlankValue = corrBlankValue/blankFwMap[i][j];
-				/* Corrected_MAX_Val = ((rawMAX-AverageOf(BLANK_buffer) / SloapRatio) / frehsweight */
-				var corrMaxValue = maxRawDataMap[i][j]-avgMaxBuffer;
-				corrMaxValue = corrMaxValue/slopeRatio;
-				corrMaxValue = corrMaxValue/maxFwMap[i][j];
-				/* Final_Val  = ((Corrected_MAX_Val - Corrected_BLANK_Val) / (Corrected_MAX_Control - Corrected_BLANK_Control)) * Activation */
-				var procValue = ((corrMaxValue-corrBlankValue)/(corrMaxControl-corrBlankControl))*activity;
-				processDataMap[i][j]=procValue;
-			}
-		}
-	}
-	return processDataMap;
 }
 
 /**
@@ -1495,6 +1472,18 @@ function corrControlBlankAverage (rawDataMap, excludMap, dataTypeMap, fwMap, buf
 	return (somme/it);
 }
 
+/**
+ * { function_description }
+ *
+ * @method     corrControlMaxAverage
+ * @param      {number}  rawDataMap   { description }
+ * @param      {<type>}  excludMap    { description }
+ * @param      {<type>}  dataTypeMap  { description }
+ * @param      {number}  fwMap        { description }
+ * @param      {number}  buffAvg      { description }
+ * @param      {number}  slopeRatio   { description }
+ * @return     {number}  { description_of_the_return_value }
+ */
 function corrControlMaxAverage (rawDataMap, excludMap, dataTypeMap, fwMap, buffAvg, slopeRatio){
 	var somme=0;
 	var it =0;
@@ -1515,6 +1504,17 @@ function corrControlMaxAverage (rawDataMap, excludMap, dataTypeMap, fwMap, buffA
 	return (somme/it);
 }
 
+/**
+ * { function_description }
+ *
+ * @method     correctedControlAvg
+ * @param      {number}  rawDataMap   { description }
+ * @param      {<type>}  excludMap    { description }
+ * @param      {<type>}  dataTypeMap  { description }
+ * @param      {number}  fwMap        { description }
+ * @param      {number}  buffAvg      { description }
+ * @return     {number}  { description_of_the_return_value }
+ */
 function correctedControlAvg (rawDataMap, excludMap, dataTypeMap, fwMap, buffAvg){
 	var somme=0;
 	var it =0;
@@ -1534,6 +1534,15 @@ function correctedControlAvg (rawDataMap, excludMap, dataTypeMap, fwMap, buffAvg
 	return (somme/it);
 }
 
+/**
+ * { function_description }
+ *
+ * @method     bufferAvg
+ * @param      {number}  rawDataMap   { description }
+ * @param      {<type>}  excludMap    { description }
+ * @param      {<type>}  dataTypeMap  { description }
+ * @return     {number}  { description_of_the_return_value }
+ */
 function bufferAvg(rawDataMap, excludMap, dataTypeMap){
 	var somme=0;
 	var it =0;

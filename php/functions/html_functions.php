@@ -33,7 +33,6 @@ echo '
 			<script type="text/javascript" src="'.$path.'libs/datatables/jQuery-2.1.4/jquery-2.1.4.min.js"></script>
 			<script type="text/javascript" src="'.$path.'libs/datatables/Bootstrap-3.3.5/js/bootstrap.min.js"></script>
 
-
 	</head>
 	<body>
 		<br>
@@ -43,13 +42,14 @@ echo '
 			<ul>
 				<li class="active"><a href="'.$path.'index.php"><i class="icon icon-home"></i> <span>Dashboard</span></a></li>
 				<li class="submenu" id="userPanel">
-					<a href="#"><i class="icon icon-th-list"></i> <span>Database</span> <span class="label">5</span></a>
+					<a href="#"><i class="icon icon-th-list"></i> <span>Database</span> <span class="label">6</span></a>
 					<ul>
 						<li><a href="'.$path.'php/standard/standards.php">Standards</a></li>
 						<li><a href="'.$path.'php/freshweight/freshweight.php">Freshweight</a></li>
 						<li><a href="'.$path.'php/batches/batches.php">Batches</a></li>
 						<li><a href="'.$path.'php/processing/processing.php">Raw Data Processing</a></li>
 						<li><a href="'.$path.'php/export/export.php">Export</a></li>
+						<li><a href="'.$path.'php/analytes/analytes.php">Analytes list</a></li>
 					</ul>
 				</li>';
 				if ($userLevel == "admin"){

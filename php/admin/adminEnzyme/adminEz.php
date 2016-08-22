@@ -126,7 +126,6 @@ function setup_datatable(){
 	var table = $('#enzyme').DataTable({
 		scrollY:        500,
         scroller:       true,
-		responsive: true,
 		dom: 'TB<"clear">frtip',
 		ajax: 'adminEz_database_functions.php',
 		buttons: [

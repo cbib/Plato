@@ -312,6 +312,7 @@ CREATE TABLE IF NOT EXISTS `standard_enzyme` (
   `std_ez_standard_FK` int(10) NOT NULL,
   `std_ez_value` float NOT NULL,
   `std_ez_enzyme_FK` int(5) NOT NULL,
+  `std_ez_dilution`  varchar(99) DEFAULT NULL,
   PRIMARY KEY (`std_ez_id`),
   KEY `std_ez_unit_FK` (`std_ez_unit_FK`),
   KEY `std_ez_standard_FK` (`std_ez_standard_FK`),

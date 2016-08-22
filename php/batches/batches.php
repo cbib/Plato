@@ -95,7 +95,7 @@ echo'
 										</thead>
 										<tbody>
 											<tr>
-												<td data-title="Droit">1</td>
+												<td data-title="Droit">A</td>
 												<td></td>
 									            <td></td>
 									            <td></td>
@@ -110,7 +110,7 @@ echo'
 									            <td></td>
 											</tr>
 											<tr>
-												<td data-title="Droit">2</td>
+												<td data-title="Droit">B</td>
 												<td></td>
 									            <td></td>
 									            <td></td>
@@ -125,7 +125,7 @@ echo'
 									            <td></td>
 											</tr>
 											<tr>
-												<td data-title="Droit">3</td>
+												<td data-title="Droit">C</td>
 												<td></td>
 									            <td></td>
 									            <td></td>
@@ -140,7 +140,7 @@ echo'
 									            <td></td>
 											</tr>
 											<tr>
-												<td data-title="Droit">4</td>
+												<td data-title="Droit">D</td>
 												<td></td>
 									            <td></td>
 									            <td></td>
@@ -155,7 +155,7 @@ echo'
 									            <td></td>
 											</tr>
 											<tr>
-												<td data-title="Droit">5</td>
+												<td data-title="Droit">E</td>
 												<td></td>
 									            <td></td>
 									            <td></td>
@@ -170,7 +170,7 @@ echo'
 									            <td></td>
 											</tr>
 											<tr>
-												<td data-title="Droit">6</td>
+												<td data-title="Droit">F</td>
 												<td></td>
 									            <td></td>
 									            <td></td>
@@ -185,7 +185,7 @@ echo'
 									            <td></td>
 											</tr>
 											<tr>
-												<td data-title="Droit">7</td>
+												<td data-title="Droit">G</td>
 												<td></td>
 									            <td></td>
 									            <td></td>
@@ -200,7 +200,7 @@ echo'
 									            <td></td>
 											</tr>
 											<tr>
-												<td data-title="Droit">8</td>
+												<td data-title="Droit">H</td>
 												<td></td>
 												<td></td>
 												<td></td>
@@ -812,6 +812,7 @@ function dispatchAddBatchDatas(data) {
 		var rowDatas = rowsDatas[i].split(/(?:\t)+/);
 		for (var j=0; j < rowDatas.length; j++){
 			var name=rowDatas[j];
+			
 			hashMap[name.split('-')[0]]++;
 		}
 	}
@@ -939,6 +940,9 @@ function checkUse(line){
 	if(line =="EB"){
 		retour = true;
 	}
+	else if (line =="?"){
+		retour = true;
+	}
 	else{
 		$.ajax({
 			url: "batch_is_used.php",
@@ -954,9 +958,6 @@ function checkUse(line){
 				else{
 					retour =false;
 				}
-				// if(obj.result == 'in use'){
-				// 	retour =false;
-				// }
 			},
 			error: function(xhr, status, error) {
 				retour = false;
