@@ -21,7 +21,7 @@ use Carp;
 use export_db;
 
 ####### Global vars #######
-our $dbh = local_db_connector();
+our $dbh = export_db::local_db_connector();
 
 
 my @querys =(
@@ -81,12 +81,11 @@ my @querys =(
 my $i=0;
 foreach my $line (@querys){
 	my $sth = $dbh->prepare($line);
-	$sth->execute or die "Can't Add record : $lconn->errstr";
+	$sth->execute or die "Can't Add record : $dbh->errstr";
 	$sth->finish;
 	$i++;
 	print STDERR "$i/".$#querys."\r";
 }
-$sth->finish();
 $dbh->disconnect();
 
 print STDERR "Reset complete.\n";

@@ -1,5 +1,5 @@
 <?php
-	require('../functions/check_login_admin.php');
+	require('../functions/check_login.php');
 	include '../functions/php_functions.php';
 
 	$conn = get_connexion();

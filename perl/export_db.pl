@@ -180,10 +180,15 @@ export_db::insert_data($lconn, $rconn, \%batches, \%linkBatches, \%linkSampleAli
 print STDERR "after data";
 print STDERR`date`;
 
+
 print STDERR "Converting utf8";
 export_db::convertUTF8($lconn);
 print STDERR "End Converting";
 print STDERR "End of full process";
+
+
+
+
 
 
 

@@ -33,6 +33,7 @@ $(document).ready(function() {
 			fonction:'sizeOfDb',
 		},
 		success: function (dataSize) {
+            console.log(dataSize);
 			printSize(parseInt(dataSize["plato_export_02052016"]));
 		}
 	});

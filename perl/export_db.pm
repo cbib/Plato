@@ -10,11 +10,11 @@ use Data::Dumper;
 
 #-------------------------------------------------------------remote connection (to plato)
 sub remote_db_connector{
-	# Paramètres de connection à la base de données distante (plato)
-	my $bd		= 'platodbname';
-	my $serveur	= 'serverIP/name';	  # Il est possible de mettre une adresse IP
-	my $identifiant = 'user';	  # identifiant 
-	my $motdepasse	= 'pwd';
+	# Paramètres de connection à la base de données
+	my $bd		= 'PlatoDB';
+	my $serveur	= '147.100.103.188';	  # Il est possible de mettre une adresse IP
+	my $identifiant = 'labdesigner';	  # identifiant 
+	my $motdepasse	= 'glucose';
 	my $port	= '1433';
 	my $dsn="dbi:ODBC:DSN=plato";
 	print "Connexion à la base de données $bd\n";
@@ -30,10 +30,10 @@ sub remote_db_connector{
 #--------------------------------------------------------------- local connection (to new db)
 sub local_db_connector{
 	# Paramètres de connection à la base de données
-	my $bd		= 'platolocaldbname';
+	my $bd		= 'plato_export_21082016';
 	my $serveur	= '127.0.0.1';	  # Il est possible de mettre une adresse IP
-	my $identifiant = 'id';	  # identifiant 
-	my $motdepasse	= 'pwd';
+	my $identifiant = 'root';	  # identifiant 
+	my $motdepasse	= 'r00t';
 	my $port	= '';
 	# Connection à la base de données mysql
 	print "Connexion à la base de données $bd\n";
@@ -281,20 +281,6 @@ sub get_experiment_UId {
 	return \@result;
 }
 
-#--------------------------------------------------------------- Check if experiment_batch exist
-sub check_experiment_batch {
-	my ($lconn, $experimentFK, $expBatchFK) = @_;
-	my $query = "
-		Select exp_bat_id from experiment_batch
-		where
-		exp_bat_experiment_FK = $experimentFK AND
-		exp_bat_batch_FK = $expBatchFK ;";
-	#print $query."\n";
-
-   my @result = @{ $lconn->selectall_arrayref($query, { Slice => {} }) or die "\nERR=Sysdate\n $! \n $@\nDBI:errstr" };
-	return \@result;
-}
-
 
 
 #################################################
@@ -453,6 +439,21 @@ sub insert_unit {
 	}
 }
 
+
+
+sub insert_unit_sparql {
+	my ($lconn, $unitHRef, $linkUnitHRef) = @_;
+
+	foreach my $key (keys %{$unitHRef}){
+		my $query = "INSERT INTO unit VALUES ('', '".$unitHRef->{$key}."');";
+		#print  $query."\n";
+		my $sth = $lconn->prepare($query);
+			$sth->execute or die "Can't Add record : $lconn->errstr";
+			$linkUnitHRef->{$key} = $lconn->{'mysql_insertid'};
+			$sth->finish;
+	}
+}
+
 #---------------------------------------------------------------
 sub insert_enzyme {
 	my ($lconn, $enzymecodeHRef, $linkEnzymeHRef) = @_;
@@ -524,12 +525,12 @@ sub insert_standard_enzyme {
 			
 		if ($unit_fk eq "NULL") {
 			$query .= "
-			('', '1', '".$standard_fk."','".$value."','".$enzyme_fk."'),";
+			('', '1', '".$standard_fk."','".$value."','".$enzyme_fk."',''),";
 			#print $query."\n";
 		} 
 		else {
 			$query .= "
-			('', '".$unit_fk."', '".$standard_fk."','".$value."','".$enzyme_fk."'),";
+			('', '".$unit_fk."', '".$standard_fk."','".$value."','".$enzyme_fk."',''),";
 			
 		}
 	}
@@ -709,41 +710,35 @@ sub insert_freshweight {
 
 
 
+
 sub convertUTF8{
 	my $dbh = @_;
 	ALTER TABLE batch CONVERT TO CHARACTER SET utf8;
 
 
 	my @querys =(
-		"ALTER TABLE aliquot CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
-		"ALTER TABLE batch CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
-		"ALTER TABLE batch_data CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
-		"ALTER TABLE enzyme CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
-		"ALTER TABLE enzyme_protocol CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
-		"ALTER TABLE equation CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
-		"ALTER TABLE experiment CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
-		"ALTER TABLE experiment_freshweight CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
-		"ALTER TABLE experiment_standard CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
-		"ALTER TABLE freshweight CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
-		"ALTER TABLE freshweight_sample CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
-		"ALTER TABLE location CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
-		"ALTER TABLE processdata CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
-		"ALTER TABLE protocol CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
-		"ALTER TABLE raw_equ_proc CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
-		"ALTER TABLE rawdata CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
-		"ALTER TABLE sample CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
-		"ALTER TABLE sample_aliquot CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
-		"ALTER TABLE standard CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
-		"ALTER TABLE standard_enzyme CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
-		"ALTER TABLE unit CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
-		"ALTER TABLE user CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
-		"ALTER TABLE batch CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
-		"ALTER TABLE batch CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
-		"ALTER TABLE batch CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
-		"ALTER TABLE batch CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
-		"ALTER TABLE batch CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;",
-		"ALTER TABLE batch CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;"
-	);
+		"ALTER TABLE aliquot CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
+		"ALTER TABLE batch CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
+		"ALTER TABLE batch_data CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
+		"ALTER TABLE enzyme CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
+		"ALTER TABLE enzyme_protocol CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
+		"ALTER TABLE equation CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
+		"ALTER TABLE experiment CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
+		"ALTER TABLE experiment_freshweight CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
+		"ALTER TABLE experiment_standard CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
+		"ALTER TABLE freshweight CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
+		"ALTER TABLE freshweight_sample CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
+		"ALTER TABLE location CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
+		"ALTER TABLE processdata CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
+		"ALTER TABLE protocol CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
+		"ALTER TABLE raw_equ_proc CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
+		"ALTER TABLE rawdata CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
+		"ALTER TABLE sample CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
+		"ALTER TABLE sample_aliquot CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
+		"ALTER TABLE standard CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
+		"ALTER TABLE standard_enzyme CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
+		"ALTER TABLE unit CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
+		"ALTER TABLE user CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;");
 
 	my $i=0;
 	foreach my $line (@querys){
@@ -752,10 +747,15 @@ sub convertUTF8{
 		$sth->finish;
 		$i++;
 	}
-	$sth->finish();
 	$dbh->disconnect();
 
 }
+
+
+
+
+
+
 
 
 
