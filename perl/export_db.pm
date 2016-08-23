@@ -11,10 +11,10 @@ use Data::Dumper;
 #-------------------------------------------------------------remote connection (to plato)
 sub remote_db_connector{
 	# Paramètres de connection à la base de données
-	my $bd		= 'PlatoDB';
-	my $serveur	= '147.100.103.188';	  # Il est possible de mettre une adresse IP
-	my $identifiant = 'labdesigner';	  # identifiant 
-	my $motdepasse	= 'glucose';
+	my $bd		= 'dbname';
+	my $serveur	= 'ip';	  # Il est possible de mettre une adresse IP
+	my $identifiant = 'id';	  # identifiant 
+	my $motdepasse	= 'pwd';
 	my $port	= '1433';
 	my $dsn="dbi:ODBC:DSN=plato";
 	print "Connexion à la base de données $bd\n";
