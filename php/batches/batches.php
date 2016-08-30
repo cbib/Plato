@@ -8,7 +8,6 @@ html_header("../../",  $_SESSION['login']);
 editable_html_top_page("../../","Batches");
 
 echo '	<a href="#" title="Declare a new Batch" class="tip-bottom" id="createAddBatchButton"><i class="icon-plus"></i>Create Batch</a>
-		<!--<a href="#" title="Show all batches" class="tip-bottom" id="displayBatchList"><i class="icon icon-th-list"></i>Display Batch list</a>-->
 </div>
 
 <div id="statusSpan">
@@ -298,10 +297,6 @@ $(document).ready(function() {
 		create_addBatch_modal();
 	});
 
-	$("#displayBatchList").click(function(){
-		fullbatchTableSetup();
-	});
-
 });
 
 $(document).on("change", "#batchName" , function(e){
@@ -316,7 +311,7 @@ $(document).on("change", "#batchName" , function(e){
 				if(obj.value !=null){
 					$("#info-batchNumber").html(function(){
 						return "The last batch with this name has the number : "+obj.value; 
-						console.log("The last batch with this name has the number : "+obj.value);
+						// console.log("The last batch with this name has the number : "+obj.value);
 					});
 				}
 				else{
@@ -577,9 +572,20 @@ function batchInsert(tableID){
 	var batchName = $('#batchName');
 	var batchNumber = $('#batchNumber');
 	var batchLayout = $("input[name='layout']:checked").val();
+	console.log("batchLayout : "+batchLayout);
+	var tablelength = 0;
+
+	if (batchLayout=="SPLIT"){
+		tablelength=4;
+	}
+	else if (batchLayout=="FULL"){
+		tablelength = 8;
+	}
+
 
 	/* Take data to make a 2D array */
-	for(var i=1; i<table.rows.length;i++){
+	console.log("tablelength = "+tablelength);
+	for(var i=1; i<=tablelength; i++){
 		for (var j=1; j <=12; j++){
 			rawdatas.push(table.rows[i].cells[j].firstChild.value);
 		}
@@ -599,13 +605,6 @@ function batchInsert(tableID){
     } else {
     	$('#help-batchNumber').html("");
     }
-
-  //   if ((batchLayout == "SPLIT") && (table.rows.length>4)){
-		// $('#help-layout').html("Split must be <= 4 rows");
-		// boolOK = false;
-  //   } else {
-  //   	$('#help-layout').html("");
-  //   }
 
 	/* Data insertion */
 	if(boolOK) {
@@ -823,7 +822,7 @@ function dispatchAddBatchDatas(data) {
 	var min=96;
 	var minname="";
 	/* Find the standard name (minname), it's based on the fact that standards are less present than data of interest*/
-	console.log("hashmap length : "+Object.keys(hashMap).length);
+	// console.log("hashmap length : "+Object.keys(hashMap).length);
 	if(Object.keys(hashMap).length > 2 ){
 		$('#addBatchTips').html('<div class="alert alert-error"> Only one control is allowed <a href="#" data-dismiss="alert" class="close">×</a></div>');
 		boolOK =false;
@@ -849,7 +848,7 @@ function dispatchAddBatchDatas(data) {
 			'<td>'+ (i+1) +'</td>';
 			for (var j=0; j < rowDatas.length; j++){
 				var name=chomp(rowDatas[j]);
-				console.log(name);
+				// console.log(name);
 				if(checkUse(name)==false){
 					newRowContent += '<td><input style="background-color :#EB9018" class="form-control input-sm" type="text" id="1" value="'+name+'" ></td>';
 					boolOK =false;
@@ -1043,7 +1042,7 @@ function displayVals() {
 								$('#batchTable').find('tr').eq(row+5).find('td').eq(col+1).text(name).css('background-color', '#A0CFDF');
 							}
 							else if(name === "?"){
-								$('#batchTable').find('tr').eq(row+1).find('td').eq(col+1).text(name).css('background-color', '#686868');
+								$('#batchTable').find('tr').eq(row+5).find('td').eq(col+1).text(name).css('background-color', '#686868');
 							}
 							else if(name === minname){
 								$('#batchTable').find('tr').eq(row+5).find('td').eq(col+1).text(name+"-"+sample+"-"+aliquot).css('background-color', '#B4D3B0');

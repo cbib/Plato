@@ -71,10 +71,86 @@
 		}
 	}
 	elseif ($action=="delete") {
-		$query ="DELETE FROM `experiment` WHERE `exp_id` = '".$expID."';";
+
+		$queryDeleteExp ="DELETE FROM `experiment` WHERE `exp_id` = '".$expID."';";
+		$queryDeleteSample ="DELETE FROM `sample` WHERE `spl_id` IN (";
+		$queryDeleteAliquot ="DELETE FROM `aliquot` WHERE `alq_id` IN (";
+		$queryDeleteFw ="DELETE FROM `freshweight` WHERE `fw_id` IN (";
+		$queryDeleteLocaton ="DELETE FROM `location` WHERE `loc_id` IN (";
+
+		$queryselectinfos ='
+			SELECT 
+				sample.spl_id, 
+				aliquot.alq_id,
+				freshweight.fw_id, 
+				location.loc_id
+			FROM 
+				experiment_freshweight, 
+				freshweight, 
+				freshweight_sample, 
+				sample, 
+				sample_aliquot, 
+				aliquot, 
+				location
+			WHERE 
+				experiment_freshweight.exp_fw_experiment_FK = '.$expID.' AND
+				freshweight.fw_id = experiment_freshweight.exp_fw_freshweight_FK AND
+				freshweight_sample.fw_spl_freshweight_FK = freshweight.fw_id AND
+				sample.spl_id = freshweight_sample.fw_spl_sample_FK AND
+				sample_aliquot.spl_alq_sample_FK = sample.spl_id AND
+				aliquot.alq_id = sample_aliquot.spl_alq_aliquot_FK AND
+				location.loc_id = aliquot.alq_location_FK
+			ORDER BY sample.spl_number;
+		';
+		try {
+			$resultats=$conn->query($queryselectinfos);
+			while( $resultat = $resultats->fetch(PDO::FETCH_OBJ) ){
+				// error_log($resultat->spl_id);
+				$queryDeleteSample .= " ".$resultat->spl_id.",";
+				$queryDeleteAliquot .= " ".$resultat->alq_id.",";
+				$queryDeleteFw .= " ".$resultat->fw_id.",";
+				$queryDeleteLocaton .= " ".$resultat->loc_id.",";
+			}
+			$resultats->closeCursor();
+			$queryDeleteSample = rtrim($queryDeleteSample, ",");
+			$queryDeleteSample.=");";
+			// error_log($queryDeleteSample);
+
+			$queryDeleteAliquot = rtrim($queryDeleteAliquot, ",");
+			$queryDeleteAliquot.=");";
+			// error_log($queryDeleteAliquot);
+
+			$queryDeleteFw = rtrim($queryDeleteFw, ",");
+			$queryDeleteFw.=");";
+			// error_log($queryDeleteFw);
+
+			$queryDeleteLocaton = rtrim($queryDeleteLocaton, ",");
+			$queryDeleteLocaton.=");";
+			// error_log($queryDeleteLocaton);
+
+			try {
+				$conn->beginTransaction();
+				$req = $conn->exec($queryDeleteSample);
+				$req = $conn->exec($queryDeleteAliquot);
+				$req = $conn->exec($queryDeleteFw);
+				$req = $conn->exec($queryDeleteLocaton);
+				$conn->commit();
+				$status="success";
+			}
+			catch ( Exception $e ) {
+				error_log("ERRORDelete ".$e);
+				$status="error";
+				$conn->rollBack();
+			}
+		}
+		catch ( Exception $e ) {
+			error_log("ERRORDelete ".$e);
+			$status="error";
+			$conn->rollBack();
+		}
 		try {
 			$conn->beginTransaction();
-			$req = $conn->exec($query);
+			$req = $conn->exec($queryDeleteExp);
 			$conn->commit();
 			$status="success";
 		}
@@ -94,3 +170,4 @@ $response_array['action']=$action;
 echo json_encode($response_array);
 
 ?>
+

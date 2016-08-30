@@ -11,10 +11,10 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 --
--- Base de données: `plato_export_24032016`
+-- Base de données: `plato_export_29082016`
 --
-CREATE DATABASE IF NOT EXISTS `plato_export_14052016` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `plato_export_14052016`;
+CREATE DATABASE IF NOT EXISTS `plato_export_29082016` DEFAULT CHARACTER SET utf8 COLLATE utf8_bin;
+USE `plato_export_29082016`;
 
 -- --------------------------------------------------------
 
@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `aliquot` (
   `alq_id` int(10) NOT NULL AUTO_INCREMENT,
   `alq_number` int(10) NOT NULL,
   `alq_value` float NOT NULL,
-  `alq_state` varchar(10) CHARACTER SET latin1 NOT NULL,
+  `alq_state` varchar(10) NOT NULL,
   `alq_location_FK` int(10) NOT NULL,
   PRIMARY KEY (`alq_id`),
   KEY `alq_location_FK` (`alq_location_FK`)
@@ -40,10 +40,10 @@ CREATE TABLE IF NOT EXISTS `aliquot` (
 
 CREATE TABLE IF NOT EXISTS `batch` (
   `bat_id` int(10) NOT NULL AUTO_INCREMENT,
-  `bat_name` varchar(150) CHARACTER SET latin1 DEFAULT NULL,
+  `bat_name` varchar(150)  DEFAULT NULL,
   `bat_number` int(10) NOT NULL,
   `bat_date` date NOT NULL,
-  `bat_layout` varchar(5) CHARACTER SET latin1 NOT NULL,
+  `bat_layout` varchar(5)  NOT NULL,
   PRIMARY KEY (`bat_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1 ;
 
@@ -74,9 +74,9 @@ CREATE TABLE IF NOT EXISTS `batch_data` (
 
 CREATE TABLE IF NOT EXISTS `enzyme` (
   `ez_id` int(5) NOT NULL AUTO_INCREMENT,
-  `ez_analyte` varchar(100) CHARACTER SET latin1 NOT NULL,
+  `ez_analyte` varchar(100)  NOT NULL,
   `ez_slope` int(1) NOT NULL,
-  `ez_code` varchar(50) CHARACTER SET latin1 NOT NULL,
+  `ez_code` varchar(50)  NOT NULL,
   `ez_is_enzyme` int(1) NOT NULL,
   PRIMARY KEY (`ez_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Table of enzymes and metabolites' AUTO_INCREMENT=1 ;
@@ -104,7 +104,7 @@ CREATE TABLE IF NOT EXISTS `enzyme_protocol` (
 
 CREATE TABLE IF NOT EXISTS `equation` (
   `equ_id` int(10) NOT NULL AUTO_INCREMENT,
-  `equ_name` varchar(100) CHARACTER SET latin1 NOT NULL,
+  `equ_name` varchar(100)  NOT NULL,
   PRIMARY KEY (`equ_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1 ;
 
@@ -116,7 +116,7 @@ CREATE TABLE IF NOT EXISTS `equation` (
 
 CREATE TABLE IF NOT EXISTS `experiment` (
   `exp_id` int(10) NOT NULL AUTO_INCREMENT,
-  `exp_name` varchar(100) CHARACTER SET latin1 NOT NULL,
+  `exp_name` varchar(100)  NOT NULL,
   PRIMARY KEY (`exp_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Table of experimentations, an experimentation is composed by' AUTO_INCREMENT=2 ;
 
@@ -158,7 +158,7 @@ CREATE TABLE IF NOT EXISTS `experiment_standard` (
 
 CREATE TABLE IF NOT EXISTS `freshweight` (
   `fw_id` int(10) NOT NULL AUTO_INCREMENT,
-  `fw_name` varchar(100) CHARACTER SET latin1 NOT NULL,
+  `fw_name` varchar(100)  NOT NULL,
   PRIMARY KEY (`fw_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1 ;
 
@@ -185,10 +185,10 @@ CREATE TABLE IF NOT EXISTS `freshweight_sample` (
 
 CREATE TABLE IF NOT EXISTS `location` (
   `loc_id` int(10) NOT NULL AUTO_INCREMENT,
-  `loc_fridge` varchar(30) CHARACTER SET latin1 DEFAULT NULL,
-  `loc_etage` varchar(10) CHARACTER SET latin1 DEFAULT NULL,
-  `loc_box` varchar(100) CHARACTER SET latin1 DEFAULT NULL,
-  `loc_comment` varchar(500) CHARACTER SET latin1 DEFAULT NULL,
+  `loc_fridge` varchar(250)  DEFAULT NULL,
+  `loc_etage` varchar(250)  DEFAULT NULL,
+  `loc_box` varchar(250)  DEFAULT NULL,
+  `loc_comment` varchar(500)  DEFAULT NULL,
   PRIMARY KEY (`loc_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=2 ;
 
@@ -212,7 +212,7 @@ CREATE TABLE IF NOT EXISTS `processdata` (
 
 CREATE TABLE IF NOT EXISTS `protocol` (
   `ptcl_id` int(10) NOT NULL AUTO_INCREMENT,
-  `ptcl_path` varchar(100) CHARACTER SET latin1 DEFAULT NULL,
+  `ptcl_path` varchar(100)  DEFAULT NULL,
   PRIMARY KEY (`ptcl_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='TODO' AUTO_INCREMENT=1 ;
 
@@ -226,7 +226,7 @@ CREATE TABLE IF NOT EXISTS `rawdata` (
   `rawdata_id` int(10) NOT NULL AUTO_INCREMENT,
   `data_value` float NOT NULL,
   `data_is_excluded` int(1) NOT NULL,
-  `data_velocity` varchar(50) CHARACTER SET latin1 DEFAULT NULL,
+  `data_velocity` varchar(50)  DEFAULT NULL,
   `data_is_proved` int(1) DEFAULT NULL,
   `data_enzyme_FK` int(5) DEFAULT NULL,
   `rawdata_batch_data_FK` int(11) NOT NULL,
@@ -290,13 +290,13 @@ CREATE TABLE IF NOT EXISTS `sample_aliquot` (
 
 CREATE TABLE IF NOT EXISTS `standard` (
   `std_id` int(10) NOT NULL AUTO_INCREMENT,
-  `std_name` varchar(99) CHARACTER SET latin1 NOT NULL,
-  `std_genius` varchar(50) CHARACTER SET latin1 NOT NULL,
-  `std_species` varchar(50) CHARACTER SET latin1 NOT NULL,
-  `std_genotype` varchar(80) CHARACTER SET latin1 NOT NULL,
-  `std_nature` varchar(50) CHARACTER SET latin1 NOT NULL,
-  `std_owner` varchar(50) CHARACTER SET latin1 DEFAULT NULL,
-  `std_comment` varchar(99) CHARACTER SET latin1 DEFAULT NULL,
+  `std_name` varchar(99)  NOT NULL,
+  `std_genius` varchar(50)  NOT NULL,
+  `std_species` varchar(50)  NOT NULL,
+  `std_genotype` varchar(80)  NOT NULL,
+  `std_nature` varchar(50)  NOT NULL,
+  `std_owner` varchar(50)  DEFAULT NULL,
+  `std_comment` varchar(99)  DEFAULT NULL,
   PRIMARY KEY (`std_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Table of standards (material)' AUTO_INCREMENT=2 ;
 
@@ -327,7 +327,7 @@ CREATE TABLE IF NOT EXISTS `standard_enzyme` (
 
 CREATE TABLE IF NOT EXISTS `unit` (
   `unit_id` int(10) NOT NULL AUTO_INCREMENT,
-  `unit_name` varchar(30) CHARACTER SET latin1 NOT NULL,
+  `unit_name` varchar(50)  NOT NULL,
   PRIMARY KEY (`unit_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin COMMENT='Table of units' AUTO_INCREMENT=2 ;
 
@@ -343,7 +343,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `usr_pwd` varchar(100) NOT NULL,
   `usr_status` varchar(10) NOT NULL,
   PRIMARY KEY (`usr_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1 ;
 --
 -- Contraintes pour les tables exportées
 --

@@ -287,6 +287,7 @@ function generate_data(expID, expName){
 				alert("ERROR experience vide");
 			}
 			else{
+				console.log(data);
 				var headSplit = data[0].split('>');
 				var jsonArray =[];
 				var colDef = [
@@ -461,6 +462,8 @@ function standardsUsed(tableID){
 		}
 		finalMap.push(tab);
 	}
+	console.log("finalMap");
+	console.log(finalMap);
 	printStdUsed(finalMap);
 }
 
@@ -479,11 +482,13 @@ function printStdUsed(map){
 		objet.title=map[0][j];
 		colDef.push(objet);
 	}
-	for(var i=0;i<map.length-1; i++){
+	for(var i=1;i<map.length-1; i++){
 		if((typeof map[i] != 'undefined') || (map[i] != undefined) || (map[i] !="")) {
 			jsonDataMap.push(map[i]);
 		}
 	}
+	console.log("jsonDataMap");
+	console.log(jsonDataMap);
 	$('#CvTable').DataTable({
 		scrollX:true,
 		scrollY: 600,

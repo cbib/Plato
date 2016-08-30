@@ -143,7 +143,7 @@ $(document).ready(function() {
 		$( "button" ).filter( "#addRows" ).prop("disabled",true);
 	});
 
-	/* Listener on add roaw button */
+	/* Listener on add rows button */
 	$('#addRows').click(function(e){
 		create_addrows_modal();
 	});
@@ -283,6 +283,7 @@ function hideWaitModal(){
  */
 function controlAddData(tableID){
 	var table=document.getElementById(tableID);
+	// console.log(table);
 	var boolOK = true;
 	for(var i=1; i<table.rows.length;i++){
 		var sampleNB = table.rows[i].cells[0].firstChild.value;
@@ -294,10 +295,11 @@ function controlAddData(tableID){
 		var location = table.rows[i].cells[3].firstChild.value;
 		var action="create";
 
-		//console.log(sampleNB+". : ."+aliquotNB+"|");
+		// console.log(sampleNB+". : ."+aliquotNB+"|");
 		var boolExists = $('#spl_alq_table tr > td:contains( '+sampleNB+' ) + td:contains( '+aliquotNB+' )').length;
-
-		console.log(boolExists);
+		// var boolExists2 = $('#spl_alq_table tr > td:contains('+sampleNB+') + td:contains('+aliquotNB+')').length;
+		// console.log("BOOOOOOOOOOOOL 1 : "+boolExists);
+		// console.log("BOOOOOOOOOOOOL 2 : "+boolExists2);
 		if(boolExists > 0) {
 			console.log("deja present");
 			$('#addRowsTable tr').each(function(index){
@@ -613,14 +615,15 @@ function make_row_editable(expID, table, rowID){
  */
 function make_row_uneditable(table, rowID, values){
 	var cell = table.cell(rowID, 1);
-	table.cell(rowID, 1).data(values.sampleNB);
-	table.cell(rowID, 3).data(values.aliquotNB);
-	table.cell(rowID, 4).data(values.value);
-	table.cell(rowID, 6).data(values.state);
-	table.cell(rowID, 5).data(values.location);
+	table.cell(rowID, 1).data(values.sampleNB).draw();
+	table.cell(rowID, 3).data(values.aliquotNB).draw();
+	table.cell(rowID, 4).data(values.value).draw();
+	table.cell(rowID, 6).data(values.state).draw();
+	table.cell(rowID, 5).data(values.location).draw();
 	table.cell(rowID, 9).data("<button type=\"button\" id=\"editButton\" class=\"tabledit-edit-button btn btn-info btn-sm btn-default\" style=\"float: none;\"> <span class=\"glyphicon glyphicon-pencil\"> </span> </button>"+
-	"&nbsp <button type= \"submit\" id=\"deleteButton\" class=\"tabledit-edit-button btn btn-danger btn-sm btn-default\" style=\"float: none;\"> <span class=\"glyphicon glyphicon-trash\"> </span> </button>");
+	"&nbsp <button type= \"submit\" id=\"deleteButton\" class=\"tabledit-edit-button btn btn-danger btn-sm btn-default\" style=\"float: none;\"> <span class=\"glyphicon glyphicon-trash\"> </span> </button>").draw();
 
+	setup_freshweight_datatable(expID);
 	//disable all buttons while the current action is not termined
 	$( "button" ).filter( "#editButton" ).prop("disabled",false);
 	$( "button" ).filter( "#deleteButton" ).prop("disabled",false);
@@ -650,8 +653,11 @@ function save_row(expID, table, oTable, rowID, action, oldValues) {
 	var location = $('#location').val();
 	var locID = table.cell(rowID, 8).data();
 
-	var boolExists = $('#spl_alq_table tr > td:contains( '+sampleNB+' ) + td:contains( '+aliquotNB+' )').length;
-	// console.log(boolExists);
+	// var boolExists = $('#spl_alq_table tr > td:contains( '+sampleNB+' ) + td:contains( '+aliquotNB+' )').length;
+		var boolExists = $('#spl_alq_table tr > td:contains( '+sampleNB+' ) + td:contains( '+aliquotNB+' )').length;
+		// var boolExists2 = $('#spl_alq_table tr > td:contains('+sampleNB+') + td:contains('+aliquotNB+')').length;
+		// console.log("BOOOOOOOOOOOOL 1 : "+boolExists);
+		// console.log("BOOOOOOOOOOOOL 2 : "+boolExists2);
 
 	if(boolExists > 0) {
 		$("#sampleNB").css('background-color', '#FF9494');
@@ -768,6 +774,11 @@ function resetModalTable (){
 	$('#addRowsTips').html('<div class="alert alert-success"> Please paste all your data in the first field <a href="#" data-dismiss="alert" class="close">×</a></div>');
 }
 
+// .modal-body {
+//     max-height: calc(100vh - 210px);
+//     overflow-y: auto;
+// }
+
 /**
  * modal window for multiple row adding
  *
@@ -780,7 +791,7 @@ function create_addrows_modal() {
 				'<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>'+
 				'<h4 class="modal-title">Freshweight Insertion</h4>'+
 			'</div>'+
-			'<div class="modal-body">'+
+			'<div class="modal-body" style="max-height:600px;overflow-y:auto;">'+
 				'<span id="addRowsTips">'+
 					'<div class="alert alert-success"> Please paste all your data in the first field <a href="#" data-dismiss="alert" class="close">×</a></div>'+
 				'</span>'+
@@ -804,13 +815,14 @@ function create_addrows_modal() {
 						'</tr>'+
 					'</tbody>'+
 				'</table>'+
-				'<div class="modal-footer">'+
-					'<button type="button" id="clearModal" class="btn btn-large">Clear</button>'+
-					'<button type="button" data-dismiss="modal" class="btn btn-large">Close</button>'+
-					'<button type="submit" id="addRowsSubmit" class="btn btn-primary btn-large" disabled>Submit</button>'+
-				'</div>'+
-		'</div> <!-- /.modal-content -->'+
-	'</div> <!-- /.modal-dialog -->';
+			'</div>'+
+			'<div class="modal-footer">'+
+				'<button type="button" id="clearModal" class="btn btn-large">Clear</button>'+
+				'<button type="button" data-dismiss="modal" class="btn btn-large">Close</button>'+
+				'<button type="submit" id="addRowsSubmit" class="btn btn-primary btn-large" disabled>Submit</button>'+
+			'</div>'+
+	'</div> <!-- /.modal-content -->'+
+'</div> <!-- /.modal-dialog -->';
 
 	$('#addRowsModal').empty();
 	$('#addRowsModal').append(modal);

@@ -14,10 +14,11 @@
 	$colIdx = 0;
 	$rowIdx = 0;
 
-	foreach ($processDataMap as $row) {
+	foreach ($excludMap as $row) {
 		$colIdx=0;
 		foreach ($row as $col) {
 			$queryUpdateExclud =" UPDATE  `rawdata` SET `data_is_excluded`=".$excludMap[$rowIdx][$colIdx]." WHERE `rawdata_id` = ".$rawIDMap[$rowIdx][$colIdx].";";
+			// error_log($queryUpdateExclud);
 			try {
 				$conn->beginTransaction();
 				$conn->exec($queryUpdateExclud);
@@ -32,7 +33,17 @@
 				$boolSucces=false;
 				$action="update exclud status";
 			}
+			$colIdx++;
+		}
+		$rowIdx++;
+	}
 
+	$colIdx = 0;
+	$rowIdx = 0;
+
+	foreach ($processDataMap as $row) {
+		$colIdx=0;
+		foreach ($row as $col) {
 			if ($processDataMap[$rowIdx][$colIdx] =="NA"){
 				$valueToUpdate = "";
 			}

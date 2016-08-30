@@ -2,20 +2,21 @@
 
 #############################################################################################
 #
-# Script name : export_db.pl
+# Script name : export_db.pl // Main export program
 # -----------
 # Dev environment : - Ubuntu 14.04 x64
 # ---------------   - perl, v5.18.2 built for x86_64-linux-gnu-thread-multi
 #
 #############################################################################################
 #
-# Warning :
+# Warning : 
 # 
 # Use : ./export_db.pl	
 #
 #############################################################################################
 #
 # History : 2015/04/01 				V0.0 Emmanuel Bouilhol
+# History : 2016/02/20 				V1.0 Emmanuel Bouilhol
 #
 #############################################################################################
 #
@@ -24,7 +25,7 @@
 #############################################################################################
 #
 # Improvements TBD : 
-# - Gestion des clefs etrangères undef dans PlatoDB (pour l'instant gere dans reset database)
+# - 
 #
 ##############################################################################################
 
@@ -39,6 +40,7 @@ use Term::ReadLine;
 use Encode qw(encode_utf8);
 use utf8;
 use export_db;
+use connections;
 use Carp;
 
 ####### Global vars #######
@@ -70,7 +72,7 @@ our %linkSampleAliquotFW;
 #										MAIN										#
 ################################################################
 
-#------------------------------------------------------------------ Connexion au bases de données
+#------------------------------------------------------------------ Connection to the databases
 $lconn = export_db::local_db_connector();
 $rconn = export_db::remote_db_connector(); 
 
@@ -126,15 +128,6 @@ export_db::get_link_freshweight_experiment($rconn, \%linkFreshweightExperimentHR
 carp "Get batches...";
 export_db::get_batches($rconn, \%batches);
 
-#------------------------------------------------------------------ Export BatchCompilation
-#carp "Get BatchCompilation...";
-#export_db::get_batchCompilation($rconn, \@batchCompilationHRef);
-
-##------------------------------------------------------------------ Export rawData
-#carp "Get rawData...";
-#export_db::get_rawData($rconn, \@rawData);
-
-
 #################################################
 #
 #							INSERT
@@ -179,11 +172,6 @@ export_db::insert_data($lconn, $rconn, \%batches, \%linkBatches, \%linkSampleAli
 
 print STDERR "after data";
 print STDERR`date`;
-
-
-print STDERR "Converting utf8";
-export_db::convertUTF8($lconn);
-print STDERR "End Converting";
 print STDERR "End of full process";
 
 

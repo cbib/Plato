@@ -14,7 +14,7 @@
 	ORDER BY sample.spl_number, aliquot.alq_number ;';
 
 	$results = $conn->query($query)->fetchAll();
-	$ezNameQuery ='SELECT distinct (ez_analyte), ez_id
+	$ezNameQuery ='SELECT distinct (ez_analyte), ez_id, ez_code
 	FROM 
 		enzyme, rawdata, batch_data
 	WHERE
@@ -26,7 +26,7 @@
 	$ezNames = $conn->query($ezNameQuery)->fetchAll();
 	$lineName="";
 	foreach($ezNames as $name){
-		$lineName.=$name[0]."#".$name[1].">";
+		$lineName.=$name[0]." ".$name[2]."#".$name[1].">";
 	}
 	$output[]=$lineName;
 
@@ -51,17 +51,17 @@
 			sample.spl_id = sample_aliquot.spl_alq_sample_FK;';
 
 		$spl_alq = $conn->query($splAlqNbQuery)->fetchColumn();
-		$ezQuery ='
-		SELECT 	
-			distinct rawdata.data_enzyme_FK, enzyme.ez_analyte
-		FROM
-			rawdata, enzyme 
-		WHERE 
-			rawdata.rawdata_batch_data_FK = '.$row[1].' AND
-			enzyme.ez_id = rawdata.data_enzyme_FK;
-		';
+		// $ezQuery ='
+		// SELECT 	
+		// 	distinct rawdata.data_enzyme_FK, enzyme.ez_analyte, enzyme.ez_code
+		// FROM
+		// 	rawdata, enzyme 
+		// WHERE 
+		// 	rawdata.rawdata_batch_data_FK = '.$row[1].' AND
+		// 	enzyme.ez_id = rawdata.data_enzyme_FK;
+		// ';
 		$line=$row[0]."#".$row[1]."#".$batchName."#".$expName."#".$spl_alq;
-		$enzymes = $conn->query($ezQuery)->fetchAll();
+		// $enzymes = $conn->query($ezQuery)->fetchAll();
 
 		foreach($ezNames as $name){
 			$enzymeID=$name[1];

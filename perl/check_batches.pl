@@ -2,7 +2,7 @@
 
 #############################################################################################
 #
-# Script name : free_inuse.pl // Check if a freshweight is free or in use
+# Script name : check_batches.pl // Check the number of batches in MSSQL db (one shot script)
 # -----------
 # Dev environment : - Ubuntu 14.04 x64
 # ---------------   - perl, v5.18.2 built for x86_64-linux-gnu-thread-multi
@@ -24,21 +24,16 @@ use connections;
 use Carp;
 
 ####### Global vars #######
-our $dbh = export_db::local_db_connector();
+my $rconn = export_db::remote_db_connector();
 
-my $sth = $dbh->prepare("SELECT DISTINCT bat_data_sample_aliquot_FK FROM batch_data");
-$sth->execute();
 
-my $row;
-while ($row = $sth->fetchrow_arrayref()) {
-    print "@$row\n";
-    my $statement = "UPDATE sample_aliquot SET spl_alq_state = 'in use' WHERE spl_alq_id = @$row[0]";
-    my $sth5 = $dbh->prepare($statement);
-	$sth5->execute or die "Can't Add record : $dbh->errstr";
-	$sth5->finish();
-}
+my $query = "SELECT * FROM Batches;";
+my $result = $rconn->selectall_hashref($query, "UId") or die "\nERR=Sysdate\n $! \n $@\nDBI:errstr";	
+my %batches = %$result;
 
-$sth->finish();
-$dbh->disconnect();
+print Dumper %batches;
+
+
+
 
 

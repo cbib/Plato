@@ -1,67 +1,28 @@
 package export_db;
+#############################################################################################
+#
+# Script name : export_db.pm // functions of export_db.pl
+# -----------
+# Dev environment : - Ubuntu 14.04 x64
+# ---------------   - perl, v5.18.2 built for x86_64-linux-gnu-thread-multi
+#
+#############################################################################################
 
 use strict;
 use warnings;
 use Data::Dumper;
 
 #################################################
-#						DB connection						#
-#################################################
-
-#-------------------------------------------------------------remote connection (to plato)
-sub remote_db_connector{
-	# Paramètres de connection à la base de données
-	my $bd		= 'PlatoDB';
-	my $serveur	= '147.100.103.188';	  # Il est possible de mettre une adresse IP
-	my $identifiant = 'labdesigner';	  # identifiant 
-	my $motdepasse	= 'glucose';
-	my $port	= '1433';
-	my $dsn="dbi:ODBC:DSN=plato";
-	print "Connexion à la base de données $bd\n";
-	my $rconn = DBI->connect($dsn, $identifiant, $motdepasse);
-	if (! defined($rconn) ) {
-		 print "***Error connecting to DSN\n";
-		 print "***Error was:\n";
-		 print "***$DBI::errstr\n";         # $DBI::errstr is the error
-	}
-	return $rconn;
-}
-
-#--------------------------------------------------------------- local connection (to new db)
-sub local_db_connector{
-	# Paramètres de connection à la base de données
-	my $bd		= 'plato_export_21082016';
-	my $serveur	= '127.0.0.1';	  # Il est possible de mettre une adresse IP
-	my $identifiant = 'root';	  # identifiant 
-	my $motdepasse	= 'r00t';
-	my $port	= '';
-	# Connection à la base de données mysql
-	print "Connexion à la base de données $bd\n";
-	my $lconn = DBI->connect( "DBI:mysql:database=$bd;host=$serveur;port=$port", 
-		$identifiant, $motdepasse, { 
-			RaiseError => 1,
-		}
-	) or die "Connection impossible à la base de données $bd !\n $! \n $@\n$DBI::errstr";
-	return $lconn;
-}
-
-
-#################################################
-#			DB SELECT FROM Remote Plato			#
+#			DB SELECT FROM Remote Plato				#
 #################################################
 #--------------------------------------------------------------- get Unit from remote
 sub get_unit_remote {
 	my ($rconn, $unitHRef)= @_;
-
 	my $query = "SELECT * FROM Unit;";
-	#print $query."\n";
-
 	my $result = $rconn->selectall_hashref($query, "UId") or die "\nERR=Sysdate\n $! \n $@\nDBI:errstr";
-
 	foreach my $key (keys %{$result}){
 		Encode::from_to($result->{$key}{"Name"}, "iso-8859-1", "utf8");
 		$unitHRef->{$key}=$result->{$key}{"Name"};
-		#print $key."  ".$result->{$key}{"Name"}."\n";
 	}
 }
 
@@ -92,7 +53,6 @@ sub get_enzymecode_remote {
 #--------------------------------------------------------------- get linked activity
 sub get_linked_activity {
 	my ($rconn, $linkedActivityHRef) = @_;
-
 	my $query = "SELECT 
 		Material.UId, Material.Name, 
 		Activity.EnzymeCode_FK, Activity.Material_FK, Activity.Protocol_FK, Activity.Value, Activity.Unit_FK
@@ -120,7 +80,6 @@ sub get_freshweight_remote {
 	%$freshweightHRef = %$result;
 }
 
-
 #--------------------------------------------------------------- get link between freshweight and experiment, because the link is not on primary key in platoDB...
 sub get_link_freshweight_experiment {
 	my ($rconn, $linkFreshweightExperimentHRef) = @_;
@@ -140,51 +99,16 @@ sub get_batches {
 	%$batchesHRef = %$result;
 }
 
-
-##--------------------------------------------------------------- get batchCompilation
-#sub get_batchCompilation {
-#	my ($rconn, $batchCompilationARef) = @_;
-
-#	my $query = "SELECT 
-#		TOP 100 *
-#		FROM
-#		BatchCompilation";
-#	   my @result = @{ $rconn->selectall_arrayref($query, { Slice => {} }) or die "\nERR=Sysdate\n $! \n $@\nDBI:errstr" };
-#		@{$batchCompilationARef}=@result;
-#}
-
-
-##--------------------------------------------------------------- get rawData
-#sub get_rawData {
-#	my ($rconn, $rawDataARef) = @_;
-
-#	my $query = "SELECT 
-#		TOP 100 *
-#		FROM
-#		RawData";
-#	   my @result = @{ $rconn->selectall_arrayref($query, { Slice => {} }) or die "\nERR=Sysdate\n $! \n $@\nDBI:errstr" };
-#		@{$rawDataARef}=@result;
-#}
-
-
-
-
-
 #--------------------------------------------------------------- get batchCompilation
 sub get_batchCompilationsForOneBatch {
 	my ($rconn, $batchName_FK, $batchNumber_FK, $batchDate_FK) = @_;
-#--------------------Recupere chaque batchCompilation issue d'un batch
-#Select * from PlatoDB.dbo.BatchCompilation 
-#where
-#PlatoDB.dbo.BatchCompilation.BatchName_Fk = 'CAQ40Peche_Rack6' AND
-#PlatoDB.dbo.BatchCompilation.BatchNumber_Fk = 1 AND
-#PlatoDB.dbo.BatchCompilation.BatchDate_Fk = '12/04/2013 00:00:00'
+	#-------------------- Get BatchCompilation data for each batch
 	my $query = "
-		Select * from PlatoDB.dbo.BatchCompilation 
+		SELECT * from BatchCompilation 
 		where
-		PlatoDB.dbo.BatchCompilation.BatchName_Fk = '".$batchName_FK."' AND
-		PlatoDB.dbo.BatchCompilation.BatchNumber_Fk = ".$batchNumber_FK." AND
-		PlatoDB.dbo.BatchCompilation.BatchDate_Fk = '".$batchDate_FK."'";
+		BatchCompilation.BatchName_Fk = '".$batchName_FK."' AND
+		BatchCompilation.BatchNumber_Fk = ".$batchNumber_FK." AND
+		BatchCompilation.BatchDate_Fk = '".$batchDate_FK."'";
 	   my @result = @{ $rconn->selectall_arrayref($query, { Slice => {} }) or die "\nERR=Sysdate\n $! \n $@\nDBI:errstr" };
 		return \@result;
 }
@@ -193,26 +117,12 @@ sub get_batchCompilationsForOneBatch {
 #--------------------------------------------------------------- get rawData
 sub get_freshweightForOneBatchComp {
 	my ($rconn, $experiment_FK, $sample, $aliquot) = @_;
-#--------------------Recupere le freshWeight d'un batchCompilation
-#Select * from PlatoDB.dbo.FreshWeights
-#where
-#PlatoDB.dbo.FreshWeights.Experiment_FK = 'CAQ40Peche_Redfruit' AND
-#PlatoDB.dbo.FreshWeights.Sample = 44532 AND
-#PlatoDB.dbo.FreshWeights.Aliquot = 1
-#Avec l'UId du freshWeight on peut retrouver le liens vers le sample_aliquot
-
 	my $query = "
-		Select UId from PlatoDB.dbo.FreshWeights
+		SELECT UId from FreshWeights
 		where
-		PlatoDB.dbo.FreshWeights.Experiment_FK = '".$experiment_FK."' AND
-		PlatoDB.dbo.FreshWeights.Sample = ".$sample." AND
-		PlatoDB.dbo.FreshWeights.Aliquot = ".$aliquot.";";
-
-#	my ($result) = $rconn−>selectrow_array($query) or die "\nERR=Sysdate\n $! \n $@\nDBI:errstr";
-##	my @result = @{ $rconn->selectall_arrayref($query, { Slice => {} }) or die "\nERR=Sysdate\n $! \n $@\nDBI:errstr" };
-#	return $result;
-	#print $query."\n";
-
+		FreshWeights.Experiment_FK = '".$experiment_FK."' AND
+		FreshWeights.Sample = ".$sample." AND
+		FreshWeights.Aliquot = ".$aliquot.";";
 	my $sth = $rconn->prepare($query);
 	$sth->execute() or die "\nERR=Sysdate\n $! \n $@\nDBI:errstr";;
 	my ($result) = $sth->fetchrow_array()
@@ -223,64 +133,45 @@ sub get_freshweightForOneBatchComp {
 #--------------------------------------------------------------- get raw data
 sub get_rawDataForOneBatchComp {
 	my ($rconn, $batchNameFK, $batchNumberFK, $batchDateFK, $rowFK, $colFK) = @_;
-#--------------------Recuperation des rawData correspondant a un batchCompilation (sauf que la date vient de batches sinon ça ne marche pas...)
-#Select * from PlatoDB.dbo.RawData
-#where
-#PlatoDB.dbo.RawData.BatchName_Fk = 'CAQ40Peche_Rack6' AND
-#PlatoDB.dbo.RawData.BatchNumber_Fk = 1 AND
-#PlatoDB.dbo.RawData.BatchDate_Fk = '12/04/2013 00:00:00' AND
-#PlatoDB.dbo.RawData.Row_Fk = 0 AND
-#PlatoDB.dbo.RawData.Column_Fk = 1
+	#--------------------Get rawdata for each batchCompilation (the date has to come batches otherwise it will not work)
 	my $query = "
-		Select * from PlatoDB.dbo.RawData
+		SELECT * from RawData
 		where
-		PlatoDB.dbo.RawData.BatchName_Fk = '".$batchNameFK."' AND
-		PlatoDB.dbo.RawData.BatchNumber_Fk = ".$batchNumberFK." AND
-		PlatoDB.dbo.RawData.BatchDate_Fk = '".$batchDateFK."' AND
-		PlatoDB.dbo.RawData.Row_Fk = ".$rowFK." AND
-		PlatoDB.dbo.RawData.Column_Fk = ".$colFK.";";
+		RawData.BatchName_Fk = '".$batchNameFK."' AND
+		RawData.BatchNumber_Fk = ".$batchNumberFK." AND
+		RawData.BatchDate_Fk = '".$batchDateFK."' AND
+		RawData.Row_Fk = ".$rowFK." AND
+		RawData.Column_Fk = ".$colFK.";";
    my @result = @{ $rconn->selectall_arrayref($query, { Slice => {} }) or die "\nERR=Sysdate\n $! \n $@\nDBI:errstr" };
 	return \@result;
 }
-
 
 #--------------------------------------------------------------- get processed data corresponding to a single raw data
 sub get_processedDataForOneRawData {
 	my ($rconn, $batchNameFK, $batchNumberFK, $batchDateFK, $enzymeFK, $rowFK, $colFK) = @_;
-#--------------------Recuperation des processedData correspondantes, rajouter la FK enzyme pour l'unicité'
-#Select * from PlatoDB.dbo.ProcessedData
-#where
-#PlatoDB.dbo.ProcessedData.BatchName_Fk = 'CAQ40Peche_Rack6' AND
-#PlatoDB.dbo.ProcessedData.BatchNumber_Fk = 1 AND
-#PlatoDB.dbo.ProcessedData.BatchDate_Fk = '12/04/2013 00:00:00' AND
-#PlatoDB.dbo.ProcessedData.Row_Fk = 0 AND
-#PlatoDB.dbo.ProcessedData.Column_Fk = 1
 	my $query = "
-		Select PlatoDB.dbo.ProcessedData.Value from PlatoDB.dbo.ProcessedData
+		SELECT ProcessedData.Value from ProcessedData
 		where
-		PlatoDB.dbo.ProcessedData.BatchName_Fk = '".$batchNameFK."' AND
-		PlatoDB.dbo.ProcessedData.BatchNumber_Fk = ".$batchNumberFK." AND
-		PlatoDB.dbo.ProcessedData.BatchDate_Fk = '".$batchDateFK."' AND
-		PlatoDB.dbo.ProcessedData.Enzyme_Fk = '".$enzymeFK."' AND
-		PlatoDB.dbo.ProcessedData.Row_Fk = ".$rowFK." AND
-		PlatoDB.dbo.ProcessedData.Column_Fk = ".$colFK.";";
+		ProcessedData.BatchName_Fk = '".$batchNameFK."' AND
+		ProcessedData.BatchNumber_Fk = ".$batchNumberFK." AND
+		ProcessedData.BatchDate_Fk = '".$batchDateFK."' AND
+		ProcessedData.Enzyme_Fk = '".$enzymeFK."' AND
+		ProcessedData.Row_Fk = ".$rowFK." AND
+		ProcessedData.Column_Fk = ".$colFK.";";
    my @result = @{ $rconn->selectall_arrayref($query, { Slice => {} }) or die "\nERR=Sysdate\n $! \n $@\nDBI:errstr" };
 	return \@result;
 }
-
 
 #--------------------------------------------------------------- get processed data corresponding to a single raw data
 sub get_experiment_UId {
 	my ($rconn, $experimentFK) = @_;
 	my $query = "
-		Select PlatoDB.dbo.Experiments.UId from PlatoDB.dbo.Experiments
+		SELECT Experiments.UId from Experiments
 		where
-		PlatoDB.dbo.Experiments.Id = '".$experimentFK."';";
-	#print $query."\n";
+		Experiments.Id = '".$experimentFK."';";
    my @result = @{ $rconn->selectall_arrayref($query, { Slice => {} }) or die "\nERR=Sysdate\n $! \n $@\nDBI:errstr" };
 	return \@result;
 }
-
 
 
 #################################################
@@ -294,7 +185,7 @@ sub insert_data{
 	my $size = scalar keys %{$batchesHRef};
 	my $i =0;
 	foreach my $key (keys %{$batchesHRef}) {
-		#----------------------------------------------------------- Insertion des données batch
+		#----------------------------------------------------------- Insertion of Batch data
 		my $query = "
 			INSERT INTO
 				batch
@@ -304,31 +195,23 @@ sub insert_data{
 			my $last_batch_ID= $lconn->{'mysql_insertid'};
 			$sth->finish;
 
-		#Pour chaque batch il faut recuperer les batchcompilation correspondantes
+		# For each batch we get the batchcompilation
 		my @batchCompsForOneBatch = get_batchCompilationsForOneBatch($rconn, $batchesHRef->{$key}{'Name'}, $batchesHRef->{$key}{'Number'}, $batchesHRef->{$key}{'Date'});
-		#pour chaque batchcompilation d'un batch on cherche le lien entre le freshweight et le sample aliquot
+		# For each batchCompilation of a batch we seek for the leek between freshweight, sample and aliquot
 		foreach my $batchComp (@batchCompsForOneBatch) {
-#			print STDERR "loop\n";
 			foreach my $rowComp (@{$batchComp}){
-#				print STDERR "loop2\n";
 				my $experimentUId = get_experiment_UId($rconn, $rowComp->{'Experiment_Fk'});
 				#--------------------------------------------------------------- get FreshWeights UId
 				my $fw_UId = get_freshweightForOneBatchComp($rconn, $rowComp->{'Experiment_Fk'}, $rowComp->{'Sample_Fk'}, $rowComp->{'Aliquot_Fk'});
 				#--------------------------------------------------------------- get rawData for each batchcompilation
 				my $rawData = get_rawDataForOneBatchComp($rconn, $rowComp->{'BatchName_Fk'}, $rowComp->{'BatchNumber_Fk'}, $batchesHRef->{$key}{'Date'}, $rowComp->{'Row'}, $rowComp->{'Column'});
 				my @rawData = @{$rawData};
-
 				#--------------------------------------------------------------- Insert batch_data
 				my $last_insert_batch_data = insert_batch_data($lconn, $last_batch_ID, $linkExperimentHRef->{@{$experimentUId}[0]->{'UId'}}, $linkSampleAliquotFWHRef->{$fw_UId}, $rowComp->{'Row'}, $rowComp->{'Column'});
-			
 				foreach my $keyRawData (@rawData) {
-#					print STDERR "loop3\n";
 					#--------------------------------------------------------------- Insert Rawdata for each enzyme
 					my $last_rawdata_id = insert_rawData($lconn, $last_insert_batch_data, $keyRawData->{'RawValue'}, $keyRawData->{'excluded'}, $keyRawData->{'Velocity'}, $keyRawData->{'proved'}, $linkEnzymeHRef->{$keyRawData->{'Enzyme_Fk'}});
-					
 					my $dataPosition = 1+(($rowComp->{'Row'}*8)+$rowComp->{'Column'});
-					#--------------------------------------------------------------- Insert batch_data
-					
 					#--------------------------------------------------------------- processed data for eaxh enzyme
 					my $processedDatas = get_processedDataForOneRawData($rconn, $rowComp->{'BatchName_Fk'}, $rowComp->{'BatchNumber_Fk'}, $batchesHRef->{$key}{'Date'}, $keyRawData->{'Enzyme_Fk'}, $rowComp->{'Row'}, $rowComp->{'Column'});
 					#--------------------------------------------------------------- Insert processed Data		
@@ -347,25 +230,13 @@ sub insert_data{
 	}
 }
 
-#--------------------------------------------------------------------
+#--------------------------------------------------------------------Insert data in batch_data (local db)
 sub insert_batch_data {
 	my ($lconn, $batchID, $experimentFK, $sampleAliquotID, $row, $col) = @_;
-#	my $query = "
-#		INSERT INTO
-#			batch_data
-#		VALUES ('', '".$batchID."', '".$rawdataID."', '".$sampleAliquotID."', '".$position."', '".$row."', '".$col."');";
-
-#	my $query = "
-#		INSERT INTO
-#			batch_data
-#		VALUES ('', '".$batchID."', '".$rawdataID."', '".$experimentFK."', '1', '".$row."', '".$col."');";
-
 	my $query = "
 		INSERT INTO
 			batch_data
 		VALUES ('', '".$batchID."', '".$experimentFK."', '".$sampleAliquotID."', '".$row."', '".$col."');";
-
-
 	my $sth = $lconn->prepare($query);
 		$sth->execute or die "Can't Add record : $lconn->errstr";
 		my $last_batch_data_id = $lconn->{'mysql_insertid'};
@@ -373,8 +244,7 @@ sub insert_batch_data {
 		return $last_batch_data_id;
 }
 
-
-#--------------------------------------------------------------------
+#--------------------------------------------------------------------Insert data in raw_equ_proc (local db)
 sub insert_raw_equ_proc {
 	my ($lconn, $rawdataID, $processdataID) = @_;
 	my $query = "
@@ -386,16 +256,13 @@ sub insert_raw_equ_proc {
 		$sth->finish;
 }
 
-#--------------------------------------------------------------------
+#--------------------------------------------------------------------Insert data in rawdata (local db)
 sub insert_rawData {
 	my ($lconn, $last_batch_data_id, $rawvalue, $excluded, $velocity, $proved, $enzymeFK ) = @_;
 	my $query = "
 		INSERT INTO
 			rawdata
 		VALUES ('', '".$rawvalue."', '".$excluded."', '".$velocity."', '".$proved."', '".$enzymeFK."', '".$last_batch_data_id."');";
-
-#		print $query."\n";
-
 	my $sth = $lconn->prepare($query);
 		$sth->execute or die "Can't Add record : $lconn->errstr";
 		my $last_rawdata_id = $lconn->{'mysql_insertid'};
@@ -403,7 +270,7 @@ sub insert_rawData {
 		return $last_rawdata_id;
 }
 
-#--------------------------------------------------------------------
+#--------------------------------------------------------------------Insert data in processdata (local db)
 sub insert_processedData {
 	my ($lconn, $value) = @_;
 
@@ -412,8 +279,6 @@ sub insert_processedData {
 		INSERT INTO
 			processdata
 		VALUES ('', '".$value."');";
-
-	#print $query."\n";
 	my $sth = $lconn->prepare($query);
 		$sth->execute or die "Can't Add record : $lconn->errstr";
 		my $last_processedData_id = $lconn->{'mysql_insertid'};
@@ -425,10 +290,9 @@ sub insert_processedData {
 	}
 }
 
-#---------------------------------------------------------------
+#---------------------------------------------------------------Insert data in unit (local db)
 sub insert_unit {
 	my ($lconn, $unitHRef, $linkUnitHRef) = @_;
-
 	foreach my $key (keys %{$unitHRef}){
 		my $query = "INSERT INTO unit VALUES ('', '".$unitHRef->{$key}."');";
 		#print  $query."\n";
@@ -439,22 +303,7 @@ sub insert_unit {
 	}
 }
 
-
-
-sub insert_unit_sparql {
-	my ($lconn, $unitHRef, $linkUnitHRef) = @_;
-
-	foreach my $key (keys %{$unitHRef}){
-		my $query = "INSERT INTO unit VALUES ('', '".$unitHRef->{$key}."');";
-		#print  $query."\n";
-		my $sth = $lconn->prepare($query);
-			$sth->execute or die "Can't Add record : $lconn->errstr";
-			$linkUnitHRef->{$key} = $lconn->{'mysql_insertid'};
-			$sth->finish;
-	}
-}
-
-#---------------------------------------------------------------
+#---------------------------------------------------------------Insert data in enzyme (local db)
 sub insert_enzyme {
 	my ($lconn, $enzymecodeHRef, $linkEnzymeHRef) = @_;
 	foreach my $key (keys %{$enzymecodeHRef}) {
@@ -478,10 +327,9 @@ sub insert_enzyme {
 	}
 }
 
-#--------------------------------------------------------------------
+#--------------------------------------------------------------------Insert data in standard (local db)
 sub insert_standard {
 	my ($lconn, $materialsHRef, $linkStandardHRef) = @_;
-	
 	foreach my $key (keys %{$materialsHRef}) {
 		my $query = "
 			INSERT INTO
@@ -495,13 +343,12 @@ sub insert_standard {
 	}
 }
 
-#---------------------------------------------------------------
+#--------------------------------------------------------------------Insert data in standard_enzyme (local db)
 sub insert_standard_enzyme {
 	my ($lconn, $unitHRef, $enzymecodeHRef, $materialsHRef, $activityHRef) = @_;
 	my $query="INSERT INTO
 				standard_enzyme
 				VALUES ";
-	#print "###########".scalar(@$activityHRef)."#################\n\n\n";
 	foreach my $line (@{$activityHRef}) {
 			my ($unit_fk, $standard_fk, $value, $enzyme_fk) = ("NULL", "NULL", "NULL", "NULL");
 		foreach my $key (keys %{$line}){
@@ -517,32 +364,27 @@ sub insert_standard_enzyme {
 			if (defined($enzymecodeHRef->{$line->{"EnzymeCode_Fk"}}) ) {
 				$enzyme_fk = $enzymecodeHRef->{$line->{"EnzymeCode_Fk"}};
 			}
-
 			$standard_fk = $materialsHRef->{$line->{"Material_Fk"}};
 			$value = $line->{"Value"};
 			$enzyme_fk = $enzymecodeHRef->{$line->{"EnzymeCode_Fk"}};
 		}
-			
 		if ($unit_fk eq "NULL") {
 			$query .= "
 			('', '1', '".$standard_fk."','".$value."','".$enzyme_fk."',''),";
-			#print $query."\n";
 		} 
 		else {
 			$query .= "
 			('', '".$unit_fk."', '".$standard_fk."','".$value."','".$enzyme_fk."',''),";
-			
 		}
 	}
 	chop $query;
 	$query.=";";
-	#print $query;
 	my $sth = $lconn->prepare($query);
 		$sth->execute or die "Can't Add record : $lconn->errstr";
 		$sth->finish;
 }
 
-#--------------------------------------------------------------------
+#--------------------------------------------------------------------Insert data in experiment (local db)
 sub insert_experiment {
 	my ($lconn, $experimentHRef, $linkExperimentHRef) = @_;
 	
@@ -559,7 +401,7 @@ sub insert_experiment {
 	}
 }
 
-#--------------------------------------------------------------------
+#--------------------------------------------------------------------Insert data in experiment_standard (local db)
 sub insert_experiment_standard {
 	my ($lconn, $experimentHRef, $linkExperimentHRef, $standardHRef, $linkStandardHRef) = @_;
 	
@@ -568,19 +410,18 @@ sub insert_experiment_standard {
 		if ($experimentHRef->{$key}{"Material_Fk"} ne "NULL") {
 			$query.="\n('','".$linkStandardHRef->{$experimentHRef->{$key}{"Material_Fk"}}."', '".$linkExperimentHRef->{$key}."'),";
 		}
-		else{#($experimentHRef->{$key}{"Material_Fk"} eq "NULL") {
+		else{
 			$query.="\n('','"."1"."', '".$linkExperimentHRef->{$key}."'),";
 		}
 	}
 	chop $query;
 	$query.=";";
-	#print $query;
 	my $sth = $lconn->prepare($query);
 		$sth->execute or die "Can't Add record : $lconn->errstr";
 		$sth->finish;
 }
 
-#--------------------------------------------------------------------
+#--------------------------------------------------------------------Insert data in freshweight (local db)
 sub insert_freshweight {
 	my ($lconn, $freshweightHRef, $linkFreshweightHRef, $linkFwExpHRef, $linkExperimentHRef, $linkSampleAliquotFWHRef) = @_;
 	my $i=0;
@@ -603,7 +444,6 @@ sub insert_freshweight {
 			INSERT INTO
 				experiment_freshweight
 			VALUES ('', '".$linkExperimentHRef->{$linkFwExpHRef->{$key}{"EXPUID"}}."', '".$last_fw_id."');";
-#			print $queryBis."\n";
 		my $sthBis = $lconn->prepare($queryBis);
 			$sthBis->execute or die "Can't Add record : $lconn->errstr";
 			$sthBis->finish;
@@ -625,7 +465,6 @@ sub insert_freshweight {
 			VALUES ('', '".$last_fw_id."','".$last_sample_id."');";
 		my $sth2b = $lconn->prepare($query2b);
 			$sth2b->execute or die "Can't Add record : $lconn->errstr";
-			#my $last_sample_id = $lconn->{'mysql_insertid'};
 			$sth2b->finish;
 
 		#------------------------------------------------------------------ Insert location
@@ -638,8 +477,6 @@ sub insert_freshweight {
 				INSERT INTO
 					location
 				VALUES ('', '$loc', '', '', ''););
-
-		#ajouts ici /!\
 		}
 		else {
 			$query3 =qq(
@@ -647,30 +484,15 @@ sub insert_freshweight {
 					location
 				VALUES ('', 'undefLocation', '', '', ''););
 		}
-		# fin ajouts
-		
-			my $sth3 = $lconn->prepare($query3);
-				#print STDERR $query3."\n";
-				$sth3->execute or die "Can't Add record : $lconn->errstr";
-				$last_loc_id = $lconn->{'mysql_insertid'};
-				$sth3->finish;
-		# }
-
+		my $sth3 = $lconn->prepare($query3);
+			$sth3->execute or die "Can't Add record : $lconn->errstr";
+			$last_loc_id = $lconn->{'mysql_insertid'};
+			$sth3->finish;
 		#------------------------------------------------------------------ Insert aliquot
-		# my $query4="";
-		# if ($last_loc_id == 1) {
-		# 	$query4 = "
-		# 		INSERT INTO
-		# 			aliquot
-		# 		VALUES ('',  '".$freshweightHRef->{$key}{'Aliquot'}."',  '".$freshweightHRef->{$key}{'Value'}."', '', '1');";
-		# }
-		# else {
 		my $query4 = "
 				INSERT INTO
 					aliquot
 				VALUES ('',  '".$freshweightHRef->{$key}{'Aliquot'}."',  '".$freshweightHRef->{$key}{'Value'}."', '', '".$last_loc_id."');";
-		# }
-#		print $query4."\n";
 		my $sth4 = $lconn->prepare($query4);
 			$sth4->execute or die "Can't Add record : $lconn->errstr";
 			my $last_aliquot_id = $lconn->{'mysql_insertid'};
@@ -690,72 +512,6 @@ sub insert_freshweight {
 		print STDERR "$i/".$size."\r"  if (($i % 100) == 0);
 	}
 }
-
-##--------------------------------------------------------------------
-#sub insert_batches{
-#	my ($lconn, $batchesHRef, $linkBatchesHRef) = @_;
-
-#	foreach my $key (keys %{$batchesHRef}) {
-#		my $query = "
-#			INSERT INTO
-#				batch
-#			VALUES ('', '".$batchesHRef->{$key}{'Name'}."', '".$batchesHRef->{$key}{'Number'}."', '".$batchesHRef->{$key}{'Date'}."', '".$batchesHRef->{$key}{'LayoutType'}."');";
-#		#print $query."\n";
-#		my $sth = $lconn->prepare($query);
-#			$sth->execute or die "Can't Add record : $lconn->errstr";
-#			$linkBatchesHRef->{$key} = $lconn->{'mysql_insertid'};
-#			$sth->finish;
-#	}
-#}
-
-
-
-
-sub convertUTF8{
-	my $dbh = @_;
-	ALTER TABLE batch CONVERT TO CHARACTER SET utf8;
-
-
-	my @querys =(
-		"ALTER TABLE aliquot CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
-		"ALTER TABLE batch CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
-		"ALTER TABLE batch_data CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
-		"ALTER TABLE enzyme CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
-		"ALTER TABLE enzyme_protocol CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
-		"ALTER TABLE equation CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
-		"ALTER TABLE experiment CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
-		"ALTER TABLE experiment_freshweight CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
-		"ALTER TABLE experiment_standard CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
-		"ALTER TABLE freshweight CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
-		"ALTER TABLE freshweight_sample CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
-		"ALTER TABLE location CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
-		"ALTER TABLE processdata CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
-		"ALTER TABLE protocol CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
-		"ALTER TABLE raw_equ_proc CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
-		"ALTER TABLE rawdata CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
-		"ALTER TABLE sample CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
-		"ALTER TABLE sample_aliquot CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
-		"ALTER TABLE standard CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
-		"ALTER TABLE standard_enzyme CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
-		"ALTER TABLE unit CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;",
-		"ALTER TABLE user CONVERT TO CHARACTER SET utf8 COLLATE utf8_bin;");
-
-	my $i=0;
-	foreach my $line (@querys){
-		my $sth = $dbh->prepare($line);
-		$sth->execute or die "Can't Add record : $dbh->errstr";
-		$sth->finish;
-		$i++;
-	}
-	$dbh->disconnect();
-
-}
-
-
-
-
-
-
 
 
 

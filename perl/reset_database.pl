@@ -2,7 +2,7 @@
 
 #############################################################################################
 #
-# Script name : reset database
+# Script name : reset database // reset the db, has to be used each time you set up the db
 # -----------
 # Dev environment : - Ubuntu 14.04 x64
 # ---------------   - perl, v5.18.2 built for x86_64-linux-gnu-thread-multi
@@ -19,6 +19,7 @@ use Encode qw(encode_utf8);
 use utf8;
 use Carp;
 use export_db;
+use connections;
 
 ####### Global vars #######
 our $dbh = export_db::local_db_connector();

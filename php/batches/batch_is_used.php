@@ -59,6 +59,7 @@
 			aliquot.alq_id = sample_aliquot.spl_alq_aliquot_FK AND
 			aliquot.alq_number = :infos2 ");
 
+			error_log($stmt);
 			$stmt->bindParam(':infos0', $infos[0], PDO::PARAM_STR);
 			$stmt->bindParam(':infos1', $infos[1], PDO::PARAM_INT);
 			$stmt->bindParam(':infos2', $infos[2], PDO::PARAM_INT);

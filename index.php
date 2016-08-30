@@ -13,7 +13,10 @@ echo'
 					<div class="alert alert-info">
 						Welcome to the <strong>PLATO Database</strong>. Debug in progress...!
 						<a href="#" data-dismiss="alert" class="close">×</a>
+					</div>
+					<div id="ierror">
 					</div>';
+
 
 					if (!isset($_SESSION['login'])) {
 						echo'<div class="alert alert-error">
@@ -102,6 +105,16 @@ html_footer("");
 ?>
 
 <script type="text/javascript" class="init">
+
+
+$(document).ready(function() {
+	var isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+	if (isIE) {
+		$("#ierror").html('<div class="alert alert-error"> You are using Internet Explorer, some errors might occure. Please use Chrome or Firefox.<a href="#" data-dismiss="alert" class="close">×</a></div>');
+	}
+
+});
 
 refresh_stat();
 

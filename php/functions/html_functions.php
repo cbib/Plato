@@ -154,6 +154,7 @@ echo'
 			<script type="text/javascript" src="'.$path.'libs/datatables/Responsive-2.0.0/js/responsive.bootstrap.min.js"></script>
 			<script type="text/javascript" src="'.$path.'libs/datatables/Scroller-1.4.0/js/dataTables.scroller.min.js"></script>
 			<script type="text/javascript" src="'.$path.'libs/datatables/Select-1.1.0/js/dataTables.select.min.js"></script>
+			<script type="text/javascript" src="'.$path.'libs/datatables/JSZip-2.5.0/jszip.min.js"></script>
 		<script type="text/javascript" src="'.$path.'libs/themes/js/jquery.flot.min.js"></script>
 		<script type="text/javascript" src="'.$path.'libs/themes/js/jquery.flot.resize.min.js"></script>
 		<script type="text/javascript" src="'.$path.'libs/themes/js/jquery.peity.min.js"></script>
