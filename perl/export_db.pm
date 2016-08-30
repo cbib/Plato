@@ -14,6 +14,49 @@ use Data::Dumper;
 
 #################################################
 #			DB SELECT FROM Remote Plato				#
+#						DB connection						#
+#################################################
+
+#-------------------------------------------------------------remote connection (to plato)
+sub remote_db_connector{
+	# Paramètres de connection à la base de données
+	my $bd		= 'dbname';
+	my $serveur	= 'ip';	  # Il est possible de mettre une adresse IP
+	my $identifiant = 'id';	  # identifiant 
+	my $motdepasse	= 'pwd';
+	my $port	= '1433';
+	my $dsn="dbi:ODBC:DSN=plato";
+	print "Connexion à la base de données $bd\n";
+	my $rconn = DBI->connect($dsn, $identifiant, $motdepasse);
+	if (! defined($rconn) ) {
+		 print "***Error connecting to DSN\n";
+		 print "***Error was:\n";
+		 print "***$DBI::errstr\n";         # $DBI::errstr is the error
+	}
+	return $rconn;
+}
+
+#--------------------------------------------------------------- local connection (to new db)
+sub local_db_connector{
+	# Paramètres de connection à la base de données
+	my $bd		= 'localbdname';
+	my $serveur	= '127.0.0.1';	  # Il est possible de mettre une adresse IP
+	my $identifiant = 'mysqlid';	  # identifiant 
+	my $motdepasse	= 'mysqlpwd';
+	my $port	= '';
+	# Connection à la base de données mysql
+	print "Connexion à la base de données $bd\n";
+	my $lconn = DBI->connect( "DBI:mysql:database=$bd;host=$serveur;port=$port", 
+		$identifiant, $motdepasse, { 
+			RaiseError => 1,
+		}
+	) or die "Connection impossible à la base de données $bd !\n $! \n $@\n$DBI::errstr";
+	return $lconn;
+}
+
+
+#################################################
+#			DB SELECT FROM Remote Plato			#
 #################################################
 #--------------------------------------------------------------- get Unit from remote
 sub get_unit_remote {
