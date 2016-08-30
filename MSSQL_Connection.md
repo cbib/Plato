@@ -1,3 +1,5 @@
+## Remote connection to MSSQL Server
+
 If you have some datas to get from a MSSQL Server, it's a bit more complicated :
 
 If you are on windows, the following steps wont help. Otherwise here are some tips that worked for me.
