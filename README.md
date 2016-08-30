@@ -76,4 +76,6 @@ change the sha256 string with one that you have generated on internet here  (htt
     mysql -u username -ppasswd < user.sql
 </pre>
 
+Do not forget to change mysql connection parameters in php/functions/php_functions.php
+
 Now enjoy !
