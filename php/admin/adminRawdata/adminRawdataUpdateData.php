@@ -21,6 +21,19 @@
 	}
 
 
+	$queryBatchData ="SELECT 
+		rawdata_batch_data_FK
+	FROM
+		rawdata, batch_data 
+	WHERE
+		data_enzyme_fk = ".$ezID." AND
+		bat_data_batch_FK = ".$batchID." AND
+		rawdata_batch_data_FK = bat_data_id;";;
+
+		$sth2 = $conn->prepare($queryBatchData);
+		$sth2->execute();
+		$resultBatchData = $sth2->fetchAll();
+
 
 	$query ="SELECT 
 		rawdata_id 
@@ -37,15 +50,27 @@
 
 	try {
 		$deleteQuery = "DELETE FROM rawdata WHERE rawdata_id IN (";
+		$deleteBatchDataQuery = "DELETE FROM batch_data WHERE bat_data_id IN (";
+
 		foreach  ($result as $row) {
 			$deleteQuery.=" ".$row['rawdata_id']." ,";
 		}
+
+
+		foreach  ($resultBatchData as $row) {
+			$deleteBatchDataQuery.=" ".$row['rawdata_batch_data_FK']." ,";
+		}
+
 		$deleteQuery = rtrim($deleteQuery, ",");
 		$deleteQuery.=");";
+
+		$deleteBatchDataQuery = rtrim($deleteBatchDataQuery, ",");
+		$deleteBatchDataQuery.=");";
 
 		$conn->beginTransaction();		
 			error_log($deleteQuery);
 			$conn->query($deleteQuery);
+			$conn->query($deleteBatchDataQuery);
 			$status="success";
 		$conn->commit();
 	}

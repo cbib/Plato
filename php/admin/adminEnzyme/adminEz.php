@@ -5,7 +5,7 @@ include ('../../functions/html_functions.php');
 
 html_header("../../../", $_SESSION['login']);
 
-editable_html_top_page("../../../","Analyte Editor");
+editable_html_top_page("../../../","Analytes");
 
 echo '<a href="#" title="Create a new Analyte" class="tip-bottom" id="createAnalyte"><i class="icon-plus"></i>Create a New Analyte</a>
 </div>';
@@ -129,7 +129,7 @@ function setup_datatable(){
 		dom: 'TB<"clear">frtip',
 		ajax: 'adminEz_database_functions.php',
 		buttons: [
-			'copy', 'csv', 'excel', 'pdf', 'print', 'colvis'
+			'copy', 'csv', 'excel', 'print', 'colvis'
 		],
 		"columnDefs": [ {
             "targets":-1,
@@ -161,6 +161,7 @@ function construct_delete_modal(data, action){
 }
 
 function construct_edit_modal(data, action){
+	console.log(data);
 	var modal ='<div class="modal-dialog">'+
 		'<div class="modal-content">'+
 			'<div class="modal-header">'+
@@ -182,6 +183,7 @@ function construct_edit_modal(data, action){
 								'<input type="text" class="form-control required" id="slope" name="slope" value="'+data[3]+'" required="required" /><br>'+
 							'<label class="control-label" for="number">Nature</label>'+
 							'<select id="nature" class="form-control">'+
+								  '<option value="'+data[4]+'">'+data[4]+'</option>'+
 								  '<option value="Metabolite">Metabolite</option>'+
 								  '<option value="Enzyme">Enzyme</option>'+
 								  '<option value="Other">Other</option>'+

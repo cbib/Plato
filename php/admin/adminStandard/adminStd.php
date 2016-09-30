@@ -5,7 +5,7 @@ include ('../../functions/html_functions.php');
 
 html_header("../../../", $_SESSION['login']);
 
-editable_html_top_page("../../../","Biological Standard Editor");
+editable_html_top_page("../../../","Biological Standards");
 
 echo '<a href="#" title="Create a new Analyte" class="tip-bottom" id="createStandard"><i class="icon-plus"></i>Create a New Standard</a>
 </div>';
@@ -227,7 +227,8 @@ $(document).on("click", "#editAnalyteSubmit", function(){
 	var stdezid = $("#stdezid").val();
 	var slope = $("#slope").val();
 	var nature = $("#nature").val();
-	var amount = $("#amount").val();
+	var amount = $("#amount2").val();
+	amount = amount.replace(/,/g, '.');
 	var newUnit = $("#selectUnitEdit").val();
 	var dilutionValue = $("#dilutionValue").val();
 
@@ -372,7 +373,7 @@ function setup_datatable(){
 		dom: 'TB<"clear">frtip',
 		ajax: 'adminStd_database_functions.php',
 		buttons: [
-			'copy', 'csv', 'excel', 'pdf', 'print', 'colvis'
+			'copy', 'csv', 'excel', 'print', 'colvis'
 		],
 		"columnDefs": [ 
 			{
@@ -419,7 +420,7 @@ function refresh_enzyme(standardID) {
 			data: { standardID : standardID }
 		},
 		buttons: [
-			'copy', 'csv', 'excel', 'pdf', 'print'
+			'copy', 'csv', 'excel', 'print'
 		],
 		"columnDefs": 
 		[
@@ -640,8 +641,8 @@ function construct_edit_modal_analyte(data, action){
 									modal+='<option value="Other">Other</option>';
 								}
 							modal+='</select>'+
-							'<label class="control-label" for="amount">Amount</label>'+
-								'<input type="text" class="form-control required" id="amount" name="amount" value="'+data[6]+'" required="required" />'+
+							'<label class="control-label" for="amount2">Amount</label>'+
+								'<input type="text" class="form-control required" id="amount2" name="amount2" value="'+data[6]+'" required="required" />'+
 
 							'<label class="control-label" for="selectUnit">Select Unit</label>'+
 								'<select class="form-control" id="selectUnitEdit">';

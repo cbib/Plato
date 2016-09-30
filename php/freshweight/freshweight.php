@@ -10,7 +10,7 @@ html_header("../../",  $_SESSION['login']);
  * Editable top page allow to create button in the navbar
  * Dont forget to close the div when you use it
  */
-editable_html_top_page("../../","Freshweights");
+editable_html_top_page("../../","Aliquots");
 echo '<a href="#" id="createExpButton" title="Declare a new Experiment" class="tip-bottom"><i class="icon-plus"></i>Add Experiment</a>
 </div>';
 
@@ -283,8 +283,27 @@ function hideWaitModal(){
  */
 function controlAddData(tableID){
 	var table=document.getElementById(tableID);
-	// console.log(table);
+//	console.log(table.rows.length);
+//	console.log(table.rows[0]);
 	var boolOK = true;
+	var tabSplAlq = {};
+
+	for(var i=1; i<table.rows.length;i++){
+		tabSplAlq[table.rows[i].cells[0].firstChild.value]={};
+	}
+
+	for(var i=1; i<table.rows.length;i++){
+		tabSplAlq[table.rows[i].cells[0].firstChild.value][table.rows[i].cells[1].firstChild.value]=0;
+	}
+
+	for(var i=1; i<table.rows.length;i++){
+		tabSplAlq[table.rows[i].cells[0].firstChild.value][table.rows[i].cells[1].firstChild.value]+=1;
+	}
+
+//	console.log(tabSplAlq);
+
+
+
 	for(var i=1; i<table.rows.length;i++){
 		var sampleNB = table.rows[i].cells[0].firstChild.value;
 		var aliquotNB = table.rows[i].cells[1].firstChild.value;
@@ -297,19 +316,26 @@ function controlAddData(tableID){
 
 		// console.log(sampleNB+". : ."+aliquotNB+"|");
 		var boolExists = $('#spl_alq_table tr > td:contains( '+sampleNB+' ) + td:contains( '+aliquotNB+' )').length;
-		// var boolExists2 = $('#spl_alq_table tr > td:contains('+sampleNB+') + td:contains('+aliquotNB+')').length;
-		// console.log("BOOOOOOOOOOOOL 1 : "+boolExists);
-		// console.log("BOOOOOOOOOOOOL 2 : "+boolExists2);
-		if(boolExists > 0) {
-			console.log("deja present");
+		//	console.log("BOOOOOOOOOOOOL 1 : "+boolExists);
+
+		if(tabSplAlq[sampleNB][aliquotNB] > 1){
+//			console.log("doublons");
 			$('#addRowsTable tr').each(function(index){
-			    if( index == i) 
+				if( index == i)
+					$(this).css("background-color", "#FF9494");
+			});
+			boolOK = false;
+		}
+		else if(boolExists > 0) {
+//			console.log("deja present");
+			$('#addRowsTable tr').each(function(index){
+			    if( index == i)
 			     $(this).css("background-color", "#FF9494");
-			}); 
+			});
 			boolOK = false;
 		}
 		else if((aliquotNB =="") || (! $.isNumeric(aliquotNB))) {
-			console.log("aliquot");
+//			console.log("aliquot");
 			$('#addRowsTable tr').each(function(index){
 			    if( index == i) 
 			     $(this).css("background-color", "#FF9494");
@@ -317,7 +343,7 @@ function controlAddData(tableID){
 			boolOK = false;
 		}
 		else if ((sampleNB =="") || (! $.isNumeric(sampleNB))) {
-			console.log("sample");
+//			console.log("sample");
 			$('#addRowsTable tr').each(function(index){
 			    if( index == i) 
 			     $(this).css("background-color", "#FF9494");
@@ -325,7 +351,7 @@ function controlAddData(tableID){
 			boolOK = false;
 		}
 		else if ((value =="") || (! $.isNumeric(value))) {
-			console.log("value");
+//			console.log("value");
 			$('#addRowsTable tr').each(function(index){
 			    if( index == i) 
 			     $(this).css("background-color", "#FF9494");
@@ -333,7 +359,7 @@ function controlAddData(tableID){
 			boolOK = false;
 		}
 		else if ( $.isNumeric(state)) {
-			console.log("state : "+state);
+//			console.log("state : "+state);
 			$('#addRowsTable tr').each(function(index){
 			    if( index == i) 
 			     $(this).css("background-color", "#FF9494");
@@ -523,7 +549,7 @@ function setup_freshweight_datatable(expID){
 		{ "name": "aliquotSearch",  "targets": 3 }
 		],
 		buttons: [
-			'copy', 'csv', 'excel', 'pdf', 'print'
+			'copy', 'csv', 'excel', 'print'
 		],
 		order: [[ 1, 'asc' ], [ 3, 'asc' ]]
 	});
@@ -546,7 +572,7 @@ function setup_experiment_datatable(){
 			dom : 		'TB<"clear">frtip',
 			ajax : 		'get_all_experiment.php',
 			buttons: [
-				'copy', 'csv', 'excel', 'pdf', 'print'
+				'copy', 'csv', 'excel', 'print'
 			],
 			order: [[ 1, 'asc' ]],
 			columnDefs: [
@@ -557,16 +583,16 @@ function setup_experiment_datatable(){
 				}
 			],
 		createdRow: function( row, data, dataIndex ) {
-			console.log(row);
-			console.log(dataIndex);
-			console.log(data);
+//			console.log(row);
+//			console.log(dataIndex);
+//			console.log(data);
 
 			if ( data[2] == "") {
-				console.log("stdName : "+data[2]);
+//				console.log("stdName : "+data[2]);
 				$(row).css('background-color', '#FDFEFE');
 			}
 			else{
-				console.log("stdName : "+data[2]);
+//				console.log("stdName : "+data[2]);
 				$(row).css('background-color', '#D5F5E3');
 			}
 		}
@@ -728,11 +754,11 @@ function create_addExp_modal(){
 		'<div class="modal-content">'+
 			'<div class="modal-header">'+
 	    		'<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>'+
-	    		'<h4 class="modal-title">New Material <span id=modalBatchName></span></h4>'+
+	    		'<h4 class="modal-title">New Experiment <span id=modalBatchName></span></h4>'+
 	  		'</div>'+
 	  			'<div class="modal-body">'+
 		  			'<div class="form-group">'+
-			            '<label class="control-label" for="number">Material Name</label>'+
+			            '<label class="control-label" for="number">Experiment Name</label>'+
 			            '<div class="form-group has-error">'+
 			            	'<input type="text" class="form-control required" id="expName" name="name" placeholder="Experiment name" required="required" /><br>'+
 			        	'</div>'+
@@ -772,6 +798,7 @@ function resetModalTable (){
 
 	$('#addRowsTable').html(modal);
 	$('#addRowsTips').html('<div class="alert alert-success"> Please paste all your data in the first field <a href="#" data-dismiss="alert" class="close">×</a></div>');
+	$( "button" ).filter( "#addRowsSubmit" ).prop("disabled",true);
 }
 
 // .modal-body {
@@ -865,8 +892,8 @@ function dispatchAddRowsDatas(data) {
 	var newRowContent="";
 	for (var i=0; i < dataLength; i++) {
 		var rowDatas = rowsdatas[i].split(/(?:\t)+/);
-		console.log(rowDatas);
-		console.log(rowDatas.length);
+//		console.log(rowDatas);
+//		console.log(rowDatas.length);
 		rowDatas = chomp_array(rowDatas);
 		if (rowDatas.length ==3){
 			newRowContent += ''+

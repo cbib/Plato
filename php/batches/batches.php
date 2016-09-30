@@ -74,7 +74,7 @@ echo'
 						<div class="widget-content nopadding">
 							<div class="container-fluid">
 								<div class="responsive-table-line">
-									<table id="batchTable" class="table table-bordered table-striped table-condensed table-body-center cell-border row-border" style="width:100%">
+									<table id="batchTable" class="table dt-right table-bordered" style="width:100%">
 										<thead>
 											<tr>
 												<th>#</th>
@@ -308,10 +308,11 @@ $(document).on("change", "#batchName" , function(e){
 		success: function(data) {
 			var obj = JSON.parse(data);
 			if(obj.status == 'success'){
+				$("#batchNumber").prop('disabled', false);
 				if(obj.value !=null){
 					$("#info-batchNumber").html(function(){
 						return "The last batch with this name has the number : "+obj.value; 
-						// console.log("The last batch with this name has the number : "+obj.value);
+
 					});
 				}
 				else{
@@ -324,12 +325,46 @@ $(document).on("change", "#batchName" , function(e){
 	});
 });
 
+$(document).on("change", "#batchNumber" , function(e){
+	$.ajax({
+		url: "controlBatchNameAndNumber2.php",
+		type: "post",
+		data: {batchName : $('#batchName').val(), batchNumber : $('#batchNumber').val()},
+		dataType : 'text',
+		success: function(data) {
+			var obj = JSON.parse(data);
+			if(obj.status == 'success'){
+				var tipsStatus = document.getElementById("batchOk").className;
+//				console.log(tipsStatus);
+
+				if(obj.value !=false){
+					$( "button" ).filter( "#addBatchSubmit" ).prop("disabled",true);
+					$("#help-batchNumber").html(function(){
+						return "<br> This batch alreay exists, please change the number"; 
+					});
+				}
+				else{
+					if(tipsStatus == "alert alert-error"){
+
+					}
+					else {
+						$("button").filter("#addBatchSubmit").prop("disabled", false);
+						$("#help-batchNumber").html(function () {
+							return "";
+						});
+					}
+				}
+			}
+		}
+	});
+});
+
 
 /**
  * Get data paste on the first cell of the add data table
  */
 $(document).bind("paste", '#col1', function(e){
-	console.log("paste !!");
+//	console.log("paste !!");
 	if (e.originalEvent.target.id=="col1"){
 		showWaitModal();
 		var data = e.originalEvent.clipboardData.getData('Text');
@@ -414,7 +449,7 @@ function resetModalTable(){
 			'</tr>'+
 		'</tbody>';
 	$('#addBatchTable').html(modal);
-	$('#addBatchTips').html('<div class="alert alert-success"> Please paste all your data in the first field of the table <a href="#" data-dismiss="alert" class="close">×</a></div>');
+	$('#addBatchTips').html('<div id="batchOk" class="alert alert-success"> Please paste all your data in the first field of the table <a href="#" data-dismiss="alert" class="close">×</a></div>');
 }
 
 /**
@@ -512,13 +547,13 @@ function create_addBatch_modal() {
 				'<div class="row-fluid">'+
 					'<div class="col-lg-2">'+
 						'<div class="input-group">'+
-							'<input class="form-control name" type="text" placeholder="Batch Name" id="batchName" name="name" required="required" />'+
+							'<input class="form-control name" type="text" placeholder="Batch Name" id="batchName" name="name" required="required" disabled/>'+
 							'<span  style="color:red" id="help-batchName"></span>'+
 						'</div><!-- /input-group -->'+
 					'</div><!-- /.col-lg-2 -->'+
 					'<div class="col-lg-2">'+
 						'<div class="input-group">'+
-							'<input class="form-control name" type="text" placeholder="Batch Number" id="batchNumber" name="batchNumber" required="required" />'+
+							'<input class="form-control name" type="text" placeholder="Batch Number" id="batchNumber" name="batchNumber" required="required" disabled/>'+
 							'<span  style="color:red" id="help-batchNumber"></span>'+
 							'<span  style="color:green" id="info-batchNumber"></span>'+
 						'</div><!-- /input-group -->'+
@@ -572,7 +607,7 @@ function batchInsert(tableID){
 	var batchName = $('#batchName');
 	var batchNumber = $('#batchNumber');
 	var batchLayout = $("input[name='layout']:checked").val();
-	console.log("batchLayout : "+batchLayout);
+	//console.log("batchLayout : "+batchLayout);
 	var tablelength = 0;
 
 	if (batchLayout=="SPLIT"){
@@ -582,15 +617,14 @@ function batchInsert(tableID){
 		tablelength = 8;
 	}
 
-
 	/* Take data to make a 2D array */
-	console.log("tablelength = "+tablelength);
+	//console.log("tablelength = "+tablelength);
 	for(var i=1; i<=tablelength; i++){
 		for (var j=1; j <=12; j++){
 			rawdatas.push(table.rows[i].cells[j].firstChild.value);
 		}
 	}
-	console.log(rawdatas);
+	//console.log(rawdatas);
 	/* Controls on insert data */
     if((!batchName.val()) || ($.isNumeric(batchName.val()))) {
 		$('#help-batchName').html("Please add a correct Name");
@@ -605,6 +639,7 @@ function batchInsert(tableID){
     } else {
     	$('#help-batchNumber').html("");
     }
+
 
 	/* Data insertion */
 	if(boolOK) {
@@ -621,15 +656,14 @@ function batchInsert(tableID){
 				var obj = JSON.parse(data);
 				if(obj.status == 'success'){
 					$("#addBatchModal").modal("hide");
-					$('#statusSpan').html('<div class="alert alert-success">'+obj.action+' Successful<a href="#" data-dismiss="alert" class="close">×</a></div>');
+					$('#statusSpan').html('<div id="batchOk" class="alert alert-success">'+obj.action+' Successful<a href="#" data-dismiss="alert" class="close">×</a></div>');
 				}
 				else if(obj.status == 'error'){
-					$('#addBatchTips').html('<div class="alert alert-error">'+obj.action+' Failure<a href="#" data-dismiss="alert" class="close">×</a></div>');
+					$('#addBatchTips').html('<div id="batchOk" class="alert alert-error">'+obj.action+' Failure<a href="#" data-dismiss="alert" class="close">×</a></div>');
 				}
 			},
 			error: function(xhr, status, error) {
-				$('addBatchTips').html('<div class="alert alert-error">Insertion Error : '+xhr.responseText+error+'<a href="#" data-dismiss="alert" class="close">×</a></div>');
-				alert(data);
+				$('addBatchTips').html('<div id="batchOk" class="alert alert-error">Insertion Error : '+xhr.responseText+error+'<a href="#" data-dismiss="alert" class="close">×</a></div>');
 			},
 			complete: function(){
 				hideWaitModal();
@@ -754,7 +788,7 @@ function setup_experiment_datatable(){
 		dom : 		'TB<"clear">frtip',
 		ajax : 		'get_all_experiment.php',
 		buttons: [
-			'copy', 'csv', 'excel', 'pdf', 'print'
+			'copy', 'csv', 'excel', 'print'
 		],
 		order: [[ 1, 'asc' ]],
 		columnDefs: [
@@ -785,145 +819,156 @@ function setup_experiment_datatable(){
 function dispatchAddBatchDatas(data) {
 	var rowsDatas = data.split(/(?:\n)+/);
 	var dataLength = rowsDatas.length;
-	var newRowContent="";
+	var newRowContent = "";
 	var hashMap = new Object();
 	var boolOK = true;
-	/* Dont allow user to add incomplete rows */
-	if (dataLength == 4){
-		$('#addBatchTips').html('<div class="alert alert-success"> Batch Map process <a href="#" data-dismiss="alert" class="close">×</a></div>');
+	var hashSeekDoublons = {};
+
+	if (dataLength == 4) {
+		$('#addBatchTips').html('<div id="batchOk" class="alert alert-success"> Batch Map process <a href="#" data-dismiss="alert" class="close">×</a></div>');
 	}
-	else if (dataLength == 8 ) {
-		$('#addBatchTips').html('<div class="alert alert-success"> Batch Map process <a href="#" data-dismiss="alert" class="close">×</a></div>');
+	else if (dataLength == 8) {
+		$('#addBatchTips').html('<div id="batchOk" class="alert alert-success"> Batch Map process <a href="#" data-dismiss="alert" class="close">×</a></div>');
 	}
 	else {
-		$('#addBatchTips').html('<div class="alert alert-error"> Batch Size is not correct <a href="#" data-dismiss="alert" class="close">×</a></div>');
-		boolOK =false;
+		$('#addBatchTips').html('<div id="batchOk" class="alert alert-error"> Batch Size is not correct <a href="#" data-dismiss="alert" class="close">×</a></div>');
+		boolOK = false;
 	}
 
-	for (var i=0; i < dataLength; i++) {
+	for (var i = 0; i < dataLength; i++) {
 		var rowDatas = rowsDatas[i].split(/(?:\t)+/);
-		for (var j=0; j < rowDatas.length; j++){
-			var name=rowDatas[j];
-			hashMap[name.split('-')[0]]=0;
+		for (var j = 0; j < rowDatas.length; j++) {
+			var name = rowDatas[j];
+			hashMap[name.split('-')[0]] = 0;
+			hashSeekDoublons[name] = 0;
+
 		}
 	}
-	for (var i=0; i < dataLength; i++) {
+	for (var i = 0; i < dataLength; i++) {
 		var rowDatas = rowsDatas[i].split(/(?:\t)+/);
-		for (var j=0; j < rowDatas.length; j++){
-			var name=rowDatas[j];
-			
+		for (var j = 0; j < rowDatas.length; j++) {
+			var name = rowDatas[j];
 			hashMap[name.split('-')[0]]++;
+			hashSeekDoublons[name] +=1;
 		}
 	}
-	
+
 	delete hashMap["EB"];
 	delete hashMap["?"];
 	delete hashMap[""];
-	var min=96;
-	var minname="";
+	delete hashSeekDoublons["EB"];
+	delete hashSeekDoublons["?"];
+	delete hashSeekDoublons[""];
+
+
+	var min = 96;
+	var minname = "";
 	/* Find the standard name (minname), it's based on the fact that standards are less present than data of interest*/
 	// console.log("hashmap length : "+Object.keys(hashMap).length);
-	if(Object.keys(hashMap).length > 2 ){
-		$('#addBatchTips').html('<div class="alert alert-error"> Only one control is allowed <a href="#" data-dismiss="alert" class="close">×</a></div>');
-		boolOK =false;
-	}
-	for (var key in hashMap) {
-		if (hashMap[key]<min){
-			min = hashMap[key];
-			minname=key;
+	if (Object.keys(hashMap).length > 2) {
+		$('#addBatchTips').html('<div id="batchOk" class="alert alert-error"> Only one control is allowed <a href="#" data-dismiss="alert" class="close">×</a></div>');
+		boolOK = false;
+	} else {
+		for (var key in hashMap) {
+			if (hashMap[key] < min) {
+				min = hashMap[key];
+				minname = key;
+			}
 		}
 	}
 
-	/* Controls on data */
-	for (var i=0; i < dataLength; i++) {
-		var rowDatas = rowsDatas[i].split(/(?:\t)+/);
-		$('input:radio[name=layout]:nth(0)').attr('checked',true);
-		$('input:radio[name=layout]').attr('disabled',true);
-		if (rowDatas.length < 12) {
-			$('#addBatchTips').html('<div class="alert alert-error"> Row '+(i+1)+' is not correct <a href="#" data-dismiss="alert" class="close">×</a></div>');
-			boolOK =false;
+	for (var key in hashSeekDoublons) {
+		if (hashSeekDoublons[key] > 1) {
+			boolOK = false;
+			$('#addBatchTips').html('<div id="batchOk" class="alert alert-error"> You have entered identicals freshweights '+key+' <a href="#" data-dismiss="alert" class="close">×</a></div>');
 		}
-		newRowContent += ''+
-		'<tr>'+
-			'<td>'+ (i+1) +'</td>';
-			for (var j=0; j < rowDatas.length; j++){
-				var name=chomp(rowDatas[j]);
-				// console.log(name);
-				if(checkUse(name)==false){
-					newRowContent += '<td><input style="background-color :#EB9018" class="form-control input-sm" type="text" id="1" value="'+name+'" ></td>';
-					boolOK =false;
-					$('#addBatchTips').html('<div class="alert alert-error"> Some freshweights are already used or not created <a href="#" data-dismiss="alert" class="close">×</a></div>');
+	}
+
+	checkUse(rowsDatas).then(function (checkUseResponse) {
+		console.log(checkUseResponse);
+		for (var i = 0; i < dataLength; i++) {
+			var rowDatas = rowsDatas[i].split(/(?:\t)+/);
+			$('input:radio[name=layout]:nth(0)').attr('checked', true);
+			$('input:radio[name=layout]').attr('disabled', true);
+			if (rowDatas.length < 12) {
+				$('#addBatchTips').html('<div id="batchOk" class="alert alert-error"> Row ' + (i + 1) + ' is not correct <a href="#" data-dismiss="alert" class="close">×</a></div>');
+				boolOK = false;
+			}
+			newRowContent += '' +
+				'<tr>' +
+				'<td>' + (i + 1) + '</td>';
+			for (var j = 0; j < rowDatas.length; j++) {
+				var name = chomp(rowDatas[j]);
+				//console.log(name + " : " + checkUseResponse[i][j]);
+				if (checkUseResponse[i][j] != "free") {
+					newRowContent += '<td><input style="background-color :#EB9018" class="form-control input-sm" type="text" id="1" value="' + name + '" ></td>';
+					boolOK = false;
+					$('#addBatchTips').html('<div id="batchOk" class="alert alert-error"> Some freshweights are already used or not created <a href="#" data-dismiss="alert" class="close">×</a></div>');
 				}
-				else{
-					if(name === "EB"){
-						newRowContent += '<td><input style="background-color :#BDE5F8" class="form-control input-sm" type="text" id="1" value="'+name+'" ></td>';
+				else {
+					if (name === "EB") {
+//							console.log("blanc");
+						newRowContent += '<td><input style="background-color :#BDE5F8" class="form-control input-sm" type="text" id="1" value="' + name + '" ></td>';
 					}
-					else if(name === "?"){
-						newRowContent += '<td><input style="background-color :#686868" class="form-control input-sm" type="text" id="1" value="'+name+'" ></td>';
+					else if (name === "?") {
+//							console.log("?");
+						newRowContent += '<td><input style="background-color :#686868" class="form-control input-sm" type="text" id="1" value="' + name + '" ></td>';
 					}
-					else if(name.split('-')[0] === minname){
-						newRowContent += '<td><input style="background-color :#B7FFAF" class="form-control input-sm" type="text" id="1" value="'+name+'" ></td>';
+					else if (name.split('-')[0] === minname) {
+//							console.log("minname => standard");
+						newRowContent += '<td><input style="background-color :#B7FFAF" class="form-control input-sm" type="text" id="1" value="' + name + '" ></td>';
 					}
-					else if (name ==""){
-						// console.log("void");
+					else if (name == "") {
+//							console.log("void");
 						newRowContent += '<td><input style="background-color :#686868" class="form-control input-sm" type="text" id="1" value="?" ></td>';
 					}
 					else {
-						newRowContent += '<td><input  class="form-control input-sm" type="text" id="1" value="'+name+'" ></td>';
+						newRowContent += '<td><input  class="form-control input-sm" type="text" id="1" value="' + name + '" ></td>';
 					}
 				}
 			}
 			newRowContent += '</tr>';
-	}
-
-	if(dataLength == 4){
-		for (var i=4; i < dataLength+4; i++) {
-			var rowDatas = rowsDatas[i-4].split(/(?:\t)+/);
-			$('input:radio[name=layout]:nth(1)').attr('checked',true);
-			$('input:radio[name=layout]').attr('disabled',true);
-			if (rowDatas.length < 12) {
-				$('#addBatchTips').html('<div class="alert alert-error"> Row '+i+' is not correct <a href="#" data-dismiss="alert" class="close">×</a></div>');
-				//return;
-				boolOK =false;
-			}
-			newRowContent += ''+
-			'<tr>'+
-				'<td>'+ (i+1) +'</td>';
-				for (var j=0; j < rowDatas.length; j++){
-					var name=chomp(rowDatas[j]);
-/*					if(checkUse(name)==false){
-						newRowContent += '<td><input style="background-color :#EB9018" class="form-control input-sm" type="text" id="1" value="'+name+'" ></td>';
-						boolOK =false;
-						$('#addBatchTips').html('<div class="alert alert-error"> Some freshweights are already used or not created <a href="#" data-dismiss="alert" class="close">×</a></div>');
-					}*/
-					//else{
-					if(name === "EB"){
-						newRowContent += '<td bgcolor="#A4A4A4"><input style="background-color :#BDE5F8" class="form-control input-sm" type="text" id="1" value="'+name+'" ></td>';
+		}
+		if (dataLength == 4) {
+			for (var i = 4; i < dataLength + 4; i++) {
+				var rowDatas = rowsDatas[i - 4].split(/(?:\t)+/);
+				$('input:radio[name=layout]:nth(1)').attr('checked', true);
+				$('input:radio[name=layout]').attr('disabled', true);
+				if (rowDatas.length < 12) {
+					$('#addBatchTips').html('<div id="batchOk" class="alert alert-error"> Row ' + i + ' is not correct <a href="#" data-dismiss="alert" class="close">×</a></div>');
+					//return;
+					boolOK = false;
+				}
+				newRowContent += '' +
+					'<tr>' +
+					'<td>' + (i + 1) + '</td>';
+				for (var j = 0; j < rowDatas.length; j++) {
+					var name = chomp(rowDatas[j]);
+					if (name === "EB") {
+						newRowContent += '<td bgcolor="#A4A4A4"><input style="background-color :#BDE5F8" class="form-control input-sm" type="text" id="1" value="' + name + '" ></td>';
 					}
-					else if(name === "?"){
-						newRowContent += '<td bgcolor="#A4A4A4"><input style="background-color :#686868" class="form-control input-sm" type="text" id="1" value="'+name+'" ></td>';
+					else if (name === "?") {
+						newRowContent += '<td bgcolor="#A4A4A4"><input style="background-color :#686868" class="form-control input-sm" type="text" id="1" value="' + name + '" ></td>';
 					}
-					else if(name.split('-')[0] === minname){
-						newRowContent += '<td bgcolor="#A4A4A4"><input style="background-color :#B7FFAF" class="form-control input-sm" type="text" id="1" value="'+name+'" ></td>';
+					else if (name.split('-')[0] === minname) {
+						newRowContent += '<td bgcolor="#A4A4A4"><input style="background-color :#B7FFAF" class="form-control input-sm" type="text" id="1" value="' + name + '" ></td>';
 					}
-					else if (name ==""){
+					else if (name == "") {
 						// console.log("void");
 						newRowContent += '<td><input style="background-color :#686868" class="form-control input-sm" type="text" id="1" value="?" ></td>';
 					}
 					else {
-						newRowContent += '<td bgcolor="#A4A4A4"><input  class="form-control input-sm" type="text" id="1" value="'+name+'" ></td>';
+						newRowContent += '<td bgcolor="#A4A4A4"><input  class="form-control input-sm" type="text" id="1" value="' + name + '" ></td>';
 					}
-					//}
 				}
 				newRowContent += '</tr>';
+			}
 		}
-	}
+		$("#addBatchTable tbody").html(newRowContent);
+		$("#addBatchTable").css("fontSize", 11);
+		$("#batchName").prop('disabled', false);
 
-	if(boolOK==true){
-		$( "button" ).filter( "#addBatchSubmit" ).prop("disabled",false);
-	}
-	$("#addBatchTable tbody").html(newRowContent);
-	$("#addBatchTable").css("fontSize", 11);
+	});
 }
 
 /**
@@ -933,37 +978,21 @@ function dispatchAddBatchDatas(data) {
  * @param      {<type>}   line    { description }
  * @return     {boolean}  { description_of_the_return_value }
  */
-function checkUse(line){
-	var retour;
-	console.log(line);
-	if(line =="EB"){
-		retour = true;
-	}
-	else if (line =="?"){
-		retour = true;
-	}
-	else{
+function checkUse(data){
+	return new Promise(function (resolve, reject) {
 		$.ajax({
 			url: "batch_is_used.php",
 			type: "post",
-			data: {line : line},
-			async : false,
-			success: function(data) {
+			data: {data: data},
+			success: function (data) {
 				var obj = JSON.parse(data);
-				console.log(obj);
-				if(obj.result == 'free'){
-					retour=true;
-				}
-				else{
-					retour =false;
-				}
+				resolve(obj.result);
 			},
-			error: function(xhr, status, error) {
-				retour = false;
+			error: function (xhr, status, error) {
+				reject(Error("error in checkUse"));
 			}
 		});
-	}
-	return retour;
+	});
 }
 
 
@@ -1057,7 +1086,7 @@ function displayVals() {
 						responsive:true,
 						dom: 'TB<"clear">',
 						buttons: [
-							'copy', 'csv', 'excel', 'pdf', 'print',
+							'copy', 'csv', 'excel', 'print'
 						]
 					});
 				}

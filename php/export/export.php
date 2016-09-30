@@ -23,8 +23,8 @@ echo'
 <div class="row-fluid">
 	<div id="button-wrapper">
 		<div class="btn-group" data-toggle="buttons" role="group" id="buttonGroup">
-			<button type="button" class="btn btn-lg btn-primary"  id="normalTable">Normal</button>
-			<button type="button" class="btn btn-lg btn-primary"  id="aliquotMerge">Aliquot Merge</button>
+			<button type="button" class="btn btn-lg btn-primary" id="normalTable">Normal</button>
+			<button type="button" class="btn btn-lg btn-primary" id="aliquotMerge">Aliquot Merge</button>
 			<button type="button" class="btn btn-lg btn-primary" id="batchCentering">Interbatch centering</button>
 			<button type="button" class="btn btn-lg btn-primary" id="coeffVar">Std & CV</button>
 		</div>
@@ -99,9 +99,9 @@ html_footer("../../");
 	var expName="";
 	var jsonData=[];
 	var jsonColumns =[];
-	var sampleHash = new Array();
-	var aliquotHash = new Array();
-	var dataHash =  new Array();
+//	var sampleHash = new Array();
+//	var aliquotHash = new Array();
+//	var dataHash =  new Array();
 	var batchIDs = {};
 	var enzymeIDs = {};
 
@@ -160,12 +160,23 @@ $(document).ready(function() {
 	$('#buttonGroup button').click(function() {
 		var selectedButton = $(this).attr('id')
 		showWaitModal();
+		document.getElementById('normalTable').classList.remove('active');
+		document.getElementById('aliquotMerge').classList.remove('active');
+		document.getElementById('batchCentering').classList.remove('active');
+		document.getElementById('coeffVar').classList.remove('active');
+		$( "button" ).filter( "#normalTable" ).prop("disabled",true);
+		$( "button" ).filter( "#aliquotMerge" ).prop("disabled",true);
+		$( "button" ).filter( "#batchCentering" ).prop("disabled",true);
+		$( "button" ).filter( "#coeffVar" ).prop("disabled",true);
 		switch(selectedButton) {
 			case "normalTable":
 				$( "button" ).filter( "#normalTable" ).prop("disabled",true);
 				$( "button" ).filter( "#aliquotMerge" ).prop("disabled",false);
 				$( "button" ).filter( "#batchCentering" ).prop("disabled",false);
 				$( "button" ).filter( "#coeffVar" ).prop("disabled",false);
+				document.getElementById('normalTable').classList.add('active');
+		$('#experimentID').html(expName);
+		generate_data(expID, expName);
 				$('#rawtable-wrapper').show();
 				$('#expender-wrapper').show();
 				$('#mergedTable-wrapper').hide();
@@ -177,6 +188,8 @@ $(document).ready(function() {
 				$( "button" ).filter( "#aliquotMerge" ).prop("disabled",true);
 				$( "button" ).filter( "#batchCentering" ).prop("disabled",true);
 				$( "button" ).filter( "#coeffVar" ).prop("disabled",true);
+				document.getElementById('aliquotMerge').classList.add('active');
+
 				clearTable('MergedTable');
 
 				$('#rawtable-wrapper').hide();
@@ -188,9 +201,11 @@ $(document).ready(function() {
 
 			case "batchCentering":
 				$( "button" ).filter( "#normalTable" ).prop("disabled",false);
-				$( "button" ).filter( "#aliquotMerge" ).prop("disabled",true);
+				$( "button" ).filter( "#aliquotMerge" ).prop("disabled",false);
 				$( "button" ).filter( "#batchCentering" ).prop("disabled",true);
 				$( "button" ).filter( "#coeffVar" ).prop("disabled",true);
+				document.getElementById('batchCentering').classList.add('active');
+
 				clearTable('InterbatchTable');
 
 				$('#rawtable-wrapper').show();
@@ -205,6 +220,8 @@ $(document).ready(function() {
 				$( "button" ).filter( "#aliquotMerge" ).prop("disabled",true);
 				$( "button" ).filter( "#batchCentering" ).prop("disabled",true);
 				$( "button" ).filter( "#coeffVar" ).prop("disabled",true);
+				document.getElementById('coeffVar').classList.add('active');
+
 				clearTable('CvTable');
 				
 				$('#rawtable-wrapper').hide();
@@ -261,7 +278,7 @@ function setup_experiment_datatable(){
 			"width": "20px"
 		} ],
 		buttons: [
-			'copy', 'csv', 'excel', 'pdf', 'print'
+			'copy', 'csv', 'excel', 'print'
 		]
 	});
 }
@@ -297,7 +314,6 @@ function generate_data(expID, expName){
 					{title: "Aliquot"}
 				];
 				var columns = ["Batch", "Experiment", "Sample", "Aliquot"];
-
 				/* Get the thead */
 				for(var j=0; j<headSplit.length-1; j++){
 					var objet = new Object();
@@ -364,30 +380,6 @@ function setup_rawtable_datatable(colDef, dataset){
 	})
 }
 
-/**
- * Get standard deviation
- *
- * @method     getStdDev
- * @param      {<type>}  processDataMap  { description }
- * @param      {<type>}  dataTypeMap     { description }
- * @param      {<type>}  excludMap       { description }
- */
-function getStdDev(processDataMap, dataTypeMap, excludMap){
-	var stdArray=[];
-	for(var i=0;i<8; i++){
-		for(var j=0;j<12; j++){
-			if(excludMap[i][j]==0){
-				if(dataTypeMap[i][j]==3){
-					if(!isNaN(processDataMap[i][j])){
-						stdArray.push(parseFloat(processDataMap[i][j]));
-					}
-				}
-			}
-		}
-	}
-	console.log(stdArray);
-	var stdDev = getError(stdArray,2);
-}
 
 /**
  * Display the number of standard used / number of standards
@@ -396,9 +388,9 @@ function getStdDev(processDataMap, dataTypeMap, excludMap){
  * @param      {<type>}  tableID  { description }
  */
 function standardsUsed(tableID){
-	var table=document.getElementById("RawTable");
+//	var table=document.getElementById("RawTable");
 	var hashStdUsed = {};
-
+	console.log(batchIDs);
 	$.each(batchIDs, function(batchID, batchName){
 		hashStdUsed[batchName]={};
 		$.each(enzymeIDs, function(ezName, ezID){
@@ -418,9 +410,11 @@ function standardsUsed(tableID){
 						data: {batchID : batchID, ezID : ezID},
 						async : false,
 						success: function(data) {
+							console.log(data);
 							var obj2 = JSON.parse(data);
 							var arrayOfNumbers = obj2.procValues.map(Number);
 							hashStdUsed[batchName][ezName]["CV"] = getError(arrayOfNumbers,2);
+
 						},
 						error: function(xhr, status, error) {
 							retour = false;
@@ -433,7 +427,7 @@ function standardsUsed(tableID){
 			});
 		});
 	});
-
+	console.log(hashStdUsed);
 	/* Create a 2D array
 	 * First line is the thead
 	 */
@@ -444,9 +438,10 @@ function standardsUsed(tableID){
 	var nbCols = table.rows[0].cells.length;
 
 	for (var i=4; i<nbCols; i++){
+		var code = table.rows[0].cells[i].firstChild.innerHTML.split('_')[0];
 		headerTab.push(table.rows[0].cells[i].firstChild.innerHTML);
-		headerTab.push("Std Used");
-		headerTab.push("CV %");
+		headerTab.push(code+"_Std Used");
+		headerTab.push(code+"_CV %");
 	}
 	finalMap.unshift(headerTab);
 
@@ -457,8 +452,19 @@ function standardsUsed(tableID){
 		}
 		for (var j=4; j <= nbCols-1; j++){
 			tab.push(table.rows[i].cells[j].innerText);
-			tab.push(hashStdUsed[table.rows[i].cells[0].innerText][table.rows[0].cells[j].firstChild.innerHTML]["StdUsed"]+"/"+hashStdUsed[table.rows[i].cells[0].innerText][table.rows[0].cells[j].firstChild.innerHTML]["MaxStd"]);
-			tab.push((Math.round(hashStdUsed[table.rows[i].cells[0].innerText][table.rows[0].cells[j].firstChild.innerHTML]["CV"])*10)/10);
+			if (hashStdUsed[table.rows[i].cells[0].innerText][table.rows[0].cells[j].firstChild.innerHTML]["MaxStd"] == null){
+				tab.push("NA");
+			}
+			else{
+				tab.push(hashStdUsed[table.rows[i].cells[0].innerText][table.rows[0].cells[j].firstChild.innerHTML]["StdUsed"]+"/"+hashStdUsed[table.rows[i].cells[0].innerText][table.rows[0].cells[j].firstChild.innerHTML]["MaxStd"]);
+			}
+			// tab.push((Math.round(hashStdUsed[table.rows[i].cells[0].innerText][table.rows[0].cells[j].firstChild.innerHTML]["CV"])*10)/10);
+			if (isNaN(hashStdUsed[table.rows[i].cells[0].innerText][table.rows[0].cells[j].firstChild.innerHTML]["CV"])){
+				tab.push("NA");
+			}
+			else{
+				tab.push(hashStdUsed[table.rows[i].cells[0].innerText][table.rows[0].cells[j].firstChild.innerHTML]["CV"]);
+			}
 		}
 		finalMap.push(tab);
 	}
@@ -516,7 +522,7 @@ function interBatchCentering(tableID){
 	var nbCols = table.rows[0].cells.length;
 	var hashBatch = {};
 	var MeanOfMeans={};
-	var batchNumber=0;
+
 
 	/**
 	 * Initialize Hash
@@ -524,7 +530,7 @@ function interBatchCentering(tableID){
 	for(var i=1; i<nbRows; i++){
 		hashBatch[table.rows[i].cells[0].innerText]={};
 	}
-	batchNumber = Object.keys(hashBatch).length;
+//	var batchNumber = Object.keys(hashBatch).length;
 	for(var i=1; i<nbRows; i++){
 		for (var j=4; j <= nbCols-1; j++){
 			hashBatch[table.rows[i].cells[0].innerText][table.rows[0].cells[j].firstChild.innerHTML]={};
@@ -604,12 +610,12 @@ function interBatchCentering(tableID){
  */
 function aliquotMerge(expName){
 	var table = document.getElementById("RawTable");
-	var prevSample = table.rows[1].cells[2].innerText;
-	var currentSample = table.rows[1].cells[2].innerText;
-	var values = [];
-	var diviseur = [];
-	var ezNumber = table.rows[0].cells.length - 3;
-	var count = {};
+//	var prevSample = table.rows[1].cells[2].innerText;
+//	var currentSample = table.rows[1].cells[2].innerText;
+//	var values = [];
+//	var diviseur = [];
+//	var ezNumber = table.rows[0].cells.length - 3;
+//	var count = {};
 	var sampleLinkID ={};
 	var valuesLinkSample ={};
 	var divisorLinkSample ={};
@@ -781,6 +787,8 @@ function getStandardDeviation( numArr, numOfDec ){
 }
 
 function getError(numArr, numOfDec){
+	// console.log("numArr");
+	// console.log(numArr);
 	if( !isArray(numArr) ){ return false; }
 	var ec = getStandardDeviation( numArr, numOfDec );
 	var mean =  getAverageFromNumArr( numArr, numOfDec );

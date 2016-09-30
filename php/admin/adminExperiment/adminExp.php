@@ -5,7 +5,7 @@ include ('../../functions/html_functions.php');
 
 html_header("../../../", $_SESSION['login']);
 
-editable_html_top_page("../../../","Experiment Editor");
+editable_html_top_page("../../../","Experiments");
 
 echo '<a href="#" title="Create a new Analyte" class="tip-bottom" id="createStandard"><i class="icon-plus"></i>Create a New Experiment</a>
 </div>';
@@ -137,7 +137,7 @@ function setup_experiment_datatable(){
 		dom: 'TB<"clear">frtip',
 		ajax: 'adminExp_database_functions.php',
 		buttons: [
-			'copy', 'csv', 'excel', 'pdf', 'print'
+			'copy', 'csv', 'excel', 'print'
 		],
 		order: [[ 1, 'asc' ]],
 		columnDefs: [ 

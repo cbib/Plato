@@ -11,7 +11,11 @@ echo'
 			<div class="row-fluid">
 				<div class="span12">
 					<div class="alert alert-info">
-						Welcome to the <strong>PLATO Database</strong>. Debug in progress...!
+						Welcome to <strong>PLATO Database</strong>.
+						<a href="#" data-dismiss="alert" class="close">×</a>
+					</div>
+					<div class="alert alert-warning">
+						To provide us some feedback or declare an issue, please follow this link :<strong> https://github.com/cbib/Plato/issues </strong>
 						<a href="#" data-dismiss="alert" class="close">×</a>
 					</div>
 					<div id="ierror">
@@ -226,8 +230,6 @@ $(document).ready(function() {
 });
 
 
-
-
 function batchDataPrint(data, data2){
     $('#batchEvolution').highcharts({
         chart: {
@@ -246,7 +248,15 @@ function batchDataPrint(data, data2){
             }
         },
         tooltip: {
-            pointFormat: '{series.name} <b>{point.y:,.0f}</b>'
+            formatter: function () {
+                if (this.series.name == "Batch Number per day") {
+                    return "<b>" + this.series.name + " : " + this.y/10;
+                }
+                else {
+                	return "<b>" + this.series.name + " : " + this.y;
+                }
+
+            }
         },
         plotOptions: {
             area: {

@@ -12,18 +12,18 @@ echo'
 	<div class="span10">
 		<div class="widget-box" style="background : transparent">
 			<div class="widget-content nopadding">
-			<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="enzyme" width="100%">
-				<thead>
-					<tr>
-						<th>ID</th>
-						<th>Analyte</th>
-						<th>Code</th>
-						<th>Slope</th>
-						<th>Nature</th>
-					</tr>
-				</thead>
-			</table>
-		</div>
+				<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="enzyme" width="100%">
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Analyte</th>
+							<th>Code</th>
+							<th>Slope</th>
+							<th>Nature</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
 		</div>
 	</div>
 </div>
@@ -50,7 +50,7 @@ function setup_datatable(){
 		dom: 'TB<"clear">frtip',
 		ajax: 'analytes_database_functions.php',
 		buttons: [
-			'copy', 'csv', 'excel', 'pdf', 'print', 'colvis'
+			'copy', 'csv', 'excel', 'print', 'colvis'
 		],
 		"columnDefs": [ {
             "targets":-1,

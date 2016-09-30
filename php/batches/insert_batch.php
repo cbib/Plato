@@ -58,7 +58,11 @@
 			$status="error";
 			error_log("WRONG batchNumber");
 		}
-		$batchID = insert_batch_in_db($conn, $batchLayout, $batchName, $batchNumber, $batchDate);
+		
+		$batchExists = getBatchExists($conn, $batchName, $batchNumber);
+		if ($batchExists >0){
+			$status="error";
+		}
 		$action = "creation";
 	}
 
@@ -71,6 +75,7 @@
 	$col = 0;
 
 	if ($status != "error"){
+		$batchID = insert_batch_in_db($conn, $batchLayout, $batchName, $batchNumber, $batchDate);
 		$stateUpdateQuery="UPDATE sample_aliquot SET spl_alq_state = 'in use' WHERE spl_alq_id IN (";
 		$insertBatchDataQuery = "
 		INSERT INTO 
@@ -86,20 +91,20 @@
 				$expID = "1";
 			}
 			else {
-				error_log("OTHERS : ".$line);
+//				error_log("OTHERS : ".$line);
 				$pos_exist = batch_pos_exist_in_db($line, $conn);
 				$spl_alq_id = get_sample_aliquot_id($line, $conn);
 				$expID = get_experiment_id_from_name($line, $conn);
-				error_log("EXPID = ".$expID);
+//				error_log("EXPID = ".$expID);
 			}
 
 			if ($spl_alq_id == -1) {
-				error_log("No sample aliquot ID : ".$line);
+//				error_log("No sample aliquot ID : ".$line);
 				$status="error";
 			}
 			else {
 				if ($expID==""){
-					error_log("No Experiment ID found : ".$line);
+//					error_log("No Experiment ID found : ".$line);
 					$status="error";
 				}
 				else {
@@ -111,7 +116,7 @@
 						('','$batchID','$expID','$spl_alq_id','$row','$col'),";
 					}
 					else {
-						error_log("failure on insert batch_data");
+//						error_log("failure on insert batch_data");
 						$output.="Error on insert batch_data ";
 					}
 				}
@@ -128,7 +133,7 @@
 		$status = lance_requete($stateUpdateQuery, $conn);
 	}
 	else{
-		error_log("ERROR : ".$status);
+//		error_log("ERROR : ".$status);
 	}
 
 $response_array['status']=$status;
@@ -183,10 +188,33 @@ function get_experiment_id_from_name($line, $conn){
 			`exp_name` REGEXP '^".$info[0]."$';
 		";
 	}
-	error_log($selectIdQuery);
+	// error_log($selectIdQuery);
 	$req = $conn->query($selectIdQuery)->fetchColumn();
-	error_log("EXP ID  : ".$req);
+	// error_log("EXP ID  : ".$req);
 	return $req;
+}
+
+function getBatchExists($conn, $batchName, $batchNumber){
+	$query = "
+	SELECT 
+		count(*) 
+	FROM
+		batch
+	WHERE
+		bat_name like '%".$batchName."%' AND
+		bat_number = ".$batchNumber.";
+	";
+
+	try 
+	{
+		$req = $conn->query($query)->fetchColumn();
+		// error_log($req);
+		return $req;
+	}
+	catch ( Exception $e ) {
+		error_log("failure est survenue lors de $query".$e->getMessage());
+		$output.="Error on finding batch position ";
+	}
 }
 
 function lance_requete($query, $conn){

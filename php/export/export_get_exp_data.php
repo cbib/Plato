@@ -26,7 +26,7 @@
 	$ezNames = $conn->query($ezNameQuery)->fetchAll();
 	$lineName="";
 	foreach($ezNames as $name){
-		$lineName.=$name[0]." ".$name[2]."#".$name[1].">";
+		$lineName.=$name[2]."_".$name[0]."#".$name[1].">";
 	}
 	$output[]=$lineName;
 

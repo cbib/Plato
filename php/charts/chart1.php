@@ -62,7 +62,7 @@ function printAnalyteDistrib(data){
             zoomType: 'x'
         },
         title: {
-            text: 'How often Analytes are used ?'
+            text: 'How often Analytes are used'
         },
         xAxis: {
             type: 'category',
@@ -113,7 +113,7 @@ function printSize(dataSize) {
         chart: {
             type: 'solidgauge'
         },
-        title : 'Free space in db',
+        title : 'Free space in database',
         pane: {
             center: ['50%', '85%'],
             size: '140%',
@@ -130,7 +130,6 @@ function printSize(dataSize) {
         tooltip: {
             enabled: false
         },
-        // the value axis
         yAxis: {
             stops: [
                 [0.1, '#55BF3B'], // green

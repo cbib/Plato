@@ -5,7 +5,7 @@ include ('../../functions/html_functions.php');
 
 html_header("../../../", $_SESSION['login']);
 
-editable_html_top_page("../../../","User Management");
+editable_html_top_page("../../../","Users");
 
 echo '<a href="#" title="Create a new Analyte" class="tip-bottom" id="createAnalyte"><i class="icon-plus"></i>Create a New user</a>
 </div>';

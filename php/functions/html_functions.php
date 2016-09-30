@@ -7,37 +7,25 @@ echo '
 <html lang="en">
 	<head>
 		<title>PLATO DataBase</title>
-		
+		<meta name="description" content="WebTool for 96 well plates data processing in plant metabolisme research" />
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<!-- ***** CSS ***** -->
-		<!-- -->
 		<!-- bootstrap 3.0.2 -->
-		<!-- Datatable plugin bootstrap -->
 			<link rel="stylesheet" type="text/css" href="'.$path.'libs/datatables/Bootstrap-3.3.5/css/bootstrap.min.css"/>
 			<link rel="stylesheet" type="text/css" href="'.$path.'libs/datatables/DataTables-1.10.10/css/dataTables.bootstrap.min.css"/>
 			<link rel="stylesheet" type="text/css" href="'.$path.'libs/datatables/Buttons-1.1.0/css/buttons.bootstrap.min.css"/>
 			<link rel="stylesheet" type="text/css" href="'.$path.'libs/datatables/Responsive-2.0.0/css/responsive.bootstrap.min.css"/>
 			<link rel="stylesheet" type="text/css" href="'.$path.'libs/datatables/Scroller-1.4.0/css/scroller.bootstrap.min.css"/>
 			<link rel="stylesheet" type="text/css" href="'.$path.'libs/datatables/Select-1.1.0/css/select.bootstrap.min.css"/>
-
 			<link rel="stylesheet/less" type="text/css" href="'.$path.'libs/themes/less/bootstrap.less"/>
 			<link rel="stylesheet" type="text/css" href="'.$path.'libs/themes/style/delta.main.css" />
 			<link rel="stylesheet" type="text/css" href="'.$path.'libs/themes/style/delta.grey.css"/>
-
-			<script> less = {env: "development"};</script>
-			<script type="text/javascript" src="'.$path.'libs/themes/js/less/less.js"></script>
-
-			
-			<script type="text/javascript" src="'.$path.'libs/datatables/jQuery-2.1.4/jquery-2.1.4.min.js"></script>
-			<script type="text/javascript" src="'.$path.'libs/datatables/Bootstrap-3.3.5/js/bootstrap.min.js"></script>
-
 	</head>
 	<body>
 		<br>
 		<div id="sidebar"> 
-			<h1 id="logo"></h1>  
+			<h1 id="logo"></h1>
 			<a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
 			<ul>
 				<li class="active"><a href="'.$path.'index.php"><i class="icon icon-home"></i> <span>Dashboard</span></a></li>
@@ -45,22 +33,23 @@ echo '
 					<a href="#"><i class="icon icon-th-list"></i> <span>Database</span> <span class="label">6</span></a>
 					<ul>
 						<li><a href="'.$path.'php/standard/standards.php">Standards</a></li>
-						<li><a href="'.$path.'php/freshweight/freshweight.php">Freshweight</a></li>
+						<li><a href="'.$path.'php/freshweight/freshweight.php">Aliquots</a></li>
 						<li><a href="'.$path.'php/batches/batches.php">Batches</a></li>
 						<li><a href="'.$path.'php/processing/processing.php">Raw Data Processing</a></li>
 						<li><a href="'.$path.'php/export/export.php">Export</a></li>
-						<li><a href="'.$path.'php/analytes/analytes.php">Analytes list</a></li>
+						<li><a href="'.$path.'php/analytes/analytes.php">Analytes</a></li>
 					</ul>
 				</li>';
 				if ($userLevel == "admin"){
 				echo'	<li class="submenu" id="adminPanel">
-						<a href="#"><i class="icon icon-pencil"></i> <span>Admin Panel</span> <span class="label">5</span></a>
+						<a href="#"><i class="icon icon-pencil"></i> <span>Admin Panel</span> <span class="label">6</span></a>
 						<ul>
-							<li><a href="'.$path.'php/admin/adminEnzyme/adminEz.php">Analytes Editor</a></li>
-							<li><a href="'.$path.'php/admin/adminStandard/adminStd.php">Standards Editor</a></li>
-							<li><a href="'.$path.'php/admin/adminExperiment/adminExp.php">Experiment Editor</a></li>
-							<li><a href="'.$path.'php/admin/adminRawdata/adminRawdata.php">RawData Editor</a></li>
-							<li><a href="'.$path.'php/admin/adminPwd/adminPwd.php">User Management</a></li>
+							<li><a href="'.$path.'php/admin/adminStandard/adminStd.php">Standards</a></li>
+							<li><a href="'.$path.'php/admin/adminExperiment/adminExp.php">Experiments</a></li>
+							<li><a href="'.$path.'php/admin/adminBatch/adminBatch.php">Batches</a></li>
+							<li><a href="'.$path.'php/admin/adminRawdata/adminRawdata.php">RawData</a></li>
+							<li><a href="'.$path.'php/admin/adminEnzyme/adminEz.php">Analytes</a></li>
+							<li><a href="'.$path.'php/admin/adminPwd/adminPwd.php">Users</a></li>
 						</ul>
 					</li>';
 				}
@@ -106,7 +95,6 @@ function index_html_top_page($pagename) {
 				</div>
 			</div>
 ';
-
 }
 
 function editable_html_top_page($path, $pagename) {
@@ -117,7 +105,7 @@ function editable_html_top_page($path, $pagename) {
 				</div>
 			</h1>
 			<div id="breadcrumb">
-				<a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i>'.$pagename.'</a>';
+				<a href="'.$path.'index.php" title="Go to Home" class="tip-bottom"><i class="icon-home"></i>'.$pagename.'</a>';
 			}
 
 function generic_html_top_page($path, $pagename) {
@@ -128,7 +116,7 @@ function generic_html_top_page($path, $pagename) {
 				</div>
 			</h1>
 			<div id="breadcrumb">
-				<a href="#" title="Go to Home" class="tip-bottom"><i class="icon-home"></i>'.$pagename.'</a>
+				<a href="'.$path.'index.php" title="Go to Home" class="tip-bottom"><i class="icon-home"></i>'.$pagename.'</a>
 			</div>';
 }
 
@@ -140,21 +128,26 @@ echo'
 					</div>
 				</div>
 			</div>
-			<script type="text/javascript" src="'.$path.'libs/datatables/pdfmake-0.1.18/build/pdfmake.min.js"></script>
-			<script type="text/javascript" src="'.$path.'libs/datatables/pdfmake-0.1.18/build/vfs_fonts.js"></script>
-			<script type="text/javascript" src="'.$path.'libs/datatables/DataTables-1.10.10/js/jquery.dataTables.min.js"></script>
-			<script type="text/javascript" src="'.$path.'libs/datatables/DataTables-1.10.10/js/dataTables.bootstrap.min.js"></script>
-			<script type="text/javascript" src="'.$path.'libs/datatables/Buttons-1.1.0/js/dataTables.buttons.min.js"></script>
-			<script type="text/javascript" src="'.$path.'libs/datatables/Buttons-1.1.0/js/buttons.bootstrap.min.js"></script>
-			<script type="text/javascript" src="'.$path.'libs/datatables/Buttons-1.1.0/js/buttons.colVis.min.js"></script>
-			<script type="text/javascript" src="'.$path.'libs/datatables/Buttons-1.1.0/js/buttons.flash.min.js"></script>
-			<script type="text/javascript" src="'.$path.'libs/datatables/Buttons-1.1.0/js/buttons.html5.min.js"></script>
-			<script type="text/javascript" src="'.$path.'libs/datatables/Buttons-1.1.0/js/buttons.print.min.js"></script>
-			<script type="text/javascript" src="'.$path.'libs/datatables/Responsive-2.0.0/js/dataTables.responsive.min.js"></script>
-			<script type="text/javascript" src="'.$path.'libs/datatables/Responsive-2.0.0/js/responsive.bootstrap.min.js"></script>
-			<script type="text/javascript" src="'.$path.'libs/datatables/Scroller-1.4.0/js/dataTables.scroller.min.js"></script>
-			<script type="text/javascript" src="'.$path.'libs/datatables/Select-1.1.0/js/dataTables.select.min.js"></script>
-			<script type="text/javascript" src="'.$path.'libs/datatables/JSZip-2.5.0/jszip.min.js"></script>
+
+		<script> less = {env: "development"};</script>
+		<script type="text/javascript" src="'.$path.'libs/themes/js/less/less.js"></script>
+		<script type="text/javascript" src="'.$path.'libs/datatables/jQuery-2.1.4/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="'.$path.'libs/datatables/Bootstrap-3.3.5/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="'.$path.'libs/datatables/pdfmake-0.1.18/build/pdfmake.min.js"></script>
+		<script type="text/javascript" src="'.$path.'libs/datatables/pdfmake-0.1.18/build/vfs_fonts.js"></script>
+		<script type="text/javascript" src="'.$path.'libs/datatables/DataTables-1.10.10/js/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" src="'.$path.'libs/datatables/DataTables-1.10.10/js/dataTables.bootstrap.min.js"></script>
+		<script type="text/javascript" src="'.$path.'libs/datatables/Buttons-1.1.0/js/dataTables.buttons.min.js"></script>
+		<script type="text/javascript" src="'.$path.'libs/datatables/Buttons-1.1.0/js/buttons.bootstrap.min.js"></script>
+		<script type="text/javascript" src="'.$path.'libs/datatables/Buttons-1.1.0/js/buttons.colVis.min.js"></script>
+		<script type="text/javascript" src="'.$path.'libs/datatables/Buttons-1.1.0/js/buttons.flash.min.js"></script>
+		<script type="text/javascript" src="'.$path.'libs/datatables/Buttons-1.1.0/js/buttons.html5.min.js"></script>
+		<script type="text/javascript" src="'.$path.'libs/datatables/Buttons-1.1.0/js/buttons.print.min.js"></script>
+		<script type="text/javascript" src="'.$path.'libs/datatables/Responsive-2.0.0/js/dataTables.responsive.min.js"></script>
+		<script type="text/javascript" src="'.$path.'libs/datatables/Responsive-2.0.0/js/responsive.bootstrap.min.js"></script>
+		<script type="text/javascript" src="'.$path.'libs/datatables/Scroller-1.4.0/js/dataTables.scroller.min.js"></script>
+		<script type="text/javascript" src="'.$path.'libs/datatables/Select-1.1.0/js/dataTables.select.min.js"></script>
+		<script type="text/javascript" src="'.$path.'libs/datatables/JSZip-2.5.0/jszip.min.js"></script>
 		<script type="text/javascript" src="'.$path.'libs/themes/js/jquery.flot.min.js"></script>
 		<script type="text/javascript" src="'.$path.'libs/themes/js/jquery.flot.resize.min.js"></script>
 		<script type="text/javascript" src="'.$path.'libs/themes/js/jquery.peity.min.js"></script>

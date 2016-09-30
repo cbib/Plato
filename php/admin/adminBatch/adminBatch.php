@@ -5,7 +5,7 @@ include ('../../functions/html_functions.php');
 
 html_header("../../../", $_SESSION['login']);
 
-generic_html_top_page("../../../","RawData");
+generic_html_top_page("../../../","Batches");
 
 echo'
 <span id="statusSpan">
@@ -100,42 +100,23 @@ $(document).ready(function() {
 	$( "#selectBatch" ).click(function() {
 		batchID = $( "#selectBatch" ).val();
 		console.log("batch ID : "+batchID);
-		$.ajax({
-	        url: "adminRawData_get_enzymes.php",
-	        type: "post",
-	        data: { batchID : batchID},
-			success: function(data) {
-				console.log(data);
-				var output = [];
-				output.push('<option value=""> ----- Select ----- </option>');
-				for(i=0; i<data.length; i++){
-					output.push('<option value="', data[i].split('@')[1], '">', data[i].split('@')[2], "-", data[i].split('@')[3], '</option>');
-				}
-				$('#selectEz').html(output.join('')); 
-				$("#select-ez-wrapper").show();
-			}
-		});
 	});
 
-	$('#selectEz').change(function(){
-		ezID = $( "#selectEz" ).val();
-		ezName = $( "#selectEz option:selected").text();
-		construct_delete_modal(ezName, ezID, expID, batchID, "remove");
+
+	$('#selectBatch').change(function(){
+		batchID = $( "#selectBatch" ).val();
+		construct_delete_modal(batchID, "remove");
 	});
 
 });
 
 $(document).on("click", "#editSubmit", function(e){
-	var expID = $("#expID").val();
-	var ezID = $("#ezID").val();
 	var batchID = $("#batchID").val();
-	console.log("click delete : ez => "+ ezID+" exp => "+expID+" => batch "+batchID );
+	console.log("click delete : => batch "+batchID );
 		$.ajax({
-		url: "adminRawdataUpdateData.php",
+		url: "adminBatchUpdateData.php",
 		type: "post",
 		data: { 
-			expID : expID,
-			ezID : ezID,
 			batchID : batchID
 		},
 		success: function(data) {
@@ -164,15 +145,13 @@ function setup_experiment_datatable(){
 	});
 }
 
-function construct_delete_modal(ezName, ezID, expID, batchID, action){
+function construct_delete_modal(batchID, action){
 	var modal ='<div class="modal-dialog">'+
 	'<div class="loginmodal-container">'+
 	    		'<h1>Confirm Deletion</h1><br>'+
-	  			'<h6> Are you sure you want to remove '+ezName+' raw values ?</h6>'+
+	  			'<h6> Are you sure you want to remove the Batch : '+batchID+' ?</h6>'+
 	  			'<form role="form" id="editRowForm" method="post">'+
   					'<input type="hidden" class="form-control required" id="action" name="action" value="'+action+'">'+
-	               	'<input type="hidden" class="form-control required" id="expID" name="expID" value="'+expID+'" disabled="disabled" /><br>'+
-	               	'<input type="hidden" class="form-control required" id="ezID" name="ezID" value="'+ezID+'" disabled="disabled" /><br>'+
 	               	'<input type="hidden" class="form-control required" id="batchID" name="batchID" value="'+batchID+'" disabled="disabled" /><br>'+
 				'</form>'+
 				'<div class="modal-footer">'+

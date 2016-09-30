@@ -3,81 +3,71 @@
 	include '../functions/php_functions.php';
 	$conn = get_connexion();
 
-	$line = $_POST['line'];
-	$infos= explode("-",$line);
+	$data = $_POST['data'];
 
+
+	$response_array = array();
+	$response_array['result'] = array();
 	$status = "error";
+	$response_array['status'] = $status;
+
+
 	$req=0;
+	$i = 0;
 
-	if ($infos[0] == "EB"){
-		$status="success";
-	}
-	elseif($infos[0] =="?"){
-		$status="success";
-	}
-/*	else {
-		$query = "
-		SELECT 
-		count(*) 
-		FROM
-		freshweight, freshweight_sample, sample, sample_aliquot, aliquot 
-		WHERE 
-		freshweight.fw_name like '%".$infos[0]."%' AND 
-		freshweight_sample.fw_spl_freshweight_FK = freshweight.fw_id AND
-		sample.spl_id = freshweight_sample.fw_spl_sample_FK AND
-		sample_aliquot.spl_alq_sample_FK =sample.spl_id AND
-		sample.spl_number = ".$infos[1]." AND 
-		aliquot.alq_id = sample_aliquot.spl_alq_aliquot_FK AND
-		sample_aliquot.spl_alq_state like '%free%' AND
-		aliquot.alq_number = ".$infos[2].";";
-		try 
-		{
-			$req = $conn->query($query)->fetchColumn();
-			error_log("COUNT : ".$req);
-			if ($req > 0) {
+
+	foreach ($data as $key => $row){
+		$cases = preg_split("/[\t]/", $row);
+		$j = 0;
+
+		foreach ($cases as $case){
+			$infos= explode("-",$case);
+
+			if ($infos[0] == "EB"){
 				$status="success";
+				$response_array['result'][$i][$j] ="free";
 			}
-		}
-		catch ( Exception $e ) {
-			error_log("failure est survenue lors de $query".$e->getMessage());
-			$status = "error";
-		}
-	}*/
-	else{
-		try 
-		{
-			$stmt = $conn->prepare("SELECT 
-				sample_aliquot.spl_alq_state
-			FROM
-			freshweight, freshweight_sample, sample, sample_aliquot, aliquot 
-			WHERE 
-			freshweight.fw_name like :infos0 AND 
-			freshweight_sample.fw_spl_freshweight_FK = freshweight.fw_id AND
-			sample.spl_id = freshweight_sample.fw_spl_sample_FK AND
-			sample_aliquot.spl_alq_sample_FK =sample.spl_id AND
-			sample.spl_number = :infos1 AND 
-			aliquot.alq_id = sample_aliquot.spl_alq_aliquot_FK AND
-			aliquot.alq_number = :infos2 ");
-
-			error_log($stmt);
-			$stmt->bindParam(':infos0', $infos[0], PDO::PARAM_STR);
-			$stmt->bindParam(':infos1', $infos[1], PDO::PARAM_INT);
-			$stmt->bindParam(':infos2', $infos[2], PDO::PARAM_INT);
-			$stmt->execute();
-
-			$result = $stmt->fetch(PDO::FETCH_ASSOC);
-/*			if ($stmt->rowCount() > 0) {
+			elseif($infos[0] =="?"){
 				$status="success";
-			}*/
-			$status="success";
-			$response_array['result']=$result['spl_alq_state'];
-			
+				$response_array['result'][$i][$j] = "free";
+			}
+			else {
+				try
+				{
+					$stmt = $conn->prepare("SELECT 
+							sample_aliquot.spl_alq_state
+						FROM
+						freshweight, freshweight_sample, sample, sample_aliquot, aliquot 
+						WHERE 
+						freshweight.fw_name like :infos0 AND 
+						freshweight_sample.fw_spl_freshweight_FK = freshweight.fw_id AND
+						sample.spl_id = freshweight_sample.fw_spl_sample_FK AND
+						sample_aliquot.spl_alq_sample_FK =sample.spl_id AND
+						sample.spl_number = :infos1 AND 
+						aliquot.alq_id = sample_aliquot.spl_alq_aliquot_FK AND
+						aliquot.alq_number = :infos2 ");
+
+					$stmt->bindParam(':infos0', $infos[0], PDO::PARAM_STR);
+					$stmt->bindParam(':infos1', $infos[1], PDO::PARAM_INT);
+					$stmt->bindParam(':infos2', $infos[2], PDO::PARAM_INT);
+					$stmt->execute();
+//					error_log($stmt);
+
+					$result = $stmt->fetch(PDO::FETCH_ASSOC);
+					$status="success";
+					$response_array['result'][$i][$j]=$result['spl_alq_state'];
+//					error_log($result['spl_alq_state']);
+
+				}
+				catch ( Exception $e ) {
+					error_log("failure est survenue lors de $query" . $e->getMessage());
+					$status = "error";
+					$response_array['result'][$i][$j] = "null";
+				}
+			}
+			$j++;
 		}
-		catch ( Exception $e ) {
-			error_log("failure est survenue lors de $query".$e->getMessage());
-			$status = "error";
-			$response_array['result']="null";
-		}
+		$i++;
 	}
 
 

@@ -5,7 +5,7 @@ include '../functions/php_functions.php';
 
 html_header("../../",  $_SESSION['login']);
 
-generic_html_top_page("../../","Biological Standard");
+generic_html_top_page("../../","Biological Standards");
 
 
 echo'
@@ -129,7 +129,7 @@ function setup_stdTable(){
 			} 
 		],
 		buttons: [
-			'copy', 'csv', 'excel', 'pdf', 'print', 'colvis'
+			'copy', 'csv', 'excel', 'print', 'colvis'
 		]
 	});
 }
@@ -154,7 +154,7 @@ function setup_enzymeTable(standardID) {
 			data: { standardID : standardID }
 		},
 		buttons: [
-			'copy', 'csv', 'excel', 'pdf', 'print'
+			'copy', 'csv', 'excel', 'print'
 		]
 	}); 
 }

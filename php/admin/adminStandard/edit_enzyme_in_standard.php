@@ -23,8 +23,12 @@
 	if (isset($_POST['dilutionValue'])) {
 		$dilutionValue = $_POST['dilutionValue'];
 	}
+    if (isset($_POST['nature'])) {
+        $unit = $_POST['nature'];
+    }
 
-	$query = "UPDATE `standard_enzyme` SET `std_ez_value`='.$amount.', `std_ez_unit_FK` ='$unit', `std_ez_dilution` ='$dilutionValue' WHERE `std_ez_id`= '$stdEzID';";
+	$query = "UPDATE `standard_enzyme` SET `std_ez_value`='$amount', `std_ez_unit_FK` ='$unit', `std_ez_dilution` ='$dilutionValue' WHERE `std_ez_id`= '$stdEzID';";
+error_log($query);
 	try 
 	{
 		$conn->beginTransaction();
