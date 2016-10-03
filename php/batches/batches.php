@@ -785,6 +785,7 @@ function setup_experiment_datatable(){
 		scroller :	true,
 		select :	"single",
 		paging : 	true,
+		stateSave: true,
 		dom : 		'TB<"clear">frtip',
 		ajax : 		'get_all_experiment.php',
 		buttons: [
@@ -1084,6 +1085,7 @@ function displayVals() {
 					$('#batchTable').dataTable().fnDestroy();
 					$('#batchTable').DataTable({
 						responsive:true,
+						stateSave: true,
 						dom: 'TB<"clear">',
 						buttons: [
 							'copy', 'csv', 'excel', 'print'

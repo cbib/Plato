@@ -110,7 +110,8 @@ html_footer("../../");
 function setup_stdTable(){
 	var table = $('#stdTable').DataTable({
         scrollY:        400,
-        scroller: true, 
+        scroller: true,
+		stateSave: true,
 		dom: 'TB<"clear">frtip',
 		ajax: 'standard_get_all_standard.php',
 		select : "single",
@@ -148,6 +149,7 @@ function setup_enzymeTable(standardID) {
 		paging: false,
 		dom: 'TB<"clear">frtip',
 		responsive:true,
+		stateSave: true,
 		ajax:{
 			url :"enzyme_from_standard.php", // json datasource
 			type: "POST",  // by default get

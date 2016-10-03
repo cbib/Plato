@@ -128,6 +128,7 @@ function setup_datatable(){
         scroller:       true,
 		dom: 'TB<"clear">frtip',
 		ajax: 'adminEz_database_functions.php',
+		stateSave: true,
 		buttons: [
 			'copy', 'csv', 'excel', 'print', 'colvis'
 		],

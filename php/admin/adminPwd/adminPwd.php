@@ -159,6 +159,7 @@ function setup_datatable(){
 	var table = $('#users').DataTable({
 		scrollY:        500,
         scroller:       true,
+		stateSave: true,
 		dom: 'TB<"clear">frtip',
 		ajax: 'get_all_users.php',
 		buttons: [

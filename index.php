@@ -15,7 +15,7 @@ echo'
 						<a href="#" data-dismiss="alert" class="close">×</a>
 					</div>
 					<div class="alert alert-warning">
-						To provide us some feedback or declare an issue, please follow this link :<strong> https://github.com/cbib/Plato/issues </strong>
+						To provide us some feedback or declare an issue, please follow this link :<strong> <a href="https://github.com/cbib/Plato/issues" target="_blank">GitHub repository of PLATO</a> </strong> You may need to create an account.
 						<a href="#" data-dismiss="alert" class="close">×</a>
 					</div>
 					<div id="ierror">

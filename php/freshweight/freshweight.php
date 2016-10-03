@@ -527,6 +527,7 @@ function setup_freshweight_datatable(expID){
 		scrollY:        600,
 		scroller:       true,
 		responsive: false,
+		stateSave: true,
 		select: "single",
 		dom: 'TB<"clear">frtip',
 		ajax: {
@@ -567,6 +568,7 @@ function setup_experiment_datatable(){
 		var table = $('#expTable').DataTable({
 			scrollY :	600,
 			scroller :	true,
+			stateSave: true,
 			select :	"single",
 			paging : 	true,
 			dom : 		'TB<"clear">frtip',

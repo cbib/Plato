@@ -368,6 +368,7 @@ function setup_datatable(){
 		scrollX:		true, 
 		scroller:		true,
 		destroy:		true,
+		stateSave: true,
 		select: "single",
 		paging : true,
 		dom: 'TB<"clear">frtip',
@@ -414,6 +415,7 @@ function refresh_enzyme(standardID) {
 	var oTable = $("#ezTable").DataTable({ 
 		"paging": false,
 		"sDom": 'TB<"clear">lfrtip',
+		stateSave: true,
 		"ajax":{
 			url :"enzyme_from_standard.php", // json datasource
 			type: "POST",  // method  , by default get

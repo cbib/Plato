@@ -1156,6 +1156,7 @@ function setup_experiment_datatable(){
 		scroller :	true,
 		select :	"single",
 		paging : 	true,
+		stateSave: true,
 		dom : 		'TB<"clear">frtip',
 		ajax : 		'get_all_experiment.php',
 		buttons: [

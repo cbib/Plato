@@ -134,6 +134,7 @@ function setup_experiment_datatable(){
 		scroller:       true,
 		select: "single",
 		paging : true,
+        stateSave: true,
 		dom: 'TB<"clear">frtip',
 		ajax: 'adminExp_database_functions.php',
 		buttons: [

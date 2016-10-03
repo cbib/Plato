@@ -152,6 +152,7 @@ function setup_experiment_datatable(){
 		scrollY:        400,
 		scroller:       true,
 		//responsive: true,
+		stateSave: true,
 		select: true,
 		paging : true,
 		dom: 'T<"clear">frtip',

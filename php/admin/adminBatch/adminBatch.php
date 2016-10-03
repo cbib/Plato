@@ -132,6 +132,7 @@ function setup_experiment_datatable(){
 	var table = $('#expTable').DataTable({
 		scrollY:        400,
 		scroller:       true,
+		stateSave: true,
 		//responsive: true,
 		select: true,
 		paging : true,
