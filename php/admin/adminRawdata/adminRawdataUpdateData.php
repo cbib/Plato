@@ -47,30 +47,33 @@
 		$sth = $conn->prepare($query);
 		$sth->execute();
 		$result = $sth->fetchAll();
+        $sth->closeCursor();
 
-	try {
+
+
 		$deleteQuery = "DELETE FROM rawdata WHERE rawdata_id IN (";
-		$deleteBatchDataQuery = "DELETE FROM batch_data WHERE bat_data_id IN (";
+		//$deleteBatchDataQuery = "DELETE FROM batch_data WHERE bat_data_id IN (";
 
 		foreach  ($result as $row) {
 			$deleteQuery.=" ".$row['rawdata_id']." ,";
 		}
 
 
-		foreach  ($resultBatchData as $row) {
-			$deleteBatchDataQuery.=" ".$row['rawdata_batch_data_FK']." ,";
-		}
+//		foreach  ($resultBatchData as $row) {
+//			$deleteBatchDataQuery.=" ".$row['rawdata_batch_data_FK']." ,";
+//		}
 
 		$deleteQuery = rtrim($deleteQuery, ",");
 		$deleteQuery.=");";
 
-		$deleteBatchDataQuery = rtrim($deleteBatchDataQuery, ",");
-		$deleteBatchDataQuery.=");";
-
-		$conn->beginTransaction();		
-			error_log($deleteQuery);
-			$conn->query($deleteQuery);
-			$conn->query($deleteBatchDataQuery);
+//		$deleteBatchDataQuery = rtrim($deleteBatchDataQuery, ",");
+//		$deleteBatchDataQuery.=");";
+        error_log($deleteQuery);
+//        error_log($deleteBatchDataQuery);
+    try {
+		$conn->beginTransaction();
+			$conn->exec($deleteQuery);
+//			$conn->exec($deleteBatchDataQuery);
 			$status="success";
 		$conn->commit();
 	}

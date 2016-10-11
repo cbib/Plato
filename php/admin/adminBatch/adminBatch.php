@@ -51,7 +51,7 @@ echo'
 			<div class="form-group">
 				<select id="selectEz" class="form-control">';
 					echo '<option value=""> ----- Select ----- </option>';
-				echo' </select>
+				echo' </select> 
 			</div>
 		</div>
 	</div>

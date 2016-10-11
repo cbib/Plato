@@ -209,33 +209,54 @@ $(document).on("click", "#clearModal", function(e){
 
 /* Add new material */
 $(document).on("click", "#materialSubmit", function(e){
+	var table = $('#expTable').DataTable();
+	var boolOk = true;
 	var expName = $('#expName').val();
-	$.ajax({
-		url: "insert_exp.php",
-		type: "post",
-		data: { expName : expName },
-		beforeSend: function(){
+	expName = expName.trim();
+	expName= expName.replace(/ +/g, '');
+
+	if (expName.indexOf("-") != -1){
+		boolOk=false;
+	}
+	table.search("").draw();
+	var colArray = $('#expTable td:nth-child(2)').map(function(){
+		return $(this).text();
+	}).get();
+	var boolExists = colArray.indexOf(expName);
+	if(boolExists!=-1){
+		boolOk=false;
+	}
+	if (boolOk != false) {
+		$.ajax({
+			url: "insert_exp.php",
+			type: "post",
+			data: {expName: expName},
+			beforeSend: function () {
 				showWaitModal();
-		},
-		success: function(data) {
-			var obj = data;
-			if(obj.status == 'success'){
-				$('#statusSpan').html('<div class="alert alert-success">'+obj.action+' Successful<a href="#" data-dismiss="alert" class="close">×</a></div>');
-				$("#createExpModal").modal("hide");
+			},
+			success: function (data) {
+				var obj = data;
+				if (obj.status == 'success') {
+					$('#statusSpan').html('<div class="alert alert-success">' + obj.action + ' Successful<a href="#" data-dismiss="alert" class="close">×</a></div>');
+					$("#createExpModal").modal("hide");
+				}
+				else if (obj.status == 'error') {
+					$('#statusSpan').html('<div class="alert alert-error">' + obj.action + ' Failure<a href="#" data-dismiss="alert" class="close">×</a></div>');
+					$("#createExpModal").modal("hide");
+				}
+			},
+			error: function (xhr, status, error) {
+				$('statusSpan').html('<div class="alert alert-error">Insertion Error : ' + xhr.responseText + error + '<a href="#" data-dismiss="alert" class="close">×</a></div>');
+			},
+			complete: function () {
+				hideWaitModal();
 			}
-			else if(obj.status == 'error'){
-				$('#statusSpan').html('<div class="alert alert-error">'+obj.action+' Failure<a href="#" data-dismiss="alert" class="close">×</a></div>');
-				$("#createExpModal").modal("hide");
-			}
-		},
-		error: function(xhr, status, error) {
-			$('statusSpan').html('<div class="alert alert-error">Insertion Error : '+xhr.responseText+error+'<a href="#" data-dismiss="alert" class="close">×</a></div>');
-		},
-		complete: function(){
-			hideWaitModal();
-		}
-	}); 
-	setup_experiment_datatable();
+		});
+		setup_experiment_datatable();
+	}
+	else {
+		$('#addRowsTips2').html('<div class="alert alert-error"> Please do not use "-" characters Or do not use the same experiment Name twice <a href="#" data-dismiss="alert" class="close">×</a></div>');
+	}
 });
 
 
@@ -759,6 +780,8 @@ function create_addExp_modal(){
 	    		'<h4 class="modal-title">New Experiment <span id=modalBatchName></span></h4>'+
 	  		'</div>'+
 	  			'<div class="modal-body">'+
+					'<span id="addRowsTips2">'+
+					'</span>'+
 		  			'<div class="form-group">'+
 			            '<label class="control-label" for="number">Experiment Name</label>'+
 			            '<div class="form-group has-error">'+

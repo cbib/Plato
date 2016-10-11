@@ -18,7 +18,7 @@ echo'
 <div class="modal fade" id="addBatchModal" tabindex="-1" role="dialog" aria-hidden="true">
 </div> 
 
-<div class="modal fade" id="waitModal" tabindex="1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="waitModal" tabindex="999" role="dialog" aria-hidden="true">
 </div>
 <!-- /.modal -->
 ';
@@ -221,22 +221,24 @@ echo'
 					</div>
 				</div><!--span12-->
 			</div><!--row-fluid-->
-			<div class="row-fluid">
-				<div class="btn-toolbar" role="toolbar" aria-label="">
-					<div class="btn-group" role="group" aria-label="">
-						<button type="button" class="btn btn-info btn-lg" id ="editBatch"><i class="icon-pencil"></i> Edit batch </button>
+				<!--<div class="row-fluid">
+					<div class="btn-toolbar" role="toolbar" aria-label="">
+						<div class="btn-group" role="group" aria-label="">
+							<button type="button" class="btn btn-info btn-lg" id ="editBatch"><i class="icon-pencil"></i> Edit batch </button>
+						</div>
+						<div class="btn-group" role="group" aria-label="">
+							<button type="button" class="btn btn-danger btn-lg" id ="clearBatch"><i class="icon-remove"></i> Clear All </button>
+						</div>
+						<div class="btn-group" role="group" aria-label="">
+							<button type="button" class="btn btn-success btn-lg" id ="saveBatch" disabled><i class="icon-ok"></i> Save </button>
+						</div>
+						<div class="btn-group" role="group" aria-label="">
+							<button type="button" class="btn btn-default btn-lg" id ="cancelBatch" disabled><i class="icon-ban-circle"></i> Cancel </button>
+						</div>
 					</div>
-					<div class="btn-group" role="group" aria-label="">
-						<button type="button" class="btn btn-danger btn-lg" id ="clearBatch"><i class="icon-remove"></i> Clear All </button>
-					</div>
-					<div class="btn-group" role="group" aria-label="">
-						<button type="button" class="btn btn-success btn-lg" id ="saveBatch" disabled><i class="icon-ok"></i> Save </button>
-					</div>
-					<div class="btn-group" role="group" aria-label="">
-						<button type="button" class="btn btn-default btn-lg" id ="cancelBatch" disabled><i class="icon-ban-circle"></i> Cancel </button>
-					</div>
-				</div>
-			</div>
+				</div>-->
+			</div>';
+		echo' 		
 		</div><!--table wrapper-->
 	</div><!--row-fluid-->
 ';
@@ -311,8 +313,7 @@ $(document).on("change", "#batchName" , function(e){
 				$("#batchNumber").prop('disabled', false);
 				if(obj.value !=null){
 					$("#info-batchNumber").html(function(){
-						return "The last batch with this name has the number : "+obj.value; 
-
+						return "The last batch with this name has the number : "+obj.value;
 					});
 				}
 				else{
@@ -325,7 +326,11 @@ $(document).on("change", "#batchName" , function(e){
 	});
 });
 
-$(document).on("change", "#batchNumber" , function(e){
+$(document).on("input", "#batchNumber" , function(e){
+	console.log("input");
+	if($('#batchNumber').val() == ""){
+		$( "button" ).filter( "#addBatchSubmit" ).prop("disabled",true);
+	}
 	$.ajax({
 		url: "controlBatchNameAndNumber2.php",
 		type: "post",
@@ -335,7 +340,6 @@ $(document).on("change", "#batchNumber" , function(e){
 			var obj = JSON.parse(data);
 			if(obj.status == 'success'){
 				var tipsStatus = document.getElementById("batchOk").className;
-//				console.log(tipsStatus);
 
 				if(obj.value !=false){
 					$( "button" ).filter( "#addBatchSubmit" ).prop("disabled",true);
@@ -345,7 +349,7 @@ $(document).on("change", "#batchNumber" , function(e){
 				}
 				else{
 					if(tipsStatus == "alert alert-error"){
-
+						$("button").filter("#addBatchSubmit").prop("disabled", true);
 					}
 					else {
 						$("button").filter("#addBatchSubmit").prop("disabled", false);
@@ -364,18 +368,22 @@ $(document).on("change", "#batchNumber" , function(e){
  * Get data paste on the first cell of the add data table
  */
 $(document).bind("paste", '#col1', function(e){
-//	console.log("paste !!");
+
 	if (e.originalEvent.target.id=="col1"){
-		showWaitModal();
+//		showWaitModal();
 		var data = e.originalEvent.clipboardData.getData('Text');
+		console.log("originalData");
+		console.log(data);
+//		data= jQuery.trim(data);
 		data=chomp(data);
-		data = data.replace(/\r\n/g, '\n');
+		data = data.replace(/(\r\n|\n|\r)/gm,"\n");
+
 		dispatchAddBatchDatas(data);
 	}
 	else {
 		console.log(e.originalEvent.srcElement.id);
 	}
-	hideWaitModal();
+//	hideWaitModal();
 });
 
 /**
@@ -450,6 +458,12 @@ function resetModalTable(){
 		'</tbody>';
 	$('#addBatchTable').html(modal);
 	$('#addBatchTips').html('<div id="batchOk" class="alert alert-success"> Please paste all your data in the first field of the table <a href="#" data-dismiss="alert" class="close">×</a></div>');
+	$( "button" ).filter( "#addBatchSubmit" ).prop("disabled",true);
+
+	$('#batchName').val("");
+	$('#batchName').prop('disabled', true);
+	$('#batchNumber').val("");
+	$('#batchNumber').prop('disabled', true);
 }
 
 /**
@@ -601,6 +615,7 @@ function create_addBatch_modal() {
  * @param      {<type>}  tableID  { description }
  */
 function batchInsert(tableID){
+
 	var table=document.getElementById(tableID);
 	var boolOK = true;
 	var rawdatas = [];
@@ -729,6 +744,7 @@ function resetBatchTable(){
 			$("#batchTable").css("fontSize", 11);
 		}
 	}
+
 }
 
 /**
@@ -818,7 +834,9 @@ function setup_experiment_datatable(){
  * @param      {(number|string)}  data    { description }
  */
 function dispatchAddBatchDatas(data) {
+	data= data.replace(/ +/g, '');
 	var rowsDatas = data.split(/(?:\n)+/);
+
 	var dataLength = rowsDatas.length;
 	var newRowContent = "";
 	var hashMap = new Object();
@@ -900,8 +918,9 @@ function dispatchAddBatchDatas(data) {
 				'<td>' + (i + 1) + '</td>';
 			for (var j = 0; j < rowDatas.length; j++) {
 				var name = chomp(rowDatas[j]);
-				//console.log(name + " : " + checkUseResponse[i][j]);
-				if (checkUseResponse[i][j] != "free") {
+				console.log(name + " : " + checkUseResponse[i][j]);
+				console.log(name + " : " + hashSeekDoublons[name]);
+				if ((checkUseResponse[i][j] != "free") || (hashSeekDoublons[name] >1)) {
 					newRowContent += '<td><input style="background-color :#EB9018" class="form-control input-sm" type="text" id="1" value="' + name + '" ></td>';
 					boolOK = false;
 					$('#addBatchTips').html('<div id="batchOk" class="alert alert-error"> Some freshweights are already used or not created <a href="#" data-dismiss="alert" class="close">×</a></div>');
@@ -980,17 +999,25 @@ function dispatchAddBatchDatas(data) {
  * @return     {boolean}  { description_of_the_return_value }
  */
 function checkUse(data){
+	console.log("data");
+	console.log(data);
 	return new Promise(function (resolve, reject) {
 		$.ajax({
 			url: "batch_is_used.php",
 			type: "post",
 			data: {data: data},
+			beforeSend: function(){
+				showWaitModal();
+			},
 			success: function (data) {
 				var obj = JSON.parse(data);
 				resolve(obj.result);
 			},
 			error: function (xhr, status, error) {
 				reject(Error("error in checkUse"));
+			},
+			complete: function(){
+				hideWaitModal();
 			}
 		});
 	});

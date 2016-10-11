@@ -483,6 +483,7 @@ $(document).ready(function() {
 	$( "#selectBatch" ).on("change", function(){
 		getBatchInfo();
 		currentEzID=-1;
+		$('#datatable-wrapper').hide();
 
 		createEzTab().then(function(response){
 			return getRawData();
@@ -796,7 +797,7 @@ function getRawData(){
  */
 function makeMap(data) {
 //	console.log("MakeMap ez id: "+currentEzID);
-	$( "p" ).html( "<b>Batch Infos</b> | Name : " + batchName + " | Analyte : "+ezNameMap[currentEzID]);
+	$( "p" ).html( "<b>Batch Name</b> : " + batchName + " </br> <b>Analyte</b> : "+ezNameMap[currentEzID]);
 
 	return new Promise(function (resolve, reject){
 		var hashMap = new Object();
@@ -1556,8 +1557,8 @@ function getStdDev(processDataMap, dataTypeMap, excludMap, split){
 		}
 	}
 	var stdDev = getError(stdArray,2);
-	if (isNaN(stdDev))
-		stdDev = isNaN(stdDev) ? "NA" : stdDev;
+//	if (isNaN(stdDev))
+//		stdDev = isNaN(stdDev) ? "NA" : stdDev;
 	$('#errorsInCtrl').html("Errors in control : "+stdDev); 
 }
 

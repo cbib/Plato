@@ -329,7 +329,12 @@ function generate_data(expID, expName){
 					var lineArray = data[i].split('#');
 					batchIDs[lineArray[0]]=lineArray[2];
 					for (var k = 2; k <lineArray.length; k++){
-						var procValue =  lineArray[k] < 0 ? "NA" : lineArray[k];
+						var procValue = NaN;
+						if ((lineArray[k] < 0) || (lineArray[k] == "NA")){
+							procValue = NaN;
+						} else {
+							procValue =lineArray[k];
+						}
 						lineArray[k]=procValue;
 					}
 					jsonArray.push(lineArray.slice(2));
@@ -375,6 +380,9 @@ function setup_rawtable_datatable(colDef, dataset){
 		dom: 'Brtip',
 		columns: colDef,
 		data: dataset,
+		columnDefs: [
+			{ type: 'natural', targets: 0 }
+		],
 		order: [[ 2, 'asc' ], [ 3, 'asc' ]],
 		buttons: [
 			'copy', 'csv', 'excel', 'print'
@@ -390,7 +398,6 @@ function setup_rawtable_datatable(colDef, dataset){
  * @param      {<type>}  tableID  { description }
  */
 function standardsUsed(tableID){
-//	var table=document.getElementById("RawTable");
 	var hashStdUsed = {};
 	console.log(batchIDs);
 	$.each(batchIDs, function(batchID, batchName){
@@ -412,9 +419,10 @@ function standardsUsed(tableID){
 						data: {batchID : batchID, ezID : ezID},
 						async : false,
 						success: function(data) {
-							console.log(data);
 							var obj2 = JSON.parse(data);
 							var arrayOfNumbers = obj2.procValues.map(Number);
+							console.log("arrayOfNumbers");
+							console.log(arrayOfNumbers);
 							hashStdUsed[batchName][ezName]["CV"] = getError(arrayOfNumbers,2);
 
 						},
@@ -455,14 +463,14 @@ function standardsUsed(tableID){
 		for (var j=4; j <= nbCols-1; j++){
 			tab.push(table.rows[i].cells[j].innerText);
 			if (hashStdUsed[table.rows[i].cells[0].innerText][table.rows[0].cells[j].firstChild.innerHTML]["MaxStd"] == null){
-				tab.push("NA");
+				tab.push(NaN);
 			}
 			else{
 				tab.push(hashStdUsed[table.rows[i].cells[0].innerText][table.rows[0].cells[j].firstChild.innerHTML]["StdUsed"]+"/"+hashStdUsed[table.rows[i].cells[0].innerText][table.rows[0].cells[j].firstChild.innerHTML]["MaxStd"]);
 			}
 			// tab.push((Math.round(hashStdUsed[table.rows[i].cells[0].innerText][table.rows[0].cells[j].firstChild.innerHTML]["CV"])*10)/10);
 			if (isNaN(hashStdUsed[table.rows[i].cells[0].innerText][table.rows[0].cells[j].firstChild.innerHTML]["CV"])){
-				tab.push("NA");
+				tab.push(NaN);
 			}
 			else{
 				tab.push(hashStdUsed[table.rows[i].cells[0].innerText][table.rows[0].cells[j].firstChild.innerHTML]["CV"]);
@@ -612,13 +620,8 @@ function interBatchCentering(tableID){
  * @param      {<type>}  expName  { description }
  */
 function aliquotMerge(expName){
-	var table = document.getElementById("RawTable");
-//	var prevSample = table.rows[1].cells[2].innerText;
-//	var currentSample = table.rows[1].cells[2].innerText;
-//	var values = [];
-//	var diviseur = [];
-//	var ezNumber = table.rows[0].cells.length - 3;
-//	var count = {};
+	console.log("jsonData");
+	console.log(jsonData);
 	var sampleLinkID ={};
 	var valuesLinkSample ={};
 	var divisorLinkSample ={};
@@ -639,7 +642,7 @@ function aliquotMerge(expName){
 
 	for(var i=0; i<jsonData.length; i++){
 		for(var j=0; j<jsonColumns.length-4; j++){
-			if(jsonData[i][j+4] != "NA"){
+			if(! isNaN(jsonData[i][j+4])){
 				var value = parseFloat(jsonData[i][j+4]);
 				valuesLinkSample[jsonData[i][2]][j]+=value;
 				divisorLinkSample[jsonData[i][2]][j]+=1;

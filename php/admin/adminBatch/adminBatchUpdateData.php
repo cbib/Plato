@@ -33,38 +33,38 @@
 		$sth2->execute();
 		$resultSample = $sth2->fetchAll();
 
+        $deleteBatch = "DELETE FROM batch where bat_id = ".$batchID.";";
+        $deleteQuery = "DELETE FROM batch_data WHERE bat_data_id IN (";
+        $deleteRawDataQuery = "DELETE FROM rawdata WHERE rawdata_batch_data_FK IN (";
+        foreach  ($result as $row) {
+            $deleteQuery.=" ".$row['bat_data_id']." ,";
+            $deleteRawDataQuery.=" ".$row['bat_data_id']." ,";
+        }
+
+        $updateStateAliquotQuery = "UPDATE sample_aliquot SET spl_alq_state = 'free' WHERE spl_alq_id IN (";
+        foreach  ($resultSample as $row) {
+            $updateStateAliquotQuery.=" ".$row['bat_data_sample_aliquot_FK']." ,";
+        }
+
+        $deleteQuery = rtrim($deleteQuery, ",");
+        $deleteQuery.=");";
+
+        $deleteRawDataQuery = rtrim($deleteRawDataQuery, ",");
+        $deleteRawDataQuery.=");";
+
+        $updateStateAliquotQuery = rtrim($updateStateAliquotQuery, ",");
+        $updateStateAliquotQuery.=");";
+        error_log($deleteQuery);
+        error_log($deleteRawDataQuery);
+        error_log($updateStateAliquotQuery);
+        error_log($deleteBatch);
 
 	try {
-		$deleteBatch = "DELETE FROM batch where bat_id = ".$batchID.";";
-		$deleteQuery = "DELETE FROM batch_data WHERE bat_data_id IN (";
-		$deleteRawDataQuery = "DELETE FROM rawdata WHERE rawdata_batch_data_FK IN (";
-		foreach  ($result as $row) {
-			$deleteQuery.=" ".$row['bat_data_id']." ,";
-			$deleteRawDataQuery.=" ".$row['bat_data_id']." ,";
-		}
-
-		$updateStateAliquotQuery = "UPDATE sample_aliquot SET spl_alq_state = 'free' WHERE spl_alq_id IN (";
-		foreach  ($resultSample as $row) {
-			$updateStateAliquotQuery.=" ".$row['bat_data_sample_aliquot_FK']." ,";
-		}
-
-		$deleteQuery = rtrim($deleteQuery, ",");
-		$deleteQuery.=");";
-
-		$deleteRawDataQuery = rtrim($deleteRawDataQuery, ",");
-		$deleteRawDataQuery.=");";
-
-		$updateStateAliquotQuery = rtrim($updateStateAliquotQuery, ",");
-		$updateStateAliquotQuery.=");";
-
 		$conn->beginTransaction();
-			error_log($deleteQuery);
-			error_log($deleteRawDataQuery);
-			error_log($updateStateAliquotQuery);
-			$conn->query($deleteQuery);
-			$conn->query($deleteRawDataQuery);
-			$conn->query($updateStateAliquotQuery);
-			$conn->query($deleteBatch);
+			$conn->exec($deleteQuery);
+			$conn->exec($deleteRawDataQuery);
+			$conn->exec($updateStateAliquotQuery);
+			$conn->exec($deleteBatch);
 			$status="success";
 		$conn->commit();
 	}

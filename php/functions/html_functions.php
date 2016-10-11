@@ -21,6 +21,8 @@ echo '
 			<link rel="stylesheet/less" type="text/css" href="'.$path.'libs/themes/less/bootstrap.less"/>
 			<link rel="stylesheet" type="text/css" href="'.$path.'libs/themes/style/delta.main.css" />
 			<link rel="stylesheet" type="text/css" href="'.$path.'libs/themes/style/delta.grey.css"/>
+			
+			<script type="text/javascript" src="'.$path.'libs/themes/js/less/less.js"></script>
 	</head>
 	<body>
 		<br>
@@ -130,7 +132,7 @@ echo'
 			</div>
 
 		<script> less = {env: "development"};</script>
-		<script type="text/javascript" src="'.$path.'libs/themes/js/less/less.js"></script>
+
 		<script type="text/javascript" src="'.$path.'libs/datatables/jQuery-2.1.4/jquery-2.1.4.min.js"></script>
 		<script type="text/javascript" src="'.$path.'libs/datatables/Bootstrap-3.3.5/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="'.$path.'libs/datatables/pdfmake-0.1.18/build/pdfmake.min.js"></script>
@@ -157,6 +159,8 @@ echo'
 		<script type="text/javascript" src="'.$path.'libs/js/highcharts-more.js"></script>
 		<script type="text/javascript" src="'.$path.'libs/js//solid-gauge.js"></script>
 		<script type="text/javascript" src="'.$path.'libs/js/exporting.js"></script>
+		<script type="text/javascript" src="'.$path.'libs/js/natural.js"></script>
+
 	</body>
 </html>';
 }

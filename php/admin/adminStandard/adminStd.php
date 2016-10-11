@@ -148,6 +148,7 @@ $(document).ready(function() {
  */
 $(document).on("click", "#AnalyteSubmit", function(){
 
+	var boolOK= true;
 	var selectAnalyte = $('#selectAnalyte').val();
 	var selectUnit = $('#selectUnit').val();
 
@@ -158,37 +159,41 @@ $(document).on("click", "#AnalyteSubmit", function(){
 	analyteValue = analyteValue.replace(/,/g, '.');
 	if((analyteValue =="") || ( ! $.isNumeric(analyteValue))) {
 		$('#help-inline-value').html("Please add a number");
+		boolOK=false;
 	}
 	if(dilutionValue =="") {
 		$('#help-inline-volume').html("Please add a value");
+		boolOK=false;
 	}
 	else {
-	  	$.ajax({
-	    	url :"add_enzyme_to_standard.php", // json datasource
-	    	type: "POST",  // method  , by default get
-	    	data: {
-	    		selectAnalyte : selectAnalyte,
-	    		selectUnit : selectUnit,
-	    		analyteValue : analyteValue,
-	    		standardID : standardID,
-	    		dilutionValue : dilutionValue
-	    	},
-	    	success: function(data){
-				var obj = JSON.parse(data);
-				if(obj.status == 'success'){
-					refresh_enzyme(standardID);
-					$("#addAnalyteModal").modal('hide');
-					$('#statusSpan').html('<div class="alert alert-success">Insertion Successful<a href="#" data-dismiss="alert" class="close">×</a></div>');
+		if (boolOK==true) {
+			$.ajax({
+				url: "add_enzyme_to_standard.php", // json datasource
+				type: "POST",  // method  , by default get
+				data: {
+					selectAnalyte: selectAnalyte,
+					selectUnit: selectUnit,
+					analyteValue: analyteValue,
+					standardID: standardID,
+					dilutionValue: dilutionValue
+				},
+				success: function (data) {
+					var obj = JSON.parse(data);
+					if (obj.status == 'success') {
+						refresh_enzyme(standardID);
+						$("#addAnalyteModal").modal('hide');
+						$('#statusSpan').html('<div class="alert alert-success">Insertion Successful<a href="#" data-dismiss="alert" class="close">×</a></div>');
+					}
+					else if (obj.status == 'error') {
+						$("#addAnalyteModal").modal('hide');
+						$('#statusSpan').html('<div class="alert alert-error">Insertion Failure<a href="#" data-dismiss="alert" class="close">×</a></div>');
+					}
+				},
+				error: function () {
+					alert("failure");
 				}
-				else if(obj.status == 'error'){
-					$("#addAnalyteModal").modal('hide');
-					$('#statusSpan').html('<div class="alert alert-error">Insertion Failure<a href="#" data-dismiss="alert" class="close">×</a></div>');
-				}
-			},
-			error: function(){
-				alert("failure");
-			}
-		});
+			});
+		}
 	}
 });
 
@@ -261,9 +266,11 @@ $(document).on("click", "#editAnalyteSubmit", function(){
 /**
  * fonction d'edition creation utilise pour les standard uniquement
  */
-$(document).on("click", "#editSubmit", function(){
+$(document).on("click", "#createStdSubmit", function(){
 	var id = $("#id").val();
 	var stdName = $('#stdName').val();
+	stdName = stdName.trim();
+	stdName = stdName.replace(/\s+/g, '');
 	var stdGenius = $('#stdGenius').val();
 	var stdSpecies = $('#stdSpecies').val();
 	var stdGenotype = $('#stdGenotype').val();
@@ -272,8 +279,14 @@ $(document).on("click", "#editSubmit", function(){
 	var stdComment = $('#stdComment').val();
 	var boolOK = true;
 	var action = $("#action").val();
+	var table = $('#standard').DataTable();
+	table.search("").draw();
 
-	if((stdName =="") || ( $.isNumeric(stdName))) {
+	var colArray = $('#standard td:nth-child(2)').map(function(){
+		return $(this).text();
+	}).get();
+
+	if((stdName =="") || ( $.isNumeric(stdName)) || (stdName.indexOf("-") != -1) || (colArray.indexOf(stdName)!=-1) ) {
 		$('#help-stdName').html("Please add a correct Name");
 		boolOK = false;
 	}
@@ -355,8 +368,113 @@ $(document).on("click", "#editSubmit", function(){
 	}
  });
 
+	/**
+	 * fonction d'edition creation utilise pour les standard uniquement
+	 */
+	$(document).on("click", "#editSubmit", function(){
+		var id = $("#id").val();
+		var stdName = $('#stdName').val();
+		stdName = stdName.trim();
+		stdName = stdName.replace(/ +/g, '');
+		var stdGenius = $('#stdGenius').val();
+		var stdSpecies = $('#stdSpecies').val();
+		var stdGenotype = $('#stdGenotype').val();
+		var stdNature = $('#stdNature').val();
+		var stdOwner = $('#stdOwner').val();
+		var stdComment = $('#stdComment').val();
+		var boolOK = true;
+		var action = $("#action").val();
+		var table = $('#standard').DataTable();
+		table.search("").draw();
 
-/**
+		var colArray = $('#standard td:nth-child(2)').map(function(){
+			return $(this).text();
+		}).get();
+
+		if((stdName =="") || ( $.isNumeric(stdName)) ) {
+			$('#help-stdName').html("Please add a correct Name");
+			boolOK = false;
+		}
+		else{
+			$('#help-stdName').html("");
+		}
+
+		if((stdGenius =="") || ( $.isNumeric(stdGenius))) {
+			$('#help-stdGenius').html("Please add a correct Genius");
+			boolOK = false;
+		}
+		else{
+			$('#help-stdGenius').html("");
+		}
+
+		if((stdSpecies =="") || ( $.isNumeric(stdSpecies))) {
+			$('#help-stdSpecies').html("Please add a correct Species");
+			boolOK = false;
+		}
+		else {
+			$('#help-stdSpecies').html("");
+		}
+
+		if((stdGenotype =="") || ( $.isNumeric(stdGenotype))) {
+			$('#help-stdGenotype').html("Please add a correct Genotype");
+			boolOK = false;
+		}
+		else {
+			$('#help-stdGenotype').html("");
+		}
+
+		if((stdNature =="") || ( $.isNumeric(stdNature))) {
+			$('#help-stdNature').html("Please add a correct Nature");
+			boolOK = false;
+		}
+		else {
+			$('#help-stdNature').html("");
+		}
+
+		if((stdOwner =="") || ( $.isNumeric(stdOwner))) {
+			$('#help-stdOwner').html("Please add a correct Owner");
+			boolOK = false;
+		}
+		else {
+			$('#help-stdOwner').html("");
+		}
+
+		if (boolOK == true){
+			$.ajax({
+				url: "AdminSTDUpdateData.php",
+				type: "post",
+				data: {
+					id : id,
+					stdName : stdName,
+					stdGenius : stdGenius,
+					stdSpecies : stdSpecies,
+					stdGenotype : stdGenotype,
+					stdNature : stdNature,
+					stdOwner : stdOwner,
+					stdComment : stdComment,
+					action : action
+				},
+				success: function(data) {
+					var obj = data;
+					if(obj.status == 'success'){
+						$("#editRowModal").modal('hide');
+						$('#statusSpan').html('<div class="alert alert-success">'+obj.action+' Successful<a href="#" data-dismiss="alert" class="close">×</a></div>');
+						setup_datatable();
+					}
+					else if(obj.status == 'error'){
+						$("#editRowModal").modal('hide');
+						$('#statusSpan').html('<div class="alert alert-error">'+obj.action+' Failure<a href="#" data-dismiss="alert" class="close">×</a></div>');
+						setup_datatable();
+					}
+				},
+				error: function(xhr, status, error) {
+				}
+			});
+		}
+	});
+
+
+	/**
  * Print standard datatble
  *
  * @method     setup_datatable
@@ -509,7 +627,14 @@ function construct_addAnalyte_modal(standardID){
 										//console.log(data);
 										for(var i = 0; i < data.length; i++) {
 											var line = data[i];
-											modal += '<option value = "'+line.unit_id+'">'+line.unit_name+'</option>';
+
+											if ((line.unit_name == "mg/gFW") || (line.unit_name == "µmol/gFW") || (line.unit_name == "nmol/gFW/min")){
+												console.log("."+line.unit_name+".");
+												modal += '<option style="background: #D8D8D8;"  value = "'+line.unit_id+'"><strong>'+line.unit_name+'</strong></option>';
+											}
+											else {
+												modal += '<option value = "' + line.unit_id + '">' + line.unit_name + '</option>';
+											}
 										}
 									},
 									error: function(xhr, status, error) {
@@ -812,7 +937,7 @@ function construct_create_modal(data, action){
 		'</div> <!-- /.modal-body -->'+
 		'<div class="modal-footer">'+
 			'<button type="button" data-dismiss="modal" class="btn btn-large">Close</button>'+
-			'<button id="editSubmit" type="submit" class="btn btn-primary btn-large">Submit</button>'+
+			'<button id="createStdSubmit" type="submit" class="btn btn-primary btn-large">Submit</button>'+
 		'</div>'+
 	'</div> <!-- /.modal-content -->'+
 	'</div> <!-- /.modal-dialog -->';

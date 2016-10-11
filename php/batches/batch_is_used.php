@@ -19,7 +19,7 @@
 	foreach ($data as $key => $row){
 		$cases = preg_split("/[\t]/", $row);
 		$j = 0;
-
+		error_log(date("d-m-Y h:i:s"));
 		foreach ($cases as $case){
 			$infos= explode("-",$case);
 
@@ -51,9 +51,12 @@
 					$stmt->bindParam(':infos1', $infos[1], PDO::PARAM_INT);
 					$stmt->bindParam(':infos2', $infos[2], PDO::PARAM_INT);
 					$stmt->execute();
-//					error_log($stmt);
+//					error_log($infos[0]);
+//					error_log($infos[1]);
+//					error_log($infos[2]);
 
 					$result = $stmt->fetch(PDO::FETCH_ASSOC);
+					$stmt->closeCursor();
 					$status="success";
 					$response_array['result'][$i][$j]=$result['spl_alq_state'];
 //					error_log($result['spl_alq_state']);

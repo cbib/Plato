@@ -33,7 +33,7 @@
 
 	foreach($results as $row) {
 		$line="";
-		$batchNameQuery = 'SELECT CONCAT(bat_name, "-", bat_number, "-", bat_date) 
+		$batchNameQuery = 'SELECT CONCAT(batch.bat_number, "	-	", batch.bat_name, "	-	", batch.bat_date)
 		FROM 
 			batch, batch_data 
 		WHERE 
