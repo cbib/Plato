@@ -399,7 +399,7 @@ function setup_rawtable_datatable(colDef, dataset){
  */
 function standardsUsed(tableID){
 	var hashStdUsed = {};
-	console.log(batchIDs);
+//	console.log(batchIDs);
 	$.each(batchIDs, function(batchID, batchName){
 		hashStdUsed[batchName]={};
 		$.each(enzymeIDs, function(ezName, ezID){
@@ -419,10 +419,12 @@ function standardsUsed(tableID){
 						data: {batchID : batchID, ezID : ezID},
 						async : false,
 						success: function(data) {
+//							console.log(data);
 							var obj2 = JSON.parse(data);
+//							console.log(obj2);
 							var arrayOfNumbers = obj2.procValues.map(Number);
-							console.log("arrayOfNumbers");
-							console.log(arrayOfNumbers);
+//							console.log("arrayOfNumbers : "+batchName+" & ez : "+ezName);
+//							console.log(arrayOfNumbers);
 							hashStdUsed[batchName][ezName]["CV"] = getError(arrayOfNumbers,2);
 
 						},
@@ -437,7 +439,7 @@ function standardsUsed(tableID){
 			});
 		});
 	});
-	console.log(hashStdUsed);
+//	console.log(hashStdUsed);
 	/* Create a 2D array
 	 * First line is the thead
 	 */
@@ -478,8 +480,8 @@ function standardsUsed(tableID){
 		}
 		finalMap.push(tab);
 	}
-	console.log("finalMap");
-	console.log(finalMap);
+//	console.log("finalMap");
+//	console.log(finalMap);
 	printStdUsed(finalMap);
 }
 
@@ -503,8 +505,8 @@ function printStdUsed(map){
 			jsonDataMap.push(map[i]);
 		}
 	}
-	console.log("jsonDataMap");
-	console.log(jsonDataMap);
+//	console.log("jsonDataMap");
+//	console.log(jsonDataMap);
 	$('#CvTable').DataTable({
 		scrollX:true,
 		scrollY: 600,
@@ -620,8 +622,8 @@ function interBatchCentering(tableID){
  * @param      {<type>}  expName  { description }
  */
 function aliquotMerge(expName){
-	console.log("jsonData");
-	console.log(jsonData);
+//	console.log("jsonData");
+//	console.log(jsonData);
 	var sampleLinkID ={};
 	var valuesLinkSample ={};
 	var divisorLinkSample ={};

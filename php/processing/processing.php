@@ -640,10 +640,10 @@ $(document).on("click", "#rawDataSubmit", function(e){
 function update(){
 //	console.log("current Ez ID in update : "+currentEzID);
 //	// console.log("BatchID update : "+batchID);
-//	console.log("update processDataMap : ");
-//	console.log(processDataMap);
-//	// console.log(excludMap);
-//	// console.log(rawIDMap);
+//		console.log("update processDataMap : ");
+//		console.log(processDataMap);
+//		console.log(excludMap);
+//		console.log(rawIDMap);
 	return new Promise(function (resolve, reject){
 		$.ajax({
 			url: "save_edit.php",
@@ -656,6 +656,7 @@ function update(){
 			},
 			success: function(data) {
 				var obj = JSON.parse(data);
+//				console.log(obj);
 				if(obj.status == 'success'){
 					$('#statusSpan').html('<div class="alert alert-success">'+obj.action+' Successful<a href="#" data-dismiss="alert" class="close">×</a></div>');
 				}

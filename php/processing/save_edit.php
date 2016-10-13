@@ -18,7 +18,7 @@
 		$colIdx=0;
 		foreach ($row as $col) {
 			$queryUpdateExclud =" UPDATE  `rawdata` SET `data_is_excluded`=".$excludMap[$rowIdx][$colIdx]." WHERE `rawdata_id` = ".$rawIDMap[$rowIdx][$colIdx].";";
-			// error_log($queryUpdateExclud);
+//			error_log($queryUpdateExclud);
 			try {
 				$conn->beginTransaction();
 				$conn->exec($queryUpdateExclud);
@@ -43,7 +43,9 @@
 
 	foreach ($processDataMap as $row) {
 		$colIdx=0;
+//        error_log("LIGNE : ".$rowIdx);
 		foreach ($row as $col) {
+//            error_log("COLONNE : ".$colIdx);
 			if ($processDataMap[$rowIdx][$colIdx] =="NA"){
 				$valueToUpdate = "";
 			}
@@ -60,7 +62,7 @@
 				p.pro_value = '".$valueToUpdate."'
 			WHERE 
 				r.raw_equ_proc_rawdata_FK = ".$rawIDMap[$rowIdx][$colIdx].";";
-
+//            error_log($queryUpdateProcData);
 			try {
 				$conn->beginTransaction();
 				$conn->exec($queryUpdateProcData);

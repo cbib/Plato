@@ -161,6 +161,7 @@
 					`rawdata`(`rawdata_id`, `data_value`, `data_is_excluded`, `data_velocity`, `data_is_proved`, `data_enzyme_FK`, `rawdata_batch_data_FK`) 
 					VALUES 
 					('', '$line' , 0, '$part', 'false', '$ezID', '$req');";
+
 					$insertProcDataQuery = "INSERT INTO `processdata`(`pro_id`, `pro_value`) VALUES ('','');";
 
 					try {

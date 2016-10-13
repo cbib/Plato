@@ -21,7 +21,7 @@
 		bat_name regexp '^$batchName$'
 	;";
 
-	error_log($query);
+//	error_log($query);
 	$req = $conn->query($query)->fetchColumn();
 
 $response_array['status']=$status;

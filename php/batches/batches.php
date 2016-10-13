@@ -368,22 +368,15 @@ $(document).on("input", "#batchNumber" , function(e){
  * Get data paste on the first cell of the add data table
  */
 $(document).bind("paste", '#col1', function(e){
-
 	if (e.originalEvent.target.id=="col1"){
-//		showWaitModal();
 		var data = e.originalEvent.clipboardData.getData('Text');
 		console.log("originalData");
 		console.log(data);
-//		data= jQuery.trim(data);
-		data=chomp(data);
-		data = data.replace(/(\r\n|\n|\r)/gm,"\n");
-
 		dispatchAddBatchDatas(data);
 	}
 	else {
 		console.log(e.originalEvent.srcElement.id);
 	}
-//	hideWaitModal();
 });
 
 /**
@@ -834,7 +827,9 @@ function setup_experiment_datatable(){
  * @param      {(number|string)}  data    { description }
  */
 function dispatchAddBatchDatas(data) {
-	data= data.replace(/ +/g, '');
+	data = data.replace(/ +/g, '');
+	data = chomp(data);
+	data = data.replace(/(\r\n|\n|\r)/gm,"\n");
 	var rowsDatas = data.split(/(?:\n)+/);
 
 	var dataLength = rowsDatas.length;
@@ -1011,6 +1006,9 @@ function checkUse(data){
 			},
 			success: function (data) {
 				var obj = JSON.parse(data);
+				console.log("RESULT OF IS USED 2");
+				console.log(data);
+				console.log(obj);
 				resolve(obj.result);
 			},
 			error: function (xhr, status, error) {

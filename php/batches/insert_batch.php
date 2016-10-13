@@ -66,7 +66,7 @@
 		$action = "creation";
 	}
 
-	$pos_exist = -1; 
+	//$pos_exist = -1;
 	$spl_alq_id = -1;
 	$expID = "";
 
@@ -92,7 +92,7 @@
 			}
 			else {
 //				error_log("OTHERS : ".$line);
-				$pos_exist = batch_pos_exist_in_db($line, $conn);
+				//$pos_exist = batch_pos_exist_in_db($line, $conn);
 				$spl_alq_id = get_sample_aliquot_id($line, $conn);
 				$expID = get_experiment_id_from_name($line, $conn);
 //				error_log("EXPID = ".$expID);
