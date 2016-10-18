@@ -36,8 +36,8 @@ html_footer("../../");
 <script type="text/javascript" class="init">
 
 $(document).ready(function() {
-	$('#adminPanel').removeClass('submenu');
-	$('#adminPanel').addClass('submenu open');
+	$('#userPanel').removeClass('submenu');
+	$('#userPanel').addClass('submenu open');
 	setup_datatable();
 });
 

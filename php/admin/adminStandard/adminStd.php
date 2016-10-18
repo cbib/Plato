@@ -231,6 +231,7 @@ $(document).on("click", "#deleteSubmit", function(){
 $(document).on("click", "#editAnalyteSubmit", function(){
 	var stdezid = $("#stdezid").val();
 	var slope = $("#slope").val();
+	slope = slope.replace(/,/g, '.');
 	var nature = $("#nature").val();
 	var amount = $("#amount2").val();
 	amount = amount.replace(/,/g, '.');
@@ -240,7 +241,7 @@ $(document).on("click", "#editAnalyteSubmit", function(){
 	$.ajax({
 		url: "edit_enzyme_in_standard.php",
 		type: "post",
-		data: { 
+		data: {
 			stdezid : stdezid,
 			amount : amount,
 			unit : newUnit,
@@ -474,6 +475,43 @@ $(document).on("click", "#createStdSubmit", function(){
 	});
 
 
+
+
+	/**
+	 * fonction d'edition creation utilise pour les standard uniquement
+	 */
+	$(document).on("click", "#deleteStdSubmit", function(){
+		var id = $("#id").val();
+		var boolOK = true;
+		var action = $("#action").val();
+
+		if (boolOK == true){
+			$.ajax({
+				url: "AdminSTDUpdateData.php",
+				type: "post",
+				data: {
+					id : id,
+					action : action
+				},
+				success: function(data) {
+					var obj = data;
+					if(obj.status == 'success'){
+						$("#editRowModal").modal('hide');
+						$('#statusSpan').html('<div class="alert alert-success">'+obj.action+' Successful<a href="#" data-dismiss="alert" class="close">×</a></div>');
+						setup_datatable();
+					}
+					else if(obj.status == 'error'){
+						$("#editRowModal").modal('hide');
+						$('#statusSpan').html('<div class="alert alert-error">'+obj.action+' Failure<a href="#" data-dismiss="alert" class="close">×</a></div>');
+						setup_datatable();
+					}
+				},
+				error: function(xhr, status, error) {
+				}
+			});
+		}
+	});
+
 	/**
  * Print standard datatble
  *
@@ -685,7 +723,7 @@ function construct_delete_modal_std(data, action){
 				'</form>'+
 				'<div class="modal-footer">'+
 					'<button type="button" data-dismiss="modal" class="btn btn-large">Cancel</button>'+
-					'<button type="submit" id="editSubmit" class="btn btn-primary btn-large">Delete</button>'+
+					'<button type="submit" id="deleteStdSubmit" class="btn btn-primary btn-large">Delete</button>'+
 				'</div>'+
 		'</div> <!-- /.modal-content -->'+
 	'</div> <!-- /.modal-dialog -->';
@@ -784,7 +822,14 @@ function construct_edit_modal_analyte(data, action){
 										//console.log(data);
 										for(var i = 0; i < data2.length; i++) {
 											var line = data2[i];
-											modal += '<option value = "'+line.unit_id+'"';
+
+											if ((line.unit_name == "mg/gFW") || (line.unit_name == "µmol/gFW") || (line.unit_name == "nmol/gFW/min")){
+												console.log("."+line.unit_name+".");
+												modal += '<option style="background: #D8D8D8;"  value = "'+line.unit_id+'"';
+											}
+											else {
+												modal += '<option value = "' + line.unit_id +'"';
+											}
 											if(line.unit_name == data[7]){
 												modal += 'selected="selected"';
 											}

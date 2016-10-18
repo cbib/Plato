@@ -18,10 +18,10 @@ use Data::Dumper;
 #-------------------------------------------------------------remote connection (to plato)
 sub remote_db_connector{
 	# db connection param
-	my $bd		= 'dbname';
-	my $serveur	= '100.100.100.100';	  	# IP adress
-	my $identifiant = 'login';	  	# id 
-	my $motdepasse	= 'passwd';			# Pwd
+	my $bd		= 'PlatoDB';
+	my $serveur	= '147.100.103.188';	  	# IP adress
+	my $identifiant = 'labdesigner';	  	# id 
+	my $motdepasse	= 'glucose';			# Pwd
 	my $port	= '1433';
 	my $dsn="dbi:ODBC:DSN=plato";
 	print "Connexion à la base de données $bd\n";
@@ -37,10 +37,10 @@ sub remote_db_connector{
 #--------------------------------------------------------------- local connection (to new db)
 sub local_db_connector{
 	# db connection param
-	my $bd		= 'platolocalbdname';
+	my $bd		= 'plato0710freetoinuse';
 	my $serveur	= '127.0.0.1';	  # IP adress
-	my $identifiant = 'id';	  # id 
-	my $motdepasse	= 'pwd';	  # Pwd
+	my $identifiant = 'root';	  # id 
+	my $motdepasse	= 'r00t';	  # Pwd
 	my $port	= '';
 	# Connection à la base de données mysql
 	print "Connexion à la base de données $bd\n";

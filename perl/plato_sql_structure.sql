@@ -11,10 +11,10 @@ SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 --
--- Base de données: `plato_export_29082016`
+-- Base de données: `plato_export_07102016`
 --
-CREATE DATABASE IF NOT EXISTS `plato_export_29082016` DEFAULT CHARACTER SET utf8 COLLATE utf8_bin;
-USE `plato_export_29082016`;
+CREATE DATABASE IF NOT EXISTS `plato_export_07102016` DEFAULT CHARACTER SET utf8 COLLATE utf8_bin;
+USE `plato_export_07102016`;
 
 -- --------------------------------------------------------
 
@@ -75,7 +75,7 @@ CREATE TABLE IF NOT EXISTS `batch_data` (
 CREATE TABLE IF NOT EXISTS `enzyme` (
   `ez_id` int(5) NOT NULL AUTO_INCREMENT,
   `ez_analyte` varchar(100)  NOT NULL,
-  `ez_slope` int(1) NOT NULL,
+  `ez_slope` float(3) NOT NULL,
   `ez_code` varchar(50)  NOT NULL,
   `ez_is_enzyme` int(1) NOT NULL,
   PRIMARY KEY (`ez_id`)

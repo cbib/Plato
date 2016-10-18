@@ -31,7 +31,7 @@ $sth->execute();
 
 my $row;
 while ($row = $sth->fetchrow_arrayref()) {
-    print "@$row\n";
+    #print "@$row\n";
     my $statement = "UPDATE sample_aliquot SET spl_alq_state = 'in use' WHERE spl_alq_id = @$row[0]";
     my $sth5 = $dbh->prepare($statement);
 	$sth5->execute or die "Can't Add record : $dbh->errstr";
@@ -40,5 +40,5 @@ while ($row = $sth->fetchrow_arrayref()) {
 
 $sth->finish();
 $dbh->disconnect();
-
+print "Finished !";
 

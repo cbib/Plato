@@ -14,6 +14,7 @@ echo'
 <div class="modal fade" id="addRawDataModal" tabindex="-1" role="dialog" aria-hidden="true">
 </div>
 
+
 <div class="modal fade" id="waitModal" tabindex="1" role="dialog" aria-hidden="true">
 </div>
 ';
@@ -464,8 +465,6 @@ $(document).ready(function() {
 		excludMap[row][col] = exclud;
 		launchProcessing(split);
 
-		// launchProcessing(split);
-		// displayData();
 		$( "button" ).filter( "#saveProcessedData" ).prop("disabled",false);
 		OkToQuitPage="nope";
 	});
@@ -496,6 +495,9 @@ $(document).ready(function() {
 				$('#expender-wrapper').show();
 				$('#datatable-wrapper').hide();
 				return makeMap(responserawdata);
+			}
+			else{
+				$('#datatable-wrapper').hide();
 			}
 		}, function(error){
 			console.log("failure : "+error);
@@ -532,6 +534,7 @@ window.onbeforeunload = function(event) {
 		event.returnValue = "Some changes are not saved";
 	}
 };
+
 
 /* Listener on enzyme table */
 $(document).on( 'click', "#ezTable > tbody > tr >td ", function (e) {
@@ -617,6 +620,7 @@ $(document).on("click", "#rawDataSubmit", function(e){
 		return update();
 	}).then(function(){
 		return createEzTab();
+		resetModalTable();
 	}, function(error){
 		console.log("failure : "+error);
 	});
@@ -1292,7 +1296,7 @@ function create_addRawData_modal(batchID, selectAnalyte){
 		'<div class="modal-content">'+
 			'<div class="modal-header">'+
 				'<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>'+
-				'<h4 class="modal-title">Add Raw Data <span id=modalBatchName></span></h4>'+
+				'<h4 class="modal-title">Add Raw Data to the batch : '+batchName+'<span id=modalBatchName></span></h4>'+
 			'</div>'+
 			'<div class="modal-body">'+
 				'<span id="addDataTips">'+
