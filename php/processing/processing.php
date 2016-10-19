@@ -456,6 +456,7 @@ $(document).ready(function() {
 	});
 
 	/* If the user dblclick on a raw value, the processed data are re-calculated  */
+	// 0 : non-excluded ; 1 :  excluded
 	$('#rawTable tbody').on( 'dblclick', 'td', function () {
 		myRowIndex = $(this).parent().find('td').html().trim();
 		myColIndex = $('#rawTable thead tr th').eq($(this).index()).html().trim();
@@ -642,12 +643,6 @@ $(document).on("click", "#rawDataSubmit", function(e){
  * @param      {<type>}  excludMap       { description }
  */
 function update(){
-//	console.log("current Ez ID in update : "+currentEzID);
-//	// console.log("BatchID update : "+batchID);
-//		console.log("update processDataMap : ");
-//		console.log(processDataMap);
-//		console.log(excludMap);
-//		console.log(rawIDMap);
 	return new Promise(function (resolve, reject){
 		$.ajax({
 			url: "save_edit.php",
@@ -947,7 +942,8 @@ function processEnzyme(){
 
 	for(var i=0;i<4; i++){
 		for(var j=0;j<12; j++){
-			if((excludMap[i][j]==0) && (dataTypeMap[i][j]!=1)) {
+			var sumExclud = (excludMap[i][j]) + (excludMap[i+4][j])
+			if((sumExclud<2) && (dataTypeMap[i][j]!=1)) {
 		        /*Corrected_BLANK_Val = (rawBLANK-AverageOf(BLANK_buffer)) / frehsweight */
 		        var corrBlankValue = blankRawDataMap[i][j]-avgBlankBuffer;
 		        corrBlankValue = corrBlankValue/blankFwMap[i][j];
@@ -1484,37 +1480,61 @@ function displayProcessData() {
 	$("#processTable tbody tr td").css('background-color', '');
 
 	//EB:1, ?:2, control:3 vert, data:0
-	for(var i=0;i<8; i++){
-		for(var j=0;j<12; j++){
-			var processData = Math.round(processDataMap[i][j] * 100) / 100;
-			if (isNaN(processData)){
-				processData = "NA";
+	if (split==="FULL") {
+		for (var i = 0; i < 8; i++) {
+			for (var j = 0; j < 12; j++) {
+				var processData = Math.round(processDataMap[i][j] * 100) / 100;
+				if (isNaN(processData)) {
+					processData = "NA";
+				}
+				if (dataTypeMap[i][j] == 1) {
+					$('#processTable').find('tr').eq(i + 1).find('td').eq(j + 1).text("NA").css('background-color', '#BDE5F8');
+				}
+				else if (dataTypeMap[i][j] == 2) {
+					// console.log("i"+i+" : j"+j);
+					$('#processTable').find('tr').eq(i + 1).find('td').eq(j + 1).text("?").css('background-color', '#686868');
+				}
+				else if (dataTypeMap[i][j] == 3) {
+					$('#processTable').find('tr').eq(i + 1).find('td').eq(j + 1).text(processData).css('background-color', '#B7FFAF');
+				}
+				else if (dataTypeMap[i][j] == 0) {
+					$('#processTable').find('tr').eq(i + 1).find('td').eq(j + 1).text(processData);
+				}
+				if (excludMap[i][j] == 1) {
+					$('#processTable').find('tr').eq(i + 1).find('td').eq(j + 1).css('text-decoration', 'line-through');
+				}
+				$("#processTable").css("fontSize", 11);
 			}
-			if(dataTypeMap[i][j] == 1){
-				$('#processTable').find('tr').eq(i+1).find('td').eq(j+1).text("NA").css('background-color', '#BDE5F8');
-			}
-			else if(dataTypeMap[i][j] == 2){
-				// console.log("i"+i+" : j"+j);
-				$('#processTable').find('tr').eq(i+1).find('td').eq(j+1).text("?").css('background-color', '#686868');
-			}
-			else if(dataTypeMap[i][j] == 3){
-				$('#processTable').find('tr').eq(i+1).find('td').eq(j+1).text(processData).css('background-color', '#B7FFAF');
-			}
-			else if(dataTypeMap[i][j] == 0){
-				$('#processTable').find('tr').eq(i+1).find('td').eq(j+1).text(processData);
-			}
-			if(excludMap[i][j] == 1){
-				$('#processTable').find('tr').eq(i+1).find('td').eq(j+1).css('text-decoration', 'line-through');
-			}
-			$("#processTable").css("fontSize", 11);
 		}
 	}
 	if (split==="SPLIT") {
 		for(var i=4;i<8; i++){
 			for(var j=0;j<12; j++){
 				$('#processTable').find('tr').eq(i+1).find('td').eq(j+1).text('').css('background-color', '#D7D7D7');
-				if(excludMap[i][j] == 1){
-					$('#processTable').find('tr').eq(i+1).find('td').eq(j+1).text('').css('text-decoration', 'line-through');
+				$("#processTable").css("fontSize", 11);
+			}
+		}
+		for (var i = 0; i < 4; i++) {
+			for (var j = 0; j < 12; j++) {
+				var processData = Math.round(processDataMap[i][j] * 100) / 100;
+				if (isNaN(processData)) {
+					processData = "NA";
+				}
+				if (dataTypeMap[i][j] == 1) {
+					$('#processTable').find('tr').eq(i + 1).find('td').eq(j + 1).text("NA").css('background-color', '#BDE5F8');
+				}
+				else if (dataTypeMap[i][j] == 2) {
+					// console.log("i"+i+" : j"+j);
+					$('#processTable').find('tr').eq(i + 1).find('td').eq(j + 1).text("?").css('background-color', '#686868');
+				}
+				else if (dataTypeMap[i][j] == 3) {
+					$('#processTable').find('tr').eq(i + 1).find('td').eq(j + 1).text(processData).css('background-color', '#B7FFAF');
+				}
+				else if (dataTypeMap[i][j] == 0) {
+					$('#processTable').find('tr').eq(i + 1).find('td').eq(j + 1).text(processData);
+				}
+				if((excludMap[i][j] == 1) && (excludMap[i+4][j] == 1)){
+					$('#processTable').find('tr').eq(i + 1).find('td').eq(j + 1).css('text-decoration', 'line-through');
 				}
 				$("#processTable").css("fontSize", 11);
 			}
