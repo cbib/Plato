@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php" kind="file">
+    <compoundname>remove_enzyme_in_standard(obsolete).php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$conn</definition>
+        <argsstring></argsstring>
+        <name>$conn</name>
+        <initializer>= <ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/standard/obsolete files/remove_enzyme_in_standard(obsolete).php" line="4" column="1" bodyfile="/var/www/html/plato/php/standard/obsolete files/remove_enzyme_in_standard(obsolete).php" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1a82f60c379683413d3b4269adbe259606" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$stdEzIdToRemove</definition>
+        <argsstring></argsstring>
+        <name>$stdEzIdToRemove</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/standard/obsolete files/remove_enzyme_in_standard(obsolete).php" line="6" column="1" bodyfile="/var/www/html/plato/php/standard/obsolete files/remove_enzyme_in_standard(obsolete).php" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1a58391ea75f2d29d5d708d7050b641c33" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$status</definition>
+        <argsstring></argsstring>
+        <name>$status</name>
+        <initializer>=&quot;success&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/standard/obsolete files/remove_enzyme_in_standard(obsolete).php" line="7" column="1" bodyfile="/var/www/html/plato/php/standard/obsolete files/remove_enzyme_in_standard(obsolete).php" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1a46a28a65a24f7a31388b22d12d2bb16a" prot="public" static="no" mutable="no">
+        <type>if(isset($_POST[&apos;stdEzIdToRemove&apos;]))</type>
+        <definition>if (isset($_POST[&apos;stdEzIdToRemove&apos;])) $query</definition>
+        <argsstring></argsstring>
+        <name>$query</name>
+        <initializer>= &apos;DELETE FROM `standard_enzyme` WHERE  `std_ez_id`= &apos;.$stdEzIdToRemove.&apos;;&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/standard/obsolete files/remove_enzyme_in_standard(obsolete).php" line="14" column="1" bodyfile="/var/www/html/plato/php/standard/obsolete files/remove_enzyme_in_standard(obsolete).php" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1abe4cc9788f52e49485473dc699537388" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>try</definition>
+        <argsstring></argsstring>
+        <name>try</name>
+        <initializer>{
+		$conn-&gt;beginTransaction()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/standard/obsolete files/remove_enzyme_in_standard(obsolete).php" line="16" column="1" bodyfile="/var/www/html/plato/php/standard/obsolete files/remove_enzyme_in_standard(obsolete).php" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$req</definition>
+        <argsstring></argsstring>
+        <name>$req</name>
+        <initializer>= $conn-&gt;exec($query)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/standard/obsolete files/remove_enzyme_in_standard(obsolete).php" line="19" column="1" bodyfile="/var/www/html/plato/php/standard/obsolete files/remove_enzyme_in_standard(obsolete).php" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1a8452fb8131316637a04e25f5fde066d9" prot="public" static="no" mutable="no">
+        <type>catch(Exception $e)</type>
+        <definition>catch (Exception $e) $response_array[&apos;status&apos;]</definition>
+        <argsstring>[&apos;status&apos;]</argsstring>
+        <name>$response_array</name>
+        <initializer>=$status</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/standard/obsolete files/remove_enzyme_in_standard(obsolete).php" line="28" column="1" bodyfile="/var/www/html/plato/php/standard/obsolete files/remove_enzyme_in_standard(obsolete).php" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/><sp/><sp/>require(</highlight><highlight class="stringliteral">&apos;../functions/check_login.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/>include<sp/></highlight><highlight class="stringliteral">&apos;../functions/php_functions.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="4" refid="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref><sp/>=<sp/><ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>();</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1a82f60c379683413d3b4269adbe259606" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1a82f60c379683413d3b4269adbe259606" kindref="member">$stdEzIdToRemove</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="7" refid="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1a58391ea75f2d29d5d708d7050b641c33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;success&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;stdEzIdToRemove&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1a82f60c379683413d3b4269adbe259606" kindref="member">$stdEzIdToRemove</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;stdEzIdToRemove&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1a46a28a65a24f7a31388b22d12d2bb16a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1a46a28a65a24f7a31388b22d12d2bb16a" kindref="member">$query</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;DELETE<sp/>FROM<sp/>`standard_enzyme`<sp/>WHERE<sp/><sp/>`std_ez_id`=<sp/>&apos;</highlight><highlight class="normal">.$stdEzIdToRemove.</highlight><highlight class="charliteral">&apos;;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="17" refid="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1abe4cc9788f52e49485473dc699537388" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;beginTransaction();</highlight></codeline>
+<codeline lineno="19" refid="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref><sp/>=<sp/><ref refid="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;exec(<ref refid="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1a46a28a65a24f7a31388b22d12d2bb16a" kindref="member">$query</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;commit();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(<sp/>Exception<sp/>$e<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;rollBack();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log($e);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1a8452fb8131316637a04e25f5fde066d9" refkind="member"><highlight class="normal"><ref refid="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1a8452fb8131316637a04e25f5fde066d9" kindref="member">$response_array</ref>[</highlight><highlight class="stringliteral">&apos;status&apos;</highlight><highlight class="normal">]=<ref refid="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">echo<sp/>json_encode(<ref refid="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1a8452fb8131316637a04e25f5fde066d9" kindref="member">$response_array</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="/var/www/html/plato/php/standard/obsolete files/remove_enzyme_in_standard(obsolete).php"/>
+  </compounddef>
+</doxygen>

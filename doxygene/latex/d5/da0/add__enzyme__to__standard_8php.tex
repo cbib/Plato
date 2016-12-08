@@ -1,0 +1,128 @@
+\hypertarget{add__enzyme__to__standard_8php}{\section{php/admin/admin\-Standard/add\-\_\-enzyme\-\_\-to\-\_\-standard.php File Reference}
+\label{add__enzyme__to__standard_8php}\index{php/admin/admin\-Standard/add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php@{php/admin/admin\-Standard/add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{add__enzyme__to__standard_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{add__enzyme__to__standard_8php_ae5b99d173d7360be6556675a80036269}{\$select\-Analyte} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{add__enzyme__to__standard_8php_a427fdcd2d971a5567fb4d111d8de5f54}{\$select\-Unit} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{add__enzyme__to__standard_8php_aa0668b8f5734a61bcc5107303a90615a}{\$analyte\-Value} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{add__enzyme__to__standard_8php_a0c541a369e4a0434108a7d145751bb23}{\$standard\-I\-D} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{add__enzyme__to__standard_8php_a58391ea75f2d29d5d708d7050b641c33}{\$status} =\char`\"{}success\char`\"{}
+\item 
+\hyperlink{add__enzyme__to__standard_8php_ad5cb2bd1aacca5b8729d0dc753091153}{\$dilution\-Value} =\char`\"{}\char`\"{}
+\item 
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'select\-Analyte'\mbox{]})) \\*
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'select\-Unit'\mbox{]})) \\*
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'analyte\-Value'\mbox{]})) \\*
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'standard\-I\-D'\mbox{]})) \\*
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'dilution\-Value'\mbox{]})) \hyperlink{add__enzyme__to__standard_8php_aa89f0556a6e4bd014d777d24dfe180a0}{\$query}
+\item 
+\hyperlink{add__enzyme__to__standard_8php_abe4cc9788f52e49485473dc699537388}{try}
+\item 
+\hyperlink{add__enzyme__to__standard_8php_a63a7a283ea5dee8af1e2d5a3435bf370}{\$req} = \$conn-\/$>$exec(\$query)
+\item 
+catch(Exception \$e) \hyperlink{add__enzyme__to__standard_8php_a8452fb8131316637a04e25f5fde066d9}{\$response\-\_\-array} \mbox{[}'status'\mbox{]} =\$status
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{add__enzyme__to__standard_8php_aa0668b8f5734a61bcc5107303a90615a}{\index{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php@{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php}!\$analyte\-Value@{\$analyte\-Value}}
+\index{\$analyte\-Value@{\$analyte\-Value}!add_enzyme_to_standard.php@{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php}}
+\subsubsection[{\$analyte\-Value}]{\setlength{\rightskip}{0pt plus 5cm}\$analyte\-Value =\char`\"{}\char`\"{}}}\label{add__enzyme__to__standard_8php_aa0668b8f5734a61bcc5107303a90615a}
+
+
+Definition at line 10 of file add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php.
+
+\hypertarget{add__enzyme__to__standard_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php@{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!add_enzyme_to_standard.php@{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{add__enzyme__to__standard_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 4 of file add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php.
+
+\hypertarget{add__enzyme__to__standard_8php_ad5cb2bd1aacca5b8729d0dc753091153}{\index{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php@{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php}!\$dilution\-Value@{\$dilution\-Value}}
+\index{\$dilution\-Value@{\$dilution\-Value}!add_enzyme_to_standard.php@{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php}}
+\subsubsection[{\$dilution\-Value}]{\setlength{\rightskip}{0pt plus 5cm}\$dilution\-Value =\char`\"{}\char`\"{}}}\label{add__enzyme__to__standard_8php_ad5cb2bd1aacca5b8729d0dc753091153}
+
+
+Definition at line 13 of file add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php.
+
+\hypertarget{add__enzyme__to__standard_8php_aa89f0556a6e4bd014d777d24dfe180a0}{\index{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php@{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php}!\$query@{\$query}}
+\index{\$query@{\$query}!add_enzyme_to_standard.php@{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php}}
+\subsubsection[{\$query}]{\setlength{\rightskip}{0pt plus 5cm}if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'select\-Analyte'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'select\-Unit'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'analyte\-Value'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'standard\-I\-D'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'dilution\-Value'\mbox{]})) \$query}}\label{add__enzyme__to__standard_8php_aa89f0556a6e4bd014d777d24dfe180a0}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+= \textcolor{stringliteral}{"}
+\textcolor{stringliteral}{    INSERT INTO }
+\textcolor{stringliteral}{    `standard\_enzyme`}
+\textcolor{stringliteral}{    (`std\_ez\_id`, `std\_ez\_unit\_FK`, `std\_ez\_standard\_FK`, `std\_ez\_value`, `std\_ez\_enzyme\_FK`,
+       `std\_ez\_dilution`) }
+\textcolor{stringliteral}{    VALUES }
+\textcolor{stringliteral}{    ('', '$selectUnit', '$standardID', '$analyteValue', '$selectAnalyte', '$dilutionValue');}
+\textcolor{stringliteral}{    "}
+\end{DoxyCode}
+
+
+Definition at line 35 of file add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php.
+
+\hypertarget{add__enzyme__to__standard_8php_a63a7a283ea5dee8af1e2d5a3435bf370}{\index{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php@{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php}!\$req@{\$req}}
+\index{\$req@{\$req}!add_enzyme_to_standard.php@{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php}}
+\subsubsection[{\$req}]{\setlength{\rightskip}{0pt plus 5cm}\$req = \$conn-\/$>$exec(\$query)}}\label{add__enzyme__to__standard_8php_a63a7a283ea5dee8af1e2d5a3435bf370}
+
+
+Definition at line 46 of file add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php.
+
+\hypertarget{add__enzyme__to__standard_8php_a8452fb8131316637a04e25f5fde066d9}{\index{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php@{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php}!\$response\-\_\-array@{\$response\-\_\-array}}
+\index{\$response\-\_\-array@{\$response\-\_\-array}!add_enzyme_to_standard.php@{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php}}
+\subsubsection[{\$response\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}catch (Exception \$e) \$response\-\_\-array\mbox{[}'status'\mbox{]} =\$status}}\label{add__enzyme__to__standard_8php_a8452fb8131316637a04e25f5fde066d9}
+
+
+Definition at line 55 of file add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php.
+
+\hypertarget{add__enzyme__to__standard_8php_ae5b99d173d7360be6556675a80036269}{\index{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php@{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php}!\$select\-Analyte@{\$select\-Analyte}}
+\index{\$select\-Analyte@{\$select\-Analyte}!add_enzyme_to_standard.php@{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php}}
+\subsubsection[{\$select\-Analyte}]{\setlength{\rightskip}{0pt plus 5cm}\$select\-Analyte =\char`\"{}\char`\"{}}}\label{add__enzyme__to__standard_8php_ae5b99d173d7360be6556675a80036269}
+
+
+Definition at line 8 of file add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php.
+
+\hypertarget{add__enzyme__to__standard_8php_a427fdcd2d971a5567fb4d111d8de5f54}{\index{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php@{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php}!\$select\-Unit@{\$select\-Unit}}
+\index{\$select\-Unit@{\$select\-Unit}!add_enzyme_to_standard.php@{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php}}
+\subsubsection[{\$select\-Unit}]{\setlength{\rightskip}{0pt plus 5cm}\$select\-Unit =\char`\"{}\char`\"{}}}\label{add__enzyme__to__standard_8php_a427fdcd2d971a5567fb4d111d8de5f54}
+
+
+Definition at line 9 of file add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php.
+
+\hypertarget{add__enzyme__to__standard_8php_a0c541a369e4a0434108a7d145751bb23}{\index{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php@{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php}!\$standard\-I\-D@{\$standard\-I\-D}}
+\index{\$standard\-I\-D@{\$standard\-I\-D}!add_enzyme_to_standard.php@{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php}}
+\subsubsection[{\$standard\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\$standard\-I\-D =\char`\"{}\char`\"{}}}\label{add__enzyme__to__standard_8php_a0c541a369e4a0434108a7d145751bb23}
+
+
+Definition at line 11 of file add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php.
+
+\hypertarget{add__enzyme__to__standard_8php_a58391ea75f2d29d5d708d7050b641c33}{\index{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php@{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php}!\$status@{\$status}}
+\index{\$status@{\$status}!add_enzyme_to_standard.php@{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php}}
+\subsubsection[{\$status}]{\setlength{\rightskip}{0pt plus 5cm}\$status =\char`\"{}success\char`\"{}}}\label{add__enzyme__to__standard_8php_a58391ea75f2d29d5d708d7050b641c33}
+
+
+Definition at line 12 of file add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php.
+
+\hypertarget{add__enzyme__to__standard_8php_abe4cc9788f52e49485473dc699537388}{\index{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php@{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php}!try@{try}}
+\index{try@{try}!add_enzyme_to_standard.php@{add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php}}
+\subsubsection[{try}]{\setlength{\rightskip}{0pt plus 5cm}try}}\label{add__enzyme__to__standard_8php_abe4cc9788f52e49485473dc699537388}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+\{
+        \hyperlink{add__enzyme__to__standard_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{$conn}->beginTransaction()
+\end{DoxyCode}
+
+
+Definition at line 44 of file add\-\_\-enzyme\-\_\-to\-\_\-standard.\-php.
+

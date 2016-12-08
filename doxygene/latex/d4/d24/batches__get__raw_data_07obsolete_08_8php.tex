@@ -1,0 +1,81 @@
+\hypertarget{batches__get__raw_data_07obsolete_08_8php}{\section{php/processing/obsolete/batches\-\_\-get\-\_\-raw\-Data(obsolete).php File Reference}
+\label{batches__get__raw_data_07obsolete_08_8php}\index{php/processing/obsolete/batches\-\_\-get\-\_\-raw\-Data(obsolete).\-php@{php/processing/obsolete/batches\-\_\-get\-\_\-raw\-Data(obsolete).\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{batches__get__raw_data_07obsolete_08_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{batches__get__raw_data_07obsolete_08_8php_aaa6d122ea9cb55b210aadd86e5654a74}{\$batch\-I\-D} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'\hyperlink{obsolete_2processing__bak_8php_a88c5bc4262b7c34f236357f5c53fc99b}{batch\-I\-D}'\mbox{]}
+\item 
+\hyperlink{batches__get__raw_data_07obsolete_08_8php_af59a5f7cd609e592c41dc3643efd3c98}{\$query}
+\item 
+\hyperlink{batches__get__raw_data_07obsolete_08_8php_afa9126f9664959c02795be300a135f93}{\$sth} =\$conn-\/$>$prepare(\$query)
+\item 
+\hyperlink{batches__get__raw_data_07obsolete_08_8php_ace2ec39e7df3899fa8df9640ec274b03}{\$rows} =\$sth-\/$>$fetch\-All()
+\item 
+\hyperlink{batches__get__raw_data_07obsolete_08_8php_a73004ce9cd673c1bfafd1dc351134797}{\$output} = array()
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{batches__get__raw_data_07obsolete_08_8php_aaa6d122ea9cb55b210aadd86e5654a74}{\index{batches\-\_\-get\-\_\-raw\-Data(obsolete).\-php@{batches\-\_\-get\-\_\-raw\-Data(obsolete).\-php}!\$batch\-I\-D@{\$batch\-I\-D}}
+\index{\$batch\-I\-D@{\$batch\-I\-D}!batches_get_rawData(obsolete).php@{batches\-\_\-get\-\_\-raw\-Data(obsolete).\-php}}
+\subsubsection[{\$batch\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf batch\-I\-D} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'{\bf batch\-I\-D}'\mbox{]}}}\label{batches__get__raw_data_07obsolete_08_8php_aaa6d122ea9cb55b210aadd86e5654a74}
+
+
+Definition at line 7 of file batches\-\_\-get\-\_\-raw\-Data(obsolete).\-php.
+
+\hypertarget{batches__get__raw_data_07obsolete_08_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{batches\-\_\-get\-\_\-raw\-Data(obsolete).\-php@{batches\-\_\-get\-\_\-raw\-Data(obsolete).\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!batches_get_rawData(obsolete).php@{batches\-\_\-get\-\_\-raw\-Data(obsolete).\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{batches__get__raw_data_07obsolete_08_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 4 of file batches\-\_\-get\-\_\-raw\-Data(obsolete).\-php.
+
+\hypertarget{batches__get__raw_data_07obsolete_08_8php_a73004ce9cd673c1bfafd1dc351134797}{\index{batches\-\_\-get\-\_\-raw\-Data(obsolete).\-php@{batches\-\_\-get\-\_\-raw\-Data(obsolete).\-php}!\$output@{\$output}}
+\index{\$output@{\$output}!batches_get_rawData(obsolete).php@{batches\-\_\-get\-\_\-raw\-Data(obsolete).\-php}}
+\subsubsection[{\$output}]{\setlength{\rightskip}{0pt plus 5cm}\$output = array()}}\label{batches__get__raw_data_07obsolete_08_8php_a73004ce9cd673c1bfafd1dc351134797}
+
+
+Definition at line 29 of file batches\-\_\-get\-\_\-raw\-Data(obsolete).\-php.
+
+\hypertarget{batches__get__raw_data_07obsolete_08_8php_af59a5f7cd609e592c41dc3643efd3c98}{\index{batches\-\_\-get\-\_\-raw\-Data(obsolete).\-php@{batches\-\_\-get\-\_\-raw\-Data(obsolete).\-php}!\$query@{\$query}}
+\index{\$query@{\$query}!batches_get_rawData(obsolete).php@{batches\-\_\-get\-\_\-raw\-Data(obsolete).\-php}}
+\subsubsection[{\$query}]{\setlength{\rightskip}{0pt plus 5cm}\$query}}\label{batches__get__raw_data_07obsolete_08_8php_af59a5f7cd609e592c41dc3643efd3c98}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=\textcolor{stringliteral}{'}
+\textcolor{stringliteral}{    SELECT}
+\textcolor{stringliteral}{    experiment.exp\_name, sample.spl\_number, aliquot.alq\_number, batch\_data.bat\_data\_row,
+       batch\_data.bat\_data\_col , rawdata.data\_value}
+\textcolor{stringliteral}{    FROM }
+\textcolor{stringliteral}{    rawdata, experiment, batch\_data, sample\_aliquot, sample, aliquot }
+\textcolor{stringliteral}{    WHERE }
+\textcolor{stringliteral}{    batch\_data.bat\_data\_batch\_FK = 1 AND}
+\textcolor{stringliteral}{    sample\_aliquot.spl\_alq\_id = batch\_data.bat\_data\_sample\_aliquot\_FK AND}
+\textcolor{stringliteral}{    sample.spl\_id  = sample\_aliquot.spl\_alq\_sample\_FK AND }
+\textcolor{stringliteral}{    aliquot.alq\_id = sample\_aliquot.spl\_alq\_aliquot\_FK AND}
+\textcolor{stringliteral}{    experiment.exp\_id = batch\_data.bat\_data\_experiment\_FK AND}
+\textcolor{stringliteral}{    rawdata.rawdata\_batch\_data\_FK = batch\_data.bat\_data\_id}
+\textcolor{stringliteral}{    LIMIT 96;}
+\textcolor{stringliteral}{    '}
+\end{DoxyCode}
+
+
+Definition at line 9 of file batches\-\_\-get\-\_\-raw\-Data(obsolete).\-php.
+
+\hypertarget{batches__get__raw_data_07obsolete_08_8php_ace2ec39e7df3899fa8df9640ec274b03}{\index{batches\-\_\-get\-\_\-raw\-Data(obsolete).\-php@{batches\-\_\-get\-\_\-raw\-Data(obsolete).\-php}!\$rows@{\$rows}}
+\index{\$rows@{\$rows}!batches_get_rawData(obsolete).php@{batches\-\_\-get\-\_\-raw\-Data(obsolete).\-php}}
+\subsubsection[{\$rows}]{\setlength{\rightskip}{0pt plus 5cm}\$rows =\$sth-\/$>$fetch\-All()}}\label{batches__get__raw_data_07obsolete_08_8php_ace2ec39e7df3899fa8df9640ec274b03}
+
+
+Definition at line 27 of file batches\-\_\-get\-\_\-raw\-Data(obsolete).\-php.
+
+\hypertarget{batches__get__raw_data_07obsolete_08_8php_afa9126f9664959c02795be300a135f93}{\index{batches\-\_\-get\-\_\-raw\-Data(obsolete).\-php@{batches\-\_\-get\-\_\-raw\-Data(obsolete).\-php}!\$sth@{\$sth}}
+\index{\$sth@{\$sth}!batches_get_rawData(obsolete).php@{batches\-\_\-get\-\_\-raw\-Data(obsolete).\-php}}
+\subsubsection[{\$sth}]{\setlength{\rightskip}{0pt plus 5cm}\$sth =\$conn-\/$>$prepare(\$query)}}\label{batches__get__raw_data_07obsolete_08_8php_afa9126f9664959c02795be300a135f93}
+
+
+Definition at line 24 of file batches\-\_\-get\-\_\-raw\-Data(obsolete).\-php.
+

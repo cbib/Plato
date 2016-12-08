@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php">
+    <title>remove_enzyme_in_standard(obsolete).php File Reference</title>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877">$conn</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1a82f60c379683413d3b4269adbe259606">$stdEzIdToRemove</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1a58391ea75f2d29d5d708d7050b641c33">$status</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>if(isset($_POST[&apos;stdEzIdToRemove&apos;])) <link linkend="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1a46a28a65a24f7a31388b22d12d2bb16a">$query</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1abe4cc9788f52e49485473dc699537388">try</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1a63a7a283ea5dee8af1e2d5a3435bf370">$req</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>catch(Exception $e) <link linkend="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php_1a8452fb8131316637a04e25f5fde066d9">$response_array</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /var/www/html/plato/php/standard/obsolete files/remove_enzyme_in_standard(obsolete).php</para>
+    </simplesect>
+</section>

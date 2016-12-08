@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_05194b7bb14e4bdbd759acf3e4294839" kind="dir">
+    <compoundname>php</compoundname>
+    <innerdir refid="dir_09aadd6b53ea91dd7f53fdf4455ce578">php/admin</innerdir>
+    <innerdir refid="dir_fd9f3b302571b4723d8956ebb4f09037">php/analytes</innerdir>
+    <innerdir refid="dir_7bcfa5a264a76f0f91c796a2ccb77b21">php/batches</innerdir>
+    <innerdir refid="dir_a57df7b95982852fb2d608368f0f6abe">php/charts</innerdir>
+    <innerdir refid="dir_be9a968d9fc96fca70c23ffe8a4f2513">php/export</innerdir>
+    <innerdir refid="dir_63605f25a5f97dc6daac8d083e9b362c">php/freshweight</innerdir>
+    <innerdir refid="dir_c2fafb693eb928627df9f41349d3fcdd">php/functions</innerdir>
+    <innerdir refid="dir_53744f17e8e2032aa439361245667cbf">php/index_functions</innerdir>
+    <innerdir refid="dir_34a180d6c39e7f98fb75485bf3e97c21">php/processing</innerdir>
+    <innerdir refid="dir_5507f340ac41e66c861990380f99dca7">php/standard</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/var/www/html/plato/php/"/>
+  </compounddef>
+</doxygen>

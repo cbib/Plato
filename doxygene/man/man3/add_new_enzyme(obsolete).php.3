@@ -1,0 +1,78 @@
+.TH "php/standard/obsolete files/add_new_enzyme(obsolete).php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/standard/obsolete files/add_new_enzyme(obsolete).php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$conn\fP = \fBget_connexion\fP()"
+.br
+.ti -1c
+.RI "\fB$ezName\fP =''"
+.br
+.ti -1c
+.RI "\fB$ezSlope\fP =''"
+.br
+.ti -1c
+.RI "\fB$ezCode\fP =''"
+.br
+.ti -1c
+.RI "\fB$ezType\fP =''"
+.br
+.ti -1c
+.RI "\fB$ezBool\fP = ($ezType == 'metabolite') ? 1 : 0"
+.br
+.ti -1c
+.RI "\fB$query\fP"
+.br
+.ti -1c
+.RI "\fB$sth\fP =$conn->prepare($query)"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$conn = \fBget_connexion\fP()"
+
+.PP
+Definition at line 4 of file add_new_enzyme(obsolete)\&.php\&.
+.SS "$ezBool = ($ezType == 'metabolite') ? 1 : 0"
+
+.PP
+Definition at line 33 of file add_new_enzyme(obsolete)\&.php\&.
+.SS "$ezCode =''"
+
+.PP
+Definition at line 8 of file add_new_enzyme(obsolete)\&.php\&.
+.SS "$\fBezName\fP =''"
+
+.PP
+Definition at line 6 of file add_new_enzyme(obsolete)\&.php\&.
+.SS "$ezSlope =''"
+
+.PP
+Definition at line 7 of file add_new_enzyme(obsolete)\&.php\&.
+.SS "$ezType =''"
+
+.PP
+Definition at line 9 of file add_new_enzyme(obsolete)\&.php\&.
+.SS "$query"
+\fBInitial value:\fP
+.PP
+.nf
+= "
+    INSERT INTO `enzyme`(`ez_id`, `ez_analyte`, `ez_slope`, `ez_code`, `ez_is_enzyme`) VALUES ('', '$ezName', '$ezSlope', '$ezCode', '$ezBool');"
+.fi
+.PP
+Definition at line 35 of file add_new_enzyme(obsolete)\&.php\&.
+.SS "$sth =$conn->prepare($query)"
+
+.PP
+Definition at line 39 of file add_new_enzyme(obsolete)\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

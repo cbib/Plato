@@ -3,6 +3,7 @@
 	include '../../functions/php_functions.php';
 	$conn = get_connexion();
 
+	// get all analyte associated to a standard
 
 	$standardID = $_POST['standardID'];
 

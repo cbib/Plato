@@ -1,0 +1,354 @@
+.TH "php/export/export.php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/export/export.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBsetup_experiment_datatable\fP ()"
+.br
+.ti -1c
+.RI "\fBgenerate_data\fP (\fBexpID\fP, expName)"
+.br
+.ti -1c
+.RI "\fBclearTable\fP (tableID)"
+.br
+.ti -1c
+.RI "\fBsetup_rawtable_datatable\fP (colDef, dataset)"
+.br
+.ti -1c
+.RI "\fBstandardsUsed\fP (tableID)"
+.br
+.ti -1c
+.RI "\fBprintStdUsed\fP (map)"
+.br
+.ti -1c
+.RI "\fBinterBatchCentering\fP (tableID)"
+.br
+.ti -1c
+.RI "\fBaliquotMerge\fP (expName)"
+.br
+.ti -1c
+.RI "\fBprintAliquotMerge\fP (map, expName)"
+.br
+.ti -1c
+.RI "\fBchomp\fP (raw_text)"
+.br
+.ti -1c
+.RI "\fBshowWaitModal\fP ()"
+.br
+.ti -1c
+.RI "\fBhideWaitModal\fP ()"
+.br
+.ti -1c
+.RI "\fBisArray\fP (obj)"
+.br
+.ti -1c
+.RI "\fBgetNumWithSetDec\fP (num, numOfDec)"
+.br
+.ti -1c
+.RI "\fBgetAverageFromNumArr\fP (numArr, numOfDec)"
+.br
+.ti -1c
+.RI "\fBgetVariance\fP (numArr, numOfDec)"
+.br
+.ti -1c
+.RI "\fBgetStandardDeviation\fP (numArr, numOfDec)"
+.br
+.ti -1c
+.RI "\fBgetError\fP (numArr, numOfDec)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "button filter('#aliquotMerge')\&.prop('disabled' \fBtrue\fP"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "aliquotMerge (expName)"
+Calculs pour le merge des aliquots
+.PP
+aliquotMerge 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{<type>}\fP expName { name of the experiment } 
+.RE
+.PP
+
+.PP
+Definition at line 624 of file export\&.php\&.
+.SS "chomp (raw_text)"
+chomp a string
+.PP
+chomp 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{string}\fP raw_text { text to chomp } 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{string} { texte trimed from end of line win or unix } 
+.RE
+.PP
+
+.PP
+Definition at line 720 of file export\&.php\&.
+.SS "clearTable (tableID)"
+Resete a datatable
+.PP
+clearTable 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{string}\fP tableID { id of the table to clear } 
+.RE
+.PP
+
+.PP
+Definition at line 361 of file export\&.php\&.
+.SS "generate_data (\fBexpID\fP, expName)"
+Get all data for an experiment and make arrays for datatables
+.PP
+generate_data 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{Int}\fP expID { ID of the experiment } 
+.br
+\fI{String}\fP expName { Name of the experiment } 
+.RE
+.PP
+
+.PP
+Definition at line 295 of file export\&.php\&.
+.SS "getAverageFromNumArr (numArr, numOfDec)"
+Get the average of an array
+.PP
+getAverageFromNumArr 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{number}\fP numArr { description } 
+.br
+\fI{<type>}\fP numOfDec { description } 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} { description_of_the_return_value } 
+.RE
+.PP
+
+.PP
+Definition at line 793 of file export\&.php\&.
+.SS "getError (numArr, numOfDec)"
+Get the error standard
+.PP
+getError 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{<type>}\fP numArr { description } 
+.br
+\fI{<type>}\fP numOfDec { description } 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} { description_of_the_return_value } 
+.RE
+.PP
+
+.PP
+Definition at line 845 of file export\&.php\&.
+.SS "getNumWithSetDec (num, numOfDec)"
+set a number of decimal for a number
+.PP
+getNumWithSetDec 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{number}\fP num { number to trunk } 
+.br
+\fI{<type>}\fP numOfDec { number of decimal wanted } 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{<type>} { Number rounded } 
+.RE
+.PP
+
+.PP
+Definition at line 780 of file export\&.php\&.
+.SS "getStandardDeviation (numArr, numOfDec)"
+get the standard deviation
+.PP
+getStandardDeviation 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{<type>}\fP numArr { description } 
+.br
+\fI{<type>}\fP numOfDec { description } 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{boolean} { description_of_the_return_value } 
+.RE
+.PP
+
+.PP
+Definition at line 831 of file export\&.php\&.
+.SS "getVariance (numArr, numOfDec)"
+Get the variance of an array
+.PP
+getVariance 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{number}\fP numArr { description } 
+.br
+\fI{<type>}\fP numOfDec { description } 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{(boolean|number)} { description_of_the_return_value } 
+.RE
+.PP
+
+.PP
+Definition at line 811 of file export\&.php\&.
+.SS "hideWaitModal ()"
+hide the progressbar modal
+.PP
+hideWaitModal 
+.PP
+Definition at line 755 of file export\&.php\&.
+.SS "interBatchCentering (tableID)"
+Apply interbatch centering
+.PP
+interBatchCentering 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{<type>}\fP tableID Id of the table to convert 
+.RE
+.PP
+Initialize Hash
+.PP
+Fill Hash
+.PP
+Means
+.PP
+Mean of means
+.PP
+Definition at line 532 of file export\&.php\&.
+.SS "isArray (obj)"
+check if the object is an array
+.PP
+isArray 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{<type>}\fP obj { array to check } 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{<type>} { return true if the object is type array, else fals } 
+.RE
+.PP
+
+.PP
+Definition at line 768 of file export\&.php\&.
+.SS "printAliquotMerge (map, expName)"
+Affichage du merge des aliquots
+.PP
+printAliquotMerge 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{number}\fP map { map of the raw data table for an experiment } 
+.br
+\fI{<type>}\fP expName { description } 
+.RE
+.PP
+
+.PP
+Definition at line 685 of file export\&.php\&.
+.SS "printStdUsed (map)"
+Print the number of user standard and CV
+.PP
+printStdUsed 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{number}\fP map { map of the table of the select experiment } 
+.RE
+.PP
+
+.PP
+Definition at line 495 of file export\&.php\&.
+.SS "setup_experiment_datatable ()"
+get all experiment and make datatable
+.PP
+setup_experiment_datatable 
+.PP
+Definition at line 256 of file export\&.php\&.
+.SS "setup_rawtable_datatable (colDef, dataset)"
+Make a datatables from previously prepared data (in generate_data)
+.PP
+setup_rawtable_datatable 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{<type>}\fP colDef { colone names for datatable construction } 
+.br
+\fI{<type>}\fP dataset { data to print in the datatable } 
+.RE
+.PP
+
+.PP
+Definition at line 373 of file export\&.php\&.
+.SS "showWaitModal ()"
+Show a modal with a striped and full progressbar
+.PP
+showWaitModal 
+.PP
+Definition at line 729 of file export\&.php\&.
+.SS "standardsUsed (tableID)"
+Display the number of standard used / number of standards
+.PP
+standardsUsed 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{<type>}\fP tableID { useless } 
+.RE
+.PP
+
+.PP
+Definition at line 400 of file export\&.php\&.
+.SH "Variable Documentation"
+.PP 
+.SS "button filter ('#normalTable')\&.prop('disabled' true"
+
+.PP
+Definition at line 117 of file export\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

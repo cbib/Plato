@@ -1,0 +1,169 @@
+\hypertarget{_admin_user_update_8php}{\section{php/admin/admin\-Pwd/\-Admin\-User\-Update.php File Reference}
+\label{_admin_user_update_8php}\index{php/admin/admin\-Pwd/\-Admin\-User\-Update.\-php@{php/admin/admin\-Pwd/\-Admin\-User\-Update.\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_admin_user_update_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{_admin_user_update_8php_aea70bbe59be6896e9cbbb9811a864ee8}{\$user\-I\-D} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{_admin_user_update_8php_aff20833df389a26c0f9384512eec4a68}{\$user\-Name} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{_admin_user_update_8php_aaeb0a34550135c6f3caac7aa1db9b0ae}{\$user\-Level} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{_admin_user_update_8php_a5718fc74710979724218d4ebd530c0cf}{\$admin\-Password} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{_admin_user_update_8php_a35248a9b2cd0ce90d3712a1a5b6eb161}{\$user\-Password} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{_admin_user_update_8php_aa698a3e72116e8e778be0e95d908ee30}{\$action} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{_admin_user_update_8php_a58391ea75f2d29d5d708d7050b641c33}{\$status} =\char`\"{}success\char`\"{}
+\item 
+\hyperlink{_admin_user_update_8php_a33e92d112f4ecaf9f88cfee111d7ffdf}{\$bool\-Ok} =false
+\item 
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'user\-I\-D'\mbox{]})) if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'user\-Name'\mbox{]})) \\*
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'admin\-Password'\mbox{]})) \\*
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'user\-Password'\mbox{]})) \\*
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'action'\mbox{]})) if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'user\-Level'\mbox{]})) \hyperlink{_admin_user_update_8php_a844eaca485688be8060f60120beede86}{\$pass\-\_\-hache} = hash( 'sha256', \$admin\-Password)
+\item 
+\hyperlink{_admin_user_update_8php_af59a5f7cd609e592c41dc3643efd3c98}{\$query}
+\item 
+\hyperlink{_admin_user_update_8php_abe4cc9788f52e49485473dc699537388}{try}
+\item 
+if(!\$req) \hyperlink{_admin_user_update_8php_a93f1e974f12c5c233a1b622cf0cb96e7}{else}
+\item 
+\hyperlink{_admin_user_update_8php_acd0903a7a32e8397aefd0ce8b7dbd1ab}{\$response\-\_\-array} \mbox{[}'status'\mbox{]} =\$status
+\item 
+\hyperlink{_admin_user_update_8php_ae768978a0cdc416c0d63d798c85c8784}{\$response\-\_\-array} \mbox{[}'action'\mbox{]} =\$action
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{_admin_user_update_8php_aa698a3e72116e8e778be0e95d908ee30}{\index{Admin\-User\-Update.\-php@{Admin\-User\-Update.\-php}!\$action@{\$action}}
+\index{\$action@{\$action}!AdminUserUpdate.php@{Admin\-User\-Update.\-php}}
+\subsubsection[{\$action}]{\setlength{\rightskip}{0pt plus 5cm}\$action =\char`\"{}\char`\"{}}}\label{_admin_user_update_8php_aa698a3e72116e8e778be0e95d908ee30}
+
+
+Definition at line 14 of file Admin\-User\-Update.\-php.
+
+\hypertarget{_admin_user_update_8php_a5718fc74710979724218d4ebd530c0cf}{\index{Admin\-User\-Update.\-php@{Admin\-User\-Update.\-php}!\$admin\-Password@{\$admin\-Password}}
+\index{\$admin\-Password@{\$admin\-Password}!AdminUserUpdate.php@{Admin\-User\-Update.\-php}}
+\subsubsection[{\$admin\-Password}]{\setlength{\rightskip}{0pt plus 5cm}\$admin\-Password =\char`\"{}\char`\"{}}}\label{_admin_user_update_8php_a5718fc74710979724218d4ebd530c0cf}
+
+
+Definition at line 12 of file Admin\-User\-Update.\-php.
+
+\hypertarget{_admin_user_update_8php_a33e92d112f4ecaf9f88cfee111d7ffdf}{\index{Admin\-User\-Update.\-php@{Admin\-User\-Update.\-php}!\$bool\-Ok@{\$bool\-Ok}}
+\index{\$bool\-Ok@{\$bool\-Ok}!AdminUserUpdate.php@{Admin\-User\-Update.\-php}}
+\subsubsection[{\$bool\-Ok}]{\setlength{\rightskip}{0pt plus 5cm}\$bool\-Ok =false}}\label{_admin_user_update_8php_a33e92d112f4ecaf9f88cfee111d7ffdf}
+
+
+Definition at line 16 of file Admin\-User\-Update.\-php.
+
+\hypertarget{_admin_user_update_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{Admin\-User\-Update.\-php@{Admin\-User\-Update.\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!AdminUserUpdate.php@{Admin\-User\-Update.\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{_admin_user_update_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 5 of file Admin\-User\-Update.\-php.
+
+\hypertarget{_admin_user_update_8php_a844eaca485688be8060f60120beede86}{\index{Admin\-User\-Update.\-php@{Admin\-User\-Update.\-php}!\$pass\-\_\-hache@{\$pass\-\_\-hache}}
+\index{\$pass\-\_\-hache@{\$pass\-\_\-hache}!AdminUserUpdate.php@{Admin\-User\-Update.\-php}}
+\subsubsection[{\$pass\-\_\-hache}]{\setlength{\rightskip}{0pt plus 5cm}if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'user\-I\-D'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'user\-Name'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'admin\-Password'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'user\-Password'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'action'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'user\-Level'\mbox{]})) \$pass\-\_\-hache = hash( 'sha256', \$admin\-Password)}}\label{_admin_user_update_8php_a844eaca485688be8060f60120beede86}
+
+
+Definition at line 38 of file Admin\-User\-Update.\-php.
+
+\hypertarget{_admin_user_update_8php_af59a5f7cd609e592c41dc3643efd3c98}{\index{Admin\-User\-Update.\-php@{Admin\-User\-Update.\-php}!\$query@{\$query}}
+\index{\$query@{\$query}!AdminUserUpdate.php@{Admin\-User\-Update.\-php}}
+\subsubsection[{\$query}]{\setlength{\rightskip}{0pt plus 5cm}\$query}}\label{_admin_user_update_8php_af59a5f7cd609e592c41dc3643efd3c98}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=\textcolor{stringliteral}{"}
+\textcolor{stringliteral}{    SELECT}
+\textcolor{stringliteral}{        count(*)}
+\textcolor{stringliteral}{    FROM}
+\textcolor{stringliteral}{        user}
+\textcolor{stringliteral}{    WHERE}
+\textcolor{stringliteral}{        usr\_status like '%admin%' AND }
+\textcolor{stringliteral}{        usr\_pwd like '%"}.$pass\_hache.\textcolor{stringliteral}{"%' ;}
+\textcolor{stringliteral}{    "}
+\end{DoxyCode}
+
+
+Definition at line 39 of file Admin\-User\-Update.\-php.
+
+\hypertarget{_admin_user_update_8php_acd0903a7a32e8397aefd0ce8b7dbd1ab}{\index{Admin\-User\-Update.\-php@{Admin\-User\-Update.\-php}!\$response\-\_\-array@{\$response\-\_\-array}}
+\index{\$response\-\_\-array@{\$response\-\_\-array}!AdminUserUpdate.php@{Admin\-User\-Update.\-php}}
+\subsubsection[{\$response\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}\$response\-\_\-array\mbox{[}'status'\mbox{]} =\$status}}\label{_admin_user_update_8php_acd0903a7a32e8397aefd0ce8b7dbd1ab}
+
+
+Definition at line 119 of file Admin\-User\-Update.\-php.
+
+\hypertarget{_admin_user_update_8php_ae768978a0cdc416c0d63d798c85c8784}{\index{Admin\-User\-Update.\-php@{Admin\-User\-Update.\-php}!\$response\-\_\-array@{\$response\-\_\-array}}
+\index{\$response\-\_\-array@{\$response\-\_\-array}!AdminUserUpdate.php@{Admin\-User\-Update.\-php}}
+\subsubsection[{\$response\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}\$response\-\_\-array\mbox{[}'action'\mbox{]} =\$action}}\label{_admin_user_update_8php_ae768978a0cdc416c0d63d798c85c8784}
+
+
+Definition at line 120 of file Admin\-User\-Update.\-php.
+
+\hypertarget{_admin_user_update_8php_a58391ea75f2d29d5d708d7050b641c33}{\index{Admin\-User\-Update.\-php@{Admin\-User\-Update.\-php}!\$status@{\$status}}
+\index{\$status@{\$status}!AdminUserUpdate.php@{Admin\-User\-Update.\-php}}
+\subsubsection[{\$status}]{\setlength{\rightskip}{0pt plus 5cm}\$status =\char`\"{}success\char`\"{}}}\label{_admin_user_update_8php_a58391ea75f2d29d5d708d7050b641c33}
+
+
+Definition at line 15 of file Admin\-User\-Update.\-php.
+
+\hypertarget{_admin_user_update_8php_aea70bbe59be6896e9cbbb9811a864ee8}{\index{Admin\-User\-Update.\-php@{Admin\-User\-Update.\-php}!\$user\-I\-D@{\$user\-I\-D}}
+\index{\$user\-I\-D@{\$user\-I\-D}!AdminUserUpdate.php@{Admin\-User\-Update.\-php}}
+\subsubsection[{\$user\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\$user\-I\-D =\char`\"{}\char`\"{}}}\label{_admin_user_update_8php_aea70bbe59be6896e9cbbb9811a864ee8}
+
+
+Definition at line 9 of file Admin\-User\-Update.\-php.
+
+\hypertarget{_admin_user_update_8php_aaeb0a34550135c6f3caac7aa1db9b0ae}{\index{Admin\-User\-Update.\-php@{Admin\-User\-Update.\-php}!\$user\-Level@{\$user\-Level}}
+\index{\$user\-Level@{\$user\-Level}!AdminUserUpdate.php@{Admin\-User\-Update.\-php}}
+\subsubsection[{\$user\-Level}]{\setlength{\rightskip}{0pt plus 5cm}\$user\-Level =\char`\"{}\char`\"{}}}\label{_admin_user_update_8php_aaeb0a34550135c6f3caac7aa1db9b0ae}
+
+
+Definition at line 11 of file Admin\-User\-Update.\-php.
+
+\hypertarget{_admin_user_update_8php_aff20833df389a26c0f9384512eec4a68}{\index{Admin\-User\-Update.\-php@{Admin\-User\-Update.\-php}!\$user\-Name@{\$user\-Name}}
+\index{\$user\-Name@{\$user\-Name}!AdminUserUpdate.php@{Admin\-User\-Update.\-php}}
+\subsubsection[{\$user\-Name}]{\setlength{\rightskip}{0pt plus 5cm}\$user\-Name =\char`\"{}\char`\"{}}}\label{_admin_user_update_8php_aff20833df389a26c0f9384512eec4a68}
+
+
+Definition at line 10 of file Admin\-User\-Update.\-php.
+
+\hypertarget{_admin_user_update_8php_a35248a9b2cd0ce90d3712a1a5b6eb161}{\index{Admin\-User\-Update.\-php@{Admin\-User\-Update.\-php}!\$user\-Password@{\$user\-Password}}
+\index{\$user\-Password@{\$user\-Password}!AdminUserUpdate.php@{Admin\-User\-Update.\-php}}
+\subsubsection[{\$user\-Password}]{\setlength{\rightskip}{0pt plus 5cm}\$user\-Password =\char`\"{}\char`\"{}}}\label{_admin_user_update_8php_a35248a9b2cd0ce90d3712a1a5b6eb161}
+
+
+Definition at line 13 of file Admin\-User\-Update.\-php.
+
+\hypertarget{_admin_user_update_8php_a93f1e974f12c5c233a1b622cf0cb96e7}{\index{Admin\-User\-Update.\-php@{Admin\-User\-Update.\-php}!else@{else}}
+\index{else@{else}!AdminUserUpdate.php@{Admin\-User\-Update.\-php}}
+\subsubsection[{else}]{\setlength{\rightskip}{0pt plus 5cm}catch (Exception \$e) if (\$bool\-Ok=={\bf true}) else}}\label{_admin_user_update_8php_a93f1e974f12c5c233a1b622cf0cb96e7}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+\{
+            \hyperlink{_admin_user_update_8php_a33e92d112f4ecaf9f88cfee111d7ffdf}{$boolOk} = \textcolor{keyword}{true}
+\end{DoxyCode}
+
+
+Definition at line 58 of file Admin\-User\-Update.\-php.
+
+\hypertarget{_admin_user_update_8php_abe4cc9788f52e49485473dc699537388}{\index{Admin\-User\-Update.\-php@{Admin\-User\-Update.\-php}!try@{try}}
+\index{try@{try}!AdminUserUpdate.php@{Admin\-User\-Update.\-php}}
+\subsubsection[{try}]{\setlength{\rightskip}{0pt plus 5cm}try}}\label{_admin_user_update_8php_abe4cc9788f52e49485473dc699537388}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+\{
+        \hyperlink{add__enzyme__to__standard_8php_a63a7a283ea5dee8af1e2d5a3435bf370}{$req} = \hyperlink{_admin_user_update_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{$conn}->query(\hyperlink{_admin_user_update_8php_af59a5f7cd609e592c41dc3643efd3c98}{$query})->fetchColumn()
+\end{DoxyCode}
+
+
+Definition at line 50 of file Admin\-User\-Update.\-php.
+

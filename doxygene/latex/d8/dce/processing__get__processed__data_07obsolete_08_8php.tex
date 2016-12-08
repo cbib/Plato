@@ -1,0 +1,56 @@
+\hypertarget{processing__get__processed__data_07obsolete_08_8php}{\section{php/processing/obsolete/processing\-\_\-get\-\_\-processed\-\_\-data(obsolete).php File Reference}
+\label{processing__get__processed__data_07obsolete_08_8php}\index{php/processing/obsolete/processing\-\_\-get\-\_\-processed\-\_\-data(obsolete).\-php@{php/processing/obsolete/processing\-\_\-get\-\_\-processed\-\_\-data(obsolete).\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{processing__get__processed__data_07obsolete_08_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{processing__get__processed__data_07obsolete_08_8php_ae6bf2bba52343cb823edf89124ec5df1}{\$raw\-Data\-I\-D} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'raw\-Data\-I\-D'\mbox{]}
+\item 
+\hyperlink{processing__get__processed__data_07obsolete_08_8php_af59a5f7cd609e592c41dc3643efd3c98}{\$query}
+\item 
+\hyperlink{processing__get__processed__data_07obsolete_08_8php_a63a7a283ea5dee8af1e2d5a3435bf370}{\$req} = \$conn-\/$>$query(\$query)-\/$>$fetch\-Column()
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{processing__get__processed__data_07obsolete_08_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{processing\-\_\-get\-\_\-processed\-\_\-data(obsolete).\-php@{processing\-\_\-get\-\_\-processed\-\_\-data(obsolete).\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!processing_get_processed_data(obsolete).php@{processing\-\_\-get\-\_\-processed\-\_\-data(obsolete).\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{processing__get__processed__data_07obsolete_08_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 4 of file processing\-\_\-get\-\_\-processed\-\_\-data(obsolete).\-php.
+
+\hypertarget{processing__get__processed__data_07obsolete_08_8php_af59a5f7cd609e592c41dc3643efd3c98}{\index{processing\-\_\-get\-\_\-processed\-\_\-data(obsolete).\-php@{processing\-\_\-get\-\_\-processed\-\_\-data(obsolete).\-php}!\$query@{\$query}}
+\index{\$query@{\$query}!processing_get_processed_data(obsolete).php@{processing\-\_\-get\-\_\-processed\-\_\-data(obsolete).\-php}}
+\subsubsection[{\$query}]{\setlength{\rightskip}{0pt plus 5cm}\$query}}\label{processing__get__processed__data_07obsolete_08_8php_af59a5f7cd609e592c41dc3643efd3c98}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=\textcolor{stringliteral}{'}
+\textcolor{stringliteral}{    SELECT }
+\textcolor{stringliteral}{        processdata.pro\_value }
+\textcolor{stringliteral}{    FROM}
+\textcolor{stringliteral}{        raw\_equ\_proc, processdata }
+\textcolor{stringliteral}{    WHERE }
+\textcolor{stringliteral}{        raw\_equ\_proc.raw\_equ\_proc\_rawdata\_FK = "'}.$rawDataID.\textcolor{stringliteral}{'" AND}
+\textcolor{stringliteral}{        processdata.pro\_id = raw\_equ\_proc.raw\_equ\_proc\_processdata\_FK;'}
+\end{DoxyCode}
+
+
+Definition at line 8 of file processing\-\_\-get\-\_\-processed\-\_\-data(obsolete).\-php.
+
+\hypertarget{processing__get__processed__data_07obsolete_08_8php_ae6bf2bba52343cb823edf89124ec5df1}{\index{processing\-\_\-get\-\_\-processed\-\_\-data(obsolete).\-php@{processing\-\_\-get\-\_\-processed\-\_\-data(obsolete).\-php}!\$raw\-Data\-I\-D@{\$raw\-Data\-I\-D}}
+\index{\$raw\-Data\-I\-D@{\$raw\-Data\-I\-D}!processing_get_processed_data(obsolete).php@{processing\-\_\-get\-\_\-processed\-\_\-data(obsolete).\-php}}
+\subsubsection[{\$raw\-Data\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\$raw\-Data\-I\-D = \$\-\_\-\-P\-O\-S\-T\mbox{[}'raw\-Data\-I\-D'\mbox{]}}}\label{processing__get__processed__data_07obsolete_08_8php_ae6bf2bba52343cb823edf89124ec5df1}
+
+
+Definition at line 6 of file processing\-\_\-get\-\_\-processed\-\_\-data(obsolete).\-php.
+
+\hypertarget{processing__get__processed__data_07obsolete_08_8php_a63a7a283ea5dee8af1e2d5a3435bf370}{\index{processing\-\_\-get\-\_\-processed\-\_\-data(obsolete).\-php@{processing\-\_\-get\-\_\-processed\-\_\-data(obsolete).\-php}!\$req@{\$req}}
+\index{\$req@{\$req}!processing_get_processed_data(obsolete).php@{processing\-\_\-get\-\_\-processed\-\_\-data(obsolete).\-php}}
+\subsubsection[{\$req}]{\setlength{\rightskip}{0pt plus 5cm}\$req = \$conn-\/$>$query(\$query)-\/$>$fetch\-Column()}}\label{processing__get__processed__data_07obsolete_08_8php_a63a7a283ea5dee8af1e2d5a3435bf370}
+
+
+Definition at line 17 of file processing\-\_\-get\-\_\-processed\-\_\-data(obsolete).\-php.
+

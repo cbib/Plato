@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/d6f/get__all__standard_8php">
+    <title>get_all_standard.php File Reference</title>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/d6f/get__all__standard_8php_1aa8a5a87b9c1a6a0819b88447cbe41877">$conn</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/d6f/get__all__standard_8php_1af59a5f7cd609e592c41dc3643efd3c98">$query</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/d6f/get__all__standard_8php_1afa9126f9664959c02795be300a135f93">$sth</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/d6f/get__all__standard_8php_1af789423037bbc89dc7c850e761177570">$count</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/d6f/get__all__standard_8php_1ace2ec39e7df3899fa8df9640ec274b03">$rows</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/d6f/get__all__standard_8php_1a73004ce9cd673c1bfafd1dc351134797">$output</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /var/www/html/plato/php/admin/adminExperiment/get_all_standard.php</para>
+    </simplesect>
+</section>

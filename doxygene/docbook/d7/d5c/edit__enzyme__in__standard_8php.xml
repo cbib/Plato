@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d5c/edit__enzyme__in__standard_8php">
+    <title>edit_enzyme_in_standard.php File Reference</title>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d5c/edit__enzyme__in__standard_8php_1aa8a5a87b9c1a6a0819b88447cbe41877">$conn</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d5c/edit__enzyme__in__standard_8php_1a1a82343ffd9662108bf3501398fcd3fb">$stdEzID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d5c/edit__enzyme__in__standard_8php_1aa6841113bca2f461aae7a334e615c44f">$slope</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d5c/edit__enzyme__in__standard_8php_1af48fe050f529b6ca56356299183b7778">$amount</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d5c/edit__enzyme__in__standard_8php_1a0c541a369e4a0434108a7d145751bb23">$standardID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d5c/edit__enzyme__in__standard_8php_1a58391ea75f2d29d5d708d7050b641c33">$status</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d5c/edit__enzyme__in__standard_8php_1a1e32431b9d521850ce2aa78bc3af0040">$unit</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d5c/edit__enzyme__in__standard_8php_1ad5cb2bd1aacca5b8729d0dc753091153">$dilutionValue</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>if(isset($_POST[&apos;stdezid&apos;])) if(isset($_POST[&apos;amount&apos;])) if(isset($_POST[&apos;unit&apos;])) if(isset($_POST[&apos;dilutionValue&apos;])) if(isset($_POST[&apos;nature&apos;])) <link linkend="d7/d5c/edit__enzyme__in__standard_8php_1a5e1ed82c80f5fde645e49c881fe6b64f">$query</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d5c/edit__enzyme__in__standard_8php_1abe4cc9788f52e49485473dc699537388">try</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d5c/edit__enzyme__in__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370">$req</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>catch(Exception $e) <link linkend="d7/d5c/edit__enzyme__in__standard_8php_1a8452fb8131316637a04e25f5fde066d9">$response_array</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /var/www/html/plato/php/admin/adminStandard/edit_enzyme_in_standard.php</para>
+    </simplesect>
+</section>

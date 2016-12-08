@@ -1,0 +1,261 @@
+.TH "php/processing/processing.php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/processing/processing.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "(error) \fBthen\fP (function(responserawdata){if(!\fBisEmpty\fP(responserawdata)){$('#table-wrapper')\&.show();$('#head-wrapper')\&.show();$('#expender-wrapper')\&.show();$('#datatable-wrapper')\&.hide();return \fBmakeMap\fP(responserawdata);}\fBelse\fP{$('#datatable-wrapper')\&.hide();}}, function(error){console\&.log('failure : '+error);})\&.then(function(responseActivity)"
+.br
+.ti -1c
+.RI "(error) \fBthen\fP (function(){\fBlaunchProcessing\fP(split);}, function(error){console\&.log('failure : '+error);})"
+.br
+.ti -1c
+.RI "\fBupdate\fP ()"
+.br
+.ti -1c
+.RI "\fBdataInsert\fP (tableID, \fBexpID\fP, \fBbatchID\fP)"
+.br
+.ti -1c
+.RI "\fBtableToArray2D\fP (tableID)"
+.br
+.ti -1c
+.RI "\fBgetActivity\fP (minname)"
+.br
+.ti -1c
+.RI "\fBgetRawData\fP ()"
+.br
+.ti -1c
+.RI "\fBmakeMap\fP (\fBdata\fP)"
+.br
+.ti -1c
+.RI "\fBisEmpty\fP (obj)"
+.br
+.ti -1c
+.RI "\fBprocessMetabolites\fP ()"
+.br
+.ti -1c
+.RI "\fBprocessEnzyme\fP ()"
+.br
+.ti -1c
+.RI "\fBdisplayData\fP ()"
+.br
+.ti -1c
+.RI "\fBlaunchProcessing\fP (layout)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBcurrentEzID\fP =-1"
+.br
+.ti -1c
+.RI "\fBcreateEzTab\fP ()\&.\fBthen\fP(function(response)"
+.br
+.ti -1c
+.RI "window \fBonbeforeunload\fP"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "dataInsert (tableID, \fBexpID\fP, \fBbatchID\fP)"
+Insert new raw values
+.PP
+dataInsert 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{<type>}\fP tableID { description } 
+.br
+\fI{<type>}\fP expID { description } 
+.br
+\fI{<type>}\fP batchID { description } 
+.RE
+.PP
+
+.PP
+Definition at line 687 of file processing\&.php\&.
+.SS "displayData ()"
+{ function_description }
+.PP
+displayData 
+.PP
+\fBReturns:\fP
+.RS 4
+{<type>} { description_of_the_return_value } 
+.RE
+.PP
+
+.PP
+Definition at line 988 of file processing\&.php\&.
+.SS "getActivity (minname)"
+Get activity of an analyte (enzyme)
+.PP
+getActivity 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{<type>}\fP minname { description } 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{Promise} { description_of_the_return_value } 
+.RE
+.PP
+
+.PP
+Definition at line 752 of file processing\&.php\&.
+.SS "getRawData ()"
+Get rawdatas for an experiment, batch and analyte
+.PP
+getRawData 
+.PP
+\fBReturns:\fP
+.RS 4
+{Promise} { description_of_the_return_value } 
+.RE
+.PP
+
+.PP
+Definition at line 781 of file processing\&.php\&.
+.SS "isEmpty (obj)"
+
+.PP
+Definition at line 899 of file processing\&.php\&.
+.SS "launchProcessing (layout)"
+{ function_description }
+.PP
+launchProcessing 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{string}\fP layout { description } 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{<type>} { description_of_the_return_value } 
+.RE
+.PP
+
+.PP
+Definition at line 1000 of file processing\&.php\&.
+.SS "makeMap (\fBdata\fP)"
+make the map of the raw data
+.PP
+makeMap 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{(number|string)}\fP data { description } 
+.RE
+.PP
+
+.PP
+Definition at line 816 of file processing\&.php\&.
+.SS "processEnzyme ()"
+Process value for enzymes
+.PP
+processEnzyme 
+.PP
+Definition at line 942 of file processing\&.php\&.
+.SS "processMetabolites ()"
+Calculs for processing values
+.PP
+processMetabolites 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{<type>}\fP rawDataMap { description } 
+.br
+\fI{<type>}\fP dataTypeMap { description } 
+.br
+\fI{<type>}\fP excludMap { description } 
+.br
+\fI{<type>}\fP layout { description } 
+.br
+\fI{<type>}\fP processDataMap { description } 
+.br
+\fI{number}\fP activity { description } 
+.br
+\fI{number}\fP fwMap { description } 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{<type>} { description_of_the_return_value } 
+.RE
+.PP
+
+.PP
+Definition at line 916 of file processing\&.php\&.
+.SS "tableToArray2D (tableID)"
+take a html table to make a 2D array
+.PP
+tableToArray2D 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{<type>}\fP tableID { description } 
+.RE
+.PP
+
+.PP
+Definition at line 733 of file processing\&.php\&.
+.SS "(error) then (function(responserawdata){if(!\fBisEmpty\fP(responserawdata)){$('#table-wrapper')\&.show();$('#head-wrapper')\&.show();$('#expender-wrapper')\&.show();$('#datatable-wrapper')\&.hide();return \fBmakeMap\fP(responserawdata);}\fBelse\fP{$('#datatable-wrapper')\&.hide();}}, function(error){console\&.log('failure : '+error);})"
+
+.PP
+Definition at line 492 of file processing\&.php\&.
+.SS "(error) then (function(){\fBlaunchProcessing\fP(split);}, function(error){console\&.log('failure : '+error);})"
+
+.SS "update ()"
+Process data update (click on save under the process data table)
+.PP
+update 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{<type>}\fP ezID { description } 
+.br
+\fI{<type>}\fP batchID { description } 
+.br
+\fI{<type>}\fP processDataMap { description } 
+.br
+\fI{<type>}\fP excludMap { description } 
+.RE
+.PP
+
+.PP
+Definition at line 645 of file processing\&.php\&.
+.SH "Variable Documentation"
+.PP 
+.SS "createEzTab()\&.\fBthen\fP(function(response)"
+
+.PP
+Definition at line 488 of file processing\&.php\&.
+.SS "currentEzID =-1"
+
+.PP
+Definition at line 485 of file processing\&.php\&.
+.SS "window onbeforeunload"
+\fBInitial value:\fP
+.PP
+.nf
+= function(event) {
+    if (OkToQuitPage=="nope"){
+        event\&.returnValue = "Some changes are not saved";
+    }
+}
+.fi
+.PP
+Definition at line 533 of file processing\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

@@ -1,0 +1,110 @@
+.TH "php/batches/batch_is_used.php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/batches/batch_is_used.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$conn\fP = \fBget_connexion\fP()"
+.br
+.ti -1c
+.RI "\fB$data\fP = $_POST['\fBdata\fP']"
+.br
+.ti -1c
+.RI "\fB$response_array\fP = array()"
+.br
+.ti -1c
+.RI "\fB$response_array\fP ['result'] = array()"
+.br
+.ti -1c
+.RI "\fB$status\fP = 'error'"
+.br
+.ti -1c
+.RI "\fB$response_array\fP ['status'] = $status"
+.br
+.ti -1c
+.RI "\fB$expNames\fP =[]"
+.br
+.ti -1c
+.RI "\fB$fullResult\fP =[]"
+.br
+.ti -1c
+.RI "foreach($\fBdata\fP as $key=> $row) \fB$stmt\fP"
+.br
+.ti -1c
+.RI "foreach($expNames as $key=> $value) \fB$newResult\fP = []"
+.br
+.ti -1c
+.RI "foreach($fullResult as $key=>
+.br
+ $values) \fB$i\fP = 0"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$conn = \fBget_connexion\fP()"
+
+.PP
+Definition at line 4 of file batch_is_used\&.php\&.
+.SS "$\fBdata\fP = $_POST['\fBdata\fP']"
+
+.PP
+Definition at line 6 of file batch_is_used\&.php\&.
+.SS "$expNames =[]"
+
+.PP
+Definition at line 14 of file batch_is_used\&.php\&.
+.SS "$fullResult =[]"
+
+.PP
+Definition at line 15 of file batch_is_used\&.php\&.
+.SS "foreach ($fullResult as $key=> $values) $i = 0"
+
+.PP
+Definition at line 68 of file batch_is_used\&.php\&.
+.SS "foreach ($expNames as $key=> $value) $newResult = []"
+
+.PP
+Definition at line 60 of file batch_is_used\&.php\&.
+.SS "$response_array = array()"
+
+.PP
+Definition at line 9 of file batch_is_used\&.php\&.
+.SS "$response_array['result'] = array()"
+
+.PP
+Definition at line 10 of file batch_is_used\&.php\&.
+.SS "foreach ($\fBdata\fP as $key=> $row) $response_array['status'] = $status"
+
+.PP
+Definition at line 12 of file batch_is_used\&.php\&.
+.SS "$status = 'error'"
+
+.PP
+Definition at line 11 of file batch_is_used\&.php\&.
+.SS "foreach ($\fBdata\fP as $key=> $row) $stmt"
+\fBInitial value:\fP
+.PP
+.nf
+= $conn->prepare("
+    SELECT
+      fw_name, spl_alq_state, spl_number, alq_number
+    FROM 
+      freshweight, freshweight_sample, sample_aliquot, sample, aliquot
+    WHERE 
+        fw_name like :infos0 AND
+        fw_spl_freshweight_FK = fw_id AND
+        spl_id = fw_spl_sample_FK AND
+        spl_alq_sample_FK = spl_id AND
+        alq_id = spl_alq_aliquot_FK;")
+.fi
+.PP
+Definition at line 33 of file batch_is_used\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

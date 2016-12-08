@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_63605f25a5f97dc6daac8d083e9b362c" kind="dir">
+    <compoundname>php/freshweight</compoundname>
+    <innerfile refid="da/db9/freshweight_8php">freshweight.php</innerfile>
+    <innerfile refid="dc/d50/freshweight_2get__all__experiment_8php">get_all_experiment.php</innerfile>
+    <innerfile refid="d4/d98/get__sample__aliquot__from__one__exp_8php">get_sample_aliquot_from_one_exp.php</innerfile>
+    <innerfile refid="de/da9/insert__exp_8php">insert_exp.php</innerfile>
+    <innerfile refid="d3/d5a/_update_data_8php">UpdateData.php</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/var/www/html/plato/php/freshweight/"/>
+  </compounddef>
+</doxygen>

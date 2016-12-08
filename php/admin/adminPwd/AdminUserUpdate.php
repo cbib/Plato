@@ -4,6 +4,8 @@
 	header('Content-Type: application/json');
 	$conn = get_connexion();
 
+	//Create, edit, delete user
+
 	$userID="";
 	$userName="";
 	$userLevel="";

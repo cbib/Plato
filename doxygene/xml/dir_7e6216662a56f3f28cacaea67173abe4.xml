@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_7e6216662a56f3f28cacaea67173abe4" kind="dir">
+    <compoundname>php/admin/adminEnzyme</compoundname>
+    <innerfile refid="d2/db7/admin_ez_8php">adminEz.php</innerfile>
+    <innerfile refid="da/dee/admin_ez__database__functions_8php">adminEz_database_functions.php</innerfile>
+    <innerfile refid="da/d8e/_admin_e_z_update_data_8php">AdminEZUpdateData.php</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/var/www/html/plato/php/admin/adminEnzyme/"/>
+  </compounddef>
+</doxygen>

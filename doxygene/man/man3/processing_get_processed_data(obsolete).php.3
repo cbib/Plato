@@ -1,0 +1,56 @@
+.TH "php/processing/obsolete/processing_get_processed_data(obsolete).php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/processing/obsolete/processing_get_processed_data(obsolete).php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$conn\fP = \fBget_connexion\fP()"
+.br
+.ti -1c
+.RI "\fB$rawDataID\fP = $_POST['rawDataID']"
+.br
+.ti -1c
+.RI "\fB$query\fP"
+.br
+.ti -1c
+.RI "\fB$req\fP = $conn->query($query)->fetchColumn()"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$conn = \fBget_connexion\fP()"
+
+.PP
+Definition at line 4 of file processing_get_processed_data(obsolete)\&.php\&.
+.SS "$query"
+\fBInitial value:\fP
+.PP
+.nf
+='
+    SELECT 
+        processdata\&.pro_value 
+    FROM
+        raw_equ_proc, processdata 
+    WHERE 
+        raw_equ_proc\&.raw_equ_proc_rawdata_FK = "'\&.$rawDataID\&.'" AND
+        processdata\&.pro_id = raw_equ_proc\&.raw_equ_proc_processdata_FK;'
+.fi
+.PP
+Definition at line 8 of file processing_get_processed_data(obsolete)\&.php\&.
+.SS "$rawDataID = $_POST['rawDataID']"
+
+.PP
+Definition at line 6 of file processing_get_processed_data(obsolete)\&.php\&.
+.SS "$req = $conn->query($query)->fetchColumn()"
+
+.PP
+Definition at line 17 of file processing_get_processed_data(obsolete)\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/d0a/admin_rawdata_update_data_8php">
+    <title>adminRawdataUpdateData.php File Reference</title>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d0a/admin_rawdata_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877">$conn</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d0a/admin_rawdata_update_data_8php_1ae384d32e62e85e587cd27bf249ed3db3">$expID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d0a/admin_rawdata_update_data_8php_1addb1ec3ba55e413a08cb006ce21974df">$ezID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d0a/admin_rawdata_update_data_8php_1aaa6d122ea9cb55b210aadd86e5654a74">$batchID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d0a/admin_rawdata_update_data_8php_1a58391ea75f2d29d5d708d7050b641c33">$status</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>if(isset($_POST[&apos;<link linkend="d8/d02/admin_rawdata_8php_1a888d53a6517f4272b5982c3ca9d16e8a">expID</link>&apos;])) if(isset($_POST[&apos;<link linkend="d8/d02/admin_rawdata_8php_1adf465cadf95987152966d26567509f92">ezID</link>&apos;])) if(isset($_POST[&apos;<link linkend="db/d41/obsolete_2processing__bak_8php_1a88c5bc4262b7c34f236357f5c53fc99b">batchID</link>&apos;])) <link linkend="d7/d0a/admin_rawdata_update_data_8php_1a5999a93025922833d2c38a633e49c828">$queryBatchData</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d0a/admin_rawdata_update_data_8php_1a2f84d43fa0033773278ae89295389bc6">$sth2</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d0a/admin_rawdata_update_data_8php_1ae0a126caf328023cf68f759c1cfcc38f">$resultBatchData</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d0a/admin_rawdata_update_data_8php_1af59a5f7cd609e592c41dc3643efd3c98">$query</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d0a/admin_rawdata_update_data_8php_1afa9126f9664959c02795be300a135f93">$sth</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d0a/admin_rawdata_update_data_8php_1a112ef069ddc0454086e3d1e6d8d55d07">$result</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d0a/admin_rawdata_update_data_8php_1ad08dc0a05af9c3e0730669485af92e41">$deleteQuery</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d0a/admin_rawdata_update_data_8php_1abe4cc9788f52e49485473dc699537388">try</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>catch(Exception $e) <link linkend="d7/d0a/admin_rawdata_update_data_8php_1a8452fb8131316637a04e25f5fde066d9">$response_array</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/d0a/admin_rawdata_update_data_8php_1ae768978a0cdc416c0d63d798c85c8784">$response_array</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /var/www/html/plato/php/admin/adminRawdata/adminRawdataUpdateData.php</para>
+    </simplesect>
+</section>

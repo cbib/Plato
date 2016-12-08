@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d8a/chart1_8php">
+    <title>chart1.php File Reference</title>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee">title</link> <link linkend="db/d8a/chart1_8php_1aa6d173daeb1f78a82e89d75a4e948f24">__pad0__</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee">title</link> <link linkend="db/d8a/chart1_8php_1a85ea519cf3eb0270da0091d07e8ee727">xAxis</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee">title</link> <link linkend="db/d8a/chart1_8php_1aa76eb72ed8894c2f5448631b03964879">labels</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee">title</link> <link linkend="db/d8a/chart1_8php_1a1659ed273dcf8f4bf89ff39127637cd1">style</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee">title</link> <link linkend="db/d8a/chart1_8php_1a61b4126a795dc35aff6108a017a6c950">fontFamily</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee">title</link> sans serif Use of analytes <link linkend="db/d8a/chart1_8php_1a8257e1ad81b4a9ebf5a380357ca8aa0d">Used</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee">title</link> sans serif Use of analytes <link linkend="db/d8a/chart1_8php_1aba4b72d8f1b3e6b391ab41ca542f005a">series</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee">title</link> sans serif Use of analytes <link linkend="db/d8a/chart1_8php_1ab3ed669f4b3fdb8c88f3a190fb907de0">data</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee">title</link> sans serif Use of analytes <link linkend="db/d8a/chart1_8php_1a6cc4de94e7120b93b61ba6c324467460">dataLabels</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee">title</link> sans serif Use of analytes <link linkend="db/d8a/chart1_8php_1a389898f41b29820945784f375c8fca58">rotation</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee">title</link> sans serif Use of analytes <link linkend="db/d8a/chart1_8php_1ae68251bab2d16bd206603de96a155284">color</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee">title</link> sans serif Use of analytes <link linkend="db/d8a/chart1_8php_1a245d529baa23709e9ec659eb954ac212">align</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee">title</link> sans serif Use of analytes <link linkend="db/d8a/chart1_8php_1a8dc92044d4a2908bbcf6bab430b0fcad">format</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee">title</link> sans serif Use of analytes <link linkend="db/d8a/chart1_8php_1a4e10c31b21f9f97e6e64112e5987bd13">y</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee">title</link> sans serif Use of analytes sans serif solidgauge Free space in database <link linkend="db/d8a/chart1_8php_1a89f0143e254bf461b321ee5b6b1fa90b">innerRadius</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee">title</link> sans serif Use of analytes sans serif solidgauge Free space in database <link linkend="db/d8a/chart1_8php_1a41f34ec2811d09db7935316f9e4a98d6">outerRadius</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee">title</link> sans serif Use of analytes sans serif solidgauge Free space in database <link linkend="db/d8a/chart1_8php_1ae7c4d90f4cb1daf8fe98b42979422af5">shape</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee">title</link> sans serif Use of analytes sans serif solidgauge Free space in database <link linkend="db/d8a/chart1_8php_1a2a928e2db41e6fb13386253c6f1d1d3c">tooltip</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee">title</link> sans serif Use of analytes sans serif solidgauge Free space in database <link linkend="db/d8a/chart1_8php_1a904b354726e35f255d93b70b37987c76">yAxis</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee">title</link> sans serif Use of analytes sans serif solidgauge Free space in database <link linkend="db/d8a/chart1_8php_1aca8aa21682b9d221fad19341399677d3">lineWidth</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee">title</link> sans serif Use of analytes sans serif solidgauge Free space in database <link linkend="db/d8a/chart1_8php_1a9ffce19cd915b312ed0f797751927ae6">minorTickInterval</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee">title</link> sans serif Use of analytes sans serif solidgauge Free space in database <link linkend="db/d8a/chart1_8php_1a024b1caef992f256398e4b6cc5b5d8ae">tickPixelInterval</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee">title</link> sans serif Use of analytes sans serif solidgauge Free space in database <link linkend="db/d8a/chart1_8php_1a7888761877a53c44c36fba3a36a0386c">tickWidth</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>title sans serif Use of analytes sans serif solidgauge Free space in database <link linkend="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee">title</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee">title</link> sans serif Use of analytes sans serif solidgauge Free space in database <link linkend="db/d8a/chart1_8php_1ad1521bbfde0c907436d0e34e1deecca2">plotOptions</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee">title</link> sans serif Use of analytes sans serif solidgauge Free space in database <link linkend="db/d8a/chart1_8php_1a5abb4048aa2be521da8031dbab475850">borderWidth</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee">title</link> sans serif Use of analytes sans serif solidgauge Free space in database <link linkend="db/d8a/chart1_8php_1af4a7422c75cb1e9ea64434c72d9ad6cb">useHTML</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /var/www/html/plato/php/charts/chart1.php</para>
+    </simplesect>
+</section>

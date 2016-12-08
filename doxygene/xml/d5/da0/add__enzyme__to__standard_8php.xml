@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="d5/da0/add__enzyme__to__standard_8php" kind="file">
+    <compoundname>add_enzyme_to_standard.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="d5/da0/add__enzyme__to__standard_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$conn</definition>
+        <argsstring></argsstring>
+        <name>$conn</name>
+        <initializer>= <ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminStandard/add_enzyme_to_standard.php" line="4" column="1" bodyfile="/var/www/html/plato/php/admin/adminStandard/add_enzyme_to_standard.php" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/da0/add__enzyme__to__standard_8php_1ae5b99d173d7360be6556675a80036269" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$selectAnalyte</definition>
+        <argsstring></argsstring>
+        <name>$selectAnalyte</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminStandard/add_enzyme_to_standard.php" line="8" column="1" bodyfile="/var/www/html/plato/php/admin/adminStandard/add_enzyme_to_standard.php" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/da0/add__enzyme__to__standard_8php_1a427fdcd2d971a5567fb4d111d8de5f54" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$selectUnit</definition>
+        <argsstring></argsstring>
+        <name>$selectUnit</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminStandard/add_enzyme_to_standard.php" line="9" column="1" bodyfile="/var/www/html/plato/php/admin/adminStandard/add_enzyme_to_standard.php" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/da0/add__enzyme__to__standard_8php_1aa0668b8f5734a61bcc5107303a90615a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$analyteValue</definition>
+        <argsstring></argsstring>
+        <name>$analyteValue</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminStandard/add_enzyme_to_standard.php" line="10" column="1" bodyfile="/var/www/html/plato/php/admin/adminStandard/add_enzyme_to_standard.php" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/da0/add__enzyme__to__standard_8php_1a0c541a369e4a0434108a7d145751bb23" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$standardID</definition>
+        <argsstring></argsstring>
+        <name>$standardID</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminStandard/add_enzyme_to_standard.php" line="11" column="1" bodyfile="/var/www/html/plato/php/admin/adminStandard/add_enzyme_to_standard.php" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/da0/add__enzyme__to__standard_8php_1a58391ea75f2d29d5d708d7050b641c33" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$status</definition>
+        <argsstring></argsstring>
+        <name>$status</name>
+        <initializer>=&quot;success&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminStandard/add_enzyme_to_standard.php" line="12" column="1" bodyfile="/var/www/html/plato/php/admin/adminStandard/add_enzyme_to_standard.php" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/da0/add__enzyme__to__standard_8php_1ad5cb2bd1aacca5b8729d0dc753091153" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$dilutionValue</definition>
+        <argsstring></argsstring>
+        <name>$dilutionValue</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminStandard/add_enzyme_to_standard.php" line="13" column="1" bodyfile="/var/www/html/plato/php/admin/adminStandard/add_enzyme_to_standard.php" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/da0/add__enzyme__to__standard_8php_1aa89f0556a6e4bd014d777d24dfe180a0" prot="public" static="no" mutable="no">
+        <type>if(isset($_POST[&apos;selectAnalyte&apos;])) if(isset($_POST[&apos;selectUnit&apos;])) if(isset($_POST[&apos;analyteValue&apos;])) if(isset($_POST[&apos;standardID&apos;])) if(isset($_POST[&apos;dilutionValue&apos;]))</type>
+        <definition>if (isset($_POST[&apos;selectAnalyte&apos;])) if (isset($_POST[&apos;selectUnit&apos;])) if (isset($_POST[&apos;analyteValue&apos;])) if (isset($_POST[&apos;standardID&apos;])) if (isset($_POST[&apos;dilutionValue&apos;])) $query</definition>
+        <argsstring></argsstring>
+        <name>$query</name>
+        <initializer>= &quot;
+	INSERT INTO 
+	`standard_enzyme`
+	(`std_ez_id`, `std_ez_unit_FK`, `std_ez_standard_FK`, `std_ez_value`, `std_ez_enzyme_FK`, `std_ez_dilution`) 
+	VALUES 
+	(&apos;&apos;, &apos;$selectUnit&apos;, &apos;$standardID&apos;, &apos;$analyteValue&apos;, &apos;$selectAnalyte&apos;, &apos;$dilutionValue&apos;);
+	&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminStandard/add_enzyme_to_standard.php" line="35" column="1" bodyfile="/var/www/html/plato/php/admin/adminStandard/add_enzyme_to_standard.php" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/da0/add__enzyme__to__standard_8php_1abe4cc9788f52e49485473dc699537388" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>try</definition>
+        <argsstring></argsstring>
+        <name>try</name>
+        <initializer>{
+		$conn-&gt;beginTransaction()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminStandard/add_enzyme_to_standard.php" line="43" column="1" bodyfile="/var/www/html/plato/php/admin/adminStandard/add_enzyme_to_standard.php" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$req</definition>
+        <argsstring></argsstring>
+        <name>$req</name>
+        <initializer>= $conn-&gt;exec($query)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminStandard/add_enzyme_to_standard.php" line="46" column="1" bodyfile="/var/www/html/plato/php/admin/adminStandard/add_enzyme_to_standard.php" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/da0/add__enzyme__to__standard_8php_1a8452fb8131316637a04e25f5fde066d9" prot="public" static="no" mutable="no">
+        <type>catch(Exception $e)</type>
+        <definition>catch (Exception $e) $response_array[&apos;status&apos;]</definition>
+        <argsstring>[&apos;status&apos;]</argsstring>
+        <name>$response_array</name>
+        <initializer>=$status</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminStandard/add_enzyme_to_standard.php" line="55" column="1" bodyfile="/var/www/html/plato/php/admin/adminStandard/add_enzyme_to_standard.php" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/><sp/><sp/>require(</highlight><highlight class="stringliteral">&apos;../../functions/check_login_admin.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/>include<sp/></highlight><highlight class="stringliteral">&apos;../../functions/php_functions.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="4" refid="d5/da0/add__enzyme__to__standard_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref><sp/>=<sp/><ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>();</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>analyte<sp/>to<sp/>a<sp/>standard</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="d5/da0/add__enzyme__to__standard_8php_1ae5b99d173d7360be6556675a80036269" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1ae5b99d173d7360be6556675a80036269" kindref="member">$selectAnalyte</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="9" refid="d5/da0/add__enzyme__to__standard_8php_1a427fdcd2d971a5567fb4d111d8de5f54" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1a427fdcd2d971a5567fb4d111d8de5f54" kindref="member">$selectUnit</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="10" refid="d5/da0/add__enzyme__to__standard_8php_1aa0668b8f5734a61bcc5107303a90615a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1aa0668b8f5734a61bcc5107303a90615a" kindref="member">$analyteValue</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="11" refid="d5/da0/add__enzyme__to__standard_8php_1a0c541a369e4a0434108a7d145751bb23" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1a0c541a369e4a0434108a7d145751bb23" kindref="member">$standardID</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12" refid="d5/da0/add__enzyme__to__standard_8php_1a58391ea75f2d29d5d708d7050b641c33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;success&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13" refid="d5/da0/add__enzyme__to__standard_8php_1ad5cb2bd1aacca5b8729d0dc753091153" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1ad5cb2bd1aacca5b8729d0dc753091153" kindref="member">$dilutionValue</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;selectAnalyte&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1ae5b99d173d7360be6556675a80036269" kindref="member">$selectAnalyte</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;selectAnalyte&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;selectUnit&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1a427fdcd2d971a5567fb4d111d8de5f54" kindref="member">$selectUnit</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;selectUnit&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;analyteValue&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1aa0668b8f5734a61bcc5107303a90615a" kindref="member">$analyteValue</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;analyteValue&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;standardID&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1a0c541a369e4a0434108a7d145751bb23" kindref="member">$standardID</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;standardID&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;dilutionValue&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1ad5cb2bd1aacca5b8729d0dc753091153" kindref="member">$dilutionValue</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;dilutionValue&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="d5/da0/add__enzyme__to__standard_8php_1aa89f0556a6e4bd014d777d24dfe180a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1aa89f0556a6e4bd014d777d24dfe180a0" kindref="member">$query</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;</highlight></codeline>
+<codeline lineno="36"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>INSERT<sp/>INTO<sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>`standard_enzyme`</highlight></codeline>
+<codeline lineno="38"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>(`std_ez_id`,<sp/>`std_ez_unit_FK`,<sp/>`std_ez_standard_FK`,<sp/>`std_ez_value`,<sp/>`std_ez_enzyme_FK`,<sp/>`std_ez_dilution`)<sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>VALUES<sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>(&apos;&apos;,<sp/>&apos;$selectUnit&apos;,<sp/>&apos;$standardID&apos;,<sp/>&apos;$analyteValue&apos;,<sp/>&apos;$selectAnalyte&apos;,<sp/>&apos;$dilutionValue&apos;);</highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="44" refid="d5/da0/add__enzyme__to__standard_8php_1abe4cc9788f52e49485473dc699537388" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;beginTransaction();</highlight></codeline>
+<codeline lineno="46" refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref><sp/>=<sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;exec(<ref refid="d5/da0/add__enzyme__to__standard_8php_1aa89f0556a6e4bd014d777d24dfe180a0" kindref="member">$query</ref>);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;commit();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(<sp/>Exception<sp/>$e<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;rollBack();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="d5/da0/add__enzyme__to__standard_8php_1a8452fb8131316637a04e25f5fde066d9" refkind="member"><highlight class="normal"><ref refid="d5/da0/add__enzyme__to__standard_8php_1a8452fb8131316637a04e25f5fde066d9" kindref="member">$response_array</ref>[</highlight><highlight class="stringliteral">&apos;status&apos;</highlight><highlight class="normal">]=<ref refid="d5/da0/add__enzyme__to__standard_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">echo<sp/>json_encode(<ref refid="d5/da0/add__enzyme__to__standard_8php_1a8452fb8131316637a04e25f5fde066d9" kindref="member">$response_array</ref>);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>$sth=$conn-&gt;prepare($query);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>$sth<sp/>-&gt;<sp/>setFetchMode(PDO::FETCH_ASSOC);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>$sth-&gt;execute();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="/var/www/html/plato/php/admin/adminStandard/add_enzyme_to_standard.php"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,64 @@
+\hypertarget{batches__get__batch__layout_8php}{\section{php/batches/batches\-\_\-get\-\_\-batch\-\_\-layout.php File Reference}
+\label{batches__get__batch__layout_8php}\index{php/batches/batches\-\_\-get\-\_\-batch\-\_\-layout.\-php@{php/batches/batches\-\_\-get\-\_\-batch\-\_\-layout.\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{batches__get__batch__layout_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{batches__get__batch__layout_8php_aaa6d122ea9cb55b210aadd86e5654a74}{\$batch\-I\-D} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'\hyperlink{obsolete_2processing__bak_8php_a88c5bc4262b7c34f236357f5c53fc99b}{batch\-I\-D}'\mbox{]}
+\item 
+\hyperlink{batches__get__batch__layout_8php_af59a5f7cd609e592c41dc3643efd3c98}{\$query}
+\item 
+\hyperlink{batches__get__batch__layout_8php_a63a7a283ea5dee8af1e2d5a3435bf370}{\$req} = \$conn-\/$>$query(\$query)-\/$>$fetch\-Column()
+\item 
+\hyperlink{batches__get__batch__layout_8php_a73004ce9cd673c1bfafd1dc351134797}{\$output} = \$req
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{batches__get__batch__layout_8php_aaa6d122ea9cb55b210aadd86e5654a74}{\index{batches\-\_\-get\-\_\-batch\-\_\-layout.\-php@{batches\-\_\-get\-\_\-batch\-\_\-layout.\-php}!\$batch\-I\-D@{\$batch\-I\-D}}
+\index{\$batch\-I\-D@{\$batch\-I\-D}!batches_get_batch_layout.php@{batches\-\_\-get\-\_\-batch\-\_\-layout.\-php}}
+\subsubsection[{\$batch\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf batch\-I\-D} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'{\bf batch\-I\-D}'\mbox{]}}}\label{batches__get__batch__layout_8php_aaa6d122ea9cb55b210aadd86e5654a74}
+
+
+Definition at line 5 of file batches\-\_\-get\-\_\-batch\-\_\-layout.\-php.
+
+\hypertarget{batches__get__batch__layout_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{batches\-\_\-get\-\_\-batch\-\_\-layout.\-php@{batches\-\_\-get\-\_\-batch\-\_\-layout.\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!batches_get_batch_layout.php@{batches\-\_\-get\-\_\-batch\-\_\-layout.\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{batches__get__batch__layout_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 4 of file batches\-\_\-get\-\_\-batch\-\_\-layout.\-php.
+
+\hypertarget{batches__get__batch__layout_8php_a73004ce9cd673c1bfafd1dc351134797}{\index{batches\-\_\-get\-\_\-batch\-\_\-layout.\-php@{batches\-\_\-get\-\_\-batch\-\_\-layout.\-php}!\$output@{\$output}}
+\index{\$output@{\$output}!batches_get_batch_layout.php@{batches\-\_\-get\-\_\-batch\-\_\-layout.\-php}}
+\subsubsection[{\$output}]{\setlength{\rightskip}{0pt plus 5cm}\$output = \$req}}\label{batches__get__batch__layout_8php_a73004ce9cd673c1bfafd1dc351134797}
+
+
+Definition at line 16 of file batches\-\_\-get\-\_\-batch\-\_\-layout.\-php.
+
+\hypertarget{batches__get__batch__layout_8php_af59a5f7cd609e592c41dc3643efd3c98}{\index{batches\-\_\-get\-\_\-batch\-\_\-layout.\-php@{batches\-\_\-get\-\_\-batch\-\_\-layout.\-php}!\$query@{\$query}}
+\index{\$query@{\$query}!batches_get_batch_layout.php@{batches\-\_\-get\-\_\-batch\-\_\-layout.\-php}}
+\subsubsection[{\$query}]{\setlength{\rightskip}{0pt plus 5cm}\$query}}\label{batches__get__batch__layout_8php_af59a5f7cd609e592c41dc3643efd3c98}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=\textcolor{stringliteral}{'}
+\textcolor{stringliteral}{    SELECT}
+\textcolor{stringliteral}{    bat\_layout}
+\textcolor{stringliteral}{    FROM }
+\textcolor{stringliteral}{    batch}
+\textcolor{stringliteral}{    WHERE }
+\textcolor{stringliteral}{    batch.bat\_id = '}.$batchID.\textcolor{charliteral}{';'}
+\end{DoxyCode}
+
+
+Definition at line 7 of file batches\-\_\-get\-\_\-batch\-\_\-layout.\-php.
+
+\hypertarget{batches__get__batch__layout_8php_a63a7a283ea5dee8af1e2d5a3435bf370}{\index{batches\-\_\-get\-\_\-batch\-\_\-layout.\-php@{batches\-\_\-get\-\_\-batch\-\_\-layout.\-php}!\$req@{\$req}}
+\index{\$req@{\$req}!batches_get_batch_layout.php@{batches\-\_\-get\-\_\-batch\-\_\-layout.\-php}}
+\subsubsection[{\$req}]{\setlength{\rightskip}{0pt plus 5cm}\$req = \$conn-\/$>$query(\$query)-\/$>$fetch\-Column()}}\label{batches__get__batch__layout_8php_a63a7a283ea5dee8af1e2d5a3435bf370}
+
+
+Definition at line 15 of file batches\-\_\-get\-\_\-batch\-\_\-layout.\-php.
+

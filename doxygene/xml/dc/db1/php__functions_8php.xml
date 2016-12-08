@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dc/db1/php__functions_8php" kind="file">
+    <compoundname>php_functions.php</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>get_connexion</definition>
+        <argsstring>()</argsstring>
+        <name>get_connexion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/functions/php_functions.php" line="6" column="1" bodyfile="/var/www/html/plato/php/functions/php_functions.php" bodystart="6" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/db1/php__functions_8php_1a2066b8cfc35c8f781528322c79cbdff5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>show_array</definition>
+        <argsstring>($array)</argsstring>
+        <name>show_array</name>
+        <param>
+          <declname>$array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/functions/php_functions.php" line="33" column="1" bodyfile="/var/www/html/plato/php/functions/php_functions.php" bodystart="33" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------------//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//*fonction<sp/>de<sp/>connexion<sp/>a<sp/>la<sp/>bdd</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------------//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>(){</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>$PARAM_hote=</highlight><highlight class="stringliteral">&apos;localhost&apos;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>chemin<sp/>vers<sp/>le<sp/>serveur</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>$PARAM_nom_bd=&apos;plato_export_02052016&apos;;<sp/>//<sp/>nom<sp/>de<sp/>la<sp/>base<sp/>de<sp/>données<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>$PARAM_nom_bd=</highlight><highlight class="stringliteral">&apos;plato_export_07072016&apos;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>nom<sp/>de<sp/>la<sp/>base<sp/>de<sp/>données<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>$PARAM_utilisateur=</highlight><highlight class="stringliteral">&apos;root&apos;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>nom<sp/>d&apos;utilisateur<sp/>pour<sp/>se<sp/>connecter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>$PARAM_mot_passe=</highlight><highlight class="stringliteral">&apos;r00t&apos;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>mot<sp/>de<sp/>passe<sp/>de<sp/>l&apos;utilisateur<sp/>pour<sp/>se<sp/>connecter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$connexion<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>PDO(</highlight><highlight class="stringliteral">&apos;mysql:host=&apos;</highlight><highlight class="normal">.$PARAM_hote.</highlight><highlight class="stringliteral">&apos;;dbname=&apos;</highlight><highlight class="normal">.$PARAM_nom_bd,<sp/>$PARAM_utilisateur,<sp/>$PARAM_mot_passe,<sp/>array(PDO::ATTR_PERSISTENT<sp/>=&gt;<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">));<sp/></highlight><highlight class="comment">//<sp/>Persistent<sp/>connection</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$connexion-&gt;setAttribute<sp/><sp/>(PDO::ATTR_ERRMODE,<sp/>PDO::ERRMODE_EXCEPTION);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//print_r($connexion-&gt;errorInfo());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//print<sp/>($connexion-&gt;errorCode());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//mysql_set_charset(&apos;utf8&apos;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal">(Exception<sp/>$e)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/></highlight><highlight class="stringliteral">&apos;Une<sp/>erreur<sp/>est<sp/>survenue<sp/>lors<sp/>de<sp/>la<sp/>connexion!&apos;</highlight><highlight class="normal">.<sp/>$e-&gt;getMessage();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo<sp/>$e-&gt;getCode();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>die();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>$connexion;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//affiche<sp/>un<sp/>tableau<sp/>dans<sp/>la<sp/>console</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="dc/db1/php__functions_8php_1a2066b8cfc35c8f781528322c79cbdff5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="dc/db1/php__functions_8php_1a2066b8cfc35c8f781528322c79cbdff5" kindref="member">show_array</ref>($array){</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;&lt;pre&gt;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<ref refid="d9/df5/batch__is__used_8php_1ac2cff670cd6bb522803dae2768c136c7" kindref="member">$i</ref><sp/>=<sp/>0;<sp/><ref refid="d9/df5/batch__is__used_8php_1ac2cff670cd6bb522803dae2768c136c7" kindref="member">$i</ref>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">($array);<sp/><ref refid="d9/df5/batch__is__used_8php_1ac2cff670cd6bb522803dae2768c136c7" kindref="member">$i</ref>++){</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log($array[<ref refid="d9/df5/batch__is__used_8php_1ac2cff670cd6bb522803dae2768c136c7" kindref="member">$i</ref>]);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;&lt;/pre&gt;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="/var/www/html/plato/php/functions/php_functions.php"/>
+  </compounddef>
+</doxygen>

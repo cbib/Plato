@@ -1,0 +1,65 @@
+\hypertarget{standard__get__all__unit_8php}{\section{php/admin/admin\-Standard/standard\-\_\-get\-\_\-all\-\_\-unit.php File Reference}
+\label{standard__get__all__unit_8php}\index{php/admin/admin\-Standard/standard\-\_\-get\-\_\-all\-\_\-unit.\-php@{php/admin/admin\-Standard/standard\-\_\-get\-\_\-all\-\_\-unit.\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{standard__get__all__unit_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{standard__get__all__unit_8php_af59a5f7cd609e592c41dc3643efd3c98}{\$query}
+\item 
+\hyperlink{standard__get__all__unit_8php_afa9126f9664959c02795be300a135f93}{\$sth} =\$conn-\/$>$prepare(\$query)
+\item 
+\hyperlink{standard__get__all__unit_8php_af789423037bbc89dc7c850e761177570}{\$count} = \$sth-\/$>$row\-Count()
+\item 
+\hyperlink{standard__get__all__unit_8php_ace2ec39e7df3899fa8df9640ec274b03}{\$rows} =\$sth-\/$>$fetch\-All()
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{standard__get__all__unit_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{standard\-\_\-get\-\_\-all\-\_\-unit.\-php@{standard\-\_\-get\-\_\-all\-\_\-unit.\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!standard_get_all_unit.php@{standard\-\_\-get\-\_\-all\-\_\-unit.\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{standard__get__all__unit_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 4 of file standard\-\_\-get\-\_\-all\-\_\-unit.\-php.
+
+\hypertarget{standard__get__all__unit_8php_af789423037bbc89dc7c850e761177570}{\index{standard\-\_\-get\-\_\-all\-\_\-unit.\-php@{standard\-\_\-get\-\_\-all\-\_\-unit.\-php}!\$count@{\$count}}
+\index{\$count@{\$count}!standard_get_all_unit.php@{standard\-\_\-get\-\_\-all\-\_\-unit.\-php}}
+\subsubsection[{\$count}]{\setlength{\rightskip}{0pt plus 5cm}\$count = \$sth-\/$>$row\-Count()}}\label{standard__get__all__unit_8php_af789423037bbc89dc7c850e761177570}
+
+
+Definition at line 16 of file standard\-\_\-get\-\_\-all\-\_\-unit.\-php.
+
+\hypertarget{standard__get__all__unit_8php_af59a5f7cd609e592c41dc3643efd3c98}{\index{standard\-\_\-get\-\_\-all\-\_\-unit.\-php@{standard\-\_\-get\-\_\-all\-\_\-unit.\-php}!\$query@{\$query}}
+\index{\$query@{\$query}!standard_get_all_unit.php@{standard\-\_\-get\-\_\-all\-\_\-unit.\-php}}
+\subsubsection[{\$query}]{\setlength{\rightskip}{0pt plus 5cm}\$query}}\label{standard__get__all__unit_8php_af59a5f7cd609e592c41dc3643efd3c98}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=\textcolor{stringliteral}{'}
+\textcolor{stringliteral}{    SELECT }
+\textcolor{stringliteral}{        unit\_id,}
+\textcolor{stringliteral}{        unit\_name}
+\textcolor{stringliteral}{    FROM }
+\textcolor{stringliteral}{        unit}
+\textcolor{stringliteral}{    ORDER BY}
+\textcolor{stringliteral}{        unit\_name;'}
+\end{DoxyCode}
+
+
+Definition at line 5 of file standard\-\_\-get\-\_\-all\-\_\-unit.\-php.
+
+\hypertarget{standard__get__all__unit_8php_ace2ec39e7df3899fa8df9640ec274b03}{\index{standard\-\_\-get\-\_\-all\-\_\-unit.\-php@{standard\-\_\-get\-\_\-all\-\_\-unit.\-php}!\$rows@{\$rows}}
+\index{\$rows@{\$rows}!standard_get_all_unit.php@{standard\-\_\-get\-\_\-all\-\_\-unit.\-php}}
+\subsubsection[{\$rows}]{\setlength{\rightskip}{0pt plus 5cm}\$rows =\$sth-\/$>$fetch\-All()}}\label{standard__get__all__unit_8php_ace2ec39e7df3899fa8df9640ec274b03}
+
+
+Definition at line 17 of file standard\-\_\-get\-\_\-all\-\_\-unit.\-php.
+
+\hypertarget{standard__get__all__unit_8php_afa9126f9664959c02795be300a135f93}{\index{standard\-\_\-get\-\_\-all\-\_\-unit.\-php@{standard\-\_\-get\-\_\-all\-\_\-unit.\-php}!\$sth@{\$sth}}
+\index{\$sth@{\$sth}!standard_get_all_unit.php@{standard\-\_\-get\-\_\-all\-\_\-unit.\-php}}
+\subsubsection[{\$sth}]{\setlength{\rightskip}{0pt plus 5cm}\$sth =\$conn-\/$>$prepare(\$query)}}\label{standard__get__all__unit_8php_afa9126f9664959c02795be300a135f93}
+
+
+Definition at line 13 of file standard\-\_\-get\-\_\-all\-\_\-unit.\-php.
+

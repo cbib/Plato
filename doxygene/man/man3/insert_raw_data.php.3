@@ -1,0 +1,99 @@
+.TH "php/processing/insert_raw_data.php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/processing/insert_raw_data.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$conn\fP = \fBget_connexion\fP()"
+.br
+.ti -1c
+.RI "\fB$status\fP ='success'"
+.br
+.ti -1c
+.RI "\fB$message\fP =''"
+.br
+.ti -1c
+.RI "\fB$layout\fP =''"
+.br
+.ti -1c
+.RI "\fB$rawdatas\fP =''"
+.br
+.ti -1c
+.RI "\fB$batchID\fP =''"
+.br
+.ti -1c
+.RI "\fB$expID\fP =''"
+.br
+.ti -1c
+.RI "\fB$ezID\fP =''"
+.br
+.ti -1c
+.RI "if(isset($_POST['rawdatas'])) \fBelse\fP"
+.br
+.ti -1c
+.RI "if($status!='error') \fB$response_array\fP ['status'] =$status"
+.br
+.ti -1c
+.RI "\fB$response_array\fP ['message'] =$message"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$\fBbatchID\fP =''"
+
+.PP
+Definition at line 12 of file insert_raw_data\&.php\&.
+.SS "$conn = \fBget_connexion\fP()"
+
+.PP
+Definition at line 5 of file insert_raw_data\&.php\&.
+.SS "$\fBexpID\fP =''"
+
+.PP
+Definition at line 13 of file insert_raw_data\&.php\&.
+.SS "$\fBezID\fP =''"
+
+.PP
+Definition at line 14 of file insert_raw_data\&.php\&.
+.SS "$layout =''"
+
+.PP
+Definition at line 9 of file insert_raw_data\&.php\&.
+.SS "$message =''"
+
+.PP
+Definition at line 8 of file insert_raw_data\&.php\&.
+.SS "$rawdatas =''"
+
+.PP
+Definition at line 11 of file insert_raw_data\&.php\&.
+.SS "if ($status!='error') $response_array['status'] =$status"
+
+.PP
+Definition at line 193 of file insert_raw_data\&.php\&.
+.SS "$response_array['message'] =$message"
+
+.PP
+Definition at line 194 of file insert_raw_data\&.php\&.
+.SS "$status ='success'"
+
+.PP
+Definition at line 7 of file insert_raw_data\&.php\&.
+.SS "if (isset($_POST['\fBezID\fP'])) else"
+\fBInitial value:\fP
+.PP
+.nf
+{
+        $message\&.=" - missing rawdatas - "
+.fi
+.PP
+Definition at line 19 of file insert_raw_data\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

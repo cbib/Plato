@@ -35,14 +35,24 @@ html_footer("../../");
 
 <script type="text/javascript" class="init">
 
+/**
+ * Action when document is ready
+ */
 $(document).ready(function() {
+	//Keep the left panel oepn to the right section
 	$('#userPanel').removeClass('submenu');
 	$('#userPanel').addClass('submenu open');
 	setup_datatable();
 });
 
 
+/**
+ * Set analyte datatable up
+ *
+ * @method     setup_datatable
+ */
 function setup_datatable(){
+	//Destroy enzyle datatable before rewritting, prevent errors when refresh, not very useful in this page
 	$('#enzyme').dataTable().fnDestroy();
 	var table = $('#enzyme').DataTable({
 		scrollY:        500,

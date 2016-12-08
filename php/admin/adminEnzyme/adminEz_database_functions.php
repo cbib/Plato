@@ -1,6 +1,7 @@
 <?php
 	require('../../functions/check_login_admin.php');
 	include '../../functions/php_functions.php';
+	//get all analytes
 
 	$conn = get_connexion();
 	$query = '

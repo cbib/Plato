@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d3/d5a/_update_data_8php">
+    <title>UpdateData.php File Reference</title>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877">$conn</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d5a/_update_data_8php_1a02ac215b001606467b9148c4cd0583f1">$sampleID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d5a/_update_data_8php_1af4527e3b791f29528cf4587debf433df">$sampleNB</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d5a/_update_data_8php_1a54b5731b97b1351783471e68775046b5">$aliquotID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d5a/_update_data_8php_1a1544720fdad7b397bd59e591e83a2d3c">$aliquotNB</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d5a/_update_data_8php_1a0f298096f322952a72a50f98a74c7b60">$value</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d5a/_update_data_8php_1ae82306c4f2d17d8dd5c7d8d916b33bed">$state</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d5a/_update_data_8php_1ac319193077976bb217112e5a7b7b8022">$location</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d5a/_update_data_8php_1aa698a3e72116e8e778be0e95d908ee30">$action</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d5a/_update_data_8php_1ae384d32e62e85e587cd27bf249ed3db3">$expID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d5a/_update_data_8php_1a7bb49988a552894a7bd314eaff592cb1">$fwID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d5a/_update_data_8php_1a300bbb59b771f6b6700da34d749d93e7">$locID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d5a/_update_data_8php_1a58391ea75f2d29d5d708d7050b641c33">$status</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>if(isset($_POST[&apos;sampleID&apos;])) if(isset($_POST[&apos;sampleNB&apos;])) if(isset($_POST[&apos;aliquotID&apos;])) if(isset($_POST[&apos;aliquotNB&apos;])) if(isset($_POST[&apos;value&apos;])) if(isset($_POST[&apos;state&apos;])) if(isset($_POST[&apos;location&apos;])) if(isset($_POST[&apos;action&apos;])) if(isset($_POST[&apos;<link linkend="d8/d02/admin_rawdata_8php_1a888d53a6517f4272b5982c3ca9d16e8a">expID</link>&apos;])) if(isset($_POST[&apos;fwID&apos;])) if(isset($_POST[&apos;locID&apos;])) if($action=== &apos;edit&apos;) elseif($action=== &apos;create&apos;) elseif($action=== &apos;delete&apos;) <link linkend="d3/d5a/_update_data_8php_1adaa42b6993796ea8225ce000539856d9">$response_array</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d3/d5a/_update_data_8php_1ae768978a0cdc416c0d63d798c85c8784">$response_array</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /var/www/html/plato/php/freshweight/UpdateData.php</para>
+    </simplesect>
+</section>

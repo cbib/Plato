@@ -1,0 +1,71 @@
+\hypertarget{standard__get__all__standard_8php}{\section{php/standard/standard\-\_\-get\-\_\-all\-\_\-standard.php File Reference}
+\label{standard__get__all__standard_8php}\index{php/standard/standard\-\_\-get\-\_\-all\-\_\-standard.\-php@{php/standard/standard\-\_\-get\-\_\-all\-\_\-standard.\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{standard__get__all__standard_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{standard__get__all__standard_8php_af59a5f7cd609e592c41dc3643efd3c98}{\$query} ='S\-E\-L\-E\-C\-T $\ast$ F\-R\-O\-M standard O\-R\-D\-E\-R B\-Y std\-\_\-name;'
+\item 
+\hyperlink{standard__get__all__standard_8php_afa9126f9664959c02795be300a135f93}{\$sth} =\$conn-\/$>$prepare(\$query)
+\item 
+\hyperlink{standard__get__all__standard_8php_af789423037bbc89dc7c850e761177570}{\$count} = \$sth-\/$>$row\-Count()
+\item 
+\hyperlink{standard__get__all__standard_8php_ace2ec39e7df3899fa8df9640ec274b03}{\$rows} =\$sth-\/$>$fetch\-All()
+\item 
+\hyperlink{standard__get__all__standard_8php_a73004ce9cd673c1bfafd1dc351134797}{\$output}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{standard__get__all__standard_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{standard\-\_\-get\-\_\-all\-\_\-standard.\-php@{standard\-\_\-get\-\_\-all\-\_\-standard.\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!standard_get_all_standard.php@{standard\-\_\-get\-\_\-all\-\_\-standard.\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{standard__get__all__standard_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 4 of file standard\-\_\-get\-\_\-all\-\_\-standard.\-php.
+
+\hypertarget{standard__get__all__standard_8php_af789423037bbc89dc7c850e761177570}{\index{standard\-\_\-get\-\_\-all\-\_\-standard.\-php@{standard\-\_\-get\-\_\-all\-\_\-standard.\-php}!\$count@{\$count}}
+\index{\$count@{\$count}!standard_get_all_standard.php@{standard\-\_\-get\-\_\-all\-\_\-standard.\-php}}
+\subsubsection[{\$count}]{\setlength{\rightskip}{0pt plus 5cm}\$count = \$sth-\/$>$row\-Count()}}\label{standard__get__all__standard_8php_af789423037bbc89dc7c850e761177570}
+
+
+Definition at line 10 of file standard\-\_\-get\-\_\-all\-\_\-standard.\-php.
+
+\hypertarget{standard__get__all__standard_8php_a73004ce9cd673c1bfafd1dc351134797}{\index{standard\-\_\-get\-\_\-all\-\_\-standard.\-php@{standard\-\_\-get\-\_\-all\-\_\-standard.\-php}!\$output@{\$output}}
+\index{\$output@{\$output}!standard_get_all_standard.php@{standard\-\_\-get\-\_\-all\-\_\-standard.\-php}}
+\subsubsection[{\$output}]{\setlength{\rightskip}{0pt plus 5cm}\$output}}\label{standard__get__all__standard_8php_a73004ce9cd673c1bfafd1dc351134797}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+= array(
+        \textcolor{stringliteral}{"iTotalRecords"} => \hyperlink{standard__get__all__standard_8php_af789423037bbc89dc7c850e761177570}{$count},
+        \textcolor{stringliteral}{"iTotalDisplayRecords"} => \hyperlink{standard__get__all__standard_8php_af789423037bbc89dc7c850e761177570}{$count},
+        \textcolor{stringliteral}{"aaData"} => array()
+    )
+\end{DoxyCode}
+
+
+Definition at line 18 of file standard\-\_\-get\-\_\-all\-\_\-standard.\-php.
+
+\hypertarget{standard__get__all__standard_8php_af59a5f7cd609e592c41dc3643efd3c98}{\index{standard\-\_\-get\-\_\-all\-\_\-standard.\-php@{standard\-\_\-get\-\_\-all\-\_\-standard.\-php}!\$query@{\$query}}
+\index{\$query@{\$query}!standard_get_all_standard.php@{standard\-\_\-get\-\_\-all\-\_\-standard.\-php}}
+\subsubsection[{\$query}]{\setlength{\rightskip}{0pt plus 5cm}\$query ='S\-E\-L\-E\-C\-T $\ast$ F\-R\-O\-M standard O\-R\-D\-E\-R B\-Y std\-\_\-name;'}}\label{standard__get__all__standard_8php_af59a5f7cd609e592c41dc3643efd3c98}
+
+
+Definition at line 5 of file standard\-\_\-get\-\_\-all\-\_\-standard.\-php.
+
+\hypertarget{standard__get__all__standard_8php_ace2ec39e7df3899fa8df9640ec274b03}{\index{standard\-\_\-get\-\_\-all\-\_\-standard.\-php@{standard\-\_\-get\-\_\-all\-\_\-standard.\-php}!\$rows@{\$rows}}
+\index{\$rows@{\$rows}!standard_get_all_standard.php@{standard\-\_\-get\-\_\-all\-\_\-standard.\-php}}
+\subsubsection[{\$rows}]{\setlength{\rightskip}{0pt plus 5cm}\$rows =\$sth-\/$>$fetch\-All()}}\label{standard__get__all__standard_8php_ace2ec39e7df3899fa8df9640ec274b03}
+
+
+Definition at line 11 of file standard\-\_\-get\-\_\-all\-\_\-standard.\-php.
+
+\hypertarget{standard__get__all__standard_8php_afa9126f9664959c02795be300a135f93}{\index{standard\-\_\-get\-\_\-all\-\_\-standard.\-php@{standard\-\_\-get\-\_\-all\-\_\-standard.\-php}!\$sth@{\$sth}}
+\index{\$sth@{\$sth}!standard_get_all_standard.php@{standard\-\_\-get\-\_\-all\-\_\-standard.\-php}}
+\subsubsection[{\$sth}]{\setlength{\rightskip}{0pt plus 5cm}\$sth =\$conn-\/$>$prepare(\$query)}}\label{standard__get__all__standard_8php_afa9126f9664959c02795be300a135f93}
+
+
+Definition at line 7 of file standard\-\_\-get\-\_\-all\-\_\-standard.\-php.
+

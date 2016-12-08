@@ -1,0 +1,98 @@
+\hypertarget{_admin_exp_update_data_8php}{\section{php/admin/admin\-Experiment/\-Admin\-Exp\-Update\-Data.php File Reference}
+\label{_admin_exp_update_data_8php}\index{php/admin/admin\-Experiment/\-Admin\-Exp\-Update\-Data.\-php@{php/admin/admin\-Experiment/\-Admin\-Exp\-Update\-Data.\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_admin_exp_update_data_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{_admin_exp_update_data_8php_aa698a3e72116e8e778be0e95d908ee30}{\$action} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{_admin_exp_update_data_8php_ae384d32e62e85e587cd27bf249ed3db3}{\$exp\-I\-D} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{_admin_exp_update_data_8php_a1d3cd82753ac2a11daa05848b6a2cda8}{\$std\-I\-D} =1
+\item 
+\hyperlink{_admin_exp_update_data_8php_a6478e66386fefd0e5fd6de22d695ffca}{\$exp\-Name} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{_admin_exp_update_data_8php_a58391ea75f2d29d5d708d7050b641c33}{\$status} = \char`\"{}success\char`\"{}
+\item 
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'\hyperlink{admin_rawdata_8php_a888d53a6517f4272b5982c3ca9d16e8a}{exp\-I\-D}'\mbox{]})) if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'std\-I\-D'\mbox{]})) \\*
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'exp\-Name'\mbox{]})) \\*
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'action'\mbox{]})) if(\$action==\char`\"{}create\char`\"{}) \\*
+elseif(\$action==\char`\"{}edit\char`\"{}) elseif(\$action==\char`\"{}delete\char`\"{}) \hyperlink{_admin_exp_update_data_8php_a34153a20a95674a0175d4c2447dc0a99}{else}
+\item 
+\hyperlink{_admin_exp_update_data_8php_acd0903a7a32e8397aefd0ce8b7dbd1ab}{\$response\-\_\-array} \mbox{[}'status'\mbox{]} =\$status
+\item 
+\hyperlink{_admin_exp_update_data_8php_ae768978a0cdc416c0d63d798c85c8784}{\$response\-\_\-array} \mbox{[}'action'\mbox{]} =\$action
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{_admin_exp_update_data_8php_aa698a3e72116e8e778be0e95d908ee30}{\index{Admin\-Exp\-Update\-Data.\-php@{Admin\-Exp\-Update\-Data.\-php}!\$action@{\$action}}
+\index{\$action@{\$action}!AdminExpUpdateData.php@{Admin\-Exp\-Update\-Data.\-php}}
+\subsubsection[{\$action}]{\setlength{\rightskip}{0pt plus 5cm}\$action =\char`\"{}\char`\"{}}}\label{_admin_exp_update_data_8php_aa698a3e72116e8e778be0e95d908ee30}
+
+
+Definition at line 10 of file Admin\-Exp\-Update\-Data.\-php.
+
+\hypertarget{_admin_exp_update_data_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{Admin\-Exp\-Update\-Data.\-php@{Admin\-Exp\-Update\-Data.\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!AdminExpUpdateData.php@{Admin\-Exp\-Update\-Data.\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{_admin_exp_update_data_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 5 of file Admin\-Exp\-Update\-Data.\-php.
+
+\hypertarget{_admin_exp_update_data_8php_ae384d32e62e85e587cd27bf249ed3db3}{\index{Admin\-Exp\-Update\-Data.\-php@{Admin\-Exp\-Update\-Data.\-php}!\$exp\-I\-D@{\$exp\-I\-D}}
+\index{\$exp\-I\-D@{\$exp\-I\-D}!AdminExpUpdateData.php@{Admin\-Exp\-Update\-Data.\-php}}
+\subsubsection[{\$exp\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf exp\-I\-D} =\char`\"{}\char`\"{}}}\label{_admin_exp_update_data_8php_ae384d32e62e85e587cd27bf249ed3db3}
+
+
+Definition at line 11 of file Admin\-Exp\-Update\-Data.\-php.
+
+\hypertarget{_admin_exp_update_data_8php_a6478e66386fefd0e5fd6de22d695ffca}{\index{Admin\-Exp\-Update\-Data.\-php@{Admin\-Exp\-Update\-Data.\-php}!\$exp\-Name@{\$exp\-Name}}
+\index{\$exp\-Name@{\$exp\-Name}!AdminExpUpdateData.php@{Admin\-Exp\-Update\-Data.\-php}}
+\subsubsection[{\$exp\-Name}]{\setlength{\rightskip}{0pt plus 5cm}\$exp\-Name =\char`\"{}\char`\"{}}}\label{_admin_exp_update_data_8php_a6478e66386fefd0e5fd6de22d695ffca}
+
+
+Definition at line 13 of file Admin\-Exp\-Update\-Data.\-php.
+
+\hypertarget{_admin_exp_update_data_8php_acd0903a7a32e8397aefd0ce8b7dbd1ab}{\index{Admin\-Exp\-Update\-Data.\-php@{Admin\-Exp\-Update\-Data.\-php}!\$response\-\_\-array@{\$response\-\_\-array}}
+\index{\$response\-\_\-array@{\$response\-\_\-array}!AdminExpUpdateData.php@{Admin\-Exp\-Update\-Data.\-php}}
+\subsubsection[{\$response\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}\$response\-\_\-array\mbox{[}'status'\mbox{]} =\$status}}\label{_admin_exp_update_data_8php_acd0903a7a32e8397aefd0ce8b7dbd1ab}
+
+
+Definition at line 171 of file Admin\-Exp\-Update\-Data.\-php.
+
+\hypertarget{_admin_exp_update_data_8php_ae768978a0cdc416c0d63d798c85c8784}{\index{Admin\-Exp\-Update\-Data.\-php@{Admin\-Exp\-Update\-Data.\-php}!\$response\-\_\-array@{\$response\-\_\-array}}
+\index{\$response\-\_\-array@{\$response\-\_\-array}!AdminExpUpdateData.php@{Admin\-Exp\-Update\-Data.\-php}}
+\subsubsection[{\$response\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}\$response\-\_\-array\mbox{[}'action'\mbox{]} =\$action}}\label{_admin_exp_update_data_8php_ae768978a0cdc416c0d63d798c85c8784}
+
+
+Definition at line 172 of file Admin\-Exp\-Update\-Data.\-php.
+
+\hypertarget{_admin_exp_update_data_8php_a58391ea75f2d29d5d708d7050b641c33}{\index{Admin\-Exp\-Update\-Data.\-php@{Admin\-Exp\-Update\-Data.\-php}!\$status@{\$status}}
+\index{\$status@{\$status}!AdminExpUpdateData.php@{Admin\-Exp\-Update\-Data.\-php}}
+\subsubsection[{\$status}]{\setlength{\rightskip}{0pt plus 5cm}\$status = \char`\"{}success\char`\"{}}}\label{_admin_exp_update_data_8php_a58391ea75f2d29d5d708d7050b641c33}
+
+
+Definition at line 14 of file Admin\-Exp\-Update\-Data.\-php.
+
+\hypertarget{_admin_exp_update_data_8php_a1d3cd82753ac2a11daa05848b6a2cda8}{\index{Admin\-Exp\-Update\-Data.\-php@{Admin\-Exp\-Update\-Data.\-php}!\$std\-I\-D@{\$std\-I\-D}}
+\index{\$std\-I\-D@{\$std\-I\-D}!AdminExpUpdateData.php@{Admin\-Exp\-Update\-Data.\-php}}
+\subsubsection[{\$std\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\$std\-I\-D =1}}\label{_admin_exp_update_data_8php_a1d3cd82753ac2a11daa05848b6a2cda8}
+
+
+Definition at line 12 of file Admin\-Exp\-Update\-Data.\-php.
+
+\hypertarget{_admin_exp_update_data_8php_a34153a20a95674a0175d4c2447dc0a99}{\index{Admin\-Exp\-Update\-Data.\-php@{Admin\-Exp\-Update\-Data.\-php}!else@{else}}
+\index{else@{else}!AdminExpUpdateData.php@{Admin\-Exp\-Update\-Data.\-php}}
+\subsubsection[{else}]{\setlength{\rightskip}{0pt plus 5cm}if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'{\bf exp\-I\-D}'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'std\-I\-D'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'exp\-Name'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'action'\mbox{]})) if (\$action==\char`\"{}create\char`\"{}) elseif (\$action==\char`\"{}edit\char`\"{}) elseif (\$action==\char`\"{}delete\char`\"{}) else}}\label{_admin_exp_update_data_8php_a34153a20a95674a0175d4c2447dc0a99}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+\{
+        \hyperlink{_admin_exp_update_data_8php_a58391ea75f2d29d5d708d7050b641c33}{$status}=\textcolor{stringliteral}{"error"}
+\end{DoxyCode}
+
+
+Definition at line 166 of file Admin\-Exp\-Update\-Data.\-php.
+

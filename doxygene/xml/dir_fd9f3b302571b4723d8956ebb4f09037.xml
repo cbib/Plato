@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_fd9f3b302571b4723d8956ebb4f09037" kind="dir">
+    <compoundname>php/analytes</compoundname>
+    <innerfile refid="d9/d62/analytes_8php">analytes.php</innerfile>
+    <innerfile refid="d9/df2/analytes__database__functions_8php">analytes_database_functions.php</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/var/www/html/plato/php/analytes/"/>
+  </compounddef>
+</doxygen>

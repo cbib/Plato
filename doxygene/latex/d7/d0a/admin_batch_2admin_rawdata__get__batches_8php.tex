@@ -1,0 +1,74 @@
+\hypertarget{admin_batch_2admin_rawdata__get__batches_8php}{\section{php/admin/admin\-Batch/admin\-Rawdata\-\_\-get\-\_\-batches.php File Reference}
+\label{admin_batch_2admin_rawdata__get__batches_8php}\index{php/admin/admin\-Batch/admin\-Rawdata\-\_\-get\-\_\-batches.\-php@{php/admin/admin\-Batch/admin\-Rawdata\-\_\-get\-\_\-batches.\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{admin_batch_2admin_rawdata__get__batches_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{admin_batch_2admin_rawdata__get__batches_8php_ae384d32e62e85e587cd27bf249ed3db3}{\$exp\-I\-D} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'\hyperlink{admin_rawdata_8php_a888d53a6517f4272b5982c3ca9d16e8a}{exp\-I\-D}'\mbox{]}
+\item 
+\hyperlink{admin_batch_2admin_rawdata__get__batches_8php_af59a5f7cd609e592c41dc3643efd3c98}{\$query}
+\item 
+\hyperlink{admin_batch_2admin_rawdata__get__batches_8php_afa9126f9664959c02795be300a135f93}{\$sth} =\$conn-\/$>$prepare(\$query)
+\item 
+\hyperlink{admin_batch_2admin_rawdata__get__batches_8php_ace2ec39e7df3899fa8df9640ec274b03}{\$rows} =\$sth-\/$>$fetch\-All()
+\item 
+\hyperlink{admin_batch_2admin_rawdata__get__batches_8php_a73004ce9cd673c1bfafd1dc351134797}{\$output} = array()
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{admin_batch_2admin_rawdata__get__batches_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{admin\-Batch/admin\-Rawdata\-\_\-get\-\_\-batches.\-php@{admin\-Batch/admin\-Rawdata\-\_\-get\-\_\-batches.\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!adminBatch/adminRawdata_get_batches.php@{admin\-Batch/admin\-Rawdata\-\_\-get\-\_\-batches.\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{admin_batch_2admin_rawdata__get__batches_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 4 of file admin\-Rawdata\-\_\-get\-\_\-batches.\-php.
+
+\hypertarget{admin_batch_2admin_rawdata__get__batches_8php_ae384d32e62e85e587cd27bf249ed3db3}{\index{admin\-Batch/admin\-Rawdata\-\_\-get\-\_\-batches.\-php@{admin\-Batch/admin\-Rawdata\-\_\-get\-\_\-batches.\-php}!\$exp\-I\-D@{\$exp\-I\-D}}
+\index{\$exp\-I\-D@{\$exp\-I\-D}!adminBatch/adminRawdata_get_batches.php@{admin\-Batch/admin\-Rawdata\-\_\-get\-\_\-batches.\-php}}
+\subsubsection[{\$exp\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf exp\-I\-D} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'{\bf exp\-I\-D}'\mbox{]}}}\label{admin_batch_2admin_rawdata__get__batches_8php_ae384d32e62e85e587cd27bf249ed3db3}
+
+
+Definition at line 8 of file admin\-Rawdata\-\_\-get\-\_\-batches.\-php.
+
+\hypertarget{admin_batch_2admin_rawdata__get__batches_8php_a73004ce9cd673c1bfafd1dc351134797}{\index{admin\-Batch/admin\-Rawdata\-\_\-get\-\_\-batches.\-php@{admin\-Batch/admin\-Rawdata\-\_\-get\-\_\-batches.\-php}!\$output@{\$output}}
+\index{\$output@{\$output}!adminBatch/adminRawdata_get_batches.php@{admin\-Batch/admin\-Rawdata\-\_\-get\-\_\-batches.\-php}}
+\subsubsection[{\$output}]{\setlength{\rightskip}{0pt plus 5cm}\$output = array()}}\label{admin_batch_2admin_rawdata__get__batches_8php_a73004ce9cd673c1bfafd1dc351134797}
+
+
+Definition at line 23 of file admin\-Rawdata\-\_\-get\-\_\-batches.\-php.
+
+\hypertarget{admin_batch_2admin_rawdata__get__batches_8php_af59a5f7cd609e592c41dc3643efd3c98}{\index{admin\-Batch/admin\-Rawdata\-\_\-get\-\_\-batches.\-php@{admin\-Batch/admin\-Rawdata\-\_\-get\-\_\-batches.\-php}!\$query@{\$query}}
+\index{\$query@{\$query}!adminBatch/adminRawdata_get_batches.php@{admin\-Batch/admin\-Rawdata\-\_\-get\-\_\-batches.\-php}}
+\subsubsection[{\$query}]{\setlength{\rightskip}{0pt plus 5cm}\$query}}\label{admin_batch_2admin_rawdata__get__batches_8php_af59a5f7cd609e592c41dc3643efd3c98}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=\textcolor{stringliteral}{'}
+\textcolor{stringliteral}{        SELECT  distinct batch.bat\_id AS ID, CONCAT(batch.bat\_number, " -   ", batch.bat\_name, "    -   ",
+       batch.bat\_date) AS numbname}
+\textcolor{stringliteral}{        FROM batch\_data, batch}
+\textcolor{stringliteral}{        WHERE batch\_data.bat\_data\_experiment\_FK = '}.$expID.\textcolor{stringliteral}{' AND}
+\textcolor{stringliteral}{        batch.bat\_id = batch\_data.bat\_data\_batch\_FK}
+\textcolor{stringliteral}{        ORDER BY batch.bat\_number;}
+\textcolor{stringliteral}{    '}
+\end{DoxyCode}
+
+
+Definition at line 10 of file admin\-Rawdata\-\_\-get\-\_\-batches.\-php.
+
+\hypertarget{admin_batch_2admin_rawdata__get__batches_8php_ace2ec39e7df3899fa8df9640ec274b03}{\index{admin\-Batch/admin\-Rawdata\-\_\-get\-\_\-batches.\-php@{admin\-Batch/admin\-Rawdata\-\_\-get\-\_\-batches.\-php}!\$rows@{\$rows}}
+\index{\$rows@{\$rows}!adminBatch/adminRawdata_get_batches.php@{admin\-Batch/admin\-Rawdata\-\_\-get\-\_\-batches.\-php}}
+\subsubsection[{\$rows}]{\setlength{\rightskip}{0pt plus 5cm}\$rows =\$sth-\/$>$fetch\-All()}}\label{admin_batch_2admin_rawdata__get__batches_8php_ace2ec39e7df3899fa8df9640ec274b03}
+
+
+Definition at line 21 of file admin\-Rawdata\-\_\-get\-\_\-batches.\-php.
+
+\hypertarget{admin_batch_2admin_rawdata__get__batches_8php_afa9126f9664959c02795be300a135f93}{\index{admin\-Batch/admin\-Rawdata\-\_\-get\-\_\-batches.\-php@{admin\-Batch/admin\-Rawdata\-\_\-get\-\_\-batches.\-php}!\$sth@{\$sth}}
+\index{\$sth@{\$sth}!adminBatch/adminRawdata_get_batches.php@{admin\-Batch/admin\-Rawdata\-\_\-get\-\_\-batches.\-php}}
+\subsubsection[{\$sth}]{\setlength{\rightskip}{0pt plus 5cm}\$sth =\$conn-\/$>$prepare(\$query)}}\label{admin_batch_2admin_rawdata__get__batches_8php_afa9126f9664959c02795be300a135f93}
+
+
+Definition at line 18 of file admin\-Rawdata\-\_\-get\-\_\-batches.\-php.
+

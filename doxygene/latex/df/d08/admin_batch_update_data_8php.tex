@@ -1,0 +1,176 @@
+\hypertarget{admin_batch_update_data_8php}{\section{php/admin/admin\-Batch/admin\-Batch\-Update\-Data.php File Reference}
+\label{admin_batch_update_data_8php}\index{php/admin/admin\-Batch/admin\-Batch\-Update\-Data.\-php@{php/admin/admin\-Batch/admin\-Batch\-Update\-Data.\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{admin_batch_update_data_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{admin_batch_update_data_8php_aaa6d122ea9cb55b210aadd86e5654a74}{\$batch\-I\-D} = -\/1
+\item 
+\hyperlink{admin_batch_update_data_8php_a58391ea75f2d29d5d708d7050b641c33}{\$status} = \char`\"{}success\char`\"{}
+\item 
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'\hyperlink{obsolete_2processing__bak_8php_a88c5bc4262b7c34f236357f5c53fc99b}{batch\-I\-D}'\mbox{]})) \hyperlink{admin_batch_update_data_8php_ac52f8f4e9d798ceaf5b8ebbbf44651d7}{\$query}
+\item 
+\hyperlink{admin_batch_update_data_8php_afa9126f9664959c02795be300a135f93}{\$sth} = \$conn-\/$>$prepare(\$query)
+\item 
+\hyperlink{admin_batch_update_data_8php_a112ef069ddc0454086e3d1e6d8d55d07}{\$result} = \$sth-\/$>$fetch\-All()
+\item 
+\hyperlink{admin_batch_update_data_8php_aeb64e1676f1d4fa0af8d77c2cf92985e}{\$query\-Sample}
+\item 
+\hyperlink{admin_batch_update_data_8php_a2f84d43fa0033773278ae89295389bc6}{\$sth2} = \$conn-\/$>$prepare(\$query\-Sample)
+\item 
+\hyperlink{admin_batch_update_data_8php_ae3e385c534eade5527fe9db4dbc181b5}{\$result\-Sample} = \$sth2-\/$>$fetch\-All()
+\item 
+\hyperlink{admin_batch_update_data_8php_a402e013ee8591bfd08a5a09cb35c3cc8}{\$delete\-Batch} = \char`\"{}D\-E\-L\-E\-T\-E F\-R\-O\-M batch where bat\-\_\-id = \char`\"{}.\$batch\-I\-D.\char`\"{};\char`\"{}
+\item 
+\hyperlink{admin_batch_update_data_8php_ad08dc0a05af9c3e0730669485af92e41}{\$delete\-Query} = \char`\"{}D\-E\-L\-E\-T\-E F\-R\-O\-M batch\-\_\-data W\-H\-E\-R\-E bat\-\_\-data\-\_\-id I\-N (\char`\"{}
+\item 
+\hyperlink{admin_batch_update_data_8php_ae5af6d755eaaf6ecdff2af55a8b6419f}{\$delete\-Raw\-Data\-Query} = \char`\"{}D\-E\-L\-E\-T\-E F\-R\-O\-M rawdata W\-H\-E\-R\-E rawdata\-\_\-batch\-\_\-data\-\_\-\-F\-K I\-N (\char`\"{}
+\item 
+foreach(\$result as \$row) \hyperlink{admin_batch_update_data_8php_a9b5699e27fe7cf7436e0ee0f8ca958b7}{\$update\-State\-Aliquot\-Query} = \char`\"{}U\-P\-D\-A\-T\-E sample\-\_\-aliquot S\-E\-T spl\-\_\-alq\-\_\-state = 'free' W\-H\-E\-R\-E spl\-\_\-alq\-\_\-id I\-N (\char`\"{}
+\item 
+\hyperlink{admin_batch_update_data_8php_abe4cc9788f52e49485473dc699537388}{try}
+\item 
+catch(Exception \$e) \hyperlink{admin_batch_update_data_8php_a8452fb8131316637a04e25f5fde066d9}{\$response\-\_\-array} \mbox{[}'status'\mbox{]} =\$status
+\item 
+\hyperlink{admin_batch_update_data_8php_ae768978a0cdc416c0d63d798c85c8784}{\$response\-\_\-array} \mbox{[}'action'\mbox{]} =\char`\"{}delete\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{admin_batch_update_data_8php_aaa6d122ea9cb55b210aadd86e5654a74}{\index{admin\-Batch\-Update\-Data.\-php@{admin\-Batch\-Update\-Data.\-php}!\$batch\-I\-D@{\$batch\-I\-D}}
+\index{\$batch\-I\-D@{\$batch\-I\-D}!adminBatchUpdateData.php@{admin\-Batch\-Update\-Data.\-php}}
+\subsubsection[{\$batch\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf batch\-I\-D} = -\/1}}\label{admin_batch_update_data_8php_aaa6d122ea9cb55b210aadd86e5654a74}
+
+
+Definition at line 7 of file admin\-Batch\-Update\-Data.\-php.
+
+\hypertarget{admin_batch_update_data_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{admin\-Batch\-Update\-Data.\-php@{admin\-Batch\-Update\-Data.\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!adminBatchUpdateData.php@{admin\-Batch\-Update\-Data.\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{admin_batch_update_data_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 5 of file admin\-Batch\-Update\-Data.\-php.
+
+\hypertarget{admin_batch_update_data_8php_a402e013ee8591bfd08a5a09cb35c3cc8}{\index{admin\-Batch\-Update\-Data.\-php@{admin\-Batch\-Update\-Data.\-php}!\$delete\-Batch@{\$delete\-Batch}}
+\index{\$delete\-Batch@{\$delete\-Batch}!adminBatchUpdateData.php@{admin\-Batch\-Update\-Data.\-php}}
+\subsubsection[{\$delete\-Batch}]{\setlength{\rightskip}{0pt plus 5cm}\$delete\-Batch = \char`\"{}D\-E\-L\-E\-T\-E F\-R\-O\-M batch where bat\-\_\-id = \char`\"{}.\$batch\-I\-D.\char`\"{};\char`\"{}}}\label{admin_batch_update_data_8php_a402e013ee8591bfd08a5a09cb35c3cc8}
+
+
+Definition at line 37 of file admin\-Batch\-Update\-Data.\-php.
+
+\hypertarget{admin_batch_update_data_8php_ad08dc0a05af9c3e0730669485af92e41}{\index{admin\-Batch\-Update\-Data.\-php@{admin\-Batch\-Update\-Data.\-php}!\$delete\-Query@{\$delete\-Query}}
+\index{\$delete\-Query@{\$delete\-Query}!adminBatchUpdateData.php@{admin\-Batch\-Update\-Data.\-php}}
+\subsubsection[{\$delete\-Query}]{\setlength{\rightskip}{0pt plus 5cm}\$delete\-Query = \char`\"{}D\-E\-L\-E\-T\-E F\-R\-O\-M batch\-\_\-data W\-H\-E\-R\-E bat\-\_\-data\-\_\-id I\-N (\char`\"{}}}\label{admin_batch_update_data_8php_ad08dc0a05af9c3e0730669485af92e41}
+
+
+Definition at line 38 of file admin\-Batch\-Update\-Data.\-php.
+
+\hypertarget{admin_batch_update_data_8php_ae5af6d755eaaf6ecdff2af55a8b6419f}{\index{admin\-Batch\-Update\-Data.\-php@{admin\-Batch\-Update\-Data.\-php}!\$delete\-Raw\-Data\-Query@{\$delete\-Raw\-Data\-Query}}
+\index{\$delete\-Raw\-Data\-Query@{\$delete\-Raw\-Data\-Query}!adminBatchUpdateData.php@{admin\-Batch\-Update\-Data.\-php}}
+\subsubsection[{\$delete\-Raw\-Data\-Query}]{\setlength{\rightskip}{0pt plus 5cm}\$delete\-Raw\-Data\-Query = \char`\"{}D\-E\-L\-E\-T\-E F\-R\-O\-M rawdata W\-H\-E\-R\-E rawdata\-\_\-batch\-\_\-data\-\_\-\-F\-K I\-N (\char`\"{}}}\label{admin_batch_update_data_8php_ae5af6d755eaaf6ecdff2af55a8b6419f}
+
+
+Definition at line 39 of file admin\-Batch\-Update\-Data.\-php.
+
+\hypertarget{admin_batch_update_data_8php_ac52f8f4e9d798ceaf5b8ebbbf44651d7}{\index{admin\-Batch\-Update\-Data.\-php@{admin\-Batch\-Update\-Data.\-php}!\$query@{\$query}}
+\index{\$query@{\$query}!adminBatchUpdateData.php@{admin\-Batch\-Update\-Data.\-php}}
+\subsubsection[{\$query}]{\setlength{\rightskip}{0pt plus 5cm}if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'{\bf batch\-I\-D}'\mbox{]})) \$query}}\label{admin_batch_update_data_8php_ac52f8f4e9d798ceaf5b8ebbbf44651d7}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=\textcolor{stringliteral}{"SELECT }
+\textcolor{stringliteral}{        bat\_data\_id }
+\textcolor{stringliteral}{    FROM}
+\textcolor{stringliteral}{        batch\_data }
+\textcolor{stringliteral}{    WHERE}
+\textcolor{stringliteral}{        bat\_data\_batch\_FK = "}.$batchID.\textcolor{stringliteral}{";"}
+\end{DoxyCode}
+
+
+Definition at line 15 of file admin\-Batch\-Update\-Data.\-php.
+
+\hypertarget{admin_batch_update_data_8php_aeb64e1676f1d4fa0af8d77c2cf92985e}{\index{admin\-Batch\-Update\-Data.\-php@{admin\-Batch\-Update\-Data.\-php}!\$query\-Sample@{\$query\-Sample}}
+\index{\$query\-Sample@{\$query\-Sample}!adminBatchUpdateData.php@{admin\-Batch\-Update\-Data.\-php}}
+\subsubsection[{\$query\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}\$query\-Sample}}\label{admin_batch_update_data_8php_aeb64e1676f1d4fa0af8d77c2cf92985e}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=\textcolor{stringliteral}{"SELECT }
+\textcolor{stringliteral}{        bat\_data\_sample\_aliquot\_FK }
+\textcolor{stringliteral}{    FROM}
+\textcolor{stringliteral}{        batch\_data }
+\textcolor{stringliteral}{    WHERE}
+\textcolor{stringliteral}{        bat\_data\_batch\_FK = "}.$batchID.\textcolor{stringliteral}{";"}
+\end{DoxyCode}
+
+
+Definition at line 26 of file admin\-Batch\-Update\-Data.\-php.
+
+\hypertarget{admin_batch_update_data_8php_a8452fb8131316637a04e25f5fde066d9}{\index{admin\-Batch\-Update\-Data.\-php@{admin\-Batch\-Update\-Data.\-php}!\$response\-\_\-array@{\$response\-\_\-array}}
+\index{\$response\-\_\-array@{\$response\-\_\-array}!adminBatchUpdateData.php@{admin\-Batch\-Update\-Data.\-php}}
+\subsubsection[{\$response\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}catch (Exception \$e) \$response\-\_\-array\mbox{[}'status'\mbox{]} =\$status}}\label{admin_batch_update_data_8php_a8452fb8131316637a04e25f5fde066d9}
+
+
+Definition at line 78 of file admin\-Batch\-Update\-Data.\-php.
+
+\hypertarget{admin_batch_update_data_8php_ae768978a0cdc416c0d63d798c85c8784}{\index{admin\-Batch\-Update\-Data.\-php@{admin\-Batch\-Update\-Data.\-php}!\$response\-\_\-array@{\$response\-\_\-array}}
+\index{\$response\-\_\-array@{\$response\-\_\-array}!adminBatchUpdateData.php@{admin\-Batch\-Update\-Data.\-php}}
+\subsubsection[{\$response\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}\$response\-\_\-array\mbox{[}'action'\mbox{]} =\char`\"{}delete\char`\"{}}}\label{admin_batch_update_data_8php_ae768978a0cdc416c0d63d798c85c8784}
+
+
+Definition at line 79 of file admin\-Batch\-Update\-Data.\-php.
+
+\hypertarget{admin_batch_update_data_8php_a112ef069ddc0454086e3d1e6d8d55d07}{\index{admin\-Batch\-Update\-Data.\-php@{admin\-Batch\-Update\-Data.\-php}!\$result@{\$result}}
+\index{\$result@{\$result}!adminBatchUpdateData.php@{admin\-Batch\-Update\-Data.\-php}}
+\subsubsection[{\$result}]{\setlength{\rightskip}{0pt plus 5cm}\$result = \$sth-\/$>$fetch\-All()}}\label{admin_batch_update_data_8php_a112ef069ddc0454086e3d1e6d8d55d07}
+
+
+Definition at line 24 of file admin\-Batch\-Update\-Data.\-php.
+
+\hypertarget{admin_batch_update_data_8php_ae3e385c534eade5527fe9db4dbc181b5}{\index{admin\-Batch\-Update\-Data.\-php@{admin\-Batch\-Update\-Data.\-php}!\$result\-Sample@{\$result\-Sample}}
+\index{\$result\-Sample@{\$result\-Sample}!adminBatchUpdateData.php@{admin\-Batch\-Update\-Data.\-php}}
+\subsubsection[{\$result\-Sample}]{\setlength{\rightskip}{0pt plus 5cm}\$result\-Sample = \$sth2-\/$>$fetch\-All()}}\label{admin_batch_update_data_8php_ae3e385c534eade5527fe9db4dbc181b5}
+
+
+Definition at line 35 of file admin\-Batch\-Update\-Data.\-php.
+
+\hypertarget{admin_batch_update_data_8php_a58391ea75f2d29d5d708d7050b641c33}{\index{admin\-Batch\-Update\-Data.\-php@{admin\-Batch\-Update\-Data.\-php}!\$status@{\$status}}
+\index{\$status@{\$status}!adminBatchUpdateData.php@{admin\-Batch\-Update\-Data.\-php}}
+\subsubsection[{\$status}]{\setlength{\rightskip}{0pt plus 5cm}\$status = \char`\"{}success\char`\"{}}}\label{admin_batch_update_data_8php_a58391ea75f2d29d5d708d7050b641c33}
+
+
+Definition at line 8 of file admin\-Batch\-Update\-Data.\-php.
+
+\hypertarget{admin_batch_update_data_8php_afa9126f9664959c02795be300a135f93}{\index{admin\-Batch\-Update\-Data.\-php@{admin\-Batch\-Update\-Data.\-php}!\$sth@{\$sth}}
+\index{\$sth@{\$sth}!adminBatchUpdateData.php@{admin\-Batch\-Update\-Data.\-php}}
+\subsubsection[{\$sth}]{\setlength{\rightskip}{0pt plus 5cm}\$sth = \$conn-\/$>$prepare(\$query)}}\label{admin_batch_update_data_8php_afa9126f9664959c02795be300a135f93}
+
+
+Definition at line 22 of file admin\-Batch\-Update\-Data.\-php.
+
+\hypertarget{admin_batch_update_data_8php_a2f84d43fa0033773278ae89295389bc6}{\index{admin\-Batch\-Update\-Data.\-php@{admin\-Batch\-Update\-Data.\-php}!\$sth2@{\$sth2}}
+\index{\$sth2@{\$sth2}!adminBatchUpdateData.php@{admin\-Batch\-Update\-Data.\-php}}
+\subsubsection[{\$sth2}]{\setlength{\rightskip}{0pt plus 5cm}\$sth2 = \$conn-\/$>$prepare(\$query\-Sample)}}\label{admin_batch_update_data_8php_a2f84d43fa0033773278ae89295389bc6}
+
+
+Definition at line 33 of file admin\-Batch\-Update\-Data.\-php.
+
+\hypertarget{admin_batch_update_data_8php_a9b5699e27fe7cf7436e0ee0f8ca958b7}{\index{admin\-Batch\-Update\-Data.\-php@{admin\-Batch\-Update\-Data.\-php}!\$update\-State\-Aliquot\-Query@{\$update\-State\-Aliquot\-Query}}
+\index{\$update\-State\-Aliquot\-Query@{\$update\-State\-Aliquot\-Query}!adminBatchUpdateData.php@{admin\-Batch\-Update\-Data.\-php}}
+\subsubsection[{\$update\-State\-Aliquot\-Query}]{\setlength{\rightskip}{0pt plus 5cm}\$update\-State\-Aliquot\-Query = \char`\"{}U\-P\-D\-A\-T\-E sample\-\_\-aliquot S\-E\-T spl\-\_\-alq\-\_\-state = 'free' W\-H\-E\-R\-E spl\-\_\-alq\-\_\-id I\-N (\char`\"{}}}\label{admin_batch_update_data_8php_a9b5699e27fe7cf7436e0ee0f8ca958b7}
+
+
+Definition at line 45 of file admin\-Batch\-Update\-Data.\-php.
+
+\hypertarget{admin_batch_update_data_8php_abe4cc9788f52e49485473dc699537388}{\index{admin\-Batch\-Update\-Data.\-php@{admin\-Batch\-Update\-Data.\-php}!try@{try}}
+\index{try@{try}!adminBatchUpdateData.php@{admin\-Batch\-Update\-Data.\-php}}
+\subsubsection[{try}]{\setlength{\rightskip}{0pt plus 5cm}try}}\label{admin_batch_update_data_8php_abe4cc9788f52e49485473dc699537388}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+\{
+        \hyperlink{admin_batch_update_data_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{$conn}->beginTransaction()
+\end{DoxyCode}
+
+
+Definition at line 63 of file admin\-Batch\-Update\-Data.\-php.
+

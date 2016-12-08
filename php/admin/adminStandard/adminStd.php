@@ -84,13 +84,18 @@ html_footer("../../../");
 	$('#analyte-wrapper').hide();
 	var standardID ="";
 
-
+/**
+ * Action when document is ready
+ */
 $(document).ready(function() {
 
 	$('#adminPanel').removeClass('submenu');
 	$('#adminPanel').addClass('submenu open');
 	setup_datatable();
 
+	/**
+	 * Listener on standard datatable
+	 */
 	$('#standard').on('click', 'tr', function () {
 		standardID = $('td', this).eq(0).text();
 		if(standardID === "") {
@@ -101,6 +106,9 @@ $(document).ready(function() {
 		}
 	});
 
+	/**
+	 * Listener on standard button table 
+	 */
 	$('#standard tbody').on('click', 'button', function(event) {
 		var table = $('#standard').DataTable();
 		if(this.id == "editButton"){
@@ -113,15 +121,25 @@ $(document).ready(function() {
 		}
 	});
 
+	/**
+	 * Listenr on createStandard for standard creation...
+	 */
 	$('#createStandard').on('click', function() {
 		var data="";
 		construct_create_modal(data, "create");
 	});
 
+	/**
+	 * Listener for 
+	 */
 	$('#createStd').on('click', function() {
 		construct_addStd_modal();
 	});
 
+
+	/**
+	 * Listener of analyte addition to a standard
+	 */
 	$('#addAnalyteButton').on('click', function() {
 		construct_addAnalyte_modal(standardID);
 	});
@@ -198,7 +216,7 @@ $(document).on("click", "#AnalyteSubmit", function(){
 });
 
 /**
- * Listener for remove enzyme button
+ * Listener to remove enzyme 
  */
 $(document).on("click", "#deleteSubmit", function(){
 	var stdEzIdToRemove = $("#stdEzIdToRemove").val();
@@ -512,8 +530,8 @@ $(document).on("click", "#createStdSubmit", function(){
 		}
 	});
 
-	/**
- * Print standard datatble
+/**
+ * Set standard datatable up
  *
  * @method     setup_datatable
  */
@@ -564,7 +582,7 @@ function setup_datatable(){
  * Reload enzyme datatable
  *
  * @method     refresh_enzyme
- * @param      {<type>}  standardID  { description }
+ * @param      {<type>}  standardID  { id of the standard selected }
  */
 function refresh_enzyme(standardID) {
 	$('#ezTable').dataTable().fnDestroy();
@@ -609,7 +627,7 @@ function refresh_enzyme(standardID) {
  * Modal for analyte adding
  *
  * @method     construct_addAnalyte_modal
- * @param      {<type>}  standardID  { description }
+ * @param      {<type>}  standardID  { id of the selected standard }
  */
 function construct_addAnalyte_modal(standardID){
 	var modal = ''+
@@ -709,8 +727,8 @@ function construct_addAnalyte_modal(standardID){
  * Modal for standard deleting
  *
  * @method     construct_delete_modal_std
- * @param      {string}  data    { description }
- * @param      {string}  action  { description }
+ * @param      {string}  data    { data of the standard selected id and name }
+ * @param      {string}  action  { action associated to the submit button (create delete edit) }
  */
 function construct_delete_modal_std(data, action){
 	var modal ='<div class="modal-dialog">'+
@@ -737,8 +755,8 @@ function construct_delete_modal_std(data, action){
  * Create modal for analyte deletion, on the fly
  *
  * @method     construct_delete_modal
- * @param      {string}  data    { description }
- * @param      {<type>}  action  { description }
+ * @param      {string}  data    { data of the selected standard id and name }
+ * @param      {<type>}  action  { action associated to the submit button (create delete edit) }
  */
 function construct_delete_modal_analyte(data, action){
 	var modal =
@@ -764,8 +782,8 @@ function construct_delete_modal_analyte(data, action){
  * Modal for analyte edition
  *
  * @method     construct_edit_modal_analyte
- * @param      {string}  data    { description }
- * @param      {<type>}  action  { description }
+ * @param      {string}  data    { data of the selected standard }
+ * @param      {<type>}  action  { action associated to the submit button (create delete edit) }
  */
 function construct_edit_modal_analyte(data, action){
 	var modal ='<div class="modal-dialog">'+
@@ -863,8 +881,8 @@ function construct_edit_modal_analyte(data, action){
  * Modal for standard edition
  *
  * @method     construct_edit_modal_std
- * @param      {string}  data    { description }
- * @param      {string}  action  { description }
+ * @param      {string}  data    { data of the selected standard }
+ * @param      {string}  action  { action associated to the submit button (create delete edit) }
  */
 function construct_edit_modal_std(data, action){
 	var modal ='<div class="modal-dialog">'+
@@ -930,8 +948,8 @@ function construct_edit_modal_std(data, action){
  * Modal for standard creation
  *
  * @method     construct_create_modal
- * @param      {number}  data    { description }
- * @param      {string}  action  { description }
+ * @param      {number}  data    { useless }
+ * @param      {string}  action  { action associated to the submit button (create delete edit) }
  */
 function construct_create_modal(data, action){	
 	var modal =''+

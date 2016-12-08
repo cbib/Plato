@@ -1,0 +1,62 @@
+.TH "php/batches/batches_get_batch_layout.php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/batches/batches_get_batch_layout.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$conn\fP = \fBget_connexion\fP()"
+.br
+.ti -1c
+.RI "\fB$batchID\fP = $_POST['\fBbatchID\fP']"
+.br
+.ti -1c
+.RI "\fB$query\fP"
+.br
+.ti -1c
+.RI "\fB$req\fP = $conn->query($query)->fetchColumn()"
+.br
+.ti -1c
+.RI "\fB$output\fP = $req"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$\fBbatchID\fP = $_POST['\fBbatchID\fP']"
+
+.PP
+Definition at line 5 of file batches_get_batch_layout\&.php\&.
+.SS "$conn = \fBget_connexion\fP()"
+
+.PP
+Definition at line 4 of file batches_get_batch_layout\&.php\&.
+.SS "$output = $req"
+
+.PP
+Definition at line 16 of file batches_get_batch_layout\&.php\&.
+.SS "$query"
+\fBInitial value:\fP
+.PP
+.nf
+='
+    SELECT
+    bat_layout
+    FROM 
+    batch
+    WHERE 
+    batch\&.bat_id = '\&.$batchID\&.';'
+.fi
+.PP
+Definition at line 7 of file batches_get_batch_layout\&.php\&.
+.SS "$req = $conn->query($query)->fetchColumn()"
+
+.PP
+Definition at line 15 of file batches_get_batch_layout\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

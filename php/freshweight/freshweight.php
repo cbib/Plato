@@ -300,7 +300,7 @@ function hideWaitModal(){
  * Control that data pasted in addrows are acceptables
  *
  * @method     controlAddData
- * @param      {<type>}  tableID  { description }
+ * @param      {<type>}  tableID  { id of the rable to control }
  */
 function controlAddData(tableID){
 	var table=document.getElementById(tableID);
@@ -405,7 +405,7 @@ function controlAddData(tableID){
  * return an array with all table content
  *
  * @method     get_table_content
- * @param      {<type>}  tableID  { description }
+ * @param      {<type>}  tableID  { id of the table to save }
  */
 function save_addTable_content(tableID){
 	var table=document.getElementById(tableID);
@@ -471,11 +471,11 @@ function save_addTable_content(tableID){
  * delete a row
  *
  * @method     delete_row
- * @param      {<type>}  expID   { description }
- * @param      {<type>}  table   { description }
- * @param      {<type>}  oTable  { description }
- * @param      {<type>}  rowID   { description }
- * @param      {string}  action  { description }
+ * @param      {<type>}  expID   { experiment ID }
+ * @param      {<type>}  table   { table to delete }
+ * @param      {<type>}  oTable  { datatable object }
+ * @param      {<type>}  rowID   { line id }
+ * @param      {string}  action  { action to do }
  */
 function delete_row(expID, table, oTable, rowID, action){
 	var sampleID = table.cell(rowID, 0).data();
@@ -518,9 +518,9 @@ function delete_row(expID, table, oTable, rowID, action){
  * save the value of a state in case of the edition fails
  *
  * @method     save_row_state
- * @param      {<type>}    expID   { description }
- * @param      {Function}  table   { description }
- * @param      {<type>}    rowID   { description }
+ * @param      {<type>}    expID   { experiment ID }
+ * @param      {Function}  table   { table object }
+ * @param      {<type>}    rowID   { line ID }
  */
 function save_row_state(table, rowID){
 	var cell = table.cell(rowID, 1);
@@ -539,7 +539,7 @@ function save_row_state(table, rowID){
  * setup freshweight datatables for an experiment
  *
  * @method     setup_datatable
- * @param      {<type>}  expID   { description }
+ * @param      {<type>}  expID   { Experiment ID }
  */
 function setup_freshweight_datatable(expID){
 	showWaitModal();
@@ -630,9 +630,9 @@ function setup_experiment_datatable(){
  * Make a row editable in a datatable using table object and cell datatbles properties
  *
  * @method     make_row_editable
- * @param      {<type>}             expID   { description }
- * @param      {(Function|string)}  table   { description }
- * @param      {<type>}             rowID   { description }
+ * @param      {<type>}             expID   { experiment id }
+ * @param      {(Function|string)}  table   { table object to edit }
+ * @param      {<type>}             rowID   { line to edit in the table }
  */
 function make_row_editable(expID, table, rowID){
 	var cell = table.cell(rowID, 1);
@@ -655,12 +655,12 @@ function make_row_editable(expID, table, rowID){
  * make a row uneditable
  *
  * @method     make_row_uneditable
- * @param      {Function}  table      { description }
- * @param      {<type>}    rowID      { description }
- * @param      {<type>}    sampleNB   { description }
- * @param      {<type>}    aliquotNB  { description }
- * @param      {<type>}    value      { description }
- * @param      {<type>}    state      { description }
+ * @param      {Function}  table      { table to edit }
+ * @param      {<type>}    rowID      { line to edit }
+ * @param      {<type>}    sampleNB   { sample Number  }
+ * @param      {<type>}    aliquotNB  { Aliquot number }
+ * @param      {<type>}    value      { value }
+ * @param      {<type>}    state      { state  }
  */
 function make_row_uneditable(table, rowID, values){
 	var cell = table.cell(rowID, 1);
@@ -886,8 +886,8 @@ function create_addrows_modal() {
  * remove useless strings (retour chariot a la fin de ligne, equivalent dechomp en perl)
  *
  * @method     chomp
- * @param      {string}  raw_text  { description }
- * @return     {string}  { description_of_the_return_value }
+ * @param      {string}  raw_text  { text to chomp }
+ * @return     {string}  { text trimed from end of line unix or windows }
  */
 function chomp(raw_text){
   return raw_text.replace(/(\n|\r)+$/, '');
@@ -908,7 +908,7 @@ function chomp_array(array){
  * display data on row tables when past.
  *
  * @method     dispatchAddRowsDatas
- * @param      {(number|string)}  data    { description }
+ * @param      {(number|string)}  data    { data to display }
  */
 function dispatchAddRowsDatas(data) {
 	//data = data.trim();

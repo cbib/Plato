@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d7f/control_batch_name_and_number2_8php">
+    <title>controlBatchNameAndNumber2.php File Reference</title>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d7f/control_batch_name_and_number2_8php_1aa8a5a87b9c1a6a0819b88447cbe41877">$conn</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d7f/control_batch_name_and_number2_8php_1a73004ce9cd673c1bfafd1dc351134797">$output</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d7f/control_batch_name_and_number2_8php_1a58391ea75f2d29d5d708d7050b641c33">$status</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d7f/control_batch_name_and_number2_8php_1a0f298096f322952a72a50f98a74c7b60">$value</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d7f/control_batch_name_and_number2_8php_1ae0139f42f02473374ecb453f87c66534">$batchName</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d7f/control_batch_name_and_number2_8php_1a5efc7692d3e718869a2ba3a55876129c">$batchNumber</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d7f/control_batch_name_and_number2_8php_1af59a5f7cd609e592c41dc3643efd3c98">$query</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d7f/control_batch_name_and_number2_8php_1a63a7a283ea5dee8af1e2d5a3435bf370">$req</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d7f/control_batch_name_and_number2_8php_1acd0903a7a32e8397aefd0ce8b7dbd1ab">$response_array</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d7f/control_batch_name_and_number2_8php_1abbcbb7142adc1824bb5531445d2de0f0">$response_array</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /var/www/html/plato/php/batches/controlBatchNameAndNumber2.php</para>
+    </simplesect>
+</section>

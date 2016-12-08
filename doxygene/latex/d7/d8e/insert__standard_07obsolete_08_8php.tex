@@ -1,0 +1,135 @@
+\hypertarget{insert__standard_07obsolete_08_8php}{\section{php/standard/obsolete files/insert\-\_\-standard(obsolete).php File Reference}
+\label{insert__standard_07obsolete_08_8php}\index{php/standard/obsolete files/insert\-\_\-standard(obsolete).\-php@{php/standard/obsolete files/insert\-\_\-standard(obsolete).\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{insert__standard_07obsolete_08_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{insert__standard_07obsolete_08_8php_a04bd6b914feb54eeeb053d3f690fea50}{\$std\-Name} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{insert__standard_07obsolete_08_8php_a8964a2785066a92d7c0b11ff5a0261ea}{\$std\-Genius} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{insert__standard_07obsolete_08_8php_a1d77174f9d4320006ec140e643f95324}{\$std\-Species} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{insert__standard_07obsolete_08_8php_a53b4aa93fde2c9f30c1eecf48472c395}{\$std\-Nature} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{insert__standard_07obsolete_08_8php_a26327dd0b8e0254d4910cf94160bb302}{\$std\-Genotype} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{insert__standard_07obsolete_08_8php_ab6c56dc36eabf5961ac9ee1de239c3a4}{\$std\-Owner} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{insert__standard_07obsolete_08_8php_a57ad1d0043a566efde8a4fb592d52b18}{\$std\-Comment} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{insert__standard_07obsolete_08_8php_a58391ea75f2d29d5d708d7050b641c33}{\$status} =\char`\"{}success\char`\"{}
+\item 
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'std\-Name'\mbox{]})) \\*
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'std\-Genius'\mbox{]})) \\*
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'std\-Species'\mbox{]})) \\*
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'std\-Genotype'\mbox{]})) \\*
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'std\-Nature'\mbox{]})) \\*
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'std\-Owner'\mbox{]})) \\*
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'std\-Comment'\mbox{]})) \hyperlink{insert__standard_07obsolete_08_8php_ad275b7c787a22ccb6a1c69a37d26bc0e}{\$query}
+\item 
+\hyperlink{insert__standard_07obsolete_08_8php_abe4cc9788f52e49485473dc699537388}{try}
+\item 
+catch(Exception \$e) \hyperlink{insert__standard_07obsolete_08_8php_a8452fb8131316637a04e25f5fde066d9}{\$response\-\_\-array} \mbox{[}'status'\mbox{]} =\$status
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{insert__standard_07obsolete_08_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{insert\-\_\-standard(obsolete).\-php@{insert\-\_\-standard(obsolete).\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!insert_standard(obsolete).php@{insert\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{insert__standard_07obsolete_08_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 4 of file insert\-\_\-standard(obsolete).\-php.
+
+\hypertarget{insert__standard_07obsolete_08_8php_ad275b7c787a22ccb6a1c69a37d26bc0e}{\index{insert\-\_\-standard(obsolete).\-php@{insert\-\_\-standard(obsolete).\-php}!\$query@{\$query}}
+\index{\$query@{\$query}!insert_standard(obsolete).php@{insert\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$query}]{\setlength{\rightskip}{0pt plus 5cm}if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'std\-Name'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'std\-Genius'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'std\-Species'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'std\-Genotype'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'std\-Nature'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'std\-Owner'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'std\-Comment'\mbox{]})) \$query}}\label{insert__standard_07obsolete_08_8php_ad275b7c787a22ccb6a1c69a37d26bc0e}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+= \textcolor{stringliteral}{"INSERT INTO `standard`(`std\_id`, `std\_name`, `std\_genius`, `std\_species`, `std\_genotype`, `std\_nature`,
+       `std\_owner`, `std\_comment`) }
+\textcolor{stringliteral}{        VALUES ('', '$stdName', '$stdGenius', '$stdSpecies', '$stdGenotype', '$stdNature', '$stdOwner',
+       '$stdComment');"}
+\end{DoxyCode}
+
+
+Definition at line 47 of file insert\-\_\-standard(obsolete).\-php.
+
+\hypertarget{insert__standard_07obsolete_08_8php_a8452fb8131316637a04e25f5fde066d9}{\index{insert\-\_\-standard(obsolete).\-php@{insert\-\_\-standard(obsolete).\-php}!\$response\-\_\-array@{\$response\-\_\-array}}
+\index{\$response\-\_\-array@{\$response\-\_\-array}!insert_standard(obsolete).php@{insert\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$response\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}catch (Exception \$e) \$response\-\_\-array\mbox{[}'status'\mbox{]} =\$status}}\label{insert__standard_07obsolete_08_8php_a8452fb8131316637a04e25f5fde066d9}
+
+
+Definition at line 59 of file insert\-\_\-standard(obsolete).\-php.
+
+\hypertarget{insert__standard_07obsolete_08_8php_a58391ea75f2d29d5d708d7050b641c33}{\index{insert\-\_\-standard(obsolete).\-php@{insert\-\_\-standard(obsolete).\-php}!\$status@{\$status}}
+\index{\$status@{\$status}!insert_standard(obsolete).php@{insert\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$status}]{\setlength{\rightskip}{0pt plus 5cm}\$status =\char`\"{}success\char`\"{}}}\label{insert__standard_07obsolete_08_8php_a58391ea75f2d29d5d708d7050b641c33}
+
+
+Definition at line 13 of file insert\-\_\-standard(obsolete).\-php.
+
+\hypertarget{insert__standard_07obsolete_08_8php_a57ad1d0043a566efde8a4fb592d52b18}{\index{insert\-\_\-standard(obsolete).\-php@{insert\-\_\-standard(obsolete).\-php}!\$std\-Comment@{\$std\-Comment}}
+\index{\$std\-Comment@{\$std\-Comment}!insert_standard(obsolete).php@{insert\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$std\-Comment}]{\setlength{\rightskip}{0pt plus 5cm}\$std\-Comment =\char`\"{}\char`\"{}}}\label{insert__standard_07obsolete_08_8php_a57ad1d0043a566efde8a4fb592d52b18}
+
+
+Definition at line 12 of file insert\-\_\-standard(obsolete).\-php.
+
+\hypertarget{insert__standard_07obsolete_08_8php_a8964a2785066a92d7c0b11ff5a0261ea}{\index{insert\-\_\-standard(obsolete).\-php@{insert\-\_\-standard(obsolete).\-php}!\$std\-Genius@{\$std\-Genius}}
+\index{\$std\-Genius@{\$std\-Genius}!insert_standard(obsolete).php@{insert\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$std\-Genius}]{\setlength{\rightskip}{0pt plus 5cm}\$std\-Genius =\char`\"{}\char`\"{}}}\label{insert__standard_07obsolete_08_8php_a8964a2785066a92d7c0b11ff5a0261ea}
+
+
+Definition at line 7 of file insert\-\_\-standard(obsolete).\-php.
+
+\hypertarget{insert__standard_07obsolete_08_8php_a26327dd0b8e0254d4910cf94160bb302}{\index{insert\-\_\-standard(obsolete).\-php@{insert\-\_\-standard(obsolete).\-php}!\$std\-Genotype@{\$std\-Genotype}}
+\index{\$std\-Genotype@{\$std\-Genotype}!insert_standard(obsolete).php@{insert\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$std\-Genotype}]{\setlength{\rightskip}{0pt plus 5cm}\$std\-Genotype =\char`\"{}\char`\"{}}}\label{insert__standard_07obsolete_08_8php_a26327dd0b8e0254d4910cf94160bb302}
+
+
+Definition at line 10 of file insert\-\_\-standard(obsolete).\-php.
+
+\hypertarget{insert__standard_07obsolete_08_8php_a04bd6b914feb54eeeb053d3f690fea50}{\index{insert\-\_\-standard(obsolete).\-php@{insert\-\_\-standard(obsolete).\-php}!\$std\-Name@{\$std\-Name}}
+\index{\$std\-Name@{\$std\-Name}!insert_standard(obsolete).php@{insert\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$std\-Name}]{\setlength{\rightskip}{0pt plus 5cm}\$std\-Name =\char`\"{}\char`\"{}}}\label{insert__standard_07obsolete_08_8php_a04bd6b914feb54eeeb053d3f690fea50}
+
+
+Definition at line 6 of file insert\-\_\-standard(obsolete).\-php.
+
+\hypertarget{insert__standard_07obsolete_08_8php_a53b4aa93fde2c9f30c1eecf48472c395}{\index{insert\-\_\-standard(obsolete).\-php@{insert\-\_\-standard(obsolete).\-php}!\$std\-Nature@{\$std\-Nature}}
+\index{\$std\-Nature@{\$std\-Nature}!insert_standard(obsolete).php@{insert\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$std\-Nature}]{\setlength{\rightskip}{0pt plus 5cm}\$std\-Nature =\char`\"{}\char`\"{}}}\label{insert__standard_07obsolete_08_8php_a53b4aa93fde2c9f30c1eecf48472c395}
+
+
+Definition at line 9 of file insert\-\_\-standard(obsolete).\-php.
+
+\hypertarget{insert__standard_07obsolete_08_8php_ab6c56dc36eabf5961ac9ee1de239c3a4}{\index{insert\-\_\-standard(obsolete).\-php@{insert\-\_\-standard(obsolete).\-php}!\$std\-Owner@{\$std\-Owner}}
+\index{\$std\-Owner@{\$std\-Owner}!insert_standard(obsolete).php@{insert\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$std\-Owner}]{\setlength{\rightskip}{0pt plus 5cm}\$std\-Owner =\char`\"{}\char`\"{}}}\label{insert__standard_07obsolete_08_8php_ab6c56dc36eabf5961ac9ee1de239c3a4}
+
+
+Definition at line 11 of file insert\-\_\-standard(obsolete).\-php.
+
+\hypertarget{insert__standard_07obsolete_08_8php_a1d77174f9d4320006ec140e643f95324}{\index{insert\-\_\-standard(obsolete).\-php@{insert\-\_\-standard(obsolete).\-php}!\$std\-Species@{\$std\-Species}}
+\index{\$std\-Species@{\$std\-Species}!insert_standard(obsolete).php@{insert\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$std\-Species}]{\setlength{\rightskip}{0pt plus 5cm}\$std\-Species =\char`\"{}\char`\"{}}}\label{insert__standard_07obsolete_08_8php_a1d77174f9d4320006ec140e643f95324}
+
+
+Definition at line 8 of file insert\-\_\-standard(obsolete).\-php.
+
+\hypertarget{insert__standard_07obsolete_08_8php_abe4cc9788f52e49485473dc699537388}{\index{insert\-\_\-standard(obsolete).\-php@{insert\-\_\-standard(obsolete).\-php}!try@{try}}
+\index{try@{try}!insert_standard(obsolete).php@{insert\-\_\-standard(obsolete).\-php}}
+\subsubsection[{try}]{\setlength{\rightskip}{0pt plus 5cm}try}}\label{insert__standard_07obsolete_08_8php_abe4cc9788f52e49485473dc699537388}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+\{
+        \hyperlink{admin_batch_update_data_8php_afa9126f9664959c02795be300a135f93}{$sth}=\hyperlink{insert__standard_07obsolete_08_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{$conn}->prepare(\hyperlink{insert__standard_07obsolete_08_8php_ad275b7c787a22ccb6a1c69a37d26bc0e}{$query})
+\end{DoxyCode}
+
+
+Definition at line 49 of file insert\-\_\-standard(obsolete).\-php.
+

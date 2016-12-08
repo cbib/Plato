@@ -1,0 +1,91 @@
+\hypertarget{standard_2enzyme__from__standard_8php}{\section{php/standard/enzyme\-\_\-from\-\_\-standard.php File Reference}
+\label{standard_2enzyme__from__standard_8php}\index{php/standard/enzyme\-\_\-from\-\_\-standard.\-php@{php/standard/enzyme\-\_\-from\-\_\-standard.\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{standard_2enzyme__from__standard_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{standard_2enzyme__from__standard_8php_a0c541a369e4a0434108a7d145751bb23}{\$standard\-I\-D} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'standard\-I\-D'\mbox{]}
+\item 
+\hyperlink{standard_2enzyme__from__standard_8php_af59a5f7cd609e592c41dc3643efd3c98}{\$query}
+\item 
+\hyperlink{standard_2enzyme__from__standard_8php_afa9126f9664959c02795be300a135f93}{\$sth} =\$conn-\/$>$prepare(\$query)
+\item 
+\hyperlink{standard_2enzyme__from__standard_8php_af789423037bbc89dc7c850e761177570}{\$count} = \$sth-\/$>$row\-Count()
+\item 
+\hyperlink{standard_2enzyme__from__standard_8php_ace2ec39e7df3899fa8df9640ec274b03}{\$rows} =\$sth-\/$>$fetch\-All()
+\item 
+\hyperlink{standard_2enzyme__from__standard_8php_a73004ce9cd673c1bfafd1dc351134797}{\$output}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{standard_2enzyme__from__standard_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{standard/enzyme\-\_\-from\-\_\-standard.\-php@{standard/enzyme\-\_\-from\-\_\-standard.\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!standard/enzyme_from_standard.php@{standard/enzyme\-\_\-from\-\_\-standard.\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{standard_2enzyme__from__standard_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 4 of file enzyme\-\_\-from\-\_\-standard.\-php.
+
+\hypertarget{standard_2enzyme__from__standard_8php_af789423037bbc89dc7c850e761177570}{\index{standard/enzyme\-\_\-from\-\_\-standard.\-php@{standard/enzyme\-\_\-from\-\_\-standard.\-php}!\$count@{\$count}}
+\index{\$count@{\$count}!standard/enzyme_from_standard.php@{standard/enzyme\-\_\-from\-\_\-standard.\-php}}
+\subsubsection[{\$count}]{\setlength{\rightskip}{0pt plus 5cm}\$count = \$sth-\/$>$row\-Count()}}\label{standard_2enzyme__from__standard_8php_af789423037bbc89dc7c850e761177570}
+
+
+Definition at line 23 of file enzyme\-\_\-from\-\_\-standard.\-php.
+
+\hypertarget{standard_2enzyme__from__standard_8php_a73004ce9cd673c1bfafd1dc351134797}{\index{standard/enzyme\-\_\-from\-\_\-standard.\-php@{standard/enzyme\-\_\-from\-\_\-standard.\-php}!\$output@{\$output}}
+\index{\$output@{\$output}!standard/enzyme_from_standard.php@{standard/enzyme\-\_\-from\-\_\-standard.\-php}}
+\subsubsection[{\$output}]{\setlength{\rightskip}{0pt plus 5cm}\$output}}\label{standard_2enzyme__from__standard_8php_a73004ce9cd673c1bfafd1dc351134797}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+= array(
+        \textcolor{stringliteral}{"iTotalRecords"} => \hyperlink{admin_2admin_standard_2enzyme__from__standard_8php_af789423037bbc89dc7c850e761177570}{$count},
+        \textcolor{stringliteral}{"iTotalDisplayRecords"} => \hyperlink{admin_2admin_standard_2enzyme__from__standard_8php_af789423037bbc89dc7c850e761177570}{$count},
+        \textcolor{stringliteral}{"aaData"} => array()
+    )
+\end{DoxyCode}
+Format query result Datatables understands this format to create automatically a new table. 
+
+Definition at line 30 of file enzyme\-\_\-from\-\_\-standard.\-php.
+
+\hypertarget{standard_2enzyme__from__standard_8php_af59a5f7cd609e592c41dc3643efd3c98}{\index{standard/enzyme\-\_\-from\-\_\-standard.\-php@{standard/enzyme\-\_\-from\-\_\-standard.\-php}!\$query@{\$query}}
+\index{\$query@{\$query}!standard/enzyme_from_standard.php@{standard/enzyme\-\_\-from\-\_\-standard.\-php}}
+\subsubsection[{\$query}]{\setlength{\rightskip}{0pt plus 5cm}\$query}}\label{standard_2enzyme__from__standard_8php_af59a5f7cd609e592c41dc3643efd3c98}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+= \textcolor{stringliteral}{'SELECT enzyme.ez\_analyte, enzyme.ez\_code, enzyme.ez\_slope,
+       REPLACE(REPLACE(enzyme.ez\_is\_enzyme,1,"Enzyme"),0,"Metabolite") AS ez\_is\_enzyme, standard\_enzyme.std\_ez\_value, unit.unit\_name,
+       standard\_enzyme.std\_ez\_dilution}
+\textcolor{stringliteral}{    FROM enzyme, standard\_enzyme, unit}
+\textcolor{stringliteral}{    WHERE standard\_enzyme.std\_ez\_standard\_FK = '}.$standardID.\textcolor{stringliteral}{' AND }
+\textcolor{stringliteral}{    enzyme.ez\_id = standard\_enzyme.std\_ez\_enzyme\_FK AND}
+\textcolor{stringliteral}{    unit.unit\_id = standard\_enzyme.std\_ez\_unit\_FK}
+\textcolor{stringliteral}{    ORDER BY enzyme.ez\_analyte;'}
+\end{DoxyCode}
+Select all analytes linked to a standard, even if no rawdata are associated to this analytes In the db 1 means Enzyme; 0 means Metabolite 
+
+Definition at line 13 of file enzyme\-\_\-from\-\_\-standard.\-php.
+
+\hypertarget{standard_2enzyme__from__standard_8php_ace2ec39e7df3899fa8df9640ec274b03}{\index{standard/enzyme\-\_\-from\-\_\-standard.\-php@{standard/enzyme\-\_\-from\-\_\-standard.\-php}!\$rows@{\$rows}}
+\index{\$rows@{\$rows}!standard/enzyme_from_standard.php@{standard/enzyme\-\_\-from\-\_\-standard.\-php}}
+\subsubsection[{\$rows}]{\setlength{\rightskip}{0pt plus 5cm}\$rows =\$sth-\/$>$fetch\-All()}}\label{standard_2enzyme__from__standard_8php_ace2ec39e7df3899fa8df9640ec274b03}
+
+
+Definition at line 24 of file enzyme\-\_\-from\-\_\-standard.\-php.
+
+\hypertarget{standard_2enzyme__from__standard_8php_a0c541a369e4a0434108a7d145751bb23}{\index{standard/enzyme\-\_\-from\-\_\-standard.\-php@{standard/enzyme\-\_\-from\-\_\-standard.\-php}!\$standard\-I\-D@{\$standard\-I\-D}}
+\index{\$standard\-I\-D@{\$standard\-I\-D}!standard/enzyme_from_standard.php@{standard/enzyme\-\_\-from\-\_\-standard.\-php}}
+\subsubsection[{\$standard\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\$standard\-I\-D = \$\-\_\-\-P\-O\-S\-T\mbox{[}'standard\-I\-D'\mbox{]}}}\label{standard_2enzyme__from__standard_8php_a0c541a369e4a0434108a7d145751bb23}
+
+
+Definition at line 7 of file enzyme\-\_\-from\-\_\-standard.\-php.
+
+\hypertarget{standard_2enzyme__from__standard_8php_afa9126f9664959c02795be300a135f93}{\index{standard/enzyme\-\_\-from\-\_\-standard.\-php@{standard/enzyme\-\_\-from\-\_\-standard.\-php}!\$sth@{\$sth}}
+\index{\$sth@{\$sth}!standard/enzyme_from_standard.php@{standard/enzyme\-\_\-from\-\_\-standard.\-php}}
+\subsubsection[{\$sth}]{\setlength{\rightskip}{0pt plus 5cm}\$sth =\$conn-\/$>$prepare(\$query)}}\label{standard_2enzyme__from__standard_8php_afa9126f9664959c02795be300a135f93}
+
+
+Definition at line 20 of file enzyme\-\_\-from\-\_\-standard.\-php.
+

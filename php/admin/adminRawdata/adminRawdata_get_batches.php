@@ -3,6 +3,7 @@
 	include '../../functions/php_functions.php';
 	$conn = get_connexion();
 
+	// Get all the batches associated to an experiment
 
 	$expID = $_POST['expID'];
 	//error_log($expID);

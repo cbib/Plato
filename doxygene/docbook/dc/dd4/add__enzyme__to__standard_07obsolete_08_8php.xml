@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/dd4/add__enzyme__to__standard_07obsolete_08_8php">
+    <title>add_enzyme_to_standard(obsolete).php File Reference</title>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/dd4/add__enzyme__to__standard_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877">$conn</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/dd4/add__enzyme__to__standard_07obsolete_08_8php_1ae5b99d173d7360be6556675a80036269">$selectAnalyte</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/dd4/add__enzyme__to__standard_07obsolete_08_8php_1a427fdcd2d971a5567fb4d111d8de5f54">$selectUnit</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/dd4/add__enzyme__to__standard_07obsolete_08_8php_1aa0668b8f5734a61bcc5107303a90615a">$analyteValue</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/dd4/add__enzyme__to__standard_07obsolete_08_8php_1a0c541a369e4a0434108a7d145751bb23">$standardID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/dd4/add__enzyme__to__standard_07obsolete_08_8php_1a58391ea75f2d29d5d708d7050b641c33">$status</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>if(isset($_POST[&apos;selectAnalyte&apos;])) if(isset($_POST[&apos;selectUnit&apos;])) if(isset($_POST[&apos;analyteValue&apos;])) if(isset($_POST[&apos;standardID&apos;])) <link linkend="dc/dd4/add__enzyme__to__standard_07obsolete_08_8php_1af80a389c803b49e5cf248f32c14147c9">$query</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/dd4/add__enzyme__to__standard_07obsolete_08_8php_1abe4cc9788f52e49485473dc699537388">try</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/dd4/add__enzyme__to__standard_07obsolete_08_8php_1a63a7a283ea5dee8af1e2d5a3435bf370">$req</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>catch(Exception $e) <link linkend="dc/dd4/add__enzyme__to__standard_07obsolete_08_8php_1a8452fb8131316637a04e25f5fde066d9">$response_array</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /var/www/html/plato/php/standard/obsolete files/add_enzyme_to_standard(obsolete).php</para>
+    </simplesect>
+</section>

@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="d8/d0c/batches__table__single_8php" kind="file">
+    <compoundname>batches_table_single.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="d8/d0c/batches__table__single_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$conn</definition>
+        <argsstring></argsstring>
+        <name>$conn</name>
+        <initializer>= <ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/batches/batches_table_single.php" line="4" column="1" bodyfile="/var/www/html/plato/php/batches/batches_table_single.php" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d0c/batches__table__single_8php_1ae384d32e62e85e587cd27bf249ed3db3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$expID</definition>
+        <argsstring></argsstring>
+        <name>$expID</name>
+        <initializer>= $_POST[&apos;<ref refid="d8/d02/admin_rawdata_8php_1a888d53a6517f4272b5982c3ca9d16e8a" kindref="member">expID</ref>&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/batches/batches_table_single.php" line="7" column="1" bodyfile="/var/www/html/plato/php/batches/batches_table_single.php" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d0c/batches__table__single_8php_1af59a5f7cd609e592c41dc3643efd3c98" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$query</definition>
+        <argsstring></argsstring>
+        <name>$query</name>
+        <initializer>=&apos;
+		SELECT  distinct batch.bat_id AS ID, CONCAT(batch.bat_number, &quot;	-	&quot;, batch.bat_name, &quot;	-	&quot;, batch.bat_date) AS numbname
+		FROM batch_data, batch
+		WHERE batch_data.bat_data_experiment_FK = &apos;.$expID.&apos; AND
+		batch.bat_id = batch_data.bat_data_batch_FK
+		ORDER BY batch.bat_number;
+	&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/batches/batches_table_single.php" line="8" column="1" bodyfile="/var/www/html/plato/php/batches/batches_table_single.php" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d0c/batches__table__single_8php_1afa9126f9664959c02795be300a135f93" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$sth</definition>
+        <argsstring></argsstring>
+        <name>$sth</name>
+        <initializer>=$conn-&gt;prepare($query)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/batches/batches_table_single.php" line="16" column="1" bodyfile="/var/www/html/plato/php/batches/batches_table_single.php" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d0c/batches__table__single_8php_1ace2ec39e7df3899fa8df9640ec274b03" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$rows</definition>
+        <argsstring></argsstring>
+        <name>$rows</name>
+        <initializer>=$sth-&gt;fetchAll()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/batches/batches_table_single.php" line="19" column="1" bodyfile="/var/www/html/plato/php/batches/batches_table_single.php" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d0c/batches__table__single_8php_1a73004ce9cd673c1bfafd1dc351134797" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$output</definition>
+        <argsstring></argsstring>
+        <name>$output</name>
+        <initializer>= array()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/batches/batches_table_single.php" line="21" column="1" bodyfile="/var/www/html/plato/php/batches/batches_table_single.php" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/><sp/><sp/>require(</highlight><highlight class="stringliteral">&apos;../functions/check_login.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/>include<sp/></highlight><highlight class="stringliteral">&apos;../functions/php_functions.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="4" refid="d8/d0c/batches__table__single_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d0c/batches__table__single_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref><sp/>=<sp/><ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>();</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="d8/d0c/batches__table__single_8php_1ae384d32e62e85e587cd27bf249ed3db3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d0c/batches__table__single_8php_1ae384d32e62e85e587cd27bf249ed3db3" kindref="member">$expID</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;expID&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="8" refid="d8/d0c/batches__table__single_8php_1af59a5f7cd609e592c41dc3643efd3c98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d0c/batches__table__single_8php_1af59a5f7cd609e592c41dc3643efd3c98" kindref="member">$query</ref><sp/>=</highlight><highlight class="stringliteral">&apos;</highlight></codeline>
+<codeline lineno="9"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SELECT<sp/><sp/>distinct<sp/>batch.bat_id<sp/>AS<sp/>ID,<sp/>CONCAT(batch.bat_number,<sp/>&quot;<sp/>-<sp/><sp/><sp/>&quot;,<sp/>batch.bat_name,<sp/>&quot;<sp/><sp/><sp/><sp/>-<sp/><sp/><sp/>&quot;,<sp/>batch.bat_date)<sp/>AS<sp/>numbname</highlight></codeline>
+<codeline lineno="10"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FROM<sp/>batch_data,<sp/>batch</highlight></codeline>
+<codeline lineno="11"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WHERE<sp/>batch_data.bat_data_experiment_FK<sp/>=<sp/>&apos;</highlight><highlight class="normal">.$expID.</highlight><highlight class="stringliteral">&apos;<sp/>AND</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>batch.bat_id<sp/>=<sp/>batch_data.bat_data_batch_FK</highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ORDER<sp/>BY<sp/>batch.bat_number;</highlight></codeline>
+<codeline lineno="14"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="16" refid="d8/d0c/batches__table__single_8php_1afa9126f9664959c02795be300a135f93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d0c/batches__table__single_8php_1afa9126f9664959c02795be300a135f93" kindref="member">$sth</ref>=<ref refid="d8/d0c/batches__table__single_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;prepare(<ref refid="d8/d0c/batches__table__single_8php_1af59a5f7cd609e592c41dc3643efd3c98" kindref="member">$query</ref>);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d0c/batches__table__single_8php_1afa9126f9664959c02795be300a135f93" kindref="member">$sth</ref><sp/>-&gt;<sp/>setFetchMode(PDO::FETCH_ASSOC);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d0c/batches__table__single_8php_1afa9126f9664959c02795be300a135f93" kindref="member">$sth</ref>-&gt;execute();</highlight></codeline>
+<codeline lineno="19" refid="d8/d0c/batches__table__single_8php_1ace2ec39e7df3899fa8df9640ec274b03" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d0c/batches__table__single_8php_1ace2ec39e7df3899fa8df9640ec274b03" kindref="member">$rows</ref>=<ref refid="d8/d0c/batches__table__single_8php_1afa9126f9664959c02795be300a135f93" kindref="member">$sth</ref>-&gt;fetchAll();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="d8/d0c/batches__table__single_8php_1a73004ce9cd673c1bfafd1dc351134797" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d8/d0c/batches__table__single_8php_1a73004ce9cd673c1bfafd1dc351134797" kindref="member">$output</ref><sp/>=<sp/>array();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">(<ref refid="d8/d0c/batches__table__single_8php_1ace2ec39e7df3899fa8df9640ec274b03" kindref="member">$rows</ref><sp/>as<sp/><ref refid="df/d16/insert__batch_8php_1aa1d731aa570613e5bcff831bb10e9b87" kindref="member">$row</ref>){</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/d0c/batches__table__single_8php_1a73004ce9cd673c1bfafd1dc351134797" kindref="member">$output</ref>[$row[</highlight><highlight class="stringliteral">&apos;ID&apos;</highlight><highlight class="normal">]]=<sp/>$row[</highlight><highlight class="stringliteral">&apos;numbname&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>header(</highlight><highlight class="stringliteral">&apos;Content-Type:<sp/>application/json&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>json_encode(<ref refid="d8/d0c/batches__table__single_8php_1a73004ce9cd673c1bfafd1dc351134797" kindref="member">$output</ref>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="/var/www/html/plato/php/batches/batches_table_single.php"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,101 @@
+\hypertarget{control_batch_name_and_number_8php}{\section{php/batches/control\-Batch\-Name\-And\-Number.php File Reference}
+\label{control_batch_name_and_number_8php}\index{php/batches/control\-Batch\-Name\-And\-Number.\-php@{php/batches/control\-Batch\-Name\-And\-Number.\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{control_batch_name_and_number_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{control_batch_name_and_number_8php_a73004ce9cd673c1bfafd1dc351134797}{\$output} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{control_batch_name_and_number_8php_a58391ea75f2d29d5d708d7050b641c33}{\$status} = \char`\"{}success\char`\"{}
+\item 
+\hyperlink{control_batch_name_and_number_8php_a0f298096f322952a72a50f98a74c7b60}{\$value} =0
+\item 
+\hyperlink{control_batch_name_and_number_8php_ae0139f42f02473374ecb453f87c66534}{\$batch\-Name} =\$\-\_\-\-P\-O\-S\-T\mbox{[}\char`\"{}batch\-Name\char`\"{}\mbox{]}
+\item 
+\hyperlink{control_batch_name_and_number_8php_af59a5f7cd609e592c41dc3643efd3c98}{\$query}
+\item 
+\hyperlink{control_batch_name_and_number_8php_a63a7a283ea5dee8af1e2d5a3435bf370}{\$req} = \$conn-\/$>$query(\$query)-\/$>$fetch\-Column()
+\item 
+\hyperlink{control_batch_name_and_number_8php_acd0903a7a32e8397aefd0ce8b7dbd1ab}{\$response\-\_\-array} \mbox{[}'status'\mbox{]} =\$status
+\item 
+\hyperlink{control_batch_name_and_number_8php_abbcbb7142adc1824bb5531445d2de0f0}{\$response\-\_\-array} \mbox{[}'value'\mbox{]} =\$req
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{control_batch_name_and_number_8php_ae0139f42f02473374ecb453f87c66534}{\index{control\-Batch\-Name\-And\-Number.\-php@{control\-Batch\-Name\-And\-Number.\-php}!\$batch\-Name@{\$batch\-Name}}
+\index{\$batch\-Name@{\$batch\-Name}!controlBatchNameAndNumber.php@{control\-Batch\-Name\-And\-Number.\-php}}
+\subsubsection[{\$batch\-Name}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf batch\-Name} =\$\-\_\-\-P\-O\-S\-T\mbox{[}\char`\"{}batch\-Name\char`\"{}\mbox{]}}}\label{control_batch_name_and_number_8php_ae0139f42f02473374ecb453f87c66534}
+
+
+Definition at line 12 of file control\-Batch\-Name\-And\-Number.\-php.
+
+\hypertarget{control_batch_name_and_number_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{control\-Batch\-Name\-And\-Number.\-php@{control\-Batch\-Name\-And\-Number.\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!controlBatchNameAndNumber.php@{control\-Batch\-Name\-And\-Number.\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{control_batch_name_and_number_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 5 of file control\-Batch\-Name\-And\-Number.\-php.
+
+\hypertarget{control_batch_name_and_number_8php_a73004ce9cd673c1bfafd1dc351134797}{\index{control\-Batch\-Name\-And\-Number.\-php@{control\-Batch\-Name\-And\-Number.\-php}!\$output@{\$output}}
+\index{\$output@{\$output}!controlBatchNameAndNumber.php@{control\-Batch\-Name\-And\-Number.\-php}}
+\subsubsection[{\$output}]{\setlength{\rightskip}{0pt plus 5cm}\$output =\char`\"{}\char`\"{}}}\label{control_batch_name_and_number_8php_a73004ce9cd673c1bfafd1dc351134797}
+
+
+Definition at line 6 of file control\-Batch\-Name\-And\-Number.\-php.
+
+\hypertarget{control_batch_name_and_number_8php_af59a5f7cd609e592c41dc3643efd3c98}{\index{control\-Batch\-Name\-And\-Number.\-php@{control\-Batch\-Name\-And\-Number.\-php}!\$query@{\$query}}
+\index{\$query@{\$query}!controlBatchNameAndNumber.php@{control\-Batch\-Name\-And\-Number.\-php}}
+\subsubsection[{\$query}]{\setlength{\rightskip}{0pt plus 5cm}\$query}}\label{control_batch_name_and_number_8php_af59a5f7cd609e592c41dc3643efd3c98}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+= \textcolor{stringliteral}{"}
+\textcolor{stringliteral}{    SELECT }
+\textcolor{stringliteral}{        MAX(bat\_number)}
+\textcolor{stringliteral}{    FROM}
+\textcolor{stringliteral}{        batch}
+\textcolor{stringliteral}{    WHERE}
+\textcolor{stringliteral}{        bat\_name regexp '^$batchName$'}
+\textcolor{stringliteral}{    ;"}
+\end{DoxyCode}
+
+
+Definition at line 15 of file control\-Batch\-Name\-And\-Number.\-php.
+
+\hypertarget{control_batch_name_and_number_8php_a63a7a283ea5dee8af1e2d5a3435bf370}{\index{control\-Batch\-Name\-And\-Number.\-php@{control\-Batch\-Name\-And\-Number.\-php}!\$req@{\$req}}
+\index{\$req@{\$req}!controlBatchNameAndNumber.php@{control\-Batch\-Name\-And\-Number.\-php}}
+\subsubsection[{\$req}]{\setlength{\rightskip}{0pt plus 5cm}\$req = \$conn-\/$>$query(\$query)-\/$>$fetch\-Column()}}\label{control_batch_name_and_number_8php_a63a7a283ea5dee8af1e2d5a3435bf370}
+
+
+Definition at line 25 of file control\-Batch\-Name\-And\-Number.\-php.
+
+\hypertarget{control_batch_name_and_number_8php_acd0903a7a32e8397aefd0ce8b7dbd1ab}{\index{control\-Batch\-Name\-And\-Number.\-php@{control\-Batch\-Name\-And\-Number.\-php}!\$response\-\_\-array@{\$response\-\_\-array}}
+\index{\$response\-\_\-array@{\$response\-\_\-array}!controlBatchNameAndNumber.php@{control\-Batch\-Name\-And\-Number.\-php}}
+\subsubsection[{\$response\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}\$response\-\_\-array\mbox{[}'status'\mbox{]} =\$status}}\label{control_batch_name_and_number_8php_acd0903a7a32e8397aefd0ce8b7dbd1ab}
+
+
+Definition at line 27 of file control\-Batch\-Name\-And\-Number.\-php.
+
+\hypertarget{control_batch_name_and_number_8php_abbcbb7142adc1824bb5531445d2de0f0}{\index{control\-Batch\-Name\-And\-Number.\-php@{control\-Batch\-Name\-And\-Number.\-php}!\$response\-\_\-array@{\$response\-\_\-array}}
+\index{\$response\-\_\-array@{\$response\-\_\-array}!controlBatchNameAndNumber.php@{control\-Batch\-Name\-And\-Number.\-php}}
+\subsubsection[{\$response\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}\$response\-\_\-array\mbox{[}'value'\mbox{]} =\$req}}\label{control_batch_name_and_number_8php_abbcbb7142adc1824bb5531445d2de0f0}
+
+
+Definition at line 28 of file control\-Batch\-Name\-And\-Number.\-php.
+
+\hypertarget{control_batch_name_and_number_8php_a58391ea75f2d29d5d708d7050b641c33}{\index{control\-Batch\-Name\-And\-Number.\-php@{control\-Batch\-Name\-And\-Number.\-php}!\$status@{\$status}}
+\index{\$status@{\$status}!controlBatchNameAndNumber.php@{control\-Batch\-Name\-And\-Number.\-php}}
+\subsubsection[{\$status}]{\setlength{\rightskip}{0pt plus 5cm}\$status = \char`\"{}success\char`\"{}}}\label{control_batch_name_and_number_8php_a58391ea75f2d29d5d708d7050b641c33}
+
+
+Definition at line 8 of file control\-Batch\-Name\-And\-Number.\-php.
+
+\hypertarget{control_batch_name_and_number_8php_a0f298096f322952a72a50f98a74c7b60}{\index{control\-Batch\-Name\-And\-Number.\-php@{control\-Batch\-Name\-And\-Number.\-php}!\$value@{\$value}}
+\index{\$value@{\$value}!controlBatchNameAndNumber.php@{control\-Batch\-Name\-And\-Number.\-php}}
+\subsubsection[{\$value}]{\setlength{\rightskip}{0pt plus 5cm}\$value =0}}\label{control_batch_name_and_number_8php_a0f298096f322952a72a50f98a74c7b60}
+
+
+Definition at line 9 of file control\-Batch\-Name\-And\-Number.\-php.
+

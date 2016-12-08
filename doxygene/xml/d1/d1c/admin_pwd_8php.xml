@@ -1,0 +1,434 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="d1/d1c/admin_pwd_8php" kind="file">
+    <compoundname>adminPwd.php</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d1/d1c/admin_pwd_8php_1a9ff77c8de996b53098750f48827c9790" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>setup_datatable</definition>
+        <argsstring>()</argsstring>
+        <name>setup_datatable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set datatable of users up</para><para>setup_datatable </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminPwd/adminPwd.php" line="170" column="1" bodyfile="/var/www/html/plato/php/admin/adminPwd/adminPwd.php" bodystart="170" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d1c/admin_pwd_8php_1a8a2de340effe508a796cc1c77e951d15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>construct_delete_modal</definition>
+        <argsstring>(data, action)</argsstring>
+        <name>construct_delete_modal</name>
+        <param>
+          <type><ref refid="db/d8a/chart1_8php_1ab3ed669f4b3fdb8c88f3a190fb907de0" kindref="member">data</ref></type>
+        </param>
+        <param>
+          <type>action</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construction of a modal window for user deletion</para><para>construct_delete_modal <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>{string}</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data { id and name of the user } </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>{string}</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>action { action associated to the submit button (edit, create, delete) } </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminPwd/adminPwd.php" line="196" column="1" bodyfile="/var/www/html/plato/php/admin/adminPwd/adminPwd.php" bodystart="196" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d1c/admin_pwd_8php_1aca8bc69e3360f7e515c6c053cc21d68c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>construct_edit_modal</definition>
+        <argsstring>(data, action)</argsstring>
+        <name>construct_edit_modal</name>
+        <param>
+          <type><ref refid="db/d8a/chart1_8php_1ab3ed669f4b3fdb8c88f3a190fb907de0" kindref="member">data</ref></type>
+        </param>
+        <param>
+          <type>action</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construction of a modal window for user edition</para><para>construct_edit_modal <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>{string}</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data { id and name of the user } </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>{string}</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>action { action associated to the submit button (edit, create, delete) } </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminPwd/adminPwd.php" line="229" column="1" bodyfile="/var/www/html/plato/php/admin/adminPwd/adminPwd.php" bodystart="229" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="function" id="d1/d1c/admin_pwd_8php_1a819348e44d419a2bdfe60b344c56e031" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>construct_create_modal</definition>
+        <argsstring>(data, action)</argsstring>
+        <name>construct_create_modal</name>
+        <param>
+          <type><ref refid="db/d8a/chart1_8php_1ab3ed669f4b3fdb8c88f3a190fb907de0" kindref="member">data</ref></type>
+        </param>
+        <param>
+          <type>action</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construction of a modal window for user creation</para><para>construct_create_modal <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>{&lt;type&gt;}</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data { useless } </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>{string}</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>action { action associated to the submit button (edit, create, delete) } </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminPwd/adminPwd.php" line="290" column="1" bodyfile="/var/www/html/plato/php/admin/adminPwd/adminPwd.php" bodystart="290" bodyend="337"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">require(</highlight><highlight class="stringliteral">&apos;../../functions/check_login_admin.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="3"><highlight class="normal">include<sp/>(</highlight><highlight class="stringliteral">&apos;../../functions/html_functions.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>include<sp/>(&apos;../../functions/php_functions.php&apos;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><ref refid="dc/dc2/html__functions_8php_1a646d06793a3d478095bb971aa37927f1" kindref="member">html_header</ref>(</highlight><highlight class="stringliteral">&quot;../../../&quot;</highlight><highlight class="normal">,<sp/>$_SESSION[</highlight><highlight class="stringliteral">&apos;login&apos;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><ref refid="dc/dc2/html__functions_8php_1ad3d246d202506213fa6cbaad654a0a6d" kindref="member">editable_html_top_page</ref>(</highlight><highlight class="stringliteral">&quot;../../../&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;Users&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">echo<sp/></highlight><highlight class="stringliteral">&apos;&lt;a<sp/>href=&quot;#&quot;<sp/>title=&quot;Create<sp/>a<sp/>new<sp/>Analyte&quot;<sp/>class=&quot;tip-bottom&quot;<sp/>id=&quot;createAnalyte&quot;&gt;&lt;i<sp/>class=&quot;icon-plus&quot;&gt;&lt;/i&gt;Create<sp/>a<sp/>New<sp/>user&lt;/a&gt;</highlight></codeline>
+<codeline lineno="11"><highlight class="stringliteral">&lt;/div&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">echo</highlight><highlight class="stringliteral">&apos;</highlight></codeline>
+<codeline lineno="14"><highlight class="stringliteral">&lt;span<sp/>id=&quot;statusSpan&quot;&gt;</highlight></codeline>
+<codeline lineno="15"><highlight class="stringliteral">&lt;/span&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">echo</highlight><highlight class="stringliteral">&apos;</highlight></codeline>
+<codeline lineno="18"><highlight class="stringliteral">&lt;!--<sp/>Modal<sp/>--&gt;</highlight></codeline>
+<codeline lineno="19"><highlight class="stringliteral">&lt;div<sp/>class=&quot;modal<sp/>fade&quot;<sp/>id=&quot;editUserModal&quot;<sp/>tabindex=&quot;-1&quot;<sp/>role=&quot;dialog&quot;<sp/>aria-labelledby=&quot;myModalLabel&quot;<sp/>aria-hidden=&quot;true&quot;&gt;</highlight></codeline>
+<codeline lineno="20"><highlight class="stringliteral">&lt;/div&gt;<sp/>&lt;!--<sp/>/.modal<sp/>--&gt;</highlight></codeline>
+<codeline lineno="21"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="22"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="23"><highlight class="stringliteral">&lt;div<sp/>style=&quot;width:<sp/>80%;<sp/>margin:<sp/>0px<sp/>auto;&quot;&gt;</highlight></codeline>
+<codeline lineno="24"><highlight class="stringliteral">&lt;div<sp/>class=&quot;row-fluid&quot;&gt;</highlight></codeline>
+<codeline lineno="25"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;div<sp/>class=&quot;span10&quot;&gt;</highlight></codeline>
+<codeline lineno="26"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;div<sp/>class=&quot;widget-box&quot;<sp/>style=&quot;background<sp/>:<sp/>transparent&quot;&gt;</highlight></codeline>
+<codeline lineno="27"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;div<sp/>class=&quot;widget-content<sp/>nopadding&quot;&gt;</highlight></codeline>
+<codeline lineno="28"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;table<sp/>cellpadding=&quot;0&quot;<sp/>cellspacing=&quot;0&quot;<sp/>border=&quot;0&quot;<sp/>class=&quot;table<sp/>table-striped<sp/>table-bordered&quot;<sp/>id=&quot;users&quot;<sp/>width=&quot;100%&quot;&gt;</highlight></codeline>
+<codeline lineno="29"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;thead&gt;</highlight></codeline>
+<codeline lineno="30"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;tr&gt;</highlight></codeline>
+<codeline lineno="31"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;th&gt;ID&lt;/th&gt;</highlight></codeline>
+<codeline lineno="32"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;th&gt;Name&lt;/th&gt;</highlight></codeline>
+<codeline lineno="33"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;th&gt;Status&lt;/th&gt;</highlight></codeline>
+<codeline lineno="34"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;th&gt;&lt;/th&gt;</highlight></codeline>
+<codeline lineno="35"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/tr&gt;</highlight></codeline>
+<codeline lineno="36"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/thead&gt;</highlight></codeline>
+<codeline lineno="37"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/table&gt;</highlight></codeline>
+<codeline lineno="38"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="40"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;/div&gt;<sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral">&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><ref refid="dc/dc2/html__functions_8php_1a85d7e13b241a01dc5832cd64db3e3070" kindref="member">html_footer</ref>(</highlight><highlight class="stringliteral">&quot;../../../&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">?&gt;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">&lt;script<sp/>type=</highlight><highlight class="stringliteral">&quot;text/javascript&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal">=</highlight><highlight class="stringliteral">&quot;init&quot;</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">$(document).ready(</highlight><highlight class="keyword">function</highlight><highlight class="normal">()<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&apos;#adminPanel&apos;</highlight><highlight class="normal">).removeClass(</highlight><highlight class="stringliteral">&apos;submenu&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&apos;#adminPanel&apos;</highlight><highlight class="normal">).addClass(</highlight><highlight class="stringliteral">&apos;submenu<sp/>open&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d1/d1c/admin_pwd_8php_1a9ff77c8de996b53098750f48827c9790" kindref="member">setup_datatable</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&apos;#users<sp/>tbody&apos;</highlight><highlight class="normal">).on(</highlight><highlight class="stringliteral">&apos;click&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;button&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal">(event)<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>table<sp/>=<sp/>$(</highlight><highlight class="stringliteral">&apos;#users&apos;</highlight><highlight class="normal">).DataTable();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(this.</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;editButton&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/><ref refid="db/d8a/chart1_8php_1ab3ed669f4b3fdb8c88f3a190fb907de0" kindref="member">data</ref><sp/>=<sp/>table.row(<sp/>$(</highlight><highlight class="keyword">this</highlight><highlight class="normal">).parents(</highlight><highlight class="stringliteral">&apos;tr&apos;</highlight><highlight class="normal">)<sp/>).data();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d1c/admin_pwd_8php_1aca8bc69e3360f7e515c6c053cc21d68c" kindref="member">construct_edit_modal</ref>(data,<sp/></highlight><highlight class="stringliteral">&quot;edit&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this.</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;deleteButton&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>data<sp/>=<sp/>table.row(<sp/>$(</highlight><highlight class="keyword">this</highlight><highlight class="normal">).parents(</highlight><highlight class="stringliteral">&apos;tr&apos;</highlight><highlight class="normal">)<sp/>).data();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d1c/admin_pwd_8php_1a8a2de340effe508a796cc1c77e951d15" kindref="member">construct_delete_modal</ref>(data,<sp/></highlight><highlight class="stringliteral">&quot;delete&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&apos;#createAnalyte&apos;</highlight><highlight class="normal">).on(</highlight><highlight class="stringliteral">&apos;click&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal">()<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>data=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d1c/admin_pwd_8php_1a819348e44d419a2bdfe60b344c56e031" kindref="member">construct_create_modal</ref>(data,<sp/></highlight><highlight class="stringliteral">&quot;create&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">});</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>$(document).on(</highlight><highlight class="stringliteral">&quot;click&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;#editSubmit&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal">(){</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>userID<sp/>=<sp/>$(</highlight><highlight class="stringliteral">&quot;#id&quot;</highlight><highlight class="normal">).val();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>userName<sp/>=<sp/>$(</highlight><highlight class="stringliteral">&quot;#name&quot;</highlight><highlight class="normal">).val();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>userLevel<sp/>=<sp/>$(</highlight><highlight class="stringliteral">&quot;#status&quot;</highlight><highlight class="normal">).val();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>adminPassword<sp/>=<sp/>$(</highlight><highlight class="stringliteral">&quot;#adminPassword&quot;</highlight><highlight class="normal">).val();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>userPassword<sp/>=<sp/>$(</highlight><highlight class="stringliteral">&quot;#changePassword&quot;</highlight><highlight class="normal">).val();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>action<sp/>=<sp/>$(</highlight><highlight class="stringliteral">&quot;#action&quot;</highlight><highlight class="normal">).val();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>boolOK=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(action<sp/>!=</highlight><highlight class="stringliteral">&quot;delete&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((userName<sp/>==</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>||<sp/>(<sp/>$.isNumeric(userName)))<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&apos;#help-userName&apos;</highlight><highlight class="normal">).html(</highlight><highlight class="stringliteral">&quot;Please<sp/>add<sp/>a<sp/>correct<sp/>Name&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boolOK<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&apos;#help-userName&apos;</highlight><highlight class="normal">).html(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((userLevel<sp/>==</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>||<sp/>(<sp/>$.isNumeric(userLevel)))<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&apos;#help-userLevel&apos;</highlight><highlight class="normal">).html(</highlight><highlight class="stringliteral">&quot;Please<sp/>add<sp/>a<sp/>correct<sp/>user<sp/>Level&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boolOK<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&apos;#help-userLevel&apos;</highlight><highlight class="normal">).html(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(adminPassword<sp/>==</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&apos;#help-adminPassword&apos;</highlight><highlight class="normal">).html(</highlight><highlight class="stringliteral">&quot;Please<sp/>enter<sp/>the<sp/>admin<sp/>password&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boolOK<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&apos;#help-adminPassword&apos;</highlight><highlight class="normal">).html(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(undefined<sp/>!=<sp/>userPassword){</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((userPassword<sp/>==</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>||<sp/>(userPassword.length<sp/>&gt;=8))<sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&apos;#help-userPassword&apos;</highlight><highlight class="normal">).html(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boolOK<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boolOK<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&apos;#help-userPassword&apos;</highlight><highlight class="normal">).html(</highlight><highlight class="stringliteral">&quot;Please<sp/>enter<sp/>a<sp/>strong<sp/>password<sp/>(more<sp/>than<sp/>8<sp/>characters)&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(boolOK<sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$.ajax({</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>url:<sp/></highlight><highlight class="stringliteral">&quot;AdminUserUpdate.php&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>type:<sp/></highlight><highlight class="stringliteral">&quot;post&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data:<sp/>{<sp/></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>userID<sp/>:<sp/>userID,</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>userName<sp/>:<sp/>userName,</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>userLevel<sp/>:<sp/>userLevel,</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>adminPassword<sp/>:<sp/>adminPassword,</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>userPassword<sp/>:<sp/>userPassword,</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>action<sp/>:<sp/>action</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>success:<sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal">(<ref refid="db/d8a/chart1_8php_1ab3ed669f4b3fdb8c88f3a190fb907de0" kindref="member">data</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>obj<sp/>=<sp/><ref refid="db/d8a/chart1_8php_1ab3ed669f4b3fdb8c88f3a190fb907de0" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(obj.status<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;success&apos;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&quot;#editUserModal&quot;</highlight><highlight class="normal">).modal(</highlight><highlight class="stringliteral">&apos;hide&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&apos;#statusSpan&apos;</highlight><highlight class="normal">).html(</highlight><highlight class="stringliteral">&apos;&lt;div<sp/>class=&quot;alert<sp/>alert-success&quot;&gt;&apos;</highlight><highlight class="normal">+obj.action+</highlight><highlight class="stringliteral">&apos;<sp/>Successful&lt;a<sp/>href=&quot;#&quot;<sp/>data-dismiss=&quot;alert&quot;<sp/>class=&quot;close&quot;&gt;×&lt;/a&gt;&lt;/div&gt;&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d1c/admin_pwd_8php_1a9ff77c8de996b53098750f48827c9790" kindref="member">setup_datatable</ref>();</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(obj.status<sp/>==<sp/></highlight><highlight class="stringliteral">&apos;error&apos;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&quot;#editUserModal&quot;</highlight><highlight class="normal">).modal(</highlight><highlight class="stringliteral">&apos;hide&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&apos;#statusSpan&apos;</highlight><highlight class="normal">).html(</highlight><highlight class="stringliteral">&apos;&lt;div<sp/>class=&quot;alert<sp/>alert-error&quot;&gt;&apos;</highlight><highlight class="normal">+obj.action+</highlight><highlight class="stringliteral">&apos;<sp/>Failure&lt;a<sp/>href=&quot;#&quot;<sp/>data-dismiss=&quot;alert&quot;<sp/>class=&quot;close&quot;&gt;×&lt;/a&gt;&lt;/div&gt;&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d1/d1c/admin_pwd_8php_1a9ff77c8de996b53098750f48827c9790" kindref="member">setup_datatable</ref>();</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error:<sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal">(xhr,<sp/>status,<sp/>error)<sp/>{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="d1/d1c/admin_pwd_8php_1a9ff77c8de996b53098750f48827c9790" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="d1/d1c/admin_pwd_8php_1a9ff77c8de996b53098750f48827c9790" kindref="member">setup_datatable</ref>(){</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&apos;#users&apos;</highlight><highlight class="normal">).dataTable().fnDestroy();</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>table<sp/>=<sp/>$(</highlight><highlight class="stringliteral">&apos;#users&apos;</highlight><highlight class="normal">).DataTable({</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scrollY:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>500,</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scroller:<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stateSave:<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dom:<sp/></highlight><highlight class="stringliteral">&apos;TB&lt;&quot;clear&quot;&gt;frtip&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ajax:<sp/></highlight><highlight class="stringliteral">&apos;get_all_users.php&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buttons:<sp/>[</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;copy&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;csv&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>],</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;columnDefs&quot;</highlight><highlight class="normal">:<sp/>[<sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;targets&quot;</highlight><highlight class="normal">:-1,</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;defaultContent&quot;</highlight><highlight class="normal">:<sp/></highlight><highlight class="stringliteral">&quot;&lt;button<sp/>type=\&quot;button\&quot;<sp/>id=\&quot;editButton\&quot;<sp/>class=\&quot;tabledit-edit-button<sp/>btn<sp/>btn-info<sp/>btn-sm<sp/>btn-default\&quot;<sp/>style=\&quot;float:<sp/>none;\&quot;&gt;<sp/>&lt;span<sp/>class=\&quot;glyphicon<sp/>glyphicon-pencil\&quot;&gt;<sp/>&lt;/span&gt;<sp/>&lt;/button&gt;&quot;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&amp;nbsp<sp/>&lt;button<sp/>type=<sp/>\&quot;submit\&quot;<sp/>id=\&quot;deleteButton\&quot;<sp/>class=\&quot;tabledit-edit-button<sp/>btn<sp/>btn-danger<sp/>btn-sm<sp/>btn-default\&quot;<sp/>style=\&quot;float:<sp/>none;\&quot;&gt;<sp/>&lt;span<sp/>class=\&quot;glyphicon<sp/>glyphicon-trash\&quot;&gt;<sp/>&lt;/span&gt;<sp/>&lt;/button&gt;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>]</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196" refid="d1/d1c/admin_pwd_8php_1a8a2de340effe508a796cc1c77e951d15" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="d1/d1c/admin_pwd_8php_1a8a2de340effe508a796cc1c77e951d15" kindref="member">construct_delete_modal</ref>(data,<sp/>action){</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>modal<sp/>=</highlight><highlight class="stringliteral">&apos;&lt;div<sp/>class=&quot;modal-dialog&quot;&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;div<sp/>class=&quot;loginmodal-container&quot;&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;h1&gt;Confirm<sp/>Deletion&lt;/h1&gt;&lt;br&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;h6&gt;<sp/>Are<sp/>you<sp/>sure<sp/>you<sp/>want<sp/>to<sp/>remove<sp/>&apos;</highlight><highlight class="normal">+data[1]+</highlight><highlight class="stringliteral">&apos;<sp/>?&lt;/h6&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;form<sp/>role=&quot;form&quot;<sp/>id=&quot;editRowForm&quot;<sp/>method=&quot;post&quot;&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;input<sp/>type=&quot;hidden&quot;<sp/>class=&quot;form-control<sp/>required&quot;<sp/>id=&quot;action&quot;<sp/>name=&quot;action&quot;<sp/>value=&quot;&apos;</highlight><highlight class="normal">+action+</highlight><highlight class="stringliteral">&apos;&quot;&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;input<sp/>type=&quot;hidden&quot;<sp/>class=&quot;form-control<sp/>required&quot;<sp/>id=&quot;id&quot;<sp/>name=&quot;id&quot;<sp/>value=&quot;&apos;</highlight><highlight class="normal">+data[0]+</highlight><highlight class="stringliteral">&apos;&quot;<sp/>disabled=&quot;disabled&quot;<sp/>/&gt;&lt;br&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;label<sp/>class=&quot;control-label&quot;<sp/>for=&quot;number&quot;&gt;Admin<sp/>Password&lt;/label&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;input<sp/>type=&quot;password&quot;<sp/>placeholder=&quot;Mandatory&quot;<sp/>class=&quot;form-control<sp/>required&quot;<sp/>id=&quot;adminPassword&quot;<sp/>name=&quot;password&quot;<sp/>value=&quot;&quot;<sp/>required=&quot;required&quot;<sp/>/&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;span<sp/><sp/>style=&quot;color:red&quot;<sp/>id=&quot;help-adminPassword&quot;&gt;&lt;/span&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;br&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;/form&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;div<sp/>class=&quot;modal-footer&quot;&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;button<sp/>type=&quot;button&quot;<sp/>data-dismiss=&quot;modal&quot;<sp/>class=&quot;btn<sp/>btn-large&quot;&gt;Cancel&lt;/button&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;button<sp/>type=&quot;submit&quot;<sp/>id=&quot;editSubmit&quot;<sp/>class=&quot;btn<sp/>btn-primary<sp/>btn-large&quot;&gt;Delete&lt;/button&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;/div&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;/div&gt;<sp/>&lt;!--<sp/>/.modal-content<sp/>--&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;/div&gt;<sp/>&lt;!--<sp/>/.modal-dialog<sp/>--&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&apos;#editUserModal&apos;</highlight><highlight class="normal">).empty();</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&apos;#editUserModal&apos;</highlight><highlight class="normal">).append(modal);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&quot;#editUserModal&quot;</highlight><highlight class="normal">).modal(</highlight><highlight class="stringliteral">&quot;show&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229" refid="d1/d1c/admin_pwd_8php_1aca8bc69e3360f7e515c6c053cc21d68c" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="d1/d1c/admin_pwd_8php_1aca8bc69e3360f7e515c6c053cc21d68c" kindref="member">construct_edit_modal</ref>(data,<sp/>action){</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>modal<sp/>=</highlight><highlight class="stringliteral">&apos;&lt;div<sp/>class=&quot;modal-dialog&quot;&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;div<sp/>class=&quot;modal-content&quot;&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;div<sp/>class=&quot;modal-header&quot;&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;button<sp/>type=&quot;button&quot;<sp/>class=&quot;close&quot;<sp/>data-dismiss=&quot;modal&quot;<sp/>aria-hidden=&quot;true&quot;&gt;×&lt;/button&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;h4<sp/>class=&quot;modal-title&quot;&gt;Editor&lt;/h4&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;/div&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;div<sp/>class=&quot;modal-body&quot;&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;form<sp/>role=&quot;form&quot;<sp/>id=&quot;editRowForm&quot;<sp/>method=&quot;post&quot;&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;div<sp/>class=&quot;modal-body&quot;&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;div<sp/>class=&quot;form-group&quot;&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;input<sp/>type=&quot;hidden&quot;<sp/>class=&quot;form-control<sp/>required&quot;<sp/>id=&quot;action&quot;<sp/>name=&quot;action&quot;<sp/>value=&quot;&apos;</highlight><highlight class="normal">+action+</highlight><highlight class="stringliteral">&apos;&quot;&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;label<sp/>class=&quot;control-label&quot;<sp/>for=&quot;number&quot;&gt;ID&lt;/label&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;input<sp/>type=&quot;text&quot;<sp/>class=&quot;form-control<sp/>required&quot;<sp/>id=&quot;id&quot;<sp/>name=&quot;id&quot;<sp/>value=&quot;&apos;</highlight><highlight class="normal">+data[0]+</highlight><highlight class="stringliteral">&apos;&quot;<sp/>disabled=&quot;disabled&quot;/&gt;&lt;br&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;label<sp/>class=&quot;control-label&quot;<sp/>for=&quot;number&quot;&gt;Name<sp/>&lt;/label&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;input<sp/>type=&quot;text&quot;<sp/>class=&quot;form-control<sp/>required&quot;<sp/>id=&quot;name&quot;<sp/>name=&quot;name&quot;<sp/>value=&quot;&apos;</highlight><highlight class="normal">+data[1]+</highlight><highlight class="stringliteral">&apos;&quot;<sp/>required=&quot;required&quot;<sp/>/&gt;&lt;br&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;span<sp/><sp/>style=&quot;color:red&quot;<sp/>id=&quot;help-userName&quot;&gt;&lt;/span&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;br&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;label<sp/>class=&quot;control-label&quot;<sp/>for=&quot;number&quot;&gt;Status&lt;/label&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;select<sp/>id=&quot;status&quot;<sp/>class=&quot;form-control&quot;&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;option<sp/>value=&quot;&apos;</highlight><highlight class="normal">+data[2]+</highlight><highlight class="stringliteral">&apos;&quot;&gt;&apos;</highlight><highlight class="normal">+data[2]+</highlight><highlight class="stringliteral">&apos;&lt;/option&gt;&quot;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;option<sp/>value=&quot;admin&quot;&gt;admin&lt;/option&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;option<sp/>value=&quot;user&quot;&gt;user&lt;/option&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;/select&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;span<sp/><sp/>style=&quot;color:red&quot;<sp/>id=&quot;help-userLevel&quot;&gt;&lt;/span&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;br&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;label<sp/>class=&quot;control-label&quot;<sp/>for=&quot;number&quot;&gt;Admin<sp/>Password&lt;/label&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;input<sp/>type=&quot;password&quot;<sp/>placeholder=&quot;Mandatory&quot;<sp/>class=&quot;form-control<sp/>required&quot;<sp/>id=&quot;adminPassword&quot;<sp/>name=&quot;password&quot;<sp/>value=&quot;&quot;<sp/>required=&quot;required&quot;<sp/>/&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;span<sp/><sp/>style=&quot;color:red&quot;<sp/>id=&quot;help-adminPassword&quot;&gt;&lt;/span&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;br&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;label<sp/>class=&quot;control-label&quot;<sp/>for=&quot;number&quot;&gt;Change<sp/>password&lt;/label&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;input<sp/>type=&quot;password&quot;<sp/>placeholder=&quot;keep<sp/>free<sp/>if<sp/>you<sp/>don\&apos;t<sp/>want<sp/>to<sp/>change&quot;<sp/>class=&quot;form-control<sp/>required&quot;<sp/>id=&quot;changePassword&quot;<sp/>name=&quot;changePassword&quot;<sp/>value=&quot;&quot;/&gt;&lt;br&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;/div&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;/div&gt;<sp/>&lt;!--<sp/>/.modal-body<sp/>--&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;/form&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;div<sp/>class=&quot;modal-footer&quot;&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;button<sp/>type=&quot;button&quot;<sp/>data-dismiss=&quot;modal&quot;<sp/>class=&quot;btn<sp/>btn-large&quot;&gt;Close&lt;/button&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;button<sp/>type=&quot;submit&quot;<sp/>id=&quot;editSubmit&quot;<sp/>class=&quot;btn<sp/>btn-primary<sp/>btn-large&quot;&gt;Submit&lt;/button&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;/div&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;/div&gt;<sp/>&lt;!--<sp/>/.modal-content<sp/>--&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;/div&gt;<sp/>&lt;!--<sp/>/.modal-dialog<sp/>--&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&apos;#editUserModal&apos;</highlight><highlight class="normal">).empty();</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&apos;#editUserModal&apos;</highlight><highlight class="normal">).append(modal);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&quot;#editUserModal&quot;</highlight><highlight class="normal">).modal(</highlight><highlight class="stringliteral">&quot;show&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290" refid="d1/d1c/admin_pwd_8php_1a819348e44d419a2bdfe60b344c56e031" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="d1/d1c/admin_pwd_8php_1a819348e44d419a2bdfe60b344c56e031" kindref="member">construct_create_modal</ref>(data,<sp/>action){<sp/><sp/></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>modal<sp/>=</highlight><highlight class="stringliteral">&apos;&lt;div<sp/>class=&quot;modal-dialog&quot;&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;div<sp/>class=&quot;modal-content&quot;&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;div<sp/>class=&quot;modal-header&quot;&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;button<sp/>type=&quot;button&quot;<sp/>class=&quot;close&quot;<sp/>data-dismiss=&quot;modal&quot;<sp/>aria-hidden=&quot;true&quot;&gt;×&lt;/button&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;h4<sp/>class=&quot;modal-title&quot;&gt;User<sp/>Creator&lt;/h4&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;/div&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;div<sp/>class=&quot;modal-body&quot;&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;form<sp/>role=&quot;form&quot;<sp/>id=&quot;editRowForm&quot;<sp/>method=&quot;post&quot;&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;div<sp/>class=&quot;modal-body&quot;&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;div<sp/>class=&quot;form-group&quot;&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;input<sp/>type=&quot;hidden&quot;<sp/>class=&quot;form-control<sp/>required&quot;<sp/>id=&quot;action&quot;<sp/>name=&quot;action&quot;<sp/>value=&quot;&apos;</highlight><highlight class="normal">+action+</highlight><highlight class="stringliteral">&apos;&quot;&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;label<sp/>class=&quot;control-label&quot;<sp/>for=&quot;number&quot;&gt;Name<sp/>&lt;/label&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;input<sp/>type=&quot;text&quot;<sp/>class=&quot;form-control<sp/>required&quot;<sp/>id=&quot;name&quot;<sp/>name=&quot;name&quot;<sp/>required=&quot;required&quot;<sp/>/&gt;&lt;br&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;span<sp/><sp/>style=&quot;color:red&quot;<sp/>id=&quot;help-userName&quot;&gt;&lt;/span&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;label<sp/>class=&quot;control-label&quot;<sp/>for=&quot;number&quot;&gt;Status&lt;/label&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;select<sp/>id=&quot;status&quot;<sp/>class=&quot;form-control&quot;&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;option<sp/>value=&quot;admin&quot;&gt;admin&lt;/option&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;option<sp/>value=&quot;user&quot;&gt;user&lt;/option&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;/select&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;span<sp/><sp/>style=&quot;color:red&quot;<sp/>id=&quot;help-userLevel&quot;&gt;&lt;/span&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;br&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;label<sp/>class=&quot;control-label&quot;<sp/>for=&quot;number&quot;&gt;Admin<sp/>Password&lt;/label&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;input<sp/>type=&quot;password&quot;<sp/>placeholder=&quot;Mandatory&quot;<sp/>class=&quot;form-control<sp/>required&quot;<sp/>id=&quot;adminPassword&quot;<sp/>name=&quot;password&quot;<sp/>required=&quot;required&quot;<sp/>/&gt;&lt;br&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;span<sp/><sp/>style=&quot;color:red&quot;<sp/>id=&quot;help-adminPassword&quot;&gt;&lt;/span&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;label<sp/>class=&quot;control-label&quot;<sp/>for=&quot;number&quot;&gt;User<sp/>Password&lt;/label&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;input<sp/>type=&quot;password&quot;<sp/>placeholder=&quot;Please<sp/>choose<sp/>a<sp/>strong<sp/>password&quot;<sp/>class=&quot;form-control<sp/>required&quot;<sp/>id=&quot;changePassword&quot;<sp/>name=&quot;changePassword&quot;<sp/>value=&quot;&quot;/&gt;&lt;br&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;span<sp/><sp/>style=&quot;color:red&quot;<sp/>id=&quot;help-userPassword&quot;&gt;&lt;/span&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;br&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;/div&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;/div&gt;<sp/>&lt;!--<sp/>/.modal-body<sp/>--&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;/form&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;div<sp/>class=&quot;modal-footer&quot;&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;button<sp/>type=&quot;button&quot;<sp/>data-dismiss=&quot;modal&quot;<sp/>class=&quot;btn<sp/>btn-large&quot;&gt;Close&lt;/button&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;button<sp/>type=&quot;submit&quot;<sp/>id=&quot;editSubmit&quot;<sp/>class=&quot;btn<sp/>btn-primary<sp/>btn-large&quot;&gt;Submit&lt;/button&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;/div&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;/div&gt;<sp/>&lt;!--<sp/>/.modal-content<sp/>--&gt;&apos;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;/div&gt;<sp/>&lt;!--<sp/>/.modal-dialog<sp/>--&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&apos;#editUserModal&apos;</highlight><highlight class="normal">).empty();</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&apos;#editUserModal&apos;</highlight><highlight class="normal">).append(modal);</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&quot;#editUserModal&quot;</highlight><highlight class="normal">).modal(</highlight><highlight class="stringliteral">&quot;show&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="337"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal">&lt;/script&gt;</highlight></codeline>
+    </programlisting>
+    <location file="/var/www/html/plato/php/admin/adminPwd/adminPwd.php"/>
+  </compounddef>
+</doxygen>

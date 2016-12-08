@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d5/d8c/enzyme__not__from__standard_07obsolete_08_8php">
+    <title>enzyme_not_from_standard(obsolete).php File Reference</title>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d5/d8c/enzyme__not__from__standard_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877">$conn</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d5/d8c/enzyme__not__from__standard_07obsolete_08_8php_1a0c541a369e4a0434108a7d145751bb23">$standardID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d5/d8c/enzyme__not__from__standard_07obsolete_08_8php_1af59a5f7cd609e592c41dc3643efd3c98">$query</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d5/d8c/enzyme__not__from__standard_07obsolete_08_8php_1abe4cc9788f52e49485473dc699537388">try</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d5/d8c/enzyme__not__from__standard_07obsolete_08_8php_1af789423037bbc89dc7c850e761177570">$count</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d5/d8c/enzyme__not__from__standard_07obsolete_08_8php_1ace2ec39e7df3899fa8df9640ec274b03">$rows</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /var/www/html/plato/php/standard/obsolete files/enzyme_not_from_standard(obsolete).php</para>
+    </simplesect>
+</section>

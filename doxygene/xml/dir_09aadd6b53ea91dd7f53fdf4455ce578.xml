@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_09aadd6b53ea91dd7f53fdf4455ce578" kind="dir">
+    <compoundname>php/admin</compoundname>
+    <innerdir refid="dir_ee3f36f8ac7f6fc29f8ed506d740f180">php/admin/adminBatch</innerdir>
+    <innerdir refid="dir_7e6216662a56f3f28cacaea67173abe4">php/admin/adminEnzyme</innerdir>
+    <innerdir refid="dir_e9597a85d65d0f39efea9db313db66dd">php/admin/adminExperiment</innerdir>
+    <innerdir refid="dir_4c89f8bac19007bf4c1fbf3a7e977336">php/admin/adminPwd</innerdir>
+    <innerdir refid="dir_b683e40c29d9cdd670968dbe09c53361">php/admin/adminRawdata</innerdir>
+    <innerdir refid="dir_d9bb65f0a5ccf2e711e7ebfe73a2b4fb">php/admin/adminStandard</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/var/www/html/plato/php/admin/"/>
+  </compounddef>
+</doxygen>

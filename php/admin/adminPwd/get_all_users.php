@@ -3,6 +3,8 @@
 	include '../../functions/php_functions.php';
 	$conn = get_connexion();
 
+	// Get all user informations
+
 	$query ='SELECT usr_id, usr_name, usr_status FROM user ORDER BY usr_name;';
 	// error_log($query);
 

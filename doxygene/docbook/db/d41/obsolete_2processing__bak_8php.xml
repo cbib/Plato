@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d41/obsolete_2processing__bak_8php">
+    <title>processing_bak.php File Reference</title>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1a88c5bc4262b7c34f236357f5c53fc99b">batchID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1aacb4c47c97ff6a475764ba2cf4090a32">batchName</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>button filter(&quot;#saveProcessedData&quot;).prop(&quot;disabled&quot; <link linkend="db/d41/obsolete_2processing__bak_8php_1ad85b26c88897c4f65b1a4930711a2e93">true</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1a737a9dd58b5139e64ee8903b481e9aa8">OkToQuitPage</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>window <link linkend="db/d41/obsolete_2processing__bak_8php_1a12dd03abd8fa9daa2fe8eaeb9c9682c3">onbeforeunload</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1a9237e22fe050cafd22cc308023a77644">rawdatasubmit</link> (
+onInsert , onMakeMap , onProcessData , onDisplay , onUpdate )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1a1c5bd701b81e92f7d4d3c5df62308a90">showWaitModal</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1a9e9a0aeba0985269b23840a250abb827">hideWaitModal</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1a8bdf4862d5bb740a422fa9f1c5ca3e7e">update</link> (
+<link linkend="d8/d02/admin_rawdata_8php_1adf465cadf95987152966d26567509f92">ezID</link> , <link linkend="db/d41/obsolete_2processing__bak_8php_1a88c5bc4262b7c34f236357f5c53fc99b">batchID</link> , processDataMap , excludMap )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1a71dd7aaf0eee75028d824b37ee042f02">resetTable</link> (
+tableID )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1a89da1e95057c1fbc88b341bca8f9e045">dataInsert</link> (
+tableID , <link linkend="d8/d02/admin_rawdata_8php_1a888d53a6517f4272b5982c3ca9d16e8a">expID</link> , <link linkend="db/d41/obsolete_2processing__bak_8php_1a88c5bc4262b7c34f236357f5c53fc99b">batchID</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1a3b7fa21c29f2265534745659558aab45">setup_experiment_datatable</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1aa1e8f9d59d36beb449d29324b83696c5">chomp</link> (
+raw_text )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1a982823fd5f53a19320e5b07875542a67">dispatchAddBatchDatas</link> (
+<link linkend="db/d8a/chart1_8php_1ab3ed669f4b3fdb8c88f3a190fb907de0">data</link> , dataTypeMap , excludMap )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1a81bc92a0cb82cf81194aad805c739ca0">createSelectAnalyte</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1a893fcb448b99525d8aaf3874c4e681b4">create_addRawData_modal</link> (
+<link linkend="db/d41/obsolete_2processing__bak_8php_1a88c5bc4262b7c34f236357f5c53fc99b">batchID</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1a45193cc86b5e0fa2a825974b0a33bea1">makeMap</link> (
+enzymeID )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1ae5265e630c1078e1d9f56fa730a5c5f1">displayRawData</link> (
+rawDataMap , dataTypeMap , excludMap , layout )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1af689d74b46e91478e9a44c3b36410c41">displayProcessData</link> (
+processDataMap , dataTypeMap , excludMap , layout )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1a9285c7ba04922c3a1f2898d1a5ab448d">processMetabolites</link> (
+rawDataMap , dataTypeMap , excludMap , layout , processDataMap , activity , fwMap )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1a3cd4d96d342a4cc8e367b0707c7651f4">getStdDev</link> (
+processDataMap , dataTypeMap , excludMap )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1a49b78109d6c8eade3119bcf1f9dfd251">processEnzyme</link> (
+rawDataMap , dataTypeMap , excludMap , layout , processDataMap , activity , fwMap )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1a720e09af96e0e78054ac8b5ce42777fb">correctBlankValues</link> (
+rawDataMap , excludMap , dataTypeMap , fwMap , <link linkend="db/d41/obsolete_2processing__bak_8php_1add23382310b9fc9672ec70ac21671322">bufferAvg</link> , valueType )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1a10671a992cd140299cc0377ca13abbba">correctMaxValues</link> (
+rawDataMap , excludMap , dataTypeMap , fwMap , <link linkend="db/d41/obsolete_2processing__bak_8php_1add23382310b9fc9672ec70ac21671322">bufferAvg</link> , slopeRatio , valueType )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1a84838f44b24ad0c72225c146d21414e2">corrControlBlankAverage</link> (
+rawDataMap , excludMap , dataTypeMap , fwMap , buffAvg )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1af5e03b9a093c14ea308e54c1dd41e6d1">corrControlMaxAverage</link> (
+rawDataMap , excludMap , dataTypeMap , fwMap , buffAvg , slopeRatio )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1a337ef7b1f2fafd4649ea5645080c6356">correctedControlAvg</link> (
+rawDataMap , excludMap , dataTypeMap , fwMap , buffAvg )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1add23382310b9fc9672ec70ac21671322">bufferAvg</link> (
+rawDataMap , excludMap , dataTypeMap )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1aa5fb5998ccfcfe9ce6953516b6e3bcb1">isArray</link> (
+obj )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1afceb7af57b26aecce1a9296d71bfaafe">getNumWithSetDec</link> (
+num , numOfDec )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1ae0305f1551770d6a7e38511bc122b8d0">getAverageFromNumArr</link> (
+numArr , numOfDec )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1a624f45bf85d91531932db89ec727cc55">getVariance</link> (
+numArr , numOfDec )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1a79058dbb19f8820281238eabeddec077">getStandardDeviation</link> (
+numArr , numOfDec )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d41/obsolete_2processing__bak_8php_1a3ac0127239c94d2495075c0f66556d7e">getError</link> (
+numArr , numOfDec )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /var/www/html/plato/php/processing/obsolete/processing_bak.php</para>
+    </simplesect>
+</section>

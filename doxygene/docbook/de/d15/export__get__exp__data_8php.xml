@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d15/export__get__exp__data_8php">
+    <title>export_get_exp_data.php File Reference</title>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/d15/export__get__exp__data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877">$conn</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/d15/export__get__exp__data_8php_1ae384d32e62e85e587cd27bf249ed3db3">$expID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/d15/export__get__exp__data_8php_1a6478e66386fefd0e5fd6de22d695ffca">$expName</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/d15/export__get__exp__data_8php_1a73004ce9cd673c1bfafd1dc351134797">$output</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/d15/export__get__exp__data_8php_1af59a5f7cd609e592c41dc3643efd3c98">$query</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/d15/export__get__exp__data_8php_1a233d12bd8b6d3453e9a7a3f0b8c31db2">$results</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/d15/export__get__exp__data_8php_1a2d58bfaabf81051b4d9e9cb2d8ed5941">$ezNameQuery</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/d15/export__get__exp__data_8php_1a3af2456d6a8126f749b1cfca0ba77027">$ezNames</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/d15/export__get__exp__data_8php_1ac098f986b0121aa5592943a8ea80e37b">$lineName</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>foreach($ezNames as $name) <link linkend="de/d15/export__get__exp__data_8php_1a1b7e843aa496f34e3c661d1eefbf7b84">$output</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /var/www/html/plato/php/export/export_get_exp_data.php</para>
+    </simplesect>
+</section>

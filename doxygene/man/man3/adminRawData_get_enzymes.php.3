@@ -1,0 +1,87 @@
+.TH "php/admin/adminRawdata/adminRawData_get_enzymes.php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/admin/adminRawdata/adminRawData_get_enzymes.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$conn\fP = \fBget_connexion\fP()"
+.br
+.ti -1c
+.RI "\fB$batchID\fP = $_POST['\fBbatchID\fP']"
+.br
+.ti -1c
+.RI "\fB$query\fP"
+.br
+.ti -1c
+.RI "\fBtry\fP"
+.br
+.ti -1c
+.RI "\fB$rows\fP =$sth->fetchAll()"
+.br
+.ti -1c
+.RI "\fB$status\fP ='success'"
+.br
+.ti -1c
+.RI "catch(Exception $e) \fB$output\fP = array()"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$\fBbatchID\fP = $_POST['\fBbatchID\fP']"
+
+.PP
+Definition at line 8 of file adminRawData_get_enzymes\&.php\&.
+.SS "$conn = \fBget_connexion\fP()"
+
+.PP
+Definition at line 4 of file adminRawData_get_enzymes\&.php\&.
+.SS "catch (Exception $e) $output = array()"
+
+.PP
+Definition at line 36 of file adminRawData_get_enzymes\&.php\&.
+.SS "$query"
+\fBInitial value:\fP
+.PP
+.nf
+='
+    SELECT  
+        distinct rawdata\&.data_enzyme_FK, enzyme\&.ez_analyte, enzyme\&.ez_code
+    FROM
+        batch_data, rawdata, enzyme 
+    WHERE 
+        batch_data\&.bat_data_batch_FK = '\&.$batchID\&.' AND 
+        rawdata\&.rawdata_batch_data_FK = batch_data\&.bat_data_id AND
+        enzyme\&.ez_id = rawdata\&.data_enzyme_FK
+    ORDER BY 
+        enzyme\&.ez_code;
+    '
+.fi
+.PP
+Definition at line 10 of file adminRawData_get_enzymes\&.php\&.
+.SS "$rows =$sth->fetchAll()"
+
+.PP
+Definition at line 28 of file adminRawData_get_enzymes\&.php\&.
+.SS "$status ='success'"
+
+.PP
+Definition at line 29 of file adminRawData_get_enzymes\&.php\&.
+.SS "try"
+\fBInitial value:\fP
+.PP
+.nf
+{
+        
+        $sth=$conn->prepare($query)
+.fi
+.PP
+Definition at line 23 of file adminRawData_get_enzymes\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

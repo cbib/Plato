@@ -1,0 +1,341 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dc/dc2/html__functions_8php" kind="file">
+    <compoundname>html_functions.php</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="dc/dc2/html__functions_8php_1a646d06793a3d478095bb971aa37927f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>html_header</definition>
+        <argsstring>($path, $userLevel)</argsstring>
+        <name>html_header</name>
+        <param>
+          <declname>$path</declname>
+        </param>
+        <param>
+          <declname>$userLevel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generate header</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>string</parametertype>
+<parametername>$path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(description) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>&lt;type&gt;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>$userLevel (description) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/functions/html_functions.php" line="9" column="1" bodyfile="/var/www/html/plato/php/functions/html_functions.php" bodystart="9" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dc2/html__functions_8php_1a38bc7cc70b85339d131511e477964121" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>index_html_top_page</definition>
+        <argsstring>($pagename)</argsstring>
+        <name>index_html_top_page</name>
+        <param>
+          <declname>$pagename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generate the top of the page index</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>string</parametertype>
+<parametername>$pagename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(description) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/functions/html_functions.php" line="84" column="1" bodyfile="/var/www/html/plato/php/functions/html_functions.php" bodystart="84" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dc2/html__functions_8php_1ad3d246d202506213fa6cbaad654a0a6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>editable_html_top_page</definition>
+        <argsstring>($path, $pagename)</argsstring>
+        <name>editable_html_top_page</name>
+        <param>
+          <declname>$path</declname>
+        </param>
+        <param>
+          <declname>$pagename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generate an editable top page</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>string</parametertype>
+<parametername>$path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(description) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametertype>string</parametertype>
+<parametername>$pagename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(description) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/functions/html_functions.php" line="119" column="1" bodyfile="/var/www/html/plato/php/functions/html_functions.php" bodystart="119" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dc2/html__functions_8php_1a9c419a7dadfba24c60e7b0d928686111" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>generic_html_top_page</definition>
+        <argsstring>($path, $pagename)</argsstring>
+        <name>generic_html_top_page</name>
+        <param>
+          <declname>$path</declname>
+        </param>
+        <param>
+          <declname>$pagename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generate a generical top page</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>string</parametertype>
+<parametername>$path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(description) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametertype>string</parametertype>
+<parametername>$pagename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(description) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/functions/html_functions.php" line="136" column="1" bodyfile="/var/www/html/plato/php/functions/html_functions.php" bodystart="136" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="dc/dc2/html__functions_8php_1a85d7e13b241a01dc5832cd64db3e3070" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>html_footer</definition>
+        <argsstring>($path)</argsstring>
+        <name>html_footer</name>
+        <param>
+          <declname>$path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Generate footer</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametertype>string</parametertype>
+<parametername>$path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(description) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/functions/html_functions.php" line="153" column="1" bodyfile="/var/www/html/plato/php/functions/html_functions.php" bodystart="153" bodyend="194"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php<sp/></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="dc/dc2/html__functions_8php_1a646d06793a3d478095bb971aa37927f1" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="dc/dc2/html__functions_8php_1a646d06793a3d478095bb971aa37927f1" kindref="member">html_header</ref><sp/>($path,<sp/><ref refid="dc/dda/_admin_user_update_8php_1aaeb0a34550135c6f3caac7aa1db9b0ae" kindref="member">$userLevel</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">echo<sp/></highlight><highlight class="stringliteral">&apos;</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral">&lt;!DOCTYPE<sp/>html&gt;</highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral">&lt;html<sp/>lang=&quot;en&quot;&gt;</highlight></codeline>
+<codeline lineno="14"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;head&gt;</highlight></codeline>
+<codeline lineno="15"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;title&gt;PLATO<sp/>DataBase&lt;/title&gt;</highlight></codeline>
+<codeline lineno="16"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;meta<sp/>name=&quot;description&quot;<sp/>content=&quot;WebTool<sp/>for<sp/>96<sp/>well<sp/>plates<sp/>data<sp/>processing<sp/>in<sp/>plant<sp/>metabolisme<sp/>research&quot;<sp/>/&gt;</highlight></codeline>
+<codeline lineno="17"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;meta<sp/>http-equiv=&quot;content-type&quot;<sp/>content=&quot;text/html;<sp/>charset=utf-8&quot;<sp/>/&gt;</highlight></codeline>
+<codeline lineno="18"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;meta<sp/>name=&quot;viewport&quot;<sp/>content=&quot;width=device-width,<sp/>initial-scale=1.0&quot;<sp/>/&gt;</highlight></codeline>
+<codeline lineno="19"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="20"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;!--<sp/>bootstrap<sp/>3.0.2<sp/>--&gt;</highlight></codeline>
+<codeline lineno="21"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;link<sp/>rel=&quot;stylesheet&quot;<sp/>type=&quot;text/css&quot;<sp/>href=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/datatables/Bootstrap-3.3.5/css/bootstrap.min.css&quot;/&gt;</highlight></codeline>
+<codeline lineno="22"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;link<sp/>rel=&quot;stylesheet&quot;<sp/>type=&quot;text/css&quot;<sp/>href=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/datatables/DataTables-1.10.10/css/dataTables.bootstrap.min.css&quot;/&gt;</highlight></codeline>
+<codeline lineno="23"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;link<sp/>rel=&quot;stylesheet&quot;<sp/>type=&quot;text/css&quot;<sp/>href=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/datatables/Buttons-1.1.0/css/buttons.bootstrap.min.css&quot;/&gt;</highlight></codeline>
+<codeline lineno="24"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;link<sp/>rel=&quot;stylesheet&quot;<sp/>type=&quot;text/css&quot;<sp/>href=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/datatables/Responsive-2.0.0/css/responsive.bootstrap.min.css&quot;/&gt;</highlight></codeline>
+<codeline lineno="25"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;link<sp/>rel=&quot;stylesheet&quot;<sp/>type=&quot;text/css&quot;<sp/>href=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/datatables/Scroller-1.4.0/css/scroller.bootstrap.min.css&quot;/&gt;</highlight></codeline>
+<codeline lineno="26"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;link<sp/>rel=&quot;stylesheet&quot;<sp/>type=&quot;text/css&quot;<sp/>href=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/datatables/Select-1.1.0/css/select.bootstrap.min.css&quot;/&gt;</highlight></codeline>
+<codeline lineno="27"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;link<sp/>rel=&quot;stylesheet/less&quot;<sp/>type=&quot;text/css&quot;<sp/>href=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/themes/less/bootstrap.less&quot;/&gt;</highlight></codeline>
+<codeline lineno="28"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;link<sp/>rel=&quot;stylesheet&quot;<sp/>type=&quot;text/css&quot;<sp/>href=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/themes/style/delta.main.css&quot;<sp/>/&gt;</highlight></codeline>
+<codeline lineno="29"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;link<sp/>rel=&quot;stylesheet&quot;<sp/>type=&quot;text/css&quot;<sp/>href=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/themes/style/delta.grey.css&quot;/&gt;</highlight></codeline>
+<codeline lineno="30"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>type=&quot;text/javascript&quot;<sp/>src=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/themes/js/less/less.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="32"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;/head&gt;</highlight></codeline>
+<codeline lineno="33"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;body&gt;</highlight></codeline>
+<codeline lineno="34"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;br&gt;</highlight></codeline>
+<codeline lineno="35"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;div<sp/>id=&quot;sidebar&quot;&gt;<sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;h1<sp/>id=&quot;logo&quot;&gt;&lt;/h1&gt;</highlight></codeline>
+<codeline lineno="37"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;a<sp/>href=&quot;#&quot;<sp/>class=&quot;visible-phone&quot;&gt;&lt;i<sp/>class=&quot;icon<sp/>icon-home&quot;&gt;&lt;/i&gt;<sp/>Dashboard&lt;/a&gt;</highlight></codeline>
+<codeline lineno="38"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;ul&gt;</highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li<sp/>class=&quot;active&quot;&gt;&lt;a<sp/>href=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;index.php&quot;&gt;&lt;i<sp/>class=&quot;icon<sp/>icon-home&quot;&gt;&lt;/i&gt;<sp/>&lt;span&gt;Dashboard&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</highlight></codeline>
+<codeline lineno="40"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li<sp/>class=&quot;submenu&quot;<sp/>id=&quot;userPanel&quot;&gt;</highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;a<sp/>href=&quot;#&quot;&gt;&lt;i<sp/>class=&quot;icon<sp/>icon-th-list&quot;&gt;&lt;/i&gt;<sp/>&lt;span&gt;Database&lt;/span&gt;<sp/>&lt;span<sp/>class=&quot;label&quot;&gt;6&lt;/span&gt;&lt;/a&gt;</highlight></codeline>
+<codeline lineno="42"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;ul&gt;</highlight></codeline>
+<codeline lineno="43"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li&gt;&lt;a<sp/>href=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;php/standard/standards.php&quot;&gt;Standards&lt;/a&gt;&lt;/li&gt;</highlight></codeline>
+<codeline lineno="44"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li&gt;&lt;a<sp/>href=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;php/freshweight/freshweight.php&quot;&gt;Aliquots&lt;/a&gt;&lt;/li&gt;</highlight></codeline>
+<codeline lineno="45"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li&gt;&lt;a<sp/>href=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;php/batches/batches.php&quot;&gt;Batches&lt;/a&gt;&lt;/li&gt;</highlight></codeline>
+<codeline lineno="46"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li&gt;&lt;a<sp/>href=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;php/processing/processing.php&quot;&gt;Raw<sp/>Data<sp/>Processing&lt;/a&gt;&lt;/li&gt;</highlight></codeline>
+<codeline lineno="47"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li&gt;&lt;a<sp/>href=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;php/export/export.php&quot;&gt;Export&lt;/a&gt;&lt;/li&gt;</highlight></codeline>
+<codeline lineno="48"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li&gt;&lt;a<sp/>href=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;php/analytes/analytes.php&quot;&gt;Analytes&lt;/a&gt;&lt;/li&gt;</highlight></codeline>
+<codeline lineno="49"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/ul&gt;</highlight></codeline>
+<codeline lineno="50"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/li&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="dc/dda/_admin_user_update_8php_1aaeb0a34550135c6f3caac7aa1db9b0ae" kindref="member">$userLevel</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&quot;admin&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo</highlight><highlight class="stringliteral">&apos;<sp/><sp/><sp/>&lt;li<sp/>class=&quot;submenu&quot;<sp/>id=&quot;adminPanel&quot;&gt;</highlight></codeline>
+<codeline lineno="53"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;a<sp/>href=&quot;#&quot;&gt;&lt;i<sp/>class=&quot;icon<sp/>icon-pencil&quot;&gt;&lt;/i&gt;<sp/>&lt;span&gt;Admin<sp/>Panel&lt;/span&gt;<sp/>&lt;span<sp/>class=&quot;label&quot;&gt;6&lt;/span&gt;&lt;/a&gt;</highlight></codeline>
+<codeline lineno="54"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;ul&gt;</highlight></codeline>
+<codeline lineno="55"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li&gt;&lt;a<sp/>href=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;php/admin/adminStandard/adminStd.php&quot;&gt;Standards&lt;/a&gt;&lt;/li&gt;</highlight></codeline>
+<codeline lineno="56"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li&gt;&lt;a<sp/>href=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;php/admin/adminExperiment/adminExp.php&quot;&gt;Experiments&lt;/a&gt;&lt;/li&gt;</highlight></codeline>
+<codeline lineno="57"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li&gt;&lt;a<sp/>href=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;php/admin/adminBatch/adminBatch.php&quot;&gt;Batches&lt;/a&gt;&lt;/li&gt;</highlight></codeline>
+<codeline lineno="58"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li&gt;&lt;a<sp/>href=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;php/admin/adminRawdata/adminRawdata.php&quot;&gt;RawData&lt;/a&gt;&lt;/li&gt;</highlight></codeline>
+<codeline lineno="59"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li&gt;&lt;a<sp/>href=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;php/admin/adminEnzyme/adminEz.php&quot;&gt;Analytes&lt;/a&gt;&lt;/li&gt;</highlight></codeline>
+<codeline lineno="60"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li&gt;&lt;a<sp/>href=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;php/admin/adminPwd/adminPwd.php&quot;&gt;Users&lt;/a&gt;&lt;/li&gt;</highlight></codeline>
+<codeline lineno="61"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/ul&gt;</highlight></codeline>
+<codeline lineno="62"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/li&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo</highlight><highlight class="stringliteral">&apos;</highlight></codeline>
+<codeline lineno="65"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li&gt;&lt;a<sp/>href=&quot;#&quot;&gt;&lt;i<sp/>class=&quot;icon<sp/>icon-th&quot;&gt;&lt;/i&gt;<sp/>&lt;span&gt;Stocks&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</highlight></codeline>
+<codeline lineno="66"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li&gt;&lt;a<sp/>href=&quot;#&quot;&gt;&lt;i<sp/>class=&quot;icon<sp/>icon-th&quot;&gt;&lt;/i&gt;<sp/>&lt;span&gt;Protocols&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</highlight></codeline>
+<codeline lineno="67"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li&gt;&lt;a<sp/>href=&quot;#&quot;&gt;&lt;i<sp/>class=&quot;icon<sp/>icon-th-list&quot;&gt;&lt;/i&gt;<sp/>&lt;span&gt;Equations&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</highlight></codeline>
+<codeline lineno="68"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li<sp/>class=&quot;submenu&quot;<sp/>id=&quot;chartsPanel&quot;&gt;</highlight></codeline>
+<codeline lineno="69"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;a<sp/>href=&quot;#&quot;&gt;&lt;i<sp/>class=&quot;icon<sp/>icon-signal&quot;&gt;&lt;/i&gt;<sp/>&lt;span&gt;Charts<sp/>&amp;amp;<sp/>graphs&lt;/span&gt;<sp/>&lt;span<sp/>class=&quot;label&quot;&gt;1&lt;/span&gt;&lt;/a&gt;</highlight></codeline>
+<codeline lineno="70"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;ul&gt;</highlight></codeline>
+<codeline lineno="71"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;li&gt;&lt;a<sp/>href=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;php/charts/chart1.php&quot;&gt;Charts&lt;/a&gt;&lt;/li&gt;</highlight></codeline>
+<codeline lineno="72"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/ul&gt;</highlight></codeline>
+<codeline lineno="73"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/li&gt;</highlight></codeline>
+<codeline lineno="74"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/ul&gt;</highlight></codeline>
+<codeline lineno="75"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="76"><highlight class="stringliteral">&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="dc/dc2/html__functions_8php_1a38bc7cc70b85339d131511e477964121" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="dc/dc2/html__functions_8php_1a38bc7cc70b85339d131511e477964121" kindref="member">index_html_top_page</ref>($pagename)<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/></highlight><highlight class="stringliteral">&apos;</highlight></codeline>
+<codeline lineno="86"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;div<sp/>id=&quot;mainBody&quot;&gt;</highlight></codeline>
+<codeline lineno="87"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;h1&gt;&apos;</highlight><highlight class="normal">.$pagename.</highlight><highlight class="stringliteral">&apos;</highlight></codeline>
+<codeline lineno="88"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;div<sp/>class=&quot;pull-right&quot;&gt;</highlight></codeline>
+<codeline lineno="89"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;a<sp/>class=&quot;btn<sp/>btn-large<sp/>btn-info&quot;<sp/>data-toggle=&quot;modal&quot;<sp/>data-target=&quot;#login-modal&quot;&gt;&lt;i<sp/>class=&quot;icon<sp/>icon-user&quot;&gt;&lt;/i&gt;<sp/>Login&lt;/a&gt;</highlight></codeline>
+<codeline lineno="90"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;!--&lt;a<sp/>class=&quot;btn<sp/>btn-large&quot;<sp/>title=&quot;&quot;<sp/>href=&quot;#&quot;&gt;&lt;i<sp/>class=&quot;icon<sp/>icon-cog&quot;&gt;&lt;/i&gt;<sp/>Settings&lt;/a&gt;--&gt;</highlight></codeline>
+<codeline lineno="91"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;a<sp/>class=&quot;btn<sp/>btn-large<sp/>btn-danger&quot;<sp/>title=&quot;&quot;<sp/>href=&quot;php/functions/logout.php&quot;&gt;&lt;i<sp/>class=&quot;icon-off&quot;&gt;&lt;/i&gt;&lt;/a&gt;</highlight></codeline>
+<codeline lineno="92"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="93"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/h1&gt;</highlight></codeline>
+<codeline lineno="94"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;div<sp/>id=&quot;breadcrumb&quot;&gt;</highlight></codeline>
+<codeline lineno="95"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;a<sp/>href=&quot;#&quot;<sp/>title=&quot;Go<sp/>to<sp/>Home&quot;<sp/>class=&quot;tip-bottom&quot;&gt;&lt;i<sp/>class=&quot;icon-home&quot;&gt;&lt;/i&gt;&apos;</highlight><highlight class="normal">.$pagename.</highlight><highlight class="stringliteral">&apos;&lt;/a&gt;</highlight></codeline>
+<codeline lineno="96"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/div&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>echo</highlight><highlight class="stringliteral">&apos;</highlight></codeline>
+<codeline lineno="98"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;div<sp/>class=&quot;modal<sp/>fade&quot;<sp/>id=&quot;login-modal&quot;<sp/>tabindex=&quot;-1&quot;<sp/>role=&quot;dialog&quot;<sp/>aria-labelledby=&quot;myModalLabel&quot;<sp/>aria-hidden=&quot;true&quot;<sp/>style=&quot;display:<sp/>none;&quot;&gt;</highlight></codeline>
+<codeline lineno="99"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;div<sp/>class=&quot;modal-dialog&quot;&gt;</highlight></codeline>
+<codeline lineno="100"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;div<sp/>class=&quot;loginmodal-container&quot;&gt;</highlight></codeline>
+<codeline lineno="101"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;h1&gt;Login<sp/>to<sp/>Your<sp/>Account&lt;/h1&gt;&lt;br&gt;</highlight></codeline>
+<codeline lineno="102"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;form<sp/>id=&quot;formLogin&quot;<sp/>method=&quot;post&quot;<sp/>action=&quot;php/functions/login.php&quot;&gt;</highlight></codeline>
+<codeline lineno="103"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;input<sp/>type=&quot;text&quot;<sp/>name=&quot;user&quot;<sp/>placeholder=&quot;Username&quot;&gt;</highlight></codeline>
+<codeline lineno="104"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;input<sp/>type=&quot;password&quot;<sp/>name=&quot;pass&quot;<sp/>placeholder=&quot;Password&quot;&gt;</highlight></codeline>
+<codeline lineno="105"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;input<sp/>type=&quot;submit&quot;<sp/>name=&quot;login&quot;<sp/>class=&quot;login<sp/>loginmodal-submit&quot;<sp/>value=&quot;Login&quot;&gt;</highlight></codeline>
+<codeline lineno="106"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/form&gt;</highlight></codeline>
+<codeline lineno="107"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="108"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="109"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="110"><highlight class="stringliteral">&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="dc/dc2/html__functions_8php_1ad3d246d202506213fa6cbaad654a0a6d" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="dc/dc2/html__functions_8php_1ad3d246d202506213fa6cbaad654a0a6d" kindref="member">editable_html_top_page</ref>($path,<sp/>$pagename)<sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/></highlight><highlight class="stringliteral">&apos;&lt;div<sp/>id=&quot;mainBody&quot;&gt;</highlight></codeline>
+<codeline lineno="121"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;h1&gt;&apos;</highlight><highlight class="normal">.$pagename.</highlight><highlight class="stringliteral">&apos;</highlight></codeline>
+<codeline lineno="122"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;div<sp/>class=&quot;pull-right&quot;&gt;</highlight></codeline>
+<codeline lineno="123"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;a<sp/>class=&quot;btn<sp/>btn-large<sp/>btn-danger&quot;<sp/>title=&quot;&quot;<sp/>href=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;php/functions/logout.php&quot;&gt;&lt;i<sp/>class=&quot;icon-off&quot;&gt;&lt;/i&gt;&lt;/a&gt;</highlight></codeline>
+<codeline lineno="124"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="125"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/h1&gt;</highlight></codeline>
+<codeline lineno="126"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;div<sp/>id=&quot;breadcrumb&quot;&gt;</highlight></codeline>
+<codeline lineno="127"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;a<sp/>href=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;index.php&quot;<sp/>title=&quot;Go<sp/>to<sp/>Home&quot;<sp/>class=&quot;tip-bottom&quot;&gt;&lt;i<sp/>class=&quot;icon-home&quot;&gt;&lt;/i&gt;&apos;</highlight><highlight class="normal">.$pagename.</highlight><highlight class="stringliteral">&apos;&lt;/a&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="dc/dc2/html__functions_8php_1a9c419a7dadfba24c60e7b0d928686111" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="dc/dc2/html__functions_8php_1a9c419a7dadfba24c60e7b0d928686111" kindref="member">generic_html_top_page</ref>($path,<sp/>$pagename)<sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/></highlight><highlight class="stringliteral">&apos;&lt;div<sp/>id=&quot;mainBody&quot;&gt;</highlight></codeline>
+<codeline lineno="138"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;h1&gt;&apos;</highlight><highlight class="normal">.$pagename.</highlight><highlight class="stringliteral">&apos;</highlight></codeline>
+<codeline lineno="139"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;div<sp/>class=&quot;pull-right&quot;&gt;</highlight></codeline>
+<codeline lineno="140"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;a<sp/>class=&quot;btn<sp/>btn-large<sp/>btn-danger&quot;<sp/>title=&quot;&quot;<sp/>href=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;php/functions/logout.php&quot;&gt;&lt;i<sp/>class=&quot;icon-off&quot;&gt;&lt;/i&gt;&lt;/a&gt;</highlight></codeline>
+<codeline lineno="141"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="142"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/h1&gt;</highlight></codeline>
+<codeline lineno="143"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;div<sp/>id=&quot;breadcrumb&quot;&gt;</highlight></codeline>
+<codeline lineno="144"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;a<sp/>href=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;index.php&quot;<sp/>title=&quot;Go<sp/>to<sp/>Home&quot;<sp/>class=&quot;tip-bottom&quot;&gt;&lt;i<sp/>class=&quot;icon-home&quot;&gt;&lt;/i&gt;&apos;</highlight><highlight class="normal">.$pagename.</highlight><highlight class="stringliteral">&apos;&lt;/a&gt;</highlight></codeline>
+<codeline lineno="145"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/div&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="dc/dc2/html__functions_8php_1a85d7e13b241a01dc5832cd64db3e3070" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="dc/dc2/html__functions_8php_1a85d7e13b241a01dc5832cd64db3e3070" kindref="member">html_footer</ref>($path)<sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">echo</highlight><highlight class="stringliteral">&apos;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="155"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;div<sp/>class=&quot;row-fluid&quot;&gt;</highlight></codeline>
+<codeline lineno="156"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;div<sp/>id=&quot;footer&quot;<sp/>class=&quot;span12&quot;&gt;</highlight></codeline>
+<codeline lineno="157"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;h1<sp/>style=&quot;font-size:xx-small&quot;&gt;Free<sp/>Bootstrappage<sp/>Admin.<sp/>Brought<sp/>to<sp/>you<sp/>by&lt;a<sp/>id=&quot;poweredBy&quot;<sp/>href=&quot;https://github.com/almasaeed2010/AdminLTE&quot;<sp/>target=&quot;_blank&quot;&gt;<sp/>Almasaeed<sp/>Studio&lt;/a&gt;&lt;/h1&gt;</highlight></codeline>
+<codeline lineno="158"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="159"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="160"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="161"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="162"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script&gt;<sp/>less<sp/>=<sp/>{env:<sp/>&quot;development&quot;};&lt;/script&gt;</highlight></codeline>
+<codeline lineno="163"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="164"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>type=&quot;text/javascript&quot;<sp/>src=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/datatables/jQuery-2.1.4/jquery-2.1.4.min.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="165"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>type=&quot;text/javascript&quot;<sp/>src=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/datatables/Bootstrap-3.3.5/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="166"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>type=&quot;text/javascript&quot;<sp/>src=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/datatables/pdfmake-0.1.18/build/pdfmake.min.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="167"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>type=&quot;text/javascript&quot;<sp/>src=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/datatables/pdfmake-0.1.18/build/vfs_fonts.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="168"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>type=&quot;text/javascript&quot;<sp/>src=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/datatables/DataTables-1.10.10/js/jquery.dataTables.min.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="169"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>type=&quot;text/javascript&quot;<sp/>src=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/datatables/DataTables-1.10.10/js/dataTables.bootstrap.min.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="170"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>type=&quot;text/javascript&quot;<sp/>src=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/datatables/Buttons-1.1.0/js/dataTables.buttons.min.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="171"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>type=&quot;text/javascript&quot;<sp/>src=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/datatables/Buttons-1.1.0/js/buttons.bootstrap.min.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="172"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>type=&quot;text/javascript&quot;<sp/>src=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/datatables/Buttons-1.1.0/js/buttons.colVis.min.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="173"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>type=&quot;text/javascript&quot;<sp/>src=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/datatables/Buttons-1.1.0/js/buttons.flash.min.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="174"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>type=&quot;text/javascript&quot;<sp/>src=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/datatables/Buttons-1.1.0/js/buttons.html5.min.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="175"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>type=&quot;text/javascript&quot;<sp/>src=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/datatables/Buttons-1.1.0/js/buttons.print.min.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="176"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>type=&quot;text/javascript&quot;<sp/>src=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/datatables/Responsive-2.0.0/js/dataTables.responsive.min.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="177"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>type=&quot;text/javascript&quot;<sp/>src=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/datatables/Responsive-2.0.0/js/responsive.bootstrap.min.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="178"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>type=&quot;text/javascript&quot;<sp/>src=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/datatables/Scroller-1.4.0/js/dataTables.scroller.min.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="179"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>type=&quot;text/javascript&quot;<sp/>src=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/datatables/Select-1.1.0/js/dataTables.select.min.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="180"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>type=&quot;text/javascript&quot;<sp/>src=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/datatables/JSZip-2.5.0/jszip.min.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="181"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>type=&quot;text/javascript&quot;<sp/>src=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/themes/js/jquery.flot.min.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="182"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>type=&quot;text/javascript&quot;<sp/>src=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/themes/js/jquery.flot.resize.min.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="183"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>type=&quot;text/javascript&quot;<sp/>src=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/themes/js/jquery.peity.min.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="184"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>type=&quot;text/javascript&quot;<sp/>src=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/themes/js/fullcalendar.min.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="185"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>type=&quot;text/javascript&quot;<sp/>src=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/themes/js/delta.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="186"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>type=&quot;text/javascript&quot;<sp/>src=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/js/highcharts.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="187"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>type=&quot;text/javascript&quot;<sp/>src=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/js/highcharts-more.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="188"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>type=&quot;text/javascript&quot;<sp/>src=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/js//solid-gauge.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="189"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>type=&quot;text/javascript&quot;<sp/>src=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/js/exporting.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="190"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;script<sp/>type=&quot;text/javascript&quot;<sp/>src=&quot;&apos;</highlight><highlight class="normal">.$path.</highlight><highlight class="stringliteral">&apos;libs/js/natural.js&quot;&gt;&lt;/script&gt;</highlight></codeline>
+<codeline lineno="191"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="192"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;/body&gt;</highlight></codeline>
+<codeline lineno="193"><highlight class="stringliteral">&lt;/html&gt;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="/var/www/html/plato/php/functions/html_functions.php"/>
+  </compounddef>
+</doxygen>

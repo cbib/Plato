@@ -252,7 +252,9 @@ html_footer("../../");
 	var expName="";
 	var currentBatchID ="";
 
-
+/**
+ * Action when document is ready
+ */
 $(document).ready(function() {
 	$('#userPanel').removeClass('submenu');
 	$('#userPanel').addClass('submenu open');
@@ -300,7 +302,9 @@ $(document).ready(function() {
 	});
 
 });
-
+/**
+ * Listener on batchname when adding a batch, check if name alreayd exists in the database
+ */
 $(document).on("change", "#batchName" , function(e){
 	$.ajax({
 		url: "controlBatchNameAndNumber.php",
@@ -326,8 +330,11 @@ $(document).on("change", "#batchName" , function(e){
 	});
 });
 
+/**
+ * controls on batchnumber when adding a batch
+ */
 $(document).on("input", "#batchNumber" , function(e){
-	console.log("input");
+//	console.log("input");
 	if($('#batchNumber').val() == ""){
 		$( "button" ).filter( "#addBatchSubmit" ).prop("disabled",true);
 	}
@@ -370,8 +377,8 @@ $(document).on("input", "#batchNumber" , function(e){
 $(document).bind("paste", '#col1', function(e){
 	if (e.originalEvent.target.id=="col1"){
 		var data = e.originalEvent.clipboardData.getData('Text');
-		console.log("originalData");
-		console.log(data);
+//		console.log("originalData");
+//		console.log(data);
 		dispatchAddBatchDatas(data);
 	}
 	else {
@@ -486,7 +493,7 @@ function showWaitModal(){
 }
 
 /**
- * Hide loading progress bar
+ * Hide progress bar
  *
  * @method     hideWaitModal
  */
@@ -500,7 +507,6 @@ function hideWaitModal(){
  *
  * @method     create_addBatch_modal
  */
-    
 function create_addBatch_modal() {
 	var modal ='<div class="modal-dialog-addBatch">'+
 		'<div class="modal-content">'+
@@ -605,7 +611,7 @@ function create_addBatch_modal() {
  * Insertion of a new batch in the database
  *
  * @method     batchInsert
- * @param      {<type>}  tableID  { description }
+ * @param      {<type>}  tableID  { id of the table to save}
  */
 function batchInsert(tableID){
 
@@ -685,8 +691,8 @@ function batchInsert(tableID){
  * send batch data from batchtable to insert_batch.php
  *
  * @method     batchEdition
- * @param      {<type>}  batchID  { description }
- * @param      {<type>}  tableID  { description }
+ * @param      {<type>}  batchID  { id of the selected batch }
+ * @param      {<type>}  tableID  { id of the table to save }
  */
 function batchEdition(batchID, tableID){
 	var table=document.getElementById(tableID);
@@ -824,7 +830,7 @@ function setup_experiment_datatable(){
  * display data on row tables when past.
  *
  * @method     dispatchAddRowsDatas
- * @param      {(number|string)}  data    { description }
+ * @param      {(number|string)}  data    { data pasted by the user }
  */
 function dispatchAddBatchDatas(data) {
 	data = data.replace(/ +/g, '');
@@ -849,6 +855,10 @@ function dispatchAddBatchDatas(data) {
 		boolOK = false;
 	}
 
+
+	/**
+	 * Calculation of who is who, who is a standard, who is a blank, who is a sample etc.
+	 */
 	for (var i = 0; i < dataLength; i++) {
 		var rowDatas = rowsDatas[i].split(/(?:\t)+/);
 		for (var j = 0; j < rowDatas.length; j++) {
@@ -898,8 +908,9 @@ function dispatchAddBatchDatas(data) {
 		}
 	}
 
+	// Check is samples and aliquot are alredy used
 	checkUse(rowsDatas).then(function (checkUseResponse) {
-		console.log(checkUseResponse);
+//		console.log(checkUseResponse);
 		for (var i = 0; i < dataLength; i++) {
 			var rowDatas = rowsDatas[i].split(/(?:\t)+/);
 			$('input:radio[name=layout]:nth(0)').attr('checked', true);
@@ -913,8 +924,8 @@ function dispatchAddBatchDatas(data) {
 				'<td>' + (i + 1) + '</td>';
 			for (var j = 0; j < rowDatas.length; j++) {
 				var name = chomp(rowDatas[j]);
-				console.log(name + " : " + checkUseResponse[i][j]);
-				console.log(name + " : " + hashSeekDoublons[name]);
+//				console.log(name + " : " + checkUseResponse[i][j]);
+//				console.log(name + " : " + hashSeekDoublons[name]);
 				if ((checkUseResponse[i][j] != "free") || (hashSeekDoublons[name] >1)) {
 					newRowContent += '<td><input style="background-color :#EB9018" class="form-control input-sm" type="text" id="1" value="' + name + '" ></td>';
 					boolOK = false;
@@ -987,15 +998,15 @@ function dispatchAddBatchDatas(data) {
 }
 
 /**
- * Check if a freshweight is already used
+ * Check if a aliquots are already used
  *
  * @method     checkUse
- * @param      {<type>}   line    { description }
- * @return     {boolean}  { description_of_the_return_value }
+ * @param      {<type>}   data    { data to send to the server for checking }
+ * @return     {Promise}  { description_of_the_return_value }
  */
 function checkUse(data){
-	console.log("data");
-	console.log(data);
+//	console.log("data");
+//	console.log(data);
 	return new Promise(function (resolve, reject) {
 		$.ajax({
 			url: "batch_is_used.php",
@@ -1006,9 +1017,9 @@ function checkUse(data){
 			},
 			success: function (data) {
 				var obj = JSON.parse(data);
-				console.log("RESULT OF IS USED 2");
-				console.log(data);
-				console.log(obj);
+//				console.log("RESULT OF IS USED 2");
+//				console.log(data);
+//				console.log(obj);
 				resolve(obj.result);
 			},
 			error: function (xhr, status, error) {
@@ -1127,8 +1138,8 @@ function displayVals() {
  * Remove useless strings (retour chariot a la fin de ligne, equivalent de chomp en perl)
  *
  * @method     chomp
- * @param      {string}  raw_text  { description }
- * @return     {string}  { description_of_the_return_value }
+ * @param      {string}  raw_text  { text to chomp }
+ * @return     {string}  { text trimed of possible end of line (win or unix) }
  */
 function chomp(raw_text){
 	return raw_text.replace(/(\n|\r)+$/, '').trim();

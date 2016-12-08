@@ -1,0 +1,107 @@
+.TH "php/export/export_get_exp_data.php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/export/export_get_exp_data.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$conn\fP = \fBget_connexion\fP()"
+.br
+.ti -1c
+.RI "\fB$expID\fP = $_POST['\fBexpID\fP']"
+.br
+.ti -1c
+.RI "\fB$expName\fP = $_POST['expName']"
+.br
+.ti -1c
+.RI "\fB$output\fP = array()"
+.br
+.ti -1c
+.RI "\fB$query\fP"
+.br
+.ti -1c
+.RI "\fB$results\fP = $conn->query($query)->fetchAll()"
+.br
+.ti -1c
+.RI "\fB$ezNameQuery\fP"
+.br
+.ti -1c
+.RI "\fB$ezNames\fP = $conn->query($ezNameQuery)->fetchAll()"
+.br
+.ti -1c
+.RI "\fB$lineName\fP =''"
+.br
+.ti -1c
+.RI "foreach($ezNames as $name) \fB$output\fP [] =$lineName"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$conn = \fBget_connexion\fP()"
+
+.PP
+Definition at line 4 of file export_get_exp_data\&.php\&.
+.SS "$\fBexpID\fP = $_POST['\fBexpID\fP']"
+
+.PP
+Definition at line 6 of file export_get_exp_data\&.php\&.
+.SS "$expName = $_POST['expName']"
+
+.PP
+Definition at line 7 of file export_get_exp_data\&.php\&.
+.SS "$ezNameQuery"
+\fBInitial value:\fP
+.PP
+.nf
+='SELECT distinct (ez_analyte), ez_id, ez_code
+    FROM 
+        enzyme, rawdata, batch_data
+    WHERE
+        bat_data_experiment_FK = '\&.$expID\&.' AND 
+        rawdata_batch_data_FK = bat_data_id AND 
+        ez_id = data_enzyme_FK 
+    ORDER BY
+        enzyme\&.ez_analyte;'
+.fi
+.PP
+Definition at line 17 of file export_get_exp_data\&.php\&.
+.SS "$ezNames = $conn->query($ezNameQuery)->fetchAll()"
+
+.PP
+Definition at line 26 of file export_get_exp_data\&.php\&.
+.SS "$lineName =''"
+
+.PP
+Definition at line 27 of file export_get_exp_data\&.php\&.
+.SS "$output = array()"
+
+.PP
+Definition at line 8 of file export_get_exp_data\&.php\&.
+.SS "foreach ($ezNames as $name) $output[] =$lineName"
+
+.PP
+Definition at line 31 of file export_get_exp_data\&.php\&.
+.SS "$query"
+\fBInitial value:\fP
+.PP
+.nf
+='SELECT bat_data_batch_FK, bat_data_id, spl_number, alq_number FROM batch_data, sample_aliquot, sample, aliquot WHERE bat_data_experiment_FK = '\&.$expID\&.' AND
+    sample_aliquot\&.spl_alq_id = batch_data\&.bat_data_sample_aliquot_FK AND
+    sample\&.spl_id = sample_aliquot\&.spl_alq_sample_FK AND
+    aliquot\&.alq_id = sample_aliquot\&.spl_alq_aliquot_FK
+    ORDER BY sample\&.spl_number, aliquot\&.alq_number ;'
+.fi
+.PP
+Definition at line 10 of file export_get_exp_data\&.php\&.
+.SS "$results = $conn->query($query)->fetchAll()"
+
+.PP
+Definition at line 16 of file export_get_exp_data\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

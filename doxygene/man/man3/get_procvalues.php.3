@@ -1,0 +1,89 @@
+.TH "php/export/get_procvalues.php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/export/get_procvalues.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$conn\fP = \fBget_connexion\fP()"
+.br
+.ti -1c
+.RI "\fB$hash\fP =Array()"
+.br
+.ti -1c
+.RI "\fB$batchID\fP =-1"
+.br
+.ti -1c
+.RI "\fB$ezID\fP = -1"
+.br
+.ti -1c
+.RI "if(isset($_POST['\fBbatchID\fP'])) 
+.br
+if(isset($_POST['\fBezID\fP'])) \fB$queryLayout\fP ='SELECT batch\&.bat_layout FROM batch where bat_id = '\&.$batchID\&.';'"
+.br
+.ti -1c
+.RI "\fB$sth\fP =$conn->prepare($queryLayout)"
+.br
+.ti -1c
+.RI "\fB$count\fP = $sth->rowCount()"
+.br
+.ti -1c
+.RI "\fB$result\fP =$sth->fetch()"
+.br
+.ti -1c
+.RI "\fB$layout\fP = $result['bat_layout']"
+.br
+.ti -1c
+.RI "if(($batchID!=-1)&&($ezID!=-1)) \fB$response_array\fP ['procValues'] =$procValues"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$\fBbatchID\fP =-1"
+
+.PP
+Definition at line 8 of file get_procvalues\&.php\&.
+.SS "$conn = \fBget_connexion\fP()"
+
+.PP
+Definition at line 4 of file get_procvalues\&.php\&.
+.SS "$count = $sth->rowCount()"
+
+.PP
+Definition at line 22 of file get_procvalues\&.php\&.
+.SS "$\fBezID\fP = -1"
+
+.PP
+Definition at line 9 of file get_procvalues\&.php\&.
+.SS "$hash =Array()"
+
+.PP
+Definition at line 6 of file get_procvalues\&.php\&.
+.SS "$layout = $result['bat_layout']"
+
+.PP
+Definition at line 24 of file get_procvalues\&.php\&.
+.SS "if (isset($_POST['\fBbatchID\fP'])) if (isset($_POST['\fBezID\fP'])) $queryLayout ='SELECT batch\&.bat_layout FROM batch where bat_id = '\&.$batchID\&.';'"
+
+.PP
+Definition at line 18 of file get_procvalues\&.php\&.
+.SS "if (($batchID!=-1)&&($ezID!=-1)) $response_array['procValues'] =$procValues"
+
+.PP
+Definition at line 97 of file get_procvalues\&.php\&.
+.SS "$result =$sth->fetch()"
+
+.PP
+Definition at line 23 of file get_procvalues\&.php\&.
+.SS "$sth =$conn->prepare($queryLayout)"
+
+.PP
+Definition at line 19 of file get_procvalues\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

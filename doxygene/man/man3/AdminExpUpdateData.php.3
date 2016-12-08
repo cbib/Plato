@@ -1,0 +1,91 @@
+.TH "php/admin/adminExperiment/AdminExpUpdateData.php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/admin/adminExperiment/AdminExpUpdateData.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$conn\fP = \fBget_connexion\fP()"
+.br
+.ti -1c
+.RI "\fB$action\fP =''"
+.br
+.ti -1c
+.RI "\fB$expID\fP =''"
+.br
+.ti -1c
+.RI "\fB$stdID\fP =1"
+.br
+.ti -1c
+.RI "\fB$expName\fP =''"
+.br
+.ti -1c
+.RI "\fB$status\fP = 'success'"
+.br
+.ti -1c
+.RI "if(isset($_POST['\fBexpID\fP'])) if(isset($_POST['stdID'])) 
+.br
+if(isset($_POST['expName'])) 
+.br
+if(isset($_POST['action'])) if($action=='create') 
+.br
+elseif($action=='edit') elseif($action=='delete') \fBelse\fP"
+.br
+.ti -1c
+.RI "\fB$response_array\fP ['status'] =$status"
+.br
+.ti -1c
+.RI "\fB$response_array\fP ['action'] =$action"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$action =''"
+
+.PP
+Definition at line 10 of file AdminExpUpdateData\&.php\&.
+.SS "$conn = \fBget_connexion\fP()"
+
+.PP
+Definition at line 5 of file AdminExpUpdateData\&.php\&.
+.SS "$\fBexpID\fP =''"
+
+.PP
+Definition at line 11 of file AdminExpUpdateData\&.php\&.
+.SS "$expName =''"
+
+.PP
+Definition at line 13 of file AdminExpUpdateData\&.php\&.
+.SS "$response_array['status'] =$status"
+
+.PP
+Definition at line 171 of file AdminExpUpdateData\&.php\&.
+.SS "$response_array['action'] =$action"
+
+.PP
+Definition at line 172 of file AdminExpUpdateData\&.php\&.
+.SS "$status = 'success'"
+
+.PP
+Definition at line 14 of file AdminExpUpdateData\&.php\&.
+.SS "$stdID =1"
+
+.PP
+Definition at line 12 of file AdminExpUpdateData\&.php\&.
+.SS "if (isset($_POST['\fBexpID\fP'])) if (isset($_POST['stdID'])) if (isset($_POST['expName'])) if (isset($_POST['action'])) if ($action=='create') elseif ($action=='edit') elseif ($action=='delete') else"
+\fBInitial value:\fP
+.PP
+.nf
+{
+        $status="error"
+.fi
+.PP
+Definition at line 166 of file AdminExpUpdateData\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

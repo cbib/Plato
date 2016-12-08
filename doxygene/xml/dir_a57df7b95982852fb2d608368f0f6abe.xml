@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_a57df7b95982852fb2d608368f0f6abe" kind="dir">
+    <compoundname>php/charts</compoundname>
+    <innerfile refid="db/d8a/chart1_8php">chart1.php</innerfile>
+    <innerfile refid="d0/dca/charts__functions_8php">charts_functions.php</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/var/www/html/plato/php/charts/"/>
+  </compounddef>
+</doxygen>

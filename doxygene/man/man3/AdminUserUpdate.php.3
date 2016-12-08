@@ -1,0 +1,150 @@
+.TH "php/admin/adminPwd/AdminUserUpdate.php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/admin/adminPwd/AdminUserUpdate.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$conn\fP = \fBget_connexion\fP()"
+.br
+.ti -1c
+.RI "\fB$userID\fP =''"
+.br
+.ti -1c
+.RI "\fB$userName\fP =''"
+.br
+.ti -1c
+.RI "\fB$userLevel\fP =''"
+.br
+.ti -1c
+.RI "\fB$adminPassword\fP =''"
+.br
+.ti -1c
+.RI "\fB$userPassword\fP =''"
+.br
+.ti -1c
+.RI "\fB$action\fP =''"
+.br
+.ti -1c
+.RI "\fB$status\fP ='success'"
+.br
+.ti -1c
+.RI "\fB$boolOk\fP =false"
+.br
+.ti -1c
+.RI "if(isset($_POST['userID'])) if(isset($_POST['userName'])) 
+.br
+if(isset($_POST['adminPassword'])) 
+.br
+if(isset($_POST['userPassword'])) 
+.br
+if(isset($_POST['action'])) if(isset($_POST['userLevel'])) \fB$pass_hache\fP = hash( 'sha256', $adminPassword)"
+.br
+.ti -1c
+.RI "\fB$query\fP"
+.br
+.ti -1c
+.RI "\fBtry\fP"
+.br
+.ti -1c
+.RI "if(!$req) \fBelse\fP"
+.br
+.ti -1c
+.RI "\fB$response_array\fP ['status'] =$status"
+.br
+.ti -1c
+.RI "\fB$response_array\fP ['action'] =$action"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$action =''"
+
+.PP
+Definition at line 14 of file AdminUserUpdate\&.php\&.
+.SS "$adminPassword =''"
+
+.PP
+Definition at line 12 of file AdminUserUpdate\&.php\&.
+.SS "$boolOk =false"
+
+.PP
+Definition at line 16 of file AdminUserUpdate\&.php\&.
+.SS "$conn = \fBget_connexion\fP()"
+
+.PP
+Definition at line 5 of file AdminUserUpdate\&.php\&.
+.SS "if (isset($_POST['userID'])) if (isset($_POST['userName'])) if (isset($_POST['adminPassword'])) if (isset($_POST['userPassword'])) if (isset($_POST['action'])) if (isset($_POST['userLevel'])) $pass_hache = hash( 'sha256', $adminPassword)"
+
+.PP
+Definition at line 38 of file AdminUserUpdate\&.php\&.
+.SS "$query"
+\fBInitial value:\fP
+.PP
+.nf
+="
+    SELECT
+        count(*)
+    FROM
+        user
+    WHERE
+        usr_status like '%admin%' AND 
+        usr_pwd like '%"\&.$pass_hache\&."%' ;
+    "
+.fi
+.PP
+Definition at line 39 of file AdminUserUpdate\&.php\&.
+.SS "$response_array['status'] =$status"
+
+.PP
+Definition at line 119 of file AdminUserUpdate\&.php\&.
+.SS "$response_array['action'] =$action"
+
+.PP
+Definition at line 120 of file AdminUserUpdate\&.php\&.
+.SS "$status ='success'"
+
+.PP
+Definition at line 15 of file AdminUserUpdate\&.php\&.
+.SS "$userID =''"
+
+.PP
+Definition at line 9 of file AdminUserUpdate\&.php\&.
+.SS "$userLevel =''"
+
+.PP
+Definition at line 11 of file AdminUserUpdate\&.php\&.
+.SS "$userName =''"
+
+.PP
+Definition at line 10 of file AdminUserUpdate\&.php\&.
+.SS "$userPassword =''"
+
+.PP
+Definition at line 13 of file AdminUserUpdate\&.php\&.
+.SS "catch (Exception $e) if ($boolOk==\fBtrue\fP) else"
+\fBInitial value:\fP
+.PP
+.nf
+{
+            $boolOk = true
+.fi
+.PP
+Definition at line 58 of file AdminUserUpdate\&.php\&.
+.SS "try"
+\fBInitial value:\fP
+.PP
+.nf
+{
+        $req = $conn->query($query)->fetchColumn()
+.fi
+.PP
+Definition at line 50 of file AdminUserUpdate\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

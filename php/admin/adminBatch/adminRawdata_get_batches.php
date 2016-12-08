@@ -4,6 +4,7 @@
 	$conn = get_connexion();
 
 
+	// get the list of batches for an experiment
 	$expID = $_POST['expID'];
 	//error_log($expID);
 	$query ='

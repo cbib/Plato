@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_ee3f36f8ac7f6fc29f8ed506d740f180" kind="dir">
+    <compoundname>php/admin/adminBatch</compoundname>
+    <innerfile refid="dd/de8/admin_batch_8php">adminBatch.php</innerfile>
+    <innerfile refid="df/d08/admin_batch_update_data_8php">adminBatchUpdateData.php</innerfile>
+    <innerfile refid="d0/df1/admin_batch_2admin_rawdata__database__functions_8php">adminRawdata_database_functions.php</innerfile>
+    <innerfile refid="d7/d0a/admin_batch_2admin_rawdata__get__batches_8php">adminRawdata_get_batches.php</innerfile>
+    <innerfile refid="d1/df6/admin_batch_2admin_raw_data__get__enzymes_8php">adminRawData_get_enzymes.php</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/var/www/html/plato/php/admin/adminBatch/"/>
+  </compounddef>
+</doxygen>

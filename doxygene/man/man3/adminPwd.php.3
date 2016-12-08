@@ -1,0 +1,80 @@
+.TH "php/admin/adminPwd/adminPwd.php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/admin/adminPwd/adminPwd.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBsetup_datatable\fP ()"
+.br
+.ti -1c
+.RI "\fBconstruct_delete_modal\fP (\fBdata\fP, action)"
+.br
+.ti -1c
+.RI "\fBconstruct_edit_modal\fP (\fBdata\fP, action)"
+.br
+.ti -1c
+.RI "\fBconstruct_create_modal\fP (\fBdata\fP, action)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "construct_create_modal (\fBdata\fP, action)"
+Construction of a modal window for user creation
+.PP
+construct_create_modal 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{<type>}\fP data { useless } 
+.br
+\fI{string}\fP action { action associated to the submit button (edit, create, delete) } 
+.RE
+.PP
+
+.PP
+Definition at line 290 of file adminPwd\&.php\&.
+.SS "construct_delete_modal (\fBdata\fP, action)"
+Construction of a modal window for user deletion
+.PP
+construct_delete_modal 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{string}\fP data { id and name of the user } 
+.br
+\fI{string}\fP action { action associated to the submit button (edit, create, delete) } 
+.RE
+.PP
+
+.PP
+Definition at line 196 of file adminPwd\&.php\&.
+.SS "construct_edit_modal (\fBdata\fP, action)"
+Construction of a modal window for user edition
+.PP
+construct_edit_modal 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{string}\fP data { id and name of the user } 
+.br
+\fI{string}\fP action { action associated to the submit button (edit, create, delete) } 
+.RE
+.PP
+
+.PP
+Definition at line 229 of file adminPwd\&.php\&.
+.SS "setup_datatable ()"
+Set datatable of users up
+.PP
+setup_datatable 
+.PP
+Definition at line 170 of file adminPwd\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

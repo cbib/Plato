@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dd/d62/_admin_s_t_d_update_data_8php">
+    <title>AdminSTDUpdateData.php File Reference</title>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/d62/_admin_s_t_d_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877">$conn</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/d62/_admin_s_t_d_update_data_8php_1a35ce457f656c7fe2bf96a6813364da40">$stdId</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/d62/_admin_s_t_d_update_data_8php_1a04bd6b914feb54eeeb053d3f690fea50">$stdName</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/d62/_admin_s_t_d_update_data_8php_1a8964a2785066a92d7c0b11ff5a0261ea">$stdGenius</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/d62/_admin_s_t_d_update_data_8php_1a1d77174f9d4320006ec140e643f95324">$stdSpecies</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/d62/_admin_s_t_d_update_data_8php_1a26327dd0b8e0254d4910cf94160bb302">$stdGenotype</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/d62/_admin_s_t_d_update_data_8php_1a53b4aa93fde2c9f30c1eecf48472c395">$stdNature</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/d62/_admin_s_t_d_update_data_8php_1ab6c56dc36eabf5961ac9ee1de239c3a4">$stdOwner</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/d62/_admin_s_t_d_update_data_8php_1a57ad1d0043a566efde8a4fb592d52b18">$stdComment</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/d62/_admin_s_t_d_update_data_8php_1aa698a3e72116e8e778be0e95d908ee30">$action</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/d62/_admin_s_t_d_update_data_8php_1a58391ea75f2d29d5d708d7050b641c33">$status</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>if(isset($_POST[&apos;id&apos;])) if(isset($_POST[&apos;stdName&apos;])) if(isset($_POST[&apos;stdGenius&apos;])) if(isset($_POST[&apos;stdSpecies&apos;])) if(isset($_POST[&apos;stdGenotype&apos;])) if(isset($_POST[&apos;stdNature&apos;])) if(isset($_POST[&apos;stdOwner&apos;])) if(isset($_POST[&apos;stdComment&apos;])) if(isset($_POST[&apos;action&apos;])) if($action==&quot;create&quot;) elseif($action==&quot;edit&quot;) elseif($action==&quot;delete&quot;) <link linkend="dd/d62/_admin_s_t_d_update_data_8php_1ac39ffa0dfdb937b45fe1b6df63ed5191">else</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/d62/_admin_s_t_d_update_data_8php_1acd0903a7a32e8397aefd0ce8b7dbd1ab">$response_array</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dd/d62/_admin_s_t_d_update_data_8php_1ae768978a0cdc416c0d63d798c85c8784">$response_array</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /var/www/html/plato/php/admin/adminStandard/AdminSTDUpdateData.php</para>
+    </simplesect>
+</section>

@@ -1,0 +1,103 @@
+\hypertarget{batches_2save__edit_07obsolete_08_8php}{\section{php/batches/save\-\_\-edit(obsolete).php File Reference}
+\label{batches_2save__edit_07obsolete_08_8php}\index{php/batches/save\-\_\-edit(obsolete).\-php@{php/batches/save\-\_\-edit(obsolete).\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{batches_2save__edit_07obsolete_08_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{batches_2save__edit_07obsolete_08_8php_a58391ea75f2d29d5d708d7050b641c33}{\$status} =\char`\"{}success\char`\"{}
+\item 
+\hyperlink{batches_2save__edit_07obsolete_08_8php_aaa6d122ea9cb55b210aadd86e5654a74}{\$batch\-I\-D} = \char`\"{}\char`\"{}
+\item 
+\hyperlink{batches_2save__edit_07obsolete_08_8php_abdab71b959b28075ae105e76f2bb59c4}{\$rawdatas} = \char`\"{}\char`\"{}
+\item 
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'\hyperlink{obsolete_2processing__bak_8php_a88c5bc4262b7c34f236357f5c53fc99b}{batch\-I\-D}'\mbox{]})) \\*
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'rawdatas'\mbox{]})) \hyperlink{batches_2save__edit_07obsolete_08_8php_af161305a49807e24a46f54150c411820}{\$query}
+\item 
+\hyperlink{batches_2save__edit_07obsolete_08_8php_abe4cc9788f52e49485473dc699537388}{try}
+\item 
+catch(Exception \$e) \hyperlink{batches_2save__edit_07obsolete_08_8php_a8452fb8131316637a04e25f5fde066d9}{\$response\-\_\-array} \mbox{[}'status'\mbox{]} =\$status
+\item 
+\hyperlink{batches_2save__edit_07obsolete_08_8php_ae768978a0cdc416c0d63d798c85c8784}{\$response\-\_\-array} \mbox{[}'action'\mbox{]} =\char`\"{}Insertion\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{batches_2save__edit_07obsolete_08_8php_aaa6d122ea9cb55b210aadd86e5654a74}{\index{batches/save\-\_\-edit(obsolete).\-php@{batches/save\-\_\-edit(obsolete).\-php}!\$batch\-I\-D@{\$batch\-I\-D}}
+\index{\$batch\-I\-D@{\$batch\-I\-D}!batches/save_edit(obsolete).php@{batches/save\-\_\-edit(obsolete).\-php}}
+\subsubsection[{\$batch\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf batch\-I\-D} = \char`\"{}\char`\"{}}}\label{batches_2save__edit_07obsolete_08_8php_aaa6d122ea9cb55b210aadd86e5654a74}
+
+
+Definition at line 8 of file save\-\_\-edit(obsolete).\-php.
+
+\hypertarget{batches_2save__edit_07obsolete_08_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{batches/save\-\_\-edit(obsolete).\-php@{batches/save\-\_\-edit(obsolete).\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!batches/save_edit(obsolete).php@{batches/save\-\_\-edit(obsolete).\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{batches_2save__edit_07obsolete_08_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 5 of file save\-\_\-edit(obsolete).\-php.
+
+\hypertarget{batches_2save__edit_07obsolete_08_8php_af161305a49807e24a46f54150c411820}{\index{batches/save\-\_\-edit(obsolete).\-php@{batches/save\-\_\-edit(obsolete).\-php}!\$query@{\$query}}
+\index{\$query@{\$query}!batches/save_edit(obsolete).php@{batches/save\-\_\-edit(obsolete).\-php}}
+\subsubsection[{\$query}]{\setlength{\rightskip}{0pt plus 5cm}if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'{\bf batch\-I\-D}'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'rawdatas'\mbox{]})) \$query}}\label{batches_2save__edit_07obsolete_08_8php_af161305a49807e24a46f54150c411820}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=\textcolor{stringliteral}{'}
+\textcolor{stringliteral}{    SELECT}
+\textcolor{stringliteral}{    experiment.exp\_name, sample.spl\_number, aliquot.alq\_number, batch\_data.bat\_data\_row,
+       batch\_data.bat\_data\_col  }
+\textcolor{stringliteral}{    FROM }
+\textcolor{stringliteral}{    experiment, batch\_data, sample\_aliquot, sample, aliquot }
+\textcolor{stringliteral}{    WHERE }
+\textcolor{stringliteral}{    batch\_data.bat\_data\_batch\_FK = '}.$batchID.\textcolor{stringliteral}{' AND}
+\textcolor{stringliteral}{    sample\_aliquot.spl\_alq\_id = batch\_data.bat\_data\_sample\_aliquot\_FK AND}
+\textcolor{stringliteral}{    sample.spl\_id  = sample\_aliquot.spl\_alq\_sample\_FK AND }
+\textcolor{stringliteral}{    aliquot.alq\_id = sample\_aliquot.spl\_alq\_aliquot\_FK AND}
+\textcolor{stringliteral}{    experiment.exp\_id = batch\_data.bat\_data\_experiment\_FK;}
+\textcolor{stringliteral}{    '}
+\end{DoxyCode}
+
+
+Definition at line 22 of file save\-\_\-edit(obsolete).\-php.
+
+\hypertarget{batches_2save__edit_07obsolete_08_8php_abdab71b959b28075ae105e76f2bb59c4}{\index{batches/save\-\_\-edit(obsolete).\-php@{batches/save\-\_\-edit(obsolete).\-php}!\$rawdatas@{\$rawdatas}}
+\index{\$rawdatas@{\$rawdatas}!batches/save_edit(obsolete).php@{batches/save\-\_\-edit(obsolete).\-php}}
+\subsubsection[{\$rawdatas}]{\setlength{\rightskip}{0pt plus 5cm}\$rawdatas = \char`\"{}\char`\"{}}}\label{batches_2save__edit_07obsolete_08_8php_abdab71b959b28075ae105e76f2bb59c4}
+
+
+Definition at line 9 of file save\-\_\-edit(obsolete).\-php.
+
+\hypertarget{batches_2save__edit_07obsolete_08_8php_a8452fb8131316637a04e25f5fde066d9}{\index{batches/save\-\_\-edit(obsolete).\-php@{batches/save\-\_\-edit(obsolete).\-php}!\$response\-\_\-array@{\$response\-\_\-array}}
+\index{\$response\-\_\-array@{\$response\-\_\-array}!batches/save_edit(obsolete).php@{batches/save\-\_\-edit(obsolete).\-php}}
+\subsubsection[{\$response\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}catch (Exception \$e) \$response\-\_\-array\mbox{[}'status'\mbox{]} =\$status}}\label{batches_2save__edit_07obsolete_08_8php_a8452fb8131316637a04e25f5fde066d9}
+
+
+Definition at line 54 of file save\-\_\-edit(obsolete).\-php.
+
+\hypertarget{batches_2save__edit_07obsolete_08_8php_ae768978a0cdc416c0d63d798c85c8784}{\index{batches/save\-\_\-edit(obsolete).\-php@{batches/save\-\_\-edit(obsolete).\-php}!\$response\-\_\-array@{\$response\-\_\-array}}
+\index{\$response\-\_\-array@{\$response\-\_\-array}!batches/save_edit(obsolete).php@{batches/save\-\_\-edit(obsolete).\-php}}
+\subsubsection[{\$response\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}\$response\-\_\-array\mbox{[}'action'\mbox{]} =\char`\"{}Insertion\char`\"{}}}\label{batches_2save__edit_07obsolete_08_8php_ae768978a0cdc416c0d63d798c85c8784}
+
+
+Definition at line 55 of file save\-\_\-edit(obsolete).\-php.
+
+\hypertarget{batches_2save__edit_07obsolete_08_8php_a58391ea75f2d29d5d708d7050b641c33}{\index{batches/save\-\_\-edit(obsolete).\-php@{batches/save\-\_\-edit(obsolete).\-php}!\$status@{\$status}}
+\index{\$status@{\$status}!batches/save_edit(obsolete).php@{batches/save\-\_\-edit(obsolete).\-php}}
+\subsubsection[{\$status}]{\setlength{\rightskip}{0pt plus 5cm}\$status =\char`\"{}success\char`\"{}}}\label{batches_2save__edit_07obsolete_08_8php_a58391ea75f2d29d5d708d7050b641c33}
+
+
+Definition at line 7 of file save\-\_\-edit(obsolete).\-php.
+
+\hypertarget{batches_2save__edit_07obsolete_08_8php_abe4cc9788f52e49485473dc699537388}{\index{batches/save\-\_\-edit(obsolete).\-php@{batches/save\-\_\-edit(obsolete).\-php}!try@{try}}
+\index{try@{try}!batches/save_edit(obsolete).php@{batches/save\-\_\-edit(obsolete).\-php}}
+\subsubsection[{try}]{\setlength{\rightskip}{0pt plus 5cm}try}}\label{batches_2save__edit_07obsolete_08_8php_abe4cc9788f52e49485473dc699537388}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+\{
+        \hyperlink{batches_2save__edit_07obsolete_08_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{$conn}->beginTransaction()
+\end{DoxyCode}
+
+
+Definition at line 41 of file save\-\_\-edit(obsolete).\-php.
+

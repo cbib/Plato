@@ -1,0 +1,80 @@
+.TH "php/admin/adminEnzyme/adminEz.php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/admin/adminEnzyme/adminEz.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBsetup_datatable\fP ()"
+.br
+.ti -1c
+.RI "\fBconstruct_delete_modal\fP (\fBdata\fP, action)"
+.br
+.ti -1c
+.RI "\fBconstruct_edit_modal\fP (\fBdata\fP, action)"
+.br
+.ti -1c
+.RI "\fBconstruct_create_modal\fP (\fBdata\fP, action)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "construct_create_modal (\fBdata\fP, action)"
+Construction of a modal for analyte creation
+.PP
+construct_create_modal 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{<type>}\fP data { useless } 
+.br
+\fI{string}\fP action { action associated to submit button } 
+.RE
+.PP
+
+.PP
+Definition at line 231 of file adminEz\&.php\&.
+.SS "construct_delete_modal (\fBdata\fP, action)"
+Construct a modal window for analyte deletion
+.PP
+construct_delete_modal 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{string}\fP data { analyte id and name to delete } 
+.br
+\fI{string}\fP action { action associated to the submit button } 
+.RE
+.PP
+
+.PP
+Definition at line 152 of file adminEz\&.php\&.
+.SS "construct_edit_modal (\fBdata\fP, action)"
+Construction of a modal for analyte edition
+.PP
+construct_edit_modal 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{string}\fP data { all the data of the analyte selected } 
+.br
+\fI{string}\fP action { action associated to the submit button } 
+.RE
+.PP
+
+.PP
+Definition at line 181 of file adminEz\&.php\&.
+.SS "setup_datatable ()"
+Set datatable of analyte up
+.PP
+setup_datatable 
+.PP
+Definition at line 126 of file adminEz\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

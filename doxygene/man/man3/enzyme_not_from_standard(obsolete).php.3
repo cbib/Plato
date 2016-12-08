@@ -1,0 +1,89 @@
+.TH "php/standard/obsolete files/enzyme_not_from_standard(obsolete).php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/standard/obsolete files/enzyme_not_from_standard(obsolete).php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$conn\fP = \fBget_connexion\fP()"
+.br
+.ti -1c
+.RI "\fB$standardID\fP = $_POST['standardID']"
+.br
+.ti -1c
+.RI "\fB$query\fP"
+.br
+.ti -1c
+.RI "\fBtry\fP"
+.br
+.ti -1c
+.RI "\fB$count\fP = $sth->rowCount()"
+.br
+.ti -1c
+.RI "\fB$rows\fP =$sth->fetchAll()"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$conn = \fBget_connexion\fP()"
+
+.PP
+Definition at line 4 of file enzyme_not_from_standard(obsolete)\&.php\&.
+.SS "$count = $sth->rowCount()"
+
+.PP
+Definition at line 39 of file enzyme_not_from_standard(obsolete)\&.php\&.
+.SS "$query"
+\fBInitial value:\fP
+.PP
+.nf
+= '
+    SELECT DISTINCT
+        enzyme\&.ez_id, 
+        enzyme\&.ez_analyte, 
+        enzyme\&.ez_code, 
+        enzyme\&.ez_slope, 
+        REPLACE(REPLACE(enzyme\&.ez_is_enzyme,0,"Enzyme"),1,"Metabolite") AS ez_is_enzyme
+    FROM 
+        enzyme
+    WHERE 
+        ez_id NOT IN (
+            SELECT 
+                enzyme\&.ez_id 
+            FROM 
+                enzyme, 
+                standard_enzyme 
+            WHERE 
+                standard_enzyme\&.std_ez_standard_FK = '\&.$standardID\&.' AND 
+                enzyme\&.ez_id = standard_enzyme\&.std_ez_enzyme_FK
+        )
+    ORDER BY 
+        enzyme\&.ez_analyte;'
+.fi
+.PP
+Definition at line 8 of file enzyme_not_from_standard(obsolete)\&.php\&.
+.SS "$rows =$sth->fetchAll()"
+
+.PP
+Definition at line 40 of file enzyme_not_from_standard(obsolete)\&.php\&.
+.SS "$standardID = $_POST['standardID']"
+
+.PP
+Definition at line 6 of file enzyme_not_from_standard(obsolete)\&.php\&.
+.SS "try"
+\fBInitial value:\fP
+.PP
+.nf
+{
+        $sth=$conn->prepare($query)
+.fi
+.PP
+Definition at line 35 of file enzyme_not_from_standard(obsolete)\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

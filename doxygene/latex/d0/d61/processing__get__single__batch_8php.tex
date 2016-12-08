@@ -1,0 +1,74 @@
+\hypertarget{processing__get__single__batch_8php}{\section{php/processing/processing\-\_\-get\-\_\-single\-\_\-batch.php File Reference}
+\label{processing__get__single__batch_8php}\index{php/processing/processing\-\_\-get\-\_\-single\-\_\-batch.\-php@{php/processing/processing\-\_\-get\-\_\-single\-\_\-batch.\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{processing__get__single__batch_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{processing__get__single__batch_8php_ae384d32e62e85e587cd27bf249ed3db3}{\$exp\-I\-D} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'\hyperlink{admin_rawdata_8php_a888d53a6517f4272b5982c3ca9d16e8a}{exp\-I\-D}'\mbox{]}
+\item 
+\hyperlink{processing__get__single__batch_8php_af59a5f7cd609e592c41dc3643efd3c98}{\$query}
+\item 
+\hyperlink{processing__get__single__batch_8php_afa9126f9664959c02795be300a135f93}{\$sth} =\$conn-\/$>$prepare(\$query)
+\item 
+\hyperlink{processing__get__single__batch_8php_ace2ec39e7df3899fa8df9640ec274b03}{\$rows} =\$sth-\/$>$fetch\-All()
+\item 
+\hyperlink{processing__get__single__batch_8php_a73004ce9cd673c1bfafd1dc351134797}{\$output} = array()
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{processing__get__single__batch_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{processing\-\_\-get\-\_\-single\-\_\-batch.\-php@{processing\-\_\-get\-\_\-single\-\_\-batch.\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!processing_get_single_batch.php@{processing\-\_\-get\-\_\-single\-\_\-batch.\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{processing__get__single__batch_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 4 of file processing\-\_\-get\-\_\-single\-\_\-batch.\-php.
+
+\hypertarget{processing__get__single__batch_8php_ae384d32e62e85e587cd27bf249ed3db3}{\index{processing\-\_\-get\-\_\-single\-\_\-batch.\-php@{processing\-\_\-get\-\_\-single\-\_\-batch.\-php}!\$exp\-I\-D@{\$exp\-I\-D}}
+\index{\$exp\-I\-D@{\$exp\-I\-D}!processing_get_single_batch.php@{processing\-\_\-get\-\_\-single\-\_\-batch.\-php}}
+\subsubsection[{\$exp\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf exp\-I\-D} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'{\bf exp\-I\-D}'\mbox{]}}}\label{processing__get__single__batch_8php_ae384d32e62e85e587cd27bf249ed3db3}
+
+
+Definition at line 7 of file processing\-\_\-get\-\_\-single\-\_\-batch.\-php.
+
+\hypertarget{processing__get__single__batch_8php_a73004ce9cd673c1bfafd1dc351134797}{\index{processing\-\_\-get\-\_\-single\-\_\-batch.\-php@{processing\-\_\-get\-\_\-single\-\_\-batch.\-php}!\$output@{\$output}}
+\index{\$output@{\$output}!processing_get_single_batch.php@{processing\-\_\-get\-\_\-single\-\_\-batch.\-php}}
+\subsubsection[{\$output}]{\setlength{\rightskip}{0pt plus 5cm}\$output = array()}}\label{processing__get__single__batch_8php_a73004ce9cd673c1bfafd1dc351134797}
+
+
+Definition at line 21 of file processing\-\_\-get\-\_\-single\-\_\-batch.\-php.
+
+\hypertarget{processing__get__single__batch_8php_af59a5f7cd609e592c41dc3643efd3c98}{\index{processing\-\_\-get\-\_\-single\-\_\-batch.\-php@{processing\-\_\-get\-\_\-single\-\_\-batch.\-php}!\$query@{\$query}}
+\index{\$query@{\$query}!processing_get_single_batch.php@{processing\-\_\-get\-\_\-single\-\_\-batch.\-php}}
+\subsubsection[{\$query}]{\setlength{\rightskip}{0pt plus 5cm}\$query}}\label{processing__get__single__batch_8php_af59a5f7cd609e592c41dc3643efd3c98}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=\textcolor{stringliteral}{'}
+\textcolor{stringliteral}{        SELECT  distinct batch.bat\_id AS ID, CONCAT(batch.bat\_number, " -   ", batch.bat\_name, "    -   ",
+       batch.bat\_date) AS numbname}
+\textcolor{stringliteral}{        FROM batch\_data, batch}
+\textcolor{stringliteral}{        WHERE batch\_data.bat\_data\_experiment\_FK = '}.$expID.\textcolor{stringliteral}{' AND}
+\textcolor{stringliteral}{        batch.bat\_id = batch\_data.bat\_data\_batch\_FK}
+\textcolor{stringliteral}{        ORDER BY batch.bat\_number;}
+\textcolor{stringliteral}{    '}
+\end{DoxyCode}
+
+
+Definition at line 8 of file processing\-\_\-get\-\_\-single\-\_\-batch.\-php.
+
+\hypertarget{processing__get__single__batch_8php_ace2ec39e7df3899fa8df9640ec274b03}{\index{processing\-\_\-get\-\_\-single\-\_\-batch.\-php@{processing\-\_\-get\-\_\-single\-\_\-batch.\-php}!\$rows@{\$rows}}
+\index{\$rows@{\$rows}!processing_get_single_batch.php@{processing\-\_\-get\-\_\-single\-\_\-batch.\-php}}
+\subsubsection[{\$rows}]{\setlength{\rightskip}{0pt plus 5cm}\$rows =\$sth-\/$>$fetch\-All()}}\label{processing__get__single__batch_8php_ace2ec39e7df3899fa8df9640ec274b03}
+
+
+Definition at line 19 of file processing\-\_\-get\-\_\-single\-\_\-batch.\-php.
+
+\hypertarget{processing__get__single__batch_8php_afa9126f9664959c02795be300a135f93}{\index{processing\-\_\-get\-\_\-single\-\_\-batch.\-php@{processing\-\_\-get\-\_\-single\-\_\-batch.\-php}!\$sth@{\$sth}}
+\index{\$sth@{\$sth}!processing_get_single_batch.php@{processing\-\_\-get\-\_\-single\-\_\-batch.\-php}}
+\subsubsection[{\$sth}]{\setlength{\rightskip}{0pt plus 5cm}\$sth =\$conn-\/$>$prepare(\$query)}}\label{processing__get__single__batch_8php_afa9126f9664959c02795be300a135f93}
+
+
+Definition at line 16 of file processing\-\_\-get\-\_\-single\-\_\-batch.\-php.
+

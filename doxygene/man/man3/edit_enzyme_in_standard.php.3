@@ -1,0 +1,112 @@
+.TH "php/admin/adminStandard/edit_enzyme_in_standard.php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/admin/adminStandard/edit_enzyme_in_standard.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$conn\fP = \fBget_connexion\fP()"
+.br
+.ti -1c
+.RI "\fB$stdEzID\fP =''"
+.br
+.ti -1c
+.RI "\fB$slope\fP =''"
+.br
+.ti -1c
+.RI "\fB$amount\fP =''"
+.br
+.ti -1c
+.RI "\fB$standardID\fP =''"
+.br
+.ti -1c
+.RI "\fB$status\fP ='success'"
+.br
+.ti -1c
+.RI "\fB$unit\fP = ''"
+.br
+.ti -1c
+.RI "\fB$dilutionValue\fP =''"
+.br
+.ti -1c
+.RI "if(isset($_POST['stdezid'])) 
+.br
+if(isset($_POST['amount'])) if(isset($_POST['unit'])) 
+.br
+if(isset($_POST['dilutionValue'])) 
+.br
+if(isset($_POST['nature'])) \fB$query\fP = 'UPDATE `standard_enzyme` SET `std_ez_value`='$amount', `std_ez_unit_FK` ='$unit', `std_ez_dilution` ='$dilutionValue' WHERE `std_ez_id`= '$stdEzID';'"
+.br
+.ti -1c
+.RI "\fBtry\fP"
+.br
+.ti -1c
+.RI "\fB$req\fP = $conn->exec($query)"
+.br
+.ti -1c
+.RI "catch(Exception $e) \fB$response_array\fP ['status'] =$status"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$amount =''"
+
+.PP
+Definition at line 10 of file edit_enzyme_in_standard\&.php\&.
+.SS "$conn = \fBget_connexion\fP()"
+
+.PP
+Definition at line 4 of file edit_enzyme_in_standard\&.php\&.
+.SS "$dilutionValue =''"
+
+.PP
+Definition at line 14 of file edit_enzyme_in_standard\&.php\&.
+.SS "if (isset($_POST['stdezid'])) if (isset($_POST['amount'])) if (isset($_POST['unit'])) if (isset($_POST['dilutionValue'])) if (isset($_POST['nature'])) $query = 'UPDATE `standard_enzyme` SET `std_ez_value`='$amount', `std_ez_unit_FK` ='$unit', `std_ez_dilution` ='$dilutionValue' WHERE `std_ez_id`= '$stdEzID';'"
+
+.PP
+Definition at line 32 of file edit_enzyme_in_standard\&.php\&.
+.SS "$req = $conn->exec($query)"
+
+.PP
+Definition at line 37 of file edit_enzyme_in_standard\&.php\&.
+.SS "catch (Exception $e) $response_array['status'] =$status"
+
+.PP
+Definition at line 46 of file edit_enzyme_in_standard\&.php\&.
+.SS "$slope =''"
+
+.PP
+Definition at line 9 of file edit_enzyme_in_standard\&.php\&.
+.SS "$standardID =''"
+
+.PP
+Definition at line 11 of file edit_enzyme_in_standard\&.php\&.
+.SS "$status ='success'"
+
+.PP
+Definition at line 12 of file edit_enzyme_in_standard\&.php\&.
+.SS "$stdEzID =''"
+
+.PP
+Definition at line 8 of file edit_enzyme_in_standard\&.php\&.
+.SS "$unit = ''"
+
+.PP
+Definition at line 13 of file edit_enzyme_in_standard\&.php\&.
+.SS "try"
+\fBInitial value:\fP
+.PP
+.nf
+{
+        $conn->beginTransaction()
+.fi
+.PP
+Definition at line 35 of file edit_enzyme_in_standard\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

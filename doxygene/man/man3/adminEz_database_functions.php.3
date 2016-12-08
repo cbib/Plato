@@ -1,0 +1,74 @@
+.TH "php/admin/adminEnzyme/adminEz_database_functions.php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/admin/adminEnzyme/adminEz_database_functions.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$conn\fP = \fBget_connexion\fP()"
+.br
+.ti -1c
+.RI "\fB$query\fP"
+.br
+.ti -1c
+.RI "\fB$sth\fP =$conn->prepare($query)"
+.br
+.ti -1c
+.RI "\fB$count\fP = $sth->rowCount()"
+.br
+.ti -1c
+.RI "\fB$rows\fP =$sth->fetchAll()"
+.br
+.ti -1c
+.RI "\fB$output\fP"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$conn = \fBget_connexion\fP()"
+
+.PP
+Definition at line 6 of file adminEz_database_functions\&.php\&.
+.SS "$count = $sth->rowCount()"
+
+.PP
+Definition at line 15 of file adminEz_database_functions\&.php\&.
+.SS "$output"
+\fBInitial value:\fP
+.PP
+.nf
+= array(
+        "iTotalRecords" => $count,
+        "iTotalDisplayRecords" => $count,
+        "aaData" => Array()
+    )
+.fi
+.PP
+Definition at line 18 of file adminEz_database_functions\&.php\&.
+.SS "$query"
+\fBInitial value:\fP
+.PP
+.nf
+= '
+    SELECT enzyme\&.ez_id, enzyme\&.ez_analyte, enzyme\&.ez_code, enzyme\&.ez_slope, REPLACE(REPLACE(REPLACE(enzyme\&.ez_is_enzyme,1,"Enzyme"),0,"Metabolite"),2,"Other") AS ez_is_enzyme
+    FROM enzyme
+    ORDER BY ez_id'
+.fi
+.PP
+Definition at line 7 of file adminEz_database_functions\&.php\&.
+.SS "$rows =$sth->fetchAll()"
+
+.PP
+Definition at line 16 of file adminEz_database_functions\&.php\&.
+.SS "$sth =$conn->prepare($query)"
+
+.PP
+Definition at line 12 of file adminEz_database_functions\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

@@ -1,0 +1,71 @@
+\hypertarget{get__all__users_8php}{\section{php/admin/admin\-Pwd/get\-\_\-all\-\_\-users.php File Reference}
+\label{get__all__users_8php}\index{php/admin/admin\-Pwd/get\-\_\-all\-\_\-users.\-php@{php/admin/admin\-Pwd/get\-\_\-all\-\_\-users.\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{get__all__users_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{get__all__users_8php_af59a5f7cd609e592c41dc3643efd3c98}{\$query} ='S\-E\-L\-E\-C\-T usr\-\_\-id, usr\-\_\-name, usr\-\_\-status F\-R\-O\-M user O\-R\-D\-E\-R B\-Y usr\-\_\-name;'
+\item 
+\hyperlink{get__all__users_8php_afa9126f9664959c02795be300a135f93}{\$sth} =\$conn-\/$>$prepare(\$query)
+\item 
+\hyperlink{get__all__users_8php_af789423037bbc89dc7c850e761177570}{\$count} = \$sth-\/$>$row\-Count()
+\item 
+\hyperlink{get__all__users_8php_ace2ec39e7df3899fa8df9640ec274b03}{\$rows} =\$sth-\/$>$fetch\-All()
+\item 
+\hyperlink{get__all__users_8php_a73004ce9cd673c1bfafd1dc351134797}{\$output}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{get__all__users_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{get\-\_\-all\-\_\-users.\-php@{get\-\_\-all\-\_\-users.\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!get_all_users.php@{get\-\_\-all\-\_\-users.\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{get__all__users_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 4 of file get\-\_\-all\-\_\-users.\-php.
+
+\hypertarget{get__all__users_8php_af789423037bbc89dc7c850e761177570}{\index{get\-\_\-all\-\_\-users.\-php@{get\-\_\-all\-\_\-users.\-php}!\$count@{\$count}}
+\index{\$count@{\$count}!get_all_users.php@{get\-\_\-all\-\_\-users.\-php}}
+\subsubsection[{\$count}]{\setlength{\rightskip}{0pt plus 5cm}\$count = \$sth-\/$>$row\-Count()}}\label{get__all__users_8php_af789423037bbc89dc7c850e761177570}
+
+
+Definition at line 14 of file get\-\_\-all\-\_\-users.\-php.
+
+\hypertarget{get__all__users_8php_a73004ce9cd673c1bfafd1dc351134797}{\index{get\-\_\-all\-\_\-users.\-php@{get\-\_\-all\-\_\-users.\-php}!\$output@{\$output}}
+\index{\$output@{\$output}!get_all_users.php@{get\-\_\-all\-\_\-users.\-php}}
+\subsubsection[{\$output}]{\setlength{\rightskip}{0pt plus 5cm}\$output}}\label{get__all__users_8php_a73004ce9cd673c1bfafd1dc351134797}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+= array(
+        \textcolor{stringliteral}{"iTotalRecords"} => \hyperlink{get__all__users_8php_af789423037bbc89dc7c850e761177570}{$count},
+        \textcolor{stringliteral}{"iTotalDisplayRecords"} => \hyperlink{get__all__users_8php_af789423037bbc89dc7c850e761177570}{$count},
+        \textcolor{stringliteral}{"aaData"} => Array()
+    )
+\end{DoxyCode}
+
+
+Definition at line 17 of file get\-\_\-all\-\_\-users.\-php.
+
+\hypertarget{get__all__users_8php_af59a5f7cd609e592c41dc3643efd3c98}{\index{get\-\_\-all\-\_\-users.\-php@{get\-\_\-all\-\_\-users.\-php}!\$query@{\$query}}
+\index{\$query@{\$query}!get_all_users.php@{get\-\_\-all\-\_\-users.\-php}}
+\subsubsection[{\$query}]{\setlength{\rightskip}{0pt plus 5cm}\$query ='S\-E\-L\-E\-C\-T usr\-\_\-id, usr\-\_\-name, usr\-\_\-status F\-R\-O\-M user O\-R\-D\-E\-R B\-Y usr\-\_\-name;'}}\label{get__all__users_8php_af59a5f7cd609e592c41dc3643efd3c98}
+
+
+Definition at line 8 of file get\-\_\-all\-\_\-users.\-php.
+
+\hypertarget{get__all__users_8php_ace2ec39e7df3899fa8df9640ec274b03}{\index{get\-\_\-all\-\_\-users.\-php@{get\-\_\-all\-\_\-users.\-php}!\$rows@{\$rows}}
+\index{\$rows@{\$rows}!get_all_users.php@{get\-\_\-all\-\_\-users.\-php}}
+\subsubsection[{\$rows}]{\setlength{\rightskip}{0pt plus 5cm}\$rows =\$sth-\/$>$fetch\-All()}}\label{get__all__users_8php_ace2ec39e7df3899fa8df9640ec274b03}
+
+
+Definition at line 15 of file get\-\_\-all\-\_\-users.\-php.
+
+\hypertarget{get__all__users_8php_afa9126f9664959c02795be300a135f93}{\index{get\-\_\-all\-\_\-users.\-php@{get\-\_\-all\-\_\-users.\-php}!\$sth@{\$sth}}
+\index{\$sth@{\$sth}!get_all_users.php@{get\-\_\-all\-\_\-users.\-php}}
+\subsubsection[{\$sth}]{\setlength{\rightskip}{0pt plus 5cm}\$sth =\$conn-\/$>$prepare(\$query)}}\label{get__all__users_8php_afa9126f9664959c02795be300a135f93}
+
+
+Definition at line 11 of file get\-\_\-all\-\_\-users.\-php.
+

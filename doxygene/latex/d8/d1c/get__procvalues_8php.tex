@@ -1,0 +1,100 @@
+\hypertarget{get__procvalues_8php}{\section{php/export/get\-\_\-procvalues.php File Reference}
+\label{get__procvalues_8php}\index{php/export/get\-\_\-procvalues.\-php@{php/export/get\-\_\-procvalues.\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{get__procvalues_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{get__procvalues_8php_ac9fdf6f2c8fb45c1d3bb9a176802b2ad}{\$hash} =Array()
+\item 
+\hyperlink{get__procvalues_8php_aaa6d122ea9cb55b210aadd86e5654a74}{\$batch\-I\-D} =-\/1
+\item 
+\hyperlink{get__procvalues_8php_addb1ec3ba55e413a08cb006ce21974df}{\$ez\-I\-D} = -\/1
+\item 
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'\hyperlink{obsolete_2processing__bak_8php_a88c5bc4262b7c34f236357f5c53fc99b}{batch\-I\-D}'\mbox{]})) \\*
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'\hyperlink{admin_rawdata_8php_adf465cadf95987152966d26567509f92}{ez\-I\-D}'\mbox{]})) \hyperlink{get__procvalues_8php_a4a2cac8789c689ec2ffe3ffcc33fa051}{\$query\-Layout} ='S\-E\-L\-E\-C\-T batch.\-bat\-\_\-layout F\-R\-O\-M batch where bat\-\_\-id = '.\$batch\-I\-D.';'
+\item 
+\hyperlink{get__procvalues_8php_afa9126f9664959c02795be300a135f93}{\$sth} =\$conn-\/$>$prepare(\$query\-Layout)
+\item 
+\hyperlink{get__procvalues_8php_af789423037bbc89dc7c850e761177570}{\$count} = \$sth-\/$>$row\-Count()
+\item 
+\hyperlink{get__procvalues_8php_a112ef069ddc0454086e3d1e6d8d55d07}{\$result} =\$sth-\/$>$fetch()
+\item 
+\hyperlink{get__procvalues_8php_a2b0d08e73a90b9443ce37506b7c6a544}{\$layout} = \$result\mbox{[}'bat\-\_\-layout'\mbox{]}
+\item 
+if((\$batch\-I\-D!=-\/1)\&\&(\$ez\-I\-D!=-\/1)) \hyperlink{get__procvalues_8php_ac730010bbce5fa8ff863cc0faea91cf7}{\$response\-\_\-array} \mbox{[}'proc\-Values'\mbox{]} =\$proc\-Values
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{get__procvalues_8php_aaa6d122ea9cb55b210aadd86e5654a74}{\index{get\-\_\-procvalues.\-php@{get\-\_\-procvalues.\-php}!\$batch\-I\-D@{\$batch\-I\-D}}
+\index{\$batch\-I\-D@{\$batch\-I\-D}!get_procvalues.php@{get\-\_\-procvalues.\-php}}
+\subsubsection[{\$batch\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf batch\-I\-D} =-\/1}}\label{get__procvalues_8php_aaa6d122ea9cb55b210aadd86e5654a74}
+
+
+Definition at line 8 of file get\-\_\-procvalues.\-php.
+
+\hypertarget{get__procvalues_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{get\-\_\-procvalues.\-php@{get\-\_\-procvalues.\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!get_procvalues.php@{get\-\_\-procvalues.\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{get__procvalues_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 4 of file get\-\_\-procvalues.\-php.
+
+\hypertarget{get__procvalues_8php_af789423037bbc89dc7c850e761177570}{\index{get\-\_\-procvalues.\-php@{get\-\_\-procvalues.\-php}!\$count@{\$count}}
+\index{\$count@{\$count}!get_procvalues.php@{get\-\_\-procvalues.\-php}}
+\subsubsection[{\$count}]{\setlength{\rightskip}{0pt plus 5cm}\$count = \$sth-\/$>$row\-Count()}}\label{get__procvalues_8php_af789423037bbc89dc7c850e761177570}
+
+
+Definition at line 22 of file get\-\_\-procvalues.\-php.
+
+\hypertarget{get__procvalues_8php_addb1ec3ba55e413a08cb006ce21974df}{\index{get\-\_\-procvalues.\-php@{get\-\_\-procvalues.\-php}!\$ez\-I\-D@{\$ez\-I\-D}}
+\index{\$ez\-I\-D@{\$ez\-I\-D}!get_procvalues.php@{get\-\_\-procvalues.\-php}}
+\subsubsection[{\$ez\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf ez\-I\-D} = -\/1}}\label{get__procvalues_8php_addb1ec3ba55e413a08cb006ce21974df}
+
+
+Definition at line 9 of file get\-\_\-procvalues.\-php.
+
+\hypertarget{get__procvalues_8php_ac9fdf6f2c8fb45c1d3bb9a176802b2ad}{\index{get\-\_\-procvalues.\-php@{get\-\_\-procvalues.\-php}!\$hash@{\$hash}}
+\index{\$hash@{\$hash}!get_procvalues.php@{get\-\_\-procvalues.\-php}}
+\subsubsection[{\$hash}]{\setlength{\rightskip}{0pt plus 5cm}\$hash =Array()}}\label{get__procvalues_8php_ac9fdf6f2c8fb45c1d3bb9a176802b2ad}
+
+
+Definition at line 6 of file get\-\_\-procvalues.\-php.
+
+\hypertarget{get__procvalues_8php_a2b0d08e73a90b9443ce37506b7c6a544}{\index{get\-\_\-procvalues.\-php@{get\-\_\-procvalues.\-php}!\$layout@{\$layout}}
+\index{\$layout@{\$layout}!get_procvalues.php@{get\-\_\-procvalues.\-php}}
+\subsubsection[{\$layout}]{\setlength{\rightskip}{0pt plus 5cm}\$layout = \$result\mbox{[}'bat\-\_\-layout'\mbox{]}}}\label{get__procvalues_8php_a2b0d08e73a90b9443ce37506b7c6a544}
+
+
+Definition at line 24 of file get\-\_\-procvalues.\-php.
+
+\hypertarget{get__procvalues_8php_a4a2cac8789c689ec2ffe3ffcc33fa051}{\index{get\-\_\-procvalues.\-php@{get\-\_\-procvalues.\-php}!\$query\-Layout@{\$query\-Layout}}
+\index{\$query\-Layout@{\$query\-Layout}!get_procvalues.php@{get\-\_\-procvalues.\-php}}
+\subsubsection[{\$query\-Layout}]{\setlength{\rightskip}{0pt plus 5cm}if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'{\bf batch\-I\-D}'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'{\bf ez\-I\-D}'\mbox{]})) \$query\-Layout ='S\-E\-L\-E\-C\-T batch.\-bat\-\_\-layout F\-R\-O\-M batch where bat\-\_\-id = '.\$batch\-I\-D.';'}}\label{get__procvalues_8php_a4a2cac8789c689ec2ffe3ffcc33fa051}
+
+
+Definition at line 18 of file get\-\_\-procvalues.\-php.
+
+\hypertarget{get__procvalues_8php_ac730010bbce5fa8ff863cc0faea91cf7}{\index{get\-\_\-procvalues.\-php@{get\-\_\-procvalues.\-php}!\$response\-\_\-array@{\$response\-\_\-array}}
+\index{\$response\-\_\-array@{\$response\-\_\-array}!get_procvalues.php@{get\-\_\-procvalues.\-php}}
+\subsubsection[{\$response\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}if ((\$batch\-I\-D!=-\/1)\&\&(\$ez\-I\-D!=-\/1)) \$response\-\_\-array\mbox{[}'proc\-Values'\mbox{]} =\$proc\-Values}}\label{get__procvalues_8php_ac730010bbce5fa8ff863cc0faea91cf7}
+
+
+Definition at line 97 of file get\-\_\-procvalues.\-php.
+
+\hypertarget{get__procvalues_8php_a112ef069ddc0454086e3d1e6d8d55d07}{\index{get\-\_\-procvalues.\-php@{get\-\_\-procvalues.\-php}!\$result@{\$result}}
+\index{\$result@{\$result}!get_procvalues.php@{get\-\_\-procvalues.\-php}}
+\subsubsection[{\$result}]{\setlength{\rightskip}{0pt plus 5cm}\$result =\$sth-\/$>$fetch()}}\label{get__procvalues_8php_a112ef069ddc0454086e3d1e6d8d55d07}
+
+
+Definition at line 23 of file get\-\_\-procvalues.\-php.
+
+\hypertarget{get__procvalues_8php_afa9126f9664959c02795be300a135f93}{\index{get\-\_\-procvalues.\-php@{get\-\_\-procvalues.\-php}!\$sth@{\$sth}}
+\index{\$sth@{\$sth}!get_procvalues.php@{get\-\_\-procvalues.\-php}}
+\subsubsection[{\$sth}]{\setlength{\rightskip}{0pt plus 5cm}\$sth =\$conn-\/$>$prepare(\$query\-Layout)}}\label{get__procvalues_8php_afa9126f9664959c02795be300a135f93}
+
+
+Definition at line 19 of file get\-\_\-procvalues.\-php.
+

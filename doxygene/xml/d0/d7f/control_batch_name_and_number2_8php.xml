@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="d0/d7f/control_batch_name_and_number2_8php" kind="file">
+    <compoundname>controlBatchNameAndNumber2.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="d0/d7f/control_batch_name_and_number2_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$conn</definition>
+        <argsstring></argsstring>
+        <name>$conn</name>
+        <initializer>= <ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/batches/controlBatchNameAndNumber2.php" line="5" column="1" bodyfile="/var/www/html/plato/php/batches/controlBatchNameAndNumber2.php" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d7f/control_batch_name_and_number2_8php_1a73004ce9cd673c1bfafd1dc351134797" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$output</definition>
+        <argsstring></argsstring>
+        <name>$output</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/batches/controlBatchNameAndNumber2.php" line="6" column="1" bodyfile="/var/www/html/plato/php/batches/controlBatchNameAndNumber2.php" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d7f/control_batch_name_and_number2_8php_1a58391ea75f2d29d5d708d7050b641c33" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$status</definition>
+        <argsstring></argsstring>
+        <name>$status</name>
+        <initializer>= &quot;success&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/batches/controlBatchNameAndNumber2.php" line="8" column="1" bodyfile="/var/www/html/plato/php/batches/controlBatchNameAndNumber2.php" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d7f/control_batch_name_and_number2_8php_1a0f298096f322952a72a50f98a74c7b60" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$value</definition>
+        <argsstring></argsstring>
+        <name>$value</name>
+        <initializer>=0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/batches/controlBatchNameAndNumber2.php" line="9" column="1" bodyfile="/var/www/html/plato/php/batches/controlBatchNameAndNumber2.php" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d7f/control_batch_name_and_number2_8php_1ae0139f42f02473374ecb453f87c66534" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$batchName</definition>
+        <argsstring></argsstring>
+        <name>$batchName</name>
+        <initializer>=$_POST[&quot;batchName&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/batches/controlBatchNameAndNumber2.php" line="12" column="1" bodyfile="/var/www/html/plato/php/batches/controlBatchNameAndNumber2.php" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d7f/control_batch_name_and_number2_8php_1a5efc7692d3e718869a2ba3a55876129c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$batchNumber</definition>
+        <argsstring></argsstring>
+        <name>$batchNumber</name>
+        <initializer>=$_POST[&quot;batchNumber&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/batches/controlBatchNameAndNumber2.php" line="13" column="1" bodyfile="/var/www/html/plato/php/batches/controlBatchNameAndNumber2.php" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d7f/control_batch_name_and_number2_8php_1af59a5f7cd609e592c41dc3643efd3c98" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$query</definition>
+        <argsstring></argsstring>
+        <name>$query</name>
+        <initializer>= &quot;
+	SELECT 
+		bat_id
+	FROM
+		batch
+	WHERE
+		bat_name regexp &apos;^$batchName$&apos; AND
+		bat_number = $batchNumber
+	;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/batches/controlBatchNameAndNumber2.php" line="15" column="1" bodyfile="/var/www/html/plato/php/batches/controlBatchNameAndNumber2.php" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d7f/control_batch_name_and_number2_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$req</definition>
+        <argsstring></argsstring>
+        <name>$req</name>
+        <initializer>= $conn-&gt;query($query)-&gt;fetchColumn()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/batches/controlBatchNameAndNumber2.php" line="26" column="1" bodyfile="/var/www/html/plato/php/batches/controlBatchNameAndNumber2.php" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d7f/control_batch_name_and_number2_8php_1acd0903a7a32e8397aefd0ce8b7dbd1ab" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$response_array[&apos;status&apos;]</definition>
+        <argsstring>[&apos;status&apos;]</argsstring>
+        <name>$response_array</name>
+        <initializer>=$status</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/batches/controlBatchNameAndNumber2.php" line="28" column="1" bodyfile="/var/www/html/plato/php/batches/controlBatchNameAndNumber2.php" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d0/d7f/control_batch_name_and_number2_8php_1abbcbb7142adc1824bb5531445d2de0f0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$response_array[&apos;value&apos;]</definition>
+        <argsstring>[&apos;value&apos;]</argsstring>
+        <name>$response_array</name>
+        <initializer>=$req</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/batches/controlBatchNameAndNumber2.php" line="29" column="1" bodyfile="/var/www/html/plato/php/batches/controlBatchNameAndNumber2.php" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/><sp/><sp/>require(</highlight><highlight class="stringliteral">&apos;../functions/check_login.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/>header(</highlight><highlight class="stringliteral">&apos;Content-Type:<sp/>text/xml&apos;</highlight><highlight class="normal">);<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>include<sp/></highlight><highlight class="stringliteral">&apos;../functions/php_functions.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="5" refid="d0/d7f/control_batch_name_and_number2_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d7f/control_batch_name_and_number2_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref><sp/>=<sp/><ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>();</highlight></codeline>
+<codeline lineno="6" refid="d0/d7f/control_batch_name_and_number2_8php_1a73004ce9cd673c1bfafd1dc351134797" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d7f/control_batch_name_and_number2_8php_1a73004ce9cd673c1bfafd1dc351134797" kindref="member">$output</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="d0/d7f/control_batch_name_and_number2_8php_1a58391ea75f2d29d5d708d7050b641c33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d7f/control_batch_name_and_number2_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;success&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="9" refid="d0/d7f/control_batch_name_and_number2_8php_1a0f298096f322952a72a50f98a74c7b60" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d7f/control_batch_name_and_number2_8php_1a0f298096f322952a72a50f98a74c7b60" kindref="member">$value</ref><sp/>=0;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="d0/d7f/control_batch_name_and_number2_8php_1ae0139f42f02473374ecb453f87c66534" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d7f/control_batch_name_and_number2_8php_1ae0139f42f02473374ecb453f87c66534" kindref="member">$batchName</ref><sp/>=$_POST[</highlight><highlight class="stringliteral">&quot;batchName&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="13" refid="d0/d7f/control_batch_name_and_number2_8php_1a5efc7692d3e718869a2ba3a55876129c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d7f/control_batch_name_and_number2_8php_1a5efc7692d3e718869a2ba3a55876129c" kindref="member">$batchNumber</ref><sp/>=$_POST[</highlight><highlight class="stringliteral">&quot;batchNumber&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="d0/d7f/control_batch_name_and_number2_8php_1af59a5f7cd609e592c41dc3643efd3c98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d7f/control_batch_name_and_number2_8php_1af59a5f7cd609e592c41dc3643efd3c98" kindref="member">$query</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;</highlight></codeline>
+<codeline lineno="16"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>SELECT<sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bat_id</highlight></codeline>
+<codeline lineno="18"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>FROM</highlight></codeline>
+<codeline lineno="19"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>batch</highlight></codeline>
+<codeline lineno="20"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>WHERE</highlight></codeline>
+<codeline lineno="21"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bat_name<sp/>regexp<sp/>&apos;^$batchName$&apos;<sp/>AND</highlight></codeline>
+<codeline lineno="22"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bat_number<sp/>=<sp/>$batchNumber</highlight></codeline>
+<codeline lineno="23"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>error_log($query);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="d0/d7f/control_batch_name_and_number2_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/d7f/control_batch_name_and_number2_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref><sp/>=<sp/><ref refid="d0/d7f/control_batch_name_and_number2_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;query(<ref refid="d0/d7f/control_batch_name_and_number2_8php_1af59a5f7cd609e592c41dc3643efd3c98" kindref="member">$query</ref>)-&gt;fetchColumn();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="d0/d7f/control_batch_name_and_number2_8php_1acd0903a7a32e8397aefd0ce8b7dbd1ab" refkind="member"><highlight class="normal"><ref refid="d0/d7f/control_batch_name_and_number2_8php_1acd0903a7a32e8397aefd0ce8b7dbd1ab" kindref="member">$response_array</ref>[</highlight><highlight class="stringliteral">&apos;status&apos;</highlight><highlight class="normal">]=<ref refid="d0/d7f/control_batch_name_and_number2_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>;</highlight></codeline>
+<codeline lineno="29" refid="d0/d7f/control_batch_name_and_number2_8php_1abbcbb7142adc1824bb5531445d2de0f0" refkind="member"><highlight class="normal"><ref refid="d0/d7f/control_batch_name_and_number2_8php_1acd0903a7a32e8397aefd0ce8b7dbd1ab" kindref="member">$response_array</ref>[</highlight><highlight class="stringliteral">&apos;value&apos;</highlight><highlight class="normal">]=<ref refid="d0/d7f/control_batch_name_and_number2_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">echo<sp/>json_encode(<ref refid="d0/d7f/control_batch_name_and_number2_8php_1acd0903a7a32e8397aefd0ce8b7dbd1ab" kindref="member">$response_array</ref>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="/var/www/html/plato/php/batches/controlBatchNameAndNumber2.php"/>
+  </compounddef>
+</doxygen>

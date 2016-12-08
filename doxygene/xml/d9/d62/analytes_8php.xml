@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="d9/d62/analytes_8php" kind="file">
+    <compoundname>analytes.php</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d9/d62/analytes_8php_1a9ff77c8de996b53098750f48827c9790" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>setup_datatable</definition>
+        <argsstring>()</argsstring>
+        <name>setup_datatable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set analyte datatable up</para><para>setup_datatable </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/analytes/analytes.php" line="54" column="1" bodyfile="/var/www/html/plato/php/analytes/analytes.php" bodystart="54" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">require(</highlight><highlight class="stringliteral">&apos;../functions/check_login.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="3"><highlight class="normal">include<sp/></highlight><highlight class="stringliteral">&apos;../functions/html_functions.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><ref refid="dc/dc2/html__functions_8php_1a646d06793a3d478095bb971aa37927f1" kindref="member">html_header</ref>(</highlight><highlight class="stringliteral">&quot;../../&quot;</highlight><highlight class="normal">,<sp/>$_SESSION[</highlight><highlight class="stringliteral">&apos;login&apos;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><ref refid="dc/dc2/html__functions_8php_1a9c419a7dadfba24c60e7b0d928686111" kindref="member">generic_html_top_page</ref>(</highlight><highlight class="stringliteral">&quot;../../&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;Analyte<sp/>Editor&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">echo</highlight><highlight class="stringliteral">&apos;</highlight></codeline>
+<codeline lineno="10"><highlight class="stringliteral">&lt;div<sp/>style=&quot;width:<sp/>80%;<sp/>margin:<sp/>0px<sp/>auto;&quot;&gt;</highlight></codeline>
+<codeline lineno="11"><highlight class="stringliteral">&lt;div<sp/>class=&quot;row-fluid&quot;&gt;</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;div<sp/>class=&quot;span10&quot;&gt;</highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;div<sp/>class=&quot;widget-box&quot;<sp/>style=&quot;background<sp/>:<sp/>transparent&quot;&gt;</highlight></codeline>
+<codeline lineno="14"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;div<sp/>class=&quot;widget-content<sp/>nopadding&quot;&gt;</highlight></codeline>
+<codeline lineno="15"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;table<sp/>cellpadding=&quot;0&quot;<sp/>cellspacing=&quot;0&quot;<sp/>border=&quot;0&quot;<sp/>class=&quot;table<sp/>table-striped<sp/>table-bordered&quot;<sp/>id=&quot;enzyme&quot;<sp/>width=&quot;100%&quot;&gt;</highlight></codeline>
+<codeline lineno="16"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;thead&gt;</highlight></codeline>
+<codeline lineno="17"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;tr&gt;</highlight></codeline>
+<codeline lineno="18"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;th&gt;ID&lt;/th&gt;</highlight></codeline>
+<codeline lineno="19"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;th&gt;Analyte&lt;/th&gt;</highlight></codeline>
+<codeline lineno="20"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;th&gt;Code&lt;/th&gt;</highlight></codeline>
+<codeline lineno="21"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;th&gt;Slope&lt;/th&gt;</highlight></codeline>
+<codeline lineno="22"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;th&gt;Nature&lt;/th&gt;</highlight></codeline>
+<codeline lineno="23"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/tr&gt;</highlight></codeline>
+<codeline lineno="24"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/thead&gt;</highlight></codeline>
+<codeline lineno="25"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/table&gt;</highlight></codeline>
+<codeline lineno="26"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="27"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="28"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&lt;/div&gt;</highlight></codeline>
+<codeline lineno="29"><highlight class="stringliteral">&lt;/div&gt;</highlight></codeline>
+<codeline lineno="30"><highlight class="stringliteral">&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><ref refid="dc/dc2/html__functions_8php_1a85d7e13b241a01dc5832cd64db3e3070" kindref="member">html_footer</ref>(</highlight><highlight class="stringliteral">&quot;../../&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">?&gt;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">&lt;script<sp/>type=</highlight><highlight class="stringliteral">&quot;text/javascript&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal">=</highlight><highlight class="stringliteral">&quot;init&quot;</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">$(document).ready(</highlight><highlight class="keyword">function</highlight><highlight class="normal">()<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Keep<sp/>the<sp/>left<sp/>panel<sp/>oepn<sp/>to<sp/>the<sp/>right<sp/>section</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&apos;#userPanel&apos;</highlight><highlight class="normal">).removeClass(</highlight><highlight class="stringliteral">&apos;submenu&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&apos;#userPanel&apos;</highlight><highlight class="normal">).addClass(</highlight><highlight class="stringliteral">&apos;submenu<sp/>open&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d62/analytes_8php_1a9ff77c8de996b53098750f48827c9790" kindref="member">setup_datatable</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">});</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="d9/d62/analytes_8php_1a9ff77c8de996b53098750f48827c9790" refkind="member"><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="d9/d62/analytes_8php_1a9ff77c8de996b53098750f48827c9790" kindref="member">setup_datatable</ref>(){</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Destroy<sp/>enzyle<sp/>datatable<sp/>before<sp/>rewritting,<sp/>prevent<sp/>errors<sp/>when<sp/>refresh,<sp/>not<sp/>very<sp/>useful<sp/>in<sp/>this<sp/>page</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&apos;#enzyme&apos;</highlight><highlight class="normal">).dataTable().fnDestroy();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>table<sp/>=<sp/>$(</highlight><highlight class="stringliteral">&apos;#enzyme&apos;</highlight><highlight class="normal">).DataTable({</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scrollY:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>500,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scroller:<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dom:<sp/></highlight><highlight class="stringliteral">&apos;TB&lt;&quot;clear&quot;&gt;frtip&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ajax:<sp/></highlight><highlight class="stringliteral">&apos;analytes_database_functions.php&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buttons:<sp/>[</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;copy&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;csv&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;excel&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;print&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;colvis&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>],</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;columnDefs&quot;</highlight><highlight class="normal">:<sp/>[<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;targets&quot;</highlight><highlight class="normal">:-1,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;defaultContent&quot;</highlight><highlight class="normal">:<sp/></highlight><highlight class="stringliteral">&quot;&lt;button<sp/>type=\&quot;button\&quot;<sp/>id=\&quot;editButton\&quot;<sp/>class=\&quot;tabledit-edit-button<sp/>btn<sp/>btn-info<sp/>btn-sm<sp/>btn-default\&quot;<sp/>style=\&quot;float:<sp/>none;\&quot;&gt;<sp/>&lt;span<sp/>class=\&quot;glyphicon<sp/>glyphicon-pencil\&quot;&gt;<sp/>&lt;/span&gt;<sp/>&lt;/button&gt;&quot;</highlight><highlight class="normal">+</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&amp;nbsp<sp/>&lt;button<sp/>type=<sp/>\&quot;submit\&quot;<sp/>id=\&quot;deleteButton\&quot;<sp/>class=\&quot;tabledit-edit-button<sp/>btn<sp/>btn-danger<sp/>btn-sm<sp/>btn-default\&quot;<sp/>style=\&quot;float:<sp/>none;\&quot;&gt;<sp/>&lt;span<sp/>class=\&quot;glyphicon<sp/>glyphicon-trash\&quot;&gt;<sp/>&lt;/span&gt;<sp/>&lt;/button&gt;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>]</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">&lt;/script&gt;</highlight></codeline>
+    </programlisting>
+    <location file="/var/www/html/plato/php/analytes/analytes.php"/>
+  </compounddef>
+</doxygen>

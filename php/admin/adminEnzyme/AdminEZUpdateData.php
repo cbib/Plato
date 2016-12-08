@@ -3,6 +3,7 @@
 	include '../../functions/php_functions.php';
 	header('Content-Type: application/json');
 	$conn = get_connexion();
+	//update informations about an analyte, create a new one, or delete an existing one. The action to do is in $action
 
 	$ezId="";
 	$ezName="";

@@ -1,0 +1,151 @@
+.TH "php/admin/adminRawdata/adminRawdataUpdateData.php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/admin/adminRawdata/adminRawdataUpdateData.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$conn\fP = \fBget_connexion\fP()"
+.br
+.ti -1c
+.RI "\fB$expID\fP =-1"
+.br
+.ti -1c
+.RI "\fB$ezID\fP =-1"
+.br
+.ti -1c
+.RI "\fB$batchID\fP =-1"
+.br
+.ti -1c
+.RI "\fB$status\fP = 'success'"
+.br
+.ti -1c
+.RI "if(isset($_POST['\fBexpID\fP'])) if(isset($_POST['\fBezID\fP'])) 
+.br
+if(isset($_POST['\fBbatchID\fP'])) \fB$queryBatchData\fP"
+.br
+.ti -1c
+.RI "\fB$sth2\fP = $conn->prepare($queryBatchData)"
+.br
+.ti -1c
+.RI "\fB$resultBatchData\fP = $sth2->fetchAll()"
+.br
+.ti -1c
+.RI "\fB$query\fP"
+.br
+.ti -1c
+.RI "\fB$sth\fP = $conn->prepare($query)"
+.br
+.ti -1c
+.RI "\fB$result\fP = $sth->fetchAll()"
+.br
+.ti -1c
+.RI "\fB$deleteQuery\fP = 'DELETE FROM rawdata WHERE rawdata_id IN ('"
+.br
+.ti -1c
+.RI "\fBtry\fP"
+.br
+.ti -1c
+.RI "catch(Exception $e) \fB$response_array\fP ['status'] =$status"
+.br
+.ti -1c
+.RI "\fB$response_array\fP ['action'] ='delete'"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$\fBbatchID\fP =-1"
+
+.PP
+Definition at line 11 of file adminRawdataUpdateData\&.php\&.
+.SS "$conn = \fBget_connexion\fP()"
+
+.PP
+Definition at line 5 of file adminRawdataUpdateData\&.php\&.
+.SS "$deleteQuery = 'DELETE FROM rawdata WHERE rawdata_id IN ('"
+
+.PP
+Definition at line 56 of file adminRawdataUpdateData\&.php\&.
+.SS "$\fBexpID\fP =-1"
+
+.PP
+Definition at line 9 of file adminRawdataUpdateData\&.php\&.
+.SS "$\fBezID\fP =-1"
+
+.PP
+Definition at line 10 of file adminRawdataUpdateData\&.php\&.
+.SS "$query"
+\fBInitial value:\fP
+.PP
+.nf
+="SELECT 
+        rawdata_id 
+    FROM
+        rawdata, batch_data 
+    WHERE
+        data_enzyme_fk = "\&.$ezID\&." AND
+        bat_data_batch_FK = "\&.$batchID\&." AND
+        rawdata_batch_data_FK = bat_data_id;"
+.fi
+.PP
+Definition at line 40 of file adminRawdataUpdateData\&.php\&.
+.SS "if (isset($_POST['\fBexpID\fP'])) if (isset($_POST['\fBezID\fP'])) if (isset($_POST['\fBbatchID\fP'])) $queryBatchData"
+\fBInitial value:\fP
+.PP
+.nf
+="SELECT 
+        rawdata_batch_data_FK
+    FROM
+        rawdata, batch_data 
+    WHERE
+        data_enzyme_fk = "\&.$ezID\&." AND
+        bat_data_batch_FK = "\&.$batchID\&." AND
+        rawdata_batch_data_FK = bat_data_id;"
+.fi
+.PP
+Definition at line 26 of file adminRawdataUpdateData\&.php\&.
+.SS "catch (Exception $e) $response_array['status'] =$status"
+
+.PP
+Definition at line 88 of file adminRawdataUpdateData\&.php\&.
+.SS "$response_array['action'] ='delete'"
+
+.PP
+Definition at line 89 of file adminRawdataUpdateData\&.php\&.
+.SS "$result = $sth->fetchAll()"
+
+.PP
+Definition at line 51 of file adminRawdataUpdateData\&.php\&.
+.SS "$resultBatchData = $sth2->fetchAll()"
+
+.PP
+Definition at line 37 of file adminRawdataUpdateData\&.php\&.
+.SS "$status = 'success'"
+
+.PP
+Definition at line 12 of file adminRawdataUpdateData\&.php\&.
+.SS "$sth = $conn->prepare($query)"
+
+.PP
+Definition at line 49 of file adminRawdataUpdateData\&.php\&.
+.SS "$sth2 = $conn->prepare($queryBatchData)"
+
+.PP
+Definition at line 35 of file adminRawdataUpdateData\&.php\&.
+.SS "try"
+\fBInitial value:\fP
+.PP
+.nf
+{
+        $conn->beginTransaction()
+.fi
+.PP
+Definition at line 75 of file adminRawdataUpdateData\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

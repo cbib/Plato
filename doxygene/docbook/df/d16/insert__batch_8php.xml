@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d16/insert__batch_8php">
+    <title>insert_batch.php File Reference</title>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d16/insert__batch_8php_1aa8a5a87b9c1a6a0819b88447cbe41877">$conn</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d16/insert__batch_8php_1a73004ce9cd673c1bfafd1dc351134797">$output</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d16/insert__batch_8php_1a58391ea75f2d29d5d708d7050b641c33">$status</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d16/insert__batch_8php_1ad1f5a0905b3483329061c134a074ed4c">$action</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d16/insert__batch_8php_1aaa6d122ea9cb55b210aadd86e5654a74">$batchID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d16/insert__batch_8php_1abdab71b959b28075ae105e76f2bb59c4">$rawdatas</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d16/insert__batch_8php_1ae0139f42f02473374ecb453f87c66534">$batchName</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d16/insert__batch_8php_1a5efc7692d3e718869a2ba3a55876129c">$batchNumber</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d16/insert__batch_8php_1a6fa65e8ebf49b9db3eaf85cfd31d1908">$batchLayout</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d16/insert__batch_8php_1a93afdd8e66e69e182754fff598ebf16b">$batchDate</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>if(isset($_POST[&apos;rawdatas&apos;])) <link linkend="df/d16/insert__batch_8php_1a753a9e142fa9d5ae330b048b41897a07">else</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d16/insert__batch_8php_1afccc8a9380f3ccdc91175a89f48e5474">$batchExists</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d16/insert__batch_8php_1a21f886ec964303dbe9fd97ad31a0951b">$spl_alq_id</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d16/insert__batch_8php_1ae384d32e62e85e587cd27bf249ed3db3">$expID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d16/insert__batch_8php_1a5de51f0c80b3bb3b39a57b23f6b9ea9f">$pos</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d16/insert__batch_8php_1aa1d731aa570613e5bcff831bb10e9b87">$row</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d16/insert__batch_8php_1afca5b7d4c9144178253e99d0ada7d519">$col</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d16/insert__batch_8php_1ae768978a0cdc416c0d63d798c85c8784">$response_array</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d16/insert__batch_8php_1a7ddce3ca15f5aebb7183169ac9b2bf96">insert_batch_in_db</link> (
+ $conn,  $batchLayout,  $batchName,  $batchNumber,  $batchDate)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d16/insert__batch_8php_1ae69544f3503e8738aa18a5f9aff69220">get_experiment_id_from_name</link> (
+ $line,  $conn)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d16/insert__batch_8php_1aca2d979885679313254be10ee45926c9">getBatchExists</link> (
+ $conn,  $batchName,  $batchNumber)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d16/insert__batch_8php_1a8dcda708772bdee9f9805e5f03be6b86">lance_requete</link> (
+ $query,  $conn)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d16/insert__batch_8php_1acde31c7b204dab42e6f828aac0454d58">get_sample_aliquot_id</link> (
+ $line,  $conn)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d16/insert__batch_8php_1a655661c97a29e4c4bf1973dcb23c4df7">batch_pos_exist_in_db</link> (
+ $line,  $conn)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /var/www/html/plato/php/batches/insert_batch.php</para>
+    </simplesect>
+</section>

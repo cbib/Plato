@@ -1,0 +1,76 @@
+.TH "php/processing/obsolete/batches_get_rawData(obsolete).php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/processing/obsolete/batches_get_rawData(obsolete).php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$conn\fP = \fBget_connexion\fP()"
+.br
+.ti -1c
+.RI "\fB$batchID\fP = $_POST['\fBbatchID\fP']"
+.br
+.ti -1c
+.RI "\fB$query\fP"
+.br
+.ti -1c
+.RI "\fB$sth\fP =$conn->prepare($query)"
+.br
+.ti -1c
+.RI "\fB$rows\fP =$sth->fetchAll()"
+.br
+.ti -1c
+.RI "\fB$output\fP = array()"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$\fBbatchID\fP = $_POST['\fBbatchID\fP']"
+
+.PP
+Definition at line 7 of file batches_get_rawData(obsolete)\&.php\&.
+.SS "$conn = \fBget_connexion\fP()"
+
+.PP
+Definition at line 4 of file batches_get_rawData(obsolete)\&.php\&.
+.SS "$output = array()"
+
+.PP
+Definition at line 29 of file batches_get_rawData(obsolete)\&.php\&.
+.SS "$query"
+\fBInitial value:\fP
+.PP
+.nf
+='
+    SELECT
+    experiment\&.exp_name, sample\&.spl_number, aliquot\&.alq_number, batch_data\&.bat_data_row, batch_data\&.bat_data_col , rawdata\&.data_value
+    FROM 
+    rawdata, experiment, batch_data, sample_aliquot, sample, aliquot 
+    WHERE 
+    batch_data\&.bat_data_batch_FK = 1 AND
+    sample_aliquot\&.spl_alq_id = batch_data\&.bat_data_sample_aliquot_FK AND
+    sample\&.spl_id  = sample_aliquot\&.spl_alq_sample_FK AND 
+    aliquot\&.alq_id = sample_aliquot\&.spl_alq_aliquot_FK AND
+    experiment\&.exp_id = batch_data\&.bat_data_experiment_FK AND
+    rawdata\&.rawdata_batch_data_FK = batch_data\&.bat_data_id
+    LIMIT 96;
+    '
+.fi
+.PP
+Definition at line 9 of file batches_get_rawData(obsolete)\&.php\&.
+.SS "$rows =$sth->fetchAll()"
+
+.PP
+Definition at line 27 of file batches_get_rawData(obsolete)\&.php\&.
+.SS "$sth =$conn->prepare($query)"
+
+.PP
+Definition at line 24 of file batches_get_rawData(obsolete)\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

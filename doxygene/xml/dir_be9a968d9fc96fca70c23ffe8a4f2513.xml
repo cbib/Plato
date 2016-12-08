@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_be9a968d9fc96fca70c23ffe8a4f2513" kind="dir">
+    <compoundname>php/export</compoundname>
+    <innerfile refid="d0/d59/export_8php">export.php</innerfile>
+    <innerfile refid="de/d15/export__get__exp__data_8php">export_get_exp_data.php</innerfile>
+    <innerfile refid="d6/d7b/export_2get__all__experiment_8php">get_all_experiment.php</innerfile>
+    <innerfile refid="d1/d43/get__exp__names__by__batch_8php">get_exp_names_by_batch.php</innerfile>
+    <innerfile refid="d8/d1c/get__procvalues_8php">get_procvalues.php</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/var/www/html/plato/php/export/"/>
+  </compounddef>
+</doxygen>

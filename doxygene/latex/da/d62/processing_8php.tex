@@ -1,0 +1,311 @@
+\hypertarget{processing_8php}{\section{php/processing/processing.php File Reference}
+\label{processing_8php}\index{php/processing/processing.\-php@{php/processing/processing.\-php}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+(error) \hyperlink{processing_8php_a4bb5a64bedf6f6d54b01f0a8b4eae126}{then} (function(responserawdata)\{if(!\hyperlink{processing_8php_a1901fb6da4e06e8f5465ffcbba77291d}{is\-Empty}(responserawdata))\{\$('\#table-\/wrapper').show();\$('\#head-\/wrapper').show();\$('\#expender-\/wrapper').show();\$('\#datatable-\/wrapper').hide();return \hyperlink{processing__bak_8php_aa5611b9056cce4a61fe798b64bed77a8}{make\-Map}(responserawdata);\}\hyperlink{insert__raw__data_8php_aa869f48d9730e52be32b3ada5833d2ac}{else}\{\$('\#datatable-\/wrapper').hide();\}\}, function(error)\{console.\-log(\char`\"{}failure \-: \char`\"{}+error);\}).then(function(response\-Activity)
+\item 
+(error) \hyperlink{processing_8php_acdf44d17add07e01f71455eb09ab7004}{then} (function()\{\hyperlink{processing__bak_8php_a1712a87d461ae7a47d0e803ac67965ce}{launch\-Processing}(split);\}, function(error)\{console.\-log(\char`\"{}failure \-: \char`\"{}+error);\})
+\item 
+\hyperlink{processing_8php_a842e4774e3b3601a005b995c02f7e883}{update} ()
+\item 
+\hyperlink{processing_8php_a89da1e95057c1fbc88b341bca8f9e045}{data\-Insert} (table\-I\-D, \hyperlink{admin_rawdata_8php_a888d53a6517f4272b5982c3ca9d16e8a}{exp\-I\-D}, \hyperlink{obsolete_2processing__bak_8php_a88c5bc4262b7c34f236357f5c53fc99b}{batch\-I\-D})
+\item 
+\hyperlink{processing_8php_afb304d762110b44295d7a6276258371e}{table\-To\-Array2\-D} (table\-I\-D)
+\item 
+\hyperlink{processing_8php_a4209a7ca658d6c033b0748520c6d66a3}{get\-Activity} (minname)
+\item 
+\hyperlink{processing_8php_ab2fc904496e1d2bc27e61ecd4586d7e8}{get\-Raw\-Data} ()
+\item 
+\hyperlink{processing_8php_a1a597c249cda65f7470ae1f0c2613e07}{make\-Map} (\hyperlink{chart1_8php_ab3ed669f4b3fdb8c88f3a190fb907de0}{data})
+\item 
+\hyperlink{processing_8php_a1901fb6da4e06e8f5465ffcbba77291d}{is\-Empty} (obj)
+\item 
+\hyperlink{processing_8php_a47de9698475b6df6d67de31018af835e}{process\-Metabolites} ()
+\item 
+\hyperlink{processing_8php_a7d55c50976945779a4db3f8fa38c1a83}{process\-Enzyme} ()
+\item 
+\hyperlink{processing_8php_a0ad1822364312d61095a470b8ca3639b}{display\-Data} ()
+\item 
+\hyperlink{processing_8php_a1712a87d461ae7a47d0e803ac67965ce}{launch\-Processing} (layout)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{processing_8php_aa7b648ce9374344019d30469fd37c30e}{current\-Ez\-I\-D} =-\/1
+\item 
+\hyperlink{processing_8php_a1ef2c5c44fd46f82767c5bf01f07b6ff}{create\-Ez\-Tab} ().\hyperlink{processing_8php_acdf44d17add07e01f71455eb09ab7004}{then}(function(response)
+\item 
+window \hyperlink{processing_8php_a12dd03abd8fa9daa2fe8eaeb9c9682c3}{onbeforeunload}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{processing_8php_a89da1e95057c1fbc88b341bca8f9e045}{\index{processing.\-php@{processing.\-php}!data\-Insert@{data\-Insert}}
+\index{data\-Insert@{data\-Insert}!processing.php@{processing.\-php}}
+\subsubsection[{data\-Insert}]{\setlength{\rightskip}{0pt plus 5cm}data\-Insert (
+\begin{DoxyParamCaption}
+\item[{table\-I\-D}]{, }
+\item[{{\bf exp\-I\-D}}]{, }
+\item[{{\bf batch\-I\-D}}]{}
+\end{DoxyParamCaption}
+)}}\label{processing_8php_a89da1e95057c1fbc88b341bca8f9e045}
+Insert new raw values
+
+data\-Insert 
+\begin{DoxyParams}{Parameters}
+{\em \{$<$type$>$\}} & table\-I\-D \{ description \} \\
+\hline
+{\em \{$<$type$>$\}} & exp\-I\-D \{ description \} \\
+\hline
+{\em \{$<$type$>$\}} & batch\-I\-D \{ description \} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 687 of file processing.\-php.
+
+\hypertarget{processing_8php_a0ad1822364312d61095a470b8ca3639b}{\index{processing.\-php@{processing.\-php}!display\-Data@{display\-Data}}
+\index{display\-Data@{display\-Data}!processing.php@{processing.\-php}}
+\subsubsection[{display\-Data}]{\setlength{\rightskip}{0pt plus 5cm}display\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{processing_8php_a0ad1822364312d61095a470b8ca3639b}
+\{ function\-\_\-description \}
+
+display\-Data \begin{DoxyReturn}{Returns}
+\{$<$type$>$\} \{ description\-\_\-of\-\_\-the\-\_\-return\-\_\-value \} 
+\end{DoxyReturn}
+
+
+Definition at line 988 of file processing.\-php.
+
+\hypertarget{processing_8php_a4209a7ca658d6c033b0748520c6d66a3}{\index{processing.\-php@{processing.\-php}!get\-Activity@{get\-Activity}}
+\index{get\-Activity@{get\-Activity}!processing.php@{processing.\-php}}
+\subsubsection[{get\-Activity}]{\setlength{\rightskip}{0pt plus 5cm}get\-Activity (
+\begin{DoxyParamCaption}
+\item[{minname}]{}
+\end{DoxyParamCaption}
+)}}\label{processing_8php_a4209a7ca658d6c033b0748520c6d66a3}
+Get activity of an analyte (enzyme)
+
+get\-Activity 
+\begin{DoxyParams}{Parameters}
+{\em \{$<$type$>$\}} & minname \{ description \} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Promise\} \{ description\-\_\-of\-\_\-the\-\_\-return\-\_\-value \} 
+\end{DoxyReturn}
+
+
+Definition at line 752 of file processing.\-php.
+
+\hypertarget{processing_8php_ab2fc904496e1d2bc27e61ecd4586d7e8}{\index{processing.\-php@{processing.\-php}!get\-Raw\-Data@{get\-Raw\-Data}}
+\index{get\-Raw\-Data@{get\-Raw\-Data}!processing.php@{processing.\-php}}
+\subsubsection[{get\-Raw\-Data}]{\setlength{\rightskip}{0pt plus 5cm}get\-Raw\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{processing_8php_ab2fc904496e1d2bc27e61ecd4586d7e8}
+Get rawdatas for an experiment, batch and analyte
+
+get\-Raw\-Data \begin{DoxyReturn}{Returns}
+\{Promise\} \{ description\-\_\-of\-\_\-the\-\_\-return\-\_\-value \} 
+\end{DoxyReturn}
+
+
+Definition at line 781 of file processing.\-php.
+
+\hypertarget{processing_8php_a1901fb6da4e06e8f5465ffcbba77291d}{\index{processing.\-php@{processing.\-php}!is\-Empty@{is\-Empty}}
+\index{is\-Empty@{is\-Empty}!processing.php@{processing.\-php}}
+\subsubsection[{is\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}is\-Empty (
+\begin{DoxyParamCaption}
+\item[{obj}]{}
+\end{DoxyParamCaption}
+)}}\label{processing_8php_a1901fb6da4e06e8f5465ffcbba77291d}
+
+
+Definition at line 899 of file processing.\-php.
+
+\hypertarget{processing_8php_a1712a87d461ae7a47d0e803ac67965ce}{\index{processing.\-php@{processing.\-php}!launch\-Processing@{launch\-Processing}}
+\index{launch\-Processing@{launch\-Processing}!processing.php@{processing.\-php}}
+\subsubsection[{launch\-Processing}]{\setlength{\rightskip}{0pt plus 5cm}launch\-Processing (
+\begin{DoxyParamCaption}
+\item[{layout}]{}
+\end{DoxyParamCaption}
+)}}\label{processing_8php_a1712a87d461ae7a47d0e803ac67965ce}
+\{ function\-\_\-description \}
+
+launch\-Processing 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & layout \{ description \} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{$<$type$>$\} \{ description\-\_\-of\-\_\-the\-\_\-return\-\_\-value \} 
+\end{DoxyReturn}
+
+
+Definition at line 1000 of file processing.\-php.
+
+\hypertarget{processing_8php_a1a597c249cda65f7470ae1f0c2613e07}{\index{processing.\-php@{processing.\-php}!make\-Map@{make\-Map}}
+\index{make\-Map@{make\-Map}!processing.php@{processing.\-php}}
+\subsubsection[{make\-Map}]{\setlength{\rightskip}{0pt plus 5cm}make\-Map (
+\begin{DoxyParamCaption}
+\item[{{\bf data}}]{}
+\end{DoxyParamCaption}
+)}}\label{processing_8php_a1a597c249cda65f7470ae1f0c2613e07}
+make the map of the raw data
+
+make\-Map 
+\begin{DoxyParams}{Parameters}
+{\em \{(number$\vert$string)\}} & data \{ description \} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 816 of file processing.\-php.
+
+\hypertarget{processing_8php_a7d55c50976945779a4db3f8fa38c1a83}{\index{processing.\-php@{processing.\-php}!process\-Enzyme@{process\-Enzyme}}
+\index{process\-Enzyme@{process\-Enzyme}!processing.php@{processing.\-php}}
+\subsubsection[{process\-Enzyme}]{\setlength{\rightskip}{0pt plus 5cm}process\-Enzyme (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{processing_8php_a7d55c50976945779a4db3f8fa38c1a83}
+Process value for enzymes
+
+process\-Enzyme 
+
+Definition at line 942 of file processing.\-php.
+
+\hypertarget{processing_8php_a47de9698475b6df6d67de31018af835e}{\index{processing.\-php@{processing.\-php}!process\-Metabolites@{process\-Metabolites}}
+\index{process\-Metabolites@{process\-Metabolites}!processing.php@{processing.\-php}}
+\subsubsection[{process\-Metabolites}]{\setlength{\rightskip}{0pt plus 5cm}process\-Metabolites (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{processing_8php_a47de9698475b6df6d67de31018af835e}
+Calculs for processing values
+
+process\-Metabolites 
+\begin{DoxyParams}{Parameters}
+{\em \{$<$type$>$\}} & raw\-Data\-Map \{ description \} \\
+\hline
+{\em \{$<$type$>$\}} & data\-Type\-Map \{ description \} \\
+\hline
+{\em \{$<$type$>$\}} & exclud\-Map \{ description \} \\
+\hline
+{\em \{$<$type$>$\}} & layout \{ description \} \\
+\hline
+{\em \{$<$type$>$\}} & process\-Data\-Map \{ description \} \\
+\hline
+{\em \{number\}} & activity \{ description \} \\
+\hline
+{\em \{number\}} & fw\-Map \{ description \} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{$<$type$>$\} \{ description\-\_\-of\-\_\-the\-\_\-return\-\_\-value \} 
+\end{DoxyReturn}
+
+
+Definition at line 916 of file processing.\-php.
+
+\hypertarget{processing_8php_afb304d762110b44295d7a6276258371e}{\index{processing.\-php@{processing.\-php}!table\-To\-Array2\-D@{table\-To\-Array2\-D}}
+\index{table\-To\-Array2\-D@{table\-To\-Array2\-D}!processing.php@{processing.\-php}}
+\subsubsection[{table\-To\-Array2\-D}]{\setlength{\rightskip}{0pt plus 5cm}table\-To\-Array2\-D (
+\begin{DoxyParamCaption}
+\item[{table\-I\-D}]{}
+\end{DoxyParamCaption}
+)}}\label{processing_8php_afb304d762110b44295d7a6276258371e}
+take a html table to make a 2\-D array
+
+table\-To\-Array2\-D 
+\begin{DoxyParams}{Parameters}
+{\em \{$<$type$>$\}} & table\-I\-D \{ description \} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 733 of file processing.\-php.
+
+\hypertarget{processing_8php_a4bb5a64bedf6f6d54b01f0a8b4eae126}{\index{processing.\-php@{processing.\-php}!then@{then}}
+\index{then@{then}!processing.php@{processing.\-php}}
+\subsubsection[{then}]{\setlength{\rightskip}{0pt plus 5cm}(error) then (
+\begin{DoxyParamCaption}
+\item[{function(responserawdata)\{if(!{\bf is\-Empty}(responserawdata))\{\$('\#table-\/wrapper').show();\$('\#head-\/wrapper').show();\$('\#expender-\/wrapper').show();\$('\#datatable-\/wrapper').hide();return {\bf make\-Map}(responserawdata);\}{\bf else}\{\$('\#datatable-\/wrapper').hide();\}\}}]{, }
+\item[{function(error)\{console.\-log(\char`\"{}failure \-: \char`\"{}+error);\}}]{}
+\end{DoxyParamCaption}
+)}}\label{processing_8php_a4bb5a64bedf6f6d54b01f0a8b4eae126}
+
+
+Definition at line 492 of file processing.\-php.
+
+\hypertarget{processing_8php_acdf44d17add07e01f71455eb09ab7004}{\index{processing.\-php@{processing.\-php}!then@{then}}
+\index{then@{then}!processing.php@{processing.\-php}}
+\subsubsection[{then}]{\setlength{\rightskip}{0pt plus 5cm}(error) then (
+\begin{DoxyParamCaption}
+\item[{function()\{{\bf launch\-Processing}(split);\}}]{, }
+\item[{function(error)\{console.\-log(\char`\"{}failure \-: \char`\"{}+error);\}}]{}
+\end{DoxyParamCaption}
+)}}\label{processing_8php_acdf44d17add07e01f71455eb09ab7004}
+\hypertarget{processing_8php_a842e4774e3b3601a005b995c02f7e883}{\index{processing.\-php@{processing.\-php}!update@{update}}
+\index{update@{update}!processing.php@{processing.\-php}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{processing_8php_a842e4774e3b3601a005b995c02f7e883}
+Process data update (click on save under the process data table)
+
+update 
+\begin{DoxyParams}{Parameters}
+{\em \{$<$type$>$\}} & ez\-I\-D \{ description \} \\
+\hline
+{\em \{$<$type$>$\}} & batch\-I\-D \{ description \} \\
+\hline
+{\em \{$<$type$>$\}} & process\-Data\-Map \{ description \} \\
+\hline
+{\em \{$<$type$>$\}} & exclud\-Map \{ description \} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 645 of file processing.\-php.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{processing_8php_a1ef2c5c44fd46f82767c5bf01f07b6ff}{\index{processing.\-php@{processing.\-php}!create\-Ez\-Tab@{create\-Ez\-Tab}}
+\index{create\-Ez\-Tab@{create\-Ez\-Tab}!processing.php@{processing.\-php}}
+\subsubsection[{create\-Ez\-Tab}]{\setlength{\rightskip}{0pt plus 5cm}create\-Ez\-Tab().{\bf then}(function(response)}}\label{processing_8php_a1ef2c5c44fd46f82767c5bf01f07b6ff}
+
+
+Definition at line 488 of file processing.\-php.
+
+\hypertarget{processing_8php_aa7b648ce9374344019d30469fd37c30e}{\index{processing.\-php@{processing.\-php}!current\-Ez\-I\-D@{current\-Ez\-I\-D}}
+\index{current\-Ez\-I\-D@{current\-Ez\-I\-D}!processing.php@{processing.\-php}}
+\subsubsection[{current\-Ez\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}current\-Ez\-I\-D =-\/1}}\label{processing_8php_aa7b648ce9374344019d30469fd37c30e}
+
+
+Definition at line 485 of file processing.\-php.
+
+\hypertarget{processing_8php_a12dd03abd8fa9daa2fe8eaeb9c9682c3}{\index{processing.\-php@{processing.\-php}!onbeforeunload@{onbeforeunload}}
+\index{onbeforeunload@{onbeforeunload}!processing.php@{processing.\-php}}
+\subsubsection[{onbeforeunload}]{\setlength{\rightskip}{0pt plus 5cm}window onbeforeunload}}\label{processing_8php_a12dd03abd8fa9daa2fe8eaeb9c9682c3}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function}(event) \{
+    \textcolor{keywordflow}{if} (\hyperlink{obsolete_2processing__bak_8php_a737a9dd58b5139e64ee8903b481e9aa8}{OkToQuitPage}==\textcolor{stringliteral}{"nope"})\{
+        \textcolor{keyword}{event}.returnValue = \textcolor{stringliteral}{"Some changes are not saved"};
+    \}
+\}
+\end{DoxyCode}
+
+
+Definition at line 533 of file processing.\-php.
+

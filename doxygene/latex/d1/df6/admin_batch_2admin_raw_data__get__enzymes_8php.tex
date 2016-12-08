@@ -1,0 +1,93 @@
+\hypertarget{admin_batch_2admin_raw_data__get__enzymes_8php}{\section{php/admin/admin\-Batch/admin\-Raw\-Data\-\_\-get\-\_\-enzymes.php File Reference}
+\label{admin_batch_2admin_raw_data__get__enzymes_8php}\index{php/admin/admin\-Batch/admin\-Raw\-Data\-\_\-get\-\_\-enzymes.\-php@{php/admin/admin\-Batch/admin\-Raw\-Data\-\_\-get\-\_\-enzymes.\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{admin_batch_2admin_raw_data__get__enzymes_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{admin_batch_2admin_raw_data__get__enzymes_8php_aaa6d122ea9cb55b210aadd86e5654a74}{\$batch\-I\-D} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'\hyperlink{obsolete_2processing__bak_8php_a88c5bc4262b7c34f236357f5c53fc99b}{batch\-I\-D}'\mbox{]}
+\item 
+\hyperlink{admin_batch_2admin_raw_data__get__enzymes_8php_af59a5f7cd609e592c41dc3643efd3c98}{\$query}
+\item 
+\hyperlink{admin_batch_2admin_raw_data__get__enzymes_8php_abe4cc9788f52e49485473dc699537388}{try}
+\item 
+\hyperlink{admin_batch_2admin_raw_data__get__enzymes_8php_ace2ec39e7df3899fa8df9640ec274b03}{\$rows} =\$sth-\/$>$fetch\-All()
+\item 
+\hyperlink{admin_batch_2admin_raw_data__get__enzymes_8php_a58391ea75f2d29d5d708d7050b641c33}{\$status} =\char`\"{}success\char`\"{}
+\item 
+catch(Exception \$e) \hyperlink{admin_batch_2admin_raw_data__get__enzymes_8php_adeea971a3fd99fcce189bd638dacd58c}{\$output} = array()
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{admin_batch_2admin_raw_data__get__enzymes_8php_aaa6d122ea9cb55b210aadd86e5654a74}{\index{admin\-Batch/admin\-Raw\-Data\-\_\-get\-\_\-enzymes.\-php@{admin\-Batch/admin\-Raw\-Data\-\_\-get\-\_\-enzymes.\-php}!\$batch\-I\-D@{\$batch\-I\-D}}
+\index{\$batch\-I\-D@{\$batch\-I\-D}!adminBatch/adminRawData_get_enzymes.php@{admin\-Batch/admin\-Raw\-Data\-\_\-get\-\_\-enzymes.\-php}}
+\subsubsection[{\$batch\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf batch\-I\-D} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'{\bf batch\-I\-D}'\mbox{]}}}\label{admin_batch_2admin_raw_data__get__enzymes_8php_aaa6d122ea9cb55b210aadd86e5654a74}
+
+
+Definition at line 7 of file admin\-Raw\-Data\-\_\-get\-\_\-enzymes.\-php.
+
+\hypertarget{admin_batch_2admin_raw_data__get__enzymes_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{admin\-Batch/admin\-Raw\-Data\-\_\-get\-\_\-enzymes.\-php@{admin\-Batch/admin\-Raw\-Data\-\_\-get\-\_\-enzymes.\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!adminBatch/adminRawData_get_enzymes.php@{admin\-Batch/admin\-Raw\-Data\-\_\-get\-\_\-enzymes.\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{admin_batch_2admin_raw_data__get__enzymes_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 4 of file admin\-Raw\-Data\-\_\-get\-\_\-enzymes.\-php.
+
+\hypertarget{admin_batch_2admin_raw_data__get__enzymes_8php_adeea971a3fd99fcce189bd638dacd58c}{\index{admin\-Batch/admin\-Raw\-Data\-\_\-get\-\_\-enzymes.\-php@{admin\-Batch/admin\-Raw\-Data\-\_\-get\-\_\-enzymes.\-php}!\$output@{\$output}}
+\index{\$output@{\$output}!adminBatch/adminRawData_get_enzymes.php@{admin\-Batch/admin\-Raw\-Data\-\_\-get\-\_\-enzymes.\-php}}
+\subsubsection[{\$output}]{\setlength{\rightskip}{0pt plus 5cm}catch (Exception \$e) \$output = array()}}\label{admin_batch_2admin_raw_data__get__enzymes_8php_adeea971a3fd99fcce189bd638dacd58c}
+
+
+Definition at line 35 of file admin\-Raw\-Data\-\_\-get\-\_\-enzymes.\-php.
+
+\hypertarget{admin_batch_2admin_raw_data__get__enzymes_8php_af59a5f7cd609e592c41dc3643efd3c98}{\index{admin\-Batch/admin\-Raw\-Data\-\_\-get\-\_\-enzymes.\-php@{admin\-Batch/admin\-Raw\-Data\-\_\-get\-\_\-enzymes.\-php}!\$query@{\$query}}
+\index{\$query@{\$query}!adminBatch/adminRawData_get_enzymes.php@{admin\-Batch/admin\-Raw\-Data\-\_\-get\-\_\-enzymes.\-php}}
+\subsubsection[{\$query}]{\setlength{\rightskip}{0pt plus 5cm}\$query}}\label{admin_batch_2admin_raw_data__get__enzymes_8php_af59a5f7cd609e592c41dc3643efd3c98}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=\textcolor{stringliteral}{'}
+\textcolor{stringliteral}{    SELECT  }
+\textcolor{stringliteral}{        distinct rawdata.data\_enzyme\_FK, enzyme.ez\_analyte, enzyme.ez\_code}
+\textcolor{stringliteral}{    FROM}
+\textcolor{stringliteral}{        batch\_data, rawdata, enzyme }
+\textcolor{stringliteral}{    WHERE }
+\textcolor{stringliteral}{        batch\_data.bat\_data\_batch\_FK = '}.$batchID.\textcolor{stringliteral}{' AND }
+\textcolor{stringliteral}{        rawdata.rawdata\_batch\_data\_FK = batch\_data.bat\_data\_id AND}
+\textcolor{stringliteral}{        enzyme.ez\_id = rawdata.data\_enzyme\_FK}
+\textcolor{stringliteral}{    ORDER BY }
+\textcolor{stringliteral}{        enzyme.ez\_code;}
+\textcolor{stringliteral}{    '}
+\end{DoxyCode}
+
+
+Definition at line 9 of file admin\-Raw\-Data\-\_\-get\-\_\-enzymes.\-php.
+
+\hypertarget{admin_batch_2admin_raw_data__get__enzymes_8php_ace2ec39e7df3899fa8df9640ec274b03}{\index{admin\-Batch/admin\-Raw\-Data\-\_\-get\-\_\-enzymes.\-php@{admin\-Batch/admin\-Raw\-Data\-\_\-get\-\_\-enzymes.\-php}!\$rows@{\$rows}}
+\index{\$rows@{\$rows}!adminBatch/adminRawData_get_enzymes.php@{admin\-Batch/admin\-Raw\-Data\-\_\-get\-\_\-enzymes.\-php}}
+\subsubsection[{\$rows}]{\setlength{\rightskip}{0pt plus 5cm}\$rows =\$sth-\/$>$fetch\-All()}}\label{admin_batch_2admin_raw_data__get__enzymes_8php_ace2ec39e7df3899fa8df9640ec274b03}
+
+
+Definition at line 27 of file admin\-Raw\-Data\-\_\-get\-\_\-enzymes.\-php.
+
+\hypertarget{admin_batch_2admin_raw_data__get__enzymes_8php_a58391ea75f2d29d5d708d7050b641c33}{\index{admin\-Batch/admin\-Raw\-Data\-\_\-get\-\_\-enzymes.\-php@{admin\-Batch/admin\-Raw\-Data\-\_\-get\-\_\-enzymes.\-php}!\$status@{\$status}}
+\index{\$status@{\$status}!adminBatch/adminRawData_get_enzymes.php@{admin\-Batch/admin\-Raw\-Data\-\_\-get\-\_\-enzymes.\-php}}
+\subsubsection[{\$status}]{\setlength{\rightskip}{0pt plus 5cm}\$status =\char`\"{}success\char`\"{}}}\label{admin_batch_2admin_raw_data__get__enzymes_8php_a58391ea75f2d29d5d708d7050b641c33}
+
+
+Definition at line 28 of file admin\-Raw\-Data\-\_\-get\-\_\-enzymes.\-php.
+
+\hypertarget{admin_batch_2admin_raw_data__get__enzymes_8php_abe4cc9788f52e49485473dc699537388}{\index{admin\-Batch/admin\-Raw\-Data\-\_\-get\-\_\-enzymes.\-php@{admin\-Batch/admin\-Raw\-Data\-\_\-get\-\_\-enzymes.\-php}!try@{try}}
+\index{try@{try}!adminBatch/adminRawData_get_enzymes.php@{admin\-Batch/admin\-Raw\-Data\-\_\-get\-\_\-enzymes.\-php}}
+\subsubsection[{try}]{\setlength{\rightskip}{0pt plus 5cm}try}}\label{admin_batch_2admin_raw_data__get__enzymes_8php_abe4cc9788f52e49485473dc699537388}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+\{
+        
+        \hyperlink{admin_batch_update_data_8php_afa9126f9664959c02795be300a135f93}{$sth}=\hyperlink{admin_batch_2admin_raw_data__get__enzymes_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{$conn}->prepare(\hyperlink{admin_batch_2admin_raw_data__get__enzymes_8php_af59a5f7cd609e592c41dc3643efd3c98}{$query})
+\end{DoxyCode}
+
+
+Definition at line 22 of file admin\-Raw\-Data\-\_\-get\-\_\-enzymes.\-php.
+

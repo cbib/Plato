@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/df5/batch__is__used_8php">
+    <title>batch_is_used.php File Reference</title>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/df5/batch__is__used_8php_1aa8a5a87b9c1a6a0819b88447cbe41877">$conn</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/df5/batch__is__used_8php_1a6efc15b5a2314dd4b5aaa556a375c6d6">$data</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/df5/batch__is__used_8php_1a6c0fd6f414374ab1b1e16b2a4b625004">$response_array</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/df5/batch__is__used_8php_1ada5564dc28774e85d6fea1465312dba4">$response_array</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/df5/batch__is__used_8php_1a58391ea75f2d29d5d708d7050b641c33">$status</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/df5/batch__is__used_8php_1a370f3b80b4eb90ab0a25d451497f627e">$response_array</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/df5/batch__is__used_8php_1a8d5bac2f2b410351f073c23d51d262cf">$expNames</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/df5/batch__is__used_8php_1a7ce9324a2e06fc9170b9dafc76465fb7">$fullResult</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>foreach($<link linkend="db/d8a/chart1_8php_1ab3ed669f4b3fdb8c88f3a190fb907de0">data</link> as $key=&gt; $row) <link linkend="d9/df5/batch__is__used_8php_1af5d11c3388f67ea3b6be7fe839293799">$stmt</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>foreach($expNames as $key=&gt; $value) <link linkend="d9/df5/batch__is__used_8php_1af9b19996aa7a415218a214650987ebc9">$newResult</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>foreach($fullResult as $key=&gt; $values) <link linkend="d9/df5/batch__is__used_8php_1ac2cff670cd6bb522803dae2768c136c7">$i</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /var/www/html/plato/php/batches/batch_is_used.php</para>
+    </simplesect>
+</section>

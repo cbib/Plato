@@ -1,25 +1,8 @@
 <?php
 	require('../../functions/check_login.php');
 	include '../../functions/php_functions.php';
-	#COUNT(DISTINCT batch_data.bat_data_id) AS nb_batch 
 	$conn = get_connexion();
-	// $query = 'SELECT 
-	// 	experiment.exp_id, 
-	// 	experiment.exp_name, 
-	// 	standard.std_name,
-	// 	COUNT(DISTINCT experiment_freshweight.exp_fw_id) AS nb_fw
-	// FROM 
-	// 	experiment, 
-	// 	experiment_standard,
-	// 	standard,
-	// 	experiment_freshweight
-	// WHERE
-	// 	experiment.exp_id = experiment_standard.exp_std_experiment_FK AND
-	// 	standard.std_id = experiment_standard.exp_std_standard_FK AND
-	// 	experiment_freshweight.exp_fw_experiment_FK = experiment.exp_id
-	// ORDER BY 
-	// 	exp_name';
-
+	// Get all experiment and their associated standard
 
 	$query ='SELECT e.*, s.std_name 
 	FROM experiment e

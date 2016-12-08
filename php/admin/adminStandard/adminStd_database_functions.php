@@ -2,6 +2,8 @@
 	require('../../functions/check_login_admin.php');
 	include '../../functions/php_functions.php';
 
+	//Get all information of all standard
+
 	$conn = get_connexion();
 	$query = '
 	SELECT std_id, std_name, std_genius, std_species, std_genotype, std_nature, std_owner, std_comment 

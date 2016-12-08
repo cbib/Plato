@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/d9c/standard__php__functions_07obsolete_08_8php">
+    <title>standard_php_functions(obsolete).php File Reference</title>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/d9c/standard__php__functions_07obsolete_08_8php_1a61143ce3bd025ba087c2057934134ccc">calcul_std_confiance</link> (
+ $values)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /var/www/html/plato/php/standard/obsolete files/standard_php_functions(obsolete).php</para>
+    </simplesect>
+</section>

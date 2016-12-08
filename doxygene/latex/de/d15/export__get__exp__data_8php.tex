@@ -1,0 +1,120 @@
+\hypertarget{export__get__exp__data_8php}{\section{php/export/export\-\_\-get\-\_\-exp\-\_\-data.php File Reference}
+\label{export__get__exp__data_8php}\index{php/export/export\-\_\-get\-\_\-exp\-\_\-data.\-php@{php/export/export\-\_\-get\-\_\-exp\-\_\-data.\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{export__get__exp__data_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{export__get__exp__data_8php_ae384d32e62e85e587cd27bf249ed3db3}{\$exp\-I\-D} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'\hyperlink{admin_rawdata_8php_a888d53a6517f4272b5982c3ca9d16e8a}{exp\-I\-D}'\mbox{]}
+\item 
+\hyperlink{export__get__exp__data_8php_a6478e66386fefd0e5fd6de22d695ffca}{\$exp\-Name} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'exp\-Name'\mbox{]}
+\item 
+\hyperlink{export__get__exp__data_8php_a73004ce9cd673c1bfafd1dc351134797}{\$output} = array()
+\item 
+\hyperlink{export__get__exp__data_8php_af59a5f7cd609e592c41dc3643efd3c98}{\$query}
+\item 
+\hyperlink{export__get__exp__data_8php_a233d12bd8b6d3453e9a7a3f0b8c31db2}{\$results} = \$conn-\/$>$query(\$query)-\/$>$fetch\-All()
+\item 
+\hyperlink{export__get__exp__data_8php_a2d58bfaabf81051b4d9e9cb2d8ed5941}{\$ez\-Name\-Query}
+\item 
+\hyperlink{export__get__exp__data_8php_a3af2456d6a8126f749b1cfca0ba77027}{\$ez\-Names} = \$conn-\/$>$query(\$ez\-Name\-Query)-\/$>$fetch\-All()
+\item 
+\hyperlink{export__get__exp__data_8php_ac098f986b0121aa5592943a8ea80e37b}{\$line\-Name} =\char`\"{}\char`\"{}
+\item 
+foreach(\$ez\-Names as \$name) \hyperlink{export__get__exp__data_8php_a1b7e843aa496f34e3c661d1eefbf7b84}{\$output} \mbox{[}$\,$\mbox{]} =\$line\-Name
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{export__get__exp__data_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{export\-\_\-get\-\_\-exp\-\_\-data.\-php@{export\-\_\-get\-\_\-exp\-\_\-data.\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!export_get_exp_data.php@{export\-\_\-get\-\_\-exp\-\_\-data.\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{export__get__exp__data_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 4 of file export\-\_\-get\-\_\-exp\-\_\-data.\-php.
+
+\hypertarget{export__get__exp__data_8php_ae384d32e62e85e587cd27bf249ed3db3}{\index{export\-\_\-get\-\_\-exp\-\_\-data.\-php@{export\-\_\-get\-\_\-exp\-\_\-data.\-php}!\$exp\-I\-D@{\$exp\-I\-D}}
+\index{\$exp\-I\-D@{\$exp\-I\-D}!export_get_exp_data.php@{export\-\_\-get\-\_\-exp\-\_\-data.\-php}}
+\subsubsection[{\$exp\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf exp\-I\-D} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'{\bf exp\-I\-D}'\mbox{]}}}\label{export__get__exp__data_8php_ae384d32e62e85e587cd27bf249ed3db3}
+
+
+Definition at line 6 of file export\-\_\-get\-\_\-exp\-\_\-data.\-php.
+
+\hypertarget{export__get__exp__data_8php_a6478e66386fefd0e5fd6de22d695ffca}{\index{export\-\_\-get\-\_\-exp\-\_\-data.\-php@{export\-\_\-get\-\_\-exp\-\_\-data.\-php}!\$exp\-Name@{\$exp\-Name}}
+\index{\$exp\-Name@{\$exp\-Name}!export_get_exp_data.php@{export\-\_\-get\-\_\-exp\-\_\-data.\-php}}
+\subsubsection[{\$exp\-Name}]{\setlength{\rightskip}{0pt plus 5cm}\$exp\-Name = \$\-\_\-\-P\-O\-S\-T\mbox{[}'exp\-Name'\mbox{]}}}\label{export__get__exp__data_8php_a6478e66386fefd0e5fd6de22d695ffca}
+
+
+Definition at line 7 of file export\-\_\-get\-\_\-exp\-\_\-data.\-php.
+
+\hypertarget{export__get__exp__data_8php_a2d58bfaabf81051b4d9e9cb2d8ed5941}{\index{export\-\_\-get\-\_\-exp\-\_\-data.\-php@{export\-\_\-get\-\_\-exp\-\_\-data.\-php}!\$ez\-Name\-Query@{\$ez\-Name\-Query}}
+\index{\$ez\-Name\-Query@{\$ez\-Name\-Query}!export_get_exp_data.php@{export\-\_\-get\-\_\-exp\-\_\-data.\-php}}
+\subsubsection[{\$ez\-Name\-Query}]{\setlength{\rightskip}{0pt plus 5cm}\$ez\-Name\-Query}}\label{export__get__exp__data_8php_a2d58bfaabf81051b4d9e9cb2d8ed5941}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=\textcolor{stringliteral}{'SELECT distinct (ez\_analyte), ez\_id, ez\_code}
+\textcolor{stringliteral}{    FROM }
+\textcolor{stringliteral}{        enzyme, rawdata, batch\_data}
+\textcolor{stringliteral}{    WHERE}
+\textcolor{stringliteral}{        bat\_data\_experiment\_FK = '}.$expID.\textcolor{stringliteral}{' AND }
+\textcolor{stringliteral}{        rawdata\_batch\_data\_FK = bat\_data\_id AND }
+\textcolor{stringliteral}{        ez\_id = data\_enzyme\_FK }
+\textcolor{stringliteral}{    ORDER BY}
+\textcolor{stringliteral}{        enzyme.ez\_analyte;'}
+\end{DoxyCode}
+
+
+Definition at line 17 of file export\-\_\-get\-\_\-exp\-\_\-data.\-php.
+
+\hypertarget{export__get__exp__data_8php_a3af2456d6a8126f749b1cfca0ba77027}{\index{export\-\_\-get\-\_\-exp\-\_\-data.\-php@{export\-\_\-get\-\_\-exp\-\_\-data.\-php}!\$ez\-Names@{\$ez\-Names}}
+\index{\$ez\-Names@{\$ez\-Names}!export_get_exp_data.php@{export\-\_\-get\-\_\-exp\-\_\-data.\-php}}
+\subsubsection[{\$ez\-Names}]{\setlength{\rightskip}{0pt plus 5cm}\$ez\-Names = \$conn-\/$>$query(\$ez\-Name\-Query)-\/$>$fetch\-All()}}\label{export__get__exp__data_8php_a3af2456d6a8126f749b1cfca0ba77027}
+
+
+Definition at line 26 of file export\-\_\-get\-\_\-exp\-\_\-data.\-php.
+
+\hypertarget{export__get__exp__data_8php_ac098f986b0121aa5592943a8ea80e37b}{\index{export\-\_\-get\-\_\-exp\-\_\-data.\-php@{export\-\_\-get\-\_\-exp\-\_\-data.\-php}!\$line\-Name@{\$line\-Name}}
+\index{\$line\-Name@{\$line\-Name}!export_get_exp_data.php@{export\-\_\-get\-\_\-exp\-\_\-data.\-php}}
+\subsubsection[{\$line\-Name}]{\setlength{\rightskip}{0pt plus 5cm}\$line\-Name =\char`\"{}\char`\"{}}}\label{export__get__exp__data_8php_ac098f986b0121aa5592943a8ea80e37b}
+
+
+Definition at line 27 of file export\-\_\-get\-\_\-exp\-\_\-data.\-php.
+
+\hypertarget{export__get__exp__data_8php_a73004ce9cd673c1bfafd1dc351134797}{\index{export\-\_\-get\-\_\-exp\-\_\-data.\-php@{export\-\_\-get\-\_\-exp\-\_\-data.\-php}!\$output@{\$output}}
+\index{\$output@{\$output}!export_get_exp_data.php@{export\-\_\-get\-\_\-exp\-\_\-data.\-php}}
+\subsubsection[{\$output}]{\setlength{\rightskip}{0pt plus 5cm}\$output = array()}}\label{export__get__exp__data_8php_a73004ce9cd673c1bfafd1dc351134797}
+
+
+Definition at line 8 of file export\-\_\-get\-\_\-exp\-\_\-data.\-php.
+
+\hypertarget{export__get__exp__data_8php_a1b7e843aa496f34e3c661d1eefbf7b84}{\index{export\-\_\-get\-\_\-exp\-\_\-data.\-php@{export\-\_\-get\-\_\-exp\-\_\-data.\-php}!\$output@{\$output}}
+\index{\$output@{\$output}!export_get_exp_data.php@{export\-\_\-get\-\_\-exp\-\_\-data.\-php}}
+\subsubsection[{\$output}]{\setlength{\rightskip}{0pt plus 5cm}foreach (\$ez\-Names as \$name) \$output\mbox{[}$\,$\mbox{]} =\$line\-Name}}\label{export__get__exp__data_8php_a1b7e843aa496f34e3c661d1eefbf7b84}
+
+
+Definition at line 31 of file export\-\_\-get\-\_\-exp\-\_\-data.\-php.
+
+\hypertarget{export__get__exp__data_8php_af59a5f7cd609e592c41dc3643efd3c98}{\index{export\-\_\-get\-\_\-exp\-\_\-data.\-php@{export\-\_\-get\-\_\-exp\-\_\-data.\-php}!\$query@{\$query}}
+\index{\$query@{\$query}!export_get_exp_data.php@{export\-\_\-get\-\_\-exp\-\_\-data.\-php}}
+\subsubsection[{\$query}]{\setlength{\rightskip}{0pt plus 5cm}\$query}}\label{export__get__exp__data_8php_af59a5f7cd609e592c41dc3643efd3c98}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=\textcolor{stringliteral}{'SELECT bat\_data\_batch\_FK, bat\_data\_id, spl\_number, alq\_number FROM batch\_data, sample\_aliquot, sample,
+       aliquot WHERE bat\_data\_experiment\_FK = '}.$expID.\textcolor{stringliteral}{' AND}
+\textcolor{stringliteral}{    sample\_aliquot.spl\_alq\_id = batch\_data.bat\_data\_sample\_aliquot\_FK AND}
+\textcolor{stringliteral}{    sample.spl\_id = sample\_aliquot.spl\_alq\_sample\_FK AND}
+\textcolor{stringliteral}{    aliquot.alq\_id = sample\_aliquot.spl\_alq\_aliquot\_FK}
+\textcolor{stringliteral}{    ORDER BY sample.spl\_number, aliquot.alq\_number ;'}
+\end{DoxyCode}
+
+
+Definition at line 10 of file export\-\_\-get\-\_\-exp\-\_\-data.\-php.
+
+\hypertarget{export__get__exp__data_8php_a233d12bd8b6d3453e9a7a3f0b8c31db2}{\index{export\-\_\-get\-\_\-exp\-\_\-data.\-php@{export\-\_\-get\-\_\-exp\-\_\-data.\-php}!\$results@{\$results}}
+\index{\$results@{\$results}!export_get_exp_data.php@{export\-\_\-get\-\_\-exp\-\_\-data.\-php}}
+\subsubsection[{\$results}]{\setlength{\rightskip}{0pt plus 5cm}\$results = \$conn-\/$>$query(\$query)-\/$>$fetch\-All()}}\label{export__get__exp__data_8php_a233d12bd8b6d3453e9a7a3f0b8c31db2}
+
+
+Definition at line 16 of file export\-\_\-get\-\_\-exp\-\_\-data.\-php.
+

@@ -1,0 +1,132 @@
+\hypertarget{admin_exp_8php}{\section{php/admin/admin\-Experiment/admin\-Exp.php File Reference}
+\label{admin_exp_8php}\index{php/admin/admin\-Experiment/admin\-Exp.\-php@{php/admin/admin\-Experiment/admin\-Exp.\-php}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{admin_exp_8php_a22f8b2e1469128cde35ac846b0b24333}{get\-Select\-Std} ()
+\item 
+\hyperlink{admin_exp_8php_a3b7fa21c29f2265534745659558aab45}{setup\-\_\-experiment\-\_\-datatable} ()
+\item 
+\hyperlink{admin_exp_8php_a8a2de340effe508a796cc1c77e951d15}{construct\-\_\-delete\-\_\-modal} (\hyperlink{chart1_8php_ab3ed669f4b3fdb8c88f3a190fb907de0}{data}, action)
+\item 
+\hyperlink{admin_exp_8php_a346f7d5a906acbe413b62b06af0d629b}{construct\-\_\-edit\-\_\-modal} (\hyperlink{chart1_8php_ab3ed669f4b3fdb8c88f3a190fb907de0}{data}, action, \hyperlink{admin_exp_8php_ae180890d7caabe9962d544350eca4638}{select})
+\item 
+\hyperlink{admin_exp_8php_a4995f7ae90fbeb24441e325a1d75e582}{construct\-\_\-create\-\_\-modal} (\hyperlink{chart1_8php_ab3ed669f4b3fdb8c88f3a190fb907de0}{data}, action, \hyperlink{admin_exp_8php_ae180890d7caabe9962d544350eca4638}{select})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{admin_exp_8php_ae180890d7caabe9962d544350eca4638}{select} = \hyperlink{admin_exp_8php_a22f8b2e1469128cde35ac846b0b24333}{get\-Select\-Std}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{admin_exp_8php_a4995f7ae90fbeb24441e325a1d75e582}{\index{admin\-Exp.\-php@{admin\-Exp.\-php}!construct\-\_\-create\-\_\-modal@{construct\-\_\-create\-\_\-modal}}
+\index{construct\-\_\-create\-\_\-modal@{construct\-\_\-create\-\_\-modal}!adminExp.php@{admin\-Exp.\-php}}
+\subsubsection[{construct\-\_\-create\-\_\-modal}]{\setlength{\rightskip}{0pt plus 5cm}construct\-\_\-create\-\_\-modal (
+\begin{DoxyParamCaption}
+\item[{{\bf data}}]{, }
+\item[{action}]{, }
+\item[{{\bf select}}]{}
+\end{DoxyParamCaption}
+)}}\label{admin_exp_8php_a4995f7ae90fbeb24441e325a1d75e582}
+Creation of a modal window for experiment creation
+
+construct\-\_\-create\-\_\-modal 
+\begin{DoxyParams}{Parameters}
+{\em \{$<$type$>$\}} & data \{ useless \} \\
+\hline
+{\em \{string\}} & action \{ action to do associated with the submit button could be create, edit, delete \} \\
+\hline
+{\em \{string\}} & select \{ string to concatenate \} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 273 of file admin\-Exp.\-php.
+
+\hypertarget{admin_exp_8php_a8a2de340effe508a796cc1c77e951d15}{\index{admin\-Exp.\-php@{admin\-Exp.\-php}!construct\-\_\-delete\-\_\-modal@{construct\-\_\-delete\-\_\-modal}}
+\index{construct\-\_\-delete\-\_\-modal@{construct\-\_\-delete\-\_\-modal}!adminExp.php@{admin\-Exp.\-php}}
+\subsubsection[{construct\-\_\-delete\-\_\-modal}]{\setlength{\rightskip}{0pt plus 5cm}construct\-\_\-delete\-\_\-modal (
+\begin{DoxyParamCaption}
+\item[{{\bf data}}]{, }
+\item[{action}]{}
+\end{DoxyParamCaption}
+)}}\label{admin_exp_8php_a8a2de340effe508a796cc1c77e951d15}
+Construction of a modal window for experiment deletion
+
+construct\-\_\-delete\-\_\-modal 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & data \{ data of the experiment to delete, id, name \} \\
+\hline
+{\em \{string\}} & action \{ action to do associated with the submit button could be create, edit, delete \} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 194 of file admin\-Exp.\-php.
+
+\hypertarget{admin_exp_8php_a346f7d5a906acbe413b62b06af0d629b}{\index{admin\-Exp.\-php@{admin\-Exp.\-php}!construct\-\_\-edit\-\_\-modal@{construct\-\_\-edit\-\_\-modal}}
+\index{construct\-\_\-edit\-\_\-modal@{construct\-\_\-edit\-\_\-modal}!adminExp.php@{admin\-Exp.\-php}}
+\subsubsection[{construct\-\_\-edit\-\_\-modal}]{\setlength{\rightskip}{0pt plus 5cm}construct\-\_\-edit\-\_\-modal (
+\begin{DoxyParamCaption}
+\item[{{\bf data}}]{, }
+\item[{action}]{, }
+\item[{{\bf select}}]{}
+\end{DoxyParamCaption}
+)}}\label{admin_exp_8php_a346f7d5a906acbe413b62b06af0d629b}
+Construction of a modal windos for experiment edition
+
+construct\-\_\-edit\-\_\-modal 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & data \{ data of the experiment to edit, id, name, associated standard \} \\
+\hline
+{\em \{string\}} & action \{ action to do associated with the submit button could be create, edit, delete \} \\
+\hline
+{\em \{string\}} & select \{ String of the html select to concatenate \} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 223 of file admin\-Exp.\-php.
+
+\hypertarget{admin_exp_8php_a22f8b2e1469128cde35ac846b0b24333}{\index{admin\-Exp.\-php@{admin\-Exp.\-php}!get\-Select\-Std@{get\-Select\-Std}}
+\index{get\-Select\-Std@{get\-Select\-Std}!adminExp.php@{admin\-Exp.\-php}}
+\subsubsection[{get\-Select\-Std}]{\setlength{\rightskip}{0pt plus 5cm}get\-Select\-Std (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{admin_exp_8php_a22f8b2e1469128cde35ac846b0b24333}
+get informations about the selected standard to fill an html select
+
+get\-Select\-Std \begin{DoxyReturn}{Returns}
+\{string\} \{ return a string html for the select balise \} 
+\end{DoxyReturn}
+
+
+Definition at line 128 of file admin\-Exp.\-php.
+
+\hypertarget{admin_exp_8php_a3b7fa21c29f2265534745659558aab45}{\index{admin\-Exp.\-php@{admin\-Exp.\-php}!setup\-\_\-experiment\-\_\-datatable@{setup\-\_\-experiment\-\_\-datatable}}
+\index{setup\-\_\-experiment\-\_\-datatable@{setup\-\_\-experiment\-\_\-datatable}!adminExp.php@{admin\-Exp.\-php}}
+\subsubsection[{setup\-\_\-experiment\-\_\-datatable}]{\setlength{\rightskip}{0pt plus 5cm}setup\-\_\-experiment\-\_\-datatable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{admin_exp_8php_a3b7fa21c29f2265534745659558aab45}
+Set the datatable of experiment up
+
+setup\-\_\-experiment\-\_\-datatable 
+
+Definition at line 150 of file admin\-Exp.\-php.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{admin_exp_8php_ae180890d7caabe9962d544350eca4638}{\index{admin\-Exp.\-php@{admin\-Exp.\-php}!select@{select}}
+\index{select@{select}!adminExp.php@{admin\-Exp.\-php}}
+\subsubsection[{select}]{\setlength{\rightskip}{0pt plus 5cm}select = {\bf get\-Select\-Std}()}}\label{admin_exp_8php_ae180890d7caabe9962d544350eca4638}
+
+
+Definition at line 56 of file admin\-Exp.\-php.
+

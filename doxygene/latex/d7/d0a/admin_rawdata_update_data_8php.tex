@@ -1,0 +1,172 @@
+\hypertarget{admin_rawdata_update_data_8php}{\section{php/admin/admin\-Rawdata/admin\-Rawdata\-Update\-Data.php File Reference}
+\label{admin_rawdata_update_data_8php}\index{php/admin/admin\-Rawdata/admin\-Rawdata\-Update\-Data.\-php@{php/admin/admin\-Rawdata/admin\-Rawdata\-Update\-Data.\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{admin_rawdata_update_data_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{admin_rawdata_update_data_8php_ae384d32e62e85e587cd27bf249ed3db3}{\$exp\-I\-D} =-\/1
+\item 
+\hyperlink{admin_rawdata_update_data_8php_addb1ec3ba55e413a08cb006ce21974df}{\$ez\-I\-D} =-\/1
+\item 
+\hyperlink{admin_rawdata_update_data_8php_aaa6d122ea9cb55b210aadd86e5654a74}{\$batch\-I\-D} =-\/1
+\item 
+\hyperlink{admin_rawdata_update_data_8php_a58391ea75f2d29d5d708d7050b641c33}{\$status} = \char`\"{}success\char`\"{}
+\item 
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'\hyperlink{admin_rawdata_8php_a888d53a6517f4272b5982c3ca9d16e8a}{exp\-I\-D}'\mbox{]})) if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'\hyperlink{admin_rawdata_8php_adf465cadf95987152966d26567509f92}{ez\-I\-D}'\mbox{]})) \\*
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'\hyperlink{obsolete_2processing__bak_8php_a88c5bc4262b7c34f236357f5c53fc99b}{batch\-I\-D}'\mbox{]})) \hyperlink{admin_rawdata_update_data_8php_a5999a93025922833d2c38a633e49c828}{\$query\-Batch\-Data}
+\item 
+\hyperlink{admin_rawdata_update_data_8php_a2f84d43fa0033773278ae89295389bc6}{\$sth2} = \$conn-\/$>$prepare(\$query\-Batch\-Data)
+\item 
+\hyperlink{admin_rawdata_update_data_8php_ae0a126caf328023cf68f759c1cfcc38f}{\$result\-Batch\-Data} = \$sth2-\/$>$fetch\-All()
+\item 
+\hyperlink{admin_rawdata_update_data_8php_af59a5f7cd609e592c41dc3643efd3c98}{\$query}
+\item 
+\hyperlink{admin_rawdata_update_data_8php_afa9126f9664959c02795be300a135f93}{\$sth} = \$conn-\/$>$prepare(\$query)
+\item 
+\hyperlink{admin_rawdata_update_data_8php_a112ef069ddc0454086e3d1e6d8d55d07}{\$result} = \$sth-\/$>$fetch\-All()
+\item 
+\hyperlink{admin_rawdata_update_data_8php_ad08dc0a05af9c3e0730669485af92e41}{\$delete\-Query} = \char`\"{}D\-E\-L\-E\-T\-E F\-R\-O\-M rawdata W\-H\-E\-R\-E rawdata\-\_\-id I\-N (\char`\"{}
+\item 
+\hyperlink{admin_rawdata_update_data_8php_abe4cc9788f52e49485473dc699537388}{try}
+\item 
+catch(Exception \$e) \hyperlink{admin_rawdata_update_data_8php_a8452fb8131316637a04e25f5fde066d9}{\$response\-\_\-array} \mbox{[}'status'\mbox{]} =\$status
+\item 
+\hyperlink{admin_rawdata_update_data_8php_ae768978a0cdc416c0d63d798c85c8784}{\$response\-\_\-array} \mbox{[}'action'\mbox{]} =\char`\"{}delete\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{admin_rawdata_update_data_8php_aaa6d122ea9cb55b210aadd86e5654a74}{\index{admin\-Rawdata\-Update\-Data.\-php@{admin\-Rawdata\-Update\-Data.\-php}!\$batch\-I\-D@{\$batch\-I\-D}}
+\index{\$batch\-I\-D@{\$batch\-I\-D}!adminRawdataUpdateData.php@{admin\-Rawdata\-Update\-Data.\-php}}
+\subsubsection[{\$batch\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf batch\-I\-D} =-\/1}}\label{admin_rawdata_update_data_8php_aaa6d122ea9cb55b210aadd86e5654a74}
+
+
+Definition at line 11 of file admin\-Rawdata\-Update\-Data.\-php.
+
+\hypertarget{admin_rawdata_update_data_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{admin\-Rawdata\-Update\-Data.\-php@{admin\-Rawdata\-Update\-Data.\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!adminRawdataUpdateData.php@{admin\-Rawdata\-Update\-Data.\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{admin_rawdata_update_data_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 5 of file admin\-Rawdata\-Update\-Data.\-php.
+
+\hypertarget{admin_rawdata_update_data_8php_ad08dc0a05af9c3e0730669485af92e41}{\index{admin\-Rawdata\-Update\-Data.\-php@{admin\-Rawdata\-Update\-Data.\-php}!\$delete\-Query@{\$delete\-Query}}
+\index{\$delete\-Query@{\$delete\-Query}!adminRawdataUpdateData.php@{admin\-Rawdata\-Update\-Data.\-php}}
+\subsubsection[{\$delete\-Query}]{\setlength{\rightskip}{0pt plus 5cm}\$delete\-Query = \char`\"{}D\-E\-L\-E\-T\-E F\-R\-O\-M rawdata W\-H\-E\-R\-E rawdata\-\_\-id I\-N (\char`\"{}}}\label{admin_rawdata_update_data_8php_ad08dc0a05af9c3e0730669485af92e41}
+
+
+Definition at line 56 of file admin\-Rawdata\-Update\-Data.\-php.
+
+\hypertarget{admin_rawdata_update_data_8php_ae384d32e62e85e587cd27bf249ed3db3}{\index{admin\-Rawdata\-Update\-Data.\-php@{admin\-Rawdata\-Update\-Data.\-php}!\$exp\-I\-D@{\$exp\-I\-D}}
+\index{\$exp\-I\-D@{\$exp\-I\-D}!adminRawdataUpdateData.php@{admin\-Rawdata\-Update\-Data.\-php}}
+\subsubsection[{\$exp\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf exp\-I\-D} =-\/1}}\label{admin_rawdata_update_data_8php_ae384d32e62e85e587cd27bf249ed3db3}
+
+
+Definition at line 9 of file admin\-Rawdata\-Update\-Data.\-php.
+
+\hypertarget{admin_rawdata_update_data_8php_addb1ec3ba55e413a08cb006ce21974df}{\index{admin\-Rawdata\-Update\-Data.\-php@{admin\-Rawdata\-Update\-Data.\-php}!\$ez\-I\-D@{\$ez\-I\-D}}
+\index{\$ez\-I\-D@{\$ez\-I\-D}!adminRawdataUpdateData.php@{admin\-Rawdata\-Update\-Data.\-php}}
+\subsubsection[{\$ez\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf ez\-I\-D} =-\/1}}\label{admin_rawdata_update_data_8php_addb1ec3ba55e413a08cb006ce21974df}
+
+
+Definition at line 10 of file admin\-Rawdata\-Update\-Data.\-php.
+
+\hypertarget{admin_rawdata_update_data_8php_af59a5f7cd609e592c41dc3643efd3c98}{\index{admin\-Rawdata\-Update\-Data.\-php@{admin\-Rawdata\-Update\-Data.\-php}!\$query@{\$query}}
+\index{\$query@{\$query}!adminRawdataUpdateData.php@{admin\-Rawdata\-Update\-Data.\-php}}
+\subsubsection[{\$query}]{\setlength{\rightskip}{0pt plus 5cm}\$query}}\label{admin_rawdata_update_data_8php_af59a5f7cd609e592c41dc3643efd3c98}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=\textcolor{stringliteral}{"SELECT }
+\textcolor{stringliteral}{        rawdata\_id }
+\textcolor{stringliteral}{    FROM}
+\textcolor{stringliteral}{        rawdata, batch\_data }
+\textcolor{stringliteral}{    WHERE}
+\textcolor{stringliteral}{        data\_enzyme\_fk = "}.$ezID.\textcolor{stringliteral}{" AND}
+\textcolor{stringliteral}{        bat\_data\_batch\_FK = "}.\hyperlink{admin_rawdata_update_data_8php_aaa6d122ea9cb55b210aadd86e5654a74}{$batchID}.\textcolor{stringliteral}{" AND}
+\textcolor{stringliteral}{        rawdata\_batch\_data\_FK = bat\_data\_id;"}
+\end{DoxyCode}
+
+
+Definition at line 40 of file admin\-Rawdata\-Update\-Data.\-php.
+
+\hypertarget{admin_rawdata_update_data_8php_a5999a93025922833d2c38a633e49c828}{\index{admin\-Rawdata\-Update\-Data.\-php@{admin\-Rawdata\-Update\-Data.\-php}!\$query\-Batch\-Data@{\$query\-Batch\-Data}}
+\index{\$query\-Batch\-Data@{\$query\-Batch\-Data}!adminRawdataUpdateData.php@{admin\-Rawdata\-Update\-Data.\-php}}
+\subsubsection[{\$query\-Batch\-Data}]{\setlength{\rightskip}{0pt plus 5cm}if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'{\bf exp\-I\-D}'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'{\bf ez\-I\-D}'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'{\bf batch\-I\-D}'\mbox{]})) \$query\-Batch\-Data}}\label{admin_rawdata_update_data_8php_a5999a93025922833d2c38a633e49c828}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=\textcolor{stringliteral}{"SELECT }
+\textcolor{stringliteral}{        rawdata\_batch\_data\_FK}
+\textcolor{stringliteral}{    FROM}
+\textcolor{stringliteral}{        rawdata, batch\_data }
+\textcolor{stringliteral}{    WHERE}
+\textcolor{stringliteral}{        data\_enzyme\_fk = "}.$ezID.\textcolor{stringliteral}{" AND}
+\textcolor{stringliteral}{        bat\_data\_batch\_FK = "}.\hyperlink{admin_rawdata_update_data_8php_aaa6d122ea9cb55b210aadd86e5654a74}{$batchID}.\textcolor{stringliteral}{" AND}
+\textcolor{stringliteral}{        rawdata\_batch\_data\_FK = bat\_data\_id;"}
+\end{DoxyCode}
+
+
+Definition at line 26 of file admin\-Rawdata\-Update\-Data.\-php.
+
+\hypertarget{admin_rawdata_update_data_8php_a8452fb8131316637a04e25f5fde066d9}{\index{admin\-Rawdata\-Update\-Data.\-php@{admin\-Rawdata\-Update\-Data.\-php}!\$response\-\_\-array@{\$response\-\_\-array}}
+\index{\$response\-\_\-array@{\$response\-\_\-array}!adminRawdataUpdateData.php@{admin\-Rawdata\-Update\-Data.\-php}}
+\subsubsection[{\$response\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}catch (Exception \$e) \$response\-\_\-array\mbox{[}'status'\mbox{]} =\$status}}\label{admin_rawdata_update_data_8php_a8452fb8131316637a04e25f5fde066d9}
+
+
+Definition at line 88 of file admin\-Rawdata\-Update\-Data.\-php.
+
+\hypertarget{admin_rawdata_update_data_8php_ae768978a0cdc416c0d63d798c85c8784}{\index{admin\-Rawdata\-Update\-Data.\-php@{admin\-Rawdata\-Update\-Data.\-php}!\$response\-\_\-array@{\$response\-\_\-array}}
+\index{\$response\-\_\-array@{\$response\-\_\-array}!adminRawdataUpdateData.php@{admin\-Rawdata\-Update\-Data.\-php}}
+\subsubsection[{\$response\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}\$response\-\_\-array\mbox{[}'action'\mbox{]} =\char`\"{}delete\char`\"{}}}\label{admin_rawdata_update_data_8php_ae768978a0cdc416c0d63d798c85c8784}
+
+
+Definition at line 89 of file admin\-Rawdata\-Update\-Data.\-php.
+
+\hypertarget{admin_rawdata_update_data_8php_a112ef069ddc0454086e3d1e6d8d55d07}{\index{admin\-Rawdata\-Update\-Data.\-php@{admin\-Rawdata\-Update\-Data.\-php}!\$result@{\$result}}
+\index{\$result@{\$result}!adminRawdataUpdateData.php@{admin\-Rawdata\-Update\-Data.\-php}}
+\subsubsection[{\$result}]{\setlength{\rightskip}{0pt plus 5cm}\$result = \$sth-\/$>$fetch\-All()}}\label{admin_rawdata_update_data_8php_a112ef069ddc0454086e3d1e6d8d55d07}
+
+
+Definition at line 51 of file admin\-Rawdata\-Update\-Data.\-php.
+
+\hypertarget{admin_rawdata_update_data_8php_ae0a126caf328023cf68f759c1cfcc38f}{\index{admin\-Rawdata\-Update\-Data.\-php@{admin\-Rawdata\-Update\-Data.\-php}!\$result\-Batch\-Data@{\$result\-Batch\-Data}}
+\index{\$result\-Batch\-Data@{\$result\-Batch\-Data}!adminRawdataUpdateData.php@{admin\-Rawdata\-Update\-Data.\-php}}
+\subsubsection[{\$result\-Batch\-Data}]{\setlength{\rightskip}{0pt plus 5cm}\$result\-Batch\-Data = \$sth2-\/$>$fetch\-All()}}\label{admin_rawdata_update_data_8php_ae0a126caf328023cf68f759c1cfcc38f}
+
+
+Definition at line 37 of file admin\-Rawdata\-Update\-Data.\-php.
+
+\hypertarget{admin_rawdata_update_data_8php_a58391ea75f2d29d5d708d7050b641c33}{\index{admin\-Rawdata\-Update\-Data.\-php@{admin\-Rawdata\-Update\-Data.\-php}!\$status@{\$status}}
+\index{\$status@{\$status}!adminRawdataUpdateData.php@{admin\-Rawdata\-Update\-Data.\-php}}
+\subsubsection[{\$status}]{\setlength{\rightskip}{0pt plus 5cm}\$status = \char`\"{}success\char`\"{}}}\label{admin_rawdata_update_data_8php_a58391ea75f2d29d5d708d7050b641c33}
+
+
+Definition at line 12 of file admin\-Rawdata\-Update\-Data.\-php.
+
+\hypertarget{admin_rawdata_update_data_8php_afa9126f9664959c02795be300a135f93}{\index{admin\-Rawdata\-Update\-Data.\-php@{admin\-Rawdata\-Update\-Data.\-php}!\$sth@{\$sth}}
+\index{\$sth@{\$sth}!adminRawdataUpdateData.php@{admin\-Rawdata\-Update\-Data.\-php}}
+\subsubsection[{\$sth}]{\setlength{\rightskip}{0pt plus 5cm}\$sth = \$conn-\/$>$prepare(\$query)}}\label{admin_rawdata_update_data_8php_afa9126f9664959c02795be300a135f93}
+
+
+Definition at line 49 of file admin\-Rawdata\-Update\-Data.\-php.
+
+\hypertarget{admin_rawdata_update_data_8php_a2f84d43fa0033773278ae89295389bc6}{\index{admin\-Rawdata\-Update\-Data.\-php@{admin\-Rawdata\-Update\-Data.\-php}!\$sth2@{\$sth2}}
+\index{\$sth2@{\$sth2}!adminRawdataUpdateData.php@{admin\-Rawdata\-Update\-Data.\-php}}
+\subsubsection[{\$sth2}]{\setlength{\rightskip}{0pt plus 5cm}\$sth2 = \$conn-\/$>$prepare(\$query\-Batch\-Data)}}\label{admin_rawdata_update_data_8php_a2f84d43fa0033773278ae89295389bc6}
+
+
+Definition at line 35 of file admin\-Rawdata\-Update\-Data.\-php.
+
+\hypertarget{admin_rawdata_update_data_8php_abe4cc9788f52e49485473dc699537388}{\index{admin\-Rawdata\-Update\-Data.\-php@{admin\-Rawdata\-Update\-Data.\-php}!try@{try}}
+\index{try@{try}!adminRawdataUpdateData.php@{admin\-Rawdata\-Update\-Data.\-php}}
+\subsubsection[{try}]{\setlength{\rightskip}{0pt plus 5cm}try}}\label{admin_rawdata_update_data_8php_abe4cc9788f52e49485473dc699537388}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+\{
+        \hyperlink{admin_rawdata_update_data_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{$conn}->beginTransaction()
+\end{DoxyCode}
+
+
+Definition at line 75 of file admin\-Rawdata\-Update\-Data.\-php.
+

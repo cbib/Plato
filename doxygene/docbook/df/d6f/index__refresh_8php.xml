@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="df/d6f/index__refresh_8php">
+    <title>index_refresh.php File Reference</title>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d6f/index__refresh_8php_1a3ed28ef3481b2eb4af99a8411d77e5f6">user_ctp</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d6f/index__refresh_8php_1aeefc6028e12a89f41f7332e910ff7a16">sample_cpt</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d6f/index__refresh_8php_1a4d75c1c7342be79d08999b9e492bfc53">batch_ctp</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d6f/index__refresh_8php_1ae4fef02ec0b8067b2ded6bfbcf382d50">experiment_cpt</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d6f/index__refresh_8php_1a88a1fe2538ed8cb456f2da35fc9ce9fe">rawdata_cpt</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d6f/index__refresh_8php_1a3ad230c4de9281e2e62b375d4442da90">batch_number_per_date</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="df/d6f/index__refresh_8php_1ad6c3d9c5db34066f67bbd2727cbf14e0">batch_cumul_per_date</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /var/www/html/plato/php/index_functions/index_refresh.php</para>
+    </simplesect>
+</section>

@@ -1,0 +1,358 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dc/dda/_admin_user_update_8php" kind="file">
+    <compoundname>AdminUserUpdate.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="dc/dda/_admin_user_update_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$conn</definition>
+        <argsstring></argsstring>
+        <name>$conn</name>
+        <initializer>= <ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php" line="5" column="1" bodyfile="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/dda/_admin_user_update_8php_1aea70bbe59be6896e9cbbb9811a864ee8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$userID</definition>
+        <argsstring></argsstring>
+        <name>$userID</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php" line="9" column="1" bodyfile="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/dda/_admin_user_update_8php_1aff20833df389a26c0f9384512eec4a68" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$userName</definition>
+        <argsstring></argsstring>
+        <name>$userName</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php" line="10" column="1" bodyfile="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/dda/_admin_user_update_8php_1aaeb0a34550135c6f3caac7aa1db9b0ae" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$userLevel</definition>
+        <argsstring></argsstring>
+        <name>$userLevel</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php" line="11" column="1" bodyfile="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/dda/_admin_user_update_8php_1a5718fc74710979724218d4ebd530c0cf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$adminPassword</definition>
+        <argsstring></argsstring>
+        <name>$adminPassword</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php" line="12" column="1" bodyfile="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/dda/_admin_user_update_8php_1a35248a9b2cd0ce90d3712a1a5b6eb161" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$userPassword</definition>
+        <argsstring></argsstring>
+        <name>$userPassword</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php" line="13" column="1" bodyfile="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/dda/_admin_user_update_8php_1aa698a3e72116e8e778be0e95d908ee30" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$action</definition>
+        <argsstring></argsstring>
+        <name>$action</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php" line="14" column="1" bodyfile="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/dda/_admin_user_update_8php_1a58391ea75f2d29d5d708d7050b641c33" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$status</definition>
+        <argsstring></argsstring>
+        <name>$status</name>
+        <initializer>=&quot;success&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php" line="15" column="1" bodyfile="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/dda/_admin_user_update_8php_1a33e92d112f4ecaf9f88cfee111d7ffdf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$boolOk</definition>
+        <argsstring></argsstring>
+        <name>$boolOk</name>
+        <initializer>=false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php" line="16" column="1" bodyfile="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/dda/_admin_user_update_8php_1a844eaca485688be8060f60120beede86" prot="public" static="no" mutable="no">
+        <type>if(isset($_POST[&apos;userID&apos;])) if(isset($_POST[&apos;userName&apos;])) if(isset($_POST[&apos;adminPassword&apos;])) if(isset($_POST[&apos;userPassword&apos;])) if(isset($_POST[&apos;action&apos;])) if(isset($_POST[&apos;userLevel&apos;]))</type>
+        <definition>if (isset($_POST[&apos;userID&apos;])) if (isset($_POST[&apos;userName&apos;])) if (isset($_POST[&apos;adminPassword&apos;])) if (isset($_POST[&apos;userPassword&apos;])) if (isset($_POST[&apos;action&apos;])) if (isset($_POST[&apos;userLevel&apos;])) $pass_hache</definition>
+        <argsstring></argsstring>
+        <name>$pass_hache</name>
+        <initializer>= hash( &apos;sha256&apos;, $adminPassword)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php" line="38" column="1" bodyfile="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/dda/_admin_user_update_8php_1af59a5f7cd609e592c41dc3643efd3c98" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$query</definition>
+        <argsstring></argsstring>
+        <name>$query</name>
+        <initializer>=&quot;
+	SELECT
+		count(*)
+	FROM
+		user
+	WHERE
+		usr_status like &apos;%admin%&apos; AND 
+		usr_pwd like &apos;%&quot;.$pass_hache.&quot;%&apos; ;
+	&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php" line="39" column="1" bodyfile="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/dda/_admin_user_update_8php_1abe4cc9788f52e49485473dc699537388" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>try</definition>
+        <argsstring></argsstring>
+        <name>try</name>
+        <initializer>{
+		$req = $conn-&gt;query($query)-&gt;fetchColumn()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php" line="49" column="1" bodyfile="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/dda/_admin_user_update_8php_1a93f1e974f12c5c233a1b622cf0cb96e7" prot="public" static="no" mutable="no">
+        <type>if(!$req)</type>
+        <definition>catch (Exception $e) if ($boolOk==true) else</definition>
+        <argsstring></argsstring>
+        <name>else</name>
+        <initializer>{
+			$boolOk = <ref refid="db/d41/obsolete_2processing__bak_8php_1ad85b26c88897c4f65b1a4930711a2e93" kindref="member">true</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php" line="57" column="1" bodyfile="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/dda/_admin_user_update_8php_1acd0903a7a32e8397aefd0ce8b7dbd1ab" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$response_array[&apos;status&apos;]</definition>
+        <argsstring>[&apos;status&apos;]</argsstring>
+        <name>$response_array</name>
+        <initializer>=$status</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php" line="119" column="1" bodyfile="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="dc/dda/_admin_user_update_8php_1ae768978a0cdc416c0d63d798c85c8784" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$response_array[&apos;action&apos;]</definition>
+        <argsstring>[&apos;action&apos;]</argsstring>
+        <name>$response_array</name>
+        <initializer>=$action</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php" line="120" column="1" bodyfile="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/><sp/><sp/>require(</highlight><highlight class="stringliteral">&apos;../../functions/check_login_admin.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/>include<sp/></highlight><highlight class="stringliteral">&apos;../../functions/php_functions.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>header(</highlight><highlight class="stringliteral">&apos;Content-Type:<sp/>application/json&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="5" refid="dc/dda/_admin_user_update_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref><sp/>=<sp/><ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>();</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Create,<sp/>edit,<sp/>delete<sp/>user</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="dc/dda/_admin_user_update_8php_1aea70bbe59be6896e9cbbb9811a864ee8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1aea70bbe59be6896e9cbbb9811a864ee8" kindref="member">$userID</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="10" refid="dc/dda/_admin_user_update_8php_1aff20833df389a26c0f9384512eec4a68" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1aff20833df389a26c0f9384512eec4a68" kindref="member">$userName</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="11" refid="dc/dda/_admin_user_update_8php_1aaeb0a34550135c6f3caac7aa1db9b0ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1aaeb0a34550135c6f3caac7aa1db9b0ae" kindref="member">$userLevel</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12" refid="dc/dda/_admin_user_update_8php_1a5718fc74710979724218d4ebd530c0cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1a5718fc74710979724218d4ebd530c0cf" kindref="member">$adminPassword</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13" refid="dc/dda/_admin_user_update_8php_1a35248a9b2cd0ce90d3712a1a5b6eb161" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1a35248a9b2cd0ce90d3712a1a5b6eb161" kindref="member">$userPassword</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14" refid="dc/dda/_admin_user_update_8php_1aa698a3e72116e8e778be0e95d908ee30" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15" refid="dc/dda/_admin_user_update_8php_1a58391ea75f2d29d5d708d7050b641c33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;success&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16" refid="dc/dda/_admin_user_update_8php_1a33e92d112f4ecaf9f88cfee111d7ffdf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1a33e92d112f4ecaf9f88cfee111d7ffdf" kindref="member">$boolOk</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;userID&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1aea70bbe59be6896e9cbbb9811a864ee8" kindref="member">$userID</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;userID&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;userName&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1aff20833df389a26c0f9384512eec4a68" kindref="member">$userName</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;userName&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;adminPassword&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1a5718fc74710979724218d4ebd530c0cf" kindref="member">$adminPassword</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;adminPassword&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;userPassword&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1a35248a9b2cd0ce90d3712a1a5b6eb161" kindref="member">$userPassword</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;userPassword&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;action&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;action&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;userLevel&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1aaeb0a34550135c6f3caac7aa1db9b0ae" kindref="member">$userLevel</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;userLevel&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="dc/dda/_admin_user_update_8php_1a844eaca485688be8060f60120beede86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1a844eaca485688be8060f60120beede86" kindref="member">$pass_hache</ref><sp/>=<sp/>hash(<sp/></highlight><highlight class="stringliteral">&apos;sha256&apos;</highlight><highlight class="normal">,<sp/><ref refid="dc/dda/_admin_user_update_8php_1a5718fc74710979724218d4ebd530c0cf" kindref="member">$adminPassword</ref>);</highlight></codeline>
+<codeline lineno="39" refid="dc/dda/_admin_user_update_8php_1af59a5f7cd609e592c41dc3643efd3c98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1af59a5f7cd609e592c41dc3643efd3c98" kindref="member">$query</ref><sp/>=</highlight><highlight class="stringliteral">&quot;</highlight></codeline>
+<codeline lineno="40"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>SELECT</highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count(*)</highlight></codeline>
+<codeline lineno="42"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>FROM</highlight></codeline>
+<codeline lineno="43"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>user</highlight></codeline>
+<codeline lineno="44"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>WHERE</highlight></codeline>
+<codeline lineno="45"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usr_status<sp/>like<sp/>&apos;%admin%&apos;<sp/>AND<sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usr_pwd<sp/>like<sp/>&apos;%&quot;</highlight><highlight class="normal">.$pass_hache.</highlight><highlight class="stringliteral">&quot;%&apos;<sp/>;</highlight></codeline>
+<codeline lineno="47"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="50" refid="dc/dda/_admin_user_update_8php_1abe4cc9788f52e49485473dc699537388" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref><sp/>=<sp/><ref refid="dc/dda/_admin_user_update_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;query(<ref refid="dc/dda/_admin_user_update_8php_1af59a5f7cd609e592c41dc3643efd3c98" kindref="member">$query</ref>)-&gt;fetchColumn();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//show_array($req);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref>)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&apos;Mauvais<sp/>identifiant<sp/>ou<sp/>mot<sp/>de<sp/>passe<sp/>!&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="dc/dda/_admin_user_update_8php_1a93f1e974f12c5c233a1b622cf0cb96e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1a33e92d112f4ecaf9f88cfee111d7ffdf" kindref="member">$boolOk</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(<sp/>Exception<sp/>$e<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;failure<sp/>est<sp/>survenue<sp/>lors<sp/>de<sp/>$query&quot;</highlight><highlight class="normal">.$e-&gt;getMessage());</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="dc/dda/_admin_user_update_8php_1a33e92d112f4ecaf9f88cfee111d7ffdf" kindref="member">$boolOk</ref><sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="dc/dda/_admin_user_update_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref>==</highlight><highlight class="stringliteral">&quot;create&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1af59a5f7cd609e592c41dc3643efd3c98" kindref="member">$query</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;</highlight></codeline>
+<codeline lineno="70"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>INSERT<sp/>INTO<sp/>`user`<sp/>VALUES<sp/>(&apos;&apos;,<sp/>&apos;$userName&apos;,<sp/>&apos;$userPassword&apos;,<sp/>&apos;$userLevel&apos;);&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1afa9126f9664959c02795be300a135f93" kindref="member">$sth</ref>=<ref refid="dc/dda/_admin_user_update_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;prepare(<ref refid="dc/dda/_admin_user_update_8php_1af59a5f7cd609e592c41dc3643efd3c98" kindref="member">$query</ref>);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1afa9126f9664959c02795be300a135f93" kindref="member">$sth</ref><sp/>-&gt;<sp/>setFetchMode(PDO::FETCH_ASSOC);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1afa9126f9664959c02795be300a135f93" kindref="member">$sth</ref>-&gt;execute();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;success&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(<sp/>Exception<sp/>$e<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;ERRORCreate<sp/>&quot;</highlight><highlight class="normal">.$e);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>elseif<sp/>(<ref refid="dc/dda/_admin_user_update_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref>==</highlight><highlight class="stringliteral">&quot;edit&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="dc/dda/_admin_user_update_8php_1a35248a9b2cd0ce90d3712a1a5b6eb161" kindref="member">$userPassword</ref><sp/>!=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>&amp;&amp;<sp/>(!defined(<ref refid="dc/dda/_admin_user_update_8php_1a35248a9b2cd0ce90d3712a1a5b6eb161" kindref="member">$userPassword</ref>)))<sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$userpass_hache<sp/>=<sp/>hash(<sp/></highlight><highlight class="stringliteral">&apos;sha256&apos;</highlight><highlight class="normal">,<sp/><ref refid="dc/dda/_admin_user_update_8php_1a35248a9b2cd0ce90d3712a1a5b6eb161" kindref="member">$userPassword</ref>);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1af59a5f7cd609e592c41dc3643efd3c98" kindref="member">$query</ref><sp/>=</highlight><highlight class="stringliteral">&quot;UPDATE<sp/>`user`<sp/>SET`usr_name`=&apos;$userName&apos;,`usr_pwd`=&apos;$userpass_hache&apos;,`usr_status`=&apos;$userLevel&apos;<sp/>WHERE<sp/>`usr_id`=&apos;$userID&apos;;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1af59a5f7cd609e592c41dc3643efd3c98" kindref="member">$query</ref><sp/>=</highlight><highlight class="stringliteral">&quot;UPDATE<sp/>`user`<sp/>SET`usr_name`=&apos;$userName&apos;,`usr_status`=&apos;$userLevel&apos;<sp/>WHERE<sp/>`usr_id`=&apos;$userID&apos;;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$entree<sp/>=<sp/><ref refid="dc/dda/_admin_user_update_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;exec(<ref refid="dc/dda/_admin_user_update_8php_1af59a5f7cd609e592c41dc3643efd3c98" kindref="member">$query</ref>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;success&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(<sp/>Exception<sp/>$e<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;ERROREdit<sp/>&quot;</highlight><highlight class="normal">.$e);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>elseif<sp/>(<ref refid="dc/dda/_admin_user_update_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref>==</highlight><highlight class="stringliteral">&quot;delete&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1af59a5f7cd609e592c41dc3643efd3c98" kindref="member">$query</ref><sp/>=</highlight><highlight class="stringliteral">&quot;DELETE<sp/>FROM<sp/>`user`<sp/>WHERE<sp/>`usr_id`<sp/>=<sp/>&apos;$userID&apos;;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$entree<sp/>=<sp/><ref refid="dc/dda/_admin_user_update_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;exec(<ref refid="dc/dda/_admin_user_update_8php_1af59a5f7cd609e592c41dc3643efd3c98" kindref="member">$query</ref>);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;success&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(<sp/>Exception<sp/>$e<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;ERRORDelete<sp/>&quot;</highlight><highlight class="normal">.$e);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Unknown&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="dc/dda/_admin_user_update_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;You&apos;re<sp/>not<sp/>the<sp/>administrator<sp/>!&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119" refid="dc/dda/_admin_user_update_8php_1acd0903a7a32e8397aefd0ce8b7dbd1ab" refkind="member"><highlight class="normal"><ref refid="dc/dda/_admin_user_update_8php_1acd0903a7a32e8397aefd0ce8b7dbd1ab" kindref="member">$response_array</ref>[</highlight><highlight class="stringliteral">&apos;status&apos;</highlight><highlight class="normal">]=<ref refid="dc/dda/_admin_user_update_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>;</highlight></codeline>
+<codeline lineno="120" refid="dc/dda/_admin_user_update_8php_1ae768978a0cdc416c0d63d798c85c8784" refkind="member"><highlight class="normal"><ref refid="dc/dda/_admin_user_update_8php_1acd0903a7a32e8397aefd0ce8b7dbd1ab" kindref="member">$response_array</ref>[</highlight><highlight class="stringliteral">&apos;action&apos;</highlight><highlight class="normal">]=<ref refid="dc/dda/_admin_user_update_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref>;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">echo<sp/>json_encode(<ref refid="dc/dda/_admin_user_update_8php_1acd0903a7a32e8397aefd0ce8b7dbd1ab" kindref="member">$response_array</ref>);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="/var/www/html/plato/php/admin/adminPwd/AdminUserUpdate.php"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,378 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="d9/d12/save__edit__remake_07obsolete_08_8php" kind="file">
+    <compoundname>save_edit_remake(obsolete).php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="d9/d12/save__edit__remake_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$conn</definition>
+        <argsstring></argsstring>
+        <name>$conn</name>
+        <initializer>= <ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/processing/obsolete/save_edit_remake(obsolete).php" line="4" column="1" bodyfile="/var/www/html/plato/php/processing/obsolete/save_edit_remake(obsolete).php" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d12/save__edit__remake_07obsolete_08_8php_1a58391ea75f2d29d5d708d7050b641c33" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$status</definition>
+        <argsstring></argsstring>
+        <name>$status</name>
+        <initializer>=&quot;success&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/processing/obsolete/save_edit_remake(obsolete).php" line="5" column="1" bodyfile="/var/www/html/plato/php/processing/obsolete/save_edit_remake(obsolete).php" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d12/save__edit__remake_07obsolete_08_8php_1a538eaf07e91a8c4f140bc04fa2b899cf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$boolSucces</definition>
+        <argsstring></argsstring>
+        <name>$boolSucces</name>
+        <initializer>=<ref refid="db/d41/obsolete_2processing__bak_8php_1ad85b26c88897c4f65b1a4930711a2e93" kindref="member">true</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/processing/obsolete/save_edit_remake(obsolete).php" line="6" column="1" bodyfile="/var/www/html/plato/php/processing/obsolete/save_edit_remake(obsolete).php" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d12/save__edit__remake_07obsolete_08_8php_1aa698a3e72116e8e778be0e95d908ee30" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$action</definition>
+        <argsstring></argsstring>
+        <name>$action</name>
+        <initializer>=&quot;Update&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/processing/obsolete/save_edit_remake(obsolete).php" line="7" column="1" bodyfile="/var/www/html/plato/php/processing/obsolete/save_edit_remake(obsolete).php" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d12/save__edit__remake_07obsolete_08_8php_1a5a756a18d8cc040338f041ca8f8c3666" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$procdatas</definition>
+        <argsstring></argsstring>
+        <name>$procdatas</name>
+        <initializer>= $_POST[&apos;procdatas&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/processing/obsolete/save_edit_remake(obsolete).php" line="9" column="1" bodyfile="/var/www/html/plato/php/processing/obsolete/save_edit_remake(obsolete).php" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d12/save__edit__remake_07obsolete_08_8php_1a296195c83717b71c16843c3c951e29a2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$excludMap</definition>
+        <argsstring></argsstring>
+        <name>$excludMap</name>
+        <initializer>= $_POST[&apos;excludMap&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/processing/obsolete/save_edit_remake(obsolete).php" line="10" column="1" bodyfile="/var/www/html/plato/php/processing/obsolete/save_edit_remake(obsolete).php" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d12/save__edit__remake_07obsolete_08_8php_1a2c543a123b646cdf11c814983d4a13cf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$rawIDMap</definition>
+        <argsstring></argsstring>
+        <name>$rawIDMap</name>
+        <initializer>= $_POST[&apos;rawIDMap&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/processing/obsolete/save_edit_remake(obsolete).php" line="11" column="1" bodyfile="/var/www/html/plato/php/processing/obsolete/save_edit_remake(obsolete).php" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d12/save__edit__remake_07obsolete_08_8php_1aaa6d122ea9cb55b210aadd86e5654a74" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$batchID</definition>
+        <argsstring></argsstring>
+        <name>$batchID</name>
+        <initializer>= $_POST[&apos;<ref refid="db/d41/obsolete_2processing__bak_8php_1a88c5bc4262b7c34f236357f5c53fc99b" kindref="member">batchID</ref>&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/processing/obsolete/save_edit_remake(obsolete).php" line="12" column="1" bodyfile="/var/www/html/plato/php/processing/obsolete/save_edit_remake(obsolete).php" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d12/save__edit__remake_07obsolete_08_8php_1addb1ec3ba55e413a08cb006ce21974df" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$ezID</definition>
+        <argsstring></argsstring>
+        <name>$ezID</name>
+        <initializer>= $_POST[&apos;<ref refid="d8/d02/admin_rawdata_8php_1adf465cadf95987152966d26567509f92" kindref="member">ezID</ref>&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/processing/obsolete/save_edit_remake(obsolete).php" line="13" column="1" bodyfile="/var/www/html/plato/php/processing/obsolete/save_edit_remake(obsolete).php" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d12/save__edit__remake_07obsolete_08_8php_1a2efb2f950a559a8fda8c5b114c5ea10f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$colIdx</definition>
+        <argsstring></argsstring>
+        <name>$colIdx</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/processing/obsolete/save_edit_remake(obsolete).php" line="16" column="1" bodyfile="/var/www/html/plato/php/processing/obsolete/save_edit_remake(obsolete).php" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d12/save__edit__remake_07obsolete_08_8php_1a2457f3fab8183bd163626612df265a7e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$rowIdx</definition>
+        <argsstring></argsstring>
+        <name>$rowIdx</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/processing/obsolete/save_edit_remake(obsolete).php" line="17" column="1" bodyfile="/var/www/html/plato/php/processing/obsolete/save_edit_remake(obsolete).php" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d12/save__edit__remake_07obsolete_08_8php_1a7e1df84a3733bb1672c8485fa286658d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$rawdataID</definition>
+        <argsstring></argsstring>
+        <name>$rawdataID</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/processing/obsolete/save_edit_remake(obsolete).php" line="18" column="1" bodyfile="/var/www/html/plato/php/processing/obsolete/save_edit_remake(obsolete).php" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d12/save__edit__remake_07obsolete_08_8php_1a7a23fc905184e8d9769c6c2948032a18" prot="public" static="no" mutable="no">
+        <type>foreach($procdatas as $row)</type>
+        <definition>foreach ($procdatas as $row) $response_array[&apos;status&apos;]</definition>
+        <argsstring>[&apos;status&apos;]</argsstring>
+        <name>$response_array</name>
+        <initializer>=$status</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/processing/obsolete/save_edit_remake(obsolete).php" line="161" column="1" bodyfile="/var/www/html/plato/php/processing/obsolete/save_edit_remake(obsolete).php" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d12/save__edit__remake_07obsolete_08_8php_1ae768978a0cdc416c0d63d798c85c8784" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$response_array[&apos;action&apos;]</definition>
+        <argsstring>[&apos;action&apos;]</argsstring>
+        <name>$response_array</name>
+        <initializer>=$action</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/processing/obsolete/save_edit_remake(obsolete).php" line="162" column="1" bodyfile="/var/www/html/plato/php/processing/obsolete/save_edit_remake(obsolete).php" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/><sp/><sp/>require(</highlight><highlight class="stringliteral">&apos;../functions/check_login.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/>include<sp/></highlight><highlight class="stringliteral">&apos;../functions/php_functions.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="4" refid="d9/d12/save__edit__remake_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref><sp/>=<sp/><ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>();</highlight></codeline>
+<codeline lineno="5" refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a58391ea75f2d29d5d708d7050b641c33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;success&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="6" refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a538eaf07e91a8c4f140bc04fa2b899cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a538eaf07e91a8c4f140bc04fa2b899cf" kindref="member">$boolSucces</ref>=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="7" refid="d9/d12/save__edit__remake_07obsolete_08_8php_1aa698a3e72116e8e778be0e95d908ee30" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref>=</highlight><highlight class="stringliteral">&quot;Update&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a5a756a18d8cc040338f041ca8f8c3666" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a5a756a18d8cc040338f041ca8f8c3666" kindref="member">$procdatas</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;procdatas&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="10" refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a296195c83717b71c16843c3c951e29a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a296195c83717b71c16843c3c951e29a2" kindref="member">$excludMap</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;excludMap&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="11" refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a2c543a123b646cdf11c814983d4a13cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a2c543a123b646cdf11c814983d4a13cf" kindref="member">$rawIDMap</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;rawIDMap&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="12" refid="d9/d12/save__edit__remake_07obsolete_08_8php_1aaa6d122ea9cb55b210aadd86e5654a74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1aaa6d122ea9cb55b210aadd86e5654a74" kindref="member">$batchID</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;batchID&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="13" refid="d9/d12/save__edit__remake_07obsolete_08_8php_1addb1ec3ba55e413a08cb006ce21974df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1addb1ec3ba55e413a08cb006ce21974df" kindref="member">$ezID</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;ezID&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a2efb2f950a559a8fda8c5b114c5ea10f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a2efb2f950a559a8fda8c5b114c5ea10f" kindref="member">$colIdx</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="17" refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a2457f3fab8183bd163626612df265a7e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a2457f3fab8183bd163626612df265a7e" kindref="member">$rowIdx</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="18" refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a7e1df84a3733bb1672c8485fa286658d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a7e1df84a3733bb1672c8485fa286658d" kindref="member">$rawdataID</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal"><sp/>(<ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a5a756a18d8cc040338f041ca8f8c3666" kindref="member">$procdatas</ref><sp/>as<sp/><ref refid="df/d16/insert__batch_8php_1aa1d731aa570613e5bcff831bb10e9b87" kindref="member">$row</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a2efb2f950a559a8fda8c5b114c5ea10f" kindref="member">$colIdx</ref>=0;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal"><sp/>($row<sp/>as<sp/><ref refid="df/d16/insert__batch_8php_1afca5b7d4c9144178253e99d0ada7d519" kindref="member">$col</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$querySelectBatch_dataID=</highlight><highlight class="stringliteral">&quot;</highlight></codeline>
+<codeline lineno="24"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SELECT<sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>batch_data.bat_data_id</highlight></codeline>
+<codeline lineno="26"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FROM<sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>batch,<sp/>batch_data</highlight></codeline>
+<codeline lineno="28"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WHERE<sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>batch.bat_id<sp/>=<sp/>&quot;</highlight><highlight class="normal">.$batchID.</highlight><highlight class="stringliteral">&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="30"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>batch_data.bat_data_batch_FK<sp/>=<sp/>batch.bat_id<sp/>AND</highlight></codeline>
+<codeline lineno="31"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>batch_data.bat_data_row<sp/>=&quot;</highlight><highlight class="normal">.<ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a2457f3fab8183bd163626612df265a7e" kindref="member">$rowIdx</ref>.</highlight><highlight class="stringliteral">&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="32"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>batch_data.bat_data_col<sp/>=<sp/>&quot;</highlight><highlight class="normal">.<ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a2efb2f950a559a8fda8c5b114c5ea10f" kindref="member">$colIdx</ref>.</highlight><highlight class="stringliteral">&quot;;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$batchDataID<sp/>=<sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;query($querySelectBatch_dataID)-&gt;fetchColumn();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(<sp/>Exception<sp/>$e<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;FAILURE<sp/>est<sp/>survenue<sp/>lors<sp/>de<sp/>$querySelectBatch_dataID&quot;</highlight><highlight class="normal">.$e-&gt;getMessage());</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$batchDataID=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a538eaf07e91a8c4f140bc04fa2b899cf" kindref="member">$boolSucces</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref>=</highlight><highlight class="stringliteral">&quot;select<sp/>batch_data<sp/>id&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a538eaf07e91a8c4f140bc04fa2b899cf" kindref="member">$boolSucces</ref><sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$queryRawdataID<sp/>=</highlight><highlight class="stringliteral">&quot;</highlight></codeline>
+<codeline lineno="46"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SELECT<sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rawdata.rawdata_id<sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FROM<sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rawdata<sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WHERE<sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rawdata.rawdata_batch_data_FK<sp/>=<sp/>&quot;</highlight><highlight class="normal">.$batchDataID.</highlight><highlight class="stringliteral">&quot;<sp/>AND</highlight></codeline>
+<codeline lineno="52"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rawdata.data_enzyme_FK<sp/>=<sp/>&quot;</highlight><highlight class="normal">.<ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1addb1ec3ba55e413a08cb006ce21974df" kindref="member">$ezID</ref>.</highlight><highlight class="stringliteral">&quot;;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a7e1df84a3733bb1672c8485fa286658d" kindref="member">$rawdataID</ref><sp/>=<sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;query($queryRawdataID)-&gt;fetchColumn();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(<sp/>Exception<sp/>$e<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;FAILURE<sp/>est<sp/>survenue<sp/>lors<sp/>de<sp/>$queryRawdataID&quot;</highlight><highlight class="normal">.$e-&gt;getMessage());</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a7e1df84a3733bb1672c8485fa286658d" kindref="member">$rawdataID</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a538eaf07e91a8c4f140bc04fa2b899cf" kindref="member">$boolSucces</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref>=</highlight><highlight class="stringliteral">&quot;select<sp/>rawdata<sp/>id&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a538eaf07e91a8c4f140bc04fa2b899cf" kindref="member">$boolSucces</ref><sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$queryProcessDataExist<sp/>=</highlight><highlight class="stringliteral">&quot;</highlight></codeline>
+<codeline lineno="66"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SELECT<sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>raw_equ_proc.id_raw_equ_proc</highlight></codeline>
+<codeline lineno="68"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FROM<sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>raw_equ_proc<sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WHERE<sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>raw_equ_proc.raw_equ_proc_rawdata_FK<sp/>=<sp/>&quot;</highlight><highlight class="normal">.$rawdataID.</highlight><highlight class="stringliteral">&quot;;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$procDataExists<sp/>=<sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;query($queryProcessDataExist)-&gt;fetchColumn();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(<sp/>Exception<sp/>$e<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;FAILURE<sp/>est<sp/>survenue<sp/>lors<sp/>de<sp/>$queryProcessDataExist&quot;</highlight><highlight class="normal">.$e-&gt;getMessage());</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$procDataExists=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a538eaf07e91a8c4f140bc04fa2b899cf" kindref="member">$boolSucces</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref>=</highlight><highlight class="stringliteral">&quot;select<sp/>rawdata<sp/>id&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a538eaf07e91a8c4f140bc04fa2b899cf" kindref="member">$boolSucces</ref><sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a5a756a18d8cc040338f041ca8f8c3666" kindref="member">$procdatas</ref>[<ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a2457f3fab8183bd163626612df265a7e" kindref="member">$rowIdx</ref>][<ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a2efb2f950a559a8fda8c5b114c5ea10f" kindref="member">$colIdx</ref>]<sp/>==</highlight><highlight class="stringliteral">&quot;NA&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$valueToUpdate<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$valueToUpdate<sp/>=<sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a5a756a18d8cc040338f041ca8f8c3666" kindref="member">$procdatas</ref>[<ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a2457f3fab8183bd163626612df265a7e" kindref="member">$rowIdx</ref>][<ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a2efb2f950a559a8fda8c5b114c5ea10f" kindref="member">$colIdx</ref>];</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$queryUpdateExclud<sp/>=</highlight><highlight class="stringliteral">&quot;<sp/>UPDATE<sp/><sp/>`rawdata`<sp/>SET<sp/>`data_is_excluded`=&quot;</highlight><highlight class="normal">.$excludMap[<ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a2457f3fab8183bd163626612df265a7e" kindref="member">$rowIdx</ref>][<ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a2efb2f950a559a8fda8c5b114c5ea10f" kindref="member">$colIdx</ref>].</highlight><highlight class="stringliteral">&quot;<sp/>WHERE<sp/>`rawdata_id`<sp/>=<sp/>&quot;</highlight><highlight class="normal">.<ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a7e1df84a3733bb1672c8485fa286658d" kindref="member">$rawdataID</ref>.</highlight><highlight class="stringliteral">&quot;;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;beginTransaction();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;exec($queryUpdateExclud);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;commit();</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(<sp/>Exception<sp/>$e<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;rollback();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;Une<sp/>erreur<sp/>est<sp/>survenue<sp/>lors<sp/>de<sp/>edition&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;Erreur<sp/>:<sp/>&quot;</highlight><highlight class="normal">.$e-&gt;getMessage().</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;N°<sp/>:<sp/>&quot;</highlight><highlight class="normal">.$e-&gt;getCode());</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a538eaf07e91a8c4f140bc04fa2b899cf" kindref="member">$boolSucces</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref>=</highlight><highlight class="stringliteral">&quot;update<sp/>exclud<sp/>status&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($procDataExists<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$queryUpdateProcData<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;</highlight></codeline>
+<codeline lineno="113"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UPDATE<sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>processdata,<sp/>raw_equ_proc<sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SET<sp/></highlight></codeline>
+<codeline lineno="116"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>processdata.pro_value<sp/>=<sp/>&apos;&quot;</highlight><highlight class="normal">.$valueToUpdate.</highlight><highlight class="stringliteral">&quot;&apos;<sp/></highlight></codeline>
+<codeline lineno="117"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WHERE<sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>raw_equ_proc.raw_equ_proc_rawdata_FK<sp/>=<sp/>&quot;</highlight><highlight class="normal">.<ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a7e1df84a3733bb1672c8485fa286658d" kindref="member">$rawdataID</ref>.</highlight><highlight class="stringliteral">&quot;<sp/>AND<sp/></highlight></codeline>
+<codeline lineno="119"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>processdata.pro_id<sp/>=<sp/>raw_equ_proc.raw_equ_proc_processdata_FK;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;beginTransaction();</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;exec($queryUpdateProcData);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;commit();</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(<sp/>Exception<sp/>$e<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;rollback();</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;Une<sp/>erreur<sp/>est<sp/>survenue<sp/>lors<sp/>de<sp/>edition&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;Erreur<sp/>:<sp/>&quot;</highlight><highlight class="normal">.$e-&gt;getMessage().</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;N°<sp/>:<sp/>&quot;</highlight><highlight class="normal">.$e-&gt;getCode());</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a538eaf07e91a8c4f140bc04fa2b899cf" kindref="member">$boolSucces</ref>=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref>=</highlight><highlight class="stringliteral">&quot;update<sp/>process<sp/>data&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$insertProcDataQuery<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;INSERT<sp/>INTO<sp/>`processdata`(`pro_id`,<sp/>`pro_value`)<sp/>VALUES<sp/>(&apos;&apos;,&quot;</highlight><highlight class="normal">.$valueToUpdate.</highlight><highlight class="stringliteral">&quot;);&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;beginTransaction();</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;exec($insertProcDataQuery);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$lastProcInsertID<sp/>=<sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;lastInsertId();</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$insertRawEquProc<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;INSERT<sp/></highlight></codeline>
+<codeline lineno="142"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>INTO<sp/>`raw_equ_proc`(`id_raw_equ_proc`,<sp/>`raw_equ_proc_rawdata_FK`,<sp/>`raw_equ_proc_equation_FK`,<sp/>`raw_equ_proc_processdata_FK`)<sp/></highlight></codeline>
+<codeline lineno="143"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VALUES<sp/>(&apos;&apos;,<sp/>&quot;</highlight><highlight class="normal">.$rawdataID.</highlight><highlight class="stringliteral">&quot;,<sp/>1,<sp/>&quot;</highlight><highlight class="normal">.$lastProcInsertID.</highlight><highlight class="stringliteral">&quot;);&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;exec($insertRawEquProc);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;commit();</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(<sp/>Exception<sp/>$e<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;rollback();</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;Une<sp/>erreur<sp/>est<sp/>survenue<sp/>lors<sp/>de&quot;</highlight><highlight class="normal">.$insertProcDataQuery);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;Erreur<sp/>:<sp/>&quot;</highlight><highlight class="normal">.$e-&gt;getMessage());</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;N°<sp/>:<sp/>&quot;</highlight><highlight class="normal">.$e-&gt;getCode());</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$statut=</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a2efb2f950a559a8fda8c5b114c5ea10f" kindref="member">$colIdx</ref>++;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a2457f3fab8183bd163626612df265a7e" kindref="member">$rowIdx</ref>++;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a7a23fc905184e8d9769c6c2948032a18" refkind="member"><highlight class="normal"><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a7a23fc905184e8d9769c6c2948032a18" kindref="member">$response_array</ref>[</highlight><highlight class="stringliteral">&apos;status&apos;</highlight><highlight class="normal">]=<ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>;</highlight></codeline>
+<codeline lineno="162" refid="d9/d12/save__edit__remake_07obsolete_08_8php_1ae768978a0cdc416c0d63d798c85c8784" refkind="member"><highlight class="normal"><ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a7a23fc905184e8d9769c6c2948032a18" kindref="member">$response_array</ref>[</highlight><highlight class="stringliteral">&apos;action&apos;</highlight><highlight class="normal">]=<ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref>;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">echo<sp/>json_encode(<ref refid="d9/d12/save__edit__remake_07obsolete_08_8php_1a7a23fc905184e8d9769c6c2948032a18" kindref="member">$response_array</ref>);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="/var/www/html/plato/php/processing/obsolete/save_edit_remake(obsolete).php"/>
+  </compounddef>
+</doxygen>

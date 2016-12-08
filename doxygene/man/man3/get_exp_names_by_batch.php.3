@@ -1,0 +1,61 @@
+.TH "php/export/get_exp_names_by_batch.php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/export/get_exp_names_by_batch.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$conn\fP = \fBget_connexion\fP()"
+.br
+.ti -1c
+.RI "\fB$hash\fP =Array()"
+.br
+.ti -1c
+.RI "\fB$batchID\fP =-1"
+.br
+.ti -1c
+.RI "\fB$ezID\fP = -1"
+.br
+.ti -1c
+.RI "if(isset($_POST['\fBbatchID\fP'])) 
+.br
+if(isset($_POST['\fBezID\fP'])) if(($batchID!=-1)&&($ezID!=-1)) \fB$response_array\fP ['MaxStd'] =$hash[$minname]['number']"
+.br
+.ti -1c
+.RI "\fB$response_array\fP ['StdUsed'] =($hash[$minname]['number']-$hash[$minname]['excluded'])"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$\fBbatchID\fP =-1"
+
+.PP
+Definition at line 8 of file get_exp_names_by_batch\&.php\&.
+.SS "$conn = \fBget_connexion\fP()"
+
+.PP
+Definition at line 4 of file get_exp_names_by_batch\&.php\&.
+.SS "$\fBezID\fP = -1"
+
+.PP
+Definition at line 9 of file get_exp_names_by_batch\&.php\&.
+.SS "$hash =Array()"
+
+.PP
+Definition at line 6 of file get_exp_names_by_batch\&.php\&.
+.SS "if (isset($_POST['\fBbatchID\fP'])) if (isset($_POST['\fBezID\fP'])) if (($batchID!=-1)&&($ezID!=-1)) $response_array['MaxStd'] =$hash[$minname]['number']"
+
+.PP
+Definition at line 59 of file get_exp_names_by_batch\&.php\&.
+.SS "$response_array['StdUsed'] =($hash[$minname]['number']-$hash[$minname]['excluded'])"
+
+.PP
+Definition at line 60 of file get_exp_names_by_batch\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

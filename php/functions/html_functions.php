@@ -1,5 +1,11 @@
 <?php 
 
+/**
+ * Generate header
+ *
+ * @param      string  $path       (description)
+ * @param      <type>  $userLevel  (description)
+ */
 function html_header ($path, $userLevel) {
 
 echo '
@@ -70,6 +76,11 @@ echo '
 ';
 }
 
+/**
+ * Generate the top of the page index
+ *
+ * @param      string  $pagename  (description)
+ */
 function index_html_top_page($pagename) {
 	echo '
 		<div id="mainBody">
@@ -99,6 +110,12 @@ function index_html_top_page($pagename) {
 ';
 }
 
+/**
+ * Generate an editable top page
+ *
+ * @param      string  $path      (description)
+ * @param      string  $pagename  (description)
+ */
 function editable_html_top_page($path, $pagename) {
 	echo '<div id="mainBody">
 			<h1>'.$pagename.'
@@ -110,6 +127,12 @@ function editable_html_top_page($path, $pagename) {
 				<a href="'.$path.'index.php" title="Go to Home" class="tip-bottom"><i class="icon-home"></i>'.$pagename.'</a>';
 			}
 
+/**
+ * Generate a generical top page
+ *
+ * @param      string  $path      (description)
+ * @param      string  $pagename  (description)
+ */
 function generic_html_top_page($path, $pagename) {
 	echo '<div id="mainBody">
 			<h1>'.$pagename.'
@@ -122,6 +145,11 @@ function generic_html_top_page($path, $pagename) {
 			</div>';
 }
 
+/**
+ * Generate footer
+ *
+ * @param      string  $path   (description)
+ */
 function html_footer($path) {
 echo'			
 				<div class="row-fluid">

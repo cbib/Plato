@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php" kind="file">
+    <compoundname>edit_enzyme_in_standard(obsolete).php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$conn</definition>
+        <argsstring></argsstring>
+        <name>$conn</name>
+        <initializer>= <ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/standard/obsolete files/edit_enzyme_in_standard(obsolete).php" line="4" column="1" bodyfile="/var/www/html/plato/php/standard/obsolete files/edit_enzyme_in_standard(obsolete).php" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1a1a82343ffd9662108bf3501398fcd3fb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$stdEzID</definition>
+        <argsstring></argsstring>
+        <name>$stdEzID</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/standard/obsolete files/edit_enzyme_in_standard(obsolete).php" line="6" column="1" bodyfile="/var/www/html/plato/php/standard/obsolete files/edit_enzyme_in_standard(obsolete).php" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1aa6841113bca2f461aae7a334e615c44f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$slope</definition>
+        <argsstring></argsstring>
+        <name>$slope</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/standard/obsolete files/edit_enzyme_in_standard(obsolete).php" line="7" column="1" bodyfile="/var/www/html/plato/php/standard/obsolete files/edit_enzyme_in_standard(obsolete).php" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1af48fe050f529b6ca56356299183b7778" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$amount</definition>
+        <argsstring></argsstring>
+        <name>$amount</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/standard/obsolete files/edit_enzyme_in_standard(obsolete).php" line="8" column="1" bodyfile="/var/www/html/plato/php/standard/obsolete files/edit_enzyme_in_standard(obsolete).php" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1a0c541a369e4a0434108a7d145751bb23" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$standardID</definition>
+        <argsstring></argsstring>
+        <name>$standardID</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/standard/obsolete files/edit_enzyme_in_standard(obsolete).php" line="9" column="1" bodyfile="/var/www/html/plato/php/standard/obsolete files/edit_enzyme_in_standard(obsolete).php" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1a58391ea75f2d29d5d708d7050b641c33" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$status</definition>
+        <argsstring></argsstring>
+        <name>$status</name>
+        <initializer>=&quot;success&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/standard/obsolete files/edit_enzyme_in_standard(obsolete).php" line="10" column="1" bodyfile="/var/www/html/plato/php/standard/obsolete files/edit_enzyme_in_standard(obsolete).php" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1a94335fad7539f04bfbbd01ad794fa744" prot="public" static="no" mutable="no">
+        <type>if(isset($_POST[&apos;stdezid&apos;])) if(isset($_POST[&apos;amount&apos;]))</type>
+        <definition>if (isset($_POST[&apos;stdezid&apos;])) if (isset($_POST[&apos;amount&apos;])) $query</definition>
+        <argsstring></argsstring>
+        <name>$query</name>
+        <initializer>= &apos;UPDATE `standard_enzyme` SET `std_ez_value`=&apos;.$amount.&apos; WHERE `std_ez_id`= &apos;.$stdEzID.&apos;;&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/standard/obsolete files/edit_enzyme_in_standard(obsolete).php" line="28" column="1" bodyfile="/var/www/html/plato/php/standard/obsolete files/edit_enzyme_in_standard(obsolete).php" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1abe4cc9788f52e49485473dc699537388" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>try</definition>
+        <argsstring></argsstring>
+        <name>try</name>
+        <initializer>{
+		$conn-&gt;beginTransaction()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/standard/obsolete files/edit_enzyme_in_standard(obsolete).php" line="31" column="1" bodyfile="/var/www/html/plato/php/standard/obsolete files/edit_enzyme_in_standard(obsolete).php" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$req</definition>
+        <argsstring></argsstring>
+        <name>$req</name>
+        <initializer>= $conn-&gt;exec($query)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/standard/obsolete files/edit_enzyme_in_standard(obsolete).php" line="34" column="1" bodyfile="/var/www/html/plato/php/standard/obsolete files/edit_enzyme_in_standard(obsolete).php" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1a8452fb8131316637a04e25f5fde066d9" prot="public" static="no" mutable="no">
+        <type>catch(Exception $e)</type>
+        <definition>catch (Exception $e) $response_array[&apos;status&apos;]</definition>
+        <argsstring>[&apos;status&apos;]</argsstring>
+        <name>$response_array</name>
+        <initializer>=$status</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/standard/obsolete files/edit_enzyme_in_standard(obsolete).php" line="43" column="1" bodyfile="/var/www/html/plato/php/standard/obsolete files/edit_enzyme_in_standard(obsolete).php" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/><sp/><sp/>require(</highlight><highlight class="stringliteral">&apos;../functions/check_login.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/>include<sp/></highlight><highlight class="stringliteral">&apos;../functions/php_functions.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="4" refid="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref><sp/>=<sp/><ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>();</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1a1a82343ffd9662108bf3501398fcd3fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1a1a82343ffd9662108bf3501398fcd3fb" kindref="member">$stdEzID</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="7" refid="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1aa6841113bca2f461aae7a334e615c44f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1aa6841113bca2f461aae7a334e615c44f" kindref="member">$slope</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="8" refid="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1af48fe050f529b6ca56356299183b7778" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1af48fe050f529b6ca56356299183b7778" kindref="member">$amount</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="9" refid="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1a0c541a369e4a0434108a7d145751bb23" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1a0c541a369e4a0434108a7d145751bb23" kindref="member">$standardID</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="10" refid="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1a58391ea75f2d29d5d708d7050b641c33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;success&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;stdezid&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1a1a82343ffd9662108bf3501398fcd3fb" kindref="member">$stdEzID</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;stdezid&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>(isset($_POST[&apos;slope&apos;]))<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>$slope<sp/>=<sp/>$_POST[&apos;slope&apos;];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>(isset($_POST[&apos;nature&apos;]))<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>$nature<sp/>=<sp/>$_POST[&apos;nature&apos;];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>(isset($_POST[&apos;standardID&apos;]))<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>$standardID<sp/>=<sp/>$_POST[&apos;standardID&apos;];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;amount&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1af48fe050f529b6ca56356299183b7778" kindref="member">$amount</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;amount&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1a94335fad7539f04bfbbd01ad794fa744" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1a94335fad7539f04bfbbd01ad794fa744" kindref="member">$query</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&apos;UPDATE<sp/>`standard_enzyme`<sp/>SET<sp/>`std_ez_value`=&apos;</highlight><highlight class="normal">.$amount.</highlight><highlight class="stringliteral">&apos;<sp/>WHERE<sp/>`std_ez_id`=<sp/>&apos;</highlight><highlight class="normal">.<ref refid="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1a1a82343ffd9662108bf3501398fcd3fb" kindref="member">$stdEzID</ref>.</highlight><highlight class="charliteral">&apos;;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//error_log($query);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="32" refid="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1abe4cc9788f52e49485473dc699537388" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;beginTransaction();</highlight></codeline>
+<codeline lineno="34" refid="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref><sp/>=<sp/><ref refid="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;exec(<ref refid="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1a94335fad7539f04bfbbd01ad794fa744" kindref="member">$query</ref>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;commit();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(<sp/>Exception<sp/>$e<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;rollBack();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log($e);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1a8452fb8131316637a04e25f5fde066d9" refkind="member"><highlight class="normal"><ref refid="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1a8452fb8131316637a04e25f5fde066d9" kindref="member">$response_array</ref>[</highlight><highlight class="stringliteral">&apos;status&apos;</highlight><highlight class="normal">]=<ref refid="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">echo<sp/>json_encode(<ref refid="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php_1a8452fb8131316637a04e25f5fde066d9" kindref="member">$response_array</ref>);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="/var/www/html/plato/php/standard/obsolete files/edit_enzyme_in_standard(obsolete).php"/>
+  </compounddef>
+</doxygen>

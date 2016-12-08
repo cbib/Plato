@@ -11,6 +11,7 @@
 		$batchID = $_POST['batchID'];
 	}
 
+
 	$query ="SELECT 
 		bat_data_id 
 	FROM
@@ -54,10 +55,10 @@
 
         $updateStateAliquotQuery = rtrim($updateStateAliquotQuery, ",");
         $updateStateAliquotQuery.=");";
-        error_log($deleteQuery);
-        error_log($deleteRawDataQuery);
-        error_log($updateStateAliquotQuery);
-        error_log($deleteBatch);
+        // error_log($deleteQuery);
+        // error_log($deleteRawDataQuery);
+        // error_log($updateStateAliquotQuery);
+        // error_log($deleteBatch);
 
 	try {
 		$conn->beginTransaction();

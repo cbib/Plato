@@ -3,6 +3,7 @@
 	include '../../functions/php_functions.php';
 	$conn = get_connexion();
 
+	// Get the analytes associated to a batch
 
 	$batchID = $_POST['batchID'];
 	//error_log($batchID);

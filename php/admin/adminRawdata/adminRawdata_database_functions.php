@@ -3,6 +3,7 @@
 	include '../../functions/php_functions.php';
 	$conn = get_connexion();
 
+	//get all experiment
 
 	$query = '
 	SELECT 

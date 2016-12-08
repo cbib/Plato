@@ -3,7 +3,7 @@
 	include '../../functions/php_functions.php';
 	$conn = get_connexion();
 
-
+	// Get all experiments for datatables of experiment
 	$query = '
 	SELECT 
 		experiment.*

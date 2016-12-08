@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="de/d15/export__get__exp__data_8php" kind="file">
+    <compoundname>export_get_exp_data.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="de/d15/export__get__exp__data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$conn</definition>
+        <argsstring></argsstring>
+        <name>$conn</name>
+        <initializer>= <ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/export/export_get_exp_data.php" line="4" column="1" bodyfile="/var/www/html/plato/php/export/export_get_exp_data.php" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d15/export__get__exp__data_8php_1ae384d32e62e85e587cd27bf249ed3db3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$expID</definition>
+        <argsstring></argsstring>
+        <name>$expID</name>
+        <initializer>= $_POST[&apos;<ref refid="d8/d02/admin_rawdata_8php_1a888d53a6517f4272b5982c3ca9d16e8a" kindref="member">expID</ref>&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/export/export_get_exp_data.php" line="6" column="1" bodyfile="/var/www/html/plato/php/export/export_get_exp_data.php" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d15/export__get__exp__data_8php_1a6478e66386fefd0e5fd6de22d695ffca" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$expName</definition>
+        <argsstring></argsstring>
+        <name>$expName</name>
+        <initializer>= $_POST[&apos;expName&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/export/export_get_exp_data.php" line="7" column="1" bodyfile="/var/www/html/plato/php/export/export_get_exp_data.php" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d15/export__get__exp__data_8php_1a73004ce9cd673c1bfafd1dc351134797" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$output</definition>
+        <argsstring></argsstring>
+        <name>$output</name>
+        <initializer>= array()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/export/export_get_exp_data.php" line="8" column="1" bodyfile="/var/www/html/plato/php/export/export_get_exp_data.php" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d15/export__get__exp__data_8php_1af59a5f7cd609e592c41dc3643efd3c98" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$query</definition>
+        <argsstring></argsstring>
+        <name>$query</name>
+        <initializer>=&apos;SELECT bat_data_batch_FK, bat_data_id, spl_number, alq_number FROM batch_data, sample_aliquot, sample, aliquot WHERE bat_data_experiment_FK = &apos;.$expID.&apos; AND
+	sample_aliquot.spl_alq_id = batch_data.bat_data_sample_aliquot_FK AND
+	sample.spl_id = sample_aliquot.spl_alq_sample_FK AND
+	aliquot.alq_id = sample_aliquot.spl_alq_aliquot_FK
+	ORDER BY sample.spl_number, aliquot.alq_number ;&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/export/export_get_exp_data.php" line="10" column="1" bodyfile="/var/www/html/plato/php/export/export_get_exp_data.php" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d15/export__get__exp__data_8php_1a233d12bd8b6d3453e9a7a3f0b8c31db2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$results</definition>
+        <argsstring></argsstring>
+        <name>$results</name>
+        <initializer>= $conn-&gt;query($query)-&gt;fetchAll()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/export/export_get_exp_data.php" line="16" column="1" bodyfile="/var/www/html/plato/php/export/export_get_exp_data.php" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d15/export__get__exp__data_8php_1a2d58bfaabf81051b4d9e9cb2d8ed5941" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$ezNameQuery</definition>
+        <argsstring></argsstring>
+        <name>$ezNameQuery</name>
+        <initializer>=&apos;SELECT distinct (ez_analyte), ez_id, ez_code
+	FROM 
+		enzyme, rawdata, batch_data
+	WHERE
+		bat_data_experiment_FK = &apos;.$expID.&apos; AND 
+		rawdata_batch_data_FK = bat_data_id AND 
+		ez_id = data_enzyme_FK 
+	ORDER BY
+		enzyme.ez_analyte;&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/export/export_get_exp_data.php" line="17" column="1" bodyfile="/var/www/html/plato/php/export/export_get_exp_data.php" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d15/export__get__exp__data_8php_1a3af2456d6a8126f749b1cfca0ba77027" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$ezNames</definition>
+        <argsstring></argsstring>
+        <name>$ezNames</name>
+        <initializer>= $conn-&gt;query($ezNameQuery)-&gt;fetchAll()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/export/export_get_exp_data.php" line="26" column="1" bodyfile="/var/www/html/plato/php/export/export_get_exp_data.php" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d15/export__get__exp__data_8php_1ac098f986b0121aa5592943a8ea80e37b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$lineName</definition>
+        <argsstring></argsstring>
+        <name>$lineName</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/export/export_get_exp_data.php" line="27" column="1" bodyfile="/var/www/html/plato/php/export/export_get_exp_data.php" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="de/d15/export__get__exp__data_8php_1a1b7e843aa496f34e3c661d1eefbf7b84" prot="public" static="no" mutable="no">
+        <type>foreach($ezNames as $name)</type>
+        <definition>foreach ($ezNames as $name) $output[]</definition>
+        <argsstring>[]</argsstring>
+        <name>$output</name>
+        <initializer>=$lineName</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/export/export_get_exp_data.php" line="31" column="1" bodyfile="/var/www/html/plato/php/export/export_get_exp_data.php" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/><sp/><sp/>require(</highlight><highlight class="stringliteral">&apos;../functions/check_login.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/>include<sp/></highlight><highlight class="stringliteral">&apos;../functions/php_functions.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="4" refid="de/d15/export__get__exp__data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d15/export__get__exp__data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref><sp/>=<sp/><ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>();</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="de/d15/export__get__exp__data_8php_1ae384d32e62e85e587cd27bf249ed3db3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d15/export__get__exp__data_8php_1ae384d32e62e85e587cd27bf249ed3db3" kindref="member">$expID</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;expID&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="7" refid="de/d15/export__get__exp__data_8php_1a6478e66386fefd0e5fd6de22d695ffca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d15/export__get__exp__data_8php_1a6478e66386fefd0e5fd6de22d695ffca" kindref="member">$expName</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;expName&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="8" refid="de/d15/export__get__exp__data_8php_1a73004ce9cd673c1bfafd1dc351134797" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d15/export__get__exp__data_8php_1a73004ce9cd673c1bfafd1dc351134797" kindref="member">$output</ref><sp/>=<sp/>array();</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="de/d15/export__get__exp__data_8php_1af59a5f7cd609e592c41dc3643efd3c98" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d15/export__get__exp__data_8php_1af59a5f7cd609e592c41dc3643efd3c98" kindref="member">$query</ref><sp/>=</highlight><highlight class="stringliteral">&apos;SELECT<sp/>bat_data_batch_FK,<sp/>bat_data_id,<sp/>spl_number,<sp/>alq_number<sp/>FROM<sp/>batch_data,<sp/>sample_aliquot,<sp/>sample,<sp/>aliquot<sp/>WHERE<sp/>bat_data_experiment_FK<sp/>=<sp/>&apos;</highlight><highlight class="normal">.$expID.</highlight><highlight class="stringliteral">&apos;<sp/>AND</highlight></codeline>
+<codeline lineno="11"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>sample_aliquot.spl_alq_id<sp/>=<sp/>batch_data.bat_data_sample_aliquot_FK<sp/>AND</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>sample.spl_id<sp/>=<sp/>sample_aliquot.spl_alq_sample_FK<sp/>AND</highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>aliquot.alq_id<sp/>=<sp/>sample_aliquot.spl_alq_aliquot_FK</highlight></codeline>
+<codeline lineno="14"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>ORDER<sp/>BY<sp/>sample.spl_number,<sp/>aliquot.alq_number<sp/>;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="de/d15/export__get__exp__data_8php_1a233d12bd8b6d3453e9a7a3f0b8c31db2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d15/export__get__exp__data_8php_1a233d12bd8b6d3453e9a7a3f0b8c31db2" kindref="member">$results</ref><sp/>=<sp/><ref refid="de/d15/export__get__exp__data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;query(<ref refid="de/d15/export__get__exp__data_8php_1af59a5f7cd609e592c41dc3643efd3c98" kindref="member">$query</ref>)-&gt;fetchAll();</highlight></codeline>
+<codeline lineno="17" refid="de/d15/export__get__exp__data_8php_1a2d58bfaabf81051b4d9e9cb2d8ed5941" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d15/export__get__exp__data_8php_1a2d58bfaabf81051b4d9e9cb2d8ed5941" kindref="member">$ezNameQuery</ref><sp/>=</highlight><highlight class="stringliteral">&apos;SELECT<sp/>distinct<sp/>(ez_analyte),<sp/>ez_id,<sp/>ez_code</highlight></codeline>
+<codeline lineno="18"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>FROM<sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>enzyme,<sp/>rawdata,<sp/>batch_data</highlight></codeline>
+<codeline lineno="20"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>WHERE</highlight></codeline>
+<codeline lineno="21"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bat_data_experiment_FK<sp/>=<sp/>&apos;</highlight><highlight class="normal">.$expID.</highlight><highlight class="stringliteral">&apos;<sp/>AND<sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rawdata_batch_data_FK<sp/>=<sp/>bat_data_id<sp/>AND<sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ez_id<sp/>=<sp/>data_enzyme_FK<sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>ORDER<sp/>BY</highlight></codeline>
+<codeline lineno="25"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>enzyme.ez_analyte;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26" refid="de/d15/export__get__exp__data_8php_1a3af2456d6a8126f749b1cfca0ba77027" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d15/export__get__exp__data_8php_1a3af2456d6a8126f749b1cfca0ba77027" kindref="member">$ezNames</ref><sp/>=<sp/><ref refid="de/d15/export__get__exp__data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;query(<ref refid="de/d15/export__get__exp__data_8php_1a2d58bfaabf81051b4d9e9cb2d8ed5941" kindref="member">$ezNameQuery</ref>)-&gt;fetchAll();</highlight></codeline>
+<codeline lineno="27" refid="de/d15/export__get__exp__data_8php_1ac098f986b0121aa5592943a8ea80e37b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d15/export__get__exp__data_8php_1ac098f986b0121aa5592943a8ea80e37b" kindref="member">$lineName</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">(<ref refid="de/d15/export__get__exp__data_8php_1a3af2456d6a8126f749b1cfca0ba77027" kindref="member">$ezNames</ref><sp/>as<sp/>$name){</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d15/export__get__exp__data_8php_1ac098f986b0121aa5592943a8ea80e37b" kindref="member">$lineName</ref>.=$name[2].</highlight><highlight class="stringliteral">&quot;_&quot;</highlight><highlight class="normal">.$name[0].</highlight><highlight class="stringliteral">&quot;#&quot;</highlight><highlight class="normal">.$name[1].</highlight><highlight class="stringliteral">&quot;&gt;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31" refid="de/d15/export__get__exp__data_8php_1a1b7e843aa496f34e3c661d1eefbf7b84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="de/d15/export__get__exp__data_8php_1a73004ce9cd673c1bfafd1dc351134797" kindref="member">$output</ref>[]=<ref refid="de/d15/export__get__exp__data_8php_1ac098f986b0121aa5592943a8ea80e37b" kindref="member">$lineName</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">(<ref refid="de/d15/export__get__exp__data_8php_1a233d12bd8b6d3453e9a7a3f0b8c31db2" kindref="member">$results</ref><sp/>as<sp/><ref refid="df/d16/insert__batch_8php_1aa1d731aa570613e5bcff831bb10e9b87" kindref="member">$row</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$line=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$batchNameQuery<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;SELECT<sp/>CONCAT(batch.bat_number,<sp/>&quot;<sp/><sp/><sp/><sp/>-<sp/><sp/><sp/>&quot;,<sp/>batch.bat_name,<sp/>&quot;<sp/><sp/><sp/><sp/>-<sp/><sp/><sp/>&quot;,<sp/>batch.bat_date)</highlight></codeline>
+<codeline lineno="37"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FROM<sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>batch,<sp/>batch_data<sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WHERE<sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bat_data_id<sp/>=<sp/>&apos;</highlight><highlight class="normal">.$row[1].</highlight><highlight class="stringliteral">&apos;<sp/>AND<sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bat_id<sp/>=<sp/>bat_data_batch_FK;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d8/dd3/control_batch_name_and_number_8php_1ae0139f42f02473374ecb453f87c66534" kindref="member">$batchName</ref><sp/>=<sp/><ref refid="de/d15/export__get__exp__data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;query($batchNameQuery)-&gt;fetchColumn();</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$splAlqNbQuery<sp/>=<sp/></highlight><highlight class="stringliteral">&apos;SELECT<sp/>CONCAT(spl_number,<sp/>&quot;#&quot;,<sp/>alq_number)<sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FROM<sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>batch_data,<sp/>sample_aliquot,<sp/>sample,<sp/>aliquot<sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WHERE<sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bat_data_id<sp/>=<sp/>&apos;</highlight><highlight class="normal">.$row[1].</highlight><highlight class="stringliteral">&apos;<sp/>AND<sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sample_aliquot.spl_alq_id<sp/>=<sp/>batch_data.bat_data_sample_aliquot_FK<sp/>AND</highlight></codeline>
+<codeline lineno="50"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>aliquot.alq_id<sp/>=<sp/>sample_aliquot.spl_alq_aliquot_FK<sp/>AND</highlight></codeline>
+<codeline lineno="51"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sample.spl_id<sp/>=<sp/>sample_aliquot.spl_alq_sample_FK;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$spl_alq<sp/>=<sp/><ref refid="de/d15/export__get__exp__data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;query($splAlqNbQuery)-&gt;fetchColumn();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>$ezQuery<sp/>=&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>SELECT<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>distinct<sp/>rawdata.data_enzyme_FK,<sp/>enzyme.ez_analyte,<sp/>enzyme.ez_code</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>FROM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>rawdata,<sp/>enzyme<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>WHERE<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>rawdata.rawdata_batch_data_FK<sp/>=<sp/>&apos;.$row[1].&apos;<sp/>AND</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>enzyme.ez_id<sp/>=<sp/>rawdata.data_enzyme_FK;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>&apos;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$line=$row[0].</highlight><highlight class="stringliteral">&quot;#&quot;</highlight><highlight class="normal">.$row[1].</highlight><highlight class="stringliteral">&quot;#&quot;</highlight><highlight class="normal">.<ref refid="d8/dd3/control_batch_name_and_number_8php_1ae0139f42f02473374ecb453f87c66534" kindref="member">$batchName</ref>.</highlight><highlight class="stringliteral">&quot;#&quot;</highlight><highlight class="normal">.<ref refid="de/d15/export__get__exp__data_8php_1a6478e66386fefd0e5fd6de22d695ffca" kindref="member">$expName</ref>.</highlight><highlight class="stringliteral">&quot;#&quot;</highlight><highlight class="normal">.$spl_alq;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>$enzymes<sp/>=<sp/>$conn-&gt;query($ezQuery)-&gt;fetchAll();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">(<ref refid="de/d15/export__get__exp__data_8php_1a3af2456d6a8126f749b1cfca0ba77027" kindref="member">$ezNames</ref><sp/>as<sp/>$name){</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$enzymeID=$name[1];</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$procValuesQuery=</highlight><highlight class="stringliteral">&apos;SELECT<sp/>pro_value<sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FROM<sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rawdata,<sp/>raw_equ_proc,<sp/>processdata<sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WHERE<sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rawdata_batch_data_FK<sp/>=<sp/>&apos;</highlight><highlight class="normal">.$row[1].</highlight><highlight class="stringliteral">&apos;<sp/>AND<sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data_enzyme_FK<sp/>=<sp/>&apos;</highlight><highlight class="normal">.$enzymeID.</highlight><highlight class="stringliteral">&apos;<sp/>AND<sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>raw_equ_proc_rawdata_FK<sp/>=<sp/>rawdata_id<sp/>AND<sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pro_id<sp/>=<sp/>raw_equ_proc_processdata_FK;&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$procvalue<sp/>=<sp/><ref refid="de/d15/export__get__exp__data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;query($procValuesQuery)-&gt;fetchColumn();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($procvalue<sp/>==</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$procvalue<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;NA&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$procvalue<sp/>=<sp/>round($procvalue,<sp/>2,<sp/>PHP_ROUND_HALF_EVEN);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$line.=</highlight><highlight class="stringliteral">&quot;#&quot;</highlight><highlight class="normal">.$procvalue;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="de/d15/export__get__exp__data_8php_1a73004ce9cd673c1bfafd1dc351134797" kindref="member">$output</ref>[]=$line;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>header(</highlight><highlight class="stringliteral">&apos;Content-Type:<sp/>application/json&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>json_encode(<ref refid="de/d15/export__get__exp__data_8php_1a73004ce9cd673c1bfafd1dc351134797" kindref="member">$output</ref>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">?&gt;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/var/www/html/plato/php/export/export_get_exp_data.php"/>
+  </compounddef>
+</doxygen>

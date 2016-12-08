@@ -1,0 +1,100 @@
+\hypertarget{freshweight__from__standard_07obsolete_08_8php}{\section{php/standard/obsolete files/freshweight\-\_\-from\-\_\-standard(obsolete).php File Reference}
+\label{freshweight__from__standard_07obsolete_08_8php}\index{php/standard/obsolete files/freshweight\-\_\-from\-\_\-standard(obsolete).\-php@{php/standard/obsolete files/freshweight\-\_\-from\-\_\-standard(obsolete).\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{freshweight__from__standard_07obsolete_08_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{freshweight__from__standard_07obsolete_08_8php_a0c541a369e4a0434108a7d145751bb23}{\$standard\-I\-D} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'standard\-I\-D'\mbox{]}
+\item 
+\hyperlink{freshweight__from__standard_07obsolete_08_8php_af59a5f7cd609e592c41dc3643efd3c98}{\$query}
+\item 
+\hyperlink{freshweight__from__standard_07obsolete_08_8php_afa9126f9664959c02795be300a135f93}{\$sth} =\$conn-\/$>$prepare(\$query)
+\item 
+\hyperlink{freshweight__from__standard_07obsolete_08_8php_af789423037bbc89dc7c850e761177570}{\$count} = \$sth-\/$>$row\-Count()
+\item 
+\hyperlink{freshweight__from__standard_07obsolete_08_8php_ace2ec39e7df3899fa8df9640ec274b03}{\$rows} =\$sth-\/$>$fetch\-All()
+\item 
+\hyperlink{freshweight__from__standard_07obsolete_08_8php_a73004ce9cd673c1bfafd1dc351134797}{\$output}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{freshweight__from__standard_07obsolete_08_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{freshweight\-\_\-from\-\_\-standard(obsolete).\-php@{freshweight\-\_\-from\-\_\-standard(obsolete).\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!freshweight_from_standard(obsolete).php@{freshweight\-\_\-from\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{freshweight__from__standard_07obsolete_08_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 4 of file freshweight\-\_\-from\-\_\-standard(obsolete).\-php.
+
+\hypertarget{freshweight__from__standard_07obsolete_08_8php_af789423037bbc89dc7c850e761177570}{\index{freshweight\-\_\-from\-\_\-standard(obsolete).\-php@{freshweight\-\_\-from\-\_\-standard(obsolete).\-php}!\$count@{\$count}}
+\index{\$count@{\$count}!freshweight_from_standard(obsolete).php@{freshweight\-\_\-from\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$count}]{\setlength{\rightskip}{0pt plus 5cm}\$count = \$sth-\/$>$row\-Count()}}\label{freshweight__from__standard_07obsolete_08_8php_af789423037bbc89dc7c850e761177570}
+
+
+Definition at line 29 of file freshweight\-\_\-from\-\_\-standard(obsolete).\-php.
+
+\hypertarget{freshweight__from__standard_07obsolete_08_8php_a73004ce9cd673c1bfafd1dc351134797}{\index{freshweight\-\_\-from\-\_\-standard(obsolete).\-php@{freshweight\-\_\-from\-\_\-standard(obsolete).\-php}!\$output@{\$output}}
+\index{\$output@{\$output}!freshweight_from_standard(obsolete).php@{freshweight\-\_\-from\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$output}]{\setlength{\rightskip}{0pt plus 5cm}\$output}}\label{freshweight__from__standard_07obsolete_08_8php_a73004ce9cd673c1bfafd1dc351134797}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+= array(
+        \textcolor{stringliteral}{"iTotalRecords"} => \hyperlink{freshweight__from__standard_07obsolete_08_8php_af789423037bbc89dc7c850e761177570}{$count},
+        \textcolor{stringliteral}{"iTotalDisplayRecords"} => \hyperlink{freshweight__from__standard_07obsolete_08_8php_af789423037bbc89dc7c850e761177570}{$count},
+        \textcolor{stringliteral}{"aaData"} => array()
+    )
+\end{DoxyCode}
+
+
+Definition at line 32 of file freshweight\-\_\-from\-\_\-standard(obsolete).\-php.
+
+\hypertarget{freshweight__from__standard_07obsolete_08_8php_af59a5f7cd609e592c41dc3643efd3c98}{\index{freshweight\-\_\-from\-\_\-standard(obsolete).\-php@{freshweight\-\_\-from\-\_\-standard(obsolete).\-php}!\$query@{\$query}}
+\index{\$query@{\$query}!freshweight_from_standard(obsolete).php@{freshweight\-\_\-from\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$query}]{\setlength{\rightskip}{0pt plus 5cm}\$query}}\label{freshweight__from__standard_07obsolete_08_8php_af59a5f7cd609e592c41dc3643efd3c98}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=\textcolor{stringliteral}{'}
+\textcolor{stringliteral}{    SELECT }
+\textcolor{stringliteral}{        sample.spl\_id, sample.spl\_number, aliquot.alq\_id, aliquot.alq\_number, aliquot.alq\_value,
+       aliquot.alq\_state, location.loc\_fridge, freshweight.fw\_id}
+\textcolor{stringliteral}{    FROM }
+\textcolor{stringliteral}{        experiment\_standard, experiment\_freshweight, freshweight, freshweight\_sample, sample,
+       sample\_aliquot, aliquot, location}
+\textcolor{stringliteral}{    WHERE }
+\textcolor{stringliteral}{        experiment\_standard.exp\_std\_standard\_FK = '}.$standardID.\textcolor{stringliteral}{' AND}
+\textcolor{stringliteral}{        experiment\_freshweight.exp\_fw\_experiment\_FK = experiment\_standard.exp\_std\_experiment\_FK AND}
+\textcolor{stringliteral}{        freshweight.fw\_id = experiment\_freshweight.exp\_fw\_freshweight\_FK AND}
+\textcolor{stringliteral}{        freshweight\_sample.fw\_spl\_freshweight\_FK = freshweight.fw\_id AND}
+\textcolor{stringliteral}{        sample.spl\_id = freshweight\_sample.fw\_spl\_sample\_FK AND}
+\textcolor{stringliteral}{        sample\_aliquot.spl\_alq\_sample\_FK = sample.spl\_id AND}
+\textcolor{stringliteral}{        aliquot.alq\_id = sample\_aliquot.spl\_alq\_aliquot\_FK AND}
+\textcolor{stringliteral}{        location.loc\_id = aliquot.alq\_location\_FK}
+\textcolor{stringliteral}{    '}
+\end{DoxyCode}
+
+
+Definition at line 10 of file freshweight\-\_\-from\-\_\-standard(obsolete).\-php.
+
+\hypertarget{freshweight__from__standard_07obsolete_08_8php_ace2ec39e7df3899fa8df9640ec274b03}{\index{freshweight\-\_\-from\-\_\-standard(obsolete).\-php@{freshweight\-\_\-from\-\_\-standard(obsolete).\-php}!\$rows@{\$rows}}
+\index{\$rows@{\$rows}!freshweight_from_standard(obsolete).php@{freshweight\-\_\-from\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$rows}]{\setlength{\rightskip}{0pt plus 5cm}\$rows =\$sth-\/$>$fetch\-All()}}\label{freshweight__from__standard_07obsolete_08_8php_ace2ec39e7df3899fa8df9640ec274b03}
+
+
+Definition at line 30 of file freshweight\-\_\-from\-\_\-standard(obsolete).\-php.
+
+\hypertarget{freshweight__from__standard_07obsolete_08_8php_a0c541a369e4a0434108a7d145751bb23}{\index{freshweight\-\_\-from\-\_\-standard(obsolete).\-php@{freshweight\-\_\-from\-\_\-standard(obsolete).\-php}!\$standard\-I\-D@{\$standard\-I\-D}}
+\index{\$standard\-I\-D@{\$standard\-I\-D}!freshweight_from_standard(obsolete).php@{freshweight\-\_\-from\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$standard\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\$standard\-I\-D = \$\-\_\-\-P\-O\-S\-T\mbox{[}'standard\-I\-D'\mbox{]}}}\label{freshweight__from__standard_07obsolete_08_8php_a0c541a369e4a0434108a7d145751bb23}
+
+
+Definition at line 7 of file freshweight\-\_\-from\-\_\-standard(obsolete).\-php.
+
+\hypertarget{freshweight__from__standard_07obsolete_08_8php_afa9126f9664959c02795be300a135f93}{\index{freshweight\-\_\-from\-\_\-standard(obsolete).\-php@{freshweight\-\_\-from\-\_\-standard(obsolete).\-php}!\$sth@{\$sth}}
+\index{\$sth@{\$sth}!freshweight_from_standard(obsolete).php@{freshweight\-\_\-from\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$sth}]{\setlength{\rightskip}{0pt plus 5cm}\$sth =\$conn-\/$>$prepare(\$query)}}\label{freshweight__from__standard_07obsolete_08_8php_afa9126f9664959c02795be300a135f93}
+
+
+Definition at line 26 of file freshweight\-\_\-from\-\_\-standard(obsolete).\-php.
+

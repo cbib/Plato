@@ -1,0 +1,112 @@
+\hypertarget{get__sample__aliquot__from__one__exp_8php}{\section{php/freshweight/get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.php File Reference}
+\label{get__sample__aliquot__from__one__exp_8php}\index{php/freshweight/get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.\-php@{php/freshweight/get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{get__sample__aliquot__from__one__exp_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{get__sample__aliquot__from__one__exp_8php_ae384d32e62e85e587cd27bf249ed3db3}{\$exp\-I\-D} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'\hyperlink{admin_rawdata_8php_a888d53a6517f4272b5982c3ca9d16e8a}{exp\-I\-D}'\mbox{]}
+\item 
+\hyperlink{get__sample__aliquot__from__one__exp_8php_af59a5f7cd609e592c41dc3643efd3c98}{\$query}
+\item 
+\hyperlink{get__sample__aliquot__from__one__exp_8php_afa9126f9664959c02795be300a135f93}{\$sth} =\$conn-\/$>$prepare(\$query)
+\item 
+\hyperlink{get__sample__aliquot__from__one__exp_8php_af789423037bbc89dc7c850e761177570}{\$count} = \$sth-\/$>$row\-Count()
+\item 
+\hyperlink{get__sample__aliquot__from__one__exp_8php_ace2ec39e7df3899fa8df9640ec274b03}{\$rows} =\$sth-\/$>$fetch\-All()
+\item 
+\hyperlink{get__sample__aliquot__from__one__exp_8php_a73004ce9cd673c1bfafd1dc351134797}{\$output}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{get__sample__aliquot__from__one__exp_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.\-php@{get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!get_sample_aliquot_from_one_exp.php@{get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{get__sample__aliquot__from__one__exp_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 4 of file get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.\-php.
+
+\hypertarget{get__sample__aliquot__from__one__exp_8php_af789423037bbc89dc7c850e761177570}{\index{get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.\-php@{get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.\-php}!\$count@{\$count}}
+\index{\$count@{\$count}!get_sample_aliquot_from_one_exp.php@{get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.\-php}}
+\subsubsection[{\$count}]{\setlength{\rightskip}{0pt plus 5cm}\$count = \$sth-\/$>$row\-Count()}}\label{get__sample__aliquot__from__one__exp_8php_af789423037bbc89dc7c850e761177570}
+
+
+Definition at line 41 of file get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.\-php.
+
+\hypertarget{get__sample__aliquot__from__one__exp_8php_ae384d32e62e85e587cd27bf249ed3db3}{\index{get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.\-php@{get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.\-php}!\$exp\-I\-D@{\$exp\-I\-D}}
+\index{\$exp\-I\-D@{\$exp\-I\-D}!get_sample_aliquot_from_one_exp.php@{get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.\-php}}
+\subsubsection[{\$exp\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf exp\-I\-D} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'{\bf exp\-I\-D}'\mbox{]}}}\label{get__sample__aliquot__from__one__exp_8php_ae384d32e62e85e587cd27bf249ed3db3}
+
+
+Definition at line 6 of file get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.\-php.
+
+\hypertarget{get__sample__aliquot__from__one__exp_8php_a73004ce9cd673c1bfafd1dc351134797}{\index{get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.\-php@{get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.\-php}!\$output@{\$output}}
+\index{\$output@{\$output}!get_sample_aliquot_from_one_exp.php@{get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.\-php}}
+\subsubsection[{\$output}]{\setlength{\rightskip}{0pt plus 5cm}\$output}}\label{get__sample__aliquot__from__one__exp_8php_a73004ce9cd673c1bfafd1dc351134797}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+= array(
+        \textcolor{stringliteral}{"iTotalRecords"} => \hyperlink{get__sample__aliquot__from__one__exp_8php_af789423037bbc89dc7c850e761177570}{$count},
+        \textcolor{stringliteral}{"iTotalDisplayRecords"} => \hyperlink{get__sample__aliquot__from__one__exp_8php_af789423037bbc89dc7c850e761177570}{$count},
+        \textcolor{stringliteral}{"aaData"} => array()
+    )
+\end{DoxyCode}
+
+
+Definition at line 44 of file get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.\-php.
+
+\hypertarget{get__sample__aliquot__from__one__exp_8php_af59a5f7cd609e592c41dc3643efd3c98}{\index{get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.\-php@{get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.\-php}!\$query@{\$query}}
+\index{\$query@{\$query}!get_sample_aliquot_from_one_exp.php@{get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.\-php}}
+\subsubsection[{\$query}]{\setlength{\rightskip}{0pt plus 5cm}\$query}}\label{get__sample__aliquot__from__one__exp_8php_af59a5f7cd609e592c41dc3643efd3c98}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=\textcolor{stringliteral}{'}
+\textcolor{stringliteral}{        SELECT }
+\textcolor{stringliteral}{            sample.spl\_id, }
+\textcolor{stringliteral}{            sample.spl\_number,}
+\textcolor{stringliteral}{            aliquot.alq\_id,}
+\textcolor{stringliteral}{            aliquot.alq\_number,}
+\textcolor{stringliteral}{            aliquot.alq\_value, }
+\textcolor{stringliteral}{            location.loc\_fridge,}
+\textcolor{stringliteral}{            sample\_aliquot.spl\_alq\_state,}
+\textcolor{stringliteral}{            freshweight.fw\_id, }
+\textcolor{stringliteral}{            location.loc\_id}
+\textcolor{stringliteral}{        FROM }
+\textcolor{stringliteral}{            experiment\_freshweight, }
+\textcolor{stringliteral}{            freshweight, }
+\textcolor{stringliteral}{            freshweight\_sample, }
+\textcolor{stringliteral}{            sample, }
+\textcolor{stringliteral}{            sample\_aliquot, }
+\textcolor{stringliteral}{            aliquot, }
+\textcolor{stringliteral}{            location}
+\textcolor{stringliteral}{        WHERE }
+\textcolor{stringliteral}{            experiment\_freshweight.exp\_fw\_experiment\_FK = '}.$expID.\textcolor{stringliteral}{' AND}
+\textcolor{stringliteral}{            freshweight.fw\_id = experiment\_freshweight.exp\_fw\_freshweight\_FK AND}
+\textcolor{stringliteral}{            freshweight\_sample.fw\_spl\_freshweight\_FK = freshweight.fw\_id AND}
+\textcolor{stringliteral}{            sample.spl\_id = freshweight\_sample.fw\_spl\_sample\_FK AND}
+\textcolor{stringliteral}{            sample\_aliquot.spl\_alq\_sample\_FK = sample.spl\_id AND}
+\textcolor{stringliteral}{            aliquot.alq\_id = sample\_aliquot.spl\_alq\_aliquot\_FK AND}
+\textcolor{stringliteral}{            location.loc\_id = aliquot.alq\_location\_FK}
+\textcolor{stringliteral}{        ORDER BY sample.spl\_number;}
+\textcolor{stringliteral}{    '}
+\end{DoxyCode}
+
+
+Definition at line 8 of file get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.\-php.
+
+\hypertarget{get__sample__aliquot__from__one__exp_8php_ace2ec39e7df3899fa8df9640ec274b03}{\index{get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.\-php@{get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.\-php}!\$rows@{\$rows}}
+\index{\$rows@{\$rows}!get_sample_aliquot_from_one_exp.php@{get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.\-php}}
+\subsubsection[{\$rows}]{\setlength{\rightskip}{0pt plus 5cm}\$rows =\$sth-\/$>$fetch\-All()}}\label{get__sample__aliquot__from__one__exp_8php_ace2ec39e7df3899fa8df9640ec274b03}
+
+
+Definition at line 42 of file get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.\-php.
+
+\hypertarget{get__sample__aliquot__from__one__exp_8php_afa9126f9664959c02795be300a135f93}{\index{get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.\-php@{get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.\-php}!\$sth@{\$sth}}
+\index{\$sth@{\$sth}!get_sample_aliquot_from_one_exp.php@{get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.\-php}}
+\subsubsection[{\$sth}]{\setlength{\rightskip}{0pt plus 5cm}\$sth =\$conn-\/$>$prepare(\$query)}}\label{get__sample__aliquot__from__one__exp_8php_afa9126f9664959c02795be300a135f93}
+
+
+Definition at line 38 of file get\-\_\-sample\-\_\-aliquot\-\_\-from\-\_\-one\-\_\-exp.\-php.
+

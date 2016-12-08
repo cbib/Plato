@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="d7/d8e/insert__standard_07obsolete_08_8php" kind="file">
+    <compoundname>insert_standard(obsolete).php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="d7/d8e/insert__standard_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$conn</definition>
+        <argsstring></argsstring>
+        <name>$conn</name>
+        <initializer>= <ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/standard/obsolete files/insert_standard(obsolete).php" line="4" column="1" bodyfile="/var/www/html/plato/php/standard/obsolete files/insert_standard(obsolete).php" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d8e/insert__standard_07obsolete_08_8php_1a04bd6b914feb54eeeb053d3f690fea50" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$stdName</definition>
+        <argsstring></argsstring>
+        <name>$stdName</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/standard/obsolete files/insert_standard(obsolete).php" line="6" column="1" bodyfile="/var/www/html/plato/php/standard/obsolete files/insert_standard(obsolete).php" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d8e/insert__standard_07obsolete_08_8php_1a8964a2785066a92d7c0b11ff5a0261ea" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$stdGenius</definition>
+        <argsstring></argsstring>
+        <name>$stdGenius</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/standard/obsolete files/insert_standard(obsolete).php" line="7" column="1" bodyfile="/var/www/html/plato/php/standard/obsolete files/insert_standard(obsolete).php" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d8e/insert__standard_07obsolete_08_8php_1a1d77174f9d4320006ec140e643f95324" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$stdSpecies</definition>
+        <argsstring></argsstring>
+        <name>$stdSpecies</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/standard/obsolete files/insert_standard(obsolete).php" line="8" column="1" bodyfile="/var/www/html/plato/php/standard/obsolete files/insert_standard(obsolete).php" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d8e/insert__standard_07obsolete_08_8php_1a53b4aa93fde2c9f30c1eecf48472c395" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$stdNature</definition>
+        <argsstring></argsstring>
+        <name>$stdNature</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/standard/obsolete files/insert_standard(obsolete).php" line="9" column="1" bodyfile="/var/www/html/plato/php/standard/obsolete files/insert_standard(obsolete).php" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d8e/insert__standard_07obsolete_08_8php_1a26327dd0b8e0254d4910cf94160bb302" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$stdGenotype</definition>
+        <argsstring></argsstring>
+        <name>$stdGenotype</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/standard/obsolete files/insert_standard(obsolete).php" line="10" column="1" bodyfile="/var/www/html/plato/php/standard/obsolete files/insert_standard(obsolete).php" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d8e/insert__standard_07obsolete_08_8php_1ab6c56dc36eabf5961ac9ee1de239c3a4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$stdOwner</definition>
+        <argsstring></argsstring>
+        <name>$stdOwner</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/standard/obsolete files/insert_standard(obsolete).php" line="11" column="1" bodyfile="/var/www/html/plato/php/standard/obsolete files/insert_standard(obsolete).php" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d8e/insert__standard_07obsolete_08_8php_1a57ad1d0043a566efde8a4fb592d52b18" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$stdComment</definition>
+        <argsstring></argsstring>
+        <name>$stdComment</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/standard/obsolete files/insert_standard(obsolete).php" line="12" column="1" bodyfile="/var/www/html/plato/php/standard/obsolete files/insert_standard(obsolete).php" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d8e/insert__standard_07obsolete_08_8php_1a58391ea75f2d29d5d708d7050b641c33" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$status</definition>
+        <argsstring></argsstring>
+        <name>$status</name>
+        <initializer>=&quot;success&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/standard/obsolete files/insert_standard(obsolete).php" line="13" column="1" bodyfile="/var/www/html/plato/php/standard/obsolete files/insert_standard(obsolete).php" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d8e/insert__standard_07obsolete_08_8php_1ad275b7c787a22ccb6a1c69a37d26bc0e" prot="public" static="no" mutable="no">
+        <type>if(isset($_POST[&apos;stdName&apos;])) if(isset($_POST[&apos;stdGenius&apos;])) if(isset($_POST[&apos;stdSpecies&apos;])) if(isset($_POST[&apos;stdGenotype&apos;])) if(isset($_POST[&apos;stdNature&apos;])) if(isset($_POST[&apos;stdOwner&apos;])) if(isset($_POST[&apos;stdComment&apos;]))</type>
+        <definition>if (isset($_POST[&apos;stdName&apos;])) if (isset($_POST[&apos;stdGenius&apos;])) if (isset($_POST[&apos;stdSpecies&apos;])) if (isset($_POST[&apos;stdGenotype&apos;])) if (isset($_POST[&apos;stdNature&apos;])) if (isset($_POST[&apos;stdOwner&apos;])) if (isset($_POST[&apos;stdComment&apos;])) $query</definition>
+        <argsstring></argsstring>
+        <name>$query</name>
+        <initializer>= &quot;INSERT INTO `standard`(`std_id`, `std_name`, `std_genius`, `std_species`, `std_genotype`, `std_nature`, `std_owner`, `std_comment`) 
+		VALUES (&apos;&apos;, &apos;$stdName&apos;, &apos;$stdGenius&apos;, &apos;$stdSpecies&apos;, &apos;$stdGenotype&apos;, &apos;$stdNature&apos;, &apos;$stdOwner&apos;, &apos;$stdComment&apos;);&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/standard/obsolete files/insert_standard(obsolete).php" line="47" column="1" bodyfile="/var/www/html/plato/php/standard/obsolete files/insert_standard(obsolete).php" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d8e/insert__standard_07obsolete_08_8php_1abe4cc9788f52e49485473dc699537388" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>try</definition>
+        <argsstring></argsstring>
+        <name>try</name>
+        <initializer>{
+		$sth=$conn-&gt;prepare($query)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/standard/obsolete files/insert_standard(obsolete).php" line="49" column="1" bodyfile="/var/www/html/plato/php/standard/obsolete files/insert_standard(obsolete).php" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d7/d8e/insert__standard_07obsolete_08_8php_1a8452fb8131316637a04e25f5fde066d9" prot="public" static="no" mutable="no">
+        <type>catch(Exception $e)</type>
+        <definition>catch (Exception $e) $response_array[&apos;status&apos;]</definition>
+        <argsstring>[&apos;status&apos;]</argsstring>
+        <name>$response_array</name>
+        <initializer>=$status</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/standard/obsolete files/insert_standard(obsolete).php" line="59" column="1" bodyfile="/var/www/html/plato/php/standard/obsolete files/insert_standard(obsolete).php" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/><sp/><sp/>require(</highlight><highlight class="stringliteral">&apos;../functions/check_login.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/>include<sp/></highlight><highlight class="stringliteral">&apos;../functions/php_functions.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="4" refid="d7/d8e/insert__standard_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d8e/insert__standard_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref><sp/>=<sp/><ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>();</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="d7/d8e/insert__standard_07obsolete_08_8php_1a04bd6b914feb54eeeb053d3f690fea50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d8e/insert__standard_07obsolete_08_8php_1a04bd6b914feb54eeeb053d3f690fea50" kindref="member">$stdName</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="7" refid="d7/d8e/insert__standard_07obsolete_08_8php_1a8964a2785066a92d7c0b11ff5a0261ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d8e/insert__standard_07obsolete_08_8php_1a8964a2785066a92d7c0b11ff5a0261ea" kindref="member">$stdGenius</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="8" refid="d7/d8e/insert__standard_07obsolete_08_8php_1a1d77174f9d4320006ec140e643f95324" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d8e/insert__standard_07obsolete_08_8php_1a1d77174f9d4320006ec140e643f95324" kindref="member">$stdSpecies</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="9" refid="d7/d8e/insert__standard_07obsolete_08_8php_1a53b4aa93fde2c9f30c1eecf48472c395" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d8e/insert__standard_07obsolete_08_8php_1a53b4aa93fde2c9f30c1eecf48472c395" kindref="member">$stdNature</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="10" refid="d7/d8e/insert__standard_07obsolete_08_8php_1a26327dd0b8e0254d4910cf94160bb302" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d8e/insert__standard_07obsolete_08_8php_1a26327dd0b8e0254d4910cf94160bb302" kindref="member">$stdGenotype</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="11" refid="d7/d8e/insert__standard_07obsolete_08_8php_1ab6c56dc36eabf5961ac9ee1de239c3a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d8e/insert__standard_07obsolete_08_8php_1ab6c56dc36eabf5961ac9ee1de239c3a4" kindref="member">$stdOwner</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12" refid="d7/d8e/insert__standard_07obsolete_08_8php_1a57ad1d0043a566efde8a4fb592d52b18" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d8e/insert__standard_07obsolete_08_8php_1a57ad1d0043a566efde8a4fb592d52b18" kindref="member">$stdComment</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13" refid="d7/d8e/insert__standard_07obsolete_08_8php_1a58391ea75f2d29d5d708d7050b641c33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d8e/insert__standard_07obsolete_08_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;success&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;stdName&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d8e/insert__standard_07obsolete_08_8php_1a04bd6b914feb54eeeb053d3f690fea50" kindref="member">$stdName</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;stdName&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;stdGenius&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d8e/insert__standard_07obsolete_08_8php_1a8964a2785066a92d7c0b11ff5a0261ea" kindref="member">$stdGenius</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;stdGenius&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;stdSpecies&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d8e/insert__standard_07obsolete_08_8php_1a1d77174f9d4320006ec140e643f95324" kindref="member">$stdSpecies</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;stdSpecies&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;stdGenotype&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d8e/insert__standard_07obsolete_08_8php_1a26327dd0b8e0254d4910cf94160bb302" kindref="member">$stdGenotype</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;stdGenotype&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;stdNature&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d8e/insert__standard_07obsolete_08_8php_1a53b4aa93fde2c9f30c1eecf48472c395" kindref="member">$stdNature</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;stdNature&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;stdOwner&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d8e/insert__standard_07obsolete_08_8php_1ab6c56dc36eabf5961ac9ee1de239c3a4" kindref="member">$stdOwner</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;stdOwner&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;stdComment&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d8e/insert__standard_07obsolete_08_8php_1a57ad1d0043a566efde8a4fb592d52b18" kindref="member">$stdComment</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;stdComment&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>error_log($stdName);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>error_log($stdGenius);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>error_log($stdSpecies);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>error_log($stdNature);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>error_log($stdOwner);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>error_log($stdComment);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47" refid="d7/d8e/insert__standard_07obsolete_08_8php_1ad275b7c787a22ccb6a1c69a37d26bc0e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d7/d8e/insert__standard_07obsolete_08_8php_1ad275b7c787a22ccb6a1c69a37d26bc0e" kindref="member">$query</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;INSERT<sp/>INTO<sp/>`standard`(`std_id`,<sp/>`std_name`,<sp/>`std_genius`,<sp/>`std_species`,<sp/>`std_genotype`,<sp/>`std_nature`,<sp/>`std_owner`,<sp/>`std_comment`)<sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VALUES<sp/>(&apos;&apos;,<sp/>&apos;$stdName&apos;,<sp/>&apos;$stdGenius&apos;,<sp/>&apos;$stdSpecies&apos;,<sp/>&apos;$stdGenotype&apos;,<sp/>&apos;$stdNature&apos;,<sp/>&apos;$stdOwner&apos;,<sp/>&apos;$stdComment&apos;);&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49" refid="d7/d8e/insert__standard_07obsolete_08_8php_1abe4cc9788f52e49485473dc699537388" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1afa9126f9664959c02795be300a135f93" kindref="member">$sth</ref>=<ref refid="d7/d8e/insert__standard_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;prepare(<ref refid="d7/d8e/insert__standard_07obsolete_08_8php_1ad275b7c787a22ccb6a1c69a37d26bc0e" kindref="member">$query</ref>);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1afa9126f9664959c02795be300a135f93" kindref="member">$sth</ref><sp/>-&gt;<sp/>setFetchMode(PDO::FETCH_ASSOC);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1afa9126f9664959c02795be300a135f93" kindref="member">$sth</ref>-&gt;execute();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(<sp/>Exception<sp/>$e<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;ERRORCreate<sp/>&quot;</highlight><highlight class="normal">.$e);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d7/d8e/insert__standard_07obsolete_08_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="d7/d8e/insert__standard_07obsolete_08_8php_1a8452fb8131316637a04e25f5fde066d9" refkind="member"><highlight class="normal"><ref refid="d7/d8e/insert__standard_07obsolete_08_8php_1a8452fb8131316637a04e25f5fde066d9" kindref="member">$response_array</ref>[</highlight><highlight class="stringliteral">&apos;status&apos;</highlight><highlight class="normal">]=<ref refid="d7/d8e/insert__standard_07obsolete_08_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">echo<sp/>json_encode(<ref refid="d7/d8e/insert__standard_07obsolete_08_8php_1a8452fb8131316637a04e25f5fde066d9" kindref="member">$response_array</ref>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="/var/www/html/plato/php/standard/obsolete files/insert_standard(obsolete).php"/>
+  </compounddef>
+</doxygen>

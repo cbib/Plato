@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d8/d02/admin_rawdata_8php">
+    <title>adminRawdata.php File Reference</title>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/d02/admin_rawdata_8php_1a888d53a6517f4272b5982c3ca9d16e8a">expID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/d02/admin_rawdata_8php_1a88c5bc4262b7c34f236357f5c53fc99b">batchID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/d02/admin_rawdata_8php_1adf465cadf95987152966d26567509f92">ezID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/d02/admin_rawdata_8php_1a052a753c7ee63d24285f81cefddb7d34">ezName</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/d02/admin_rawdata_8php_1a3b7fa21c29f2265534745659558aab45">setup_experiment_datatable</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d8/d02/admin_rawdata_8php_1aea1f0a5e82147344782bec6246f26663">construct_delete_modal</link> (
+<link linkend="d8/d02/admin_rawdata_8php_1a052a753c7ee63d24285f81cefddb7d34">ezName</link> , <link linkend="d8/d02/admin_rawdata_8php_1adf465cadf95987152966d26567509f92">ezID</link> , <link linkend="d8/d02/admin_rawdata_8php_1a888d53a6517f4272b5982c3ca9d16e8a">expID</link> , <link linkend="db/d41/obsolete_2processing__bak_8php_1a88c5bc4262b7c34f236357f5c53fc99b">batchID</link> , action )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /var/www/html/plato/php/admin/adminRawdata/adminRawdata.php</para>
+    </simplesect>
+</section>

@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d49/add__new__enzyme_07obsolete_08_8php">
+    <title>add_new_enzyme(obsolete).php File Reference</title>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d49/add__new__enzyme_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877">$conn</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d49/add__new__enzyme_07obsolete_08_8php_1a57a9615262224b8dda435a084ba02406">$ezName</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d49/add__new__enzyme_07obsolete_08_8php_1a1efbb279669bdab5d5eaff4f289c71a2">$ezSlope</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d49/add__new__enzyme_07obsolete_08_8php_1a1a28f4870dd5aff7acdc3184a85a30c7">$ezCode</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d49/add__new__enzyme_07obsolete_08_8php_1aee528badcb788c913ffab530a5b876cf">$ezType</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d49/add__new__enzyme_07obsolete_08_8php_1ae824a6c0e1560b8ae6c0bdd6fd460078">$ezBool</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d49/add__new__enzyme_07obsolete_08_8php_1af59a5f7cd609e592c41dc3643efd3c98">$query</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d49/add__new__enzyme_07obsolete_08_8php_1afa9126f9664959c02795be300a135f93">$sth</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /var/www/html/plato/php/standard/obsolete files/add_new_enzyme(obsolete).php</para>
+    </simplesect>
+</section>

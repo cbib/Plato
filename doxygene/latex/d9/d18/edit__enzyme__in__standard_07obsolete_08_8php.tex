@@ -1,0 +1,105 @@
+\hypertarget{edit__enzyme__in__standard_07obsolete_08_8php}{\section{php/standard/obsolete files/edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).php File Reference}
+\label{edit__enzyme__in__standard_07obsolete_08_8php}\index{php/standard/obsolete files/edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php@{php/standard/obsolete files/edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{edit__enzyme__in__standard_07obsolete_08_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{edit__enzyme__in__standard_07obsolete_08_8php_a1a82343ffd9662108bf3501398fcd3fb}{\$std\-Ez\-I\-D} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{edit__enzyme__in__standard_07obsolete_08_8php_aa6841113bca2f461aae7a334e615c44f}{\$slope} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{edit__enzyme__in__standard_07obsolete_08_8php_af48fe050f529b6ca56356299183b7778}{\$amount} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{edit__enzyme__in__standard_07obsolete_08_8php_a0c541a369e4a0434108a7d145751bb23}{\$standard\-I\-D} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{edit__enzyme__in__standard_07obsolete_08_8php_a58391ea75f2d29d5d708d7050b641c33}{\$status} =\char`\"{}success\char`\"{}
+\item 
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'stdezid'\mbox{]})) \\*
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'amount'\mbox{]})) \hyperlink{edit__enzyme__in__standard_07obsolete_08_8php_a94335fad7539f04bfbbd01ad794fa744}{\$query} = 'U\-P\-D\-A\-T\-E `standard\-\_\-enzyme` S\-E\-T `std\-\_\-ez\-\_\-value`='.\$amount.' W\-H\-E\-R\-E `std\-\_\-ez\-\_\-id`= '.\$std\-Ez\-I\-D.';'
+\item 
+\hyperlink{edit__enzyme__in__standard_07obsolete_08_8php_abe4cc9788f52e49485473dc699537388}{try}
+\item 
+\hyperlink{edit__enzyme__in__standard_07obsolete_08_8php_a63a7a283ea5dee8af1e2d5a3435bf370}{\$req} = \$conn-\/$>$exec(\$query)
+\item 
+catch(Exception \$e) \hyperlink{edit__enzyme__in__standard_07obsolete_08_8php_a8452fb8131316637a04e25f5fde066d9}{\$response\-\_\-array} \mbox{[}'status'\mbox{]} =\$status
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{edit__enzyme__in__standard_07obsolete_08_8php_af48fe050f529b6ca56356299183b7778}{\index{edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php@{edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php}!\$amount@{\$amount}}
+\index{\$amount@{\$amount}!edit_enzyme_in_standard(obsolete).php@{edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$amount}]{\setlength{\rightskip}{0pt plus 5cm}\$amount =\char`\"{}\char`\"{}}}\label{edit__enzyme__in__standard_07obsolete_08_8php_af48fe050f529b6ca56356299183b7778}
+
+
+Definition at line 8 of file edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php.
+
+\hypertarget{edit__enzyme__in__standard_07obsolete_08_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php@{edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!edit_enzyme_in_standard(obsolete).php@{edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{edit__enzyme__in__standard_07obsolete_08_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 4 of file edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php.
+
+\hypertarget{edit__enzyme__in__standard_07obsolete_08_8php_a94335fad7539f04bfbbd01ad794fa744}{\index{edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php@{edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php}!\$query@{\$query}}
+\index{\$query@{\$query}!edit_enzyme_in_standard(obsolete).php@{edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$query}]{\setlength{\rightskip}{0pt plus 5cm}if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'stdezid'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'amount'\mbox{]})) \$query = 'U\-P\-D\-A\-T\-E `standard\-\_\-enzyme` S\-E\-T `std\-\_\-ez\-\_\-value`='.\$amount.' W\-H\-E\-R\-E `std\-\_\-ez\-\_\-id`= '.\$std\-Ez\-I\-D.';'}}\label{edit__enzyme__in__standard_07obsolete_08_8php_a94335fad7539f04bfbbd01ad794fa744}
+
+
+Definition at line 28 of file edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php.
+
+\hypertarget{edit__enzyme__in__standard_07obsolete_08_8php_a63a7a283ea5dee8af1e2d5a3435bf370}{\index{edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php@{edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php}!\$req@{\$req}}
+\index{\$req@{\$req}!edit_enzyme_in_standard(obsolete).php@{edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$req}]{\setlength{\rightskip}{0pt plus 5cm}\$req = \$conn-\/$>$exec(\$query)}}\label{edit__enzyme__in__standard_07obsolete_08_8php_a63a7a283ea5dee8af1e2d5a3435bf370}
+
+
+Definition at line 34 of file edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php.
+
+\hypertarget{edit__enzyme__in__standard_07obsolete_08_8php_a8452fb8131316637a04e25f5fde066d9}{\index{edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php@{edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php}!\$response\-\_\-array@{\$response\-\_\-array}}
+\index{\$response\-\_\-array@{\$response\-\_\-array}!edit_enzyme_in_standard(obsolete).php@{edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$response\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}catch (Exception \$e) \$response\-\_\-array\mbox{[}'status'\mbox{]} =\$status}}\label{edit__enzyme__in__standard_07obsolete_08_8php_a8452fb8131316637a04e25f5fde066d9}
+
+
+Definition at line 43 of file edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php.
+
+\hypertarget{edit__enzyme__in__standard_07obsolete_08_8php_aa6841113bca2f461aae7a334e615c44f}{\index{edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php@{edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php}!\$slope@{\$slope}}
+\index{\$slope@{\$slope}!edit_enzyme_in_standard(obsolete).php@{edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$slope}]{\setlength{\rightskip}{0pt plus 5cm}\$slope =\char`\"{}\char`\"{}}}\label{edit__enzyme__in__standard_07obsolete_08_8php_aa6841113bca2f461aae7a334e615c44f}
+
+
+Definition at line 7 of file edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php.
+
+\hypertarget{edit__enzyme__in__standard_07obsolete_08_8php_a0c541a369e4a0434108a7d145751bb23}{\index{edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php@{edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php}!\$standard\-I\-D@{\$standard\-I\-D}}
+\index{\$standard\-I\-D@{\$standard\-I\-D}!edit_enzyme_in_standard(obsolete).php@{edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$standard\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\$standard\-I\-D =\char`\"{}\char`\"{}}}\label{edit__enzyme__in__standard_07obsolete_08_8php_a0c541a369e4a0434108a7d145751bb23}
+
+
+Definition at line 9 of file edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php.
+
+\hypertarget{edit__enzyme__in__standard_07obsolete_08_8php_a58391ea75f2d29d5d708d7050b641c33}{\index{edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php@{edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php}!\$status@{\$status}}
+\index{\$status@{\$status}!edit_enzyme_in_standard(obsolete).php@{edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$status}]{\setlength{\rightskip}{0pt plus 5cm}\$status =\char`\"{}success\char`\"{}}}\label{edit__enzyme__in__standard_07obsolete_08_8php_a58391ea75f2d29d5d708d7050b641c33}
+
+
+Definition at line 10 of file edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php.
+
+\hypertarget{edit__enzyme__in__standard_07obsolete_08_8php_a1a82343ffd9662108bf3501398fcd3fb}{\index{edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php@{edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php}!\$std\-Ez\-I\-D@{\$std\-Ez\-I\-D}}
+\index{\$std\-Ez\-I\-D@{\$std\-Ez\-I\-D}!edit_enzyme_in_standard(obsolete).php@{edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$std\-Ez\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\$std\-Ez\-I\-D =\char`\"{}\char`\"{}}}\label{edit__enzyme__in__standard_07obsolete_08_8php_a1a82343ffd9662108bf3501398fcd3fb}
+
+
+Definition at line 6 of file edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php.
+
+\hypertarget{edit__enzyme__in__standard_07obsolete_08_8php_abe4cc9788f52e49485473dc699537388}{\index{edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php@{edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php}!try@{try}}
+\index{try@{try}!edit_enzyme_in_standard(obsolete).php@{edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php}}
+\subsubsection[{try}]{\setlength{\rightskip}{0pt plus 5cm}try}}\label{edit__enzyme__in__standard_07obsolete_08_8php_abe4cc9788f52e49485473dc699537388}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+\{
+        \hyperlink{edit__enzyme__in__standard_07obsolete_08_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{$conn}->beginTransaction()
+\end{DoxyCode}
+
+
+Definition at line 32 of file edit\-\_\-enzyme\-\_\-in\-\_\-standard(obsolete).\-php.
+

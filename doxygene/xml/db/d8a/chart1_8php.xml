@@ -1,0 +1,558 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="db/d8a/chart1_8php" kind="file">
+    <compoundname>chart1.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="db/d8a/chart1_8php_1aa6d173daeb1f78a82e89d75a4e948f24" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref></type>
+        <definition>title __pad0__</definition>
+        <argsstring></argsstring>
+        <name>__pad0__</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/charts/chart1.php" line="69" column="1" bodyfile="/var/www/html/plato/php/charts/chart1.php" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d8a/chart1_8php_1a85ea519cf3eb0270da0091d07e8ee727" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref></type>
+        <definition>title xAxis</definition>
+        <argsstring></argsstring>
+        <name>xAxis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/charts/chart1.php" line="72" column="1" bodyfile="/var/www/html/plato/php/charts/chart1.php" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d8a/chart1_8php_1aa76eb72ed8894c2f5448631b03964879" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref></type>
+        <definition>title sans serif Use of analytes sans serif solidgauge Free space in database labels</definition>
+        <argsstring></argsstring>
+        <name>labels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/charts/chart1.php" line="74" column="1" bodyfile="/var/www/html/plato/php/charts/chart1.php" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d8a/chart1_8php_1a1659ed273dcf8f4bf89ff39127637cd1" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref></type>
+        <definition>title sans serif Use of analytes style</definition>
+        <argsstring></argsstring>
+        <name>style</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/charts/chart1.php" line="76" column="1" bodyfile="/var/www/html/plato/php/charts/chart1.php" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d8a/chart1_8php_1a61b4126a795dc35aff6108a017a6c950" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref></type>
+        <definition>title sans serif Use of analytes fontFamily</definition>
+        <argsstring></argsstring>
+        <name>fontFamily</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/charts/chart1.php" line="78" column="1" bodyfile="/var/www/html/plato/php/charts/chart1.php" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d8a/chart1_8php_1a8257e1ad81b4a9ebf5a380357ca8aa0d" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref> sans serif Use of analytes</type>
+        <definition>title sans serif Use of analytes Used</definition>
+        <argsstring></argsstring>
+        <name>Used</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/charts/chart1.php" line="92" column="1" bodyfile="/var/www/html/plato/php/charts/chart1.php" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d8a/chart1_8php_1aba4b72d8f1b3e6b391ab41ca542f005a" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref> sans serif Use of analytes</type>
+        <definition>title sans serif Use of analytes series</definition>
+        <argsstring></argsstring>
+        <name>series</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/charts/chart1.php" line="94" column="1" bodyfile="/var/www/html/plato/php/charts/chart1.php" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d8a/chart1_8php_1ab3ed669f4b3fdb8c88f3a190fb907de0" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref> sans serif Use of analytes</type>
+        <definition>title sans serif Use of analytes data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/charts/chart1.php" line="96" column="1" bodyfile="/var/www/html/plato/php/charts/chart1.php" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d8a/chart1_8php_1a6cc4de94e7120b93b61ba6c324467460" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref> sans serif Use of analytes</type>
+        <definition>title sans serif Use of analytes dataLabels</definition>
+        <argsstring></argsstring>
+        <name>dataLabels</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/charts/chart1.php" line="97" column="1" bodyfile="/var/www/html/plato/php/charts/chart1.php" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d8a/chart1_8php_1a389898f41b29820945784f375c8fca58" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref> sans serif Use of analytes</type>
+        <definition>title sans serif Use of analytes rotation</definition>
+        <argsstring></argsstring>
+        <name>rotation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/charts/chart1.php" line="99" column="1" bodyfile="/var/www/html/plato/php/charts/chart1.php" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d8a/chart1_8php_1ae68251bab2d16bd206603de96a155284" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref> sans serif Use of analytes</type>
+        <definition>title sans serif Use of analytes color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/charts/chart1.php" line="100" column="1" bodyfile="/var/www/html/plato/php/charts/chart1.php" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d8a/chart1_8php_1a245d529baa23709e9ec659eb954ac212" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref> sans serif Use of analytes</type>
+        <definition>title sans serif Use of analytes align</definition>
+        <argsstring></argsstring>
+        <name>align</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/charts/chart1.php" line="101" column="1" bodyfile="/var/www/html/plato/php/charts/chart1.php" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d8a/chart1_8php_1a8dc92044d4a2908bbcf6bab430b0fcad" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref> sans serif Use of analytes</type>
+        <definition>title sans serif Use of analytes format</definition>
+        <argsstring></argsstring>
+        <name>format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/charts/chart1.php" line="102" column="1" bodyfile="/var/www/html/plato/php/charts/chart1.php" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d8a/chart1_8php_1a4e10c31b21f9f97e6e64112e5987bd13" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref> sans serif Use of analytes</type>
+        <definition>title sans serif Use of analytes y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/charts/chart1.php" line="103" column="1" bodyfile="/var/www/html/plato/php/charts/chart1.php" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d8a/chart1_8php_1a89f0143e254bf461b321ee5b6b1fa90b" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref> sans serif Use of analytes sans serif solidgauge Free space in database</type>
+        <definition>title sans serif Use of analytes sans serif solidgauge Free space in database innerRadius</definition>
+        <argsstring></argsstring>
+        <name>innerRadius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/charts/chart1.php" line="134" column="1" bodyfile="/var/www/html/plato/php/charts/chart1.php" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d8a/chart1_8php_1a41f34ec2811d09db7935316f9e4a98d6" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref> sans serif Use of analytes sans serif solidgauge Free space in database</type>
+        <definition>title sans serif Use of analytes sans serif solidgauge Free space in database outerRadius</definition>
+        <argsstring></argsstring>
+        <name>outerRadius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/charts/chart1.php" line="135" column="1" bodyfile="/var/www/html/plato/php/charts/chart1.php" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d8a/chart1_8php_1ae7c4d90f4cb1daf8fe98b42979422af5" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref> sans serif Use of analytes sans serif solidgauge Free space in database</type>
+        <definition>title sans serif Use of analytes sans serif solidgauge Free space in database shape</definition>
+        <argsstring></argsstring>
+        <name>shape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/charts/chart1.php" line="136" column="1" bodyfile="/var/www/html/plato/php/charts/chart1.php" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d8a/chart1_8php_1a2a928e2db41e6fb13386253c6f1d1d3c" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref> sans serif Use of analytes sans serif solidgauge Free space in database</type>
+        <definition>title sans serif Use of analytes sans serif solidgauge Free space in database tooltip</definition>
+        <argsstring></argsstring>
+        <name>tooltip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/charts/chart1.php" line="140" column="1" bodyfile="/var/www/html/plato/php/charts/chart1.php" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d8a/chart1_8php_1a904b354726e35f255d93b70b37987c76" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref> sans serif Use of analytes sans serif solidgauge Free space in database</type>
+        <definition>title sans serif Use of analytes sans serif solidgauge Free space in database yAxis</definition>
+        <argsstring></argsstring>
+        <name>yAxis</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/charts/chart1.php" line="143" column="1" bodyfile="/var/www/html/plato/php/charts/chart1.php" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d8a/chart1_8php_1aca8aa21682b9d221fad19341399677d3" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref> sans serif Use of analytes sans serif solidgauge Free space in database</type>
+        <definition>title sans serif Use of analytes sans serif solidgauge Free space in database lineWidth</definition>
+        <argsstring></argsstring>
+        <name>lineWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/charts/chart1.php" line="149" column="1" bodyfile="/var/www/html/plato/php/charts/chart1.php" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d8a/chart1_8php_1a9ffce19cd915b312ed0f797751927ae6" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref> sans serif Use of analytes sans serif solidgauge Free space in database</type>
+        <definition>title sans serif Use of analytes sans serif solidgauge Free space in database minorTickInterval</definition>
+        <argsstring></argsstring>
+        <name>minorTickInterval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/charts/chart1.php" line="150" column="1" bodyfile="/var/www/html/plato/php/charts/chart1.php" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d8a/chart1_8php_1a024b1caef992f256398e4b6cc5b5d8ae" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref> sans serif Use of analytes sans serif solidgauge Free space in database</type>
+        <definition>title sans serif Use of analytes sans serif solidgauge Free space in database tickPixelInterval</definition>
+        <argsstring></argsstring>
+        <name>tickPixelInterval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/charts/chart1.php" line="151" column="1" bodyfile="/var/www/html/plato/php/charts/chart1.php" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d8a/chart1_8php_1a7888761877a53c44c36fba3a36a0386c" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref> sans serif Use of analytes sans serif solidgauge Free space in database</type>
+        <definition>title sans serif Use of analytes sans serif solidgauge Free space in database tickWidth</definition>
+        <argsstring></argsstring>
+        <name>tickWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/charts/chart1.php" line="152" column="1" bodyfile="/var/www/html/plato/php/charts/chart1.php" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" prot="public" static="no" mutable="no">
+        <type>title sans serif Use of analytes sans serif solidgauge Free space in database</type>
+        <definition>title sans serif Use of analytes sans serif solidgauge Free space in database title</definition>
+        <argsstring></argsstring>
+        <name>title</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/charts/chart1.php" line="153" column="1" bodyfile="/var/www/html/plato/php/charts/chart1.php" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d8a/chart1_8php_1ad1521bbfde0c907436d0e34e1deecca2" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref> sans serif Use of analytes sans serif solidgauge Free space in database</type>
+        <definition>title sans serif Use of analytes sans serif solidgauge Free space in database plotOptions</definition>
+        <argsstring></argsstring>
+        <name>plotOptions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/charts/chart1.php" line="161" column="1" bodyfile="/var/www/html/plato/php/charts/chart1.php" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d8a/chart1_8php_1a5abb4048aa2be521da8031dbab475850" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref> sans serif Use of analytes sans serif solidgauge Free space in database</type>
+        <definition>title sans serif Use of analytes sans serif solidgauge Free space in database borderWidth</definition>
+        <argsstring></argsstring>
+        <name>borderWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/charts/chart1.php" line="165" column="1" bodyfile="/var/www/html/plato/php/charts/chart1.php" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d8a/chart1_8php_1af4a7422c75cb1e9ea64434c72d9ad6cb" prot="public" static="no" mutable="no">
+        <type><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref> sans serif Use of analytes sans serif solidgauge Free space in database</type>
+        <definition>title sans serif Use of analytes sans serif solidgauge Free space in database useHTML</definition>
+        <argsstring></argsstring>
+        <name>useHTML</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/charts/chart1.php" line="166" column="1" bodyfile="/var/www/html/plato/php/charts/chart1.php" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">require(</highlight><highlight class="stringliteral">&apos;../functions/check_login.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="3"><highlight class="normal">include<sp/></highlight><highlight class="stringliteral">&apos;../functions/html_functions.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">include<sp/></highlight><highlight class="stringliteral">&apos;../functions/php_functions.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><ref refid="dc/dc2/html__functions_8php_1a646d06793a3d478095bb971aa37927f1" kindref="member">html_header</ref>(</highlight><highlight class="stringliteral">&quot;../../&quot;</highlight><highlight class="normal">,<sp/><sp/>$_SESSION[</highlight><highlight class="stringliteral">&apos;login&apos;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><ref refid="dc/dc2/html__functions_8php_1a9c419a7dadfba24c60e7b0d928686111" kindref="member">generic_html_top_page</ref>(</highlight><highlight class="stringliteral">&quot;../../&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;Charts&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">echo</highlight><highlight class="stringliteral">&apos;<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="stringliteral">&lt;div<sp/>class=&quot;row&quot;&gt;</highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"><sp/><sp/>&lt;div<sp/>class=&quot;col-md-12<sp/>col-lg-12<sp/>col-xl-12&quot;<sp/>id=&quot;analytesUse&quot;&gt;&lt;/div&gt;</highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral">&lt;/div&gt;</highlight></codeline>
+<codeline lineno="14"><highlight class="stringliteral">&lt;hr/&gt;</highlight></codeline>
+<codeline lineno="15"><highlight class="stringliteral">&lt;div<sp/>class=&quot;row&quot;&gt;</highlight></codeline>
+<codeline lineno="16"><highlight class="stringliteral"><sp/><sp/>&lt;div<sp/>class=&quot;col-md-12<sp/>col-lg-12<sp/>col-xl-12&quot;<sp/>id=&quot;sizeOfDatabase&quot;&gt;&lt;/div&gt;</highlight></codeline>
+<codeline lineno="17"><highlight class="stringliteral">&lt;/div&gt;</highlight></codeline>
+<codeline lineno="18"><highlight class="stringliteral">&lt;hr/&gt;</highlight></codeline>
+<codeline lineno="19"><highlight class="stringliteral">&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><ref refid="dc/dc2/html__functions_8php_1a85d7e13b241a01dc5832cd64db3e3070" kindref="member">html_footer</ref>(</highlight><highlight class="stringliteral">&quot;../../&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">?&gt;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">&lt;script<sp/>type=</highlight><highlight class="stringliteral">&quot;text/javascript&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal">=</highlight><highlight class="stringliteral">&quot;init&quot;</highlight><highlight class="normal">&gt;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">$(document).ready(</highlight><highlight class="keyword">function</highlight><highlight class="normal">()<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>$.ajax({</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>url:<sp/></highlight><highlight class="stringliteral">&apos;charts_functions.php&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>type:<sp/></highlight><highlight class="stringliteral">&apos;GET&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>async:<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dataType:<sp/></highlight><highlight class="stringliteral">&quot;json&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1ab3ed669f4b3fdb8c88f3a190fb907de0" kindref="member">data</ref>:<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fonction:</highlight><highlight class="stringliteral">&apos;sizeOfDb&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>success:<sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/>(dataSize)<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>console.log(dataSize);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printSize(parseInt(dataSize[</highlight><highlight class="stringliteral">&quot;plato_export_02052016&quot;</highlight><highlight class="normal">]));</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>$.ajax({</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>url:<sp/></highlight><highlight class="stringliteral">&apos;charts_functions.php&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>type:<sp/></highlight><highlight class="stringliteral">&apos;GET&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>async:<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>dataType:<sp/></highlight><highlight class="stringliteral">&quot;json&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1ab3ed669f4b3fdb8c88f3a190fb907de0" kindref="member">data</ref>:<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fonction:</highlight><highlight class="stringliteral">&apos;analyte_distribution&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>success:<sp/></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/>(<ref refid="db/d8a/chart1_8php_1ab3ed669f4b3fdb8c88f3a190fb907de0" kindref="member">data</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>console.log(data);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printAnalyteDistrib(<ref refid="db/d8a/chart1_8php_1ab3ed669f4b3fdb8c88f3a190fb907de0" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">});</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="keyword">function</highlight><highlight class="normal"><sp/>printAnalyteDistrib(<ref refid="db/d8a/chart1_8php_1ab3ed669f4b3fdb8c88f3a190fb907de0" kindref="member">data</ref>){</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>console.log(data);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&apos;#analytesUse&apos;</highlight><highlight class="normal">).highcharts({</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>chart:<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>type:<sp/></highlight><highlight class="stringliteral">&apos;column&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>zoomType:<sp/></highlight><highlight class="charliteral">&apos;x&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="db/d8a/chart1_8php_1a904b354726e35f255d93b70b37987c76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref>:<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text:<sp/></highlight><highlight class="stringliteral">&apos;How<sp/>often<sp/>Analytes<sp/>are<sp/>used&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a85ea519cf3eb0270da0091d07e8ee727" kindref="member">xAxis</ref>:<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>type:<sp/></highlight><highlight class="stringliteral">&apos;category&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1aa76eb72ed8894c2f5448631b03964879" kindref="member">labels</ref>:<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a389898f41b29820945784f375c8fca58" kindref="member">rotation</ref>:<sp/>-60,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a1659ed273dcf8f4bf89ff39127637cd1" kindref="member">style</ref>:<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fontSize:<sp/></highlight><highlight class="stringliteral">&apos;11px&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a61b4126a795dc35aff6108a017a6c950" kindref="member">fontFamily</ref>:<sp/></highlight><highlight class="stringliteral">&apos;Verdana,<sp/>sans-serif&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a904b354726e35f255d93b70b37987c76" kindref="member">yAxis</ref>:<sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>min:<sp/>0,</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref>:<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text:<sp/></highlight><highlight class="stringliteral">&apos;Use<sp/>of<sp/>analytes&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>legend:<sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>enabled:<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a2a928e2db41e6fb13386253c6f1d1d3c" kindref="member">tooltip</ref>:<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pointFormat:<sp/></highlight><highlight class="stringliteral">&apos;Used:<sp/>&lt;b&gt;{point.y}<sp/>times&lt;/b&gt;&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1aba4b72d8f1b3e6b391ab41ca542f005a" kindref="member">series</ref>:<sp/>[{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name:<sp/></highlight><highlight class="stringliteral">&apos;Number&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1ab3ed669f4b3fdb8c88f3a190fb907de0" kindref="member">data</ref>:<sp/><ref refid="db/d8a/chart1_8php_1ab3ed669f4b3fdb8c88f3a190fb907de0" kindref="member">data</ref>,</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a6cc4de94e7120b93b61ba6c324467460" kindref="member">dataLabels</ref>:<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>enabled:<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a389898f41b29820945784f375c8fca58" kindref="member">rotation</ref>:<sp/>-90,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1ae68251bab2d16bd206603de96a155284" kindref="member">color</ref>:<sp/></highlight><highlight class="stringliteral">&apos;#FFFFFF&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a245d529baa23709e9ec659eb954ac212" kindref="member">align</ref>:<sp/></highlight><highlight class="stringliteral">&apos;right&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a8dc92044d4a2908bbcf6bab430b0fcad" kindref="member">format</ref>:<sp/></highlight><highlight class="stringliteral">&apos;{point.y}&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="comment">//<sp/>one<sp/>decimal</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a4e10c31b21f9f97e6e64112e5987bd13" kindref="member">y</ref>:<sp/>9,<sp/></highlight><highlight class="comment">//<sp/>10<sp/>pixels<sp/>down<sp/>from<sp/>the<sp/>top</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a1659ed273dcf8f4bf89ff39127637cd1" kindref="member">style</ref>:<sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fontSize:<sp/></highlight><highlight class="stringliteral">&apos;10px&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a61b4126a795dc35aff6108a017a6c950" kindref="member">fontFamily</ref>:<sp/></highlight><highlight class="stringliteral">&apos;Verdana,<sp/>sans-serif&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}]</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="keyword">function</highlight><highlight class="normal"><sp/>printSize(dataSize)<sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>console.log(dataSize);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>var<sp/>gaugeOptions<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>chart:<sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>type:<sp/></highlight><highlight class="stringliteral">&apos;solidgauge&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref><sp/>:<sp/></highlight><highlight class="stringliteral">&apos;Free<sp/>space<sp/>in<sp/>database&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pane:<sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>center:<sp/>[</highlight><highlight class="stringliteral">&apos;50%&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;85%&apos;</highlight><highlight class="normal">],</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size:<sp/></highlight><highlight class="stringliteral">&apos;140%&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>startAngle:<sp/>-90,</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>endAngle:<sp/>90,</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>background:<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>backgroundColor:<sp/>(Highcharts.theme<sp/>&amp;&amp;<sp/>Highcharts.theme.background2)<sp/>||<sp/></highlight><highlight class="stringliteral">&apos;#EEE&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a89f0143e254bf461b321ee5b6b1fa90b" kindref="member">innerRadius</ref>:<sp/></highlight><highlight class="stringliteral">&apos;60%&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a41f34ec2811d09db7935316f9e4a98d6" kindref="member">outerRadius</ref>:<sp/></highlight><highlight class="stringliteral">&apos;100%&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1ae7c4d90f4cb1daf8fe98b42979422af5" kindref="member">shape</ref>:<sp/></highlight><highlight class="stringliteral">&apos;arc&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a2a928e2db41e6fb13386253c6f1d1d3c" kindref="member">tooltip</ref>:<sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>enabled:<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a904b354726e35f255d93b70b37987c76" kindref="member">yAxis</ref>:<sp/>{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stops:<sp/>[</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[0.1,<sp/></highlight><highlight class="stringliteral">&apos;#55BF3B&apos;</highlight><highlight class="normal">],<sp/></highlight><highlight class="comment">//<sp/>green</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[0.5,<sp/></highlight><highlight class="stringliteral">&apos;#DDDF0D&apos;</highlight><highlight class="normal">],<sp/></highlight><highlight class="comment">//<sp/>yellow</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[0.9,<sp/></highlight><highlight class="stringliteral">&apos;#DF5353&apos;</highlight><highlight class="normal">]<sp/></highlight><highlight class="comment">//<sp/>red</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>],</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1aca8aa21682b9d221fad19341399677d3" kindref="member">lineWidth</ref>:<sp/>0,</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a9ffce19cd915b312ed0f797751927ae6" kindref="member">minorTickInterval</ref>:<sp/>null,</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a024b1caef992f256398e4b6cc5b5d8ae" kindref="member">tickPixelInterval</ref>:<sp/>400,</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a7888761877a53c44c36fba3a36a0386c" kindref="member">tickWidth</ref>:<sp/>0,</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref>:<sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a4e10c31b21f9f97e6e64112e5987bd13" kindref="member">y</ref>:<sp/>-70</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1aa76eb72ed8894c2f5448631b03964879" kindref="member">labels</ref>:<sp/>{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a4e10c31b21f9f97e6e64112e5987bd13" kindref="member">y</ref>:<sp/>16</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1ad1521bbfde0c907436d0e34e1deecca2" kindref="member">plotOptions</ref>:<sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>solidgauge:<sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a6cc4de94e7120b93b61ba6c324467460" kindref="member">dataLabels</ref>:<sp/>{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a4e10c31b21f9f97e6e64112e5987bd13" kindref="member">y</ref>:<sp/>5,</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a5abb4048aa2be521da8031dbab475850" kindref="member">borderWidth</ref>:<sp/>0,</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1af4a7422c75cb1e9ea64434c72d9ad6cb" kindref="member">useHTML</ref>:<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>speed<sp/>gauge</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>$(</highlight><highlight class="stringliteral">&apos;#sizeOfDatabase&apos;</highlight><highlight class="normal">).highcharts(Highcharts.merge(gaugeOptions,<sp/>{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a904b354726e35f255d93b70b37987c76" kindref="member">yAxis</ref>:<sp/>{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>min:<sp/>0,</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max:<sp/>20000,</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a256dc75681c13d8a64135187612ba0ee" kindref="member">title</ref>:<sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>text:<sp/></highlight><highlight class="stringliteral">&apos;Space<sp/>used&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>credits:<sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>enabled:<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1aba4b72d8f1b3e6b391ab41ca542f005a" kindref="member">series</ref>:<sp/>[{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name:<sp/></highlight><highlight class="stringliteral">&apos;Space&apos;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1ab3ed669f4b3fdb8c88f3a190fb907de0" kindref="member">data</ref>:<sp/>[dataSize],</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a6cc4de94e7120b93b61ba6c324467460" kindref="member">dataLabels</ref>:<sp/>{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a8dc92044d4a2908bbcf6bab430b0fcad" kindref="member">format</ref>:<sp/></highlight><highlight class="stringliteral">&apos;&lt;div<sp/>style=&quot;text-align:center&quot;&gt;&lt;span<sp/>style=&quot;font-size:25px;color:&apos;</highlight><highlight class="normal"><sp/>+</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((Highcharts.theme<sp/>&amp;&amp;<sp/>Highcharts.theme.contrastTextColor)<sp/>||<sp/></highlight><highlight class="stringliteral">&apos;black&apos;</highlight><highlight class="normal">)<sp/>+<sp/></highlight><highlight class="stringliteral">&apos;&quot;&gt;{y}&lt;/span&gt;&lt;br/&gt;&apos;</highlight><highlight class="normal"><sp/>+</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;&lt;span<sp/>style=&quot;font-size:12px;color:silver&quot;&gt;Mb<sp/>used<sp/>over<sp/>20Gb&lt;/span&gt;&lt;/div&gt;&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>},</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="db/d8a/chart1_8php_1a2a928e2db41e6fb13386253c6f1d1d3c" kindref="member">tooltip</ref>:<sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>valueSuffix:<sp/></highlight><highlight class="stringliteral">&apos;<sp/>Mb&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}]</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>}));</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal">&lt;/script&gt;</highlight></codeline>
+    </programlisting>
+    <location file="/var/www/html/plato/php/charts/chart1.php"/>
+  </compounddef>
+</doxygen>

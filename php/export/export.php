@@ -289,8 +289,8 @@ function setup_experiment_datatable(){
  * Get all data for an experiment and make arrays for datatables
  *
  * @method     generate_data
- * @param      {Int}  expID    { ID de l'experiment }
- * @param      {String}  expName  { Nom de l'experiment }
+ * @param      {Int}  expID    { ID of the experiment }
+ * @param      {String}  expName  { Name of the experiment }
  */
 function generate_data(expID, expName){
 	$.ajax({
@@ -356,7 +356,7 @@ function generate_data(expID, expName){
  * Resete a datatable
  *
  * @method     clearTable
- * @param      {string}  tableID  { description }
+ * @param      {string}  tableID  { id of the table to clear }
  */
 function clearTable(tableID){
 	$(tableID).remove();
@@ -367,8 +367,8 @@ function clearTable(tableID){
  * Make a datatables from previously prepared data (in generate_data)
  *
  * @method     setup_rawtable_datatable
- * @param      {<type>}  colDef   { description }
- * @param      {<type>}  dataset  { description }
+ * @param      {<type>}  colDef   { colone names for datatable construction }
+ * @param      {<type>}  dataset  { data to print in the datatable }
  */
 function setup_rawtable_datatable(colDef, dataset){
 	$('#RawTable').DataTable({
@@ -395,7 +395,7 @@ function setup_rawtable_datatable(colDef, dataset){
  * Display the number of standard used / number of standards
  *
  * @method     standardsUsed
- * @param      {<type>}  tableID  { description }
+ * @param      {<type>}  tableID  { useless }
  */
 function standardsUsed(tableID){
 	var hashStdUsed = {};
@@ -490,7 +490,7 @@ function standardsUsed(tableID){
  * Print the number of user standard and CV
  *
  * @method     printStdUsed
- * @param      {number}  map     { description }
+ * @param      {number}  map     { map of the table of the select experiment }
  */
 function printStdUsed(map){
 	var colDef = [];
@@ -500,7 +500,7 @@ function printStdUsed(map){
 		objet.title=map[0][j];
 		colDef.push(objet);
 	}
-	for(var i=1;i<map.length-1; i++){
+	for(var i=1;i<map.length; i++){
 		if((typeof map[i] != 'undefined') || (map[i] != undefined) || (map[i] !="")) {
 			jsonDataMap.push(map[i]);
 		}
@@ -619,7 +619,7 @@ function interBatchCentering(tableID){
  * Calculs pour le merge des aliquots
  *
  * @method     aliquotMerge
- * @param      {<type>}  expName  { description }
+ * @param      {<type>}  expName  { name of the experiment }
  */
 function aliquotMerge(expName){
 //	console.log("jsonData");
@@ -679,7 +679,7 @@ function aliquotMerge(expName){
  * Affichage du merge des aliquots
  *
  * @method     printAliquotMerge
- * @param      {number}  map      { description }
+ * @param      {number}  map      { map of the raw data table for an experiment }
  * @param      {<type>}  expName  { description }
  */
 function printAliquotMerge(map, expName){
@@ -714,8 +714,8 @@ function printAliquotMerge(map, expName){
  * chomp a string
  *
  * @method     chomp
- * @param      {string}  raw_text  { description }
- * @return     {string}  { description_of_the_return_value }
+ * @param      {string}  raw_text  { text to chomp }
+ * @return     {string}  { texte trimed from end of line win or unix }
  */
 function chomp(raw_text){
 	return raw_text.replace(/(\n|\r)+$/, '');
@@ -758,15 +758,38 @@ function hideWaitModal(){
 
 
 /******* FUNCTIONS FOR STD ERROR CALCULS (see processing)*/
+/**
+ * check if the object is an array
+ *
+ * @method     isArray
+ * @param      {<type>}  obj     { array to check }
+ * @return     {<type>}  { return true if the object is type array, else fals }
+ */
 function isArray (obj) {
 	return Object.prototype.toString.call(obj) === "[object Array]";
 }
 
+/**
+ * set a number of decimal for a number
+ *
+ * @method     getNumWithSetDec
+ * @param      {number}  num       { number to trunk }
+ * @param      {<type>}  numOfDec  { number of decimal wanted }
+ * @return     {<type>}  { Number rounded }
+ */
 function getNumWithSetDec ( num, numOfDec ){
 	var pow10s = Math.pow( 10, numOfDec || 0 );
 	return ( numOfDec ) ? Math.round( pow10s * num ) / pow10s : num;
 }
 
+/**
+ * Get the average of an array
+ *
+ * @method     getAverageFromNumArr
+ * @param      {number}   numArr    { description }
+ * @param      {<type>}   numOfDec  { description }
+ * @return     {boolean}  { description_of_the_return_value }
+ */
 function getAverageFromNumArr ( numArr, numOfDec ){
 	if( !isArray( numArr ) ){ return false;	}
 	var i = numArr.length, 
@@ -777,6 +800,14 @@ function getAverageFromNumArr ( numArr, numOfDec ){
 	return getNumWithSetDec( (sum / numArr.length ), numOfDec );
 }
 
+/**
+ * Get the variance of an array
+ *
+ * @method     getVariance
+ * @param      {number}            numArr    { description }
+ * @param      {<type>}            numOfDec  { description }
+ * @return     {(boolean|number)}  { description_of_the_return_value }
+ */
 function getVariance ( numArr, numOfDec ){
 	if( !isArray(numArr) ){ return false; }
 	var avg = getAverageFromNumArr( numArr, numOfDec ), 
@@ -789,12 +820,28 @@ function getVariance ( numArr, numOfDec ){
 	return v;
 }
 
+/**
+ * get the standard deviation
+ *
+ * @method     getStandardDeviation
+ * @param      {<type>}   numArr    { description }
+ * @param      {<type>}   numOfDec  { description }
+ * @return     {boolean}  { description_of_the_return_value }
+ */
 function getStandardDeviation( numArr, numOfDec ){
 	if( !isArray(numArr) ){ return false; }
 	var stdDev = Math.sqrt( getVariance( numArr, numOfDec ) );
 	return getNumWithSetDec( stdDev, numOfDec );
 }
 
+/**
+ * Get the error standard
+ *
+ * @method     getError
+ * @param      {<type>}   numArr    { description }
+ * @param      {<type>}   numOfDec  { description }
+ * @return     {boolean}  { description_of_the_return_value }
+ */
 function getError(numArr, numOfDec){
 	// console.log("numArr");
 	// console.log(numArr);

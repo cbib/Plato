@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dc/dc2/html__functions_8php">
+    <title>html_functions.php File Reference</title>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/dc2/html__functions_8php_1a646d06793a3d478095bb971aa37927f1">html_header</link> (
+ $path,  $userLevel)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/dc2/html__functions_8php_1a38bc7cc70b85339d131511e477964121">index_html_top_page</link> (
+ $pagename)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/dc2/html__functions_8php_1ad3d246d202506213fa6cbaad654a0a6d">editable_html_top_page</link> (
+ $path,  $pagename)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/dc2/html__functions_8php_1a9c419a7dadfba24c60e7b0d928686111">generic_html_top_page</link> (
+ $path,  $pagename)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="dc/dc2/html__functions_8php_1a85d7e13b241a01dc5832cd64db3e3070">html_footer</link> (
+ $path)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /var/www/html/plato/php/functions/html_functions.php</para>
+    </simplesect>
+</section>

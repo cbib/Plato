@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/da4/processing__bak_8php">
+    <title>processing_bak.php File Reference</title>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/da4/processing__bak_8php_1aa7b648ce9374344019d30469fd37c30e">currentEzID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>window <link linkend="d7/da4/processing__bak_8php_1a12dd03abd8fa9daa2fe8eaeb9c9682c3">onbeforeunload</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/da4/processing__bak_8php_1a842e4774e3b3601a005b995c02f7e883">update</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/da4/processing__bak_8php_1a89da1e95057c1fbc88b341bca8f9e045">dataInsert</link> (
+tableID , <link linkend="d8/d02/admin_rawdata_8php_1a888d53a6517f4272b5982c3ca9d16e8a">expID</link> , <link linkend="db/d41/obsolete_2processing__bak_8php_1a88c5bc4262b7c34f236357f5c53fc99b">batchID</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/da4/processing__bak_8php_1afb304d762110b44295d7a6276258371e">tableToArray2D</link> (
+tableID )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/da4/processing__bak_8php_1aa5611b9056cce4a61fe798b64bed77a8">makeMap</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/da4/processing__bak_8php_1a47de9698475b6df6d67de31018af835e">processMetabolites</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/da4/processing__bak_8php_1a7d55c50976945779a4db3f8fa38c1a83">processEnzyme</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/da4/processing__bak_8php_1a0ad1822364312d61095a470b8ca3639b">displayData</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/da4/processing__bak_8php_1a1712a87d461ae7a47d0e803ac67965ce">launchProcessing</link> (
+layout )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /var/www/html/plato/php/processing/processing_bak.php</para>
+    </simplesect>
+</section>

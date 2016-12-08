@@ -1,0 +1,135 @@
+\hypertarget{save__edit__remake_07obsolete_08_8php}{\section{php/processing/obsolete/save\-\_\-edit\-\_\-remake(obsolete).php File Reference}
+\label{save__edit__remake_07obsolete_08_8php}\index{php/processing/obsolete/save\-\_\-edit\-\_\-remake(obsolete).\-php@{php/processing/obsolete/save\-\_\-edit\-\_\-remake(obsolete).\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{save__edit__remake_07obsolete_08_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{save__edit__remake_07obsolete_08_8php_a58391ea75f2d29d5d708d7050b641c33}{\$status} =\char`\"{}success\char`\"{}
+\item 
+\hyperlink{save__edit__remake_07obsolete_08_8php_a538eaf07e91a8c4f140bc04fa2b899cf}{\$bool\-Succes} =\hyperlink{obsolete_2processing__bak_8php_ad85b26c88897c4f65b1a4930711a2e93}{true}
+\item 
+\hyperlink{save__edit__remake_07obsolete_08_8php_aa698a3e72116e8e778be0e95d908ee30}{\$action} =\char`\"{}Update\char`\"{}
+\item 
+\hyperlink{save__edit__remake_07obsolete_08_8php_a5a756a18d8cc040338f041ca8f8c3666}{\$procdatas} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'procdatas'\mbox{]}
+\item 
+\hyperlink{save__edit__remake_07obsolete_08_8php_a296195c83717b71c16843c3c951e29a2}{\$exclud\-Map} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'exclud\-Map'\mbox{]}
+\item 
+\hyperlink{save__edit__remake_07obsolete_08_8php_a2c543a123b646cdf11c814983d4a13cf}{\$raw\-I\-D\-Map} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'raw\-I\-D\-Map'\mbox{]}
+\item 
+\hyperlink{save__edit__remake_07obsolete_08_8php_aaa6d122ea9cb55b210aadd86e5654a74}{\$batch\-I\-D} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'\hyperlink{obsolete_2processing__bak_8php_a88c5bc4262b7c34f236357f5c53fc99b}{batch\-I\-D}'\mbox{]}
+\item 
+\hyperlink{save__edit__remake_07obsolete_08_8php_addb1ec3ba55e413a08cb006ce21974df}{\$ez\-I\-D} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'\hyperlink{admin_rawdata_8php_adf465cadf95987152966d26567509f92}{ez\-I\-D}'\mbox{]}
+\item 
+\hyperlink{save__edit__remake_07obsolete_08_8php_a2efb2f950a559a8fda8c5b114c5ea10f}{\$col\-Idx} = 0
+\item 
+\hyperlink{save__edit__remake_07obsolete_08_8php_a2457f3fab8183bd163626612df265a7e}{\$row\-Idx} = 0
+\item 
+\hyperlink{save__edit__remake_07obsolete_08_8php_a7e1df84a3733bb1672c8485fa286658d}{\$rawdata\-I\-D} = -\/1
+\item 
+foreach(\$procdatas as \$row) \hyperlink{save__edit__remake_07obsolete_08_8php_a7a23fc905184e8d9769c6c2948032a18}{\$response\-\_\-array} \mbox{[}'status'\mbox{]} =\$status
+\item 
+\hyperlink{save__edit__remake_07obsolete_08_8php_ae768978a0cdc416c0d63d798c85c8784}{\$response\-\_\-array} \mbox{[}'action'\mbox{]} =\$action
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{save__edit__remake_07obsolete_08_8php_aa698a3e72116e8e778be0e95d908ee30}{\index{save\-\_\-edit\-\_\-remake(obsolete).\-php@{save\-\_\-edit\-\_\-remake(obsolete).\-php}!\$action@{\$action}}
+\index{\$action@{\$action}!save_edit_remake(obsolete).php@{save\-\_\-edit\-\_\-remake(obsolete).\-php}}
+\subsubsection[{\$action}]{\setlength{\rightskip}{0pt plus 5cm}\$action =\char`\"{}Update\char`\"{}}}\label{save__edit__remake_07obsolete_08_8php_aa698a3e72116e8e778be0e95d908ee30}
+
+
+Definition at line 7 of file save\-\_\-edit\-\_\-remake(obsolete).\-php.
+
+\hypertarget{save__edit__remake_07obsolete_08_8php_aaa6d122ea9cb55b210aadd86e5654a74}{\index{save\-\_\-edit\-\_\-remake(obsolete).\-php@{save\-\_\-edit\-\_\-remake(obsolete).\-php}!\$batch\-I\-D@{\$batch\-I\-D}}
+\index{\$batch\-I\-D@{\$batch\-I\-D}!save_edit_remake(obsolete).php@{save\-\_\-edit\-\_\-remake(obsolete).\-php}}
+\subsubsection[{\$batch\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf batch\-I\-D} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'{\bf batch\-I\-D}'\mbox{]}}}\label{save__edit__remake_07obsolete_08_8php_aaa6d122ea9cb55b210aadd86e5654a74}
+
+
+Definition at line 12 of file save\-\_\-edit\-\_\-remake(obsolete).\-php.
+
+\hypertarget{save__edit__remake_07obsolete_08_8php_a538eaf07e91a8c4f140bc04fa2b899cf}{\index{save\-\_\-edit\-\_\-remake(obsolete).\-php@{save\-\_\-edit\-\_\-remake(obsolete).\-php}!\$bool\-Succes@{\$bool\-Succes}}
+\index{\$bool\-Succes@{\$bool\-Succes}!save_edit_remake(obsolete).php@{save\-\_\-edit\-\_\-remake(obsolete).\-php}}
+\subsubsection[{\$bool\-Succes}]{\setlength{\rightskip}{0pt plus 5cm}\$bool\-Succes ={\bf true}}}\label{save__edit__remake_07obsolete_08_8php_a538eaf07e91a8c4f140bc04fa2b899cf}
+
+
+Definition at line 6 of file save\-\_\-edit\-\_\-remake(obsolete).\-php.
+
+\hypertarget{save__edit__remake_07obsolete_08_8php_a2efb2f950a559a8fda8c5b114c5ea10f}{\index{save\-\_\-edit\-\_\-remake(obsolete).\-php@{save\-\_\-edit\-\_\-remake(obsolete).\-php}!\$col\-Idx@{\$col\-Idx}}
+\index{\$col\-Idx@{\$col\-Idx}!save_edit_remake(obsolete).php@{save\-\_\-edit\-\_\-remake(obsolete).\-php}}
+\subsubsection[{\$col\-Idx}]{\setlength{\rightskip}{0pt plus 5cm}\$col\-Idx = 0}}\label{save__edit__remake_07obsolete_08_8php_a2efb2f950a559a8fda8c5b114c5ea10f}
+
+
+Definition at line 16 of file save\-\_\-edit\-\_\-remake(obsolete).\-php.
+
+\hypertarget{save__edit__remake_07obsolete_08_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{save\-\_\-edit\-\_\-remake(obsolete).\-php@{save\-\_\-edit\-\_\-remake(obsolete).\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!save_edit_remake(obsolete).php@{save\-\_\-edit\-\_\-remake(obsolete).\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{save__edit__remake_07obsolete_08_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 4 of file save\-\_\-edit\-\_\-remake(obsolete).\-php.
+
+\hypertarget{save__edit__remake_07obsolete_08_8php_a296195c83717b71c16843c3c951e29a2}{\index{save\-\_\-edit\-\_\-remake(obsolete).\-php@{save\-\_\-edit\-\_\-remake(obsolete).\-php}!\$exclud\-Map@{\$exclud\-Map}}
+\index{\$exclud\-Map@{\$exclud\-Map}!save_edit_remake(obsolete).php@{save\-\_\-edit\-\_\-remake(obsolete).\-php}}
+\subsubsection[{\$exclud\-Map}]{\setlength{\rightskip}{0pt plus 5cm}\$exclud\-Map = \$\-\_\-\-P\-O\-S\-T\mbox{[}'exclud\-Map'\mbox{]}}}\label{save__edit__remake_07obsolete_08_8php_a296195c83717b71c16843c3c951e29a2}
+
+
+Definition at line 10 of file save\-\_\-edit\-\_\-remake(obsolete).\-php.
+
+\hypertarget{save__edit__remake_07obsolete_08_8php_addb1ec3ba55e413a08cb006ce21974df}{\index{save\-\_\-edit\-\_\-remake(obsolete).\-php@{save\-\_\-edit\-\_\-remake(obsolete).\-php}!\$ez\-I\-D@{\$ez\-I\-D}}
+\index{\$ez\-I\-D@{\$ez\-I\-D}!save_edit_remake(obsolete).php@{save\-\_\-edit\-\_\-remake(obsolete).\-php}}
+\subsubsection[{\$ez\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf ez\-I\-D} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'{\bf ez\-I\-D}'\mbox{]}}}\label{save__edit__remake_07obsolete_08_8php_addb1ec3ba55e413a08cb006ce21974df}
+
+
+Definition at line 13 of file save\-\_\-edit\-\_\-remake(obsolete).\-php.
+
+\hypertarget{save__edit__remake_07obsolete_08_8php_a5a756a18d8cc040338f041ca8f8c3666}{\index{save\-\_\-edit\-\_\-remake(obsolete).\-php@{save\-\_\-edit\-\_\-remake(obsolete).\-php}!\$procdatas@{\$procdatas}}
+\index{\$procdatas@{\$procdatas}!save_edit_remake(obsolete).php@{save\-\_\-edit\-\_\-remake(obsolete).\-php}}
+\subsubsection[{\$procdatas}]{\setlength{\rightskip}{0pt plus 5cm}\$procdatas = \$\-\_\-\-P\-O\-S\-T\mbox{[}'procdatas'\mbox{]}}}\label{save__edit__remake_07obsolete_08_8php_a5a756a18d8cc040338f041ca8f8c3666}
+
+
+Definition at line 9 of file save\-\_\-edit\-\_\-remake(obsolete).\-php.
+
+\hypertarget{save__edit__remake_07obsolete_08_8php_a7e1df84a3733bb1672c8485fa286658d}{\index{save\-\_\-edit\-\_\-remake(obsolete).\-php@{save\-\_\-edit\-\_\-remake(obsolete).\-php}!\$rawdata\-I\-D@{\$rawdata\-I\-D}}
+\index{\$rawdata\-I\-D@{\$rawdata\-I\-D}!save_edit_remake(obsolete).php@{save\-\_\-edit\-\_\-remake(obsolete).\-php}}
+\subsubsection[{\$rawdata\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\$rawdata\-I\-D = -\/1}}\label{save__edit__remake_07obsolete_08_8php_a7e1df84a3733bb1672c8485fa286658d}
+
+
+Definition at line 18 of file save\-\_\-edit\-\_\-remake(obsolete).\-php.
+
+\hypertarget{save__edit__remake_07obsolete_08_8php_a2c543a123b646cdf11c814983d4a13cf}{\index{save\-\_\-edit\-\_\-remake(obsolete).\-php@{save\-\_\-edit\-\_\-remake(obsolete).\-php}!\$raw\-I\-D\-Map@{\$raw\-I\-D\-Map}}
+\index{\$raw\-I\-D\-Map@{\$raw\-I\-D\-Map}!save_edit_remake(obsolete).php@{save\-\_\-edit\-\_\-remake(obsolete).\-php}}
+\subsubsection[{\$raw\-I\-D\-Map}]{\setlength{\rightskip}{0pt plus 5cm}\$raw\-I\-D\-Map = \$\-\_\-\-P\-O\-S\-T\mbox{[}'raw\-I\-D\-Map'\mbox{]}}}\label{save__edit__remake_07obsolete_08_8php_a2c543a123b646cdf11c814983d4a13cf}
+
+
+Definition at line 11 of file save\-\_\-edit\-\_\-remake(obsolete).\-php.
+
+\hypertarget{save__edit__remake_07obsolete_08_8php_a7a23fc905184e8d9769c6c2948032a18}{\index{save\-\_\-edit\-\_\-remake(obsolete).\-php@{save\-\_\-edit\-\_\-remake(obsolete).\-php}!\$response\-\_\-array@{\$response\-\_\-array}}
+\index{\$response\-\_\-array@{\$response\-\_\-array}!save_edit_remake(obsolete).php@{save\-\_\-edit\-\_\-remake(obsolete).\-php}}
+\subsubsection[{\$response\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}foreach (\$procdatas as \$row) \$response\-\_\-array\mbox{[}'status'\mbox{]} =\$status}}\label{save__edit__remake_07obsolete_08_8php_a7a23fc905184e8d9769c6c2948032a18}
+
+
+Definition at line 161 of file save\-\_\-edit\-\_\-remake(obsolete).\-php.
+
+\hypertarget{save__edit__remake_07obsolete_08_8php_ae768978a0cdc416c0d63d798c85c8784}{\index{save\-\_\-edit\-\_\-remake(obsolete).\-php@{save\-\_\-edit\-\_\-remake(obsolete).\-php}!\$response\-\_\-array@{\$response\-\_\-array}}
+\index{\$response\-\_\-array@{\$response\-\_\-array}!save_edit_remake(obsolete).php@{save\-\_\-edit\-\_\-remake(obsolete).\-php}}
+\subsubsection[{\$response\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}\$response\-\_\-array\mbox{[}'action'\mbox{]} =\$action}}\label{save__edit__remake_07obsolete_08_8php_ae768978a0cdc416c0d63d798c85c8784}
+
+
+Definition at line 162 of file save\-\_\-edit\-\_\-remake(obsolete).\-php.
+
+\hypertarget{save__edit__remake_07obsolete_08_8php_a2457f3fab8183bd163626612df265a7e}{\index{save\-\_\-edit\-\_\-remake(obsolete).\-php@{save\-\_\-edit\-\_\-remake(obsolete).\-php}!\$row\-Idx@{\$row\-Idx}}
+\index{\$row\-Idx@{\$row\-Idx}!save_edit_remake(obsolete).php@{save\-\_\-edit\-\_\-remake(obsolete).\-php}}
+\subsubsection[{\$row\-Idx}]{\setlength{\rightskip}{0pt plus 5cm}\$row\-Idx = 0}}\label{save__edit__remake_07obsolete_08_8php_a2457f3fab8183bd163626612df265a7e}
+
+
+Definition at line 17 of file save\-\_\-edit\-\_\-remake(obsolete).\-php.
+
+\hypertarget{save__edit__remake_07obsolete_08_8php_a58391ea75f2d29d5d708d7050b641c33}{\index{save\-\_\-edit\-\_\-remake(obsolete).\-php@{save\-\_\-edit\-\_\-remake(obsolete).\-php}!\$status@{\$status}}
+\index{\$status@{\$status}!save_edit_remake(obsolete).php@{save\-\_\-edit\-\_\-remake(obsolete).\-php}}
+\subsubsection[{\$status}]{\setlength{\rightskip}{0pt plus 5cm}\$status =\char`\"{}success\char`\"{}}}\label{save__edit__remake_07obsolete_08_8php_a58391ea75f2d29d5d708d7050b641c33}
+
+
+Definition at line 5 of file save\-\_\-edit\-\_\-remake(obsolete).\-php.
+

@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d59/export_8php">
+    <title>export.php File Reference</title>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>button filter(&quot;#aliquotMerge&quot;).prop(&quot;disabled&quot; <link linkend="d0/d59/export_8php_1a2909f0d926ca4f5188a2847ebc640141">true</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d59/export_8php_1a3b7fa21c29f2265534745659558aab45">setup_experiment_datatable</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d59/export_8php_1ac3f4c5601cfd287d3e111d755ffd686e">generate_data</link> (
+<link linkend="d8/d02/admin_rawdata_8php_1a888d53a6517f4272b5982c3ca9d16e8a">expID</link> , expName )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d59/export_8php_1aff0ea24b7955f8160d14793f2ca1eb3c">clearTable</link> (
+tableID )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d59/export_8php_1a0847a6856995fcb030dd0bd8fa4fba97">setup_rawtable_datatable</link> (
+colDef , dataset )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d59/export_8php_1aa2cc51bc740aae01637317e37980e5a6">standardsUsed</link> (
+tableID )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d59/export_8php_1acb087e09a65a087f132300a80ee63deb">printStdUsed</link> (
+map )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d59/export_8php_1a69314d31f4a33d74b04c715909a5f875">interBatchCentering</link> (
+tableID )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d59/export_8php_1a10867b8fdac2d84010b2cd7434eb0e0e">aliquotMerge</link> (
+expName )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d59/export_8php_1a913da0e59ed1900f1ba352f3431521b1">printAliquotMerge</link> (
+map , expName )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d59/export_8php_1aa1e8f9d59d36beb449d29324b83696c5">chomp</link> (
+raw_text )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d59/export_8php_1a1c5bd701b81e92f7d4d3c5df62308a90">showWaitModal</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d59/export_8php_1a9e9a0aeba0985269b23840a250abb827">hideWaitModal</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d59/export_8php_1aa5fb5998ccfcfe9ce6953516b6e3bcb1">isArray</link> (
+obj )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d59/export_8php_1afceb7af57b26aecce1a9296d71bfaafe">getNumWithSetDec</link> (
+num , numOfDec )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d59/export_8php_1ae0305f1551770d6a7e38511bc122b8d0">getAverageFromNumArr</link> (
+numArr , numOfDec )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d59/export_8php_1a624f45bf85d91531932db89ec727cc55">getVariance</link> (
+numArr , numOfDec )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d59/export_8php_1a79058dbb19f8820281238eabeddec077">getStandardDeviation</link> (
+numArr , numOfDec )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d59/export_8php_1a3ac0127239c94d2495075c0f66556d7e">getError</link> (
+numArr , numOfDec )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /var/www/html/plato/php/export/export.php</para>
+    </simplesect>
+</section>

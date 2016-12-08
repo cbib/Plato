@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="dir_8eb3d204df335418d1a9d443346338cd">
+    <title>php/standard/obsolete files Directory Reference</title>
+        <simplesect>
+            <title> Files </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="dc/dd4/add__enzyme__to__standard_07obsolete_08_8php">add_enzyme_to_standard(obsolete).php</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d9/d49/add__new__enzyme_07obsolete_08_8php">add_new_enzyme(obsolete).php</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d9/d18/edit__enzyme__in__standard_07obsolete_08_8php">edit_enzyme_in_standard(obsolete).php</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d5/d8c/enzyme__not__from__standard_07obsolete_08_8php">enzyme_not_from_standard(obsolete).php</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="df/d72/freshweight__from__standard_07obsolete_08_8php">freshweight_from_standard(obsolete).php</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d7/d8e/insert__standard_07obsolete_08_8php">insert_standard(obsolete).php</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d0/dcc/remove__enzyme__in__standard_07obsolete_08_8php">remove_enzyme_in_standard(obsolete).php</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="da/ddc/standard__database__functions_07obsolete_08_8php">standard_database_functions(obsolete).php</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="d5/da2/standard__get__all__unit_07obsolete_08_8php">standard_get_all_unit(obsolete).php</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>file <link linkend="de/d9c/standard__php__functions_07obsolete_08_8php">standard_php_functions(obsolete).php</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Directory location is /var/www/html/plato/php/standard/obsolete files/</para>
+    </simplesect>
+</section>

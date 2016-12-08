@@ -1,0 +1,420 @@
+\hypertarget{export_8php}{\section{php/export/export.php File Reference}
+\label{export_8php}\index{php/export/export.\-php@{php/export/export.\-php}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{export_8php_a3b7fa21c29f2265534745659558aab45}{setup\-\_\-experiment\-\_\-datatable} ()
+\item 
+\hyperlink{export_8php_ac3f4c5601cfd287d3e111d755ffd686e}{generate\-\_\-data} (\hyperlink{admin_rawdata_8php_a888d53a6517f4272b5982c3ca9d16e8a}{exp\-I\-D}, exp\-Name)
+\item 
+\hyperlink{export_8php_aff0ea24b7955f8160d14793f2ca1eb3c}{clear\-Table} (table\-I\-D)
+\item 
+\hyperlink{export_8php_a0847a6856995fcb030dd0bd8fa4fba97}{setup\-\_\-rawtable\-\_\-datatable} (col\-Def, dataset)
+\item 
+\hyperlink{export_8php_aa2cc51bc740aae01637317e37980e5a6}{standards\-Used} (table\-I\-D)
+\item 
+\hyperlink{export_8php_acb087e09a65a087f132300a80ee63deb}{print\-Std\-Used} (map)
+\item 
+\hyperlink{export_8php_a69314d31f4a33d74b04c715909a5f875}{inter\-Batch\-Centering} (table\-I\-D)
+\item 
+\hyperlink{export_8php_a10867b8fdac2d84010b2cd7434eb0e0e}{aliquot\-Merge} (exp\-Name)
+\item 
+\hyperlink{export_8php_a913da0e59ed1900f1ba352f3431521b1}{print\-Aliquot\-Merge} (map, exp\-Name)
+\item 
+\hyperlink{export_8php_aa1e8f9d59d36beb449d29324b83696c5}{chomp} (raw\-\_\-text)
+\item 
+\hyperlink{export_8php_a1c5bd701b81e92f7d4d3c5df62308a90}{show\-Wait\-Modal} ()
+\item 
+\hyperlink{export_8php_a9e9a0aeba0985269b23840a250abb827}{hide\-Wait\-Modal} ()
+\item 
+\hyperlink{export_8php_aa5fb5998ccfcfe9ce6953516b6e3bcb1}{is\-Array} (obj)
+\item 
+\hyperlink{export_8php_afceb7af57b26aecce1a9296d71bfaafe}{get\-Num\-With\-Set\-Dec} (num, num\-Of\-Dec)
+\item 
+\hyperlink{export_8php_ae0305f1551770d6a7e38511bc122b8d0}{get\-Average\-From\-Num\-Arr} (num\-Arr, num\-Of\-Dec)
+\item 
+\hyperlink{export_8php_a624f45bf85d91531932db89ec727cc55}{get\-Variance} (num\-Arr, num\-Of\-Dec)
+\item 
+\hyperlink{export_8php_a79058dbb19f8820281238eabeddec077}{get\-Standard\-Deviation} (num\-Arr, num\-Of\-Dec)
+\item 
+\hyperlink{export_8php_a3ac0127239c94d2495075c0f66556d7e}{get\-Error} (num\-Arr, num\-Of\-Dec)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+button filter(\char`\"{}\#aliquot\-Merge\char`\"{}).prop(\char`\"{}disabled\char`\"{} \hyperlink{export_8php_a2909f0d926ca4f5188a2847ebc640141}{true}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{export_8php_a10867b8fdac2d84010b2cd7434eb0e0e}{\index{export.\-php@{export.\-php}!aliquot\-Merge@{aliquot\-Merge}}
+\index{aliquot\-Merge@{aliquot\-Merge}!export.php@{export.\-php}}
+\subsubsection[{aliquot\-Merge}]{\setlength{\rightskip}{0pt plus 5cm}aliquot\-Merge (
+\begin{DoxyParamCaption}
+\item[{exp\-Name}]{}
+\end{DoxyParamCaption}
+)}}\label{export_8php_a10867b8fdac2d84010b2cd7434eb0e0e}
+Calculs pour le merge des aliquots
+
+aliquot\-Merge 
+\begin{DoxyParams}{Parameters}
+{\em \{$<$type$>$\}} & exp\-Name \{ name of the experiment \} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 624 of file export.\-php.
+
+\hypertarget{export_8php_aa1e8f9d59d36beb449d29324b83696c5}{\index{export.\-php@{export.\-php}!chomp@{chomp}}
+\index{chomp@{chomp}!export.php@{export.\-php}}
+\subsubsection[{chomp}]{\setlength{\rightskip}{0pt plus 5cm}chomp (
+\begin{DoxyParamCaption}
+\item[{raw\-\_\-text}]{}
+\end{DoxyParamCaption}
+)}}\label{export_8php_aa1e8f9d59d36beb449d29324b83696c5}
+chomp a string
+
+chomp 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & raw\-\_\-text \{ text to chomp \} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{string\} \{ texte trimed from end of line win or unix \} 
+\end{DoxyReturn}
+
+
+Definition at line 720 of file export.\-php.
+
+\hypertarget{export_8php_aff0ea24b7955f8160d14793f2ca1eb3c}{\index{export.\-php@{export.\-php}!clear\-Table@{clear\-Table}}
+\index{clear\-Table@{clear\-Table}!export.php@{export.\-php}}
+\subsubsection[{clear\-Table}]{\setlength{\rightskip}{0pt plus 5cm}clear\-Table (
+\begin{DoxyParamCaption}
+\item[{table\-I\-D}]{}
+\end{DoxyParamCaption}
+)}}\label{export_8php_aff0ea24b7955f8160d14793f2ca1eb3c}
+Resete a datatable
+
+clear\-Table 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & table\-I\-D \{ id of the table to clear \} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 361 of file export.\-php.
+
+\hypertarget{export_8php_ac3f4c5601cfd287d3e111d755ffd686e}{\index{export.\-php@{export.\-php}!generate\-\_\-data@{generate\-\_\-data}}
+\index{generate\-\_\-data@{generate\-\_\-data}!export.php@{export.\-php}}
+\subsubsection[{generate\-\_\-data}]{\setlength{\rightskip}{0pt plus 5cm}generate\-\_\-data (
+\begin{DoxyParamCaption}
+\item[{{\bf exp\-I\-D}}]{, }
+\item[{exp\-Name}]{}
+\end{DoxyParamCaption}
+)}}\label{export_8php_ac3f4c5601cfd287d3e111d755ffd686e}
+Get all data for an experiment and make arrays for datatables
+
+generate\-\_\-data 
+\begin{DoxyParams}{Parameters}
+{\em \{\-Int\}} & exp\-I\-D \{ I\-D of the experiment \} \\
+\hline
+{\em \{\-String\}} & exp\-Name \{ Name of the experiment \} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 295 of file export.\-php.
+
+\hypertarget{export_8php_ae0305f1551770d6a7e38511bc122b8d0}{\index{export.\-php@{export.\-php}!get\-Average\-From\-Num\-Arr@{get\-Average\-From\-Num\-Arr}}
+\index{get\-Average\-From\-Num\-Arr@{get\-Average\-From\-Num\-Arr}!export.php@{export.\-php}}
+\subsubsection[{get\-Average\-From\-Num\-Arr}]{\setlength{\rightskip}{0pt plus 5cm}get\-Average\-From\-Num\-Arr (
+\begin{DoxyParamCaption}
+\item[{num\-Arr}]{, }
+\item[{num\-Of\-Dec}]{}
+\end{DoxyParamCaption}
+)}}\label{export_8php_ae0305f1551770d6a7e38511bc122b8d0}
+Get the average of an array
+
+get\-Average\-From\-Num\-Arr 
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & num\-Arr \{ description \} \\
+\hline
+{\em \{$<$type$>$\}} & num\-Of\-Dec \{ description \} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} \{ description\-\_\-of\-\_\-the\-\_\-return\-\_\-value \} 
+\end{DoxyReturn}
+
+
+Definition at line 793 of file export.\-php.
+
+\hypertarget{export_8php_a3ac0127239c94d2495075c0f66556d7e}{\index{export.\-php@{export.\-php}!get\-Error@{get\-Error}}
+\index{get\-Error@{get\-Error}!export.php@{export.\-php}}
+\subsubsection[{get\-Error}]{\setlength{\rightskip}{0pt plus 5cm}get\-Error (
+\begin{DoxyParamCaption}
+\item[{num\-Arr}]{, }
+\item[{num\-Of\-Dec}]{}
+\end{DoxyParamCaption}
+)}}\label{export_8php_a3ac0127239c94d2495075c0f66556d7e}
+Get the error standard
+
+get\-Error 
+\begin{DoxyParams}{Parameters}
+{\em \{$<$type$>$\}} & num\-Arr \{ description \} \\
+\hline
+{\em \{$<$type$>$\}} & num\-Of\-Dec \{ description \} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} \{ description\-\_\-of\-\_\-the\-\_\-return\-\_\-value \} 
+\end{DoxyReturn}
+
+
+Definition at line 845 of file export.\-php.
+
+\hypertarget{export_8php_afceb7af57b26aecce1a9296d71bfaafe}{\index{export.\-php@{export.\-php}!get\-Num\-With\-Set\-Dec@{get\-Num\-With\-Set\-Dec}}
+\index{get\-Num\-With\-Set\-Dec@{get\-Num\-With\-Set\-Dec}!export.php@{export.\-php}}
+\subsubsection[{get\-Num\-With\-Set\-Dec}]{\setlength{\rightskip}{0pt plus 5cm}get\-Num\-With\-Set\-Dec (
+\begin{DoxyParamCaption}
+\item[{num}]{, }
+\item[{num\-Of\-Dec}]{}
+\end{DoxyParamCaption}
+)}}\label{export_8php_afceb7af57b26aecce1a9296d71bfaafe}
+set a number of decimal for a number
+
+get\-Num\-With\-Set\-Dec 
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & num \{ number to trunk \} \\
+\hline
+{\em \{$<$type$>$\}} & num\-Of\-Dec \{ number of decimal wanted \} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{$<$type$>$\} \{ Number rounded \} 
+\end{DoxyReturn}
+
+
+Definition at line 780 of file export.\-php.
+
+\hypertarget{export_8php_a79058dbb19f8820281238eabeddec077}{\index{export.\-php@{export.\-php}!get\-Standard\-Deviation@{get\-Standard\-Deviation}}
+\index{get\-Standard\-Deviation@{get\-Standard\-Deviation}!export.php@{export.\-php}}
+\subsubsection[{get\-Standard\-Deviation}]{\setlength{\rightskip}{0pt plus 5cm}get\-Standard\-Deviation (
+\begin{DoxyParamCaption}
+\item[{num\-Arr}]{, }
+\item[{num\-Of\-Dec}]{}
+\end{DoxyParamCaption}
+)}}\label{export_8php_a79058dbb19f8820281238eabeddec077}
+get the standard deviation
+
+get\-Standard\-Deviation 
+\begin{DoxyParams}{Parameters}
+{\em \{$<$type$>$\}} & num\-Arr \{ description \} \\
+\hline
+{\em \{$<$type$>$\}} & num\-Of\-Dec \{ description \} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{boolean\} \{ description\-\_\-of\-\_\-the\-\_\-return\-\_\-value \} 
+\end{DoxyReturn}
+
+
+Definition at line 831 of file export.\-php.
+
+\hypertarget{export_8php_a624f45bf85d91531932db89ec727cc55}{\index{export.\-php@{export.\-php}!get\-Variance@{get\-Variance}}
+\index{get\-Variance@{get\-Variance}!export.php@{export.\-php}}
+\subsubsection[{get\-Variance}]{\setlength{\rightskip}{0pt plus 5cm}get\-Variance (
+\begin{DoxyParamCaption}
+\item[{num\-Arr}]{, }
+\item[{num\-Of\-Dec}]{}
+\end{DoxyParamCaption}
+)}}\label{export_8php_a624f45bf85d91531932db89ec727cc55}
+Get the variance of an array
+
+get\-Variance 
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & num\-Arr \{ description \} \\
+\hline
+{\em \{$<$type$>$\}} & num\-Of\-Dec \{ description \} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{(boolean$\vert$number)\} \{ description\-\_\-of\-\_\-the\-\_\-return\-\_\-value \} 
+\end{DoxyReturn}
+
+
+Definition at line 811 of file export.\-php.
+
+\hypertarget{export_8php_a9e9a0aeba0985269b23840a250abb827}{\index{export.\-php@{export.\-php}!hide\-Wait\-Modal@{hide\-Wait\-Modal}}
+\index{hide\-Wait\-Modal@{hide\-Wait\-Modal}!export.php@{export.\-php}}
+\subsubsection[{hide\-Wait\-Modal}]{\setlength{\rightskip}{0pt plus 5cm}hide\-Wait\-Modal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{export_8php_a9e9a0aeba0985269b23840a250abb827}
+hide the progressbar modal
+
+hide\-Wait\-Modal 
+
+Definition at line 755 of file export.\-php.
+
+\hypertarget{export_8php_a69314d31f4a33d74b04c715909a5f875}{\index{export.\-php@{export.\-php}!inter\-Batch\-Centering@{inter\-Batch\-Centering}}
+\index{inter\-Batch\-Centering@{inter\-Batch\-Centering}!export.php@{export.\-php}}
+\subsubsection[{inter\-Batch\-Centering}]{\setlength{\rightskip}{0pt plus 5cm}inter\-Batch\-Centering (
+\begin{DoxyParamCaption}
+\item[{table\-I\-D}]{}
+\end{DoxyParamCaption}
+)}}\label{export_8php_a69314d31f4a33d74b04c715909a5f875}
+Apply interbatch centering
+
+inter\-Batch\-Centering 
+\begin{DoxyParams}{Parameters}
+{\em \{$<$type$>$\}} & table\-I\-D Id of the table to convert \\
+\hline
+\end{DoxyParams}
+Initialize Hash
+
+Fill Hash
+
+Means
+
+Mean of means
+
+Definition at line 532 of file export.\-php.
+
+\hypertarget{export_8php_aa5fb5998ccfcfe9ce6953516b6e3bcb1}{\index{export.\-php@{export.\-php}!is\-Array@{is\-Array}}
+\index{is\-Array@{is\-Array}!export.php@{export.\-php}}
+\subsubsection[{is\-Array}]{\setlength{\rightskip}{0pt plus 5cm}is\-Array (
+\begin{DoxyParamCaption}
+\item[{obj}]{}
+\end{DoxyParamCaption}
+)}}\label{export_8php_aa5fb5998ccfcfe9ce6953516b6e3bcb1}
+check if the object is an array
+
+is\-Array 
+\begin{DoxyParams}{Parameters}
+{\em \{$<$type$>$\}} & obj \{ array to check \} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{$<$type$>$\} \{ return true if the object is type array, else fals \} 
+\end{DoxyReturn}
+
+
+Definition at line 768 of file export.\-php.
+
+\hypertarget{export_8php_a913da0e59ed1900f1ba352f3431521b1}{\index{export.\-php@{export.\-php}!print\-Aliquot\-Merge@{print\-Aliquot\-Merge}}
+\index{print\-Aliquot\-Merge@{print\-Aliquot\-Merge}!export.php@{export.\-php}}
+\subsubsection[{print\-Aliquot\-Merge}]{\setlength{\rightskip}{0pt plus 5cm}print\-Aliquot\-Merge (
+\begin{DoxyParamCaption}
+\item[{map}]{, }
+\item[{exp\-Name}]{}
+\end{DoxyParamCaption}
+)}}\label{export_8php_a913da0e59ed1900f1ba352f3431521b1}
+Affichage du merge des aliquots
+
+print\-Aliquot\-Merge 
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & map \{ map of the raw data table for an experiment \} \\
+\hline
+{\em \{$<$type$>$\}} & exp\-Name \{ description \} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 685 of file export.\-php.
+
+\hypertarget{export_8php_acb087e09a65a087f132300a80ee63deb}{\index{export.\-php@{export.\-php}!print\-Std\-Used@{print\-Std\-Used}}
+\index{print\-Std\-Used@{print\-Std\-Used}!export.php@{export.\-php}}
+\subsubsection[{print\-Std\-Used}]{\setlength{\rightskip}{0pt plus 5cm}print\-Std\-Used (
+\begin{DoxyParamCaption}
+\item[{map}]{}
+\end{DoxyParamCaption}
+)}}\label{export_8php_acb087e09a65a087f132300a80ee63deb}
+Print the number of user standard and C\-V
+
+print\-Std\-Used 
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & map \{ map of the table of the select experiment \} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 495 of file export.\-php.
+
+\hypertarget{export_8php_a3b7fa21c29f2265534745659558aab45}{\index{export.\-php@{export.\-php}!setup\-\_\-experiment\-\_\-datatable@{setup\-\_\-experiment\-\_\-datatable}}
+\index{setup\-\_\-experiment\-\_\-datatable@{setup\-\_\-experiment\-\_\-datatable}!export.php@{export.\-php}}
+\subsubsection[{setup\-\_\-experiment\-\_\-datatable}]{\setlength{\rightskip}{0pt plus 5cm}setup\-\_\-experiment\-\_\-datatable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{export_8php_a3b7fa21c29f2265534745659558aab45}
+get all experiment and make datatable
+
+setup\-\_\-experiment\-\_\-datatable 
+
+Definition at line 256 of file export.\-php.
+
+\hypertarget{export_8php_a0847a6856995fcb030dd0bd8fa4fba97}{\index{export.\-php@{export.\-php}!setup\-\_\-rawtable\-\_\-datatable@{setup\-\_\-rawtable\-\_\-datatable}}
+\index{setup\-\_\-rawtable\-\_\-datatable@{setup\-\_\-rawtable\-\_\-datatable}!export.php@{export.\-php}}
+\subsubsection[{setup\-\_\-rawtable\-\_\-datatable}]{\setlength{\rightskip}{0pt plus 5cm}setup\-\_\-rawtable\-\_\-datatable (
+\begin{DoxyParamCaption}
+\item[{col\-Def}]{, }
+\item[{dataset}]{}
+\end{DoxyParamCaption}
+)}}\label{export_8php_a0847a6856995fcb030dd0bd8fa4fba97}
+Make a datatables from previously prepared data (in generate\-\_\-data)
+
+setup\-\_\-rawtable\-\_\-datatable 
+\begin{DoxyParams}{Parameters}
+{\em \{$<$type$>$\}} & col\-Def \{ colone names for datatable construction \} \\
+\hline
+{\em \{$<$type$>$\}} & dataset \{ data to print in the datatable \} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 373 of file export.\-php.
+
+\hypertarget{export_8php_a1c5bd701b81e92f7d4d3c5df62308a90}{\index{export.\-php@{export.\-php}!show\-Wait\-Modal@{show\-Wait\-Modal}}
+\index{show\-Wait\-Modal@{show\-Wait\-Modal}!export.php@{export.\-php}}
+\subsubsection[{show\-Wait\-Modal}]{\setlength{\rightskip}{0pt plus 5cm}show\-Wait\-Modal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{export_8php_a1c5bd701b81e92f7d4d3c5df62308a90}
+Show a modal with a striped and full progressbar
+
+show\-Wait\-Modal 
+
+Definition at line 729 of file export.\-php.
+
+\hypertarget{export_8php_aa2cc51bc740aae01637317e37980e5a6}{\index{export.\-php@{export.\-php}!standards\-Used@{standards\-Used}}
+\index{standards\-Used@{standards\-Used}!export.php@{export.\-php}}
+\subsubsection[{standards\-Used}]{\setlength{\rightskip}{0pt plus 5cm}standards\-Used (
+\begin{DoxyParamCaption}
+\item[{table\-I\-D}]{}
+\end{DoxyParamCaption}
+)}}\label{export_8php_aa2cc51bc740aae01637317e37980e5a6}
+Display the number of standard used / number of standards
+
+standards\-Used 
+\begin{DoxyParams}{Parameters}
+{\em \{$<$type$>$\}} & table\-I\-D \{ useless \} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 400 of file export.\-php.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{export_8php_a2909f0d926ca4f5188a2847ebc640141}{\index{export.\-php@{export.\-php}!true@{true}}
+\index{true@{true}!export.php@{export.\-php}}
+\subsubsection[{true}]{\setlength{\rightskip}{0pt plus 5cm}button filter (\char`\"{}\#normal\-Table\char`\"{}).prop(\char`\"{}disabled\char`\"{} true}}\label{export_8php_a2909f0d926ca4f5188a2847ebc640141}
+
+
+Definition at line 117 of file export.\-php.
+

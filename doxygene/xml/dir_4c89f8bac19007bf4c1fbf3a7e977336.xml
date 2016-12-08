@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_4c89f8bac19007bf4c1fbf3a7e977336" kind="dir">
+    <compoundname>php/admin/adminPwd</compoundname>
+    <innerfile refid="d1/d1c/admin_pwd_8php">adminPwd.php</innerfile>
+    <innerfile refid="dc/dda/_admin_user_update_8php">AdminUserUpdate.php</innerfile>
+    <innerfile refid="de/dda/get__all__users_8php">get_all_users.php</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/var/www/html/plato/php/admin/adminPwd/"/>
+  </compounddef>
+</doxygen>

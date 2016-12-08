@@ -1,0 +1,142 @@
+.TH "php/freshweight/UpdateData.php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/freshweight/UpdateData.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$conn\fP = \fBget_connexion\fP()"
+.br
+.ti -1c
+.RI "\fB$sampleID\fP =''"
+.br
+.ti -1c
+.RI "\fB$sampleNB\fP =''"
+.br
+.ti -1c
+.RI "\fB$aliquotID\fP =''"
+.br
+.ti -1c
+.RI "\fB$aliquotNB\fP =''"
+.br
+.ti -1c
+.RI "\fB$value\fP =''"
+.br
+.ti -1c
+.RI "\fB$state\fP =''"
+.br
+.ti -1c
+.RI "\fB$location\fP =''"
+.br
+.ti -1c
+.RI "\fB$action\fP =''"
+.br
+.ti -1c
+.RI "\fB$expID\fP =''"
+.br
+.ti -1c
+.RI "\fB$fwID\fP =''"
+.br
+.ti -1c
+.RI "\fB$locID\fP =''"
+.br
+.ti -1c
+.RI "\fB$status\fP ='success'"
+.br
+.ti -1c
+.RI "if(isset($_POST['sampleID'])) 
+.br
+if(isset($_POST['sampleNB'])) 
+.br
+if(isset($_POST['aliquotID'])) 
+.br
+if(isset($_POST['aliquotNB'])) 
+.br
+if(isset($_POST['value'])) if(isset($_POST['state'])) 
+.br
+if(isset($_POST['location'])) 
+.br
+if(isset($_POST['action'])) if(isset($_POST['\fBexpID\fP'])) 
+.br
+if(isset($_POST['fwID'])) if(isset($_POST['locID'])) 
+.br
+if($action=== 'edit') elseif($action=== 
+.br
+'create') elseif($action=== 
+.br
+'delete') \fB$response_array\fP ['status'] =$status"
+.br
+.ti -1c
+.RI "\fB$response_array\fP ['action'] =$action"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$action =''"
+
+.PP
+Definition at line 13 of file UpdateData\&.php\&.
+.SS "$aliquotID =''"
+
+.PP
+Definition at line 8 of file UpdateData\&.php\&.
+.SS "$aliquotNB =''"
+
+.PP
+Definition at line 9 of file UpdateData\&.php\&.
+.SS "$conn = \fBget_connexion\fP()"
+
+.PP
+Definition at line 4 of file UpdateData\&.php\&.
+.SS "$\fBexpID\fP =''"
+
+.PP
+Definition at line 14 of file UpdateData\&.php\&.
+.SS "$fwID =''"
+
+.PP
+Definition at line 15 of file UpdateData\&.php\&.
+.SS "$location =''"
+
+.PP
+Definition at line 12 of file UpdateData\&.php\&.
+.SS "$locID =''"
+
+.PP
+Definition at line 16 of file UpdateData\&.php\&.
+.SS "if (isset($_POST['sampleID'])) if (isset($_POST['sampleNB'])) if (isset($_POST['aliquotID'])) if (isset($_POST['aliquotNB'])) if (isset($_POST['value'])) if (isset($_POST['state'])) if (isset($_POST['location'])) if (isset($_POST['action'])) if (isset($_POST['\fBexpID\fP'])) if (isset($_POST['fwID'])) if (isset($_POST['locID'])) if ($action=== 'edit') elseif ($action=== 'create') elseif ($action=== 'delete') $response_array['status'] =$status"
+différentes requetes en fonction de l'action a effectuer 
+.PP
+Definition at line 176 of file UpdateData\&.php\&.
+.SS "$response_array['action'] =$action"
+
+.PP
+Definition at line 177 of file UpdateData\&.php\&.
+.SS "$sampleID =''"
+
+.PP
+Definition at line 6 of file UpdateData\&.php\&.
+.SS "$sampleNB =''"
+
+.PP
+Definition at line 7 of file UpdateData\&.php\&.
+.SS "$state =''"
+
+.PP
+Definition at line 11 of file UpdateData\&.php\&.
+.SS "$status ='success'"
+
+.PP
+Definition at line 18 of file UpdateData\&.php\&.
+.SS "$value =''"
+
+.PP
+Definition at line 10 of file UpdateData\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d9/d12/save__edit__remake_07obsolete_08_8php">
+    <title>save_edit_remake(obsolete).php File Reference</title>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d12/save__edit__remake_07obsolete_08_8php_1aa8a5a87b9c1a6a0819b88447cbe41877">$conn</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d12/save__edit__remake_07obsolete_08_8php_1a58391ea75f2d29d5d708d7050b641c33">$status</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d12/save__edit__remake_07obsolete_08_8php_1a538eaf07e91a8c4f140bc04fa2b899cf">$boolSucces</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d12/save__edit__remake_07obsolete_08_8php_1aa698a3e72116e8e778be0e95d908ee30">$action</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d12/save__edit__remake_07obsolete_08_8php_1a5a756a18d8cc040338f041ca8f8c3666">$procdatas</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d12/save__edit__remake_07obsolete_08_8php_1a296195c83717b71c16843c3c951e29a2">$excludMap</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d12/save__edit__remake_07obsolete_08_8php_1a2c543a123b646cdf11c814983d4a13cf">$rawIDMap</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d12/save__edit__remake_07obsolete_08_8php_1aaa6d122ea9cb55b210aadd86e5654a74">$batchID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d12/save__edit__remake_07obsolete_08_8php_1addb1ec3ba55e413a08cb006ce21974df">$ezID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d12/save__edit__remake_07obsolete_08_8php_1a2efb2f950a559a8fda8c5b114c5ea10f">$colIdx</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d12/save__edit__remake_07obsolete_08_8php_1a2457f3fab8183bd163626612df265a7e">$rowIdx</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d12/save__edit__remake_07obsolete_08_8php_1a7e1df84a3733bb1672c8485fa286658d">$rawdataID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>foreach($procdatas as $row) <link linkend="d9/d12/save__edit__remake_07obsolete_08_8php_1a7a23fc905184e8d9769c6c2948032a18">$response_array</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d9/d12/save__edit__remake_07obsolete_08_8php_1ae768978a0cdc416c0d63d798c85c8784">$response_array</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /var/www/html/plato/php/processing/obsolete/save_edit_remake(obsolete).php</para>
+    </simplesect>
+</section>

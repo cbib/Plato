@@ -1,0 +1,80 @@
+\hypertarget{freshweight_2get__all__experiment_8php}{\section{php/freshweight/get\-\_\-all\-\_\-experiment.php File Reference}
+\label{freshweight_2get__all__experiment_8php}\index{php/freshweight/get\-\_\-all\-\_\-experiment.\-php@{php/freshweight/get\-\_\-all\-\_\-experiment.\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{freshweight_2get__all__experiment_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{freshweight_2get__all__experiment_8php_af59a5f7cd609e592c41dc3643efd3c98}{\$query}
+\item 
+\hyperlink{freshweight_2get__all__experiment_8php_afa9126f9664959c02795be300a135f93}{\$sth} =\$conn-\/$>$prepare(\$query)
+\item 
+\hyperlink{freshweight_2get__all__experiment_8php_af789423037bbc89dc7c850e761177570}{\$count} = \$sth-\/$>$row\-Count()
+\item 
+\hyperlink{freshweight_2get__all__experiment_8php_ace2ec39e7df3899fa8df9640ec274b03}{\$rows} =\$sth-\/$>$fetch\-All()
+\item 
+\hyperlink{freshweight_2get__all__experiment_8php_a73004ce9cd673c1bfafd1dc351134797}{\$output}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{freshweight_2get__all__experiment_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{freshweight/get\-\_\-all\-\_\-experiment.\-php@{freshweight/get\-\_\-all\-\_\-experiment.\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!freshweight/get_all_experiment.php@{freshweight/get\-\_\-all\-\_\-experiment.\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{freshweight_2get__all__experiment_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 4 of file get\-\_\-all\-\_\-experiment.\-php.
+
+\hypertarget{freshweight_2get__all__experiment_8php_af789423037bbc89dc7c850e761177570}{\index{freshweight/get\-\_\-all\-\_\-experiment.\-php@{freshweight/get\-\_\-all\-\_\-experiment.\-php}!\$count@{\$count}}
+\index{\$count@{\$count}!freshweight/get_all_experiment.php@{freshweight/get\-\_\-all\-\_\-experiment.\-php}}
+\subsubsection[{\$count}]{\setlength{\rightskip}{0pt plus 5cm}\$count = \$sth-\/$>$row\-Count()}}\label{freshweight_2get__all__experiment_8php_af789423037bbc89dc7c850e761177570}
+
+
+Definition at line 18 of file get\-\_\-all\-\_\-experiment.\-php.
+
+\hypertarget{freshweight_2get__all__experiment_8php_a73004ce9cd673c1bfafd1dc351134797}{\index{freshweight/get\-\_\-all\-\_\-experiment.\-php@{freshweight/get\-\_\-all\-\_\-experiment.\-php}!\$output@{\$output}}
+\index{\$output@{\$output}!freshweight/get_all_experiment.php@{freshweight/get\-\_\-all\-\_\-experiment.\-php}}
+\subsubsection[{\$output}]{\setlength{\rightskip}{0pt plus 5cm}\$output}}\label{freshweight_2get__all__experiment_8php_a73004ce9cd673c1bfafd1dc351134797}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+= array(
+        \textcolor{stringliteral}{"iTotalRecords"} => \hyperlink{batches_2get__all__experiment_8php_af789423037bbc89dc7c850e761177570}{$count},
+        \textcolor{stringliteral}{"iTotalDisplayRecords"} => \hyperlink{batches_2get__all__experiment_8php_af789423037bbc89dc7c850e761177570}{$count},
+        \textcolor{stringliteral}{"aaData"} => array()
+    )
+\end{DoxyCode}
+
+
+Definition at line 21 of file get\-\_\-all\-\_\-experiment.\-php.
+
+\hypertarget{freshweight_2get__all__experiment_8php_af59a5f7cd609e592c41dc3643efd3c98}{\index{freshweight/get\-\_\-all\-\_\-experiment.\-php@{freshweight/get\-\_\-all\-\_\-experiment.\-php}!\$query@{\$query}}
+\index{\$query@{\$query}!freshweight/get_all_experiment.php@{freshweight/get\-\_\-all\-\_\-experiment.\-php}}
+\subsubsection[{\$query}]{\setlength{\rightskip}{0pt plus 5cm}\$query}}\label{freshweight_2get__all__experiment_8php_af59a5f7cd609e592c41dc3643efd3c98}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=\textcolor{stringliteral}{'SELECT e.*, s.std\_name }
+\textcolor{stringliteral}{    FROM experiment e}
+\textcolor{stringliteral}{    LEFT JOIN experiment\_standard es}
+\textcolor{stringliteral}{    ON e.exp\_id = es.exp\_std\_experiment\_FK}
+\textcolor{stringliteral}{    LEFT JOIN standard s }
+\textcolor{stringliteral}{    ON s.std\_id = es.exp\_std\_standard\_FK;'}
+\end{DoxyCode}
+
+
+Definition at line 7 of file get\-\_\-all\-\_\-experiment.\-php.
+
+\hypertarget{freshweight_2get__all__experiment_8php_ace2ec39e7df3899fa8df9640ec274b03}{\index{freshweight/get\-\_\-all\-\_\-experiment.\-php@{freshweight/get\-\_\-all\-\_\-experiment.\-php}!\$rows@{\$rows}}
+\index{\$rows@{\$rows}!freshweight/get_all_experiment.php@{freshweight/get\-\_\-all\-\_\-experiment.\-php}}
+\subsubsection[{\$rows}]{\setlength{\rightskip}{0pt plus 5cm}\$rows =\$sth-\/$>$fetch\-All()}}\label{freshweight_2get__all__experiment_8php_ace2ec39e7df3899fa8df9640ec274b03}
+
+
+Definition at line 19 of file get\-\_\-all\-\_\-experiment.\-php.
+
+\hypertarget{freshweight_2get__all__experiment_8php_afa9126f9664959c02795be300a135f93}{\index{freshweight/get\-\_\-all\-\_\-experiment.\-php@{freshweight/get\-\_\-all\-\_\-experiment.\-php}!\$sth@{\$sth}}
+\index{\$sth@{\$sth}!freshweight/get_all_experiment.php@{freshweight/get\-\_\-all\-\_\-experiment.\-php}}
+\subsubsection[{\$sth}]{\setlength{\rightskip}{0pt plus 5cm}\$sth =\$conn-\/$>$prepare(\$query)}}\label{freshweight_2get__all__experiment_8php_afa9126f9664959c02795be300a135f93}
+
+
+Definition at line 15 of file get\-\_\-all\-\_\-experiment.\-php.
+

@@ -126,6 +126,11 @@ $( "#refresh" ).click(function() {
 	refresh_stat();
 });
 
+/**
+ * Refresh statistics of the database printed on the dashboard
+ *
+ * @method     refresh_stat
+ */
 function refresh_stat(){
 	$.ajax({
 	   	url: 'php/index_functions/index_refresh.php',
@@ -189,7 +194,6 @@ function refresh_stat(){
 	});
 }
 
-
 $(document).ready(function() {
 	$.ajax({
 		url: 'php/index_functions/index_refresh.php',
@@ -229,7 +233,13 @@ $(document).ready(function() {
 	});
 });
 
-
+/**
+ * Print data for batch evolution graph
+ *
+ * @method     batchDataPrint
+ * @param      {<type>}  data    { description }
+ * @param      {<type>}  data2   { description }
+ */
 function batchDataPrint(data, data2){
     $('#batchEvolution').highcharts({
         chart: {

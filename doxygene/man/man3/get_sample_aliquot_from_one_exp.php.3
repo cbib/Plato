@@ -1,0 +1,106 @@
+.TH "php/freshweight/get_sample_aliquot_from_one_exp.php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/freshweight/get_sample_aliquot_from_one_exp.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$conn\fP = \fBget_connexion\fP()"
+.br
+.ti -1c
+.RI "\fB$expID\fP = $_POST['\fBexpID\fP']"
+.br
+.ti -1c
+.RI "\fB$query\fP"
+.br
+.ti -1c
+.RI "\fB$sth\fP =$conn->prepare($query)"
+.br
+.ti -1c
+.RI "\fB$count\fP = $sth->rowCount()"
+.br
+.ti -1c
+.RI "\fB$rows\fP =$sth->fetchAll()"
+.br
+.ti -1c
+.RI "\fB$output\fP"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$conn = \fBget_connexion\fP()"
+
+.PP
+Definition at line 4 of file get_sample_aliquot_from_one_exp\&.php\&.
+.SS "$count = $sth->rowCount()"
+
+.PP
+Definition at line 41 of file get_sample_aliquot_from_one_exp\&.php\&.
+.SS "$\fBexpID\fP = $_POST['\fBexpID\fP']"
+
+.PP
+Definition at line 6 of file get_sample_aliquot_from_one_exp\&.php\&.
+.SS "$output"
+\fBInitial value:\fP
+.PP
+.nf
+= array(
+        "iTotalRecords" => $count,
+        "iTotalDisplayRecords" => $count,
+        "aaData" => array()
+    )
+.fi
+.PP
+Definition at line 44 of file get_sample_aliquot_from_one_exp\&.php\&.
+.SS "$query"
+\fBInitial value:\fP
+.PP
+.nf
+='
+        SELECT 
+            sample\&.spl_id, 
+            sample\&.spl_number,
+            aliquot\&.alq_id,
+            aliquot\&.alq_number,
+            aliquot\&.alq_value, 
+            location\&.loc_fridge,
+            sample_aliquot\&.spl_alq_state,
+            freshweight\&.fw_id, 
+            location\&.loc_id
+        FROM 
+            experiment_freshweight, 
+            freshweight, 
+            freshweight_sample, 
+            sample, 
+            sample_aliquot, 
+            aliquot, 
+            location
+        WHERE 
+            experiment_freshweight\&.exp_fw_experiment_FK = '\&.$expID\&.' AND
+            freshweight\&.fw_id = experiment_freshweight\&.exp_fw_freshweight_FK AND
+            freshweight_sample\&.fw_spl_freshweight_FK = freshweight\&.fw_id AND
+            sample\&.spl_id = freshweight_sample\&.fw_spl_sample_FK AND
+            sample_aliquot\&.spl_alq_sample_FK = sample\&.spl_id AND
+            aliquot\&.alq_id = sample_aliquot\&.spl_alq_aliquot_FK AND
+            location\&.loc_id = aliquot\&.alq_location_FK
+        ORDER BY sample\&.spl_number;
+    '
+.fi
+.PP
+Definition at line 8 of file get_sample_aliquot_from_one_exp\&.php\&.
+.SS "$rows =$sth->fetchAll()"
+
+.PP
+Definition at line 42 of file get_sample_aliquot_from_one_exp\&.php\&.
+.SS "$sth =$conn->prepare($query)"
+
+.PP
+Definition at line 38 of file get_sample_aliquot_from_one_exp\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

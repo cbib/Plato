@@ -1,0 +1,179 @@
+\hypertarget{admin_std_8php}{\section{php/admin/admin\-Standard/admin\-Std.php File Reference}
+\label{admin_std_8php}\index{php/admin/admin\-Standard/admin\-Std.\-php@{php/admin/admin\-Standard/admin\-Std.\-php}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{admin_std_8php_a9ff77c8de996b53098750f48827c9790}{setup\-\_\-datatable} ()
+\item 
+\hyperlink{admin_std_8php_aabe3eddd8b025de2d63daa48fced5407}{refresh\-\_\-enzyme} (standard\-I\-D)
+\item 
+\hyperlink{admin_std_8php_af612a5722d436678a22f7a2e6b6e9cc6}{construct\-\_\-add\-Analyte\-\_\-modal} (standard\-I\-D)
+\item 
+\hyperlink{admin_std_8php_a0b069c5aaabb70f5aa56f03436ec3b62}{construct\-\_\-delete\-\_\-modal\-\_\-std} (\hyperlink{chart1_8php_ab3ed669f4b3fdb8c88f3a190fb907de0}{data}, action)
+\item 
+\hyperlink{admin_std_8php_a731f8acb00c0ded5d82180e66261df2f}{construct\-\_\-delete\-\_\-modal\-\_\-analyte} (\hyperlink{chart1_8php_ab3ed669f4b3fdb8c88f3a190fb907de0}{data}, action)
+\item 
+\hyperlink{admin_std_8php_a6c7a02b3ba9cc81ddfe5c61c13ac056f}{construct\-\_\-edit\-\_\-modal\-\_\-analyte} (\hyperlink{chart1_8php_ab3ed669f4b3fdb8c88f3a190fb907de0}{data}, action)
+\item 
+\hyperlink{admin_std_8php_a203cc17bc013b004954fcb8d2c444b02}{construct\-\_\-edit\-\_\-modal\-\_\-std} (\hyperlink{chart1_8php_ab3ed669f4b3fdb8c88f3a190fb907de0}{data}, action)
+\item 
+\hyperlink{admin_std_8php_a819348e44d419a2bdfe60b344c56e031}{construct\-\_\-create\-\_\-modal} (\hyperlink{chart1_8php_ab3ed669f4b3fdb8c88f3a190fb907de0}{data}, action)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{admin_std_8php_af612a5722d436678a22f7a2e6b6e9cc6}{\index{admin\-Std.\-php@{admin\-Std.\-php}!construct\-\_\-add\-Analyte\-\_\-modal@{construct\-\_\-add\-Analyte\-\_\-modal}}
+\index{construct\-\_\-add\-Analyte\-\_\-modal@{construct\-\_\-add\-Analyte\-\_\-modal}!adminStd.php@{admin\-Std.\-php}}
+\subsubsection[{construct\-\_\-add\-Analyte\-\_\-modal}]{\setlength{\rightskip}{0pt plus 5cm}construct\-\_\-add\-Analyte\-\_\-modal (
+\begin{DoxyParamCaption}
+\item[{standard\-I\-D}]{}
+\end{DoxyParamCaption}
+)}}\label{admin_std_8php_af612a5722d436678a22f7a2e6b6e9cc6}
+Modal for analyte adding
+
+construct\-\_\-add\-Analyte\-\_\-modal 
+\begin{DoxyParams}{Parameters}
+{\em \{$<$type$>$\}} & standard\-I\-D \{ id of the selected standard \} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 632 of file admin\-Std.\-php.
+
+\hypertarget{admin_std_8php_a819348e44d419a2bdfe60b344c56e031}{\index{admin\-Std.\-php@{admin\-Std.\-php}!construct\-\_\-create\-\_\-modal@{construct\-\_\-create\-\_\-modal}}
+\index{construct\-\_\-create\-\_\-modal@{construct\-\_\-create\-\_\-modal}!adminStd.php@{admin\-Std.\-php}}
+\subsubsection[{construct\-\_\-create\-\_\-modal}]{\setlength{\rightskip}{0pt plus 5cm}construct\-\_\-create\-\_\-modal (
+\begin{DoxyParamCaption}
+\item[{{\bf data}}]{, }
+\item[{action}]{}
+\end{DoxyParamCaption}
+)}}\label{admin_std_8php_a819348e44d419a2bdfe60b344c56e031}
+Modal for standard creation
+
+construct\-\_\-create\-\_\-modal 
+\begin{DoxyParams}{Parameters}
+{\em \{number\}} & data \{ useless \} \\
+\hline
+{\em \{string\}} & action \{ action associated to the submit button (create delete edit) \} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 954 of file admin\-Std.\-php.
+
+\hypertarget{admin_std_8php_a731f8acb00c0ded5d82180e66261df2f}{\index{admin\-Std.\-php@{admin\-Std.\-php}!construct\-\_\-delete\-\_\-modal\-\_\-analyte@{construct\-\_\-delete\-\_\-modal\-\_\-analyte}}
+\index{construct\-\_\-delete\-\_\-modal\-\_\-analyte@{construct\-\_\-delete\-\_\-modal\-\_\-analyte}!adminStd.php@{admin\-Std.\-php}}
+\subsubsection[{construct\-\_\-delete\-\_\-modal\-\_\-analyte}]{\setlength{\rightskip}{0pt plus 5cm}construct\-\_\-delete\-\_\-modal\-\_\-analyte (
+\begin{DoxyParamCaption}
+\item[{{\bf data}}]{, }
+\item[{action}]{}
+\end{DoxyParamCaption}
+)}}\label{admin_std_8php_a731f8acb00c0ded5d82180e66261df2f}
+Create modal for analyte deletion, on the fly
+
+construct\-\_\-delete\-\_\-modal 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & data \{ data of the selected standard id and name \} \\
+\hline
+{\em \{$<$type$>$\}} & action \{ action associated to the submit button (create delete edit) \} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 761 of file admin\-Std.\-php.
+
+\hypertarget{admin_std_8php_a0b069c5aaabb70f5aa56f03436ec3b62}{\index{admin\-Std.\-php@{admin\-Std.\-php}!construct\-\_\-delete\-\_\-modal\-\_\-std@{construct\-\_\-delete\-\_\-modal\-\_\-std}}
+\index{construct\-\_\-delete\-\_\-modal\-\_\-std@{construct\-\_\-delete\-\_\-modal\-\_\-std}!adminStd.php@{admin\-Std.\-php}}
+\subsubsection[{construct\-\_\-delete\-\_\-modal\-\_\-std}]{\setlength{\rightskip}{0pt plus 5cm}construct\-\_\-delete\-\_\-modal\-\_\-std (
+\begin{DoxyParamCaption}
+\item[{{\bf data}}]{, }
+\item[{action}]{}
+\end{DoxyParamCaption}
+)}}\label{admin_std_8php_a0b069c5aaabb70f5aa56f03436ec3b62}
+Modal for standard deleting
+
+construct\-\_\-delete\-\_\-modal\-\_\-std 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & data \{ data of the standard selected id and name \} \\
+\hline
+{\em \{string\}} & action \{ action associated to the submit button (create delete edit) \} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 733 of file admin\-Std.\-php.
+
+\hypertarget{admin_std_8php_a6c7a02b3ba9cc81ddfe5c61c13ac056f}{\index{admin\-Std.\-php@{admin\-Std.\-php}!construct\-\_\-edit\-\_\-modal\-\_\-analyte@{construct\-\_\-edit\-\_\-modal\-\_\-analyte}}
+\index{construct\-\_\-edit\-\_\-modal\-\_\-analyte@{construct\-\_\-edit\-\_\-modal\-\_\-analyte}!adminStd.php@{admin\-Std.\-php}}
+\subsubsection[{construct\-\_\-edit\-\_\-modal\-\_\-analyte}]{\setlength{\rightskip}{0pt plus 5cm}construct\-\_\-edit\-\_\-modal\-\_\-analyte (
+\begin{DoxyParamCaption}
+\item[{{\bf data}}]{, }
+\item[{action}]{}
+\end{DoxyParamCaption}
+)}}\label{admin_std_8php_a6c7a02b3ba9cc81ddfe5c61c13ac056f}
+Modal for analyte edition
+
+construct\-\_\-edit\-\_\-modal\-\_\-analyte 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & data \{ data of the selected standard \} \\
+\hline
+{\em \{$<$type$>$\}} & action \{ action associated to the submit button (create delete edit) \} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 788 of file admin\-Std.\-php.
+
+\hypertarget{admin_std_8php_a203cc17bc013b004954fcb8d2c444b02}{\index{admin\-Std.\-php@{admin\-Std.\-php}!construct\-\_\-edit\-\_\-modal\-\_\-std@{construct\-\_\-edit\-\_\-modal\-\_\-std}}
+\index{construct\-\_\-edit\-\_\-modal\-\_\-std@{construct\-\_\-edit\-\_\-modal\-\_\-std}!adminStd.php@{admin\-Std.\-php}}
+\subsubsection[{construct\-\_\-edit\-\_\-modal\-\_\-std}]{\setlength{\rightskip}{0pt plus 5cm}construct\-\_\-edit\-\_\-modal\-\_\-std (
+\begin{DoxyParamCaption}
+\item[{{\bf data}}]{, }
+\item[{action}]{}
+\end{DoxyParamCaption}
+)}}\label{admin_std_8php_a203cc17bc013b004954fcb8d2c444b02}
+Modal for standard edition
+
+construct\-\_\-edit\-\_\-modal\-\_\-std 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & data \{ data of the selected standard \} \\
+\hline
+{\em \{string\}} & action \{ action associated to the submit button (create delete edit) \} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 887 of file admin\-Std.\-php.
+
+\hypertarget{admin_std_8php_aabe3eddd8b025de2d63daa48fced5407}{\index{admin\-Std.\-php@{admin\-Std.\-php}!refresh\-\_\-enzyme@{refresh\-\_\-enzyme}}
+\index{refresh\-\_\-enzyme@{refresh\-\_\-enzyme}!adminStd.php@{admin\-Std.\-php}}
+\subsubsection[{refresh\-\_\-enzyme}]{\setlength{\rightskip}{0pt plus 5cm}refresh\-\_\-enzyme (
+\begin{DoxyParamCaption}
+\item[{standard\-I\-D}]{}
+\end{DoxyParamCaption}
+)}}\label{admin_std_8php_aabe3eddd8b025de2d63daa48fced5407}
+Reload enzyme datatable
+
+refresh\-\_\-enzyme 
+\begin{DoxyParams}{Parameters}
+{\em \{$<$type$>$\}} & standard\-I\-D \{ id of the standard selected \} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 587 of file admin\-Std.\-php.
+
+\hypertarget{admin_std_8php_a9ff77c8de996b53098750f48827c9790}{\index{admin\-Std.\-php@{admin\-Std.\-php}!setup\-\_\-datatable@{setup\-\_\-datatable}}
+\index{setup\-\_\-datatable@{setup\-\_\-datatable}!adminStd.php@{admin\-Std.\-php}}
+\subsubsection[{setup\-\_\-datatable}]{\setlength{\rightskip}{0pt plus 5cm}setup\-\_\-datatable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{admin_std_8php_a9ff77c8de996b53098750f48827c9790}
+Set standard datatable up
+
+setup\-\_\-datatable 
+
+Definition at line 538 of file admin\-Std.\-php.
+

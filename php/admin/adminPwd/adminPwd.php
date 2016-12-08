@@ -46,11 +46,18 @@ html_footer("../../../");
 
 <script type="text/javascript" class="init">
 
+
+/**
+ * Action when document is ready
+ */
 $(document).ready(function() {
 	$('#adminPanel').removeClass('submenu');
 	$('#adminPanel').addClass('submenu open');
 	setup_datatable();
 
+/**
+ * Listener on user datatable
+ */
 	$('#users tbody').on('click', 'button', function(event) {
 		var table = $('#users').DataTable();
 
@@ -72,7 +79,9 @@ $(document).ready(function() {
 });
 
 
-
+/**
+ * Listener on editsubmit button
+ */
 	$(document).on("click", "#editSubmit", function(){
 		var userID = $("#id").val();
 		var userName = $("#name").val();
@@ -153,7 +162,11 @@ $(document).ready(function() {
 
 
 
-
+/**
+ * Set datatable of users up
+ *
+ * @method     setup_datatable
+ */
 function setup_datatable(){
 	$('#users').dataTable().fnDestroy();
 	var table = $('#users').DataTable({
@@ -173,6 +186,13 @@ function setup_datatable(){
 	});
 }
 
+/**
+ * Construction of a modal window for user deletion
+ *
+ * @method     construct_delete_modal
+ * @param      {string}  data    { id and name of the user }
+ * @param      {string}  action  { action associated to the submit button (edit, create, delete) }
+ */
 function construct_delete_modal(data, action){
 	var modal ='<div class="modal-dialog">'+
 	'<div class="loginmodal-container">'+
@@ -199,6 +219,13 @@ function construct_delete_modal(data, action){
 	$("#editUserModal").modal("show");
 }
 
+/**
+ * Construction of a modal window for user edition
+ *
+ * @method     construct_edit_modal
+ * @param      {string}  data    {  id and name of the user  }
+ * @param      {string}  action  { action associated to the submit button (edit, create, delete) }
+ */
 function construct_edit_modal(data, action){
 	var modal ='<div class="modal-dialog">'+
 		'<div class="modal-content">'+
@@ -253,6 +280,13 @@ function construct_edit_modal(data, action){
 	$("#editUserModal").modal("show");
 }
 
+/**
+ * Construction of a modal window for user creation
+ *
+ * @method     construct_create_modal
+ * @param      {<type>}  data    { useless }
+ * @param      {string}  action  { action associated to the submit button (edit, create, delete) }
+ */
 function construct_create_modal(data, action){	
 	var modal ='<div class="modal-dialog">'+
 		'<div class="modal-content">'+

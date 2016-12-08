@@ -1,0 +1,123 @@
+.TH "php/standard/obsolete files/insert_standard(obsolete).php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/standard/obsolete files/insert_standard(obsolete).php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$conn\fP = \fBget_connexion\fP()"
+.br
+.ti -1c
+.RI "\fB$stdName\fP =''"
+.br
+.ti -1c
+.RI "\fB$stdGenius\fP =''"
+.br
+.ti -1c
+.RI "\fB$stdSpecies\fP =''"
+.br
+.ti -1c
+.RI "\fB$stdNature\fP =''"
+.br
+.ti -1c
+.RI "\fB$stdGenotype\fP =''"
+.br
+.ti -1c
+.RI "\fB$stdOwner\fP =''"
+.br
+.ti -1c
+.RI "\fB$stdComment\fP =''"
+.br
+.ti -1c
+.RI "\fB$status\fP ='success'"
+.br
+.ti -1c
+.RI "if(isset($_POST['stdName'])) 
+.br
+if(isset($_POST['stdGenius'])) 
+.br
+if(isset($_POST['stdSpecies'])) 
+.br
+if(isset($_POST['stdGenotype'])) 
+.br
+if(isset($_POST['stdNature'])) 
+.br
+if(isset($_POST['stdOwner'])) 
+.br
+if(isset($_POST['stdComment'])) \fB$query\fP"
+.br
+.ti -1c
+.RI "\fBtry\fP"
+.br
+.ti -1c
+.RI "catch(Exception $e) \fB$response_array\fP ['status'] =$status"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$conn = \fBget_connexion\fP()"
+
+.PP
+Definition at line 4 of file insert_standard(obsolete)\&.php\&.
+.SS "if (isset($_POST['stdName'])) if (isset($_POST['stdGenius'])) if (isset($_POST['stdSpecies'])) if (isset($_POST['stdGenotype'])) if (isset($_POST['stdNature'])) if (isset($_POST['stdOwner'])) if (isset($_POST['stdComment'])) $query"
+\fBInitial value:\fP
+.PP
+.nf
+= "INSERT INTO `standard`(`std_id`, `std_name`, `std_genius`, `std_species`, `std_genotype`, `std_nature`, `std_owner`, `std_comment`) 
+        VALUES ('', '$stdName', '$stdGenius', '$stdSpecies', '$stdGenotype', '$stdNature', '$stdOwner', '$stdComment');"
+.fi
+.PP
+Definition at line 47 of file insert_standard(obsolete)\&.php\&.
+.SS "catch (Exception $e) $response_array['status'] =$status"
+
+.PP
+Definition at line 59 of file insert_standard(obsolete)\&.php\&.
+.SS "$status ='success'"
+
+.PP
+Definition at line 13 of file insert_standard(obsolete)\&.php\&.
+.SS "$stdComment =''"
+
+.PP
+Definition at line 12 of file insert_standard(obsolete)\&.php\&.
+.SS "$stdGenius =''"
+
+.PP
+Definition at line 7 of file insert_standard(obsolete)\&.php\&.
+.SS "$stdGenotype =''"
+
+.PP
+Definition at line 10 of file insert_standard(obsolete)\&.php\&.
+.SS "$stdName =''"
+
+.PP
+Definition at line 6 of file insert_standard(obsolete)\&.php\&.
+.SS "$stdNature =''"
+
+.PP
+Definition at line 9 of file insert_standard(obsolete)\&.php\&.
+.SS "$stdOwner =''"
+
+.PP
+Definition at line 11 of file insert_standard(obsolete)\&.php\&.
+.SS "$stdSpecies =''"
+
+.PP
+Definition at line 8 of file insert_standard(obsolete)\&.php\&.
+.SS "try"
+\fBInitial value:\fP
+.PP
+.nf
+{
+        $sth=$conn->prepare($query)
+.fi
+.PP
+Definition at line 49 of file insert_standard(obsolete)\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

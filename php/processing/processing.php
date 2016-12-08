@@ -689,7 +689,7 @@ function dataInsert(tableID, expID, batchID){
 	return new Promise(function (resolve, reject){
 		var rawdatas=tableToArray2D(tableID);
 		// currentEzID = $('#selectAnalyte option:selected').val();
-		// console.log()
+		console.log(rawdatas)
 		var table=document.getElementById(tableID);
 		$.ajax({
 			url: "insert_raw_data.php",
@@ -724,7 +724,12 @@ function dataInsert(tableID, expID, batchID){
 	});
 }
 
-
+/**
+ * take a html table to make a 2D array
+ *
+ * @method     tableToArray2D
+ * @param      {<type>}  tableID  { description }
+ */
 function tableToArray2D(tableID){
 	var table=document.getElementById(tableID);
 	var rawdatas = [];
@@ -737,6 +742,13 @@ function tableToArray2D(tableID){
 	return rawdatas
 }
 
+/**
+ * Get activity of an analyte (enzyme)
+ *
+ * @method     getActivity
+ * @param      {<type>}   minname  { description }
+ * @return     {Promise}  { description_of_the_return_value }
+ */
 function getActivity(minname){
 //	console.log("EZ id in getActivity : "+currentEzID);
 	return new Promise(function (resolve, reject){
@@ -760,6 +772,12 @@ function getActivity(minname){
 	});
 }
 
+/**
+ * Get rawdatas for an experiment, batch and analyte
+ *
+ * @method     getRawData
+ * @return     {Promise}  { description_of_the_return_value }
+ */
 function getRawData(){
 //	console.log("EZ id in getrawdata : "+currentEzID);
 	return new Promise(function (resolve, reject){

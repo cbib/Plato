@@ -1,0 +1,900 @@
+\contentsline {chapter}{\numberline {1}File Index}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}File List}{1}{section.1.1}
+\contentsline {chapter}{\numberline {2}File Documentation}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}php/admin/admin\discretionary {-}{}{}Batch/admin\discretionary {-}{}{}Batch.php File Reference}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Function Documentation}{3}{subsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1.1}construct\discretionary {-}{}{}\_\discretionary {-}{}{}delete\discretionary {-}{}{}\_\discretionary {-}{}{}modal}{3}{subsubsection.2.1.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1.2}setup\discretionary {-}{}{}\_\discretionary {-}{}{}experiment\discretionary {-}{}{}\_\discretionary {-}{}{}datatable}{3}{subsubsection.2.1.1.2}
+\contentsline {subsection}{\numberline {2.1.2}Variable Documentation}{3}{subsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.2.1}batch\discretionary {-}{}{}I\discretionary {-}{}{}D}{4}{subsubsection.2.1.2.1}
+\contentsline {subsubsection}{\numberline {2.1.2.2}exp\discretionary {-}{}{}I\discretionary {-}{}{}D}{4}{subsubsection.2.1.2.2}
+\contentsline {subsubsection}{\numberline {2.1.2.3}ez\discretionary {-}{}{}I\discretionary {-}{}{}D}{4}{subsubsection.2.1.2.3}
+\contentsline {subsubsection}{\numberline {2.1.2.4}ez\discretionary {-}{}{}Name}{4}{subsubsection.2.1.2.4}
+\contentsline {section}{\numberline {2.2}php/admin/admin\discretionary {-}{}{}Batch/admin\discretionary {-}{}{}Batch\discretionary {-}{}{}Update\discretionary {-}{}{}Data.php File Reference}{4}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Variable Documentation}{4}{subsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.1.1}\$batch\discretionary {-}{}{}I\discretionary {-}{}{}D}{4}{subsubsection.2.2.1.1}
+\contentsline {subsubsection}{\numberline {2.2.1.2}\$conn}{4}{subsubsection.2.2.1.2}
+\contentsline {subsubsection}{\numberline {2.2.1.3}\$delete\discretionary {-}{}{}Batch}{4}{subsubsection.2.2.1.3}
+\contentsline {subsubsection}{\numberline {2.2.1.4}\$delete\discretionary {-}{}{}Query}{5}{subsubsection.2.2.1.4}
+\contentsline {subsubsection}{\numberline {2.2.1.5}\$delete\discretionary {-}{}{}Raw\discretionary {-}{}{}Data\discretionary {-}{}{}Query}{5}{subsubsection.2.2.1.5}
+\contentsline {subsubsection}{\numberline {2.2.1.6}\$query}{5}{subsubsection.2.2.1.6}
+\contentsline {subsubsection}{\numberline {2.2.1.7}\$query\discretionary {-}{}{}Sample}{5}{subsubsection.2.2.1.7}
+\contentsline {subsubsection}{\numberline {2.2.1.8}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{5}{subsubsection.2.2.1.8}
+\contentsline {subsubsection}{\numberline {2.2.1.9}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{5}{subsubsection.2.2.1.9}
+\contentsline {subsubsection}{\numberline {2.2.1.10}\$result}{5}{subsubsection.2.2.1.10}
+\contentsline {subsubsection}{\numberline {2.2.1.11}\$result\discretionary {-}{}{}Sample}{5}{subsubsection.2.2.1.11}
+\contentsline {subsubsection}{\numberline {2.2.1.12}\$status}{5}{subsubsection.2.2.1.12}
+\contentsline {subsubsection}{\numberline {2.2.1.13}\$sth}{6}{subsubsection.2.2.1.13}
+\contentsline {subsubsection}{\numberline {2.2.1.14}\$sth2}{6}{subsubsection.2.2.1.14}
+\contentsline {subsubsection}{\numberline {2.2.1.15}\$update\discretionary {-}{}{}State\discretionary {-}{}{}Aliquot\discretionary {-}{}{}Query}{6}{subsubsection.2.2.1.15}
+\contentsline {subsubsection}{\numberline {2.2.1.16}try}{6}{subsubsection.2.2.1.16}
+\contentsline {section}{\numberline {2.3}php/admin/admin\discretionary {-}{}{}Batch/admin\discretionary {-}{}{}Rawdata\discretionary {-}{}{}\_\discretionary {-}{}{}database\discretionary {-}{}{}\_\discretionary {-}{}{}functions.php File Reference}{6}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Variable Documentation}{6}{subsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.1.1}\$conn}{6}{subsubsection.2.3.1.1}
+\contentsline {subsubsection}{\numberline {2.3.1.2}\$count}{6}{subsubsection.2.3.1.2}
+\contentsline {subsubsection}{\numberline {2.3.1.3}\$output}{6}{subsubsection.2.3.1.3}
+\contentsline {subsubsection}{\numberline {2.3.1.4}\$query}{7}{subsubsection.2.3.1.4}
+\contentsline {subsubsection}{\numberline {2.3.1.5}\$rows}{7}{subsubsection.2.3.1.5}
+\contentsline {subsubsection}{\numberline {2.3.1.6}\$sth}{7}{subsubsection.2.3.1.6}
+\contentsline {section}{\numberline {2.4}php/admin/admin\discretionary {-}{}{}Rawdata/admin\discretionary {-}{}{}Rawdata\discretionary {-}{}{}\_\discretionary {-}{}{}database\discretionary {-}{}{}\_\discretionary {-}{}{}functions.php File Reference}{7}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Variable Documentation}{7}{subsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.1.1}\$conn}{7}{subsubsection.2.4.1.1}
+\contentsline {subsubsection}{\numberline {2.4.1.2}\$count}{7}{subsubsection.2.4.1.2}
+\contentsline {subsubsection}{\numberline {2.4.1.3}\$output}{7}{subsubsection.2.4.1.3}
+\contentsline {subsubsection}{\numberline {2.4.1.4}\$query}{8}{subsubsection.2.4.1.4}
+\contentsline {subsubsection}{\numberline {2.4.1.5}\$rows}{8}{subsubsection.2.4.1.5}
+\contentsline {subsubsection}{\numberline {2.4.1.6}\$sth}{8}{subsubsection.2.4.1.6}
+\contentsline {section}{\numberline {2.5}php/admin/admin\discretionary {-}{}{}Batch/admin\discretionary {-}{}{}Rawdata\discretionary {-}{}{}\_\discretionary {-}{}{}get\discretionary {-}{}{}\_\discretionary {-}{}{}batches.php File Reference}{8}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Variable Documentation}{8}{subsection.2.5.1}
+\contentsline {subsubsection}{\numberline {2.5.1.1}\$conn}{8}{subsubsection.2.5.1.1}
+\contentsline {subsubsection}{\numberline {2.5.1.2}\$exp\discretionary {-}{}{}I\discretionary {-}{}{}D}{8}{subsubsection.2.5.1.2}
+\contentsline {subsubsection}{\numberline {2.5.1.3}\$output}{8}{subsubsection.2.5.1.3}
+\contentsline {subsubsection}{\numberline {2.5.1.4}\$query}{8}{subsubsection.2.5.1.4}
+\contentsline {subsubsection}{\numberline {2.5.1.5}\$rows}{9}{subsubsection.2.5.1.5}
+\contentsline {subsubsection}{\numberline {2.5.1.6}\$sth}{9}{subsubsection.2.5.1.6}
+\contentsline {section}{\numberline {2.6}php/admin/admin\discretionary {-}{}{}Rawdata/admin\discretionary {-}{}{}Rawdata\discretionary {-}{}{}\_\discretionary {-}{}{}get\discretionary {-}{}{}\_\discretionary {-}{}{}batches.php File Reference}{9}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Variable Documentation}{9}{subsection.2.6.1}
+\contentsline {subsubsection}{\numberline {2.6.1.1}\$conn}{9}{subsubsection.2.6.1.1}
+\contentsline {subsubsection}{\numberline {2.6.1.2}\$exp\discretionary {-}{}{}I\discretionary {-}{}{}D}{9}{subsubsection.2.6.1.2}
+\contentsline {subsubsection}{\numberline {2.6.1.3}\$output}{9}{subsubsection.2.6.1.3}
+\contentsline {subsubsection}{\numberline {2.6.1.4}\$query}{9}{subsubsection.2.6.1.4}
+\contentsline {subsubsection}{\numberline {2.6.1.5}\$rows}{10}{subsubsection.2.6.1.5}
+\contentsline {subsubsection}{\numberline {2.6.1.6}\$sth}{10}{subsubsection.2.6.1.6}
+\contentsline {section}{\numberline {2.7}php/admin/admin\discretionary {-}{}{}Batch/admin\discretionary {-}{}{}Raw\discretionary {-}{}{}Data\discretionary {-}{}{}\_\discretionary {-}{}{}get\discretionary {-}{}{}\_\discretionary {-}{}{}enzymes.php File Reference}{10}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Variable Documentation}{10}{subsection.2.7.1}
+\contentsline {subsubsection}{\numberline {2.7.1.1}\$batch\discretionary {-}{}{}I\discretionary {-}{}{}D}{10}{subsubsection.2.7.1.1}
+\contentsline {subsubsection}{\numberline {2.7.1.2}\$conn}{10}{subsubsection.2.7.1.2}
+\contentsline {subsubsection}{\numberline {2.7.1.3}\$output}{10}{subsubsection.2.7.1.3}
+\contentsline {subsubsection}{\numberline {2.7.1.4}\$query}{10}{subsubsection.2.7.1.4}
+\contentsline {subsubsection}{\numberline {2.7.1.5}\$rows}{10}{subsubsection.2.7.1.5}
+\contentsline {subsubsection}{\numberline {2.7.1.6}\$status}{11}{subsubsection.2.7.1.6}
+\contentsline {subsubsection}{\numberline {2.7.1.7}try}{11}{subsubsection.2.7.1.7}
+\contentsline {section}{\numberline {2.8}php/admin/admin\discretionary {-}{}{}Rawdata/admin\discretionary {-}{}{}Raw\discretionary {-}{}{}Data\discretionary {-}{}{}\_\discretionary {-}{}{}get\discretionary {-}{}{}\_\discretionary {-}{}{}enzymes.php File Reference}{11}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}Variable Documentation}{11}{subsection.2.8.1}
+\contentsline {subsubsection}{\numberline {2.8.1.1}\$batch\discretionary {-}{}{}I\discretionary {-}{}{}D}{11}{subsubsection.2.8.1.1}
+\contentsline {subsubsection}{\numberline {2.8.1.2}\$conn}{11}{subsubsection.2.8.1.2}
+\contentsline {subsubsection}{\numberline {2.8.1.3}\$output}{11}{subsubsection.2.8.1.3}
+\contentsline {subsubsection}{\numberline {2.8.1.4}\$query}{11}{subsubsection.2.8.1.4}
+\contentsline {subsubsection}{\numberline {2.8.1.5}\$rows}{12}{subsubsection.2.8.1.5}
+\contentsline {subsubsection}{\numberline {2.8.1.6}\$status}{12}{subsubsection.2.8.1.6}
+\contentsline {subsubsection}{\numberline {2.8.1.7}try}{12}{subsubsection.2.8.1.7}
+\contentsline {section}{\numberline {2.9}php/admin/admin\discretionary {-}{}{}Enzyme/admin\discretionary {-}{}{}Ez.php File Reference}{12}{section.2.9}
+\contentsline {subsection}{\numberline {2.9.1}Function Documentation}{12}{subsection.2.9.1}
+\contentsline {subsubsection}{\numberline {2.9.1.1}construct\discretionary {-}{}{}\_\discretionary {-}{}{}create\discretionary {-}{}{}\_\discretionary {-}{}{}modal}{12}{subsubsection.2.9.1.1}
+\contentsline {subsubsection}{\numberline {2.9.1.2}construct\discretionary {-}{}{}\_\discretionary {-}{}{}delete\discretionary {-}{}{}\_\discretionary {-}{}{}modal}{12}{subsubsection.2.9.1.2}
+\contentsline {subsubsection}{\numberline {2.9.1.3}construct\discretionary {-}{}{}\_\discretionary {-}{}{}edit\discretionary {-}{}{}\_\discretionary {-}{}{}modal}{13}{subsubsection.2.9.1.3}
+\contentsline {subsubsection}{\numberline {2.9.1.4}setup\discretionary {-}{}{}\_\discretionary {-}{}{}datatable}{13}{subsubsection.2.9.1.4}
+\contentsline {section}{\numberline {2.10}php/admin/admin\discretionary {-}{}{}Enzyme/admin\discretionary {-}{}{}Ez\discretionary {-}{}{}\_\discretionary {-}{}{}database\discretionary {-}{}{}\_\discretionary {-}{}{}functions.php File Reference}{13}{section.2.10}
+\contentsline {subsection}{\numberline {2.10.1}Variable Documentation}{13}{subsection.2.10.1}
+\contentsline {subsubsection}{\numberline {2.10.1.1}\$conn}{13}{subsubsection.2.10.1.1}
+\contentsline {subsubsection}{\numberline {2.10.1.2}\$count}{13}{subsubsection.2.10.1.2}
+\contentsline {subsubsection}{\numberline {2.10.1.3}\$output}{13}{subsubsection.2.10.1.3}
+\contentsline {subsubsection}{\numberline {2.10.1.4}\$query}{14}{subsubsection.2.10.1.4}
+\contentsline {subsubsection}{\numberline {2.10.1.5}\$rows}{14}{subsubsection.2.10.1.5}
+\contentsline {subsubsection}{\numberline {2.10.1.6}\$sth}{14}{subsubsection.2.10.1.6}
+\contentsline {section}{\numberline {2.11}php/admin/admin\discretionary {-}{}{}Enzyme/\discretionary {-}{}{}Admin\discretionary {-}{}{}E\discretionary {-}{}{}Z\discretionary {-}{}{}Update\discretionary {-}{}{}Data.php File Reference}{14}{section.2.11}
+\contentsline {subsection}{\numberline {2.11.1}Variable Documentation}{14}{subsection.2.11.1}
+\contentsline {subsubsection}{\numberline {2.11.1.1}\$action}{14}{subsubsection.2.11.1.1}
+\contentsline {subsubsection}{\numberline {2.11.1.2}\$conn}{14}{subsubsection.2.11.1.2}
+\contentsline {subsubsection}{\numberline {2.11.1.3}\$ez\discretionary {-}{}{}Code}{15}{subsubsection.2.11.1.3}
+\contentsline {subsubsection}{\numberline {2.11.1.4}\$ez\discretionary {-}{}{}Id}{15}{subsubsection.2.11.1.4}
+\contentsline {subsubsection}{\numberline {2.11.1.5}\$ez\discretionary {-}{}{}Name}{15}{subsubsection.2.11.1.5}
+\contentsline {subsubsection}{\numberline {2.11.1.6}\$ez\discretionary {-}{}{}Slope}{15}{subsubsection.2.11.1.6}
+\contentsline {subsubsection}{\numberline {2.11.1.7}\$ez\discretionary {-}{}{}Type}{15}{subsubsection.2.11.1.7}
+\contentsline {subsubsection}{\numberline {2.11.1.8}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{15}{subsubsection.2.11.1.8}
+\contentsline {subsubsection}{\numberline {2.11.1.9}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{15}{subsubsection.2.11.1.9}
+\contentsline {subsubsection}{\numberline {2.11.1.10}\$status}{15}{subsubsection.2.11.1.10}
+\contentsline {subsubsection}{\numberline {2.11.1.11}else}{15}{subsubsection.2.11.1.11}
+\contentsline {section}{\numberline {2.12}php/admin/admin\discretionary {-}{}{}Experiment/admin\discretionary {-}{}{}Exp.php File Reference}{15}{section.2.12}
+\contentsline {subsection}{\numberline {2.12.1}Function Documentation}{16}{subsection.2.12.1}
+\contentsline {subsubsection}{\numberline {2.12.1.1}construct\discretionary {-}{}{}\_\discretionary {-}{}{}create\discretionary {-}{}{}\_\discretionary {-}{}{}modal}{16}{subsubsection.2.12.1.1}
+\contentsline {subsubsection}{\numberline {2.12.1.2}construct\discretionary {-}{}{}\_\discretionary {-}{}{}delete\discretionary {-}{}{}\_\discretionary {-}{}{}modal}{16}{subsubsection.2.12.1.2}
+\contentsline {subsubsection}{\numberline {2.12.1.3}construct\discretionary {-}{}{}\_\discretionary {-}{}{}edit\discretionary {-}{}{}\_\discretionary {-}{}{}modal}{16}{subsubsection.2.12.1.3}
+\contentsline {subsubsection}{\numberline {2.12.1.4}get\discretionary {-}{}{}Select\discretionary {-}{}{}Std}{16}{subsubsection.2.12.1.4}
+\contentsline {subsubsection}{\numberline {2.12.1.5}setup\discretionary {-}{}{}\_\discretionary {-}{}{}experiment\discretionary {-}{}{}\_\discretionary {-}{}{}datatable}{17}{subsubsection.2.12.1.5}
+\contentsline {subsection}{\numberline {2.12.2}Variable Documentation}{17}{subsection.2.12.2}
+\contentsline {subsubsection}{\numberline {2.12.2.1}select}{17}{subsubsection.2.12.2.1}
+\contentsline {section}{\numberline {2.13}php/admin/admin\discretionary {-}{}{}Experiment/admin\discretionary {-}{}{}Exp\discretionary {-}{}{}\_\discretionary {-}{}{}database\discretionary {-}{}{}\_\discretionary {-}{}{}functions.php File Reference}{17}{section.2.13}
+\contentsline {subsection}{\numberline {2.13.1}Variable Documentation}{17}{subsection.2.13.1}
+\contentsline {subsubsection}{\numberline {2.13.1.1}\$conn}{17}{subsubsection.2.13.1.1}
+\contentsline {subsubsection}{\numberline {2.13.1.2}\$count}{17}{subsubsection.2.13.1.2}
+\contentsline {subsubsection}{\numberline {2.13.1.3}\$output}{17}{subsubsection.2.13.1.3}
+\contentsline {subsubsection}{\numberline {2.13.1.4}\$query}{17}{subsubsection.2.13.1.4}
+\contentsline {subsubsection}{\numberline {2.13.1.5}\$rows}{18}{subsubsection.2.13.1.5}
+\contentsline {subsubsection}{\numberline {2.13.1.6}\$sth}{18}{subsubsection.2.13.1.6}
+\contentsline {section}{\numberline {2.14}php/admin/admin\discretionary {-}{}{}Experiment/\discretionary {-}{}{}Admin\discretionary {-}{}{}Exp\discretionary {-}{}{}Update\discretionary {-}{}{}Data.php File Reference}{18}{section.2.14}
+\contentsline {subsection}{\numberline {2.14.1}Variable Documentation}{18}{subsection.2.14.1}
+\contentsline {subsubsection}{\numberline {2.14.1.1}\$action}{18}{subsubsection.2.14.1.1}
+\contentsline {subsubsection}{\numberline {2.14.1.2}\$conn}{18}{subsubsection.2.14.1.2}
+\contentsline {subsubsection}{\numberline {2.14.1.3}\$exp\discretionary {-}{}{}I\discretionary {-}{}{}D}{18}{subsubsection.2.14.1.3}
+\contentsline {subsubsection}{\numberline {2.14.1.4}\$exp\discretionary {-}{}{}Name}{18}{subsubsection.2.14.1.4}
+\contentsline {subsubsection}{\numberline {2.14.1.5}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{18}{subsubsection.2.14.1.5}
+\contentsline {subsubsection}{\numberline {2.14.1.6}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{19}{subsubsection.2.14.1.6}
+\contentsline {subsubsection}{\numberline {2.14.1.7}\$status}{19}{subsubsection.2.14.1.7}
+\contentsline {subsubsection}{\numberline {2.14.1.8}\$std\discretionary {-}{}{}I\discretionary {-}{}{}D}{19}{subsubsection.2.14.1.8}
+\contentsline {subsubsection}{\numberline {2.14.1.9}else}{19}{subsubsection.2.14.1.9}
+\contentsline {section}{\numberline {2.15}php/admin/admin\discretionary {-}{}{}Experiment/get\discretionary {-}{}{}\_\discretionary {-}{}{}all\discretionary {-}{}{}\_\discretionary {-}{}{}standard.php File Reference}{19}{section.2.15}
+\contentsline {subsection}{\numberline {2.15.1}Variable Documentation}{19}{subsection.2.15.1}
+\contentsline {subsubsection}{\numberline {2.15.1.1}\$conn}{19}{subsubsection.2.15.1.1}
+\contentsline {subsubsection}{\numberline {2.15.1.2}\$count}{19}{subsubsection.2.15.1.2}
+\contentsline {subsubsection}{\numberline {2.15.1.3}\$output}{19}{subsubsection.2.15.1.3}
+\contentsline {subsubsection}{\numberline {2.15.1.4}\$query}{19}{subsubsection.2.15.1.4}
+\contentsline {subsubsection}{\numberline {2.15.1.5}\$rows}{20}{subsubsection.2.15.1.5}
+\contentsline {subsubsection}{\numberline {2.15.1.6}\$sth}{20}{subsubsection.2.15.1.6}
+\contentsline {section}{\numberline {2.16}php/admin/admin\discretionary {-}{}{}Pwd/admin\discretionary {-}{}{}Pwd.php File Reference}{20}{section.2.16}
+\contentsline {subsection}{\numberline {2.16.1}Function Documentation}{20}{subsection.2.16.1}
+\contentsline {subsubsection}{\numberline {2.16.1.1}construct\discretionary {-}{}{}\_\discretionary {-}{}{}create\discretionary {-}{}{}\_\discretionary {-}{}{}modal}{20}{subsubsection.2.16.1.1}
+\contentsline {subsubsection}{\numberline {2.16.1.2}construct\discretionary {-}{}{}\_\discretionary {-}{}{}delete\discretionary {-}{}{}\_\discretionary {-}{}{}modal}{20}{subsubsection.2.16.1.2}
+\contentsline {subsubsection}{\numberline {2.16.1.3}construct\discretionary {-}{}{}\_\discretionary {-}{}{}edit\discretionary {-}{}{}\_\discretionary {-}{}{}modal}{20}{subsubsection.2.16.1.3}
+\contentsline {subsubsection}{\numberline {2.16.1.4}setup\discretionary {-}{}{}\_\discretionary {-}{}{}datatable}{21}{subsubsection.2.16.1.4}
+\contentsline {section}{\numberline {2.17}php/admin/admin\discretionary {-}{}{}Pwd/\discretionary {-}{}{}Admin\discretionary {-}{}{}User\discretionary {-}{}{}Update.php File Reference}{21}{section.2.17}
+\contentsline {subsection}{\numberline {2.17.1}Variable Documentation}{21}{subsection.2.17.1}
+\contentsline {subsubsection}{\numberline {2.17.1.1}\$action}{21}{subsubsection.2.17.1.1}
+\contentsline {subsubsection}{\numberline {2.17.1.2}\$admin\discretionary {-}{}{}Password}{21}{subsubsection.2.17.1.2}
+\contentsline {subsubsection}{\numberline {2.17.1.3}\$bool\discretionary {-}{}{}Ok}{21}{subsubsection.2.17.1.3}
+\contentsline {subsubsection}{\numberline {2.17.1.4}\$conn}{21}{subsubsection.2.17.1.4}
+\contentsline {subsubsection}{\numberline {2.17.1.5}\$pass\discretionary {-}{}{}\_\discretionary {-}{}{}hache}{22}{subsubsection.2.17.1.5}
+\contentsline {subsubsection}{\numberline {2.17.1.6}\$query}{22}{subsubsection.2.17.1.6}
+\contentsline {subsubsection}{\numberline {2.17.1.7}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{22}{subsubsection.2.17.1.7}
+\contentsline {subsubsection}{\numberline {2.17.1.8}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{22}{subsubsection.2.17.1.8}
+\contentsline {subsubsection}{\numberline {2.17.1.9}\$status}{22}{subsubsection.2.17.1.9}
+\contentsline {subsubsection}{\numberline {2.17.1.10}\$user\discretionary {-}{}{}I\discretionary {-}{}{}D}{22}{subsubsection.2.17.1.10}
+\contentsline {subsubsection}{\numberline {2.17.1.11}\$user\discretionary {-}{}{}Level}{22}{subsubsection.2.17.1.11}
+\contentsline {subsubsection}{\numberline {2.17.1.12}\$user\discretionary {-}{}{}Name}{22}{subsubsection.2.17.1.12}
+\contentsline {subsubsection}{\numberline {2.17.1.13}\$user\discretionary {-}{}{}Password}{22}{subsubsection.2.17.1.13}
+\contentsline {subsubsection}{\numberline {2.17.1.14}else}{23}{subsubsection.2.17.1.14}
+\contentsline {subsubsection}{\numberline {2.17.1.15}try}{23}{subsubsection.2.17.1.15}
+\contentsline {section}{\numberline {2.18}php/admin/admin\discretionary {-}{}{}Pwd/get\discretionary {-}{}{}\_\discretionary {-}{}{}all\discretionary {-}{}{}\_\discretionary {-}{}{}users.php File Reference}{23}{section.2.18}
+\contentsline {subsection}{\numberline {2.18.1}Variable Documentation}{23}{subsection.2.18.1}
+\contentsline {subsubsection}{\numberline {2.18.1.1}\$conn}{23}{subsubsection.2.18.1.1}
+\contentsline {subsubsection}{\numberline {2.18.1.2}\$count}{23}{subsubsection.2.18.1.2}
+\contentsline {subsubsection}{\numberline {2.18.1.3}\$output}{23}{subsubsection.2.18.1.3}
+\contentsline {subsubsection}{\numberline {2.18.1.4}\$query}{23}{subsubsection.2.18.1.4}
+\contentsline {subsubsection}{\numberline {2.18.1.5}\$rows}{24}{subsubsection.2.18.1.5}
+\contentsline {subsubsection}{\numberline {2.18.1.6}\$sth}{24}{subsubsection.2.18.1.6}
+\contentsline {section}{\numberline {2.19}php/admin/admin\discretionary {-}{}{}Rawdata/admin\discretionary {-}{}{}Rawdata.php File Reference}{24}{section.2.19}
+\contentsline {subsection}{\numberline {2.19.1}Function Documentation}{24}{subsection.2.19.1}
+\contentsline {subsubsection}{\numberline {2.19.1.1}construct\discretionary {-}{}{}\_\discretionary {-}{}{}delete\discretionary {-}{}{}\_\discretionary {-}{}{}modal}{24}{subsubsection.2.19.1.1}
+\contentsline {subsubsection}{\numberline {2.19.1.2}setup\discretionary {-}{}{}\_\discretionary {-}{}{}experiment\discretionary {-}{}{}\_\discretionary {-}{}{}datatable}{24}{subsubsection.2.19.1.2}
+\contentsline {subsection}{\numberline {2.19.2}Variable Documentation}{24}{subsection.2.19.2}
+\contentsline {subsubsection}{\numberline {2.19.2.1}batch\discretionary {-}{}{}I\discretionary {-}{}{}D}{24}{subsubsection.2.19.2.1}
+\contentsline {subsubsection}{\numberline {2.19.2.2}exp\discretionary {-}{}{}I\discretionary {-}{}{}D}{25}{subsubsection.2.19.2.2}
+\contentsline {subsubsection}{\numberline {2.19.2.3}ez\discretionary {-}{}{}I\discretionary {-}{}{}D}{25}{subsubsection.2.19.2.3}
+\contentsline {subsubsection}{\numberline {2.19.2.4}ez\discretionary {-}{}{}Name}{25}{subsubsection.2.19.2.4}
+\contentsline {section}{\numberline {2.20}php/admin/admin\discretionary {-}{}{}Rawdata/admin\discretionary {-}{}{}Rawdata\discretionary {-}{}{}Update\discretionary {-}{}{}Data.php File Reference}{25}{section.2.20}
+\contentsline {subsection}{\numberline {2.20.1}Variable Documentation}{25}{subsection.2.20.1}
+\contentsline {subsubsection}{\numberline {2.20.1.1}\$batch\discretionary {-}{}{}I\discretionary {-}{}{}D}{25}{subsubsection.2.20.1.1}
+\contentsline {subsubsection}{\numberline {2.20.1.2}\$conn}{25}{subsubsection.2.20.1.2}
+\contentsline {subsubsection}{\numberline {2.20.1.3}\$delete\discretionary {-}{}{}Query}{25}{subsubsection.2.20.1.3}
+\contentsline {subsubsection}{\numberline {2.20.1.4}\$exp\discretionary {-}{}{}I\discretionary {-}{}{}D}{25}{subsubsection.2.20.1.4}
+\contentsline {subsubsection}{\numberline {2.20.1.5}\$ez\discretionary {-}{}{}I\discretionary {-}{}{}D}{26}{subsubsection.2.20.1.5}
+\contentsline {subsubsection}{\numberline {2.20.1.6}\$query}{26}{subsubsection.2.20.1.6}
+\contentsline {subsubsection}{\numberline {2.20.1.7}\$query\discretionary {-}{}{}Batch\discretionary {-}{}{}Data}{26}{subsubsection.2.20.1.7}
+\contentsline {subsubsection}{\numberline {2.20.1.8}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{26}{subsubsection.2.20.1.8}
+\contentsline {subsubsection}{\numberline {2.20.1.9}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{26}{subsubsection.2.20.1.9}
+\contentsline {subsubsection}{\numberline {2.20.1.10}\$result}{26}{subsubsection.2.20.1.10}
+\contentsline {subsubsection}{\numberline {2.20.1.11}\$result\discretionary {-}{}{}Batch\discretionary {-}{}{}Data}{26}{subsubsection.2.20.1.11}
+\contentsline {subsubsection}{\numberline {2.20.1.12}\$status}{26}{subsubsection.2.20.1.12}
+\contentsline {subsubsection}{\numberline {2.20.1.13}\$sth}{26}{subsubsection.2.20.1.13}
+\contentsline {subsubsection}{\numberline {2.20.1.14}\$sth2}{27}{subsubsection.2.20.1.14}
+\contentsline {subsubsection}{\numberline {2.20.1.15}try}{27}{subsubsection.2.20.1.15}
+\contentsline {section}{\numberline {2.21}php/admin/admin\discretionary {-}{}{}Standard/add\discretionary {-}{}{}\_\discretionary {-}{}{}enzyme\discretionary {-}{}{}\_\discretionary {-}{}{}to\discretionary {-}{}{}\_\discretionary {-}{}{}standard.php File Reference}{27}{section.2.21}
+\contentsline {subsection}{\numberline {2.21.1}Variable Documentation}{27}{subsection.2.21.1}
+\contentsline {subsubsection}{\numberline {2.21.1.1}\$analyte\discretionary {-}{}{}Value}{27}{subsubsection.2.21.1.1}
+\contentsline {subsubsection}{\numberline {2.21.1.2}\$conn}{27}{subsubsection.2.21.1.2}
+\contentsline {subsubsection}{\numberline {2.21.1.3}\$dilution\discretionary {-}{}{}Value}{27}{subsubsection.2.21.1.3}
+\contentsline {subsubsection}{\numberline {2.21.1.4}\$query}{28}{subsubsection.2.21.1.4}
+\contentsline {subsubsection}{\numberline {2.21.1.5}\$req}{28}{subsubsection.2.21.1.5}
+\contentsline {subsubsection}{\numberline {2.21.1.6}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{28}{subsubsection.2.21.1.6}
+\contentsline {subsubsection}{\numberline {2.21.1.7}\$select\discretionary {-}{}{}Analyte}{28}{subsubsection.2.21.1.7}
+\contentsline {subsubsection}{\numberline {2.21.1.8}\$select\discretionary {-}{}{}Unit}{28}{subsubsection.2.21.1.8}
+\contentsline {subsubsection}{\numberline {2.21.1.9}\$standard\discretionary {-}{}{}I\discretionary {-}{}{}D}{28}{subsubsection.2.21.1.9}
+\contentsline {subsubsection}{\numberline {2.21.1.10}\$status}{28}{subsubsection.2.21.1.10}
+\contentsline {subsubsection}{\numberline {2.21.1.11}try}{28}{subsubsection.2.21.1.11}
+\contentsline {section}{\numberline {2.22}php/admin/admin\discretionary {-}{}{}Standard/admin\discretionary {-}{}{}Std.php File Reference}{28}{section.2.22}
+\contentsline {subsection}{\numberline {2.22.1}Function Documentation}{29}{subsection.2.22.1}
+\contentsline {subsubsection}{\numberline {2.22.1.1}construct\discretionary {-}{}{}\_\discretionary {-}{}{}add\discretionary {-}{}{}Analyte\discretionary {-}{}{}\_\discretionary {-}{}{}modal}{29}{subsubsection.2.22.1.1}
+\contentsline {subsubsection}{\numberline {2.22.1.2}construct\discretionary {-}{}{}\_\discretionary {-}{}{}create\discretionary {-}{}{}\_\discretionary {-}{}{}modal}{29}{subsubsection.2.22.1.2}
+\contentsline {subsubsection}{\numberline {2.22.1.3}construct\discretionary {-}{}{}\_\discretionary {-}{}{}delete\discretionary {-}{}{}\_\discretionary {-}{}{}modal\discretionary {-}{}{}\_\discretionary {-}{}{}analyte}{29}{subsubsection.2.22.1.3}
+\contentsline {subsubsection}{\numberline {2.22.1.4}construct\discretionary {-}{}{}\_\discretionary {-}{}{}delete\discretionary {-}{}{}\_\discretionary {-}{}{}modal\discretionary {-}{}{}\_\discretionary {-}{}{}std}{29}{subsubsection.2.22.1.4}
+\contentsline {subsubsection}{\numberline {2.22.1.5}construct\discretionary {-}{}{}\_\discretionary {-}{}{}edit\discretionary {-}{}{}\_\discretionary {-}{}{}modal\discretionary {-}{}{}\_\discretionary {-}{}{}analyte}{30}{subsubsection.2.22.1.5}
+\contentsline {subsubsection}{\numberline {2.22.1.6}construct\discretionary {-}{}{}\_\discretionary {-}{}{}edit\discretionary {-}{}{}\_\discretionary {-}{}{}modal\discretionary {-}{}{}\_\discretionary {-}{}{}std}{30}{subsubsection.2.22.1.6}
+\contentsline {subsubsection}{\numberline {2.22.1.7}refresh\discretionary {-}{}{}\_\discretionary {-}{}{}enzyme}{30}{subsubsection.2.22.1.7}
+\contentsline {subsubsection}{\numberline {2.22.1.8}setup\discretionary {-}{}{}\_\discretionary {-}{}{}datatable}{30}{subsubsection.2.22.1.8}
+\contentsline {section}{\numberline {2.23}php/admin/admin\discretionary {-}{}{}Standard/admin\discretionary {-}{}{}Std\discretionary {-}{}{}\_\discretionary {-}{}{}database\discretionary {-}{}{}\_\discretionary {-}{}{}functions.php File Reference}{30}{section.2.23}
+\contentsline {subsection}{\numberline {2.23.1}Variable Documentation}{31}{subsection.2.23.1}
+\contentsline {subsubsection}{\numberline {2.23.1.1}\$conn}{31}{subsubsection.2.23.1.1}
+\contentsline {subsubsection}{\numberline {2.23.1.2}\$count}{31}{subsubsection.2.23.1.2}
+\contentsline {subsubsection}{\numberline {2.23.1.3}\$output}{31}{subsubsection.2.23.1.3}
+\contentsline {subsubsection}{\numberline {2.23.1.4}\$query}{31}{subsubsection.2.23.1.4}
+\contentsline {subsubsection}{\numberline {2.23.1.5}\$rows}{31}{subsubsection.2.23.1.5}
+\contentsline {subsubsection}{\numberline {2.23.1.6}\$sth}{31}{subsubsection.2.23.1.6}
+\contentsline {section}{\numberline {2.24}php/admin/admin\discretionary {-}{}{}Standard/\discretionary {-}{}{}Admin\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}D\discretionary {-}{}{}Update\discretionary {-}{}{}Data.php File Reference}{31}{section.2.24}
+\contentsline {subsection}{\numberline {2.24.1}Variable Documentation}{32}{subsection.2.24.1}
+\contentsline {subsubsection}{\numberline {2.24.1.1}\$action}{32}{subsubsection.2.24.1.1}
+\contentsline {subsubsection}{\numberline {2.24.1.2}\$conn}{32}{subsubsection.2.24.1.2}
+\contentsline {subsubsection}{\numberline {2.24.1.3}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{32}{subsubsection.2.24.1.3}
+\contentsline {subsubsection}{\numberline {2.24.1.4}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{32}{subsubsection.2.24.1.4}
+\contentsline {subsubsection}{\numberline {2.24.1.5}\$status}{32}{subsubsection.2.24.1.5}
+\contentsline {subsubsection}{\numberline {2.24.1.6}\$std\discretionary {-}{}{}Comment}{32}{subsubsection.2.24.1.6}
+\contentsline {subsubsection}{\numberline {2.24.1.7}\$std\discretionary {-}{}{}Genius}{32}{subsubsection.2.24.1.7}
+\contentsline {subsubsection}{\numberline {2.24.1.8}\$std\discretionary {-}{}{}Genotype}{32}{subsubsection.2.24.1.8}
+\contentsline {subsubsection}{\numberline {2.24.1.9}\$std\discretionary {-}{}{}Id}{32}{subsubsection.2.24.1.9}
+\contentsline {subsubsection}{\numberline {2.24.1.10}\$std\discretionary {-}{}{}Name}{33}{subsubsection.2.24.1.10}
+\contentsline {subsubsection}{\numberline {2.24.1.11}\$std\discretionary {-}{}{}Nature}{33}{subsubsection.2.24.1.11}
+\contentsline {subsubsection}{\numberline {2.24.1.12}\$std\discretionary {-}{}{}Owner}{33}{subsubsection.2.24.1.12}
+\contentsline {subsubsection}{\numberline {2.24.1.13}\$std\discretionary {-}{}{}Species}{33}{subsubsection.2.24.1.13}
+\contentsline {subsubsection}{\numberline {2.24.1.14}else}{33}{subsubsection.2.24.1.14}
+\contentsline {section}{\numberline {2.25}php/admin/admin\discretionary {-}{}{}Standard/edit\discretionary {-}{}{}\_\discretionary {-}{}{}enzyme\discretionary {-}{}{}\_\discretionary {-}{}{}in\discretionary {-}{}{}\_\discretionary {-}{}{}standard.php File Reference}{33}{section.2.25}
+\contentsline {subsection}{\numberline {2.25.1}Variable Documentation}{34}{subsection.2.25.1}
+\contentsline {subsubsection}{\numberline {2.25.1.1}\$amount}{34}{subsubsection.2.25.1.1}
+\contentsline {subsubsection}{\numberline {2.25.1.2}\$conn}{34}{subsubsection.2.25.1.2}
+\contentsline {subsubsection}{\numberline {2.25.1.3}\$dilution\discretionary {-}{}{}Value}{34}{subsubsection.2.25.1.3}
+\contentsline {subsubsection}{\numberline {2.25.1.4}\$query}{34}{subsubsection.2.25.1.4}
+\contentsline {subsubsection}{\numberline {2.25.1.5}\$req}{34}{subsubsection.2.25.1.5}
+\contentsline {subsubsection}{\numberline {2.25.1.6}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{34}{subsubsection.2.25.1.6}
+\contentsline {subsubsection}{\numberline {2.25.1.7}\$slope}{34}{subsubsection.2.25.1.7}
+\contentsline {subsubsection}{\numberline {2.25.1.8}\$standard\discretionary {-}{}{}I\discretionary {-}{}{}D}{34}{subsubsection.2.25.1.8}
+\contentsline {subsubsection}{\numberline {2.25.1.9}\$status}{34}{subsubsection.2.25.1.9}
+\contentsline {subsubsection}{\numberline {2.25.1.10}\$std\discretionary {-}{}{}Ez\discretionary {-}{}{}I\discretionary {-}{}{}D}{34}{subsubsection.2.25.1.10}
+\contentsline {subsubsection}{\numberline {2.25.1.11}\$unit}{34}{subsubsection.2.25.1.11}
+\contentsline {subsubsection}{\numberline {2.25.1.12}try}{35}{subsubsection.2.25.1.12}
+\contentsline {section}{\numberline {2.26}php/admin/admin\discretionary {-}{}{}Standard/enzyme\discretionary {-}{}{}\_\discretionary {-}{}{}from\discretionary {-}{}{}\_\discretionary {-}{}{}standard.php File Reference}{35}{section.2.26}
+\contentsline {subsection}{\numberline {2.26.1}Variable Documentation}{35}{subsection.2.26.1}
+\contentsline {subsubsection}{\numberline {2.26.1.1}\$conn}{35}{subsubsection.2.26.1.1}
+\contentsline {subsubsection}{\numberline {2.26.1.2}\$count}{35}{subsubsection.2.26.1.2}
+\contentsline {subsubsection}{\numberline {2.26.1.3}\$output}{35}{subsubsection.2.26.1.3}
+\contentsline {subsubsection}{\numberline {2.26.1.4}\$query}{35}{subsubsection.2.26.1.4}
+\contentsline {subsubsection}{\numberline {2.26.1.5}\$rows}{36}{subsubsection.2.26.1.5}
+\contentsline {subsubsection}{\numberline {2.26.1.6}\$standard\discretionary {-}{}{}I\discretionary {-}{}{}D}{36}{subsubsection.2.26.1.6}
+\contentsline {subsubsection}{\numberline {2.26.1.7}\$sth}{36}{subsubsection.2.26.1.7}
+\contentsline {section}{\numberline {2.27}php/standard/enzyme\discretionary {-}{}{}\_\discretionary {-}{}{}from\discretionary {-}{}{}\_\discretionary {-}{}{}standard.php File Reference}{36}{section.2.27}
+\contentsline {subsection}{\numberline {2.27.1}Variable Documentation}{36}{subsection.2.27.1}
+\contentsline {subsubsection}{\numberline {2.27.1.1}\$conn}{36}{subsubsection.2.27.1.1}
+\contentsline {subsubsection}{\numberline {2.27.1.2}\$count}{36}{subsubsection.2.27.1.2}
+\contentsline {subsubsection}{\numberline {2.27.1.3}\$output}{36}{subsubsection.2.27.1.3}
+\contentsline {subsubsection}{\numberline {2.27.1.4}\$query}{37}{subsubsection.2.27.1.4}
+\contentsline {subsubsection}{\numberline {2.27.1.5}\$rows}{37}{subsubsection.2.27.1.5}
+\contentsline {subsubsection}{\numberline {2.27.1.6}\$standard\discretionary {-}{}{}I\discretionary {-}{}{}D}{37}{subsubsection.2.27.1.6}
+\contentsline {subsubsection}{\numberline {2.27.1.7}\$sth}{37}{subsubsection.2.27.1.7}
+\contentsline {section}{\numberline {2.28}php/admin/admin\discretionary {-}{}{}Standard/enzyme\discretionary {-}{}{}\_\discretionary {-}{}{}not\discretionary {-}{}{}\_\discretionary {-}{}{}from\discretionary {-}{}{}\_\discretionary {-}{}{}standard.php File Reference}{37}{section.2.28}
+\contentsline {subsection}{\numberline {2.28.1}Variable Documentation}{37}{subsection.2.28.1}
+\contentsline {subsubsection}{\numberline {2.28.1.1}\$conn}{37}{subsubsection.2.28.1.1}
+\contentsline {subsubsection}{\numberline {2.28.1.2}\$count}{37}{subsubsection.2.28.1.2}
+\contentsline {subsubsection}{\numberline {2.28.1.3}\$query}{38}{subsubsection.2.28.1.3}
+\contentsline {subsubsection}{\numberline {2.28.1.4}\$rows}{38}{subsubsection.2.28.1.4}
+\contentsline {subsubsection}{\numberline {2.28.1.5}\$standard\discretionary {-}{}{}I\discretionary {-}{}{}D}{38}{subsubsection.2.28.1.5}
+\contentsline {subsubsection}{\numberline {2.28.1.6}try}{38}{subsubsection.2.28.1.6}
+\contentsline {section}{\numberline {2.29}php/admin/admin\discretionary {-}{}{}Standard/remove\discretionary {-}{}{}\_\discretionary {-}{}{}enzyme\discretionary {-}{}{}\_\discretionary {-}{}{}in\discretionary {-}{}{}\_\discretionary {-}{}{}standard.php File Reference}{38}{section.2.29}
+\contentsline {subsection}{\numberline {2.29.1}Variable Documentation}{39}{subsection.2.29.1}
+\contentsline {subsubsection}{\numberline {2.29.1.1}\$conn}{39}{subsubsection.2.29.1.1}
+\contentsline {subsubsection}{\numberline {2.29.1.2}\$query}{39}{subsubsection.2.29.1.2}
+\contentsline {subsubsection}{\numberline {2.29.1.3}\$req}{39}{subsubsection.2.29.1.3}
+\contentsline {subsubsection}{\numberline {2.29.1.4}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{39}{subsubsection.2.29.1.4}
+\contentsline {subsubsection}{\numberline {2.29.1.5}\$status}{39}{subsubsection.2.29.1.5}
+\contentsline {subsubsection}{\numberline {2.29.1.6}\$std\discretionary {-}{}{}Ez\discretionary {-}{}{}Id\discretionary {-}{}{}To\discretionary {-}{}{}Remove}{39}{subsubsection.2.29.1.6}
+\contentsline {subsubsection}{\numberline {2.29.1.7}try}{39}{subsubsection.2.29.1.7}
+\contentsline {section}{\numberline {2.30}php/admin/admin\discretionary {-}{}{}Standard/standard\discretionary {-}{}{}\_\discretionary {-}{}{}get\discretionary {-}{}{}\_\discretionary {-}{}{}all\discretionary {-}{}{}\_\discretionary {-}{}{}unit.php File Reference}{39}{section.2.30}
+\contentsline {subsection}{\numberline {2.30.1}Variable Documentation}{39}{subsection.2.30.1}
+\contentsline {subsubsection}{\numberline {2.30.1.1}\$conn}{39}{subsubsection.2.30.1.1}
+\contentsline {subsubsection}{\numberline {2.30.1.2}\$count}{40}{subsubsection.2.30.1.2}
+\contentsline {subsubsection}{\numberline {2.30.1.3}\$query}{40}{subsubsection.2.30.1.3}
+\contentsline {subsubsection}{\numberline {2.30.1.4}\$rows}{40}{subsubsection.2.30.1.4}
+\contentsline {subsubsection}{\numberline {2.30.1.5}\$sth}{40}{subsubsection.2.30.1.5}
+\contentsline {section}{\numberline {2.31}php/analytes/analytes.php File Reference}{40}{section.2.31}
+\contentsline {subsection}{\numberline {2.31.1}Function Documentation}{40}{subsection.2.31.1}
+\contentsline {subsubsection}{\numberline {2.31.1.1}setup\discretionary {-}{}{}\_\discretionary {-}{}{}datatable}{40}{subsubsection.2.31.1.1}
+\contentsline {section}{\numberline {2.32}php/analytes/analytes\discretionary {-}{}{}\_\discretionary {-}{}{}database\discretionary {-}{}{}\_\discretionary {-}{}{}functions.php File Reference}{40}{section.2.32}
+\contentsline {subsection}{\numberline {2.32.1}Variable Documentation}{41}{subsection.2.32.1}
+\contentsline {subsubsection}{\numberline {2.32.1.1}\$conn}{41}{subsubsection.2.32.1.1}
+\contentsline {subsubsection}{\numberline {2.32.1.2}\$count}{41}{subsubsection.2.32.1.2}
+\contentsline {subsubsection}{\numberline {2.32.1.3}\$output}{41}{subsubsection.2.32.1.3}
+\contentsline {subsubsection}{\numberline {2.32.1.4}\$query}{41}{subsubsection.2.32.1.4}
+\contentsline {subsubsection}{\numberline {2.32.1.5}\$rows}{41}{subsubsection.2.32.1.5}
+\contentsline {subsubsection}{\numberline {2.32.1.6}\$sth}{41}{subsubsection.2.32.1.6}
+\contentsline {section}{\numberline {2.33}php/batches/batch\discretionary {-}{}{}\_\discretionary {-}{}{}is\discretionary {-}{}{}\_\discretionary {-}{}{}used.php File Reference}{41}{section.2.33}
+\contentsline {subsection}{\numberline {2.33.1}Variable Documentation}{42}{subsection.2.33.1}
+\contentsline {subsubsection}{\numberline {2.33.1.1}\$conn}{42}{subsubsection.2.33.1.1}
+\contentsline {subsubsection}{\numberline {2.33.1.2}\$data}{42}{subsubsection.2.33.1.2}
+\contentsline {subsubsection}{\numberline {2.33.1.3}\$exp\discretionary {-}{}{}Names}{42}{subsubsection.2.33.1.3}
+\contentsline {subsubsection}{\numberline {2.33.1.4}\$full\discretionary {-}{}{}Result}{42}{subsubsection.2.33.1.4}
+\contentsline {subsubsection}{\numberline {2.33.1.5}\$i}{42}{subsubsection.2.33.1.5}
+\contentsline {subsubsection}{\numberline {2.33.1.6}\$new\discretionary {-}{}{}Result}{42}{subsubsection.2.33.1.6}
+\contentsline {subsubsection}{\numberline {2.33.1.7}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{42}{subsubsection.2.33.1.7}
+\contentsline {subsubsection}{\numberline {2.33.1.8}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{42}{subsubsection.2.33.1.8}
+\contentsline {subsubsection}{\numberline {2.33.1.9}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{42}{subsubsection.2.33.1.9}
+\contentsline {subsubsection}{\numberline {2.33.1.10}\$status}{42}{subsubsection.2.33.1.10}
+\contentsline {subsubsection}{\numberline {2.33.1.11}\$stmt}{43}{subsubsection.2.33.1.11}
+\contentsline {section}{\numberline {2.34}php/batches/batches.php File Reference}{43}{section.2.34}
+\contentsline {subsection}{\numberline {2.34.1}Function Documentation}{43}{subsection.2.34.1}
+\contentsline {subsubsection}{\numberline {2.34.1.1}batch\discretionary {-}{}{}Edition}{43}{subsubsection.2.34.1.1}
+\contentsline {subsubsection}{\numberline {2.34.1.2}batch\discretionary {-}{}{}Insert}{43}{subsubsection.2.34.1.2}
+\contentsline {subsubsection}{\numberline {2.34.1.3}check\discretionary {-}{}{}Use}{44}{subsubsection.2.34.1.3}
+\contentsline {subsubsection}{\numberline {2.34.1.4}chomp}{44}{subsubsection.2.34.1.4}
+\contentsline {subsubsection}{\numberline {2.34.1.5}create\discretionary {-}{}{}\_\discretionary {-}{}{}add\discretionary {-}{}{}Batch\discretionary {-}{}{}\_\discretionary {-}{}{}modal}{44}{subsubsection.2.34.1.5}
+\contentsline {subsubsection}{\numberline {2.34.1.6}dispatch\discretionary {-}{}{}Add\discretionary {-}{}{}Batch\discretionary {-}{}{}Datas}{44}{subsubsection.2.34.1.6}
+\contentsline {subsubsection}{\numberline {2.34.1.7}display\discretionary {-}{}{}Vals}{45}{subsubsection.2.34.1.7}
+\contentsline {subsubsection}{\numberline {2.34.1.8}hide\discretionary {-}{}{}Wait\discretionary {-}{}{}Modal}{45}{subsubsection.2.34.1.8}
+\contentsline {subsubsection}{\numberline {2.34.1.9}make\discretionary {-}{}{}Batch\discretionary {-}{}{}Editable}{45}{subsubsection.2.34.1.9}
+\contentsline {subsubsection}{\numberline {2.34.1.10}make\discretionary {-}{}{}Batch\discretionary {-}{}{}Un\discretionary {-}{}{}Editable}{45}{subsubsection.2.34.1.10}
+\contentsline {subsubsection}{\numberline {2.34.1.11}reset\discretionary {-}{}{}Batch\discretionary {-}{}{}Table}{45}{subsubsection.2.34.1.11}
+\contentsline {subsubsection}{\numberline {2.34.1.12}reset\discretionary {-}{}{}Modal\discretionary {-}{}{}Table}{45}{subsubsection.2.34.1.12}
+\contentsline {subsubsection}{\numberline {2.34.1.13}setup\discretionary {-}{}{}\_\discretionary {-}{}{}experiment\discretionary {-}{}{}\_\discretionary {-}{}{}datatable}{45}{subsubsection.2.34.1.13}
+\contentsline {subsubsection}{\numberline {2.34.1.14}show\discretionary {-}{}{}Wait\discretionary {-}{}{}Modal}{45}{subsubsection.2.34.1.14}
+\contentsline {section}{\numberline {2.35}php/batches/batches\discretionary {-}{}{}\_\discretionary {-}{}{}database\discretionary {-}{}{}\_\discretionary {-}{}{}functions(obsolete).php File Reference}{46}{section.2.35}
+\contentsline {subsection}{\numberline {2.35.1}Function Documentation}{46}{subsection.2.35.1}
+\contentsline {subsubsection}{\numberline {2.35.1.1}get\discretionary {-}{}{}\_\discretionary {-}{}{}all\discretionary {-}{}{}\_\discretionary {-}{}{}experiment}{46}{subsubsection.2.35.1.1}
+\contentsline {subsubsection}{\numberline {2.35.1.2}get\discretionary {-}{}{}\_\discretionary {-}{}{}batches\discretionary {-}{}{}\_\discretionary {-}{}{}from\discretionary {-}{}{}\_\discretionary {-}{}{}one\discretionary {-}{}{}\_\discretionary {-}{}{}exp}{46}{subsubsection.2.35.1.2}
+\contentsline {section}{\numberline {2.36}php/batches/batches\discretionary {-}{}{}\_\discretionary {-}{}{}get\discretionary {-}{}{}\_\discretionary {-}{}{}batch\discretionary {-}{}{}\_\discretionary {-}{}{}layout.php File Reference}{46}{section.2.36}
+\contentsline {subsection}{\numberline {2.36.1}Variable Documentation}{46}{subsection.2.36.1}
+\contentsline {subsubsection}{\numberline {2.36.1.1}\$batch\discretionary {-}{}{}I\discretionary {-}{}{}D}{46}{subsubsection.2.36.1.1}
+\contentsline {subsubsection}{\numberline {2.36.1.2}\$conn}{46}{subsubsection.2.36.1.2}
+\contentsline {subsubsection}{\numberline {2.36.1.3}\$output}{46}{subsubsection.2.36.1.3}
+\contentsline {subsubsection}{\numberline {2.36.1.4}\$query}{46}{subsubsection.2.36.1.4}
+\contentsline {subsubsection}{\numberline {2.36.1.5}\$req}{47}{subsubsection.2.36.1.5}
+\contentsline {section}{\numberline {2.37}php/batches/batches\discretionary {-}{}{}\_\discretionary {-}{}{}get\discretionary {-}{}{}\_\discretionary {-}{}{}raw\discretionary {-}{}{}Data.php File Reference}{47}{section.2.37}
+\contentsline {subsection}{\numberline {2.37.1}Variable Documentation}{47}{subsection.2.37.1}
+\contentsline {subsubsection}{\numberline {2.37.1.1}\$batch\discretionary {-}{}{}I\discretionary {-}{}{}D}{47}{subsubsection.2.37.1.1}
+\contentsline {subsubsection}{\numberline {2.37.1.2}\$conn}{47}{subsubsection.2.37.1.2}
+\contentsline {subsubsection}{\numberline {2.37.1.3}\$output}{47}{subsubsection.2.37.1.3}
+\contentsline {subsubsection}{\numberline {2.37.1.4}\$query}{47}{subsubsection.2.37.1.4}
+\contentsline {subsubsection}{\numberline {2.37.1.5}\$rows}{48}{subsubsection.2.37.1.5}
+\contentsline {subsubsection}{\numberline {2.37.1.6}\$sth}{48}{subsubsection.2.37.1.6}
+\contentsline {section}{\numberline {2.38}php/batches/batches\discretionary {-}{}{}\_\discretionary {-}{}{}table\discretionary {-}{}{}\_\discretionary {-}{}{}single.php File Reference}{48}{section.2.38}
+\contentsline {subsection}{\numberline {2.38.1}Variable Documentation}{48}{subsection.2.38.1}
+\contentsline {subsubsection}{\numberline {2.38.1.1}\$conn}{48}{subsubsection.2.38.1.1}
+\contentsline {subsubsection}{\numberline {2.38.1.2}\$exp\discretionary {-}{}{}I\discretionary {-}{}{}D}{48}{subsubsection.2.38.1.2}
+\contentsline {subsubsection}{\numberline {2.38.1.3}\$output}{48}{subsubsection.2.38.1.3}
+\contentsline {subsubsection}{\numberline {2.38.1.4}\$query}{48}{subsubsection.2.38.1.4}
+\contentsline {subsubsection}{\numberline {2.38.1.5}\$rows}{48}{subsubsection.2.38.1.5}
+\contentsline {subsubsection}{\numberline {2.38.1.6}\$sth}{49}{subsubsection.2.38.1.6}
+\contentsline {section}{\numberline {2.39}php/batches/control\discretionary {-}{}{}Batch\discretionary {-}{}{}Name\discretionary {-}{}{}And\discretionary {-}{}{}Number.php File Reference}{49}{section.2.39}
+\contentsline {subsection}{\numberline {2.39.1}Variable Documentation}{49}{subsection.2.39.1}
+\contentsline {subsubsection}{\numberline {2.39.1.1}\$batch\discretionary {-}{}{}Name}{49}{subsubsection.2.39.1.1}
+\contentsline {subsubsection}{\numberline {2.39.1.2}\$conn}{49}{subsubsection.2.39.1.2}
+\contentsline {subsubsection}{\numberline {2.39.1.3}\$output}{49}{subsubsection.2.39.1.3}
+\contentsline {subsubsection}{\numberline {2.39.1.4}\$query}{49}{subsubsection.2.39.1.4}
+\contentsline {subsubsection}{\numberline {2.39.1.5}\$req}{49}{subsubsection.2.39.1.5}
+\contentsline {subsubsection}{\numberline {2.39.1.6}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{49}{subsubsection.2.39.1.6}
+\contentsline {subsubsection}{\numberline {2.39.1.7}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{50}{subsubsection.2.39.1.7}
+\contentsline {subsubsection}{\numberline {2.39.1.8}\$status}{50}{subsubsection.2.39.1.8}
+\contentsline {subsubsection}{\numberline {2.39.1.9}\$value}{50}{subsubsection.2.39.1.9}
+\contentsline {section}{\numberline {2.40}php/batches/control\discretionary {-}{}{}Batch\discretionary {-}{}{}Name\discretionary {-}{}{}And\discretionary {-}{}{}Number2.php File Reference}{50}{section.2.40}
+\contentsline {subsection}{\numberline {2.40.1}Variable Documentation}{50}{subsection.2.40.1}
+\contentsline {subsubsection}{\numberline {2.40.1.1}\$batch\discretionary {-}{}{}Name}{50}{subsubsection.2.40.1.1}
+\contentsline {subsubsection}{\numberline {2.40.1.2}\$batch\discretionary {-}{}{}Number}{50}{subsubsection.2.40.1.2}
+\contentsline {subsubsection}{\numberline {2.40.1.3}\$conn}{50}{subsubsection.2.40.1.3}
+\contentsline {subsubsection}{\numberline {2.40.1.4}\$output}{50}{subsubsection.2.40.1.4}
+\contentsline {subsubsection}{\numberline {2.40.1.5}\$query}{51}{subsubsection.2.40.1.5}
+\contentsline {subsubsection}{\numberline {2.40.1.6}\$req}{51}{subsubsection.2.40.1.6}
+\contentsline {subsubsection}{\numberline {2.40.1.7}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{51}{subsubsection.2.40.1.7}
+\contentsline {subsubsection}{\numberline {2.40.1.8}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{51}{subsubsection.2.40.1.8}
+\contentsline {subsubsection}{\numberline {2.40.1.9}\$status}{51}{subsubsection.2.40.1.9}
+\contentsline {subsubsection}{\numberline {2.40.1.10}\$value}{51}{subsubsection.2.40.1.10}
+\contentsline {section}{\numberline {2.41}php/batches/get\discretionary {-}{}{}\_\discretionary {-}{}{}all\discretionary {-}{}{}\_\discretionary {-}{}{}batches.php File Reference}{51}{section.2.41}
+\contentsline {subsection}{\numberline {2.41.1}Variable Documentation}{51}{subsection.2.41.1}
+\contentsline {subsubsection}{\numberline {2.41.1.1}\$conn}{51}{subsubsection.2.41.1.1}
+\contentsline {subsubsection}{\numberline {2.41.1.2}\$count}{52}{subsubsection.2.41.1.2}
+\contentsline {subsubsection}{\numberline {2.41.1.3}\$output}{52}{subsubsection.2.41.1.3}
+\contentsline {subsubsection}{\numberline {2.41.1.4}\$query}{52}{subsubsection.2.41.1.4}
+\contentsline {subsubsection}{\numberline {2.41.1.5}\$rows}{52}{subsubsection.2.41.1.5}
+\contentsline {subsubsection}{\numberline {2.41.1.6}\$sth}{52}{subsubsection.2.41.1.6}
+\contentsline {section}{\numberline {2.42}php/batches/get\discretionary {-}{}{}\_\discretionary {-}{}{}all\discretionary {-}{}{}\_\discretionary {-}{}{}experiment.php File Reference}{52}{section.2.42}
+\contentsline {subsection}{\numberline {2.42.1}Variable Documentation}{52}{subsection.2.42.1}
+\contentsline {subsubsection}{\numberline {2.42.1.1}\$conn}{52}{subsubsection.2.42.1.1}
+\contentsline {subsubsection}{\numberline {2.42.1.2}\$count}{53}{subsubsection.2.42.1.2}
+\contentsline {subsubsection}{\numberline {2.42.1.3}\$output}{53}{subsubsection.2.42.1.3}
+\contentsline {subsubsection}{\numberline {2.42.1.4}\$query}{53}{subsubsection.2.42.1.4}
+\contentsline {subsubsection}{\numberline {2.42.1.5}\$rows}{53}{subsubsection.2.42.1.5}
+\contentsline {subsubsection}{\numberline {2.42.1.6}\$sth}{53}{subsubsection.2.42.1.6}
+\contentsline {section}{\numberline {2.43}php/export/get\discretionary {-}{}{}\_\discretionary {-}{}{}all\discretionary {-}{}{}\_\discretionary {-}{}{}experiment.php File Reference}{53}{section.2.43}
+\contentsline {subsection}{\numberline {2.43.1}Variable Documentation}{53}{subsection.2.43.1}
+\contentsline {subsubsection}{\numberline {2.43.1.1}\$conn}{53}{subsubsection.2.43.1.1}
+\contentsline {subsubsection}{\numberline {2.43.1.2}\$count}{54}{subsubsection.2.43.1.2}
+\contentsline {subsubsection}{\numberline {2.43.1.3}\$output}{54}{subsubsection.2.43.1.3}
+\contentsline {subsubsection}{\numberline {2.43.1.4}\$query}{54}{subsubsection.2.43.1.4}
+\contentsline {subsubsection}{\numberline {2.43.1.5}\$rows}{54}{subsubsection.2.43.1.5}
+\contentsline {subsubsection}{\numberline {2.43.1.6}\$sth}{54}{subsubsection.2.43.1.6}
+\contentsline {section}{\numberline {2.44}php/freshweight/get\discretionary {-}{}{}\_\discretionary {-}{}{}all\discretionary {-}{}{}\_\discretionary {-}{}{}experiment.php File Reference}{54}{section.2.44}
+\contentsline {subsection}{\numberline {2.44.1}Variable Documentation}{54}{subsection.2.44.1}
+\contentsline {subsubsection}{\numberline {2.44.1.1}\$conn}{54}{subsubsection.2.44.1.1}
+\contentsline {subsubsection}{\numberline {2.44.1.2}\$count}{55}{subsubsection.2.44.1.2}
+\contentsline {subsubsection}{\numberline {2.44.1.3}\$output}{55}{subsubsection.2.44.1.3}
+\contentsline {subsubsection}{\numberline {2.44.1.4}\$query}{55}{subsubsection.2.44.1.4}
+\contentsline {subsubsection}{\numberline {2.44.1.5}\$rows}{55}{subsubsection.2.44.1.5}
+\contentsline {subsubsection}{\numberline {2.44.1.6}\$sth}{55}{subsubsection.2.44.1.6}
+\contentsline {section}{\numberline {2.45}php/processing/get\discretionary {-}{}{}\_\discretionary {-}{}{}all\discretionary {-}{}{}\_\discretionary {-}{}{}experiment.php File Reference}{55}{section.2.45}
+\contentsline {subsection}{\numberline {2.45.1}Variable Documentation}{55}{subsection.2.45.1}
+\contentsline {subsubsection}{\numberline {2.45.1.1}\$conn}{55}{subsubsection.2.45.1.1}
+\contentsline {subsubsection}{\numberline {2.45.1.2}\$count}{56}{subsubsection.2.45.1.2}
+\contentsline {subsubsection}{\numberline {2.45.1.3}\$output}{56}{subsubsection.2.45.1.3}
+\contentsline {subsubsection}{\numberline {2.45.1.4}\$query}{56}{subsubsection.2.45.1.4}
+\contentsline {subsubsection}{\numberline {2.45.1.5}\$rows}{56}{subsubsection.2.45.1.5}
+\contentsline {subsubsection}{\numberline {2.45.1.6}\$sth}{56}{subsubsection.2.45.1.6}
+\contentsline {section}{\numberline {2.46}php/batches/insert\discretionary {-}{}{}\_\discretionary {-}{}{}batch.php File Reference}{56}{section.2.46}
+\contentsline {subsection}{\numberline {2.46.1}Function Documentation}{57}{subsection.2.46.1}
+\contentsline {subsubsection}{\numberline {2.46.1.1}batch\discretionary {-}{}{}\_\discretionary {-}{}{}pos\discretionary {-}{}{}\_\discretionary {-}{}{}exist\discretionary {-}{}{}\_\discretionary {-}{}{}in\discretionary {-}{}{}\_\discretionary {-}{}{}db}{57}{subsubsection.2.46.1.1}
+\contentsline {subsubsection}{\numberline {2.46.1.2}get\discretionary {-}{}{}\_\discretionary {-}{}{}experiment\discretionary {-}{}{}\_\discretionary {-}{}{}id\discretionary {-}{}{}\_\discretionary {-}{}{}from\discretionary {-}{}{}\_\discretionary {-}{}{}name}{57}{subsubsection.2.46.1.2}
+\contentsline {subsubsection}{\numberline {2.46.1.3}get\discretionary {-}{}{}\_\discretionary {-}{}{}sample\discretionary {-}{}{}\_\discretionary {-}{}{}aliquot\discretionary {-}{}{}\_\discretionary {-}{}{}id}{57}{subsubsection.2.46.1.3}
+\contentsline {subsubsection}{\numberline {2.46.1.4}get\discretionary {-}{}{}Batch\discretionary {-}{}{}Exists}{57}{subsubsection.2.46.1.4}
+\contentsline {subsubsection}{\numberline {2.46.1.5}insert\discretionary {-}{}{}\_\discretionary {-}{}{}batch\discretionary {-}{}{}\_\discretionary {-}{}{}in\discretionary {-}{}{}\_\discretionary {-}{}{}db}{57}{subsubsection.2.46.1.5}
+\contentsline {subsubsection}{\numberline {2.46.1.6}lance\discretionary {-}{}{}\_\discretionary {-}{}{}requete}{57}{subsubsection.2.46.1.6}
+\contentsline {subsection}{\numberline {2.46.2}Variable Documentation}{57}{subsection.2.46.2}
+\contentsline {subsubsection}{\numberline {2.46.2.1}\$action}{57}{subsubsection.2.46.2.1}
+\contentsline {subsubsection}{\numberline {2.46.2.2}\$batch\discretionary {-}{}{}Date}{57}{subsubsection.2.46.2.2}
+\contentsline {subsubsection}{\numberline {2.46.2.3}\$batch\discretionary {-}{}{}Exists}{58}{subsubsection.2.46.2.3}
+\contentsline {subsubsection}{\numberline {2.46.2.4}\$batch\discretionary {-}{}{}I\discretionary {-}{}{}D}{58}{subsubsection.2.46.2.4}
+\contentsline {subsubsection}{\numberline {2.46.2.5}\$batch\discretionary {-}{}{}Layout}{58}{subsubsection.2.46.2.5}
+\contentsline {subsubsection}{\numberline {2.46.2.6}\$batch\discretionary {-}{}{}Name}{58}{subsubsection.2.46.2.6}
+\contentsline {subsubsection}{\numberline {2.46.2.7}\$batch\discretionary {-}{}{}Number}{58}{subsubsection.2.46.2.7}
+\contentsline {subsubsection}{\numberline {2.46.2.8}\$col}{58}{subsubsection.2.46.2.8}
+\contentsline {subsubsection}{\numberline {2.46.2.9}\$conn}{58}{subsubsection.2.46.2.9}
+\contentsline {subsubsection}{\numberline {2.46.2.10}\$exp\discretionary {-}{}{}I\discretionary {-}{}{}D}{58}{subsubsection.2.46.2.10}
+\contentsline {subsubsection}{\numberline {2.46.2.11}\$output}{58}{subsubsection.2.46.2.11}
+\contentsline {subsubsection}{\numberline {2.46.2.12}\$pos}{58}{subsubsection.2.46.2.12}
+\contentsline {subsubsection}{\numberline {2.46.2.13}\$rawdatas}{58}{subsubsection.2.46.2.13}
+\contentsline {subsubsection}{\numberline {2.46.2.14}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{58}{subsubsection.2.46.2.14}
+\contentsline {subsubsection}{\numberline {2.46.2.15}\$row}{59}{subsubsection.2.46.2.15}
+\contentsline {subsubsection}{\numberline {2.46.2.16}\$spl\discretionary {-}{}{}\_\discretionary {-}{}{}alq\discretionary {-}{}{}\_\discretionary {-}{}{}id}{59}{subsubsection.2.46.2.16}
+\contentsline {subsubsection}{\numberline {2.46.2.17}\$status}{59}{subsubsection.2.46.2.17}
+\contentsline {subsubsection}{\numberline {2.46.2.18}else}{59}{subsubsection.2.46.2.18}
+\contentsline {section}{\numberline {2.47}php/batches/save\discretionary {-}{}{}\_\discretionary {-}{}{}edit(obsolete).php File Reference}{59}{section.2.47}
+\contentsline {subsection}{\numberline {2.47.1}Variable Documentation}{59}{subsection.2.47.1}
+\contentsline {subsubsection}{\numberline {2.47.1.1}\$batch\discretionary {-}{}{}I\discretionary {-}{}{}D}{59}{subsubsection.2.47.1.1}
+\contentsline {subsubsection}{\numberline {2.47.1.2}\$conn}{59}{subsubsection.2.47.1.2}
+\contentsline {subsubsection}{\numberline {2.47.1.3}\$query}{59}{subsubsection.2.47.1.3}
+\contentsline {subsubsection}{\numberline {2.47.1.4}\$rawdatas}{60}{subsubsection.2.47.1.4}
+\contentsline {subsubsection}{\numberline {2.47.1.5}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{60}{subsubsection.2.47.1.5}
+\contentsline {subsubsection}{\numberline {2.47.1.6}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{60}{subsubsection.2.47.1.6}
+\contentsline {subsubsection}{\numberline {2.47.1.7}\$status}{60}{subsubsection.2.47.1.7}
+\contentsline {subsubsection}{\numberline {2.47.1.8}try}{60}{subsubsection.2.47.1.8}
+\contentsline {section}{\numberline {2.48}php/processing/obsolete/save\discretionary {-}{}{}\_\discretionary {-}{}{}edit(obsolete).php File Reference}{60}{section.2.48}
+\contentsline {subsection}{\numberline {2.48.1}Variable Documentation}{61}{subsection.2.48.1}
+\contentsline {subsubsection}{\numberline {2.48.1.1}\$action}{61}{subsubsection.2.48.1.1}
+\contentsline {subsubsection}{\numberline {2.48.1.2}\$batch\discretionary {-}{}{}I\discretionary {-}{}{}D}{61}{subsubsection.2.48.1.2}
+\contentsline {subsubsection}{\numberline {2.48.1.3}\$bool\discretionary {-}{}{}Succes}{61}{subsubsection.2.48.1.3}
+\contentsline {subsubsection}{\numberline {2.48.1.4}\$col\discretionary {-}{}{}Idx}{61}{subsubsection.2.48.1.4}
+\contentsline {subsubsection}{\numberline {2.48.1.5}\$conn}{61}{subsubsection.2.48.1.5}
+\contentsline {subsubsection}{\numberline {2.48.1.6}\$exclud\discretionary {-}{}{}Map}{61}{subsubsection.2.48.1.6}
+\contentsline {subsubsection}{\numberline {2.48.1.7}\$ez\discretionary {-}{}{}I\discretionary {-}{}{}D}{61}{subsubsection.2.48.1.7}
+\contentsline {subsubsection}{\numberline {2.48.1.8}\$procdatas}{61}{subsubsection.2.48.1.8}
+\contentsline {subsubsection}{\numberline {2.48.1.9}\$rawdata\discretionary {-}{}{}I\discretionary {-}{}{}D}{61}{subsubsection.2.48.1.9}
+\contentsline {subsubsection}{\numberline {2.48.1.10}\$raw\discretionary {-}{}{}I\discretionary {-}{}{}D\discretionary {-}{}{}Map}{61}{subsubsection.2.48.1.10}
+\contentsline {subsubsection}{\numberline {2.48.1.11}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{61}{subsubsection.2.48.1.11}
+\contentsline {subsubsection}{\numberline {2.48.1.12}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{62}{subsubsection.2.48.1.12}
+\contentsline {subsubsection}{\numberline {2.48.1.13}\$row\discretionary {-}{}{}Idx}{62}{subsubsection.2.48.1.13}
+\contentsline {subsubsection}{\numberline {2.48.1.14}\$status}{62}{subsubsection.2.48.1.14}
+\contentsline {section}{\numberline {2.49}php/charts/chart1.php File Reference}{62}{section.2.49}
+\contentsline {subsection}{\numberline {2.49.1}Variable Documentation}{63}{subsection.2.49.1}
+\contentsline {subsubsection}{\numberline {2.49.1.1}\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}pad0\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}{63}{subsubsection.2.49.1.1}
+\contentsline {subsubsection}{\numberline {2.49.1.2}align}{63}{subsubsection.2.49.1.2}
+\contentsline {subsubsection}{\numberline {2.49.1.3}border\discretionary {-}{}{}Width}{63}{subsubsection.2.49.1.3}
+\contentsline {subsubsection}{\numberline {2.49.1.4}color}{63}{subsubsection.2.49.1.4}
+\contentsline {subsubsection}{\numberline {2.49.1.5}data}{63}{subsubsection.2.49.1.5}
+\contentsline {subsubsection}{\numberline {2.49.1.6}data\discretionary {-}{}{}Labels}{63}{subsubsection.2.49.1.6}
+\contentsline {subsubsection}{\numberline {2.49.1.7}font\discretionary {-}{}{}Family}{63}{subsubsection.2.49.1.7}
+\contentsline {subsubsection}{\numberline {2.49.1.8}format}{63}{subsubsection.2.49.1.8}
+\contentsline {subsubsection}{\numberline {2.49.1.9}inner\discretionary {-}{}{}Radius}{64}{subsubsection.2.49.1.9}
+\contentsline {subsubsection}{\numberline {2.49.1.10}labels}{64}{subsubsection.2.49.1.10}
+\contentsline {subsubsection}{\numberline {2.49.1.11}line\discretionary {-}{}{}Width}{64}{subsubsection.2.49.1.11}
+\contentsline {subsubsection}{\numberline {2.49.1.12}minor\discretionary {-}{}{}Tick\discretionary {-}{}{}Interval}{64}{subsubsection.2.49.1.12}
+\contentsline {subsubsection}{\numberline {2.49.1.13}outer\discretionary {-}{}{}Radius}{64}{subsubsection.2.49.1.13}
+\contentsline {subsubsection}{\numberline {2.49.1.14}plot\discretionary {-}{}{}Options}{64}{subsubsection.2.49.1.14}
+\contentsline {subsubsection}{\numberline {2.49.1.15}rotation}{64}{subsubsection.2.49.1.15}
+\contentsline {subsubsection}{\numberline {2.49.1.16}series}{64}{subsubsection.2.49.1.16}
+\contentsline {subsubsection}{\numberline {2.49.1.17}shape}{64}{subsubsection.2.49.1.17}
+\contentsline {subsubsection}{\numberline {2.49.1.18}style}{64}{subsubsection.2.49.1.18}
+\contentsline {subsubsection}{\numberline {2.49.1.19}tick\discretionary {-}{}{}Pixel\discretionary {-}{}{}Interval}{64}{subsubsection.2.49.1.19}
+\contentsline {subsubsection}{\numberline {2.49.1.20}tick\discretionary {-}{}{}Width}{64}{subsubsection.2.49.1.20}
+\contentsline {subsubsection}{\numberline {2.49.1.21}title}{65}{subsubsection.2.49.1.21}
+\contentsline {subsubsection}{\numberline {2.49.1.22}tooltip}{65}{subsubsection.2.49.1.22}
+\contentsline {subsubsection}{\numberline {2.49.1.23}Used}{65}{subsubsection.2.49.1.23}
+\contentsline {subsubsection}{\numberline {2.49.1.24}use\discretionary {-}{}{}H\discretionary {-}{}{}T\discretionary {-}{}{}M\discretionary {-}{}{}L}{65}{subsubsection.2.49.1.24}
+\contentsline {subsubsection}{\numberline {2.49.1.25}x\discretionary {-}{}{}Axis}{65}{subsubsection.2.49.1.25}
+\contentsline {subsubsection}{\numberline {2.49.1.26}y}{65}{subsubsection.2.49.1.26}
+\contentsline {subsubsection}{\numberline {2.49.1.27}y\discretionary {-}{}{}Axis}{65}{subsubsection.2.49.1.27}
+\contentsline {section}{\numberline {2.50}php/charts/charts\discretionary {-}{}{}\_\discretionary {-}{}{}functions.php File Reference}{65}{section.2.50}
+\contentsline {subsection}{\numberline {2.50.1}Function Documentation}{65}{subsection.2.50.1}
+\contentsline {subsubsection}{\numberline {2.50.1.1}analyte\discretionary {-}{}{}\_\discretionary {-}{}{}distribution}{65}{subsubsection.2.50.1.1}
+\contentsline {subsubsection}{\numberline {2.50.1.2}size\discretionary {-}{}{}Of\discretionary {-}{}{}Db}{65}{subsubsection.2.50.1.2}
+\contentsline {section}{\numberline {2.51}php/export/export.php File Reference}{66}{section.2.51}
+\contentsline {subsection}{\numberline {2.51.1}Function Documentation}{66}{subsection.2.51.1}
+\contentsline {subsubsection}{\numberline {2.51.1.1}aliquot\discretionary {-}{}{}Merge}{66}{subsubsection.2.51.1.1}
+\contentsline {subsubsection}{\numberline {2.51.1.2}chomp}{66}{subsubsection.2.51.1.2}
+\contentsline {subsubsection}{\numberline {2.51.1.3}clear\discretionary {-}{}{}Table}{67}{subsubsection.2.51.1.3}
+\contentsline {subsubsection}{\numberline {2.51.1.4}generate\discretionary {-}{}{}\_\discretionary {-}{}{}data}{67}{subsubsection.2.51.1.4}
+\contentsline {subsubsection}{\numberline {2.51.1.5}get\discretionary {-}{}{}Average\discretionary {-}{}{}From\discretionary {-}{}{}Num\discretionary {-}{}{}Arr}{67}{subsubsection.2.51.1.5}
+\contentsline {subsubsection}{\numberline {2.51.1.6}get\discretionary {-}{}{}Error}{67}{subsubsection.2.51.1.6}
+\contentsline {subsubsection}{\numberline {2.51.1.7}get\discretionary {-}{}{}Num\discretionary {-}{}{}With\discretionary {-}{}{}Set\discretionary {-}{}{}Dec}{67}{subsubsection.2.51.1.7}
+\contentsline {subsubsection}{\numberline {2.51.1.8}get\discretionary {-}{}{}Standard\discretionary {-}{}{}Deviation}{69}{subsubsection.2.51.1.8}
+\contentsline {subsubsection}{\numberline {2.51.1.9}get\discretionary {-}{}{}Variance}{69}{subsubsection.2.51.1.9}
+\contentsline {subsubsection}{\numberline {2.51.1.10}hide\discretionary {-}{}{}Wait\discretionary {-}{}{}Modal}{69}{subsubsection.2.51.1.10}
+\contentsline {subsubsection}{\numberline {2.51.1.11}inter\discretionary {-}{}{}Batch\discretionary {-}{}{}Centering}{69}{subsubsection.2.51.1.11}
+\contentsline {subsubsection}{\numberline {2.51.1.12}is\discretionary {-}{}{}Array}{70}{subsubsection.2.51.1.12}
+\contentsline {subsubsection}{\numberline {2.51.1.13}print\discretionary {-}{}{}Aliquot\discretionary {-}{}{}Merge}{70}{subsubsection.2.51.1.13}
+\contentsline {subsubsection}{\numberline {2.51.1.14}print\discretionary {-}{}{}Std\discretionary {-}{}{}Used}{70}{subsubsection.2.51.1.14}
+\contentsline {subsubsection}{\numberline {2.51.1.15}setup\discretionary {-}{}{}\_\discretionary {-}{}{}experiment\discretionary {-}{}{}\_\discretionary {-}{}{}datatable}{70}{subsubsection.2.51.1.15}
+\contentsline {subsubsection}{\numberline {2.51.1.16}setup\discretionary {-}{}{}\_\discretionary {-}{}{}rawtable\discretionary {-}{}{}\_\discretionary {-}{}{}datatable}{71}{subsubsection.2.51.1.16}
+\contentsline {subsubsection}{\numberline {2.51.1.17}show\discretionary {-}{}{}Wait\discretionary {-}{}{}Modal}{71}{subsubsection.2.51.1.17}
+\contentsline {subsubsection}{\numberline {2.51.1.18}standards\discretionary {-}{}{}Used}{71}{subsubsection.2.51.1.18}
+\contentsline {subsection}{\numberline {2.51.2}Variable Documentation}{71}{subsection.2.51.2}
+\contentsline {subsubsection}{\numberline {2.51.2.1}true}{71}{subsubsection.2.51.2.1}
+\contentsline {section}{\numberline {2.52}php/export/export\discretionary {-}{}{}\_\discretionary {-}{}{}get\discretionary {-}{}{}\_\discretionary {-}{}{}exp\discretionary {-}{}{}\_\discretionary {-}{}{}data.php File Reference}{71}{section.2.52}
+\contentsline {subsection}{\numberline {2.52.1}Variable Documentation}{72}{subsection.2.52.1}
+\contentsline {subsubsection}{\numberline {2.52.1.1}\$conn}{72}{subsubsection.2.52.1.1}
+\contentsline {subsubsection}{\numberline {2.52.1.2}\$exp\discretionary {-}{}{}I\discretionary {-}{}{}D}{72}{subsubsection.2.52.1.2}
+\contentsline {subsubsection}{\numberline {2.52.1.3}\$exp\discretionary {-}{}{}Name}{72}{subsubsection.2.52.1.3}
+\contentsline {subsubsection}{\numberline {2.52.1.4}\$ez\discretionary {-}{}{}Name\discretionary {-}{}{}Query}{72}{subsubsection.2.52.1.4}
+\contentsline {subsubsection}{\numberline {2.52.1.5}\$ez\discretionary {-}{}{}Names}{72}{subsubsection.2.52.1.5}
+\contentsline {subsubsection}{\numberline {2.52.1.6}\$line\discretionary {-}{}{}Name}{72}{subsubsection.2.52.1.6}
+\contentsline {subsubsection}{\numberline {2.52.1.7}\$output}{72}{subsubsection.2.52.1.7}
+\contentsline {subsubsection}{\numberline {2.52.1.8}\$output}{72}{subsubsection.2.52.1.8}
+\contentsline {subsubsection}{\numberline {2.52.1.9}\$query}{72}{subsubsection.2.52.1.9}
+\contentsline {subsubsection}{\numberline {2.52.1.10}\$results}{73}{subsubsection.2.52.1.10}
+\contentsline {section}{\numberline {2.53}php/export/get\discretionary {-}{}{}\_\discretionary {-}{}{}exp\discretionary {-}{}{}\_\discretionary {-}{}{}names\discretionary {-}{}{}\_\discretionary {-}{}{}by\discretionary {-}{}{}\_\discretionary {-}{}{}batch.php File Reference}{73}{section.2.53}
+\contentsline {subsection}{\numberline {2.53.1}Variable Documentation}{73}{subsection.2.53.1}
+\contentsline {subsubsection}{\numberline {2.53.1.1}\$batch\discretionary {-}{}{}I\discretionary {-}{}{}D}{73}{subsubsection.2.53.1.1}
+\contentsline {subsubsection}{\numberline {2.53.1.2}\$conn}{73}{subsubsection.2.53.1.2}
+\contentsline {subsubsection}{\numberline {2.53.1.3}\$ez\discretionary {-}{}{}I\discretionary {-}{}{}D}{73}{subsubsection.2.53.1.3}
+\contentsline {subsubsection}{\numberline {2.53.1.4}\$hash}{73}{subsubsection.2.53.1.4}
+\contentsline {subsubsection}{\numberline {2.53.1.5}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{73}{subsubsection.2.53.1.5}
+\contentsline {subsubsection}{\numberline {2.53.1.6}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{73}{subsubsection.2.53.1.6}
+\contentsline {section}{\numberline {2.54}php/export/get\discretionary {-}{}{}\_\discretionary {-}{}{}procvalues.php File Reference}{73}{section.2.54}
+\contentsline {subsection}{\numberline {2.54.1}Variable Documentation}{74}{subsection.2.54.1}
+\contentsline {subsubsection}{\numberline {2.54.1.1}\$batch\discretionary {-}{}{}I\discretionary {-}{}{}D}{74}{subsubsection.2.54.1.1}
+\contentsline {subsubsection}{\numberline {2.54.1.2}\$conn}{74}{subsubsection.2.54.1.2}
+\contentsline {subsubsection}{\numberline {2.54.1.3}\$count}{74}{subsubsection.2.54.1.3}
+\contentsline {subsubsection}{\numberline {2.54.1.4}\$ez\discretionary {-}{}{}I\discretionary {-}{}{}D}{74}{subsubsection.2.54.1.4}
+\contentsline {subsubsection}{\numberline {2.54.1.5}\$hash}{74}{subsubsection.2.54.1.5}
+\contentsline {subsubsection}{\numberline {2.54.1.6}\$layout}{74}{subsubsection.2.54.1.6}
+\contentsline {subsubsection}{\numberline {2.54.1.7}\$query\discretionary {-}{}{}Layout}{74}{subsubsection.2.54.1.7}
+\contentsline {subsubsection}{\numberline {2.54.1.8}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{74}{subsubsection.2.54.1.8}
+\contentsline {subsubsection}{\numberline {2.54.1.9}\$result}{74}{subsubsection.2.54.1.9}
+\contentsline {subsubsection}{\numberline {2.54.1.10}\$sth}{75}{subsubsection.2.54.1.10}
+\contentsline {section}{\numberline {2.55}php/freshweight/freshweight.php File Reference}{75}{section.2.55}
+\contentsline {section}{\numberline {2.56}php/freshweight/get\discretionary {-}{}{}\_\discretionary {-}{}{}sample\discretionary {-}{}{}\_\discretionary {-}{}{}aliquot\discretionary {-}{}{}\_\discretionary {-}{}{}from\discretionary {-}{}{}\_\discretionary {-}{}{}one\discretionary {-}{}{}\_\discretionary {-}{}{}exp.php File Reference}{75}{section.2.56}
+\contentsline {subsection}{\numberline {2.56.1}Variable Documentation}{75}{subsection.2.56.1}
+\contentsline {subsubsection}{\numberline {2.56.1.1}\$conn}{75}{subsubsection.2.56.1.1}
+\contentsline {subsubsection}{\numberline {2.56.1.2}\$count}{75}{subsubsection.2.56.1.2}
+\contentsline {subsubsection}{\numberline {2.56.1.3}\$exp\discretionary {-}{}{}I\discretionary {-}{}{}D}{75}{subsubsection.2.56.1.3}
+\contentsline {subsubsection}{\numberline {2.56.1.4}\$output}{75}{subsubsection.2.56.1.4}
+\contentsline {subsubsection}{\numberline {2.56.1.5}\$query}{75}{subsubsection.2.56.1.5}
+\contentsline {subsubsection}{\numberline {2.56.1.6}\$rows}{76}{subsubsection.2.56.1.6}
+\contentsline {subsubsection}{\numberline {2.56.1.7}\$sth}{76}{subsubsection.2.56.1.7}
+\contentsline {section}{\numberline {2.57}php/freshweight/insert\discretionary {-}{}{}\_\discretionary {-}{}{}exp.php File Reference}{76}{section.2.57}
+\contentsline {subsection}{\numberline {2.57.1}Variable Documentation}{76}{subsection.2.57.1}
+\contentsline {subsubsection}{\numberline {2.57.1.1}\$conn}{76}{subsubsection.2.57.1.1}
+\contentsline {subsubsection}{\numberline {2.57.1.2}\$exp\discretionary {-}{}{}Name}{76}{subsubsection.2.57.1.2}
+\contentsline {subsubsection}{\numberline {2.57.1.3}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{76}{subsubsection.2.57.1.3}
+\contentsline {subsubsection}{\numberline {2.57.1.4}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{77}{subsubsection.2.57.1.4}
+\contentsline {subsubsection}{\numberline {2.57.1.5}\$status}{77}{subsubsection.2.57.1.5}
+\contentsline {subsubsection}{\numberline {2.57.1.6}else}{77}{subsubsection.2.57.1.6}
+\contentsline {section}{\numberline {2.58}php/freshweight/\discretionary {-}{}{}Update\discretionary {-}{}{}Data.php File Reference}{77}{section.2.58}
+\contentsline {subsection}{\numberline {2.58.1}Variable Documentation}{77}{subsection.2.58.1}
+\contentsline {subsubsection}{\numberline {2.58.1.1}\$action}{77}{subsubsection.2.58.1.1}
+\contentsline {subsubsection}{\numberline {2.58.1.2}\$aliquot\discretionary {-}{}{}I\discretionary {-}{}{}D}{78}{subsubsection.2.58.1.2}
+\contentsline {subsubsection}{\numberline {2.58.1.3}\$aliquot\discretionary {-}{}{}N\discretionary {-}{}{}B}{78}{subsubsection.2.58.1.3}
+\contentsline {subsubsection}{\numberline {2.58.1.4}\$conn}{78}{subsubsection.2.58.1.4}
+\contentsline {subsubsection}{\numberline {2.58.1.5}\$exp\discretionary {-}{}{}I\discretionary {-}{}{}D}{78}{subsubsection.2.58.1.5}
+\contentsline {subsubsection}{\numberline {2.58.1.6}\$fw\discretionary {-}{}{}I\discretionary {-}{}{}D}{78}{subsubsection.2.58.1.6}
+\contentsline {subsubsection}{\numberline {2.58.1.7}\$location}{78}{subsubsection.2.58.1.7}
+\contentsline {subsubsection}{\numberline {2.58.1.8}\$loc\discretionary {-}{}{}I\discretionary {-}{}{}D}{78}{subsubsection.2.58.1.8}
+\contentsline {subsubsection}{\numberline {2.58.1.9}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{78}{subsubsection.2.58.1.9}
+\contentsline {subsubsection}{\numberline {2.58.1.10}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{78}{subsubsection.2.58.1.10}
+\contentsline {subsubsection}{\numberline {2.58.1.11}\$sample\discretionary {-}{}{}I\discretionary {-}{}{}D}{78}{subsubsection.2.58.1.11}
+\contentsline {subsubsection}{\numberline {2.58.1.12}\$sample\discretionary {-}{}{}N\discretionary {-}{}{}B}{78}{subsubsection.2.58.1.12}
+\contentsline {subsubsection}{\numberline {2.58.1.13}\$state}{79}{subsubsection.2.58.1.13}
+\contentsline {subsubsection}{\numberline {2.58.1.14}\$status}{79}{subsubsection.2.58.1.14}
+\contentsline {subsubsection}{\numberline {2.58.1.15}\$value}{79}{subsubsection.2.58.1.15}
+\contentsline {section}{\numberline {2.59}php/functions/check\discretionary {-}{}{}\_\discretionary {-}{}{}login.php File Reference}{79}{section.2.59}
+\contentsline {section}{\numberline {2.60}php/functions/check\discretionary {-}{}{}\_\discretionary {-}{}{}login\discretionary {-}{}{}\_\discretionary {-}{}{}admin.php File Reference}{79}{section.2.60}
+\contentsline {section}{\numberline {2.61}php/functions/html\discretionary {-}{}{}\_\discretionary {-}{}{}functions.php File Reference}{79}{section.2.61}
+\contentsline {subsection}{\numberline {2.61.1}Function Documentation}{79}{subsection.2.61.1}
+\contentsline {subsubsection}{\numberline {2.61.1.1}editable\discretionary {-}{}{}\_\discretionary {-}{}{}html\discretionary {-}{}{}\_\discretionary {-}{}{}top\discretionary {-}{}{}\_\discretionary {-}{}{}page}{79}{subsubsection.2.61.1.1}
+\contentsline {subsubsection}{\numberline {2.61.1.2}generic\discretionary {-}{}{}\_\discretionary {-}{}{}html\discretionary {-}{}{}\_\discretionary {-}{}{}top\discretionary {-}{}{}\_\discretionary {-}{}{}page}{79}{subsubsection.2.61.1.2}
+\contentsline {subsubsection}{\numberline {2.61.1.3}html\discretionary {-}{}{}\_\discretionary {-}{}{}footer}{79}{subsubsection.2.61.1.3}
+\contentsline {subsubsection}{\numberline {2.61.1.4}html\discretionary {-}{}{}\_\discretionary {-}{}{}header}{80}{subsubsection.2.61.1.4}
+\contentsline {subsubsection}{\numberline {2.61.1.5}index\discretionary {-}{}{}\_\discretionary {-}{}{}html\discretionary {-}{}{}\_\discretionary {-}{}{}top\discretionary {-}{}{}\_\discretionary {-}{}{}page}{80}{subsubsection.2.61.1.5}
+\contentsline {section}{\numberline {2.62}php/functions/login.php File Reference}{80}{section.2.62}
+\contentsline {subsection}{\numberline {2.62.1}Variable Documentation}{80}{subsection.2.62.1}
+\contentsline {subsubsection}{\numberline {2.62.1.1}\$conn}{80}{subsubsection.2.62.1.1}
+\contentsline {section}{\numberline {2.63}php/functions/logout.php File Reference}{80}{section.2.63}
+\contentsline {section}{\numberline {2.64}php/functions/php\discretionary {-}{}{}\_\discretionary {-}{}{}functions.php File Reference}{80}{section.2.64}
+\contentsline {subsection}{\numberline {2.64.1}Function Documentation}{80}{subsection.2.64.1}
+\contentsline {subsubsection}{\numberline {2.64.1.1}get\discretionary {-}{}{}\_\discretionary {-}{}{}connexion}{80}{subsubsection.2.64.1.1}
+\contentsline {subsubsection}{\numberline {2.64.1.2}show\discretionary {-}{}{}\_\discretionary {-}{}{}array}{81}{subsubsection.2.64.1.2}
+\contentsline {section}{\numberline {2.65}php/index\discretionary {-}{}{}\_\discretionary {-}{}{}functions/index\discretionary {-}{}{}\_\discretionary {-}{}{}refresh.php File Reference}{81}{section.2.65}
+\contentsline {subsection}{\numberline {2.65.1}Function Documentation}{81}{subsection.2.65.1}
+\contentsline {subsubsection}{\numberline {2.65.1.1}batch\discretionary {-}{}{}\_\discretionary {-}{}{}ctp}{81}{subsubsection.2.65.1.1}
+\contentsline {subsubsection}{\numberline {2.65.1.2}batch\discretionary {-}{}{}\_\discretionary {-}{}{}cumul\discretionary {-}{}{}\_\discretionary {-}{}{}per\discretionary {-}{}{}\_\discretionary {-}{}{}date}{81}{subsubsection.2.65.1.2}
+\contentsline {subsubsection}{\numberline {2.65.1.3}batch\discretionary {-}{}{}\_\discretionary {-}{}{}number\discretionary {-}{}{}\_\discretionary {-}{}{}per\discretionary {-}{}{}\_\discretionary {-}{}{}date}{81}{subsubsection.2.65.1.3}
+\contentsline {subsubsection}{\numberline {2.65.1.4}experiment\discretionary {-}{}{}\_\discretionary {-}{}{}cpt}{81}{subsubsection.2.65.1.4}
+\contentsline {subsubsection}{\numberline {2.65.1.5}rawdata\discretionary {-}{}{}\_\discretionary {-}{}{}cpt}{81}{subsubsection.2.65.1.5}
+\contentsline {subsubsection}{\numberline {2.65.1.6}sample\discretionary {-}{}{}\_\discretionary {-}{}{}cpt}{81}{subsubsection.2.65.1.6}
+\contentsline {subsubsection}{\numberline {2.65.1.7}user\discretionary {-}{}{}\_\discretionary {-}{}{}ctp}{81}{subsubsection.2.65.1.7}
+\contentsline {section}{\numberline {2.66}php/processing/get\discretionary {-}{}{}\_\discretionary {-}{}{}activity.php File Reference}{82}{section.2.66}
+\contentsline {subsection}{\numberline {2.66.1}Variable Documentation}{82}{subsection.2.66.1}
+\contentsline {subsubsection}{\numberline {2.66.1.1}\$conn}{82}{subsubsection.2.66.1.1}
+\contentsline {subsubsection}{\numberline {2.66.1.2}\$output}{82}{subsubsection.2.66.1.2}
+\contentsline {section}{\numberline {2.67}php/processing/get\discretionary {-}{}{}\_\discretionary {-}{}{}declared\discretionary {-}{}{}\_\discretionary {-}{}{}enzymes\discretionary {-}{}{}\_\discretionary {-}{}{}for\discretionary {-}{}{}\_\discretionary {-}{}{}one\discretionary {-}{}{}\_\discretionary {-}{}{}batch.php File Reference}{82}{section.2.67}
+\contentsline {subsection}{\numberline {2.67.1}Variable Documentation}{82}{subsection.2.67.1}
+\contentsline {subsubsection}{\numberline {2.67.1.1}\$batch\discretionary {-}{}{}I\discretionary {-}{}{}D}{82}{subsubsection.2.67.1.1}
+\contentsline {subsubsection}{\numberline {2.67.1.2}\$conn}{82}{subsubsection.2.67.1.2}
+\contentsline {subsubsection}{\numberline {2.67.1.3}\$count}{82}{subsubsection.2.67.1.3}
+\contentsline {subsubsection}{\numberline {2.67.1.4}\$query}{82}{subsubsection.2.67.1.4}
+\contentsline {subsubsection}{\numberline {2.67.1.5}\$rows}{83}{subsubsection.2.67.1.5}
+\contentsline {subsubsection}{\numberline {2.67.1.6}try}{83}{subsubsection.2.67.1.6}
+\contentsline {section}{\numberline {2.68}php/processing/insert\discretionary {-}{}{}\_\discretionary {-}{}{}raw\discretionary {-}{}{}\_\discretionary {-}{}{}data.php File Reference}{83}{section.2.68}
+\contentsline {subsection}{\numberline {2.68.1}Variable Documentation}{83}{subsection.2.68.1}
+\contentsline {subsubsection}{\numberline {2.68.1.1}\$batch\discretionary {-}{}{}I\discretionary {-}{}{}D}{83}{subsubsection.2.68.1.1}
+\contentsline {subsubsection}{\numberline {2.68.1.2}\$conn}{83}{subsubsection.2.68.1.2}
+\contentsline {subsubsection}{\numberline {2.68.1.3}\$exp\discretionary {-}{}{}I\discretionary {-}{}{}D}{83}{subsubsection.2.68.1.3}
+\contentsline {subsubsection}{\numberline {2.68.1.4}\$ez\discretionary {-}{}{}I\discretionary {-}{}{}D}{84}{subsubsection.2.68.1.4}
+\contentsline {subsubsection}{\numberline {2.68.1.5}\$layout}{84}{subsubsection.2.68.1.5}
+\contentsline {subsubsection}{\numberline {2.68.1.6}\$message}{84}{subsubsection.2.68.1.6}
+\contentsline {subsubsection}{\numberline {2.68.1.7}\$rawdatas}{84}{subsubsection.2.68.1.7}
+\contentsline {subsubsection}{\numberline {2.68.1.8}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{84}{subsubsection.2.68.1.8}
+\contentsline {subsubsection}{\numberline {2.68.1.9}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{84}{subsubsection.2.68.1.9}
+\contentsline {subsubsection}{\numberline {2.68.1.10}\$status}{84}{subsubsection.2.68.1.10}
+\contentsline {subsubsection}{\numberline {2.68.1.11}else}{84}{subsubsection.2.68.1.11}
+\contentsline {section}{\numberline {2.69}php/processing/obsolete/batches\discretionary {-}{}{}\_\discretionary {-}{}{}get\discretionary {-}{}{}\_\discretionary {-}{}{}raw\discretionary {-}{}{}Data(obsolete).php File Reference}{84}{section.2.69}
+\contentsline {subsection}{\numberline {2.69.1}Variable Documentation}{85}{subsection.2.69.1}
+\contentsline {subsubsection}{\numberline {2.69.1.1}\$batch\discretionary {-}{}{}I\discretionary {-}{}{}D}{85}{subsubsection.2.69.1.1}
+\contentsline {subsubsection}{\numberline {2.69.1.2}\$conn}{85}{subsubsection.2.69.1.2}
+\contentsline {subsubsection}{\numberline {2.69.1.3}\$output}{85}{subsubsection.2.69.1.3}
+\contentsline {subsubsection}{\numberline {2.69.1.4}\$query}{85}{subsubsection.2.69.1.4}
+\contentsline {subsubsection}{\numberline {2.69.1.5}\$rows}{85}{subsubsection.2.69.1.5}
+\contentsline {subsubsection}{\numberline {2.69.1.6}\$sth}{85}{subsubsection.2.69.1.6}
+\contentsline {section}{\numberline {2.70}php/processing/obsolete/processing\discretionary {-}{}{}\_\discretionary {-}{}{}bak.php File Reference}{85}{section.2.70}
+\contentsline {subsection}{\numberline {2.70.1}Function Documentation}{86}{subsection.2.70.1}
+\contentsline {subsubsection}{\numberline {2.70.1.1}buffer\discretionary {-}{}{}Avg}{86}{subsubsection.2.70.1.1}
+\contentsline {subsubsection}{\numberline {2.70.1.2}chomp}{86}{subsubsection.2.70.1.2}
+\contentsline {subsubsection}{\numberline {2.70.1.3}corr\discretionary {-}{}{}Control\discretionary {-}{}{}Blank\discretionary {-}{}{}Average}{86}{subsubsection.2.70.1.3}
+\contentsline {subsubsection}{\numberline {2.70.1.4}corr\discretionary {-}{}{}Control\discretionary {-}{}{}Max\discretionary {-}{}{}Average}{87}{subsubsection.2.70.1.4}
+\contentsline {subsubsection}{\numberline {2.70.1.5}correct\discretionary {-}{}{}Blank\discretionary {-}{}{}Values}{87}{subsubsection.2.70.1.5}
+\contentsline {subsubsection}{\numberline {2.70.1.6}corrected\discretionary {-}{}{}Control\discretionary {-}{}{}Avg}{87}{subsubsection.2.70.1.6}
+\contentsline {subsubsection}{\numberline {2.70.1.7}correct\discretionary {-}{}{}Max\discretionary {-}{}{}Values}{87}{subsubsection.2.70.1.7}
+\contentsline {subsubsection}{\numberline {2.70.1.8}create\discretionary {-}{}{}\_\discretionary {-}{}{}add\discretionary {-}{}{}Raw\discretionary {-}{}{}Data\discretionary {-}{}{}\_\discretionary {-}{}{}modal}{88}{subsubsection.2.70.1.8}
+\contentsline {subsubsection}{\numberline {2.70.1.9}create\discretionary {-}{}{}Select\discretionary {-}{}{}Analyte}{88}{subsubsection.2.70.1.9}
+\contentsline {subsubsection}{\numberline {2.70.1.10}data\discretionary {-}{}{}Insert}{88}{subsubsection.2.70.1.10}
+\contentsline {subsubsection}{\numberline {2.70.1.11}dispatch\discretionary {-}{}{}Add\discretionary {-}{}{}Batch\discretionary {-}{}{}Datas}{88}{subsubsection.2.70.1.11}
+\contentsline {subsubsection}{\numberline {2.70.1.12}display\discretionary {-}{}{}Process\discretionary {-}{}{}Data}{88}{subsubsection.2.70.1.12}
+\contentsline {subsubsection}{\numberline {2.70.1.13}display\discretionary {-}{}{}Raw\discretionary {-}{}{}Data}{89}{subsubsection.2.70.1.13}
+\contentsline {subsubsection}{\numberline {2.70.1.14}get\discretionary {-}{}{}Average\discretionary {-}{}{}From\discretionary {-}{}{}Num\discretionary {-}{}{}Arr}{89}{subsubsection.2.70.1.14}
+\contentsline {subsubsection}{\numberline {2.70.1.15}get\discretionary {-}{}{}Error}{89}{subsubsection.2.70.1.15}
+\contentsline {subsubsection}{\numberline {2.70.1.16}get\discretionary {-}{}{}Num\discretionary {-}{}{}With\discretionary {-}{}{}Set\discretionary {-}{}{}Dec}{89}{subsubsection.2.70.1.16}
+\contentsline {subsubsection}{\numberline {2.70.1.17}get\discretionary {-}{}{}Standard\discretionary {-}{}{}Deviation}{91}{subsubsection.2.70.1.17}
+\contentsline {subsubsection}{\numberline {2.70.1.18}get\discretionary {-}{}{}Std\discretionary {-}{}{}Dev}{91}{subsubsection.2.70.1.18}
+\contentsline {subsubsection}{\numberline {2.70.1.19}get\discretionary {-}{}{}Variance}{91}{subsubsection.2.70.1.19}
+\contentsline {subsubsection}{\numberline {2.70.1.20}hide\discretionary {-}{}{}Wait\discretionary {-}{}{}Modal}{92}{subsubsection.2.70.1.20}
+\contentsline {subsubsection}{\numberline {2.70.1.21}is\discretionary {-}{}{}Array}{92}{subsubsection.2.70.1.21}
+\contentsline {subsubsection}{\numberline {2.70.1.22}make\discretionary {-}{}{}Map}{92}{subsubsection.2.70.1.22}
+\contentsline {subsubsection}{\numberline {2.70.1.23}process\discretionary {-}{}{}Enzyme}{92}{subsubsection.2.70.1.23}
+\contentsline {subsubsection}{\numberline {2.70.1.24}process\discretionary {-}{}{}Metabolites}{92}{subsubsection.2.70.1.24}
+\contentsline {subsubsection}{\numberline {2.70.1.25}rawdatasubmit}{93}{subsubsection.2.70.1.25}
+\contentsline {subsubsection}{\numberline {2.70.1.26}reset\discretionary {-}{}{}Table}{93}{subsubsection.2.70.1.26}
+\contentsline {subsubsection}{\numberline {2.70.1.27}setup\discretionary {-}{}{}\_\discretionary {-}{}{}experiment\discretionary {-}{}{}\_\discretionary {-}{}{}datatable}{93}{subsubsection.2.70.1.27}
+\contentsline {subsubsection}{\numberline {2.70.1.28}show\discretionary {-}{}{}Wait\discretionary {-}{}{}Modal}{93}{subsubsection.2.70.1.28}
+\contentsline {subsubsection}{\numberline {2.70.1.29}update}{93}{subsubsection.2.70.1.29}
+\contentsline {subsection}{\numberline {2.70.2}Variable Documentation}{93}{subsection.2.70.2}
+\contentsline {subsubsection}{\numberline {2.70.2.1}batch\discretionary {-}{}{}I\discretionary {-}{}{}D}{93}{subsubsection.2.70.2.1}
+\contentsline {subsubsection}{\numberline {2.70.2.2}batch\discretionary {-}{}{}Name}{93}{subsubsection.2.70.2.2}
+\contentsline {subsubsection}{\numberline {2.70.2.3}Ok\discretionary {-}{}{}To\discretionary {-}{}{}Quit\discretionary {-}{}{}Page}{94}{subsubsection.2.70.2.3}
+\contentsline {subsubsection}{\numberline {2.70.2.4}onbeforeunload}{94}{subsubsection.2.70.2.4}
+\contentsline {subsubsection}{\numberline {2.70.2.5}true}{94}{subsubsection.2.70.2.5}
+\contentsline {section}{\numberline {2.71}php/processing/processing\discretionary {-}{}{}\_\discretionary {-}{}{}bak.php File Reference}{94}{section.2.71}
+\contentsline {subsection}{\numberline {2.71.1}Function Documentation}{94}{subsection.2.71.1}
+\contentsline {subsubsection}{\numberline {2.71.1.1}data\discretionary {-}{}{}Insert}{94}{subsubsection.2.71.1.1}
+\contentsline {subsubsection}{\numberline {2.71.1.2}display\discretionary {-}{}{}Data}{95}{subsubsection.2.71.1.2}
+\contentsline {subsubsection}{\numberline {2.71.1.3}launch\discretionary {-}{}{}Processing}{95}{subsubsection.2.71.1.3}
+\contentsline {subsubsection}{\numberline {2.71.1.4}make\discretionary {-}{}{}Map}{95}{subsubsection.2.71.1.4}
+\contentsline {subsubsection}{\numberline {2.71.1.5}process\discretionary {-}{}{}Enzyme}{95}{subsubsection.2.71.1.5}
+\contentsline {subsubsection}{\numberline {2.71.1.6}process\discretionary {-}{}{}Metabolites}{95}{subsubsection.2.71.1.6}
+\contentsline {subsubsection}{\numberline {2.71.1.7}table\discretionary {-}{}{}To\discretionary {-}{}{}Array2\discretionary {-}{}{}D}{96}{subsubsection.2.71.1.7}
+\contentsline {subsubsection}{\numberline {2.71.1.8}update}{96}{subsubsection.2.71.1.8}
+\contentsline {subsection}{\numberline {2.71.2}Variable Documentation}{96}{subsection.2.71.2}
+\contentsline {subsubsection}{\numberline {2.71.2.1}current\discretionary {-}{}{}Ez\discretionary {-}{}{}I\discretionary {-}{}{}D}{96}{subsubsection.2.71.2.1}
+\contentsline {subsubsection}{\numberline {2.71.2.2}onbeforeunload}{96}{subsubsection.2.71.2.2}
+\contentsline {section}{\numberline {2.72}php/processing/obsolete/processing\discretionary {-}{}{}\_\discretionary {-}{}{}database\discretionary {-}{}{}\_\discretionary {-}{}{}functions(obsolete).php File Reference}{96}{section.2.72}
+\contentsline {subsection}{\numberline {2.72.1}Function Documentation}{97}{subsection.2.72.1}
+\contentsline {subsubsection}{\numberline {2.72.1.1}get\discretionary {-}{}{}\_\discretionary {-}{}{}all\discretionary {-}{}{}\_\discretionary {-}{}{}enzymes}{97}{subsubsection.2.72.1.1}
+\contentsline {subsubsection}{\numberline {2.72.1.2}get\discretionary {-}{}{}\_\discretionary {-}{}{}all\discretionary {-}{}{}\_\discretionary {-}{}{}experiment}{97}{subsubsection.2.72.1.2}
+\contentsline {subsubsection}{\numberline {2.72.1.3}get\discretionary {-}{}{}\_\discretionary {-}{}{}batches\discretionary {-}{}{}\_\discretionary {-}{}{}from\discretionary {-}{}{}\_\discretionary {-}{}{}one\discretionary {-}{}{}\_\discretionary {-}{}{}exp}{97}{subsubsection.2.72.1.3}
+\contentsline {section}{\numberline {2.73}php/processing/obsolete/processing\discretionary {-}{}{}\_\discretionary {-}{}{}get\discretionary {-}{}{}\_\discretionary {-}{}{}processed\discretionary {-}{}{}\_\discretionary {-}{}{}data(obsolete).php File Reference}{97}{section.2.73}
+\contentsline {subsection}{\numberline {2.73.1}Variable Documentation}{97}{subsection.2.73.1}
+\contentsline {subsubsection}{\numberline {2.73.1.1}\$conn}{97}{subsubsection.2.73.1.1}
+\contentsline {subsubsection}{\numberline {2.73.1.2}\$query}{97}{subsubsection.2.73.1.2}
+\contentsline {subsubsection}{\numberline {2.73.1.3}\$raw\discretionary {-}{}{}Data\discretionary {-}{}{}I\discretionary {-}{}{}D}{97}{subsubsection.2.73.1.3}
+\contentsline {subsubsection}{\numberline {2.73.1.4}\$req}{97}{subsubsection.2.73.1.4}
+\contentsline {section}{\numberline {2.74}php/processing/obsolete/save\discretionary {-}{}{}\_\discretionary {-}{}{}edit\discretionary {-}{}{}\_\discretionary {-}{}{}remake(obsolete).php File Reference}{98}{section.2.74}
+\contentsline {subsection}{\numberline {2.74.1}Variable Documentation}{98}{subsection.2.74.1}
+\contentsline {subsubsection}{\numberline {2.74.1.1}\$action}{98}{subsubsection.2.74.1.1}
+\contentsline {subsubsection}{\numberline {2.74.1.2}\$batch\discretionary {-}{}{}I\discretionary {-}{}{}D}{98}{subsubsection.2.74.1.2}
+\contentsline {subsubsection}{\numberline {2.74.1.3}\$bool\discretionary {-}{}{}Succes}{98}{subsubsection.2.74.1.3}
+\contentsline {subsubsection}{\numberline {2.74.1.4}\$col\discretionary {-}{}{}Idx}{98}{subsubsection.2.74.1.4}
+\contentsline {subsubsection}{\numberline {2.74.1.5}\$conn}{98}{subsubsection.2.74.1.5}
+\contentsline {subsubsection}{\numberline {2.74.1.6}\$exclud\discretionary {-}{}{}Map}{98}{subsubsection.2.74.1.6}
+\contentsline {subsubsection}{\numberline {2.74.1.7}\$ez\discretionary {-}{}{}I\discretionary {-}{}{}D}{98}{subsubsection.2.74.1.7}
+\contentsline {subsubsection}{\numberline {2.74.1.8}\$procdatas}{99}{subsubsection.2.74.1.8}
+\contentsline {subsubsection}{\numberline {2.74.1.9}\$rawdata\discretionary {-}{}{}I\discretionary {-}{}{}D}{99}{subsubsection.2.74.1.9}
+\contentsline {subsubsection}{\numberline {2.74.1.10}\$raw\discretionary {-}{}{}I\discretionary {-}{}{}D\discretionary {-}{}{}Map}{99}{subsubsection.2.74.1.10}
+\contentsline {subsubsection}{\numberline {2.74.1.11}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{99}{subsubsection.2.74.1.11}
+\contentsline {subsubsection}{\numberline {2.74.1.12}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{99}{subsubsection.2.74.1.12}
+\contentsline {subsubsection}{\numberline {2.74.1.13}\$row\discretionary {-}{}{}Idx}{99}{subsubsection.2.74.1.13}
+\contentsline {subsubsection}{\numberline {2.74.1.14}\$status}{99}{subsubsection.2.74.1.14}
+\contentsline {section}{\numberline {2.75}php/processing/processing.php File Reference}{99}{section.2.75}
+\contentsline {subsection}{\numberline {2.75.1}Function Documentation}{100}{subsection.2.75.1}
+\contentsline {subsubsection}{\numberline {2.75.1.1}data\discretionary {-}{}{}Insert}{100}{subsubsection.2.75.1.1}
+\contentsline {subsubsection}{\numberline {2.75.1.2}display\discretionary {-}{}{}Data}{100}{subsubsection.2.75.1.2}
+\contentsline {subsubsection}{\numberline {2.75.1.3}get\discretionary {-}{}{}Activity}{100}{subsubsection.2.75.1.3}
+\contentsline {subsubsection}{\numberline {2.75.1.4}get\discretionary {-}{}{}Raw\discretionary {-}{}{}Data}{100}{subsubsection.2.75.1.4}
+\contentsline {subsubsection}{\numberline {2.75.1.5}is\discretionary {-}{}{}Empty}{101}{subsubsection.2.75.1.5}
+\contentsline {subsubsection}{\numberline {2.75.1.6}launch\discretionary {-}{}{}Processing}{101}{subsubsection.2.75.1.6}
+\contentsline {subsubsection}{\numberline {2.75.1.7}make\discretionary {-}{}{}Map}{101}{subsubsection.2.75.1.7}
+\contentsline {subsubsection}{\numberline {2.75.1.8}process\discretionary {-}{}{}Enzyme}{101}{subsubsection.2.75.1.8}
+\contentsline {subsubsection}{\numberline {2.75.1.9}process\discretionary {-}{}{}Metabolites}{101}{subsubsection.2.75.1.9}
+\contentsline {subsubsection}{\numberline {2.75.1.10}table\discretionary {-}{}{}To\discretionary {-}{}{}Array2\discretionary {-}{}{}D}{102}{subsubsection.2.75.1.10}
+\contentsline {subsubsection}{\numberline {2.75.1.11}then}{102}{subsubsection.2.75.1.11}
+\contentsline {subsubsection}{\numberline {2.75.1.12}then}{102}{subsubsection.2.75.1.12}
+\contentsline {subsubsection}{\numberline {2.75.1.13}update}{102}{subsubsection.2.75.1.13}
+\contentsline {subsection}{\numberline {2.75.2}Variable Documentation}{102}{subsection.2.75.2}
+\contentsline {subsubsection}{\numberline {2.75.2.1}create\discretionary {-}{}{}Ez\discretionary {-}{}{}Tab}{102}{subsubsection.2.75.2.1}
+\contentsline {subsubsection}{\numberline {2.75.2.2}current\discretionary {-}{}{}Ez\discretionary {-}{}{}I\discretionary {-}{}{}D}{102}{subsubsection.2.75.2.2}
+\contentsline {subsubsection}{\numberline {2.75.2.3}onbeforeunload}{102}{subsubsection.2.75.2.3}
+\contentsline {section}{\numberline {2.76}php/processing/processing\discretionary {-}{}{}\_\discretionary {-}{}{}get\discretionary {-}{}{}\_\discretionary {-}{}{}enzymes.php File Reference}{103}{section.2.76}
+\contentsline {subsection}{\numberline {2.76.1}Variable Documentation}{103}{subsection.2.76.1}
+\contentsline {subsubsection}{\numberline {2.76.1.1}\$batch\discretionary {-}{}{}I\discretionary {-}{}{}D}{103}{subsubsection.2.76.1.1}
+\contentsline {subsubsection}{\numberline {2.76.1.2}\$conn}{103}{subsubsection.2.76.1.2}
+\contentsline {subsubsection}{\numberline {2.76.1.3}\$output}{103}{subsubsection.2.76.1.3}
+\contentsline {subsubsection}{\numberline {2.76.1.4}\$query}{103}{subsubsection.2.76.1.4}
+\contentsline {subsubsection}{\numberline {2.76.1.5}\$rows}{103}{subsubsection.2.76.1.5}
+\contentsline {subsubsection}{\numberline {2.76.1.6}\$status}{103}{subsubsection.2.76.1.6}
+\contentsline {subsubsection}{\numberline {2.76.1.7}try}{104}{subsubsection.2.76.1.7}
+\contentsline {section}{\numberline {2.77}php/processing/processing\discretionary {-}{}{}\_\discretionary {-}{}{}get\discretionary {-}{}{}\_\discretionary {-}{}{}raw\discretionary {-}{}{}Data.php File Reference}{104}{section.2.77}
+\contentsline {subsection}{\numberline {2.77.1}Variable Documentation}{104}{subsection.2.77.1}
+\contentsline {subsubsection}{\numberline {2.77.1.1}\$conn}{104}{subsubsection.2.77.1.1}
+\contentsline {subsubsection}{\numberline {2.77.1.2}\$output}{104}{subsubsection.2.77.1.2}
+\contentsline {section}{\numberline {2.78}php/processing/processing\discretionary {-}{}{}\_\discretionary {-}{}{}get\discretionary {-}{}{}\_\discretionary {-}{}{}single\discretionary {-}{}{}\_\discretionary {-}{}{}batch.php File Reference}{104}{section.2.78}
+\contentsline {subsection}{\numberline {2.78.1}Variable Documentation}{104}{subsection.2.78.1}
+\contentsline {subsubsection}{\numberline {2.78.1.1}\$conn}{104}{subsubsection.2.78.1.1}
+\contentsline {subsubsection}{\numberline {2.78.1.2}\$exp\discretionary {-}{}{}I\discretionary {-}{}{}D}{104}{subsubsection.2.78.1.2}
+\contentsline {subsubsection}{\numberline {2.78.1.3}\$output}{104}{subsubsection.2.78.1.3}
+\contentsline {subsubsection}{\numberline {2.78.1.4}\$query}{105}{subsubsection.2.78.1.4}
+\contentsline {subsubsection}{\numberline {2.78.1.5}\$rows}{105}{subsubsection.2.78.1.5}
+\contentsline {subsubsection}{\numberline {2.78.1.6}\$sth}{105}{subsubsection.2.78.1.6}
+\contentsline {section}{\numberline {2.79}php/processing/save\discretionary {-}{}{}\_\discretionary {-}{}{}edit.php File Reference}{105}{section.2.79}
+\contentsline {subsection}{\numberline {2.79.1}Variable Documentation}{105}{subsection.2.79.1}
+\contentsline {subsubsection}{\numberline {2.79.1.1}\$action}{105}{subsubsection.2.79.1.1}
+\contentsline {subsubsection}{\numberline {2.79.1.2}\$batch\discretionary {-}{}{}I\discretionary {-}{}{}D}{105}{subsubsection.2.79.1.2}
+\contentsline {subsubsection}{\numberline {2.79.1.3}\$bool\discretionary {-}{}{}Succes}{105}{subsubsection.2.79.1.3}
+\contentsline {subsubsection}{\numberline {2.79.1.4}\$col\discretionary {-}{}{}Idx}{106}{subsubsection.2.79.1.4}
+\contentsline {subsubsection}{\numberline {2.79.1.5}\$conn}{106}{subsubsection.2.79.1.5}
+\contentsline {subsubsection}{\numberline {2.79.1.6}\$exclud\discretionary {-}{}{}Map}{106}{subsubsection.2.79.1.6}
+\contentsline {subsubsection}{\numberline {2.79.1.7}\$ez\discretionary {-}{}{}I\discretionary {-}{}{}D}{106}{subsubsection.2.79.1.7}
+\contentsline {subsubsection}{\numberline {2.79.1.8}\$process\discretionary {-}{}{}Data\discretionary {-}{}{}Map}{106}{subsubsection.2.79.1.8}
+\contentsline {subsubsection}{\numberline {2.79.1.9}\$raw\discretionary {-}{}{}I\discretionary {-}{}{}D\discretionary {-}{}{}Map}{106}{subsubsection.2.79.1.9}
+\contentsline {subsubsection}{\numberline {2.79.1.10}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{106}{subsubsection.2.79.1.10}
+\contentsline {subsubsection}{\numberline {2.79.1.11}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{106}{subsubsection.2.79.1.11}
+\contentsline {subsubsection}{\numberline {2.79.1.12}\$row\discretionary {-}{}{}Idx}{106}{subsubsection.2.79.1.12}
+\contentsline {subsubsection}{\numberline {2.79.1.13}\$status}{106}{subsubsection.2.79.1.13}
+\contentsline {section}{\numberline {2.80}php/standard/obsolete files/add\discretionary {-}{}{}\_\discretionary {-}{}{}enzyme\discretionary {-}{}{}\_\discretionary {-}{}{}to\discretionary {-}{}{}\_\discretionary {-}{}{}standard(obsolete).php File Reference}{106}{section.2.80}
+\contentsline {subsection}{\numberline {2.80.1}Variable Documentation}{107}{subsection.2.80.1}
+\contentsline {subsubsection}{\numberline {2.80.1.1}\$analyte\discretionary {-}{}{}Value}{107}{subsubsection.2.80.1.1}
+\contentsline {subsubsection}{\numberline {2.80.1.2}\$conn}{107}{subsubsection.2.80.1.2}
+\contentsline {subsubsection}{\numberline {2.80.1.3}\$query}{107}{subsubsection.2.80.1.3}
+\contentsline {subsubsection}{\numberline {2.80.1.4}\$req}{107}{subsubsection.2.80.1.4}
+\contentsline {subsubsection}{\numberline {2.80.1.5}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{107}{subsubsection.2.80.1.5}
+\contentsline {subsubsection}{\numberline {2.80.1.6}\$select\discretionary {-}{}{}Analyte}{107}{subsubsection.2.80.1.6}
+\contentsline {subsubsection}{\numberline {2.80.1.7}\$select\discretionary {-}{}{}Unit}{107}{subsubsection.2.80.1.7}
+\contentsline {subsubsection}{\numberline {2.80.1.8}\$standard\discretionary {-}{}{}I\discretionary {-}{}{}D}{107}{subsubsection.2.80.1.8}
+\contentsline {subsubsection}{\numberline {2.80.1.9}\$status}{108}{subsubsection.2.80.1.9}
+\contentsline {subsubsection}{\numberline {2.80.1.10}try}{108}{subsubsection.2.80.1.10}
+\contentsline {section}{\numberline {2.81}php/standard/obsolete files/add\discretionary {-}{}{}\_\discretionary {-}{}{}new\discretionary {-}{}{}\_\discretionary {-}{}{}enzyme(obsolete).php File Reference}{108}{section.2.81}
+\contentsline {subsection}{\numberline {2.81.1}Variable Documentation}{108}{subsection.2.81.1}
+\contentsline {subsubsection}{\numberline {2.81.1.1}\$conn}{108}{subsubsection.2.81.1.1}
+\contentsline {subsubsection}{\numberline {2.81.1.2}\$ez\discretionary {-}{}{}Bool}{108}{subsubsection.2.81.1.2}
+\contentsline {subsubsection}{\numberline {2.81.1.3}\$ez\discretionary {-}{}{}Code}{108}{subsubsection.2.81.1.3}
+\contentsline {subsubsection}{\numberline {2.81.1.4}\$ez\discretionary {-}{}{}Name}{108}{subsubsection.2.81.1.4}
+\contentsline {subsubsection}{\numberline {2.81.1.5}\$ez\discretionary {-}{}{}Slope}{108}{subsubsection.2.81.1.5}
+\contentsline {subsubsection}{\numberline {2.81.1.6}\$ez\discretionary {-}{}{}Type}{108}{subsubsection.2.81.1.6}
+\contentsline {subsubsection}{\numberline {2.81.1.7}\$query}{109}{subsubsection.2.81.1.7}
+\contentsline {subsubsection}{\numberline {2.81.1.8}\$sth}{109}{subsubsection.2.81.1.8}
+\contentsline {section}{\numberline {2.82}php/standard/obsolete files/edit\discretionary {-}{}{}\_\discretionary {-}{}{}enzyme\discretionary {-}{}{}\_\discretionary {-}{}{}in\discretionary {-}{}{}\_\discretionary {-}{}{}standard(obsolete).php File Reference}{109}{section.2.82}
+\contentsline {subsection}{\numberline {2.82.1}Variable Documentation}{109}{subsection.2.82.1}
+\contentsline {subsubsection}{\numberline {2.82.1.1}\$amount}{109}{subsubsection.2.82.1.1}
+\contentsline {subsubsection}{\numberline {2.82.1.2}\$conn}{109}{subsubsection.2.82.1.2}
+\contentsline {subsubsection}{\numberline {2.82.1.3}\$query}{109}{subsubsection.2.82.1.3}
+\contentsline {subsubsection}{\numberline {2.82.1.4}\$req}{109}{subsubsection.2.82.1.4}
+\contentsline {subsubsection}{\numberline {2.82.1.5}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{110}{subsubsection.2.82.1.5}
+\contentsline {subsubsection}{\numberline {2.82.1.6}\$slope}{110}{subsubsection.2.82.1.6}
+\contentsline {subsubsection}{\numberline {2.82.1.7}\$standard\discretionary {-}{}{}I\discretionary {-}{}{}D}{110}{subsubsection.2.82.1.7}
+\contentsline {subsubsection}{\numberline {2.82.1.8}\$status}{110}{subsubsection.2.82.1.8}
+\contentsline {subsubsection}{\numberline {2.82.1.9}\$std\discretionary {-}{}{}Ez\discretionary {-}{}{}I\discretionary {-}{}{}D}{110}{subsubsection.2.82.1.9}
+\contentsline {subsubsection}{\numberline {2.82.1.10}try}{110}{subsubsection.2.82.1.10}
+\contentsline {section}{\numberline {2.83}php/standard/obsolete files/enzyme\discretionary {-}{}{}\_\discretionary {-}{}{}not\discretionary {-}{}{}\_\discretionary {-}{}{}from\discretionary {-}{}{}\_\discretionary {-}{}{}standard(obsolete).php File Reference}{110}{section.2.83}
+\contentsline {subsection}{\numberline {2.83.1}Variable Documentation}{110}{subsection.2.83.1}
+\contentsline {subsubsection}{\numberline {2.83.1.1}\$conn}{110}{subsubsection.2.83.1.1}
+\contentsline {subsubsection}{\numberline {2.83.1.2}\$count}{110}{subsubsection.2.83.1.2}
+\contentsline {subsubsection}{\numberline {2.83.1.3}\$query}{111}{subsubsection.2.83.1.3}
+\contentsline {subsubsection}{\numberline {2.83.1.4}\$rows}{111}{subsubsection.2.83.1.4}
+\contentsline {subsubsection}{\numberline {2.83.1.5}\$standard\discretionary {-}{}{}I\discretionary {-}{}{}D}{111}{subsubsection.2.83.1.5}
+\contentsline {subsubsection}{\numberline {2.83.1.6}try}{111}{subsubsection.2.83.1.6}
+\contentsline {section}{\numberline {2.84}php/standard/obsolete files/freshweight\discretionary {-}{}{}\_\discretionary {-}{}{}from\discretionary {-}{}{}\_\discretionary {-}{}{}standard(obsolete).php File Reference}{111}{section.2.84}
+\contentsline {subsection}{\numberline {2.84.1}Variable Documentation}{112}{subsection.2.84.1}
+\contentsline {subsubsection}{\numberline {2.84.1.1}\$conn}{112}{subsubsection.2.84.1.1}
+\contentsline {subsubsection}{\numberline {2.84.1.2}\$count}{112}{subsubsection.2.84.1.2}
+\contentsline {subsubsection}{\numberline {2.84.1.3}\$output}{112}{subsubsection.2.84.1.3}
+\contentsline {subsubsection}{\numberline {2.84.1.4}\$query}{112}{subsubsection.2.84.1.4}
+\contentsline {subsubsection}{\numberline {2.84.1.5}\$rows}{112}{subsubsection.2.84.1.5}
+\contentsline {subsubsection}{\numberline {2.84.1.6}\$standard\discretionary {-}{}{}I\discretionary {-}{}{}D}{112}{subsubsection.2.84.1.6}
+\contentsline {subsubsection}{\numberline {2.84.1.7}\$sth}{112}{subsubsection.2.84.1.7}
+\contentsline {section}{\numberline {2.85}php/standard/obsolete files/insert\discretionary {-}{}{}\_\discretionary {-}{}{}standard(obsolete).php File Reference}{113}{section.2.85}
+\contentsline {subsection}{\numberline {2.85.1}Variable Documentation}{113}{subsection.2.85.1}
+\contentsline {subsubsection}{\numberline {2.85.1.1}\$conn}{113}{subsubsection.2.85.1.1}
+\contentsline {subsubsection}{\numberline {2.85.1.2}\$query}{113}{subsubsection.2.85.1.2}
+\contentsline {subsubsection}{\numberline {2.85.1.3}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{113}{subsubsection.2.85.1.3}
+\contentsline {subsubsection}{\numberline {2.85.1.4}\$status}{113}{subsubsection.2.85.1.4}
+\contentsline {subsubsection}{\numberline {2.85.1.5}\$std\discretionary {-}{}{}Comment}{113}{subsubsection.2.85.1.5}
+\contentsline {subsubsection}{\numberline {2.85.1.6}\$std\discretionary {-}{}{}Genius}{114}{subsubsection.2.85.1.6}
+\contentsline {subsubsection}{\numberline {2.85.1.7}\$std\discretionary {-}{}{}Genotype}{114}{subsubsection.2.85.1.7}
+\contentsline {subsubsection}{\numberline {2.85.1.8}\$std\discretionary {-}{}{}Name}{114}{subsubsection.2.85.1.8}
+\contentsline {subsubsection}{\numberline {2.85.1.9}\$std\discretionary {-}{}{}Nature}{114}{subsubsection.2.85.1.9}
+\contentsline {subsubsection}{\numberline {2.85.1.10}\$std\discretionary {-}{}{}Owner}{114}{subsubsection.2.85.1.10}
+\contentsline {subsubsection}{\numberline {2.85.1.11}\$std\discretionary {-}{}{}Species}{114}{subsubsection.2.85.1.11}
+\contentsline {subsubsection}{\numberline {2.85.1.12}try}{114}{subsubsection.2.85.1.12}
+\contentsline {section}{\numberline {2.86}php/standard/obsolete files/remove\discretionary {-}{}{}\_\discretionary {-}{}{}enzyme\discretionary {-}{}{}\_\discretionary {-}{}{}in\discretionary {-}{}{}\_\discretionary {-}{}{}standard(obsolete).php File Reference}{114}{section.2.86}
+\contentsline {subsection}{\numberline {2.86.1}Variable Documentation}{115}{subsection.2.86.1}
+\contentsline {subsubsection}{\numberline {2.86.1.1}\$conn}{115}{subsubsection.2.86.1.1}
+\contentsline {subsubsection}{\numberline {2.86.1.2}\$query}{115}{subsubsection.2.86.1.2}
+\contentsline {subsubsection}{\numberline {2.86.1.3}\$req}{115}{subsubsection.2.86.1.3}
+\contentsline {subsubsection}{\numberline {2.86.1.4}\$response\discretionary {-}{}{}\_\discretionary {-}{}{}array}{115}{subsubsection.2.86.1.4}
+\contentsline {subsubsection}{\numberline {2.86.1.5}\$status}{115}{subsubsection.2.86.1.5}
+\contentsline {subsubsection}{\numberline {2.86.1.6}\$std\discretionary {-}{}{}Ez\discretionary {-}{}{}Id\discretionary {-}{}{}To\discretionary {-}{}{}Remove}{115}{subsubsection.2.86.1.6}
+\contentsline {subsubsection}{\numberline {2.86.1.7}try}{115}{subsubsection.2.86.1.7}
+\contentsline {section}{\numberline {2.87}php/standard/obsolete files/standard\discretionary {-}{}{}\_\discretionary {-}{}{}database\discretionary {-}{}{}\_\discretionary {-}{}{}functions(obsolete).php File Reference}{115}{section.2.87}
+\contentsline {subsection}{\numberline {2.87.1}Function Documentation}{115}{subsection.2.87.1}
+\contentsline {subsubsection}{\numberline {2.87.1.1}get\discretionary {-}{}{}\_\discretionary {-}{}{}all\discretionary {-}{}{}\_\discretionary {-}{}{}enzymes}{115}{subsubsection.2.87.1.1}
+\contentsline {subsubsection}{\numberline {2.87.1.2}get\discretionary {-}{}{}\_\discretionary {-}{}{}all\discretionary {-}{}{}\_\discretionary {-}{}{}unit}{116}{subsubsection.2.87.1.2}
+\contentsline {section}{\numberline {2.88}php/standard/obsolete files/standard\discretionary {-}{}{}\_\discretionary {-}{}{}get\discretionary {-}{}{}\_\discretionary {-}{}{}all\discretionary {-}{}{}\_\discretionary {-}{}{}unit(obsolete).php File Reference}{116}{section.2.88}
+\contentsline {subsection}{\numberline {2.88.1}Variable Documentation}{116}{subsection.2.88.1}
+\contentsline {subsubsection}{\numberline {2.88.1.1}\$conn}{116}{subsubsection.2.88.1.1}
+\contentsline {subsubsection}{\numberline {2.88.1.2}\$count}{116}{subsubsection.2.88.1.2}
+\contentsline {subsubsection}{\numberline {2.88.1.3}\$query}{116}{subsubsection.2.88.1.3}
+\contentsline {subsubsection}{\numberline {2.88.1.4}\$rows}{116}{subsubsection.2.88.1.4}
+\contentsline {subsubsection}{\numberline {2.88.1.5}\$sth}{116}{subsubsection.2.88.1.5}
+\contentsline {section}{\numberline {2.89}php/standard/obsolete files/standard\discretionary {-}{}{}\_\discretionary {-}{}{}php\discretionary {-}{}{}\_\discretionary {-}{}{}functions(obsolete).php File Reference}{117}{section.2.89}
+\contentsline {subsection}{\numberline {2.89.1}Function Documentation}{117}{subsection.2.89.1}
+\contentsline {subsubsection}{\numberline {2.89.1.1}calcul\discretionary {-}{}{}\_\discretionary {-}{}{}std\discretionary {-}{}{}\_\discretionary {-}{}{}confiance}{117}{subsubsection.2.89.1.1}
+\contentsline {section}{\numberline {2.90}php/standard/standard\discretionary {-}{}{}\_\discretionary {-}{}{}get\discretionary {-}{}{}\_\discretionary {-}{}{}all\discretionary {-}{}{}\_\discretionary {-}{}{}standard.php File Reference}{117}{section.2.90}
+\contentsline {subsection}{\numberline {2.90.1}Variable Documentation}{117}{subsection.2.90.1}
+\contentsline {subsubsection}{\numberline {2.90.1.1}\$conn}{117}{subsubsection.2.90.1.1}
+\contentsline {subsubsection}{\numberline {2.90.1.2}\$count}{117}{subsubsection.2.90.1.2}
+\contentsline {subsubsection}{\numberline {2.90.1.3}\$output}{117}{subsubsection.2.90.1.3}
+\contentsline {subsubsection}{\numberline {2.90.1.4}\$query}{117}{subsubsection.2.90.1.4}
+\contentsline {subsubsection}{\numberline {2.90.1.5}\$rows}{117}{subsubsection.2.90.1.5}
+\contentsline {subsubsection}{\numberline {2.90.1.6}\$sth}{118}{subsubsection.2.90.1.6}
+\contentsline {section}{\numberline {2.91}php/standard/standards.php File Reference}{118}{section.2.91}
+\contentsline {subsection}{\numberline {2.91.1}Function Documentation}{118}{subsection.2.91.1}
+\contentsline {subsubsection}{\numberline {2.91.1.1}setup\discretionary {-}{}{}\_\discretionary {-}{}{}enzyme\discretionary {-}{}{}Table}{118}{subsubsection.2.91.1.1}
+\contentsline {subsubsection}{\numberline {2.91.1.2}setup\discretionary {-}{}{}\_\discretionary {-}{}{}std\discretionary {-}{}{}Table}{118}{subsubsection.2.91.1.2}
+\contentsline {chapter}{Index}{119}{section*.97}

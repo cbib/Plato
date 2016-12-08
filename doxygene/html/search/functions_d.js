@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['tabletoarray2d',['tableToArray2D',['../da/d62/processing_8php.html#afb304d762110b44295d7a6276258371e',1,'tableToArray2D(tableID):&#160;processing.php'],['../d7/da4/processing__bak_8php.html#afb304d762110b44295d7a6276258371e',1,'tableToArray2D(tableID):&#160;processing_bak.php']]],
+  ['then',['then',['../da/d62/processing_8php.html#a4bb5a64bedf6f6d54b01f0a8b4eae126',1,'then(function(responserawdata){if(!isEmpty(responserawdata)){$(&apos;#table-wrapper&apos;).show();$(&apos;#head-wrapper&apos;).show();$(&apos;#expender-wrapper&apos;).show();$(&apos;#datatable-wrapper&apos;).hide();return makeMap(responserawdata);}else{$(&apos;#datatable-wrapper&apos;).hide();}}, function(error){console.log(&quot;failure : &quot;+error);}).then(function(responseActivity):&#160;processing.php'],['../da/d62/processing_8php.html#acdf44d17add07e01f71455eb09ab7004',1,'then(function(){launchProcessing(split);}, function(error){console.log(&quot;failure : &quot;+error);}):&#160;processing.php']]]
+];

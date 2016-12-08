@@ -1,0 +1,189 @@
+.TH "php/processing/processing_bak.php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/processing/processing_bak.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBupdate\fP ()"
+.br
+.ti -1c
+.RI "\fBdataInsert\fP (tableID, \fBexpID\fP, \fBbatchID\fP)"
+.br
+.ti -1c
+.RI "\fBtableToArray2D\fP (tableID)"
+.br
+.ti -1c
+.RI "\fBmakeMap\fP ()"
+.br
+.ti -1c
+.RI "\fBprocessMetabolites\fP ()"
+.br
+.ti -1c
+.RI "\fBprocessEnzyme\fP ()"
+.br
+.ti -1c
+.RI "\fBdisplayData\fP ()"
+.br
+.ti -1c
+.RI "\fBlaunchProcessing\fP (layout)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBcurrentEzID\fP =-1"
+.br
+.ti -1c
+.RI "window \fBonbeforeunload\fP"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "dataInsert (tableID, \fBexpID\fP, \fBbatchID\fP)"
+Insert new raw values
+.PP
+dataInsert 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{<type>}\fP tableID { description } 
+.br
+\fI{<type>}\fP expID { description } 
+.br
+\fI{<type>}\fP batchID { description } 
+.RE
+.PP
+
+.PP
+Definition at line 617 of file processing_bak\&.php\&.
+.SS "displayData ()"
+{ function_description }
+.PP
+displayData 
+.PP
+\fBReturns:\fP
+.RS 4
+{<type>} { description_of_the_return_value } 
+.RE
+.PP
+
+.PP
+Definition at line 873 of file processing_bak\&.php\&.
+.SS "launchProcessing (layout)"
+{ function_description }
+.PP
+launchProcessing 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{string}\fP layout { description } 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{<type>} { description_of_the_return_value } 
+.RE
+.PP
+
+.PP
+Definition at line 885 of file processing_bak\&.php\&.
+.SS "makeMap ()"
+make the map of the raw data
+.PP
+makeMap 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{(number|string)}\fP enzymeID { description } 
+.RE
+.PP
+
+.PP
+Definition at line 674 of file processing_bak\&.php\&.
+.SS "processEnzyme ()"
+Process value for enzymes
+.PP
+processEnzyme 
+.PP
+Definition at line 829 of file processing_bak\&.php\&.
+.SS "processMetabolites ()"
+Calculs for processing values
+.PP
+processMetabolites 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{<type>}\fP rawDataMap { description } 
+.br
+\fI{<type>}\fP dataTypeMap { description } 
+.br
+\fI{<type>}\fP excludMap { description } 
+.br
+\fI{<type>}\fP layout { description } 
+.br
+\fI{<type>}\fP processDataMap { description } 
+.br
+\fI{number}\fP activity { description } 
+.br
+\fI{number}\fP fwMap { description } 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{<type>} { description_of_the_return_value } 
+.RE
+.PP
+
+.PP
+Definition at line 804 of file processing_bak\&.php\&.
+.SS "tableToArray2D (tableID)"
+
+.PP
+Definition at line 655 of file processing_bak\&.php\&.
+.SS "update ()"
+Process data update (click on save under the process data table)
+.PP
+update 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{<type>}\fP ezID { description } 
+.br
+\fI{<type>}\fP batchID { description } 
+.br
+\fI{<type>}\fP processDataMap { description } 
+.br
+\fI{<type>}\fP excludMap { description } 
+.RE
+.PP
+
+.PP
+Definition at line 573 of file processing_bak\&.php\&.
+.SH "Variable Documentation"
+.PP 
+.SS "currentEzID =-1"
+
+.PP
+Definition at line 484 of file processing_bak\&.php\&.
+.SS "window onbeforeunload"
+\fBInitial value:\fP
+.PP
+.nf
+= function(event) {
+    if (OkToQuitPage=="nope"){
+        event\&.returnValue = "Some changes are not saved";
+    }
+}
+.fi
+.PP
+Definition at line 510 of file processing_bak\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

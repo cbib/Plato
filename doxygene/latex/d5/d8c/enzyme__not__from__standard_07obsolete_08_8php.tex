@@ -1,0 +1,93 @@
+\hypertarget{enzyme__not__from__standard_07obsolete_08_8php}{\section{php/standard/obsolete files/enzyme\-\_\-not\-\_\-from\-\_\-standard(obsolete).php File Reference}
+\label{enzyme__not__from__standard_07obsolete_08_8php}\index{php/standard/obsolete files/enzyme\-\_\-not\-\_\-from\-\_\-standard(obsolete).\-php@{php/standard/obsolete files/enzyme\-\_\-not\-\_\-from\-\_\-standard(obsolete).\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{enzyme__not__from__standard_07obsolete_08_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{enzyme__not__from__standard_07obsolete_08_8php_a0c541a369e4a0434108a7d145751bb23}{\$standard\-I\-D} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'standard\-I\-D'\mbox{]}
+\item 
+\hyperlink{enzyme__not__from__standard_07obsolete_08_8php_af59a5f7cd609e592c41dc3643efd3c98}{\$query}
+\item 
+\hyperlink{enzyme__not__from__standard_07obsolete_08_8php_abe4cc9788f52e49485473dc699537388}{try}
+\item 
+\hyperlink{enzyme__not__from__standard_07obsolete_08_8php_af789423037bbc89dc7c850e761177570}{\$count} = \$sth-\/$>$row\-Count()
+\item 
+\hyperlink{enzyme__not__from__standard_07obsolete_08_8php_ace2ec39e7df3899fa8df9640ec274b03}{\$rows} =\$sth-\/$>$fetch\-All()
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{enzyme__not__from__standard_07obsolete_08_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{enzyme\-\_\-not\-\_\-from\-\_\-standard(obsolete).\-php@{enzyme\-\_\-not\-\_\-from\-\_\-standard(obsolete).\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!enzyme_not_from_standard(obsolete).php@{enzyme\-\_\-not\-\_\-from\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{enzyme__not__from__standard_07obsolete_08_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 4 of file enzyme\-\_\-not\-\_\-from\-\_\-standard(obsolete).\-php.
+
+\hypertarget{enzyme__not__from__standard_07obsolete_08_8php_af789423037bbc89dc7c850e761177570}{\index{enzyme\-\_\-not\-\_\-from\-\_\-standard(obsolete).\-php@{enzyme\-\_\-not\-\_\-from\-\_\-standard(obsolete).\-php}!\$count@{\$count}}
+\index{\$count@{\$count}!enzyme_not_from_standard(obsolete).php@{enzyme\-\_\-not\-\_\-from\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$count}]{\setlength{\rightskip}{0pt plus 5cm}\$count = \$sth-\/$>$row\-Count()}}\label{enzyme__not__from__standard_07obsolete_08_8php_af789423037bbc89dc7c850e761177570}
+
+
+Definition at line 39 of file enzyme\-\_\-not\-\_\-from\-\_\-standard(obsolete).\-php.
+
+\hypertarget{enzyme__not__from__standard_07obsolete_08_8php_af59a5f7cd609e592c41dc3643efd3c98}{\index{enzyme\-\_\-not\-\_\-from\-\_\-standard(obsolete).\-php@{enzyme\-\_\-not\-\_\-from\-\_\-standard(obsolete).\-php}!\$query@{\$query}}
+\index{\$query@{\$query}!enzyme_not_from_standard(obsolete).php@{enzyme\-\_\-not\-\_\-from\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$query}]{\setlength{\rightskip}{0pt plus 5cm}\$query}}\label{enzyme__not__from__standard_07obsolete_08_8php_af59a5f7cd609e592c41dc3643efd3c98}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+= \textcolor{stringliteral}{'}
+\textcolor{stringliteral}{    SELECT DISTINCT}
+\textcolor{stringliteral}{        enzyme.ez\_id, }
+\textcolor{stringliteral}{        enzyme.ez\_analyte, }
+\textcolor{stringliteral}{        enzyme.ez\_code, }
+\textcolor{stringliteral}{        enzyme.ez\_slope, }
+\textcolor{stringliteral}{        REPLACE(REPLACE(enzyme.ez\_is\_enzyme,0,"Enzyme"),1,"Metabolite") AS ez\_is\_enzyme}
+\textcolor{stringliteral}{    FROM }
+\textcolor{stringliteral}{        enzyme}
+\textcolor{stringliteral}{    WHERE }
+\textcolor{stringliteral}{        ez\_id NOT IN (}
+\textcolor{stringliteral}{            SELECT }
+\textcolor{stringliteral}{                enzyme.ez\_id }
+\textcolor{stringliteral}{            FROM }
+\textcolor{stringliteral}{                enzyme, }
+\textcolor{stringliteral}{                standard\_enzyme }
+\textcolor{stringliteral}{            WHERE }
+\textcolor{stringliteral}{                standard\_enzyme.std\_ez\_standard\_FK = '}.$standardID.\textcolor{stringliteral}{' AND }
+\textcolor{stringliteral}{                enzyme.ez\_id = standard\_enzyme.std\_ez\_enzyme\_FK}
+\textcolor{stringliteral}{        )}
+\textcolor{stringliteral}{    ORDER BY }
+\textcolor{stringliteral}{        enzyme.ez\_analyte;'}
+\end{DoxyCode}
+
+
+Definition at line 8 of file enzyme\-\_\-not\-\_\-from\-\_\-standard(obsolete).\-php.
+
+\hypertarget{enzyme__not__from__standard_07obsolete_08_8php_ace2ec39e7df3899fa8df9640ec274b03}{\index{enzyme\-\_\-not\-\_\-from\-\_\-standard(obsolete).\-php@{enzyme\-\_\-not\-\_\-from\-\_\-standard(obsolete).\-php}!\$rows@{\$rows}}
+\index{\$rows@{\$rows}!enzyme_not_from_standard(obsolete).php@{enzyme\-\_\-not\-\_\-from\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$rows}]{\setlength{\rightskip}{0pt plus 5cm}\$rows =\$sth-\/$>$fetch\-All()}}\label{enzyme__not__from__standard_07obsolete_08_8php_ace2ec39e7df3899fa8df9640ec274b03}
+
+
+Definition at line 40 of file enzyme\-\_\-not\-\_\-from\-\_\-standard(obsolete).\-php.
+
+\hypertarget{enzyme__not__from__standard_07obsolete_08_8php_a0c541a369e4a0434108a7d145751bb23}{\index{enzyme\-\_\-not\-\_\-from\-\_\-standard(obsolete).\-php@{enzyme\-\_\-not\-\_\-from\-\_\-standard(obsolete).\-php}!\$standard\-I\-D@{\$standard\-I\-D}}
+\index{\$standard\-I\-D@{\$standard\-I\-D}!enzyme_not_from_standard(obsolete).php@{enzyme\-\_\-not\-\_\-from\-\_\-standard(obsolete).\-php}}
+\subsubsection[{\$standard\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\$standard\-I\-D = \$\-\_\-\-P\-O\-S\-T\mbox{[}'standard\-I\-D'\mbox{]}}}\label{enzyme__not__from__standard_07obsolete_08_8php_a0c541a369e4a0434108a7d145751bb23}
+
+
+Definition at line 6 of file enzyme\-\_\-not\-\_\-from\-\_\-standard(obsolete).\-php.
+
+\hypertarget{enzyme__not__from__standard_07obsolete_08_8php_abe4cc9788f52e49485473dc699537388}{\index{enzyme\-\_\-not\-\_\-from\-\_\-standard(obsolete).\-php@{enzyme\-\_\-not\-\_\-from\-\_\-standard(obsolete).\-php}!try@{try}}
+\index{try@{try}!enzyme_not_from_standard(obsolete).php@{enzyme\-\_\-not\-\_\-from\-\_\-standard(obsolete).\-php}}
+\subsubsection[{try}]{\setlength{\rightskip}{0pt plus 5cm}try}}\label{enzyme__not__from__standard_07obsolete_08_8php_abe4cc9788f52e49485473dc699537388}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+\{
+        \hyperlink{admin_batch_update_data_8php_afa9126f9664959c02795be300a135f93}{$sth}=\hyperlink{enzyme__not__from__standard_07obsolete_08_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{$conn}->prepare(\hyperlink{enzyme__not__from__standard_07obsolete_08_8php_af59a5f7cd609e592c41dc3643efd3c98}{$query})
+\end{DoxyCode}
+
+
+Definition at line 35 of file enzyme\-\_\-not\-\_\-from\-\_\-standard(obsolete).\-php.
+

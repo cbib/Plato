@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="da/d8e/_admin_e_z_update_data_8php" kind="file">
+    <compoundname>AdminEZUpdateData.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="da/d8e/_admin_e_z_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$conn</definition>
+        <argsstring></argsstring>
+        <name>$conn</name>
+        <initializer>= <ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminEnzyme/AdminEZUpdateData.php" line="5" column="1" bodyfile="/var/www/html/plato/php/admin/adminEnzyme/AdminEZUpdateData.php" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d8e/_admin_e_z_update_data_8php_1ae9a60f2c381103ddf1a3fda7be76d890" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$ezId</definition>
+        <argsstring></argsstring>
+        <name>$ezId</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminEnzyme/AdminEZUpdateData.php" line="8" column="1" bodyfile="/var/www/html/plato/php/admin/adminEnzyme/AdminEZUpdateData.php" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d8e/_admin_e_z_update_data_8php_1a57a9615262224b8dda435a084ba02406" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$ezName</definition>
+        <argsstring></argsstring>
+        <name>$ezName</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminEnzyme/AdminEZUpdateData.php" line="9" column="1" bodyfile="/var/www/html/plato/php/admin/adminEnzyme/AdminEZUpdateData.php" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d8e/_admin_e_z_update_data_8php_1a1efbb279669bdab5d5eaff4f289c71a2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$ezSlope</definition>
+        <argsstring></argsstring>
+        <name>$ezSlope</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminEnzyme/AdminEZUpdateData.php" line="10" column="1" bodyfile="/var/www/html/plato/php/admin/adminEnzyme/AdminEZUpdateData.php" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d8e/_admin_e_z_update_data_8php_1a1a28f4870dd5aff7acdc3184a85a30c7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$ezCode</definition>
+        <argsstring></argsstring>
+        <name>$ezCode</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminEnzyme/AdminEZUpdateData.php" line="11" column="1" bodyfile="/var/www/html/plato/php/admin/adminEnzyme/AdminEZUpdateData.php" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d8e/_admin_e_z_update_data_8php_1aee528badcb788c913ffab530a5b876cf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$ezType</definition>
+        <argsstring></argsstring>
+        <name>$ezType</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminEnzyme/AdminEZUpdateData.php" line="12" column="1" bodyfile="/var/www/html/plato/php/admin/adminEnzyme/AdminEZUpdateData.php" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d8e/_admin_e_z_update_data_8php_1aa698a3e72116e8e778be0e95d908ee30" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$action</definition>
+        <argsstring></argsstring>
+        <name>$action</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminEnzyme/AdminEZUpdateData.php" line="13" column="1" bodyfile="/var/www/html/plato/php/admin/adminEnzyme/AdminEZUpdateData.php" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d8e/_admin_e_z_update_data_8php_1a58391ea75f2d29d5d708d7050b641c33" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$status</definition>
+        <argsstring></argsstring>
+        <name>$status</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminEnzyme/AdminEZUpdateData.php" line="14" column="1" bodyfile="/var/www/html/plato/php/admin/adminEnzyme/AdminEZUpdateData.php" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d8e/_admin_e_z_update_data_8php_1ab64b785fa9f787cb880a97455db04dea" prot="public" static="no" mutable="no">
+        <type>if(isset($_POST[&apos;id&apos;])) if(isset($_POST[&apos;analyte&apos;])) if(isset($_POST[&apos;slope&apos;])) if(isset($_POST[&apos;code&apos;])) if(isset($_POST[&apos;nature&apos;])) if(isset($_POST[&apos;action&apos;])) if($ezType== &apos;Metabolite&apos;) elseif($ezType== &apos;Enzyme&apos;) elseif($ezType== &apos;Other&apos;) if($action==&quot;create&quot;) elseif($action==&quot;edit&quot;) elseif($action==&quot;delete&quot;)</type>
+        <definition>if (isset($_POST[&apos;id&apos;])) if (isset($_POST[&apos;analyte&apos;])) if (isset($_POST[&apos;slope&apos;])) if (isset($_POST[&apos;code&apos;])) if (isset($_POST[&apos;nature&apos;])) if (isset($_POST[&apos;action&apos;])) if ($ezType== &apos;Metabolite&apos;) elseif ($ezType== &apos;Enzyme&apos;) elseif ($ezType== &apos;Other&apos;) if ($action==&quot;create&quot;) elseif ($action==&quot;edit&quot;) elseif ($action==&quot;delete&quot;) else</definition>
+        <argsstring></argsstring>
+        <name>else</name>
+        <initializer>{
+		$status=&quot;error&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminEnzyme/AdminEZUpdateData.php" line="83" column="1" bodyfile="/var/www/html/plato/php/admin/adminEnzyme/AdminEZUpdateData.php" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d8e/_admin_e_z_update_data_8php_1acd0903a7a32e8397aefd0ce8b7dbd1ab" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$response_array[&apos;status&apos;]</definition>
+        <argsstring>[&apos;status&apos;]</argsstring>
+        <name>$response_array</name>
+        <initializer>=$status</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminEnzyme/AdminEZUpdateData.php" line="88" column="1" bodyfile="/var/www/html/plato/php/admin/adminEnzyme/AdminEZUpdateData.php" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="da/d8e/_admin_e_z_update_data_8php_1ae768978a0cdc416c0d63d798c85c8784" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$response_array[&apos;action&apos;]</definition>
+        <argsstring>[&apos;action&apos;]</argsstring>
+        <name>$response_array</name>
+        <initializer>=$action</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/admin/adminEnzyme/AdminEZUpdateData.php" line="89" column="1" bodyfile="/var/www/html/plato/php/admin/adminEnzyme/AdminEZUpdateData.php" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/><sp/><sp/>require(</highlight><highlight class="stringliteral">&apos;../../functions/check_login_admin.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/>include<sp/></highlight><highlight class="stringliteral">&apos;../../functions/php_functions.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>header(</highlight><highlight class="stringliteral">&apos;Content-Type:<sp/>application/json&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="5" refid="da/d8e/_admin_e_z_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d8e/_admin_e_z_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref><sp/>=<sp/><ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>();</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//update<sp/>informations<sp/>about<sp/>an<sp/>analyte,<sp/>create<sp/>a<sp/>new<sp/>one,<sp/>or<sp/>delete<sp/>an<sp/>existing<sp/>one.<sp/>The<sp/>action<sp/>to<sp/>do<sp/>is<sp/>in<sp/>$action</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="da/d8e/_admin_e_z_update_data_8php_1ae9a60f2c381103ddf1a3fda7be76d890" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d8e/_admin_e_z_update_data_8php_1ae9a60f2c381103ddf1a3fda7be76d890" kindref="member">$ezId</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="9" refid="da/d8e/_admin_e_z_update_data_8php_1a57a9615262224b8dda435a084ba02406" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d8e/_admin_e_z_update_data_8php_1a57a9615262224b8dda435a084ba02406" kindref="member">$ezName</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="10" refid="da/d8e/_admin_e_z_update_data_8php_1a1efbb279669bdab5d5eaff4f289c71a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d8e/_admin_e_z_update_data_8php_1a1efbb279669bdab5d5eaff4f289c71a2" kindref="member">$ezSlope</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="11" refid="da/d8e/_admin_e_z_update_data_8php_1a1a28f4870dd5aff7acdc3184a85a30c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d8e/_admin_e_z_update_data_8php_1a1a28f4870dd5aff7acdc3184a85a30c7" kindref="member">$ezCode</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12" refid="da/d8e/_admin_e_z_update_data_8php_1aee528badcb788c913ffab530a5b876cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d8e/_admin_e_z_update_data_8php_1aee528badcb788c913ffab530a5b876cf" kindref="member">$ezType</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13" refid="da/d8e/_admin_e_z_update_data_8php_1aa698a3e72116e8e778be0e95d908ee30" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d8e/_admin_e_z_update_data_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref><sp/>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14" refid="da/d8e/_admin_e_z_update_data_8php_1a58391ea75f2d29d5d708d7050b641c33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="da/d8e/_admin_e_z_update_data_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;id&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d8e/_admin_e_z_update_data_8php_1ae9a60f2c381103ddf1a3fda7be76d890" kindref="member">$ezId</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;id&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;analyte&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d8e/_admin_e_z_update_data_8php_1a57a9615262224b8dda435a084ba02406" kindref="member">$ezName</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;analyte&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;slope&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d8e/_admin_e_z_update_data_8php_1a1efbb279669bdab5d5eaff4f289c71a2" kindref="member">$ezSlope</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;slope&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;code&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d8e/_admin_e_z_update_data_8php_1a1a28f4870dd5aff7acdc3184a85a30c7" kindref="member">$ezCode</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;code&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;nature&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d8e/_admin_e_z_update_data_8php_1aee528badcb788c913ffab530a5b876cf" kindref="member">$ezType</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;nature&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;action&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d8e/_admin_e_z_update_data_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;action&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>0<sp/>si<sp/>metabolite</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="da/d8e/_admin_e_z_update_data_8php_1aee528badcb788c913ffab530a5b876cf" kindref="member">$ezType</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&apos;Metabolite&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d49/add__new__enzyme_07obsolete_08_8php_1ae824a6c0e1560b8ae6c0bdd6fd460078" kindref="member">$ezBool</ref><sp/>=0;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>elseif<sp/>(<ref refid="da/d8e/_admin_e_z_update_data_8php_1aee528badcb788c913ffab530a5b876cf" kindref="member">$ezType</ref><sp/>==<sp/></highlight><highlight class="stringliteral">&apos;Enzyme&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d49/add__new__enzyme_07obsolete_08_8php_1ae824a6c0e1560b8ae6c0bdd6fd460078" kindref="member">$ezBool</ref>=1;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>elseif<sp/>(<ref refid="da/d8e/_admin_e_z_update_data_8php_1aee528badcb788c913ffab530a5b876cf" kindref="member">$ezType</ref>==<sp/></highlight><highlight class="stringliteral">&apos;Other&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/d49/add__new__enzyme_07obsolete_08_8php_1ae824a6c0e1560b8ae6c0bdd6fd460078" kindref="member">$ezBool</ref>=2;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="da/d8e/_admin_e_z_update_data_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref>==</highlight><highlight class="stringliteral">&quot;create&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1ac52f8f4e9d798ceaf5b8ebbbf44651d7" kindref="member">$query</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;</highlight></codeline>
+<codeline lineno="49"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>INSERT<sp/>INTO<sp/>`enzyme`(`ez_id`,<sp/>`ez_analyte`,<sp/>`ez_slope`,<sp/>`ez_code`,<sp/>`ez_is_enzyme`)<sp/>VALUES<sp/>(&apos;&apos;,<sp/>&apos;$ezName&apos;,<sp/>&apos;$ezSlope&apos;,<sp/>&apos;$ezCode&apos;,<sp/>&apos;$ezBool&apos;);&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1afa9126f9664959c02795be300a135f93" kindref="member">$sth</ref>=<ref refid="da/d8e/_admin_e_z_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;prepare(<ref refid="df/d08/admin_batch_update_data_8php_1ac52f8f4e9d798ceaf5b8ebbbf44651d7" kindref="member">$query</ref>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1afa9126f9664959c02795be300a135f93" kindref="member">$sth</ref><sp/>-&gt;<sp/>setFetchMode(PDO::FETCH_ASSOC);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1afa9126f9664959c02795be300a135f93" kindref="member">$sth</ref>-&gt;execute();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d8e/_admin_e_z_update_data_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;success&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(<sp/>Exception<sp/>$e<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;ERRORCreate<sp/>&quot;</highlight><highlight class="normal">.$e);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d8e/_admin_e_z_update_data_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>elseif<sp/>(<ref refid="da/d8e/_admin_e_z_update_data_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref>==</highlight><highlight class="stringliteral">&quot;edit&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1ac52f8f4e9d798ceaf5b8ebbbf44651d7" kindref="member">$query</ref><sp/>=</highlight><highlight class="stringliteral">&quot;UPDATE<sp/>`enzyme`<sp/>SET`ez_analyte`=&apos;$ezName&apos;,`ez_slope`=&apos;$ezSlope&apos;,`ez_code`=&apos;$ezCode&apos;,`ez_is_enzyme`=&apos;$ezBool&apos;<sp/>WHERE<sp/>`ez_id`=&apos;$ezId&apos;;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$entree<sp/>=<sp/><ref refid="da/d8e/_admin_e_z_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;exec(<ref refid="df/d08/admin_batch_update_data_8php_1ac52f8f4e9d798ceaf5b8ebbbf44651d7" kindref="member">$query</ref>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d8e/_admin_e_z_update_data_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;success&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(<sp/>Exception<sp/>$e<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;ERROREdit<sp/>&quot;</highlight><highlight class="normal">.$e);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d8e/_admin_e_z_update_data_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>elseif<sp/>(<ref refid="da/d8e/_admin_e_z_update_data_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref>==</highlight><highlight class="stringliteral">&quot;delete&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1ac52f8f4e9d798ceaf5b8ebbbf44651d7" kindref="member">$query</ref><sp/>=</highlight><highlight class="stringliteral">&quot;DELETE<sp/>FROM<sp/>`enzyme`<sp/>WHERE<sp/>`ez_id`<sp/>=<sp/>&apos;$ezId&apos;;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$entree<sp/>=<sp/><ref refid="da/d8e/_admin_e_z_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;exec(<ref refid="df/d08/admin_batch_update_data_8php_1ac52f8f4e9d798ceaf5b8ebbbf44651d7" kindref="member">$query</ref>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d8e/_admin_e_z_update_data_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;success&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(<sp/>Exception<sp/>$e<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;ERRORDelete<sp/>&quot;</highlight><highlight class="normal">.$e);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d8e/_admin_e_z_update_data_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83" refid="da/d8e/_admin_e_z_update_data_8php_1ab64b785fa9f787cb880a97455db04dea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d8e/_admin_e_z_update_data_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="da/d8e/_admin_e_z_update_data_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Unknown&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="da/d8e/_admin_e_z_update_data_8php_1acd0903a7a32e8397aefd0ce8b7dbd1ab" refkind="member"><highlight class="normal"><ref refid="da/d8e/_admin_e_z_update_data_8php_1acd0903a7a32e8397aefd0ce8b7dbd1ab" kindref="member">$response_array</ref>[</highlight><highlight class="stringliteral">&apos;status&apos;</highlight><highlight class="normal">]=<ref refid="da/d8e/_admin_e_z_update_data_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>;</highlight></codeline>
+<codeline lineno="89" refid="da/d8e/_admin_e_z_update_data_8php_1ae768978a0cdc416c0d63d798c85c8784" refkind="member"><highlight class="normal"><ref refid="da/d8e/_admin_e_z_update_data_8php_1acd0903a7a32e8397aefd0ce8b7dbd1ab" kindref="member">$response_array</ref>[</highlight><highlight class="stringliteral">&apos;action&apos;</highlight><highlight class="normal">]=<ref refid="da/d8e/_admin_e_z_update_data_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">echo<sp/>json_encode(<ref refid="da/d8e/_admin_e_z_update_data_8php_1acd0903a7a32e8397aefd0ce8b7dbd1ab" kindref="member">$response_array</ref>);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="/var/www/html/plato/php/admin/adminEnzyme/AdminEZUpdateData.php"/>
+  </compounddef>
+</doxygen>

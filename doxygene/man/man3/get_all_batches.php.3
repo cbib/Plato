@@ -1,0 +1,75 @@
+.TH "php/batches/get_all_batches.php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/batches/get_all_batches.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$conn\fP = \fBget_connexion\fP()"
+.br
+.ti -1c
+.RI "\fB$query\fP"
+.br
+.ti -1c
+.RI "\fB$sth\fP =$conn->prepare($query)"
+.br
+.ti -1c
+.RI "\fB$count\fP = $sth->rowCount()"
+.br
+.ti -1c
+.RI "\fB$rows\fP =$sth->fetchAll()"
+.br
+.ti -1c
+.RI "\fB$output\fP"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$conn = \fBget_connexion\fP()"
+
+.PP
+Definition at line 4 of file get_all_batches\&.php\&.
+.SS "$count = $sth->rowCount()"
+
+.PP
+Definition at line 17 of file get_all_batches\&.php\&.
+.SS "$output"
+\fBInitial value:\fP
+.PP
+.nf
+= array(
+        "iTotalRecords" => $count,
+        "iTotalDisplayRecords" => $count,
+        "aaData" => array()
+    )
+.fi
+.PP
+Definition at line 20 of file get_all_batches\&.php\&.
+.SS "$query"
+\fBInitial value:\fP
+.PP
+.nf
+='
+    SELECT
+        *
+    FROM
+        batch;'
+.fi
+.PP
+Definition at line 8 of file get_all_batches\&.php\&.
+.SS "$rows =$sth->fetchAll()"
+
+.PP
+Definition at line 18 of file get_all_batches\&.php\&.
+.SS "$sth =$conn->prepare($query)"
+
+.PP
+Definition at line 14 of file get_all_batches\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

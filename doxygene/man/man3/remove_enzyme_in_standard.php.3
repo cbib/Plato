@@ -1,0 +1,71 @@
+.TH "php/admin/adminStandard/remove_enzyme_in_standard.php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/admin/adminStandard/remove_enzyme_in_standard.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$conn\fP = \fBget_connexion\fP()"
+.br
+.ti -1c
+.RI "\fB$stdEzIdToRemove\fP =''"
+.br
+.ti -1c
+.RI "\fB$status\fP ='success'"
+.br
+.ti -1c
+.RI "if(isset($_POST['stdEzIdToRemove'])) \fB$query\fP = 'DELETE FROM `standard_enzyme` WHERE `std_ez_id`= '\&.$stdEzIdToRemove\&.';'"
+.br
+.ti -1c
+.RI "\fBtry\fP"
+.br
+.ti -1c
+.RI "\fB$req\fP = $conn->exec($query)"
+.br
+.ti -1c
+.RI "catch(Exception $e) \fB$response_array\fP ['status'] =$status"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$conn = \fBget_connexion\fP()"
+
+.PP
+Definition at line 4 of file remove_enzyme_in_standard\&.php\&.
+.SS "if (isset($_POST['stdEzIdToRemove'])) $query = 'DELETE FROM `standard_enzyme` WHERE `std_ez_id`= '\&.$stdEzIdToRemove\&.';'"
+
+.PP
+Definition at line 13 of file remove_enzyme_in_standard\&.php\&.
+.SS "$req = $conn->exec($query)"
+
+.PP
+Definition at line 18 of file remove_enzyme_in_standard\&.php\&.
+.SS "catch (Exception $e) $response_array['status'] =$status"
+
+.PP
+Definition at line 27 of file remove_enzyme_in_standard\&.php\&.
+.SS "$status ='success'"
+
+.PP
+Definition at line 7 of file remove_enzyme_in_standard\&.php\&.
+.SS "$stdEzIdToRemove =''"
+
+.PP
+Definition at line 6 of file remove_enzyme_in_standard\&.php\&.
+.SS "try"
+\fBInitial value:\fP
+.PP
+.nf
+{
+        $conn->beginTransaction()
+.fi
+.PP
+Definition at line 16 of file remove_enzyme_in_standard\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

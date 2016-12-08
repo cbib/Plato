@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="de/da1/processing__database__functions_07obsolete_08_8php">
+    <title>processing_database_functions(obsolete).php File Reference</title>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/da1/processing__database__functions_07obsolete_08_8php_1aed57e42e86fbd24e361e6f16dec63c42">get_all_experiment</link> (
+ $conn)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/da1/processing__database__functions_07obsolete_08_8php_1ababcd14b965210672aaf549cba3f82a7">get_batches_from_one_exp</link> (
+ $conn,  $expID)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="de/da1/processing__database__functions_07obsolete_08_8php_1a89c289ded1411879ab2e2c32be3a06f4">get_all_enzymes</link> (
+ $conn)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /var/www/html/plato/php/processing/obsolete/processing_database_functions(obsolete).php</para>
+    </simplesect>
+</section>

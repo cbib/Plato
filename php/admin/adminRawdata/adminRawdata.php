@@ -64,6 +64,9 @@ html_footer("../../../");
 
 <script type="text/javascript" class="init">
 
+/**
+ * Actions when document is ready
+ */
 $(document).ready(function() {
 	$('#adminPanel').removeClass('submenu');
 	$('#adminPanel').addClass('submenu open');
@@ -77,6 +80,9 @@ $(document).ready(function() {
 	var ezID= -1;
 	var ezName = "";
 
+	/**
+	 * Listener on experiment table
+	 */
 	$('#expTable').on('click', 'tr', function () {
 		expID = $('td', this).eq(0).text();
 		$.ajax({
@@ -97,6 +103,9 @@ $(document).ready(function() {
 		});
 	});
 
+	/**
+	 * Listener on Batch select input
+	 */
 	$( "#selectBatch" ).click(function() {
 		batchID = $( "#selectBatch" ).val();
 		console.log("batch ID : "+batchID);
@@ -117,6 +126,9 @@ $(document).ready(function() {
 		});
 	});
 
+	/**
+	 * Listener on analyte select input
+	 */
 	$('#selectEz').change(function(){
 		ezID = $( "#selectEz" ).val();
 		ezName = $( "#selectEz option:selected").text();
@@ -125,6 +137,9 @@ $(document).ready(function() {
 
 });
 
+/**
+ * Listener on editsubmit button
+ */
 $(document).on("click", "#editSubmit", function(e){
 	var expID = $("#expID").val();
 	var ezID = $("#ezID").val();
@@ -146,6 +161,11 @@ $(document).on("click", "#editSubmit", function(e){
 	$("#editRowModal").modal("hide");
 });
 
+/**
+ * Set the experiment datatable up
+ *
+ * @method     setup_experiment_datatable
+ */
 function setup_experiment_datatable(){
 	$('#expTable').dataTable().fnDestroy();
 	var table = $('#expTable').DataTable({
@@ -165,6 +185,16 @@ function setup_experiment_datatable(){
 	});
 }
 
+/**
+ * Construction of a modal window for rawdata deletion
+ *
+ * @method     construct_delete_modal
+ * @param      {string}  ezName   { name of the analyte targeted }
+ * @param      {string}  ezID     { id of the analyte targeted }
+ * @param      {string}  expID    { id of the experiment containing data to remove }
+ * @param      {string}  batchID  { id of the batch containing data to remove }
+ * @param      {string}  action   { action to do (create, edit, delete) }
+ */
 function construct_delete_modal(ezName, ezID, expID, batchID, action){
 	var modal ='<div class="modal-dialog">'+
 	'<div class="loginmodal-container">'+

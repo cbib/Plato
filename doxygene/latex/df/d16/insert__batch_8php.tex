@@ -1,0 +1,270 @@
+\hypertarget{insert__batch_8php}{\section{php/batches/insert\-\_\-batch.php File Reference}
+\label{insert__batch_8php}\index{php/batches/insert\-\_\-batch.\-php@{php/batches/insert\-\_\-batch.\-php}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{insert__batch_8php_a7ddce3ca15f5aebb7183169ac9b2bf96}{insert\-\_\-batch\-\_\-in\-\_\-db} (\$conn, \$batch\-Layout, \$\hyperlink{obsolete_2processing__bak_8php_aacb4c47c97ff6a475764ba2cf4090a32}{batch\-Name}, \$batch\-Number, \$batch\-Date)
+\item 
+\hyperlink{insert__batch_8php_ae69544f3503e8738aa18a5f9aff69220}{get\-\_\-experiment\-\_\-id\-\_\-from\-\_\-name} (\$line, \$conn)
+\item 
+\hyperlink{insert__batch_8php_aca2d979885679313254be10ee45926c9}{get\-Batch\-Exists} (\$conn, \$\hyperlink{obsolete_2processing__bak_8php_aacb4c47c97ff6a475764ba2cf4090a32}{batch\-Name}, \$batch\-Number)
+\item 
+\hyperlink{insert__batch_8php_a8dcda708772bdee9f9805e5f03be6b86}{lance\-\_\-requete} (\$query, \$conn)
+\item 
+\hyperlink{insert__batch_8php_acde31c7b204dab42e6f828aac0454d58}{get\-\_\-sample\-\_\-aliquot\-\_\-id} (\$line, \$conn)
+\item 
+\hyperlink{insert__batch_8php_a655661c97a29e4c4bf1973dcb23c4df7}{batch\-\_\-pos\-\_\-exist\-\_\-in\-\_\-db} (\$line, \$conn)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{insert__batch_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{insert__batch_8php_a73004ce9cd673c1bfafd1dc351134797}{\$output} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{insert__batch_8php_a58391ea75f2d29d5d708d7050b641c33}{\$status} = \char`\"{}success\char`\"{}
+\item 
+\hyperlink{insert__batch_8php_ad1f5a0905b3483329061c134a074ed4c}{\$action} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{insert__batch_8php_aaa6d122ea9cb55b210aadd86e5654a74}{\$batch\-I\-D} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{insert__batch_8php_abdab71b959b28075ae105e76f2bb59c4}{\$rawdatas} = \char`\"{}\char`\"{}
+\item 
+\hyperlink{insert__batch_8php_ae0139f42f02473374ecb453f87c66534}{\$batch\-Name} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{insert__batch_8php_a5efc7692d3e718869a2ba3a55876129c}{\$batch\-Number} = \char`\"{}\char`\"{}
+\item 
+\hyperlink{insert__batch_8php_a6fa65e8ebf49b9db3eaf85cfd31d1908}{\$batch\-Layout} = \char`\"{}\char`\"{}
+\item 
+\hyperlink{insert__batch_8php_a93afdd8e66e69e182754fff598ebf16b}{\$batch\-Date} = date(\char`\"{}Y/m/d\char`\"{})
+\item 
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'rawdatas'\mbox{]})) \hyperlink{insert__batch_8php_a753a9e142fa9d5ae330b048b41897a07}{else}
+\item 
+\hyperlink{insert__batch_8php_afccc8a9380f3ccdc91175a89f48e5474}{\$batch\-Exists} = \hyperlink{insert__batch_8php_aca2d979885679313254be10ee45926c9}{get\-Batch\-Exists}(\$conn, \$\hyperlink{obsolete_2processing__bak_8php_aacb4c47c97ff6a475764ba2cf4090a32}{batch\-Name}, \$batch\-Number)
+\item 
+\hyperlink{insert__batch_8php_a21f886ec964303dbe9fd97ad31a0951b}{\$spl\-\_\-alq\-\_\-id} = -\/1
+\item 
+\hyperlink{insert__batch_8php_ae384d32e62e85e587cd27bf249ed3db3}{\$exp\-I\-D} = \char`\"{}\char`\"{}
+\item 
+\hyperlink{insert__batch_8php_a5de51f0c80b3bb3b39a57b23f6b9ea9f}{\$pos} = 0
+\item 
+\hyperlink{insert__batch_8php_aa1d731aa570613e5bcff831bb10e9b87}{\$row} = 0
+\item 
+\hyperlink{insert__batch_8php_afca5b7d4c9144178253e99d0ada7d519}{\$col} = 0
+\item 
+\hyperlink{insert__batch_8php_ae768978a0cdc416c0d63d798c85c8784}{\$response\-\_\-array} \mbox{[}'action'\mbox{]} =\$action
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{insert__batch_8php_a655661c97a29e4c4bf1973dcb23c4df7}{\index{insert\-\_\-batch.\-php@{insert\-\_\-batch.\-php}!batch\-\_\-pos\-\_\-exist\-\_\-in\-\_\-db@{batch\-\_\-pos\-\_\-exist\-\_\-in\-\_\-db}}
+\index{batch\-\_\-pos\-\_\-exist\-\_\-in\-\_\-db@{batch\-\_\-pos\-\_\-exist\-\_\-in\-\_\-db}!insert_batch.php@{insert\-\_\-batch.\-php}}
+\subsubsection[{batch\-\_\-pos\-\_\-exist\-\_\-in\-\_\-db}]{\setlength{\rightskip}{0pt plus 5cm}batch\-\_\-pos\-\_\-exist\-\_\-in\-\_\-db (
+\begin{DoxyParamCaption}
+\item[{}]{\$line, }
+\item[{}]{\$conn}
+\end{DoxyParamCaption}
+)}}\label{insert__batch_8php_a655661c97a29e4c4bf1973dcb23c4df7}
+
+
+Definition at line 265 of file insert\-\_\-batch.\-php.
+
+\hypertarget{insert__batch_8php_ae69544f3503e8738aa18a5f9aff69220}{\index{insert\-\_\-batch.\-php@{insert\-\_\-batch.\-php}!get\-\_\-experiment\-\_\-id\-\_\-from\-\_\-name@{get\-\_\-experiment\-\_\-id\-\_\-from\-\_\-name}}
+\index{get\-\_\-experiment\-\_\-id\-\_\-from\-\_\-name@{get\-\_\-experiment\-\_\-id\-\_\-from\-\_\-name}!insert_batch.php@{insert\-\_\-batch.\-php}}
+\subsubsection[{get\-\_\-experiment\-\_\-id\-\_\-from\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}get\-\_\-experiment\-\_\-id\-\_\-from\-\_\-name (
+\begin{DoxyParamCaption}
+\item[{}]{\$line, }
+\item[{}]{\$conn}
+\end{DoxyParamCaption}
+)}}\label{insert__batch_8php_ae69544f3503e8738aa18a5f9aff69220}
+
+
+Definition at line 169 of file insert\-\_\-batch.\-php.
+
+\hypertarget{insert__batch_8php_acde31c7b204dab42e6f828aac0454d58}{\index{insert\-\_\-batch.\-php@{insert\-\_\-batch.\-php}!get\-\_\-sample\-\_\-aliquot\-\_\-id@{get\-\_\-sample\-\_\-aliquot\-\_\-id}}
+\index{get\-\_\-sample\-\_\-aliquot\-\_\-id@{get\-\_\-sample\-\_\-aliquot\-\_\-id}!insert_batch.php@{insert\-\_\-batch.\-php}}
+\subsubsection[{get\-\_\-sample\-\_\-aliquot\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}get\-\_\-sample\-\_\-aliquot\-\_\-id (
+\begin{DoxyParamCaption}
+\item[{}]{\$line, }
+\item[{}]{\$conn}
+\end{DoxyParamCaption}
+)}}\label{insert__batch_8php_acde31c7b204dab42e6f828aac0454d58}
+
+
+Definition at line 238 of file insert\-\_\-batch.\-php.
+
+\hypertarget{insert__batch_8php_aca2d979885679313254be10ee45926c9}{\index{insert\-\_\-batch.\-php@{insert\-\_\-batch.\-php}!get\-Batch\-Exists@{get\-Batch\-Exists}}
+\index{get\-Batch\-Exists@{get\-Batch\-Exists}!insert_batch.php@{insert\-\_\-batch.\-php}}
+\subsubsection[{get\-Batch\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}get\-Batch\-Exists (
+\begin{DoxyParamCaption}
+\item[{}]{\$conn, }
+\item[{}]{\$batch\-Name, }
+\item[{}]{\$batch\-Number}
+\end{DoxyParamCaption}
+)}}\label{insert__batch_8php_aca2d979885679313254be10ee45926c9}
+
+
+Definition at line 197 of file insert\-\_\-batch.\-php.
+
+\hypertarget{insert__batch_8php_a7ddce3ca15f5aebb7183169ac9b2bf96}{\index{insert\-\_\-batch.\-php@{insert\-\_\-batch.\-php}!insert\-\_\-batch\-\_\-in\-\_\-db@{insert\-\_\-batch\-\_\-in\-\_\-db}}
+\index{insert\-\_\-batch\-\_\-in\-\_\-db@{insert\-\_\-batch\-\_\-in\-\_\-db}!insert_batch.php@{insert\-\_\-batch.\-php}}
+\subsubsection[{insert\-\_\-batch\-\_\-in\-\_\-db}]{\setlength{\rightskip}{0pt plus 5cm}insert\-\_\-batch\-\_\-in\-\_\-db (
+\begin{DoxyParamCaption}
+\item[{}]{\$conn, }
+\item[{}]{\$batch\-Layout, }
+\item[{}]{\$batch\-Name, }
+\item[{}]{\$batch\-Number, }
+\item[{}]{\$batch\-Date}
+\end{DoxyParamCaption}
+)}}\label{insert__batch_8php_a7ddce3ca15f5aebb7183169ac9b2bf96}
+
+
+Definition at line 145 of file insert\-\_\-batch.\-php.
+
+\hypertarget{insert__batch_8php_a8dcda708772bdee9f9805e5f03be6b86}{\index{insert\-\_\-batch.\-php@{insert\-\_\-batch.\-php}!lance\-\_\-requete@{lance\-\_\-requete}}
+\index{lance\-\_\-requete@{lance\-\_\-requete}!insert_batch.php@{insert\-\_\-batch.\-php}}
+\subsubsection[{lance\-\_\-requete}]{\setlength{\rightskip}{0pt plus 5cm}lance\-\_\-requete (
+\begin{DoxyParamCaption}
+\item[{}]{\$query, }
+\item[{}]{\$conn}
+\end{DoxyParamCaption}
+)}}\label{insert__batch_8php_a8dcda708772bdee9f9805e5f03be6b86}
+
+
+Definition at line 220 of file insert\-\_\-batch.\-php.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{insert__batch_8php_ad1f5a0905b3483329061c134a074ed4c}{\index{insert\-\_\-batch.\-php@{insert\-\_\-batch.\-php}!\$action@{\$action}}
+\index{\$action@{\$action}!insert_batch.php@{insert\-\_\-batch.\-php}}
+\subsubsection[{\$action}]{\setlength{\rightskip}{0pt plus 5cm}if (\$batch\-Exists $>$0) \$action =\char`\"{}\char`\"{}}}\label{insert__batch_8php_ad1f5a0905b3483329061c134a074ed4c}
+
+
+Definition at line 9 of file insert\-\_\-batch.\-php.
+
+\hypertarget{insert__batch_8php_a93afdd8e66e69e182754fff598ebf16b}{\index{insert\-\_\-batch.\-php@{insert\-\_\-batch.\-php}!\$batch\-Date@{\$batch\-Date}}
+\index{\$batch\-Date@{\$batch\-Date}!insert_batch.php@{insert\-\_\-batch.\-php}}
+\subsubsection[{\$batch\-Date}]{\setlength{\rightskip}{0pt plus 5cm}\$batch\-Date = date(\char`\"{}Y/m/d\char`\"{})}}\label{insert__batch_8php_a93afdd8e66e69e182754fff598ebf16b}
+
+
+Definition at line 16 of file insert\-\_\-batch.\-php.
+
+\hypertarget{insert__batch_8php_afccc8a9380f3ccdc91175a89f48e5474}{\index{insert\-\_\-batch.\-php@{insert\-\_\-batch.\-php}!\$batch\-Exists@{\$batch\-Exists}}
+\index{\$batch\-Exists@{\$batch\-Exists}!insert_batch.php@{insert\-\_\-batch.\-php}}
+\subsubsection[{\$batch\-Exists}]{\setlength{\rightskip}{0pt plus 5cm}\$batch\-Exists = {\bf get\-Batch\-Exists}(\$conn, \${\bf batch\-Name}, \$batch\-Number)}}\label{insert__batch_8php_afccc8a9380f3ccdc91175a89f48e5474}
+
+
+Definition at line 62 of file insert\-\_\-batch.\-php.
+
+\hypertarget{insert__batch_8php_aaa6d122ea9cb55b210aadd86e5654a74}{\index{insert\-\_\-batch.\-php@{insert\-\_\-batch.\-php}!\$batch\-I\-D@{\$batch\-I\-D}}
+\index{\$batch\-I\-D@{\$batch\-I\-D}!insert_batch.php@{insert\-\_\-batch.\-php}}
+\subsubsection[{\$batch\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf batch\-I\-D} =\char`\"{}\char`\"{}}}\label{insert__batch_8php_aaa6d122ea9cb55b210aadd86e5654a74}
+
+
+Definition at line 11 of file insert\-\_\-batch.\-php.
+
+\hypertarget{insert__batch_8php_a6fa65e8ebf49b9db3eaf85cfd31d1908}{\index{insert\-\_\-batch.\-php@{insert\-\_\-batch.\-php}!\$batch\-Layout@{\$batch\-Layout}}
+\index{\$batch\-Layout@{\$batch\-Layout}!insert_batch.php@{insert\-\_\-batch.\-php}}
+\subsubsection[{\$batch\-Layout}]{\setlength{\rightskip}{0pt plus 5cm}\$batch\-Layout = \char`\"{}\char`\"{}}}\label{insert__batch_8php_a6fa65e8ebf49b9db3eaf85cfd31d1908}
+
+
+Definition at line 15 of file insert\-\_\-batch.\-php.
+
+\hypertarget{insert__batch_8php_ae0139f42f02473374ecb453f87c66534}{\index{insert\-\_\-batch.\-php@{insert\-\_\-batch.\-php}!\$batch\-Name@{\$batch\-Name}}
+\index{\$batch\-Name@{\$batch\-Name}!insert_batch.php@{insert\-\_\-batch.\-php}}
+\subsubsection[{\$batch\-Name}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf batch\-Name} =\char`\"{}\char`\"{}}}\label{insert__batch_8php_ae0139f42f02473374ecb453f87c66534}
+
+
+Definition at line 13 of file insert\-\_\-batch.\-php.
+
+\hypertarget{insert__batch_8php_a5efc7692d3e718869a2ba3a55876129c}{\index{insert\-\_\-batch.\-php@{insert\-\_\-batch.\-php}!\$batch\-Number@{\$batch\-Number}}
+\index{\$batch\-Number@{\$batch\-Number}!insert_batch.php@{insert\-\_\-batch.\-php}}
+\subsubsection[{\$batch\-Number}]{\setlength{\rightskip}{0pt plus 5cm}\$batch\-Number = \char`\"{}\char`\"{}}}\label{insert__batch_8php_a5efc7692d3e718869a2ba3a55876129c}
+
+
+Definition at line 14 of file insert\-\_\-batch.\-php.
+
+\hypertarget{insert__batch_8php_afca5b7d4c9144178253e99d0ada7d519}{\index{insert\-\_\-batch.\-php@{insert\-\_\-batch.\-php}!\$col@{\$col}}
+\index{\$col@{\$col}!insert_batch.php@{insert\-\_\-batch.\-php}}
+\subsubsection[{\$col}]{\setlength{\rightskip}{0pt plus 5cm}\$col = 0}}\label{insert__batch_8php_afca5b7d4c9144178253e99d0ada7d519}
+
+
+Definition at line 75 of file insert\-\_\-batch.\-php.
+
+\hypertarget{insert__batch_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{insert\-\_\-batch.\-php@{insert\-\_\-batch.\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!insert_batch.php@{insert\-\_\-batch.\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{insert__batch_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 5 of file insert\-\_\-batch.\-php.
+
+\hypertarget{insert__batch_8php_ae384d32e62e85e587cd27bf249ed3db3}{\index{insert\-\_\-batch.\-php@{insert\-\_\-batch.\-php}!\$exp\-I\-D@{\$exp\-I\-D}}
+\index{\$exp\-I\-D@{\$exp\-I\-D}!insert_batch.php@{insert\-\_\-batch.\-php}}
+\subsubsection[{\$exp\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf exp\-I\-D} = \char`\"{}\char`\"{}}}\label{insert__batch_8php_ae384d32e62e85e587cd27bf249ed3db3}
+
+
+Definition at line 71 of file insert\-\_\-batch.\-php.
+
+\hypertarget{insert__batch_8php_a73004ce9cd673c1bfafd1dc351134797}{\index{insert\-\_\-batch.\-php@{insert\-\_\-batch.\-php}!\$output@{\$output}}
+\index{\$output@{\$output}!insert_batch.php@{insert\-\_\-batch.\-php}}
+\subsubsection[{\$output}]{\setlength{\rightskip}{0pt plus 5cm}\$output =\char`\"{}\char`\"{}}}\label{insert__batch_8php_a73004ce9cd673c1bfafd1dc351134797}
+
+
+Definition at line 6 of file insert\-\_\-batch.\-php.
+
+\hypertarget{insert__batch_8php_a5de51f0c80b3bb3b39a57b23f6b9ea9f}{\index{insert\-\_\-batch.\-php@{insert\-\_\-batch.\-php}!\$pos@{\$pos}}
+\index{\$pos@{\$pos}!insert_batch.php@{insert\-\_\-batch.\-php}}
+\subsubsection[{\$pos}]{\setlength{\rightskip}{0pt plus 5cm}\$pos = 0}}\label{insert__batch_8php_a5de51f0c80b3bb3b39a57b23f6b9ea9f}
+
+
+Definition at line 73 of file insert\-\_\-batch.\-php.
+
+\hypertarget{insert__batch_8php_abdab71b959b28075ae105e76f2bb59c4}{\index{insert\-\_\-batch.\-php@{insert\-\_\-batch.\-php}!\$rawdatas@{\$rawdatas}}
+\index{\$rawdatas@{\$rawdatas}!insert_batch.php@{insert\-\_\-batch.\-php}}
+\subsubsection[{\$rawdatas}]{\setlength{\rightskip}{0pt plus 5cm}\$rawdatas = \char`\"{}\char`\"{}}}\label{insert__batch_8php_abdab71b959b28075ae105e76f2bb59c4}
+
+
+Definition at line 12 of file insert\-\_\-batch.\-php.
+
+\hypertarget{insert__batch_8php_ae768978a0cdc416c0d63d798c85c8784}{\index{insert\-\_\-batch.\-php@{insert\-\_\-batch.\-php}!\$response\-\_\-array@{\$response\-\_\-array}}
+\index{\$response\-\_\-array@{\$response\-\_\-array}!insert_batch.php@{insert\-\_\-batch.\-php}}
+\subsubsection[{\$response\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}\$response\-\_\-array\mbox{[}'action'\mbox{]} =\$action}}\label{insert__batch_8php_ae768978a0cdc416c0d63d798c85c8784}
+
+
+Definition at line 140 of file insert\-\_\-batch.\-php.
+
+\hypertarget{insert__batch_8php_aa1d731aa570613e5bcff831bb10e9b87}{\index{insert\-\_\-batch.\-php@{insert\-\_\-batch.\-php}!\$row@{\$row}}
+\index{\$row@{\$row}!insert_batch.php@{insert\-\_\-batch.\-php}}
+\subsubsection[{\$row}]{\setlength{\rightskip}{0pt plus 5cm}\$row = 0}}\label{insert__batch_8php_aa1d731aa570613e5bcff831bb10e9b87}
+
+
+Definition at line 74 of file insert\-\_\-batch.\-php.
+
+\hypertarget{insert__batch_8php_a21f886ec964303dbe9fd97ad31a0951b}{\index{insert\-\_\-batch.\-php@{insert\-\_\-batch.\-php}!\$spl\-\_\-alq\-\_\-id@{\$spl\-\_\-alq\-\_\-id}}
+\index{\$spl\-\_\-alq\-\_\-id@{\$spl\-\_\-alq\-\_\-id}!insert_batch.php@{insert\-\_\-batch.\-php}}
+\subsubsection[{\$spl\-\_\-alq\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}\$spl\-\_\-alq\-\_\-id = -\/1}}\label{insert__batch_8php_a21f886ec964303dbe9fd97ad31a0951b}
+
+
+Definition at line 70 of file insert\-\_\-batch.\-php.
+
+\hypertarget{insert__batch_8php_a58391ea75f2d29d5d708d7050b641c33}{\index{insert\-\_\-batch.\-php@{insert\-\_\-batch.\-php}!\$status@{\$status}}
+\index{\$status@{\$status}!insert_batch.php@{insert\-\_\-batch.\-php}}
+\subsubsection[{\$status}]{\setlength{\rightskip}{0pt plus 5cm}\$status = \char`\"{}success\char`\"{}}}\label{insert__batch_8php_a58391ea75f2d29d5d708d7050b641c33}
+
+
+Definition at line 8 of file insert\-\_\-batch.\-php.
+
+\hypertarget{insert__batch_8php_a753a9e142fa9d5ae330b048b41897a07}{\index{insert\-\_\-batch.\-php@{insert\-\_\-batch.\-php}!else@{else}}
+\index{else@{else}!insert_batch.php@{insert\-\_\-batch.\-php}}
+\subsubsection[{else}]{\setlength{\rightskip}{0pt plus 5cm}if (\$status!=\char`\"{}error\char`\"{}) else}}\label{insert__batch_8php_a753a9e142fa9d5ae330b048b41897a07}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+\{
+        error\_log(\textcolor{stringliteral}{"WRONG rawdata"})
+\end{DoxyCode}
+
+
+Definition at line 22 of file insert\-\_\-batch.\-php.
+

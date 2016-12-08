@@ -1,0 +1,126 @@
+\hypertarget{save__edit_8php}{\section{php/processing/save\-\_\-edit.php File Reference}
+\label{save__edit_8php}\index{php/processing/save\-\_\-edit.\-php@{php/processing/save\-\_\-edit.\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{save__edit_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{save__edit_8php_a58391ea75f2d29d5d708d7050b641c33}{\$status} =\char`\"{}success\char`\"{}
+\item 
+\hyperlink{save__edit_8php_a538eaf07e91a8c4f140bc04fa2b899cf}{\$bool\-Succes} =\hyperlink{obsolete_2processing__bak_8php_ad85b26c88897c4f65b1a4930711a2e93}{true}
+\item 
+\hyperlink{save__edit_8php_aa698a3e72116e8e778be0e95d908ee30}{\$action} =\char`\"{}Update\char`\"{}
+\item 
+\hyperlink{save__edit_8php_afa1bf54e96740365ed27d1d6e502ebe6}{\$process\-Data\-Map} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'procdatas'\mbox{]}
+\item 
+\hyperlink{save__edit_8php_a296195c83717b71c16843c3c951e29a2}{\$exclud\-Map} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'exclud\-Map'\mbox{]}
+\item 
+\hyperlink{save__edit_8php_a2c543a123b646cdf11c814983d4a13cf}{\$raw\-I\-D\-Map} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'raw\-I\-D\-Map'\mbox{]}
+\item 
+\hyperlink{save__edit_8php_aaa6d122ea9cb55b210aadd86e5654a74}{\$batch\-I\-D} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'\hyperlink{obsolete_2processing__bak_8php_a88c5bc4262b7c34f236357f5c53fc99b}{batch\-I\-D}'\mbox{]}
+\item 
+\hyperlink{save__edit_8php_addb1ec3ba55e413a08cb006ce21974df}{\$ez\-I\-D} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'\hyperlink{admin_rawdata_8php_adf465cadf95987152966d26567509f92}{ez\-I\-D}'\mbox{]}
+\item 
+\hyperlink{save__edit_8php_a4deb48a7e93f5e779e135128a3d1ac1b}{\$col\-Idx} = 0
+\item 
+\hyperlink{save__edit_8php_a2457f3fab8183bd163626612df265a7e}{\$row\-Idx} = 0
+\item 
+foreach(\$process\-Data\-Map as \$row) \hyperlink{save__edit_8php_a4ba95aec8cb028451e78a65b37d972d7}{\$response\-\_\-array} \mbox{[}'status'\mbox{]} =\$status
+\item 
+\hyperlink{save__edit_8php_ae768978a0cdc416c0d63d798c85c8784}{\$response\-\_\-array} \mbox{[}'action'\mbox{]} =\$action
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{save__edit_8php_aa698a3e72116e8e778be0e95d908ee30}{\index{save\-\_\-edit.\-php@{save\-\_\-edit.\-php}!\$action@{\$action}}
+\index{\$action@{\$action}!save_edit.php@{save\-\_\-edit.\-php}}
+\subsubsection[{\$action}]{\setlength{\rightskip}{0pt plus 5cm}\$action =\char`\"{}Update\char`\"{}}}\label{save__edit_8php_aa698a3e72116e8e778be0e95d908ee30}
+
+
+Definition at line 7 of file save\-\_\-edit.\-php.
+
+\hypertarget{save__edit_8php_aaa6d122ea9cb55b210aadd86e5654a74}{\index{save\-\_\-edit.\-php@{save\-\_\-edit.\-php}!\$batch\-I\-D@{\$batch\-I\-D}}
+\index{\$batch\-I\-D@{\$batch\-I\-D}!save_edit.php@{save\-\_\-edit.\-php}}
+\subsubsection[{\$batch\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf batch\-I\-D} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'{\bf batch\-I\-D}'\mbox{]}}}\label{save__edit_8php_aaa6d122ea9cb55b210aadd86e5654a74}
+
+
+Definition at line 12 of file save\-\_\-edit.\-php.
+
+\hypertarget{save__edit_8php_a538eaf07e91a8c4f140bc04fa2b899cf}{\index{save\-\_\-edit.\-php@{save\-\_\-edit.\-php}!\$bool\-Succes@{\$bool\-Succes}}
+\index{\$bool\-Succes@{\$bool\-Succes}!save_edit.php@{save\-\_\-edit.\-php}}
+\subsubsection[{\$bool\-Succes}]{\setlength{\rightskip}{0pt plus 5cm}\$bool\-Succes ={\bf true}}}\label{save__edit_8php_a538eaf07e91a8c4f140bc04fa2b899cf}
+
+
+Definition at line 6 of file save\-\_\-edit.\-php.
+
+\hypertarget{save__edit_8php_a4deb48a7e93f5e779e135128a3d1ac1b}{\index{save\-\_\-edit.\-php@{save\-\_\-edit.\-php}!\$col\-Idx@{\$col\-Idx}}
+\index{\$col\-Idx@{\$col\-Idx}!save_edit.php@{save\-\_\-edit.\-php}}
+\subsubsection[{\$col\-Idx}]{\setlength{\rightskip}{0pt plus 5cm}foreach (\$exclud\-Map as \$row) \$col\-Idx = 0}}\label{save__edit_8php_a4deb48a7e93f5e779e135128a3d1ac1b}
+
+
+Definition at line 14 of file save\-\_\-edit.\-php.
+
+\hypertarget{save__edit_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{save\-\_\-edit.\-php@{save\-\_\-edit.\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!save_edit.php@{save\-\_\-edit.\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{save__edit_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 4 of file save\-\_\-edit.\-php.
+
+\hypertarget{save__edit_8php_a296195c83717b71c16843c3c951e29a2}{\index{save\-\_\-edit.\-php@{save\-\_\-edit.\-php}!\$exclud\-Map@{\$exclud\-Map}}
+\index{\$exclud\-Map@{\$exclud\-Map}!save_edit.php@{save\-\_\-edit.\-php}}
+\subsubsection[{\$exclud\-Map}]{\setlength{\rightskip}{0pt plus 5cm}\$exclud\-Map = \$\-\_\-\-P\-O\-S\-T\mbox{[}'exclud\-Map'\mbox{]}}}\label{save__edit_8php_a296195c83717b71c16843c3c951e29a2}
+
+
+Definition at line 10 of file save\-\_\-edit.\-php.
+
+\hypertarget{save__edit_8php_addb1ec3ba55e413a08cb006ce21974df}{\index{save\-\_\-edit.\-php@{save\-\_\-edit.\-php}!\$ez\-I\-D@{\$ez\-I\-D}}
+\index{\$ez\-I\-D@{\$ez\-I\-D}!save_edit.php@{save\-\_\-edit.\-php}}
+\subsubsection[{\$ez\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf ez\-I\-D} = \$\-\_\-\-P\-O\-S\-T\mbox{[}'{\bf ez\-I\-D}'\mbox{]}}}\label{save__edit_8php_addb1ec3ba55e413a08cb006ce21974df}
+
+
+Definition at line 13 of file save\-\_\-edit.\-php.
+
+\hypertarget{save__edit_8php_afa1bf54e96740365ed27d1d6e502ebe6}{\index{save\-\_\-edit.\-php@{save\-\_\-edit.\-php}!\$process\-Data\-Map@{\$process\-Data\-Map}}
+\index{\$process\-Data\-Map@{\$process\-Data\-Map}!save_edit.php@{save\-\_\-edit.\-php}}
+\subsubsection[{\$process\-Data\-Map}]{\setlength{\rightskip}{0pt plus 5cm}\$process\-Data\-Map = \$\-\_\-\-P\-O\-S\-T\mbox{[}'procdatas'\mbox{]}}}\label{save__edit_8php_afa1bf54e96740365ed27d1d6e502ebe6}
+
+
+Definition at line 9 of file save\-\_\-edit.\-php.
+
+\hypertarget{save__edit_8php_a2c543a123b646cdf11c814983d4a13cf}{\index{save\-\_\-edit.\-php@{save\-\_\-edit.\-php}!\$raw\-I\-D\-Map@{\$raw\-I\-D\-Map}}
+\index{\$raw\-I\-D\-Map@{\$raw\-I\-D\-Map}!save_edit.php@{save\-\_\-edit.\-php}}
+\subsubsection[{\$raw\-I\-D\-Map}]{\setlength{\rightskip}{0pt plus 5cm}\$raw\-I\-D\-Map = \$\-\_\-\-P\-O\-S\-T\mbox{[}'raw\-I\-D\-Map'\mbox{]}}}\label{save__edit_8php_a2c543a123b646cdf11c814983d4a13cf}
+
+
+Definition at line 11 of file save\-\_\-edit.\-php.
+
+\hypertarget{save__edit_8php_a4ba95aec8cb028451e78a65b37d972d7}{\index{save\-\_\-edit.\-php@{save\-\_\-edit.\-php}!\$response\-\_\-array@{\$response\-\_\-array}}
+\index{\$response\-\_\-array@{\$response\-\_\-array}!save_edit.php@{save\-\_\-edit.\-php}}
+\subsubsection[{\$response\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}foreach (\$process\-Data\-Map as \$row) \$response\-\_\-array\mbox{[}'status'\mbox{]} =\$status}}\label{save__edit_8php_a4ba95aec8cb028451e78a65b37d972d7}
+
+
+Definition at line 85 of file save\-\_\-edit.\-php.
+
+\hypertarget{save__edit_8php_ae768978a0cdc416c0d63d798c85c8784}{\index{save\-\_\-edit.\-php@{save\-\_\-edit.\-php}!\$response\-\_\-array@{\$response\-\_\-array}}
+\index{\$response\-\_\-array@{\$response\-\_\-array}!save_edit.php@{save\-\_\-edit.\-php}}
+\subsubsection[{\$response\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}\$response\-\_\-array\mbox{[}'action'\mbox{]} =\$action}}\label{save__edit_8php_ae768978a0cdc416c0d63d798c85c8784}
+
+
+Definition at line 86 of file save\-\_\-edit.\-php.
+
+\hypertarget{save__edit_8php_a2457f3fab8183bd163626612df265a7e}{\index{save\-\_\-edit.\-php@{save\-\_\-edit.\-php}!\$row\-Idx@{\$row\-Idx}}
+\index{\$row\-Idx@{\$row\-Idx}!save_edit.php@{save\-\_\-edit.\-php}}
+\subsubsection[{\$row\-Idx}]{\setlength{\rightskip}{0pt plus 5cm}\$row\-Idx = 0}}\label{save__edit_8php_a2457f3fab8183bd163626612df265a7e}
+
+
+Definition at line 15 of file save\-\_\-edit.\-php.
+
+\hypertarget{save__edit_8php_a58391ea75f2d29d5d708d7050b641c33}{\index{save\-\_\-edit.\-php@{save\-\_\-edit.\-php}!\$status@{\$status}}
+\index{\$status@{\$status}!save_edit.php@{save\-\_\-edit.\-php}}
+\subsubsection[{\$status}]{\setlength{\rightskip}{0pt plus 5cm}\$status =\char`\"{}success\char`\"{}}}\label{save__edit_8php_a58391ea75f2d29d5d708d7050b641c33}
+
+
+Definition at line 5 of file save\-\_\-edit.\-php.
+

@@ -1,0 +1,84 @@
+.TH "php/admin/adminRawdata/adminRawdata.php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/admin/adminRawdata/adminRawdata.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBsetup_experiment_datatable\fP ()"
+.br
+.ti -1c
+.RI "\fBconstruct_delete_modal\fP (\fBezName\fP, \fBezID\fP, \fBexpID\fP, \fBbatchID\fP, action)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBexpID\fP =-1"
+.br
+.ti -1c
+.RI "\fBbatchID\fP =-1"
+.br
+.ti -1c
+.RI "\fBezID\fP = -1"
+.br
+.ti -1c
+.RI "\fBezName\fP = ''"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "construct_delete_modal (\fBezName\fP, \fBezID\fP, \fBexpID\fP, \fBbatchID\fP, action)"
+Construction of a modal window for rawdata deletion
+.PP
+construct_delete_modal 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{string}\fP ezName { name of the analyte targeted } 
+.br
+\fI{string}\fP ezID { id of the analyte targeted } 
+.br
+\fI{string}\fP expID { id of the experiment containing data to remove } 
+.br
+\fI{string}\fP batchID { id of the batch containing data to remove } 
+.br
+\fI{string}\fP action { action to do (create, edit, delete) } 
+.RE
+.PP
+
+.PP
+Definition at line 198 of file adminRawdata\&.php\&.
+.SS "setup_experiment_datatable ()"
+Set the experiment datatable up
+.PP
+setup_experiment_datatable 
+.PP
+Definition at line 169 of file adminRawdata\&.php\&.
+.SH "Variable Documentation"
+.PP 
+.SS "batchID =-1"
+Listener on Batch select input 
+.PP
+Definition at line 79 of file adminRawdata\&.php\&.
+.SS "expID =-1"
+
+.PP
+Definition at line 78 of file adminRawdata\&.php\&.
+.SS "ezID = -1"
+
+.PP
+Definition at line 80 of file adminRawdata\&.php\&.
+.SS "ezName = ''"
+
+.PP
+Definition at line 81 of file adminRawdata\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

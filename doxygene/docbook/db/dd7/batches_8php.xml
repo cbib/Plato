@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/dd7/batches_8php">
+    <title>batches.php File Reference</title>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/dd7/batches_8php_1aaf1585290b44b1c24947e6bffa5ccc51">resetModalTable</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/dd7/batches_8php_1a1c5bd701b81e92f7d4d3c5df62308a90">showWaitModal</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/dd7/batches_8php_1a9e9a0aeba0985269b23840a250abb827">hideWaitModal</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/dd7/batches_8php_1ae02cea24a062a7f21bd48533c1504690">create_addBatch_modal</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/dd7/batches_8php_1aabf63657ee4a503e37183e428ef11db1">batchInsert</link> (
+tableID )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/dd7/batches_8php_1abb8ec322fc0eef58540ade5207c2ca41">batchEdition</link> (
+<link linkend="db/d41/obsolete_2processing__bak_8php_1a88c5bc4262b7c34f236357f5c53fc99b">batchID</link> , tableID )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/dd7/batches_8php_1a04637a1b595da1d5ed13d255573db770">resetBatchTable</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/dd7/batches_8php_1afb025da899746c307e7b43a19a66fdad">makeBatchEditable</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/dd7/batches_8php_1a78f6e359719fa425326a3b9b616c1d0b">makeBatchUnEditable</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/dd7/batches_8php_1a3b7fa21c29f2265534745659558aab45">setup_experiment_datatable</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/dd7/batches_8php_1a0af6eec16d059e41ca9dc5f3840ad72e">dispatchAddBatchDatas</link> (
+<link linkend="db/d8a/chart1_8php_1ab3ed669f4b3fdb8c88f3a190fb907de0">data</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/dd7/batches_8php_1a3c5593b7a45fafc8fefc2db97ac31de0">checkUse</link> (
+<link linkend="db/d8a/chart1_8php_1ab3ed669f4b3fdb8c88f3a190fb907de0">data</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/dd7/batches_8php_1a0eb64e41e5e954b1aaa81a84ee158278">displayVals</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/dd7/batches_8php_1aa1e8f9d59d36beb449d29324b83696c5">chomp</link> (
+raw_text )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /var/www/html/plato/php/batches/batches.php</para>
+    </simplesect>
+</section>

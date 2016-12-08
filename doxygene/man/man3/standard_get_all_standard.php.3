@@ -1,0 +1,67 @@
+.TH "php/standard/standard_get_all_standard.php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/standard/standard_get_all_standard.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$conn\fP = \fBget_connexion\fP()"
+.br
+.ti -1c
+.RI "\fB$query\fP ='SELECT * FROM standard ORDER BY std_name;'"
+.br
+.ti -1c
+.RI "\fB$sth\fP =$conn->prepare($query)"
+.br
+.ti -1c
+.RI "\fB$count\fP = $sth->rowCount()"
+.br
+.ti -1c
+.RI "\fB$rows\fP =$sth->fetchAll()"
+.br
+.ti -1c
+.RI "\fB$output\fP"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$conn = \fBget_connexion\fP()"
+
+.PP
+Definition at line 4 of file standard_get_all_standard\&.php\&.
+.SS "$count = $sth->rowCount()"
+
+.PP
+Definition at line 10 of file standard_get_all_standard\&.php\&.
+.SS "$output"
+\fBInitial value:\fP
+.PP
+.nf
+= array(
+        "iTotalRecords" => $count,
+        "iTotalDisplayRecords" => $count,
+        "aaData" => array()
+    )
+.fi
+.PP
+Definition at line 18 of file standard_get_all_standard\&.php\&.
+.SS "$query ='SELECT * FROM standard ORDER BY std_name;'"
+
+.PP
+Definition at line 5 of file standard_get_all_standard\&.php\&.
+.SS "$rows =$sth->fetchAll()"
+
+.PP
+Definition at line 11 of file standard_get_all_standard\&.php\&.
+.SS "$sth =$conn->prepare($query)"
+
+.PP
+Definition at line 7 of file standard_get_all_standard\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

@@ -1,0 +1,94 @@
+.TH "php/standard/obsolete files/edit_enzyme_in_standard(obsolete).php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/standard/obsolete files/edit_enzyme_in_standard(obsolete).php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$conn\fP = \fBget_connexion\fP()"
+.br
+.ti -1c
+.RI "\fB$stdEzID\fP =''"
+.br
+.ti -1c
+.RI "\fB$slope\fP =''"
+.br
+.ti -1c
+.RI "\fB$amount\fP =''"
+.br
+.ti -1c
+.RI "\fB$standardID\fP =''"
+.br
+.ti -1c
+.RI "\fB$status\fP ='success'"
+.br
+.ti -1c
+.RI "if(isset($_POST['stdezid'])) 
+.br
+if(isset($_POST['amount'])) \fB$query\fP = 'UPDATE `standard_enzyme` SET `std_ez_value`='\&.$amount\&.' WHERE `std_ez_id`= '\&.$stdEzID\&.';'"
+.br
+.ti -1c
+.RI "\fBtry\fP"
+.br
+.ti -1c
+.RI "\fB$req\fP = $conn->exec($query)"
+.br
+.ti -1c
+.RI "catch(Exception $e) \fB$response_array\fP ['status'] =$status"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$amount =''"
+
+.PP
+Definition at line 8 of file edit_enzyme_in_standard(obsolete)\&.php\&.
+.SS "$conn = \fBget_connexion\fP()"
+
+.PP
+Definition at line 4 of file edit_enzyme_in_standard(obsolete)\&.php\&.
+.SS "if (isset($_POST['stdezid'])) if (isset($_POST['amount'])) $query = 'UPDATE `standard_enzyme` SET `std_ez_value`='\&.$amount\&.' WHERE `std_ez_id`= '\&.$stdEzID\&.';'"
+
+.PP
+Definition at line 28 of file edit_enzyme_in_standard(obsolete)\&.php\&.
+.SS "$req = $conn->exec($query)"
+
+.PP
+Definition at line 34 of file edit_enzyme_in_standard(obsolete)\&.php\&.
+.SS "catch (Exception $e) $response_array['status'] =$status"
+
+.PP
+Definition at line 43 of file edit_enzyme_in_standard(obsolete)\&.php\&.
+.SS "$slope =''"
+
+.PP
+Definition at line 7 of file edit_enzyme_in_standard(obsolete)\&.php\&.
+.SS "$standardID =''"
+
+.PP
+Definition at line 9 of file edit_enzyme_in_standard(obsolete)\&.php\&.
+.SS "$status ='success'"
+
+.PP
+Definition at line 10 of file edit_enzyme_in_standard(obsolete)\&.php\&.
+.SS "$stdEzID =''"
+
+.PP
+Definition at line 6 of file edit_enzyme_in_standard(obsolete)\&.php\&.
+.SS "try"
+\fBInitial value:\fP
+.PP
+.nf
+{
+        $conn->beginTransaction()
+.fi
+.PP
+Definition at line 32 of file edit_enzyme_in_standard(obsolete)\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

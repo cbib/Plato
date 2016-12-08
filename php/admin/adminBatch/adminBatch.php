@@ -64,6 +64,9 @@ html_footer("../../../");
 
 <script type="text/javascript" class="init">
 
+/**
+ * Actions when document is ready
+ */
 $(document).ready(function() {
 	$('#adminPanel').removeClass('submenu');
 	$('#adminPanel').addClass('submenu open');
@@ -110,6 +113,9 @@ $(document).ready(function() {
 
 });
 
+/**
+ * Listener on edit button
+ */
 $(document).on("click", "#editSubmit", function(e){
 	var batchID = $("#batchID").val();
 	console.log("click delete : => batch "+batchID );
@@ -127,6 +133,11 @@ $(document).on("click", "#editSubmit", function(e){
 	$("#editRowModal").modal("hide");
 });
 
+/**
+ * Set datatable of experiments up
+ *
+ * @method     setup_experiment_datatable
+ */
 function setup_experiment_datatable(){
 	$('#expTable').dataTable().fnDestroy();
 	var table = $('#expTable').DataTable({
@@ -146,6 +157,13 @@ function setup_experiment_datatable(){
 	});
 }
 
+/**
+ * construction of a modal for batch deletion
+ *
+ * @method     construct_delete_modal
+ * @param      {string}  batchID  { id of the selected batch }
+ * @param      {string}  action   { action to execute when click on submit }
+ */
 function construct_delete_modal(batchID, action){
 	var modal ='<div class="modal-dialog">'+
 	'<div class="loginmodal-container">'+

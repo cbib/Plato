@@ -4,6 +4,8 @@
 	header('Content-Type: application/json');
 	$conn = get_connexion();
 
+	// delete rawdata
+
 	$expID=-1;
 	$ezID=-1;
 	$batchID=-1;

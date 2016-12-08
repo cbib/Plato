@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="da/d8e/_admin_e_z_update_data_8php">
+    <title>AdminEZUpdateData.php File Reference</title>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="da/d8e/_admin_e_z_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877">$conn</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="da/d8e/_admin_e_z_update_data_8php_1ae9a60f2c381103ddf1a3fda7be76d890">$ezId</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="da/d8e/_admin_e_z_update_data_8php_1a57a9615262224b8dda435a084ba02406">$ezName</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="da/d8e/_admin_e_z_update_data_8php_1a1efbb279669bdab5d5eaff4f289c71a2">$ezSlope</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="da/d8e/_admin_e_z_update_data_8php_1a1a28f4870dd5aff7acdc3184a85a30c7">$ezCode</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="da/d8e/_admin_e_z_update_data_8php_1aee528badcb788c913ffab530a5b876cf">$ezType</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="da/d8e/_admin_e_z_update_data_8php_1aa698a3e72116e8e778be0e95d908ee30">$action</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="da/d8e/_admin_e_z_update_data_8php_1a58391ea75f2d29d5d708d7050b641c33">$status</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>if(isset($_POST[&apos;id&apos;])) if(isset($_POST[&apos;analyte&apos;])) if(isset($_POST[&apos;slope&apos;])) if(isset($_POST[&apos;code&apos;])) if(isset($_POST[&apos;nature&apos;])) if(isset($_POST[&apos;action&apos;])) if($ezType== &apos;Metabolite&apos;) elseif($ezType== &apos;Enzyme&apos;) elseif($ezType== &apos;Other&apos;) if($action==&quot;create&quot;) elseif($action==&quot;edit&quot;) elseif($action==&quot;delete&quot;) <link linkend="da/d8e/_admin_e_z_update_data_8php_1ab64b785fa9f787cb880a97455db04dea">else</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="da/d8e/_admin_e_z_update_data_8php_1acd0903a7a32e8397aefd0ce8b7dbd1ab">$response_array</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="da/d8e/_admin_e_z_update_data_8php_1ae768978a0cdc416c0d63d798c85c8784">$response_array</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /var/www/html/plato/php/admin/adminEnzyme/AdminEZUpdateData.php</para>
+    </simplesect>
+</section>

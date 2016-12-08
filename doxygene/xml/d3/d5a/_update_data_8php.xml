@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="d3/d5a/_update_data_8php" kind="file">
+    <compoundname>UpdateData.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$conn</definition>
+        <argsstring></argsstring>
+        <name>$conn</name>
+        <initializer>= <ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/freshweight/UpdateData.php" line="4" column="1" bodyfile="/var/www/html/plato/php/freshweight/UpdateData.php" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d5a/_update_data_8php_1a02ac215b001606467b9148c4cd0583f1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$sampleID</definition>
+        <argsstring></argsstring>
+        <name>$sampleID</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/freshweight/UpdateData.php" line="6" column="1" bodyfile="/var/www/html/plato/php/freshweight/UpdateData.php" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d5a/_update_data_8php_1af4527e3b791f29528cf4587debf433df" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$sampleNB</definition>
+        <argsstring></argsstring>
+        <name>$sampleNB</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/freshweight/UpdateData.php" line="7" column="1" bodyfile="/var/www/html/plato/php/freshweight/UpdateData.php" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d5a/_update_data_8php_1a54b5731b97b1351783471e68775046b5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$aliquotID</definition>
+        <argsstring></argsstring>
+        <name>$aliquotID</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/freshweight/UpdateData.php" line="8" column="1" bodyfile="/var/www/html/plato/php/freshweight/UpdateData.php" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d5a/_update_data_8php_1a1544720fdad7b397bd59e591e83a2d3c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$aliquotNB</definition>
+        <argsstring></argsstring>
+        <name>$aliquotNB</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/freshweight/UpdateData.php" line="9" column="1" bodyfile="/var/www/html/plato/php/freshweight/UpdateData.php" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d5a/_update_data_8php_1a0f298096f322952a72a50f98a74c7b60" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$value</definition>
+        <argsstring></argsstring>
+        <name>$value</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/freshweight/UpdateData.php" line="10" column="1" bodyfile="/var/www/html/plato/php/freshweight/UpdateData.php" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d5a/_update_data_8php_1ae82306c4f2d17d8dd5c7d8d916b33bed" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$state</definition>
+        <argsstring></argsstring>
+        <name>$state</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/freshweight/UpdateData.php" line="11" column="1" bodyfile="/var/www/html/plato/php/freshweight/UpdateData.php" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d5a/_update_data_8php_1ac319193077976bb217112e5a7b7b8022" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$location</definition>
+        <argsstring></argsstring>
+        <name>$location</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/freshweight/UpdateData.php" line="12" column="1" bodyfile="/var/www/html/plato/php/freshweight/UpdateData.php" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d5a/_update_data_8php_1aa698a3e72116e8e778be0e95d908ee30" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$action</definition>
+        <argsstring></argsstring>
+        <name>$action</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/freshweight/UpdateData.php" line="13" column="1" bodyfile="/var/www/html/plato/php/freshweight/UpdateData.php" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d5a/_update_data_8php_1ae384d32e62e85e587cd27bf249ed3db3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$expID</definition>
+        <argsstring></argsstring>
+        <name>$expID</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/freshweight/UpdateData.php" line="14" column="1" bodyfile="/var/www/html/plato/php/freshweight/UpdateData.php" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d5a/_update_data_8php_1a7bb49988a552894a7bd314eaff592cb1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$fwID</definition>
+        <argsstring></argsstring>
+        <name>$fwID</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/freshweight/UpdateData.php" line="15" column="1" bodyfile="/var/www/html/plato/php/freshweight/UpdateData.php" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d5a/_update_data_8php_1a300bbb59b771f6b6700da34d749d93e7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$locID</definition>
+        <argsstring></argsstring>
+        <name>$locID</name>
+        <initializer>=&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/freshweight/UpdateData.php" line="16" column="1" bodyfile="/var/www/html/plato/php/freshweight/UpdateData.php" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d5a/_update_data_8php_1a58391ea75f2d29d5d708d7050b641c33" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$status</definition>
+        <argsstring></argsstring>
+        <name>$status</name>
+        <initializer>=&quot;success&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/freshweight/UpdateData.php" line="18" column="1" bodyfile="/var/www/html/plato/php/freshweight/UpdateData.php" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d5a/_update_data_8php_1adaa42b6993796ea8225ce000539856d9" prot="public" static="no" mutable="no">
+        <type>if(isset($_POST[&apos;sampleID&apos;])) if(isset($_POST[&apos;sampleNB&apos;])) if(isset($_POST[&apos;aliquotID&apos;])) if(isset($_POST[&apos;aliquotNB&apos;])) if(isset($_POST[&apos;value&apos;])) if(isset($_POST[&apos;state&apos;])) if(isset($_POST[&apos;location&apos;])) if(isset($_POST[&apos;action&apos;])) if(isset($_POST[&apos;<ref refid="d8/d02/admin_rawdata_8php_1a888d53a6517f4272b5982c3ca9d16e8a" kindref="member">expID</ref>&apos;])) if(isset($_POST[&apos;fwID&apos;])) if(isset($_POST[&apos;locID&apos;])) if($action=== &apos;edit&apos;) elseif($action=== &apos;create&apos;) elseif($action=== &apos;delete&apos;)</type>
+        <definition>if (isset($_POST[&apos;sampleID&apos;])) if (isset($_POST[&apos;sampleNB&apos;])) if (isset($_POST[&apos;aliquotID&apos;])) if (isset($_POST[&apos;aliquotNB&apos;])) if (isset($_POST[&apos;value&apos;])) if (isset($_POST[&apos;state&apos;])) if (isset($_POST[&apos;location&apos;])) if (isset($_POST[&apos;action&apos;])) if (isset($_POST[&apos;expID&apos;])) if (isset($_POST[&apos;fwID&apos;])) if (isset($_POST[&apos;locID&apos;])) if ($action=== &apos;edit&apos;) elseif ($action=== &apos;create&apos;) elseif ($action=== &apos;delete&apos;) $response_array[&apos;status&apos;]</definition>
+        <argsstring>[&apos;status&apos;]</argsstring>
+        <name>$response_array</name>
+        <initializer>=$status</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>différentes requetes en fonction de l&apos;action a effectuer </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/freshweight/UpdateData.php" line="176" column="1" bodyfile="/var/www/html/plato/php/freshweight/UpdateData.php" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d5a/_update_data_8php_1ae768978a0cdc416c0d63d798c85c8784" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$response_array[&apos;action&apos;]</definition>
+        <argsstring>[&apos;action&apos;]</argsstring>
+        <name>$response_array</name>
+        <initializer>=$action</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/freshweight/UpdateData.php" line="177" column="1" bodyfile="/var/www/html/plato/php/freshweight/UpdateData.php" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">include<sp/></highlight><highlight class="stringliteral">&apos;../functions/php_functions.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal">header(</highlight><highlight class="stringliteral">&apos;Content-Type:<sp/>application/json&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="4" refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" refkind="member"><highlight class="normal"><ref refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref><sp/>=<sp/><ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>();</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="d3/d5a/_update_data_8php_1a02ac215b001606467b9148c4cd0583f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1a02ac215b001606467b9148c4cd0583f1" kindref="member">$sampleID</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//ID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="d3/d5a/_update_data_8php_1af4527e3b791f29528cf4587debf433df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1af4527e3b791f29528cf4587debf433df" kindref="member">$sampleNB</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//Valeur<sp/>potentiellement<sp/><sp/>a<sp/>changer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="d3/d5a/_update_data_8php_1a54b5731b97b1351783471e68775046b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1a54b5731b97b1351783471e68775046b5" kindref="member">$aliquotID</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//ID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="d3/d5a/_update_data_8php_1a1544720fdad7b397bd59e591e83a2d3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1a1544720fdad7b397bd59e591e83a2d3c" kindref="member">$aliquotNB</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="d3/d5a/_update_data_8php_1a0f298096f322952a72a50f98a74c7b60" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1a0f298096f322952a72a50f98a74c7b60" kindref="member">$value</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="11" refid="d3/d5a/_update_data_8php_1ae82306c4f2d17d8dd5c7d8d916b33bed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1ae82306c4f2d17d8dd5c7d8d916b33bed" kindref="member">$state</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12" refid="d3/d5a/_update_data_8php_1ac319193077976bb217112e5a7b7b8022" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1ac319193077976bb217112e5a7b7b8022" kindref="member">$location</ref><sp/>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13" refid="d3/d5a/_update_data_8php_1aa698a3e72116e8e778be0e95d908ee30" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14" refid="d3/d5a/_update_data_8php_1ae384d32e62e85e587cd27bf249ed3db3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1ae384d32e62e85e587cd27bf249ed3db3" kindref="member">$expID</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15" refid="d3/d5a/_update_data_8php_1a7bb49988a552894a7bd314eaff592cb1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1a7bb49988a552894a7bd314eaff592cb1" kindref="member">$fwID</ref>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16" refid="d3/d5a/_update_data_8php_1a300bbb59b771f6b6700da34d749d93e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1a300bbb59b771f6b6700da34d749d93e7" kindref="member">$locID</ref><sp/>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="d3/d5a/_update_data_8php_1a58391ea75f2d29d5d708d7050b641c33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;success&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;sampleID&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1a02ac215b001606467b9148c4cd0583f1" kindref="member">$sampleID</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;sampleID&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;sampleNB&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1af4527e3b791f29528cf4587debf433df" kindref="member">$sampleNB</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;sampleNB&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;aliquotID&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1a54b5731b97b1351783471e68775046b5" kindref="member">$aliquotID</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;aliquotID&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;aliquotNB&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1a1544720fdad7b397bd59e591e83a2d3c" kindref="member">$aliquotNB</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;aliquotNB&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;value&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1a0f298096f322952a72a50f98a74c7b60" kindref="member">$value</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;value&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;state&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1ae82306c4f2d17d8dd5c7d8d916b33bed" kindref="member">$state</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;state&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;location&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1ac319193077976bb217112e5a7b7b8022" kindref="member">$location</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;location&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;action&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;action&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;expID&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1ae384d32e62e85e587cd27bf249ed3db3" kindref="member">$expID</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;expID&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;fwID&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1a7bb49988a552894a7bd314eaff592cb1" kindref="member">$fwID</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;fwID&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isset($_POST[</highlight><highlight class="stringliteral">&apos;locID&apos;</highlight><highlight class="normal">]))<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1a300bbb59b771f6b6700da34d749d93e7" kindref="member">$locID</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;locID&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="d3/d5a/_update_data_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref><sp/>===<sp/></highlight><highlight class="stringliteral">&apos;edit&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1aeb64e1676f1d4fa0af8d77c2cf92985e" kindref="member">$querySample</ref><sp/>=</highlight><highlight class="stringliteral">&quot;UPDATE<sp/>`sample`<sp/>SET<sp/>`spl_number`=&apos;&quot;</highlight><highlight class="normal">.$sampleNB.</highlight><highlight class="stringliteral">&quot;&apos;<sp/>WHERE<sp/>`spl_id`=&apos;&quot;</highlight><highlight class="normal">.<ref refid="d3/d5a/_update_data_8php_1a02ac215b001606467b9148c4cd0583f1" kindref="member">$sampleID</ref>.</highlight><highlight class="stringliteral">&quot;&apos;;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>$queryAliquot<sp/>=</highlight><highlight class="stringliteral">&quot;UPDATE<sp/>`aliquot`<sp/>SET<sp/>`alq_number`=<sp/>&apos;&quot;</highlight><highlight class="normal">.$aliquotNB.</highlight><highlight class="stringliteral">&quot;&apos;,<sp/>`alq_value`=<sp/>&apos;&quot;</highlight><highlight class="normal">.<ref refid="d3/d5a/_update_data_8php_1a0f298096f322952a72a50f98a74c7b60" kindref="member">$value</ref>.</highlight><highlight class="stringliteral">&quot;&apos;,<sp/>`alq_state`=<sp/>&apos;&quot;</highlight><highlight class="normal">.<ref refid="d3/d5a/_update_data_8php_1ae82306c4f2d17d8dd5c7d8d916b33bed" kindref="member">$state</ref>.</highlight><highlight class="stringliteral">&quot;&apos;<sp/>WHERE<sp/>`alq_id`=<sp/>&apos;&quot;</highlight><highlight class="normal">.<ref refid="d3/d5a/_update_data_8php_1a54b5731b97b1351783471e68775046b5" kindref="member">$aliquotID</ref>.</highlight><highlight class="stringliteral">&quot;&apos;;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>$queryLocation<sp/>=</highlight><highlight class="stringliteral">&quot;UPDATE<sp/>`location`<sp/>SET<sp/>`loc_fridge`=<sp/>&apos;&quot;</highlight><highlight class="normal">.$location.</highlight><highlight class="stringliteral">&quot;&apos;<sp/>WHERE<sp/>`loc_id`=<sp/>&apos;&quot;</highlight><highlight class="normal">.<ref refid="d3/d5a/_update_data_8php_1a300bbb59b771f6b6700da34d749d93e7" kindref="member">$locID</ref>.</highlight><highlight class="stringliteral">&quot;&apos;;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>error_log($querySample);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>error_log($queryAliquot);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;beginTransaction();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;exec(<ref refid="df/d08/admin_batch_update_data_8php_1aeb64e1676f1d4fa0af8d77c2cf92985e" kindref="member">$querySample</ref>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;exec($queryAliquot);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;exec($queryLocation);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;commit();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(<sp/>Exception<sp/>$e<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;rollback();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;Une<sp/>erreur<sp/>est<sp/>survenue<sp/>lors<sp/>de<sp/>edition&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;Erreur<sp/>:<sp/>&quot;</highlight><highlight class="normal">.$e-&gt;getMessage().</highlight><highlight class="stringliteral">&quot;&lt;br/&gt;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;N°<sp/>:<sp/>&quot;</highlight><highlight class="normal">.$e-&gt;getCode());</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">elseif<sp/>(<ref refid="d3/d5a/_update_data_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref><sp/>===<sp/></highlight><highlight class="stringliteral">&apos;create&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>$queryLocation=</highlight><highlight class="stringliteral">&quot;INSERT<sp/>INTO<sp/>`location`(`loc_id`,<sp/>`loc_fridge`,<sp/>`loc_etage`,<sp/>`loc_box`,<sp/>`loc_comment`)<sp/>VALUES<sp/>(&apos;&apos;,<sp/>&apos;&quot;</highlight><highlight class="normal">.$location.</highlight><highlight class="stringliteral">&quot;&apos;,<sp/>&apos;&apos;,<sp/>&apos;&apos;,<sp/>&apos;&apos;);&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>error_log($querySample);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>error_log($queryAliquot);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;beginTransaction();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Insertion<sp/>sample<sp/>&amp;<sp/>Aliquot</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;exec($queryLocation);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$lastLocationID<sp/>=<sp/><ref refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;lastInsertId();</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1aeb64e1676f1d4fa0af8d77c2cf92985e" kindref="member">$querySample</ref><sp/>=</highlight><highlight class="stringliteral">&quot;INSERT<sp/>INTO<sp/>`sample`(`spl_id`,<sp/>`spl_number`,<sp/>`spl_location_FK`)<sp/>VALUES<sp/>(<sp/>&apos;&apos;,<sp/>&apos;&quot;</highlight><highlight class="normal">.$sampleNB.</highlight><highlight class="stringliteral">&quot;&apos;,<sp/>&apos;&quot;</highlight><highlight class="normal">.$lastLocationID.</highlight><highlight class="stringliteral">&quot;&apos;);&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$queryAliquot=</highlight><highlight class="stringliteral">&quot;INSERT<sp/>INTO<sp/>`aliquot`(`alq_id`,<sp/>`alq_number`,<sp/>`alq_value`,<sp/>`alq_state`,<sp/>`alq_location_FK`)<sp/>VALUES<sp/>(&apos;&apos;,<sp/>&apos;&quot;</highlight><highlight class="normal">.$aliquotNB.</highlight><highlight class="stringliteral">&quot;&apos;,<sp/>&apos;&quot;</highlight><highlight class="normal">.<ref refid="d3/d5a/_update_data_8php_1a0f298096f322952a72a50f98a74c7b60" kindref="member">$value</ref>.</highlight><highlight class="stringliteral">&quot;&apos;,<sp/>&apos;&quot;</highlight><highlight class="normal">.<ref refid="d3/d5a/_update_data_8php_1ae82306c4f2d17d8dd5c7d8d916b33bed" kindref="member">$state</ref>.</highlight><highlight class="stringliteral">&quot;&apos;,<sp/>&apos;&quot;</highlight><highlight class="normal">.$lastLocationID.</highlight><highlight class="stringliteral">&quot;&apos;);&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;exec(<ref refid="df/d08/admin_batch_update_data_8php_1aeb64e1676f1d4fa0af8d77c2cf92985e" kindref="member">$querySample</ref>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$lastSampleID=<ref refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;lastInsertId();</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;exec($queryAliquot);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$lastAliquotID=<ref refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;lastInsertId();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//association<sp/>sample<sp/>et<sp/>aliquot<sp/>dans<sp/>sample_aliquot...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$querySplAlq<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;INSERT<sp/>INTO<sp/>`sample_aliquot`(`spl_alq_id`,<sp/>`spl_alq_sample_FK`,<sp/>`spl_alq_aliquot_FK`)<sp/>VALUES<sp/>(&apos;&apos;,<sp/>&apos;&quot;</highlight><highlight class="normal">.$lastSampleID.</highlight><highlight class="stringliteral">&quot;&apos;,<sp/>&apos;&quot;</highlight><highlight class="normal">.$lastAliquotID.</highlight><highlight class="stringliteral">&quot;&apos;);&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//error_log($querySplAlq);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;exec($querySplAlq);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Creation<sp/>d&apos;un<sp/>freshweight</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//$queryFw<sp/>=<sp/>&quot;INSERT<sp/>INTO<sp/>`freshweight`(`fw_id`,<sp/>`fw_name`)<sp/>VALUES<sp/>(&apos;&apos;,&apos;SELECT<sp/>exp_name<sp/>FROM<sp/>experiment<sp/>WHERE<sp/>exp_id<sp/>=<sp/>&quot;.$expID.&quot;&apos;);&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$queryFw<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;INSERT<sp/>INTO<sp/>freshweight<sp/>(fw_id,<sp/>fw_name)<sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SELECT<sp/><sp/>&apos;&apos;,<sp/>exp_name<sp/>FROM<sp/>experiment<sp/>WHERE<sp/>exp_id<sp/>=<sp/>&quot;</highlight><highlight class="normal">.$expID.</highlight><highlight class="stringliteral">&quot;;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//error_log($queryFw);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;exec($queryFw);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$lastFwId=<ref refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;lastInsertId();</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//error_log(&quot;FW<sp/>:<sp/>&quot;.$lastFwId);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Association<sp/>du<sp/>freshweight<sp/>au<sp/>sample<sp/>dans<sp/>freshweight_sample</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$queryFwSpl<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;INSERT<sp/>INTO<sp/>`freshweight_sample`(`fw_spl_id`,<sp/>`fw_spl_freshweight_FK`,<sp/>`fw_spl_sample_FK`)<sp/>VALUES<sp/>(&apos;&apos;,<sp/>&apos;&quot;</highlight><highlight class="normal">.$lastFwId.</highlight><highlight class="stringliteral">&quot;&apos;,<sp/>&apos;&quot;</highlight><highlight class="normal">.$lastSampleID.</highlight><highlight class="stringliteral">&quot;&apos;);&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//error_log($queryFwSpl);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;exec($queryFwSpl);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Association<sp/>du<sp/>freshweight<sp/>a<sp/>l&apos;experiment</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$queryExpFw<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;INSERT<sp/>INTO<sp/>`experiment_freshweight`(`exp_fw_id`,<sp/>`exp_fw_experiment_FK`,<sp/>`exp_fw_freshweight_FK`)<sp/>VALUES<sp/>(&apos;&apos;,<sp/>&apos;&quot;</highlight><highlight class="normal">.$expID.</highlight><highlight class="stringliteral">&quot;&apos;,<sp/>&apos;&quot;</highlight><highlight class="normal">.$lastFwId.</highlight><highlight class="stringliteral">&quot;&apos;);&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//error_log($queryExpFw);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;exec($queryExpFw);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;commit();</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(<sp/>Exception<sp/>$e<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;rollback();</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;Une<sp/>erreur<sp/>est<sp/>survenue<sp/>lors<sp/>de<sp/>edition&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;Erreur<sp/>:<sp/>&quot;</highlight><highlight class="normal">.$e-&gt;getMessage().</highlight><highlight class="stringliteral">&quot;&lt;br/&gt;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;N°<sp/>:<sp/>&quot;</highlight><highlight class="normal">.$e-&gt;getCode());</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">elseif<sp/>(<ref refid="d3/d5a/_update_data_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref><sp/>===<sp/></highlight><highlight class="stringliteral">&apos;delete&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1aeb64e1676f1d4fa0af8d77c2cf92985e" kindref="member">$querySample</ref><sp/>=</highlight><highlight class="stringliteral">&quot;DELETE<sp/>FROM<sp/>`sample`<sp/>WHERE<sp/>`spl_id`<sp/>=<sp/>&quot;</highlight><highlight class="normal">.$sampleID.</highlight><highlight class="stringliteral">&quot;<sp/>;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>$queryAliquot=</highlight><highlight class="stringliteral">&quot;DELETE<sp/>FROM<sp/>`aliquot`<sp/>WHERE<sp/>`alq_id`<sp/>=<sp/>$aliquotID<sp/>;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>error_log($querySample);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>error_log($queryAliquot);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;beginTransaction();</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Suppresion<sp/>sample<sp/>&amp;<sp/>Aliquot</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;exec(<ref refid="df/d08/admin_batch_update_data_8php_1aeb64e1676f1d4fa0af8d77c2cf92985e" kindref="member">$querySample</ref>);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;exec($queryAliquot);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//suppression<sp/>de<sp/>l&apos;association<sp/>sample<sp/>et<sp/>aliquot<sp/>dans<sp/>sample_aliquot...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$querySplAlq<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;DELETE<sp/>FROM<sp/>`sample_aliquot`<sp/>WHERE<sp/>`spl_alq_sample_FK`<sp/>=<sp/>&quot;</highlight><highlight class="normal">.$sampleID.</highlight><highlight class="stringliteral">&quot;<sp/>AND<sp/>`spl_alq_aliquot_FK`<sp/>=<sp/>&quot;</highlight><highlight class="normal">.<ref refid="d3/d5a/_update_data_8php_1a54b5731b97b1351783471e68775046b5" kindref="member">$aliquotID</ref>.</highlight><highlight class="stringliteral">&quot;;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//error_log($querySplAlq);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;exec($querySplAlq);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//suppression<sp/>de<sp/>l&apos;association<sp/>du<sp/>freshweight<sp/>au<sp/>sample<sp/>dans<sp/>freshweight_sample</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$queryFwSpl<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;DELETE<sp/>FROM<sp/>`freshweight_sample`<sp/>WHERE<sp/>`fw_spl_freshweight_FK`<sp/>=<sp/>&quot;</highlight><highlight class="normal">.$fwID.</highlight><highlight class="stringliteral">&quot;<sp/>AND<sp/>`fw_spl_sample_FK`<sp/>=<sp/>&quot;</highlight><highlight class="normal">.<ref refid="d3/d5a/_update_data_8php_1a02ac215b001606467b9148c4cd0583f1" kindref="member">$sampleID</ref>.</highlight><highlight class="stringliteral">&quot;;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//error_log($queryFwSpl);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;exec($queryFwSpl);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Suppression<sp/>d&apos;un<sp/>freshweight</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$queryFw<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;DELETE<sp/>FROM<sp/>`freshweight`<sp/>WHERE<sp/><sp/>`fw_id`<sp/>=<sp/>&quot;</highlight><highlight class="normal">.$fwID.</highlight><highlight class="stringliteral">&quot;;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//error_log($queryFw);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;exec($queryFw);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Suppression<sp/>de<sp/>l&apos;association<sp/>du<sp/>freshweight<sp/>a<sp/>l&apos;experiment</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$queryExpFw<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;DELETE<sp/>FROM<sp/>`experiment_freshweight`<sp/>WHERE<sp/>`exp_fw_experiment_FK`<sp/>=<sp/>&quot;</highlight><highlight class="normal">.$expID.</highlight><highlight class="stringliteral">&quot;<sp/>AND<sp/>`exp_fw_freshweight_FK`<sp/>=<sp/>&quot;</highlight><highlight class="normal">.<ref refid="d3/d5a/_update_data_8php_1a7bb49988a552894a7bd314eaff592cb1" kindref="member">$fwID</ref>.</highlight><highlight class="stringliteral">&quot;;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//error_log($queryExpFw);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;exec($queryExpFw);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;commit();</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(<sp/>Exception<sp/>$e<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;rollback();</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;Une<sp/>erreur<sp/>est<sp/>survenue<sp/>lors<sp/>de<sp/>edition&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;Erreur<sp/>:<sp/>&quot;</highlight><highlight class="normal">.$e-&gt;getMessage().</highlight><highlight class="stringliteral">&quot;&lt;br/&gt;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;N°<sp/>:<sp/>&quot;</highlight><highlight class="normal">.$e-&gt;getCode());</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d3/d5a/_update_data_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>=</highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="d3/d5a/_update_data_8php_1adaa42b6993796ea8225ce000539856d9" refkind="member"><highlight class="normal"><ref refid="d3/d5a/_update_data_8php_1adaa42b6993796ea8225ce000539856d9" kindref="member">$response_array</ref>[</highlight><highlight class="stringliteral">&apos;status&apos;</highlight><highlight class="normal">]=<ref refid="d3/d5a/_update_data_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>;</highlight></codeline>
+<codeline lineno="177" refid="d3/d5a/_update_data_8php_1ae768978a0cdc416c0d63d798c85c8784" refkind="member"><highlight class="normal"><ref refid="d3/d5a/_update_data_8php_1adaa42b6993796ea8225ce000539856d9" kindref="member">$response_array</ref>[</highlight><highlight class="stringliteral">&apos;action&apos;</highlight><highlight class="normal">]=<ref refid="d3/d5a/_update_data_8php_1aa698a3e72116e8e778be0e95d908ee30" kindref="member">$action</ref>;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal">echo<sp/>json_encode(<ref refid="d3/d5a/_update_data_8php_1adaa42b6993796ea8225ce000539856d9" kindref="member">$response_array</ref>);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="/var/www/html/plato/php/freshweight/UpdateData.php"/>
+  </compounddef>
+</doxygen>

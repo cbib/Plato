@@ -1,0 +1,113 @@
+.TH "php/admin/adminExperiment/adminExp.php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/admin/adminExperiment/adminExp.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBgetSelectStd\fP ()"
+.br
+.ti -1c
+.RI "\fBsetup_experiment_datatable\fP ()"
+.br
+.ti -1c
+.RI "\fBconstruct_delete_modal\fP (\fBdata\fP, action)"
+.br
+.ti -1c
+.RI "\fBconstruct_edit_modal\fP (\fBdata\fP, action, \fBselect\fP)"
+.br
+.ti -1c
+.RI "\fBconstruct_create_modal\fP (\fBdata\fP, action, \fBselect\fP)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBselect\fP = \fBgetSelectStd\fP()"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "construct_create_modal (\fBdata\fP, action, \fBselect\fP)"
+Creation of a modal window for experiment creation
+.PP
+construct_create_modal 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{<type>}\fP data { useless } 
+.br
+\fI{string}\fP action { action to do associated with the submit button could be create, edit, delete } 
+.br
+\fI{string}\fP select { string to concatenate } 
+.RE
+.PP
+
+.PP
+Definition at line 273 of file adminExp\&.php\&.
+.SS "construct_delete_modal (\fBdata\fP, action)"
+Construction of a modal window for experiment deletion
+.PP
+construct_delete_modal 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{string}\fP data { data of the experiment to delete, id, name } 
+.br
+\fI{string}\fP action { action to do associated with the submit button could be create, edit, delete } 
+.RE
+.PP
+
+.PP
+Definition at line 194 of file adminExp\&.php\&.
+.SS "construct_edit_modal (\fBdata\fP, action, \fBselect\fP)"
+Construction of a modal windos for experiment edition
+.PP
+construct_edit_modal 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{string}\fP data { data of the experiment to edit, id, name, associated standard } 
+.br
+\fI{string}\fP action { action to do associated with the submit button could be create, edit, delete } 
+.br
+\fI{string}\fP select { String of the html select to concatenate } 
+.RE
+.PP
+
+.PP
+Definition at line 223 of file adminExp\&.php\&.
+.SS "getSelectStd ()"
+get informations about the selected standard to fill an html select
+.PP
+getSelectStd 
+.PP
+\fBReturns:\fP
+.RS 4
+{string} { return a string html for the select balise } 
+.RE
+.PP
+
+.PP
+Definition at line 128 of file adminExp\&.php\&.
+.SS "setup_experiment_datatable ()"
+Set the datatable of experiment up
+.PP
+setup_experiment_datatable 
+.PP
+Definition at line 150 of file adminExp\&.php\&.
+.SH "Variable Documentation"
+.PP 
+.SS "select = \fBgetSelectStd\fP()"
+
+.PP
+Definition at line 56 of file adminExp\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

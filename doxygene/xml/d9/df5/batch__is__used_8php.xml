@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="d9/df5/batch__is__used_8php" kind="file">
+    <compoundname>batch_is_used.php</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="d9/df5/batch__is__used_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$conn</definition>
+        <argsstring></argsstring>
+        <name>$conn</name>
+        <initializer>= <ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/batches/batch_is_used.php" line="4" column="1" bodyfile="/var/www/html/plato/php/batches/batch_is_used.php" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/df5/batch__is__used_8php_1a6efc15b5a2314dd4b5aaa556a375c6d6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$data</definition>
+        <argsstring></argsstring>
+        <name>$data</name>
+        <initializer>= $_POST[&apos;<ref refid="db/d8a/chart1_8php_1ab3ed669f4b3fdb8c88f3a190fb907de0" kindref="member">data</ref>&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/batches/batch_is_used.php" line="6" column="1" bodyfile="/var/www/html/plato/php/batches/batch_is_used.php" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/df5/batch__is__used_8php_1a6c0fd6f414374ab1b1e16b2a4b625004" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$response_array</definition>
+        <argsstring></argsstring>
+        <name>$response_array</name>
+        <initializer>= array()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/batches/batch_is_used.php" line="9" column="1" bodyfile="/var/www/html/plato/php/batches/batch_is_used.php" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/df5/batch__is__used_8php_1ada5564dc28774e85d6fea1465312dba4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$response_array[&apos;result&apos;]</definition>
+        <argsstring>[&apos;result&apos;]</argsstring>
+        <name>$response_array</name>
+        <initializer>= array()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/batches/batch_is_used.php" line="10" column="1" bodyfile="/var/www/html/plato/php/batches/batch_is_used.php" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/df5/batch__is__used_8php_1a58391ea75f2d29d5d708d7050b641c33" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$status</definition>
+        <argsstring></argsstring>
+        <name>$status</name>
+        <initializer>= &quot;error&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/batches/batch_is_used.php" line="11" column="1" bodyfile="/var/www/html/plato/php/batches/batch_is_used.php" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/df5/batch__is__used_8php_1a370f3b80b4eb90ab0a25d451497f627e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>foreach ($data as $key=&gt; $row) $response_array[&apos;status&apos;]</definition>
+        <argsstring>[&apos;status&apos;]</argsstring>
+        <name>$response_array</name>
+        <initializer>= $status</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/batches/batch_is_used.php" line="12" column="1" bodyfile="/var/www/html/plato/php/batches/batch_is_used.php" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/df5/batch__is__used_8php_1a8d5bac2f2b410351f073c23d51d262cf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$expNames</definition>
+        <argsstring></argsstring>
+        <name>$expNames</name>
+        <initializer>=[]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/batches/batch_is_used.php" line="14" column="1" bodyfile="/var/www/html/plato/php/batches/batch_is_used.php" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/df5/batch__is__used_8php_1a7ce9324a2e06fc9170b9dafc76465fb7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>$fullResult</definition>
+        <argsstring></argsstring>
+        <name>$fullResult</name>
+        <initializer>=[]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/batches/batch_is_used.php" line="15" column="1" bodyfile="/var/www/html/plato/php/batches/batch_is_used.php" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/df5/batch__is__used_8php_1af5d11c3388f67ea3b6be7fe839293799" prot="public" static="no" mutable="no">
+        <type>foreach($<ref refid="db/d8a/chart1_8php_1ab3ed669f4b3fdb8c88f3a190fb907de0" kindref="member">data</ref> as $key=&gt; $row)</type>
+        <definition>foreach ($data as $key=&gt; $row) $stmt</definition>
+        <argsstring></argsstring>
+        <name>$stmt</name>
+        <initializer>= $conn-&gt;prepare(&quot;
+    SELECT
+      fw_name, spl_alq_state, spl_number, alq_number
+    FROM 
+      freshweight, freshweight_sample, sample_aliquot, sample, aliquot
+    WHERE 
+        fw_name like :infos0 AND
+        fw_spl_freshweight_FK = fw_id AND
+        spl_id = fw_spl_sample_FK AND
+        spl_alq_sample_FK = spl_id AND
+        alq_id = spl_alq_aliquot_FK;&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/batches/batch_is_used.php" line="33" column="1" bodyfile="/var/www/html/plato/php/batches/batch_is_used.php" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/df5/batch__is__used_8php_1af9b19996aa7a415218a214650987ebc9" prot="public" static="no" mutable="no">
+        <type>foreach($expNames as $key=&gt; $value)</type>
+        <definition>foreach ($expNames as $key=&gt; $value) $newResult</definition>
+        <argsstring></argsstring>
+        <name>$newResult</name>
+        <initializer>= []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/batches/batch_is_used.php" line="60" column="1" bodyfile="/var/www/html/plato/php/batches/batch_is_used.php" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d9/df5/batch__is__used_8php_1ac2cff670cd6bb522803dae2768c136c7" prot="public" static="no" mutable="no">
+        <type>foreach($fullResult as $key=&gt; $values)</type>
+        <definition>foreach ($fullResult as $key=&gt; $values) $i</definition>
+        <argsstring></argsstring>
+        <name>$i</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/batches/batch_is_used.php" line="68" column="1" bodyfile="/var/www/html/plato/php/batches/batch_is_used.php" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">require(</highlight><highlight class="stringliteral">&apos;../functions/check_login.php&apos;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="3"><highlight class="normal">include<sp/></highlight><highlight class="stringliteral">&apos;../functions/php_functions.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="4" refid="d9/df5/batch__is__used_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" refkind="member"><highlight class="normal"><ref refid="d9/df5/batch__is__used_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref><sp/>=<sp/><ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>();</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="d9/df5/batch__is__used_8php_1a6efc15b5a2314dd4b5aaa556a375c6d6" refkind="member"><highlight class="normal"><ref refid="d9/df5/batch__is__used_8php_1a6efc15b5a2314dd4b5aaa556a375c6d6" kindref="member">$data</ref><sp/>=<sp/>$_POST[</highlight><highlight class="stringliteral">&apos;data&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="d9/df5/batch__is__used_8php_1a6c0fd6f414374ab1b1e16b2a4b625004" refkind="member"><highlight class="normal"><ref refid="d9/df5/batch__is__used_8php_1a6c0fd6f414374ab1b1e16b2a4b625004" kindref="member">$response_array</ref><sp/>=<sp/>array();</highlight></codeline>
+<codeline lineno="10" refid="d9/df5/batch__is__used_8php_1ada5564dc28774e85d6fea1465312dba4" refkind="member"><highlight class="normal"><ref refid="d9/df5/batch__is__used_8php_1a6c0fd6f414374ab1b1e16b2a4b625004" kindref="member">$response_array</ref>[</highlight><highlight class="stringliteral">&apos;result&apos;</highlight><highlight class="normal">]<sp/>=<sp/>array();</highlight></codeline>
+<codeline lineno="11" refid="d9/df5/batch__is__used_8php_1a58391ea75f2d29d5d708d7050b641c33" refkind="member"><highlight class="normal"><ref refid="d9/df5/batch__is__used_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12" refid="d9/df5/batch__is__used_8php_1a370f3b80b4eb90ab0a25d451497f627e" refkind="member"><highlight class="normal"><ref refid="d9/df5/batch__is__used_8php_1a6c0fd6f414374ab1b1e16b2a4b625004" kindref="member">$response_array</ref>[</highlight><highlight class="stringliteral">&apos;status&apos;</highlight><highlight class="normal">]<sp/>=<sp/><ref refid="d9/df5/batch__is__used_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="d9/df5/batch__is__used_8php_1a8d5bac2f2b410351f073c23d51d262cf" refkind="member"><highlight class="normal"><ref refid="d9/df5/batch__is__used_8php_1a8d5bac2f2b410351f073c23d51d262cf" kindref="member">$expNames</ref><sp/>=[];</highlight></codeline>
+<codeline lineno="15" refid="d9/df5/batch__is__used_8php_1a7ce9324a2e06fc9170b9dafc76465fb7" refkind="member"><highlight class="normal"><ref refid="d9/df5/batch__is__used_8php_1a7ce9324a2e06fc9170b9dafc76465fb7" kindref="member">$fullResult</ref>=[];</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal"><sp/>(<ref refid="d9/df5/batch__is__used_8php_1a6efc15b5a2314dd4b5aaa556a375c6d6" kindref="member">$data</ref><sp/>as<sp/>$key<sp/>=&gt;<sp/><ref refid="df/d16/insert__batch_8php_1aa1d731aa570613e5bcff831bb10e9b87" kindref="member">$row</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>$cases<sp/>=<sp/>preg_split(</highlight><highlight class="stringliteral">&quot;/[\t]/&quot;</highlight><highlight class="normal">,<sp/><ref refid="df/d16/insert__batch_8php_1aa1d731aa570613e5bcff831bb10e9b87" kindref="member">$row</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal"><sp/>($cases<sp/>as<sp/>$case)<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$infos<sp/>=<sp/>explode(</highlight><highlight class="stringliteral">&quot;-&quot;</highlight><highlight class="normal">,<sp/>$case);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>($infos[0]<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;EB&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>elseif<sp/>($infos[0]<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;?&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/df5/batch__is__used_8php_1a8d5bac2f2b410351f073c23d51d262cf" kindref="member">$expNames</ref>[$infos[0]]=</highlight><highlight class="stringliteral">&apos;present&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="d9/df5/batch__is__used_8php_1af5d11c3388f67ea3b6be7fe839293799" refkind="member"><highlight class="normal"><ref refid="d9/df5/batch__is__used_8php_1af5d11c3388f67ea3b6be7fe839293799" kindref="member">$stmt</ref><sp/>=<sp/><ref refid="d9/df5/batch__is__used_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;prepare(</highlight><highlight class="stringliteral">&quot;</highlight></codeline>
+<codeline lineno="34"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>SELECT</highlight></codeline>
+<codeline lineno="35"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>fw_name,<sp/>spl_alq_state,<sp/>spl_number,<sp/>alq_number</highlight></codeline>
+<codeline lineno="36"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>FROM<sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>freshweight,<sp/>freshweight_sample,<sp/>sample_aliquot,<sp/>sample,<sp/>aliquot</highlight></codeline>
+<codeline lineno="38"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>WHERE<sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fw_name<sp/>like<sp/>:infos0<sp/>AND</highlight></codeline>
+<codeline lineno="40"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fw_spl_freshweight_FK<sp/>=<sp/>fw_id<sp/>AND</highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spl_id<sp/>=<sp/>fw_spl_sample_FK<sp/>AND</highlight></codeline>
+<codeline lineno="42"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spl_alq_sample_FK<sp/>=<sp/>spl_id<sp/>AND</highlight></codeline>
+<codeline lineno="43"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>alq_id<sp/>=<sp/>spl_alq_aliquot_FK;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal"><sp/>(<ref refid="d9/df5/batch__is__used_8php_1a8d5bac2f2b410351f073c23d51d262cf" kindref="member">$expNames</ref><sp/>as<sp/>$key<sp/>=&gt;<sp/><ref refid="d8/dd3/control_batch_name_and_number_8php_1a0f298096f322952a72a50f98a74c7b60" kindref="member">$value</ref>){</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>error_log($key);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/df5/batch__is__used_8php_1af5d11c3388f67ea3b6be7fe839293799" kindref="member">$stmt</ref>-&gt;bindParam(</highlight><highlight class="stringliteral">&apos;:infos0&apos;</highlight><highlight class="normal">,<sp/>$key,<sp/>PDO::PARAM_STR);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/df5/batch__is__used_8php_1af5d11c3388f67ea3b6be7fe839293799" kindref="member">$stmt</ref>-&gt;execute();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1a112ef069ddc0454086e3d1e6d8d55d07" kindref="member">$result</ref><sp/>=<sp/><ref refid="d9/df5/batch__is__used_8php_1af5d11c3388f67ea3b6be7fe839293799" kindref="member">$stmt</ref>-&gt;fetchAll(PDO::FETCH_ASSOC);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/df5/batch__is__used_8php_1a7ce9324a2e06fc9170b9dafc76465fb7" kindref="member">$fullResult</ref>[$key]<sp/>=<sp/><ref refid="df/d08/admin_batch_update_data_8php_1a112ef069ddc0454086e3d1e6d8d55d07" kindref="member">$result</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/df5/batch__is__used_8php_1af5d11c3388f67ea3b6be7fe839293799" kindref="member">$stmt</ref>-&gt;closeCursor();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(<sp/>Exception<sp/>$e<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(</highlight><highlight class="stringliteral">&quot;failure<sp/>est<sp/>survenue<sp/>&quot;</highlight><highlight class="normal">.$e-&gt;getMessage());</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/df5/batch__is__used_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;error&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="d9/df5/batch__is__used_8php_1af9b19996aa7a415218a214650987ebc9" refkind="member"><highlight class="normal"><ref refid="d9/df5/batch__is__used_8php_1af9b19996aa7a415218a214650987ebc9" kindref="member">$newResult</ref><sp/>=<sp/>[];</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">(<ref refid="d9/df5/batch__is__used_8php_1a7ce9324a2e06fc9170b9dafc76465fb7" kindref="member">$fullResult</ref><sp/>as<sp/>$key<sp/>=&gt;<sp/>$values){</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">($values<sp/>as<sp/>$idx<sp/>=&gt;<sp/><ref refid="d8/dd3/control_batch_name_and_number_8php_1a0f298096f322952a72a50f98a74c7b60" kindref="member">$value</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/df5/batch__is__used_8php_1af9b19996aa7a415218a214650987ebc9" kindref="member">$newResult</ref>[<ref refid="d8/dd3/control_batch_name_and_number_8php_1a0f298096f322952a72a50f98a74c7b60" kindref="member">$value</ref>[</highlight><highlight class="stringliteral">&apos;fw_name&apos;</highlight><highlight class="normal">]][<ref refid="d8/dd3/control_batch_name_and_number_8php_1a0f298096f322952a72a50f98a74c7b60" kindref="member">$value</ref>[</highlight><highlight class="stringliteral">&apos;spl_number&apos;</highlight><highlight class="normal">]][<ref refid="d8/dd3/control_batch_name_and_number_8php_1a0f298096f322952a72a50f98a74c7b60" kindref="member">$value</ref>[</highlight><highlight class="stringliteral">&apos;alq_number&apos;</highlight><highlight class="normal">]]<sp/>=<sp/>$value[</highlight><highlight class="stringliteral">&apos;spl_alq_state&apos;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="d9/df5/batch__is__used_8php_1ac2cff670cd6bb522803dae2768c136c7" refkind="member"><highlight class="normal"><ref refid="d9/df5/batch__is__used_8php_1ac2cff670cd6bb522803dae2768c136c7" kindref="member">$i</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal"><sp/>(<ref refid="d9/df5/batch__is__used_8php_1a6efc15b5a2314dd4b5aaa556a375c6d6" kindref="member">$data</ref><sp/>as<sp/>$key<sp/>=&gt;<sp/><ref refid="df/d16/insert__batch_8php_1aa1d731aa570613e5bcff831bb10e9b87" kindref="member">$row</ref>){</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>$j<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>$cases<sp/>=<sp/>preg_split(</highlight><highlight class="stringliteral">&quot;/[\t]/&quot;</highlight><highlight class="normal">,<sp/><ref refid="df/d16/insert__batch_8php_1aa1d731aa570613e5bcff831bb10e9b87" kindref="member">$row</ref>);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal"><sp/>($cases<sp/>as<sp/>$case)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$infos<sp/>=<sp/>explode(</highlight><highlight class="stringliteral">&quot;-&quot;</highlight><highlight class="normal">,<sp/>$case);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>($infos[0]<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;EB&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/df5/batch__is__used_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;success&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/df5/batch__is__used_8php_1a6c0fd6f414374ab1b1e16b2a4b625004" kindref="member">$response_array</ref>[</highlight><highlight class="stringliteral">&apos;result&apos;</highlight><highlight class="normal">][<ref refid="d9/df5/batch__is__used_8php_1ac2cff670cd6bb522803dae2768c136c7" kindref="member">$i</ref>][$j]<sp/>=</highlight><highlight class="stringliteral">&quot;free&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>elseif<sp/>($infos[0]<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;?&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/df5/batch__is__used_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;success&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/df5/batch__is__used_8php_1a6c0fd6f414374ab1b1e16b2a4b625004" kindref="member">$response_array</ref>[</highlight><highlight class="stringliteral">&apos;result&apos;</highlight><highlight class="normal">][<ref refid="d9/df5/batch__is__used_8php_1ac2cff670cd6bb522803dae2768c136c7" kindref="member">$i</ref>][$j]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;free&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d9/df5/batch__is__used_8php_1a6c0fd6f414374ab1b1e16b2a4b625004" kindref="member">$response_array</ref>[</highlight><highlight class="stringliteral">&apos;result&apos;</highlight><highlight class="normal">][<ref refid="d9/df5/batch__is__used_8php_1ac2cff670cd6bb522803dae2768c136c7" kindref="member">$i</ref>][$j]<sp/>=<sp/><ref refid="d9/df5/batch__is__used_8php_1af9b19996aa7a415218a214650987ebc9" kindref="member">$newResult</ref>[$infos[0]][$infos[1]][$infos[2]];</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error_log(<ref refid="d9/df5/batch__is__used_8php_1af9b19996aa7a415218a214650987ebc9" kindref="member">$newResult</ref>[$infos[0]][$infos[1]][$infos[2]]);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$j++;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/df5/batch__is__used_8php_1ac2cff670cd6bb522803dae2768c136c7" kindref="member">$i</ref>++;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><ref refid="d9/df5/batch__is__used_8php_1a6c0fd6f414374ab1b1e16b2a4b625004" kindref="member">$response_array</ref>[</highlight><highlight class="stringliteral">&apos;status&apos;</highlight><highlight class="normal">]=<ref refid="d9/df5/batch__is__used_8php_1a58391ea75f2d29d5d708d7050b641c33" kindref="member">$status</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">echo<sp/>json_encode(<ref refid="d9/df5/batch__is__used_8php_1a6c0fd6f414374ab1b1e16b2a4b625004" kindref="member">$response_array</ref>);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">?&gt;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/var/www/html/plato/php/batches/batch_is_used.php"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_b683e40c29d9cdd670968dbe09c53361" kind="dir">
+    <compoundname>php/admin/adminRawdata</compoundname>
+    <innerfile refid="d8/d02/admin_rawdata_8php">adminRawdata.php</innerfile>
+    <innerfile refid="dd/d2a/admin_rawdata_2admin_rawdata__database__functions_8php">adminRawdata_database_functions.php</innerfile>
+    <innerfile refid="df/d3c/admin_rawdata_2admin_rawdata__get__batches_8php">adminRawdata_get_batches.php</innerfile>
+    <innerfile refid="d0/de5/admin_rawdata_2admin_raw_data__get__enzymes_8php">adminRawData_get_enzymes.php</innerfile>
+    <innerfile refid="d7/d0a/admin_rawdata_update_data_8php">adminRawdataUpdateData.php</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/var/www/html/plato/php/admin/adminRawdata/"/>
+  </compounddef>
+</doxygen>

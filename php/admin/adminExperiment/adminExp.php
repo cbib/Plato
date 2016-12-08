@@ -46,6 +46,9 @@ html_footer("../../../");
 
 <script type="text/javascript" class="init">
 
+/**
+ * Action when document  is ready
+ */
 $(document).ready(function() {
 	$('#adminPanel').removeClass('submenu');
 	$('#adminPanel').addClass('submenu open');
@@ -53,7 +56,9 @@ $(document).ready(function() {
 	var select = getSelectStd();
 	//console.log(select);
 
-
+	/**
+	 * Listener on experiment table
+	 */
 	$('#expTable tbody').on('click', 'button', function(event) {
 		var table = $('#expTable').DataTable();
 		if(this.id == "editButton"){
@@ -66,6 +71,9 @@ $(document).ready(function() {
 		}
     });
 
+	/**
+	 * Listener on createStandard button, for standard creation
+	 */
     $('#createStandard').on('click', function() {
     	var data="";
  		construct_create_modal(data, "create", select);
@@ -73,7 +81,9 @@ $(document).ready(function() {
 });
 
 
-
+ 	/**
+ 	 * Listener on editSubmit button 
+ 	 */
 	$(document).on("click", "#editSubmit", function(){
 		var boolOK=true;
 		var expID = $("#expID").val();
@@ -109,7 +119,12 @@ $(document).ready(function() {
 		});
 	 });
 
-
+/**
+ * get informations about the selected standard to fill an html select
+ *
+ * @method     getSelectStd
+ * @return     {string}  { return a string html for the select balise }
+ */
 function getSelectStd(){
 
 	var select="";
@@ -127,6 +142,11 @@ function getSelectStd(){
 	return select;
 }
 
+/**
+ * Set the datatable of experiment up
+ *
+ * @method     setup_experiment_datatable
+ */
 function setup_experiment_datatable(){
 	$('#expTable').dataTable().fnDestroy();
 	var table = $('#expTable').DataTable({
@@ -164,6 +184,13 @@ function setup_experiment_datatable(){
 	});
 }
 
+/**
+ * Construction of a modal window for experiment deletion
+ *
+ * @method     construct_delete_modal
+ * @param      {string}  data    { data of the experiment to delete, id, name }
+ * @param      {string}  action  { action to do associated with the submit button could be create, edit, delete }
+ */
 function construct_delete_modal(data, action){
 	var modal ='<div class="modal-dialog">'+
 	'<div class="loginmodal-container">'+
@@ -185,6 +212,14 @@ function construct_delete_modal(data, action){
 	$("#editRowModal").modal("show");
 }
 
+/**
+ * Construction of a modal windos for experiment edition
+ *
+ * @method     construct_edit_modal
+ * @param      {string}  data    { data of the experiment to edit, id, name, associated standard }
+ * @param      {string}  action  { action to do associated with the submit button could be create, edit, delete }
+ * @param      {string}  select  { String of the html select to concatenate }
+ */
 function construct_edit_modal(data, action, select){
 	var modal ='<div class="modal-dialog">'+
 		'<div class="modal-content">'+
@@ -227,6 +262,14 @@ function construct_edit_modal(data, action, select){
 	$("#editRowModal").modal("show");
 }
 
+/**
+ * Creation of a modal window for experiment creation
+ *
+ * @method     construct_create_modal
+ * @param      {<type>}  data    { useless }
+ * @param      {string}  action  { action to do associated with the submit button could be create, edit, delete }
+ * @param      {string}  select  { string to concatenate }
+ */
 function construct_create_modal(data, action, select){	
 	var modal ='<div class="modal-dialog">'+
 	'<div class="modal-content">'+

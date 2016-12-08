@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_c2fafb693eb928627df9f41349d3fcdd" kind="dir">
+    <compoundname>php/functions</compoundname>
+    <innerfile refid="d7/dae/check__login_8php">check_login.php</innerfile>
+    <innerfile refid="dc/dfd/check__login__admin_8php">check_login_admin.php</innerfile>
+    <innerfile refid="dc/dc2/html__functions_8php">html_functions.php</innerfile>
+    <innerfile refid="d3/d1a/login_8php">login.php</innerfile>
+    <innerfile refid="d8/d9c/logout_8php">logout.php</innerfile>
+    <innerfile refid="dc/db1/php__functions_8php">php_functions.php</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/var/www/html/plato/php/functions/"/>
+  </compounddef>
+</doxygen>

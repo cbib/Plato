@@ -1,0 +1,152 @@
+.TH "php/admin/adminBatch/adminBatchUpdateData.php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/admin/adminBatch/adminBatchUpdateData.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$conn\fP = \fBget_connexion\fP()"
+.br
+.ti -1c
+.RI "\fB$batchID\fP = -1"
+.br
+.ti -1c
+.RI "\fB$status\fP = 'success'"
+.br
+.ti -1c
+.RI "if(isset($_POST['\fBbatchID\fP'])) \fB$query\fP"
+.br
+.ti -1c
+.RI "\fB$sth\fP = $conn->prepare($query)"
+.br
+.ti -1c
+.RI "\fB$result\fP = $sth->fetchAll()"
+.br
+.ti -1c
+.RI "\fB$querySample\fP"
+.br
+.ti -1c
+.RI "\fB$sth2\fP = $conn->prepare($querySample)"
+.br
+.ti -1c
+.RI "\fB$resultSample\fP = $sth2->fetchAll()"
+.br
+.ti -1c
+.RI "\fB$deleteBatch\fP = 'DELETE FROM batch where bat_id = '\&.$batchID\&.';'"
+.br
+.ti -1c
+.RI "\fB$deleteQuery\fP = 'DELETE FROM batch_data WHERE bat_data_id IN ('"
+.br
+.ti -1c
+.RI "\fB$deleteRawDataQuery\fP = 'DELETE FROM rawdata WHERE rawdata_batch_data_FK IN ('"
+.br
+.ti -1c
+.RI "foreach($result as $row) \fB$updateStateAliquotQuery\fP = 'UPDATE sample_aliquot SET spl_alq_state = 'free' WHERE spl_alq_id IN ('"
+.br
+.ti -1c
+.RI "\fBtry\fP"
+.br
+.ti -1c
+.RI "catch(Exception $e) \fB$response_array\fP ['status'] =$status"
+.br
+.ti -1c
+.RI "\fB$response_array\fP ['action'] ='delete'"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$\fBbatchID\fP = -1"
+
+.PP
+Definition at line 7 of file adminBatchUpdateData\&.php\&.
+.SS "$conn = \fBget_connexion\fP()"
+
+.PP
+Definition at line 5 of file adminBatchUpdateData\&.php\&.
+.SS "$deleteBatch = 'DELETE FROM batch where bat_id = '\&.$batchID\&.';'"
+
+.PP
+Definition at line 37 of file adminBatchUpdateData\&.php\&.
+.SS "$deleteQuery = 'DELETE FROM batch_data WHERE bat_data_id IN ('"
+
+.PP
+Definition at line 38 of file adminBatchUpdateData\&.php\&.
+.SS "$deleteRawDataQuery = 'DELETE FROM rawdata WHERE rawdata_batch_data_FK IN ('"
+
+.PP
+Definition at line 39 of file adminBatchUpdateData\&.php\&.
+.SS "if (isset($_POST['\fBbatchID\fP'])) $query"
+\fBInitial value:\fP
+.PP
+.nf
+="SELECT 
+        bat_data_id 
+    FROM
+        batch_data 
+    WHERE
+        bat_data_batch_FK = "\&.$batchID\&.";"
+.fi
+.PP
+Definition at line 15 of file adminBatchUpdateData\&.php\&.
+.SS "$querySample"
+\fBInitial value:\fP
+.PP
+.nf
+="SELECT 
+        bat_data_sample_aliquot_FK 
+    FROM
+        batch_data 
+    WHERE
+        bat_data_batch_FK = "\&.$batchID\&.";"
+.fi
+.PP
+Definition at line 26 of file adminBatchUpdateData\&.php\&.
+.SS "catch (Exception $e) $response_array['status'] =$status"
+
+.PP
+Definition at line 78 of file adminBatchUpdateData\&.php\&.
+.SS "$response_array['action'] ='delete'"
+
+.PP
+Definition at line 79 of file adminBatchUpdateData\&.php\&.
+.SS "$result = $sth->fetchAll()"
+
+.PP
+Definition at line 24 of file adminBatchUpdateData\&.php\&.
+.SS "$resultSample = $sth2->fetchAll()"
+
+.PP
+Definition at line 35 of file adminBatchUpdateData\&.php\&.
+.SS "$status = 'success'"
+
+.PP
+Definition at line 8 of file adminBatchUpdateData\&.php\&.
+.SS "$sth = $conn->prepare($query)"
+
+.PP
+Definition at line 22 of file adminBatchUpdateData\&.php\&.
+.SS "$sth2 = $conn->prepare($querySample)"
+
+.PP
+Definition at line 33 of file adminBatchUpdateData\&.php\&.
+.SS "$updateStateAliquotQuery = 'UPDATE sample_aliquot SET spl_alq_state = 'free' WHERE spl_alq_id IN ('"
+
+.PP
+Definition at line 45 of file adminBatchUpdateData\&.php\&.
+.SS "try"
+\fBInitial value:\fP
+.PP
+.nf
+{
+        $conn->beginTransaction()
+.fi
+.PP
+Definition at line 63 of file adminBatchUpdateData\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

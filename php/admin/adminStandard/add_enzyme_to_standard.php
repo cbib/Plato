@@ -3,6 +3,8 @@
 	include '../../functions/php_functions.php';
 	$conn = get_connexion();
 
+	// Add analyte to a standard
+
 	$selectAnalyte="";
 	$selectUnit="";
 	$analyteValue="";

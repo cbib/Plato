@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_9151a316cc7a5bd3d21baaefc136469a" kind="dir">
+    <compoundname>php/processing/obsolete</compoundname>
+    <innerfile refid="d4/d24/batches__get__raw_data_07obsolete_08_8php">batches_get_rawData(obsolete).php</innerfile>
+    <innerfile refid="db/d41/obsolete_2processing__bak_8php">processing_bak.php</innerfile>
+    <innerfile refid="de/da1/processing__database__functions_07obsolete_08_8php">processing_database_functions(obsolete).php</innerfile>
+    <innerfile refid="d8/dce/processing__get__processed__data_07obsolete_08_8php">processing_get_processed_data(obsolete).php</innerfile>
+    <innerfile refid="d7/dd8/processing_2obsolete_2save__edit_07obsolete_08_8php">save_edit(obsolete).php</innerfile>
+    <innerfile refid="d9/d12/save__edit__remake_07obsolete_08_8php">save_edit_remake(obsolete).php</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/var/www/html/plato/php/processing/obsolete/"/>
+  </compounddef>
+</doxygen>

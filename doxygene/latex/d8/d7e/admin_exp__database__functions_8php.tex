@@ -1,0 +1,80 @@
+\hypertarget{admin_exp__database__functions_8php}{\section{php/admin/admin\-Experiment/admin\-Exp\-\_\-database\-\_\-functions.php File Reference}
+\label{admin_exp__database__functions_8php}\index{php/admin/admin\-Experiment/admin\-Exp\-\_\-database\-\_\-functions.\-php@{php/admin/admin\-Experiment/admin\-Exp\-\_\-database\-\_\-functions.\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{admin_exp__database__functions_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{admin_exp__database__functions_8php_af59a5f7cd609e592c41dc3643efd3c98}{\$query}
+\item 
+\hyperlink{admin_exp__database__functions_8php_afa9126f9664959c02795be300a135f93}{\$sth} =\$conn-\/$>$prepare(\$query)
+\item 
+\hyperlink{admin_exp__database__functions_8php_af789423037bbc89dc7c850e761177570}{\$count} = \$sth-\/$>$row\-Count()
+\item 
+\hyperlink{admin_exp__database__functions_8php_ace2ec39e7df3899fa8df9640ec274b03}{\$rows} =\$sth-\/$>$fetch\-All()
+\item 
+\hyperlink{admin_exp__database__functions_8php_a73004ce9cd673c1bfafd1dc351134797}{\$output}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{admin_exp__database__functions_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{admin\-Exp\-\_\-database\-\_\-functions.\-php@{admin\-Exp\-\_\-database\-\_\-functions.\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!adminExp_database_functions.php@{admin\-Exp\-\_\-database\-\_\-functions.\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{admin_exp__database__functions_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 4 of file admin\-Exp\-\_\-database\-\_\-functions.\-php.
+
+\hypertarget{admin_exp__database__functions_8php_af789423037bbc89dc7c850e761177570}{\index{admin\-Exp\-\_\-database\-\_\-functions.\-php@{admin\-Exp\-\_\-database\-\_\-functions.\-php}!\$count@{\$count}}
+\index{\$count@{\$count}!adminExp_database_functions.php@{admin\-Exp\-\_\-database\-\_\-functions.\-php}}
+\subsubsection[{\$count}]{\setlength{\rightskip}{0pt plus 5cm}\$count = \$sth-\/$>$row\-Count()}}\label{admin_exp__database__functions_8php_af789423037bbc89dc7c850e761177570}
+
+
+Definition at line 17 of file admin\-Exp\-\_\-database\-\_\-functions.\-php.
+
+\hypertarget{admin_exp__database__functions_8php_a73004ce9cd673c1bfafd1dc351134797}{\index{admin\-Exp\-\_\-database\-\_\-functions.\-php@{admin\-Exp\-\_\-database\-\_\-functions.\-php}!\$output@{\$output}}
+\index{\$output@{\$output}!adminExp_database_functions.php@{admin\-Exp\-\_\-database\-\_\-functions.\-php}}
+\subsubsection[{\$output}]{\setlength{\rightskip}{0pt plus 5cm}\$output}}\label{admin_exp__database__functions_8php_a73004ce9cd673c1bfafd1dc351134797}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+= array(
+        \textcolor{stringliteral}{"iTotalRecords"} => \hyperlink{admin_exp__database__functions_8php_af789423037bbc89dc7c850e761177570}{$count},
+        \textcolor{stringliteral}{"iTotalDisplayRecords"} => \hyperlink{admin_exp__database__functions_8php_af789423037bbc89dc7c850e761177570}{$count},
+        \textcolor{stringliteral}{"aaData"} => Array()
+    )
+\end{DoxyCode}
+
+
+Definition at line 20 of file admin\-Exp\-\_\-database\-\_\-functions.\-php.
+
+\hypertarget{admin_exp__database__functions_8php_af59a5f7cd609e592c41dc3643efd3c98}{\index{admin\-Exp\-\_\-database\-\_\-functions.\-php@{admin\-Exp\-\_\-database\-\_\-functions.\-php}!\$query@{\$query}}
+\index{\$query@{\$query}!adminExp_database_functions.php@{admin\-Exp\-\_\-database\-\_\-functions.\-php}}
+\subsubsection[{\$query}]{\setlength{\rightskip}{0pt plus 5cm}\$query}}\label{admin_exp__database__functions_8php_af59a5f7cd609e592c41dc3643efd3c98}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+=\textcolor{stringliteral}{'SELECT e.*, s.std\_name }
+\textcolor{stringliteral}{    FROM experiment e}
+\textcolor{stringliteral}{    LEFT JOIN experiment\_standard es}
+\textcolor{stringliteral}{    ON e.exp\_id = es.exp\_std\_experiment\_FK}
+\textcolor{stringliteral}{    LEFT JOIN standard s }
+\textcolor{stringliteral}{    ON s.std\_id = es.exp\_std\_standard\_FK;'}
+\end{DoxyCode}
+
+
+Definition at line 7 of file admin\-Exp\-\_\-database\-\_\-functions.\-php.
+
+\hypertarget{admin_exp__database__functions_8php_ace2ec39e7df3899fa8df9640ec274b03}{\index{admin\-Exp\-\_\-database\-\_\-functions.\-php@{admin\-Exp\-\_\-database\-\_\-functions.\-php}!\$rows@{\$rows}}
+\index{\$rows@{\$rows}!adminExp_database_functions.php@{admin\-Exp\-\_\-database\-\_\-functions.\-php}}
+\subsubsection[{\$rows}]{\setlength{\rightskip}{0pt plus 5cm}\$rows =\$sth-\/$>$fetch\-All()}}\label{admin_exp__database__functions_8php_ace2ec39e7df3899fa8df9640ec274b03}
+
+
+Definition at line 18 of file admin\-Exp\-\_\-database\-\_\-functions.\-php.
+
+\hypertarget{admin_exp__database__functions_8php_afa9126f9664959c02795be300a135f93}{\index{admin\-Exp\-\_\-database\-\_\-functions.\-php@{admin\-Exp\-\_\-database\-\_\-functions.\-php}!\$sth@{\$sth}}
+\index{\$sth@{\$sth}!adminExp_database_functions.php@{admin\-Exp\-\_\-database\-\_\-functions.\-php}}
+\subsubsection[{\$sth}]{\setlength{\rightskip}{0pt plus 5cm}\$sth =\$conn-\/$>$prepare(\$query)}}\label{admin_exp__database__functions_8php_afa9126f9664959c02795be300a135f93}
+
+
+Definition at line 14 of file admin\-Exp\-\_\-database\-\_\-functions.\-php.
+

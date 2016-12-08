@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="de/da1/processing__database__functions_07obsolete_08_8php" kind="file">
+    <compoundname>processing_database_functions(obsolete).php</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="de/da1/processing__database__functions_07obsolete_08_8php_1aed57e42e86fbd24e361e6f16dec63c42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>get_all_experiment</definition>
+        <argsstring>($conn)</argsstring>
+        <name>get_all_experiment</name>
+        <param>
+          <declname>$conn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/processing/obsolete/processing_database_functions(obsolete).php" line="2" column="1" bodyfile="/var/www/html/plato/php/processing/obsolete/processing_database_functions(obsolete).php" bodystart="2" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da1/processing__database__functions_07obsolete_08_8php_1ababcd14b965210672aaf549cba3f82a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>get_batches_from_one_exp</definition>
+        <argsstring>($conn, $expID)</argsstring>
+        <name>get_batches_from_one_exp</name>
+        <param>
+          <declname>$conn</declname>
+        </param>
+        <param>
+          <declname>$expID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/processing/obsolete/processing_database_functions(obsolete).php" line="18" column="1" bodyfile="/var/www/html/plato/php/processing/obsolete/processing_database_functions(obsolete).php" bodystart="18" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="de/da1/processing__database__functions_07obsolete_08_8php_1a89c289ded1411879ab2e2c32be3a06f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>get_all_enzymes</definition>
+        <argsstring>($conn)</argsstring>
+        <name>get_all_enzymes</name>
+        <param>
+          <declname>$conn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/processing/obsolete/processing_database_functions(obsolete).php" line="35" column="1" bodyfile="/var/www/html/plato/php/processing/obsolete/processing_database_functions(obsolete).php" bodystart="35" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2" refid="de/da1/processing__database__functions_07obsolete_08_8php_1aed57e42e86fbd24e361e6f16dec63c42" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="de/da1/processing__database__functions_07obsolete_08_8php_1aed57e42e86fbd24e361e6f16dec63c42" kindref="member">get_all_experiment</ref>(<ref refid="df/d08/admin_batch_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//$conn<sp/>=<sp/>get_connexion_pl();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1ac52f8f4e9d798ceaf5b8ebbbf44651d7" kindref="member">$query</ref><sp/>=</highlight><highlight class="stringliteral">&apos;</highlight></codeline>
+<codeline lineno="5"><highlight class="stringliteral">select<sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="stringliteral">from<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>experiment<sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="stringliteral">&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//echo<sp/>$query.&quot;\n\n&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref>=<ref refid="df/d08/admin_batch_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;prepare(<ref refid="df/d08/admin_batch_update_data_8php_1ac52f8f4e9d798ceaf5b8ebbbf44651d7" kindref="member">$query</ref>);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref><sp/>-&gt;<sp/>setFetchMode(PDO::FETCH_ASSOC);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref>-&gt;execute();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/df1/admin_batch_2admin_rawdata__database__functions_8php_1ace2ec39e7df3899fa8df9640ec274b03" kindref="member">$rows</ref>=<ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref>-&gt;fetchAll();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d0/df1/admin_batch_2admin_rawdata__database__functions_8php_1ace2ec39e7df3899fa8df9640ec274b03" kindref="member">$rows</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="de/da1/processing__database__functions_07obsolete_08_8php_1ababcd14b965210672aaf549cba3f82a7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="de/da1/processing__database__functions_07obsolete_08_8php_1ababcd14b965210672aaf549cba3f82a7" kindref="member">get_batches_from_one_exp</ref>(<ref refid="df/d08/admin_batch_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>,<sp/><ref refid="d7/d0a/admin_batch_2admin_rawdata__get__batches_8php_1ae384d32e62e85e587cd27bf249ed3db3" kindref="member">$expID</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1ac52f8f4e9d798ceaf5b8ebbbf44651d7" kindref="member">$query</ref><sp/>=</highlight><highlight class="stringliteral">&apos;</highlight></codeline>
+<codeline lineno="20"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SELECT<sp/><sp/>distinct<sp/>batch.bat_number,<sp/>batch.bat_name</highlight></codeline>
+<codeline lineno="21"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FROM<sp/>batch_data,<sp/>batch</highlight></codeline>
+<codeline lineno="22"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WHERE<sp/>batch_data.bat_data_experiment_FK<sp/>=<sp/>&apos;</highlight><highlight class="normal">.$expID.</highlight><highlight class="stringliteral">&apos;<sp/>AND</highlight></codeline>
+<codeline lineno="23"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>batch.bat_id<sp/>=<sp/>batch_data.bat_data_batch_FK;</highlight></codeline>
+<codeline lineno="24"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//echo<sp/>$query.&quot;\n\n&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref>=<ref refid="df/d08/admin_batch_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;prepare(<ref refid="df/d08/admin_batch_update_data_8php_1ac52f8f4e9d798ceaf5b8ebbbf44651d7" kindref="member">$query</ref>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref><sp/>-&gt;<sp/>setFetchMode(PDO::FETCH_ASSOC);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref>-&gt;execute();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/df1/admin_batch_2admin_rawdata__database__functions_8php_1ace2ec39e7df3899fa8df9640ec274b03" kindref="member">$rows</ref>=<ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref>-&gt;fetchAll();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d0/df1/admin_batch_2admin_rawdata__database__functions_8php_1ace2ec39e7df3899fa8df9640ec274b03" kindref="member">$rows</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="de/da1/processing__database__functions_07obsolete_08_8php_1a89c289ded1411879ab2e2c32be3a06f4" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="de/da1/processing__database__functions_07obsolete_08_8php_1a89c289ded1411879ab2e2c32be3a06f4" kindref="member">get_all_enzymes</ref>(<ref refid="df/d08/admin_batch_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//$conn<sp/>=<sp/>get_connexion_pl();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1ac52f8f4e9d798ceaf5b8ebbbf44651d7" kindref="member">$query</ref><sp/>=</highlight><highlight class="stringliteral">&apos;</highlight></codeline>
+<codeline lineno="38"><highlight class="stringliteral">select<sp/>*</highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral">from<sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>enzyme<sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral">&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//echo<sp/>$query.&quot;\n\n&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref>=<ref refid="df/d08/admin_batch_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;prepare(<ref refid="df/d08/admin_batch_update_data_8php_1ac52f8f4e9d798ceaf5b8ebbbf44651d7" kindref="member">$query</ref>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref><sp/>-&gt;<sp/>setFetchMode(PDO::FETCH_ASSOC);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref>-&gt;execute();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/df1/admin_batch_2admin_rawdata__database__functions_8php_1ace2ec39e7df3899fa8df9640ec274b03" kindref="member">$rows</ref>=<ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref>-&gt;fetchAll();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d0/df1/admin_batch_2admin_rawdata__database__functions_8php_1ace2ec39e7df3899fa8df9640ec274b03" kindref="member">$rows</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="/var/www/html/plato/php/processing/obsolete/processing_database_functions(obsolete).php"/>
+  </compounddef>
+</doxygen>

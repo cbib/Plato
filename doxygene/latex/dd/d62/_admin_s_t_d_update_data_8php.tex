@@ -1,0 +1,148 @@
+\hypertarget{_admin_s_t_d_update_data_8php}{\section{php/admin/admin\-Standard/\-Admin\-S\-T\-D\-Update\-Data.php File Reference}
+\label{_admin_s_t_d_update_data_8php}\index{php/admin/admin\-Standard/\-Admin\-S\-T\-D\-Update\-Data.\-php@{php/admin/admin\-Standard/\-Admin\-S\-T\-D\-Update\-Data.\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_admin_s_t_d_update_data_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{_admin_s_t_d_update_data_8php_a35ce457f656c7fe2bf96a6813364da40}{\$std\-Id} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{_admin_s_t_d_update_data_8php_a04bd6b914feb54eeeb053d3f690fea50}{\$std\-Name} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{_admin_s_t_d_update_data_8php_a8964a2785066a92d7c0b11ff5a0261ea}{\$std\-Genius} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{_admin_s_t_d_update_data_8php_a1d77174f9d4320006ec140e643f95324}{\$std\-Species} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{_admin_s_t_d_update_data_8php_a26327dd0b8e0254d4910cf94160bb302}{\$std\-Genotype} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{_admin_s_t_d_update_data_8php_a53b4aa93fde2c9f30c1eecf48472c395}{\$std\-Nature} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{_admin_s_t_d_update_data_8php_ab6c56dc36eabf5961ac9ee1de239c3a4}{\$std\-Owner} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{_admin_s_t_d_update_data_8php_a57ad1d0043a566efde8a4fb592d52b18}{\$std\-Comment} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{_admin_s_t_d_update_data_8php_aa698a3e72116e8e778be0e95d908ee30}{\$action} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{_admin_s_t_d_update_data_8php_a58391ea75f2d29d5d708d7050b641c33}{\$status} =\char`\"{}success\char`\"{}
+\item 
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'id'\mbox{]})) if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'std\-Name'\mbox{]})) \\*
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'std\-Genius'\mbox{]})) \\*
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'std\-Species'\mbox{]})) \\*
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'std\-Genotype'\mbox{]})) \\*
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'std\-Nature'\mbox{]})) \\*
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'std\-Owner'\mbox{]})) \\*
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'std\-Comment'\mbox{]})) \\*
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'action'\mbox{]})) if(\$action==\char`\"{}create\char`\"{}) \\*
+elseif(\$action==\char`\"{}edit\char`\"{}) elseif(\$action==\char`\"{}delete\char`\"{}) \hyperlink{_admin_s_t_d_update_data_8php_ac39ffa0dfdb937b45fe1b6df63ed5191}{else}
+\item 
+\hyperlink{_admin_s_t_d_update_data_8php_acd0903a7a32e8397aefd0ce8b7dbd1ab}{\$response\-\_\-array} \mbox{[}'status'\mbox{]} =\$status
+\item 
+\hyperlink{_admin_s_t_d_update_data_8php_ae768978a0cdc416c0d63d798c85c8784}{\$response\-\_\-array} \mbox{[}'action'\mbox{]} =\$action
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{_admin_s_t_d_update_data_8php_aa698a3e72116e8e778be0e95d908ee30}{\index{Admin\-S\-T\-D\-Update\-Data.\-php@{Admin\-S\-T\-D\-Update\-Data.\-php}!\$action@{\$action}}
+\index{\$action@{\$action}!AdminSTDUpdateData.php@{Admin\-S\-T\-D\-Update\-Data.\-php}}
+\subsubsection[{\$action}]{\setlength{\rightskip}{0pt plus 5cm}\$action =\char`\"{}\char`\"{}}}\label{_admin_s_t_d_update_data_8php_aa698a3e72116e8e778be0e95d908ee30}
+
+
+Definition at line 18 of file Admin\-S\-T\-D\-Update\-Data.\-php.
+
+\hypertarget{_admin_s_t_d_update_data_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{Admin\-S\-T\-D\-Update\-Data.\-php@{Admin\-S\-T\-D\-Update\-Data.\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!AdminSTDUpdateData.php@{Admin\-S\-T\-D\-Update\-Data.\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{_admin_s_t_d_update_data_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 5 of file Admin\-S\-T\-D\-Update\-Data.\-php.
+
+\hypertarget{_admin_s_t_d_update_data_8php_acd0903a7a32e8397aefd0ce8b7dbd1ab}{\index{Admin\-S\-T\-D\-Update\-Data.\-php@{Admin\-S\-T\-D\-Update\-Data.\-php}!\$response\-\_\-array@{\$response\-\_\-array}}
+\index{\$response\-\_\-array@{\$response\-\_\-array}!AdminSTDUpdateData.php@{Admin\-S\-T\-D\-Update\-Data.\-php}}
+\subsubsection[{\$response\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}\$response\-\_\-array\mbox{[}'status'\mbox{]} =\$status}}\label{_admin_s_t_d_update_data_8php_acd0903a7a32e8397aefd0ce8b7dbd1ab}
+
+
+Definition at line 113 of file Admin\-S\-T\-D\-Update\-Data.\-php.
+
+\hypertarget{_admin_s_t_d_update_data_8php_ae768978a0cdc416c0d63d798c85c8784}{\index{Admin\-S\-T\-D\-Update\-Data.\-php@{Admin\-S\-T\-D\-Update\-Data.\-php}!\$response\-\_\-array@{\$response\-\_\-array}}
+\index{\$response\-\_\-array@{\$response\-\_\-array}!AdminSTDUpdateData.php@{Admin\-S\-T\-D\-Update\-Data.\-php}}
+\subsubsection[{\$response\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}\$response\-\_\-array\mbox{[}'action'\mbox{]} =\$action}}\label{_admin_s_t_d_update_data_8php_ae768978a0cdc416c0d63d798c85c8784}
+
+
+Definition at line 114 of file Admin\-S\-T\-D\-Update\-Data.\-php.
+
+\hypertarget{_admin_s_t_d_update_data_8php_a58391ea75f2d29d5d708d7050b641c33}{\index{Admin\-S\-T\-D\-Update\-Data.\-php@{Admin\-S\-T\-D\-Update\-Data.\-php}!\$status@{\$status}}
+\index{\$status@{\$status}!AdminSTDUpdateData.php@{Admin\-S\-T\-D\-Update\-Data.\-php}}
+\subsubsection[{\$status}]{\setlength{\rightskip}{0pt plus 5cm}\$status =\char`\"{}success\char`\"{}}}\label{_admin_s_t_d_update_data_8php_a58391ea75f2d29d5d708d7050b641c33}
+
+
+Definition at line 19 of file Admin\-S\-T\-D\-Update\-Data.\-php.
+
+\hypertarget{_admin_s_t_d_update_data_8php_a57ad1d0043a566efde8a4fb592d52b18}{\index{Admin\-S\-T\-D\-Update\-Data.\-php@{Admin\-S\-T\-D\-Update\-Data.\-php}!\$std\-Comment@{\$std\-Comment}}
+\index{\$std\-Comment@{\$std\-Comment}!AdminSTDUpdateData.php@{Admin\-S\-T\-D\-Update\-Data.\-php}}
+\subsubsection[{\$std\-Comment}]{\setlength{\rightskip}{0pt plus 5cm}\$std\-Comment =\char`\"{}\char`\"{}}}\label{_admin_s_t_d_update_data_8php_a57ad1d0043a566efde8a4fb592d52b18}
+
+
+Definition at line 17 of file Admin\-S\-T\-D\-Update\-Data.\-php.
+
+\hypertarget{_admin_s_t_d_update_data_8php_a8964a2785066a92d7c0b11ff5a0261ea}{\index{Admin\-S\-T\-D\-Update\-Data.\-php@{Admin\-S\-T\-D\-Update\-Data.\-php}!\$std\-Genius@{\$std\-Genius}}
+\index{\$std\-Genius@{\$std\-Genius}!AdminSTDUpdateData.php@{Admin\-S\-T\-D\-Update\-Data.\-php}}
+\subsubsection[{\$std\-Genius}]{\setlength{\rightskip}{0pt plus 5cm}\$std\-Genius =\char`\"{}\char`\"{}}}\label{_admin_s_t_d_update_data_8php_a8964a2785066a92d7c0b11ff5a0261ea}
+
+
+Definition at line 12 of file Admin\-S\-T\-D\-Update\-Data.\-php.
+
+\hypertarget{_admin_s_t_d_update_data_8php_a26327dd0b8e0254d4910cf94160bb302}{\index{Admin\-S\-T\-D\-Update\-Data.\-php@{Admin\-S\-T\-D\-Update\-Data.\-php}!\$std\-Genotype@{\$std\-Genotype}}
+\index{\$std\-Genotype@{\$std\-Genotype}!AdminSTDUpdateData.php@{Admin\-S\-T\-D\-Update\-Data.\-php}}
+\subsubsection[{\$std\-Genotype}]{\setlength{\rightskip}{0pt plus 5cm}\$std\-Genotype =\char`\"{}\char`\"{}}}\label{_admin_s_t_d_update_data_8php_a26327dd0b8e0254d4910cf94160bb302}
+
+
+Definition at line 14 of file Admin\-S\-T\-D\-Update\-Data.\-php.
+
+\hypertarget{_admin_s_t_d_update_data_8php_a35ce457f656c7fe2bf96a6813364da40}{\index{Admin\-S\-T\-D\-Update\-Data.\-php@{Admin\-S\-T\-D\-Update\-Data.\-php}!\$std\-Id@{\$std\-Id}}
+\index{\$std\-Id@{\$std\-Id}!AdminSTDUpdateData.php@{Admin\-S\-T\-D\-Update\-Data.\-php}}
+\subsubsection[{\$std\-Id}]{\setlength{\rightskip}{0pt plus 5cm}\$std\-Id =\char`\"{}\char`\"{}}}\label{_admin_s_t_d_update_data_8php_a35ce457f656c7fe2bf96a6813364da40}
+
+
+Definition at line 9 of file Admin\-S\-T\-D\-Update\-Data.\-php.
+
+\hypertarget{_admin_s_t_d_update_data_8php_a04bd6b914feb54eeeb053d3f690fea50}{\index{Admin\-S\-T\-D\-Update\-Data.\-php@{Admin\-S\-T\-D\-Update\-Data.\-php}!\$std\-Name@{\$std\-Name}}
+\index{\$std\-Name@{\$std\-Name}!AdminSTDUpdateData.php@{Admin\-S\-T\-D\-Update\-Data.\-php}}
+\subsubsection[{\$std\-Name}]{\setlength{\rightskip}{0pt plus 5cm}\$std\-Name =\char`\"{}\char`\"{}}}\label{_admin_s_t_d_update_data_8php_a04bd6b914feb54eeeb053d3f690fea50}
+
+
+Definition at line 10 of file Admin\-S\-T\-D\-Update\-Data.\-php.
+
+\hypertarget{_admin_s_t_d_update_data_8php_a53b4aa93fde2c9f30c1eecf48472c395}{\index{Admin\-S\-T\-D\-Update\-Data.\-php@{Admin\-S\-T\-D\-Update\-Data.\-php}!\$std\-Nature@{\$std\-Nature}}
+\index{\$std\-Nature@{\$std\-Nature}!AdminSTDUpdateData.php@{Admin\-S\-T\-D\-Update\-Data.\-php}}
+\subsubsection[{\$std\-Nature}]{\setlength{\rightskip}{0pt plus 5cm}\$std\-Nature =\char`\"{}\char`\"{}}}\label{_admin_s_t_d_update_data_8php_a53b4aa93fde2c9f30c1eecf48472c395}
+
+
+Definition at line 15 of file Admin\-S\-T\-D\-Update\-Data.\-php.
+
+\hypertarget{_admin_s_t_d_update_data_8php_ab6c56dc36eabf5961ac9ee1de239c3a4}{\index{Admin\-S\-T\-D\-Update\-Data.\-php@{Admin\-S\-T\-D\-Update\-Data.\-php}!\$std\-Owner@{\$std\-Owner}}
+\index{\$std\-Owner@{\$std\-Owner}!AdminSTDUpdateData.php@{Admin\-S\-T\-D\-Update\-Data.\-php}}
+\subsubsection[{\$std\-Owner}]{\setlength{\rightskip}{0pt plus 5cm}\$std\-Owner =\char`\"{}\char`\"{}}}\label{_admin_s_t_d_update_data_8php_ab6c56dc36eabf5961ac9ee1de239c3a4}
+
+
+Definition at line 16 of file Admin\-S\-T\-D\-Update\-Data.\-php.
+
+\hypertarget{_admin_s_t_d_update_data_8php_a1d77174f9d4320006ec140e643f95324}{\index{Admin\-S\-T\-D\-Update\-Data.\-php@{Admin\-S\-T\-D\-Update\-Data.\-php}!\$std\-Species@{\$std\-Species}}
+\index{\$std\-Species@{\$std\-Species}!AdminSTDUpdateData.php@{Admin\-S\-T\-D\-Update\-Data.\-php}}
+\subsubsection[{\$std\-Species}]{\setlength{\rightskip}{0pt plus 5cm}\$std\-Species =\char`\"{}\char`\"{}}}\label{_admin_s_t_d_update_data_8php_a1d77174f9d4320006ec140e643f95324}
+
+
+Definition at line 13 of file Admin\-S\-T\-D\-Update\-Data.\-php.
+
+\hypertarget{_admin_s_t_d_update_data_8php_ac39ffa0dfdb937b45fe1b6df63ed5191}{\index{Admin\-S\-T\-D\-Update\-Data.\-php@{Admin\-S\-T\-D\-Update\-Data.\-php}!else@{else}}
+\index{else@{else}!AdminSTDUpdateData.php@{Admin\-S\-T\-D\-Update\-Data.\-php}}
+\subsubsection[{else}]{\setlength{\rightskip}{0pt plus 5cm}if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'id'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'std\-Name'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'std\-Genius'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'std\-Species'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'std\-Genotype'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'std\-Nature'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'std\-Owner'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'std\-Comment'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'action'\mbox{]})) if (\$action==\char`\"{}create\char`\"{}) elseif (\$action==\char`\"{}edit\char`\"{}) elseif (\$action==\char`\"{}delete\char`\"{}) else}}\label{_admin_s_t_d_update_data_8php_ac39ffa0dfdb937b45fe1b6df63ed5191}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+\{
+        \hyperlink{_admin_s_t_d_update_data_8php_a58391ea75f2d29d5d708d7050b641c33}{$status}=\textcolor{stringliteral}{"error"}
+\end{DoxyCode}
+
+
+Definition at line 108 of file Admin\-S\-T\-D\-Update\-Data.\-php.
+

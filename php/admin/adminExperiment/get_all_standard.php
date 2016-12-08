@@ -1,6 +1,8 @@
 <?php
 	require('../../functions/check_login.php');
 	include '../../functions/php_functions.php';
+
+	// Get all standard 
 	$conn = get_connexion();
 	$query ='SELECT std_id, std_name FROM standard ORDER BY std_name;';
 	//error_log($query);

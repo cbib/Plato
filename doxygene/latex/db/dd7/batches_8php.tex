@@ -1,0 +1,253 @@
+\hypertarget{batches_8php}{\section{php/batches/batches.php File Reference}
+\label{batches_8php}\index{php/batches/batches.\-php@{php/batches/batches.\-php}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{batches_8php_aaf1585290b44b1c24947e6bffa5ccc51}{reset\-Modal\-Table} ()
+\item 
+\hyperlink{batches_8php_a1c5bd701b81e92f7d4d3c5df62308a90}{show\-Wait\-Modal} ()
+\item 
+\hyperlink{batches_8php_a9e9a0aeba0985269b23840a250abb827}{hide\-Wait\-Modal} ()
+\item 
+\hyperlink{batches_8php_ae02cea24a062a7f21bd48533c1504690}{create\-\_\-add\-Batch\-\_\-modal} ()
+\item 
+\hyperlink{batches_8php_aabf63657ee4a503e37183e428ef11db1}{batch\-Insert} (table\-I\-D)
+\item 
+\hyperlink{batches_8php_abb8ec322fc0eef58540ade5207c2ca41}{batch\-Edition} (\hyperlink{obsolete_2processing__bak_8php_a88c5bc4262b7c34f236357f5c53fc99b}{batch\-I\-D}, table\-I\-D)
+\item 
+\hyperlink{batches_8php_a04637a1b595da1d5ed13d255573db770}{reset\-Batch\-Table} ()
+\item 
+\hyperlink{batches_8php_afb025da899746c307e7b43a19a66fdad}{make\-Batch\-Editable} ()
+\item 
+\hyperlink{batches_8php_a78f6e359719fa425326a3b9b616c1d0b}{make\-Batch\-Un\-Editable} ()
+\item 
+\hyperlink{batches_8php_a3b7fa21c29f2265534745659558aab45}{setup\-\_\-experiment\-\_\-datatable} ()
+\item 
+\hyperlink{batches_8php_a0af6eec16d059e41ca9dc5f3840ad72e}{dispatch\-Add\-Batch\-Datas} (\hyperlink{chart1_8php_ab3ed669f4b3fdb8c88f3a190fb907de0}{data})
+\item 
+\hyperlink{batches_8php_a3c5593b7a45fafc8fefc2db97ac31de0}{check\-Use} (\hyperlink{chart1_8php_ab3ed669f4b3fdb8c88f3a190fb907de0}{data})
+\item 
+\hyperlink{batches_8php_a0eb64e41e5e954b1aaa81a84ee158278}{display\-Vals} ()
+\item 
+\hyperlink{batches_8php_aa1e8f9d59d36beb449d29324b83696c5}{chomp} (raw\-\_\-text)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{batches_8php_abb8ec322fc0eef58540ade5207c2ca41}{\index{batches.\-php@{batches.\-php}!batch\-Edition@{batch\-Edition}}
+\index{batch\-Edition@{batch\-Edition}!batches.php@{batches.\-php}}
+\subsubsection[{batch\-Edition}]{\setlength{\rightskip}{0pt plus 5cm}batch\-Edition (
+\begin{DoxyParamCaption}
+\item[{{\bf batch\-I\-D}}]{, }
+\item[{table\-I\-D}]{}
+\end{DoxyParamCaption}
+)}}\label{batches_8php_abb8ec322fc0eef58540ade5207c2ca41}
+send batch data from batchtable to \hyperlink{insert__batch_8php}{insert\-\_\-batch.\-php}
+
+batch\-Edition 
+\begin{DoxyParams}{Parameters}
+{\em \{$<$type$>$\}} & batch\-I\-D \{ id of the selected batch \} \\
+\hline
+{\em \{$<$type$>$\}} & table\-I\-D \{ id of the table to save \} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 697 of file batches.\-php.
+
+\hypertarget{batches_8php_aabf63657ee4a503e37183e428ef11db1}{\index{batches.\-php@{batches.\-php}!batch\-Insert@{batch\-Insert}}
+\index{batch\-Insert@{batch\-Insert}!batches.php@{batches.\-php}}
+\subsubsection[{batch\-Insert}]{\setlength{\rightskip}{0pt plus 5cm}batch\-Insert (
+\begin{DoxyParamCaption}
+\item[{table\-I\-D}]{}
+\end{DoxyParamCaption}
+)}}\label{batches_8php_aabf63657ee4a503e37183e428ef11db1}
+Insertion of a new batch in the database
+
+batch\-Insert 
+\begin{DoxyParams}{Parameters}
+{\em \{$<$type$>$\}} & table\-I\-D \{ id of the table to save\} \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 616 of file batches.\-php.
+
+\hypertarget{batches_8php_a3c5593b7a45fafc8fefc2db97ac31de0}{\index{batches.\-php@{batches.\-php}!check\-Use@{check\-Use}}
+\index{check\-Use@{check\-Use}!batches.php@{batches.\-php}}
+\subsubsection[{check\-Use}]{\setlength{\rightskip}{0pt plus 5cm}check\-Use (
+\begin{DoxyParamCaption}
+\item[{{\bf data}}]{}
+\end{DoxyParamCaption}
+)}}\label{batches_8php_a3c5593b7a45fafc8fefc2db97ac31de0}
+Check if a aliquots are already used
+
+check\-Use 
+\begin{DoxyParams}{Parameters}
+{\em \{$<$type$>$\}} & data \{ data to send to the server for checking \} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{Promise\} \{ description\-\_\-of\-\_\-the\-\_\-return\-\_\-value \} 
+\end{DoxyReturn}
+
+
+Definition at line 1007 of file batches.\-php.
+
+\hypertarget{batches_8php_aa1e8f9d59d36beb449d29324b83696c5}{\index{batches.\-php@{batches.\-php}!chomp@{chomp}}
+\index{chomp@{chomp}!batches.php@{batches.\-php}}
+\subsubsection[{chomp}]{\setlength{\rightskip}{0pt plus 5cm}chomp (
+\begin{DoxyParamCaption}
+\item[{raw\-\_\-text}]{}
+\end{DoxyParamCaption}
+)}}\label{batches_8php_aa1e8f9d59d36beb449d29324b83696c5}
+Remove useless strings (retour chariot a la fin de ligne, equivalent de chomp en perl)
+
+chomp 
+\begin{DoxyParams}{Parameters}
+{\em \{string\}} & raw\-\_\-text \{ text to chomp \} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\{string\} \{ text trimed of possible end of line (win or unix) \} 
+\end{DoxyReturn}
+
+
+Definition at line 1144 of file batches.\-php.
+
+\hypertarget{batches_8php_ae02cea24a062a7f21bd48533c1504690}{\index{batches.\-php@{batches.\-php}!create\-\_\-add\-Batch\-\_\-modal@{create\-\_\-add\-Batch\-\_\-modal}}
+\index{create\-\_\-add\-Batch\-\_\-modal@{create\-\_\-add\-Batch\-\_\-modal}!batches.php@{batches.\-php}}
+\subsubsection[{create\-\_\-add\-Batch\-\_\-modal}]{\setlength{\rightskip}{0pt plus 5cm}create\-\_\-add\-Batch\-\_\-modal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{batches_8php_ae02cea24a062a7f21bd48533c1504690}
+create and show a modal window for batch creation
+
+create\-\_\-add\-Batch\-\_\-modal 
+
+Definition at line 510 of file batches.\-php.
+
+\hypertarget{batches_8php_a0af6eec16d059e41ca9dc5f3840ad72e}{\index{batches.\-php@{batches.\-php}!dispatch\-Add\-Batch\-Datas@{dispatch\-Add\-Batch\-Datas}}
+\index{dispatch\-Add\-Batch\-Datas@{dispatch\-Add\-Batch\-Datas}!batches.php@{batches.\-php}}
+\subsubsection[{dispatch\-Add\-Batch\-Datas}]{\setlength{\rightskip}{0pt plus 5cm}dispatch\-Add\-Batch\-Datas (
+\begin{DoxyParamCaption}
+\item[{{\bf data}}]{}
+\end{DoxyParamCaption}
+)}}\label{batches_8php_a0af6eec16d059e41ca9dc5f3840ad72e}
+display data on row tables when past.
+
+dispatch\-Add\-Rows\-Datas 
+\begin{DoxyParams}{Parameters}
+{\em \{(number$\vert$string)\}} & data \{ data pasted by the user \} \\
+\hline
+\end{DoxyParams}
+Calculation of who is who, who is a standard, who is a blank, who is a sample etc.
+
+Definition at line 835 of file batches.\-php.
+
+\hypertarget{batches_8php_a0eb64e41e5e954b1aaa81a84ee158278}{\index{batches.\-php@{batches.\-php}!display\-Vals@{display\-Vals}}
+\index{display\-Vals@{display\-Vals}!batches.php@{batches.\-php}}
+\subsubsection[{display\-Vals}]{\setlength{\rightskip}{0pt plus 5cm}display\-Vals (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{batches_8php_a0eb64e41e5e954b1aaa81a84ee158278}
+Display batches values, add colors
+
+display\-Vals 
+
+Definition at line 1041 of file batches.\-php.
+
+\hypertarget{batches_8php_a9e9a0aeba0985269b23840a250abb827}{\index{batches.\-php@{batches.\-php}!hide\-Wait\-Modal@{hide\-Wait\-Modal}}
+\index{hide\-Wait\-Modal@{hide\-Wait\-Modal}!batches.php@{batches.\-php}}
+\subsubsection[{hide\-Wait\-Modal}]{\setlength{\rightskip}{0pt plus 5cm}hide\-Wait\-Modal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{batches_8php_a9e9a0aeba0985269b23840a250abb827}
+Hide progress bar
+
+hide\-Wait\-Modal 
+
+Definition at line 500 of file batches.\-php.
+
+\hypertarget{batches_8php_afb025da899746c307e7b43a19a66fdad}{\index{batches.\-php@{batches.\-php}!make\-Batch\-Editable@{make\-Batch\-Editable}}
+\index{make\-Batch\-Editable@{make\-Batch\-Editable}!batches.php@{batches.\-php}}
+\subsubsection[{make\-Batch\-Editable}]{\setlength{\rightskip}{0pt plus 5cm}make\-Batch\-Editable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{batches_8php_afb025da899746c307e7b43a19a66fdad}
+Allow to edit a batch
+
+make\-Batch\-Editable 
+
+Definition at line 754 of file batches.\-php.
+
+\hypertarget{batches_8php_a78f6e359719fa425326a3b9b616c1d0b}{\index{batches.\-php@{batches.\-php}!make\-Batch\-Un\-Editable@{make\-Batch\-Un\-Editable}}
+\index{make\-Batch\-Un\-Editable@{make\-Batch\-Un\-Editable}!batches.php@{batches.\-php}}
+\subsubsection[{make\-Batch\-Un\-Editable}]{\setlength{\rightskip}{0pt plus 5cm}make\-Batch\-Un\-Editable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{batches_8php_a78f6e359719fa425326a3b9b616c1d0b}
+Remove inputs added for batch edition
+
+make\-Batch\-Un\-Editable 
+
+Definition at line 774 of file batches.\-php.
+
+\hypertarget{batches_8php_a04637a1b595da1d5ed13d255573db770}{\index{batches.\-php@{batches.\-php}!reset\-Batch\-Table@{reset\-Batch\-Table}}
+\index{reset\-Batch\-Table@{reset\-Batch\-Table}!batches.php@{batches.\-php}}
+\subsubsection[{reset\-Batch\-Table}]{\setlength{\rightskip}{0pt plus 5cm}reset\-Batch\-Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{batches_8php_a04637a1b595da1d5ed13d255573db770}
+reset datatable 12$\ast$8 when click on C\-L\-E\-A\-R all
+
+reset\-Batch\-Table 
+
+Definition at line 739 of file batches.\-php.
+
+\hypertarget{batches_8php_aaf1585290b44b1c24947e6bffa5ccc51}{\index{batches.\-php@{batches.\-php}!reset\-Modal\-Table@{reset\-Modal\-Table}}
+\index{reset\-Modal\-Table@{reset\-Modal\-Table}!batches.php@{batches.\-php}}
+\subsubsection[{reset\-Modal\-Table}]{\setlength{\rightskip}{0pt plus 5cm}reset\-Modal\-Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{batches_8php_aaf1585290b44b1c24947e6bffa5ccc51}
+Reset the table in the modal of batch creation
+
+reset\-Modal\-Table 
+
+Definition at line 423 of file batches.\-php.
+
+\hypertarget{batches_8php_a3b7fa21c29f2265534745659558aab45}{\index{batches.\-php@{batches.\-php}!setup\-\_\-experiment\-\_\-datatable@{setup\-\_\-experiment\-\_\-datatable}}
+\index{setup\-\_\-experiment\-\_\-datatable@{setup\-\_\-experiment\-\_\-datatable}!batches.php@{batches.\-php}}
+\subsubsection[{setup\-\_\-experiment\-\_\-datatable}]{\setlength{\rightskip}{0pt plus 5cm}setup\-\_\-experiment\-\_\-datatable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{batches_8php_a3b7fa21c29f2265534745659558aab45}
+setup the table of experiments
+
+setup\-\_\-experiment\-\_\-datatable 
+
+Definition at line 796 of file batches.\-php.
+
+\hypertarget{batches_8php_a1c5bd701b81e92f7d4d3c5df62308a90}{\index{batches.\-php@{batches.\-php}!show\-Wait\-Modal@{show\-Wait\-Modal}}
+\index{show\-Wait\-Modal@{show\-Wait\-Modal}!batches.php@{batches.\-php}}
+\subsubsection[{show\-Wait\-Modal}]{\setlength{\rightskip}{0pt plus 5cm}show\-Wait\-Modal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{batches_8php_a1c5bd701b81e92f7d4d3c5df62308a90}
+Show a progress bar while loading
+
+show\-Wait\-Modal 
+
+Definition at line 474 of file batches.\-php.
+

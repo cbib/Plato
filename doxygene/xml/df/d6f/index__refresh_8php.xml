@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="df/d6f/index__refresh_8php" kind="file">
+    <compoundname>index_refresh.php</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="df/d6f/index__refresh_8php_1a3ed28ef3481b2eb4af99a8411d77e5f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>user_ctp</definition>
+        <argsstring>()</argsstring>
+        <name>user_ctp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/index_functions/index_refresh.php" line="4" column="1" bodyfile="/var/www/html/plato/php/index_functions/index_refresh.php" bodystart="4" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d6f/index__refresh_8php_1aeefc6028e12a89f41f7332e910ff7a16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sample_cpt</definition>
+        <argsstring>()</argsstring>
+        <name>sample_cpt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/index_functions/index_refresh.php" line="16" column="1" bodyfile="/var/www/html/plato/php/index_functions/index_refresh.php" bodystart="16" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d6f/index__refresh_8php_1a4d75c1c7342be79d08999b9e492bfc53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>batch_ctp</definition>
+        <argsstring>()</argsstring>
+        <name>batch_ctp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/index_functions/index_refresh.php" line="27" column="1" bodyfile="/var/www/html/plato/php/index_functions/index_refresh.php" bodystart="27" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d6f/index__refresh_8php_1ae4fef02ec0b8067b2ded6bfbcf382d50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>experiment_cpt</definition>
+        <argsstring>()</argsstring>
+        <name>experiment_cpt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/index_functions/index_refresh.php" line="38" column="1" bodyfile="/var/www/html/plato/php/index_functions/index_refresh.php" bodystart="38" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d6f/index__refresh_8php_1a88a1fe2538ed8cb456f2da35fc9ce9fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>rawdata_cpt</definition>
+        <argsstring>()</argsstring>
+        <name>rawdata_cpt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/index_functions/index_refresh.php" line="49" column="1" bodyfile="/var/www/html/plato/php/index_functions/index_refresh.php" bodystart="49" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d6f/index__refresh_8php_1a3ad230c4de9281e2e62b375d4442da90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>batch_number_per_date</definition>
+        <argsstring>()</argsstring>
+        <name>batch_number_per_date</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/index_functions/index_refresh.php" line="59" column="1" bodyfile="/var/www/html/plato/php/index_functions/index_refresh.php" bodystart="59" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="df/d6f/index__refresh_8php_1ad6c3d9c5db34066f67bbd2727cbf14e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>batch_cumul_per_date</definition>
+        <argsstring>()</argsstring>
+        <name>batch_cumul_per_date</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/var/www/html/plato/php/index_functions/index_refresh.php" line="83" column="1" bodyfile="/var/www/html/plato/php/index_functions/index_refresh.php" bodystart="83" bodyend="129"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">&lt;?php</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"><sp/><sp/><sp/><sp/>include<sp/></highlight><highlight class="stringliteral">&apos;../functions/php_functions.php&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="df/d6f/index__refresh_8php_1a3ed28ef3481b2eb4af99a8411d77e5f6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="df/d6f/index__refresh_8php_1a3ed28ef3481b2eb4af99a8411d77e5f6" kindref="member">user_ctp</ref>(){</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>=<ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>();</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1ac52f8f4e9d798ceaf5b8ebbbf44651d7" kindref="member">$query</ref><sp/>=</highlight><highlight class="stringliteral">&apos;</highlight></codeline>
+<codeline lineno="7"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SELECT<sp/>count(*)</highlight></codeline>
+<codeline lineno="8"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FROM<sp/>user</highlight></codeline>
+<codeline lineno="9"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref><sp/>=<sp/><ref refid="df/d08/admin_batch_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;query(<ref refid="df/d08/admin_batch_update_data_8php_1ac52f8f4e9d798ceaf5b8ebbbf44651d7" kindref="member">$query</ref>)-&gt;fetchColumn();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>(<ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref>);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="df/d6f/index__refresh_8php_1aeefc6028e12a89f41f7332e910ff7a16" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="df/d6f/index__refresh_8php_1aeefc6028e12a89f41f7332e910ff7a16" kindref="member">sample_cpt</ref>(){</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>=<ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1ac52f8f4e9d798ceaf5b8ebbbf44651d7" kindref="member">$query</ref><sp/>=</highlight><highlight class="stringliteral">&apos;</highlight></codeline>
+<codeline lineno="19"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SELECT<sp/>count(*)</highlight></codeline>
+<codeline lineno="20"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FROM<sp/>sample</highlight></codeline>
+<codeline lineno="21"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref><sp/>=<sp/><ref refid="df/d08/admin_batch_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;query(<ref refid="df/d08/admin_batch_update_data_8php_1ac52f8f4e9d798ceaf5b8ebbbf44651d7" kindref="member">$query</ref>)-&gt;fetchColumn();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>(<ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref>);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="df/d6f/index__refresh_8php_1a4d75c1c7342be79d08999b9e492bfc53" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="df/d6f/index__refresh_8php_1a4d75c1c7342be79d08999b9e492bfc53" kindref="member">batch_ctp</ref>(){</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>=<ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1ac52f8f4e9d798ceaf5b8ebbbf44651d7" kindref="member">$query</ref><sp/>=</highlight><highlight class="stringliteral">&apos;</highlight></codeline>
+<codeline lineno="30"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SELECT<sp/>count(*)</highlight></codeline>
+<codeline lineno="31"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FROM<sp/>batch</highlight></codeline>
+<codeline lineno="32"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref><sp/>=<sp/><ref refid="df/d08/admin_batch_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;query(<ref refid="df/d08/admin_batch_update_data_8php_1ac52f8f4e9d798ceaf5b8ebbbf44651d7" kindref="member">$query</ref>)-&gt;fetchColumn();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>(<ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="df/d6f/index__refresh_8php_1ae4fef02ec0b8067b2ded6bfbcf382d50" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="df/d6f/index__refresh_8php_1ae4fef02ec0b8067b2ded6bfbcf382d50" kindref="member">experiment_cpt</ref>(){</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>=<ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1ac52f8f4e9d798ceaf5b8ebbbf44651d7" kindref="member">$query</ref><sp/>=</highlight><highlight class="stringliteral">&apos;</highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SELECT<sp/>count(*)</highlight></codeline>
+<codeline lineno="42"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FROM<sp/>experiment</highlight></codeline>
+<codeline lineno="43"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref><sp/>=<sp/><ref refid="df/d08/admin_batch_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;query(<ref refid="df/d08/admin_batch_update_data_8php_1ac52f8f4e9d798ceaf5b8ebbbf44651d7" kindref="member">$query</ref>)-&gt;fetchColumn();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>(<ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref>);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="df/d6f/index__refresh_8php_1a88a1fe2538ed8cb456f2da35fc9ce9fe" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="df/d6f/index__refresh_8php_1a88a1fe2538ed8cb456f2da35fc9ce9fe" kindref="member">rawdata_cpt</ref>(){</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>=<ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1ac52f8f4e9d798ceaf5b8ebbbf44651d7" kindref="member">$query</ref><sp/>=</highlight><highlight class="stringliteral">&apos;</highlight></codeline>
+<codeline lineno="52"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SELECT<sp/><sp/>count(*)</highlight></codeline>
+<codeline lineno="53"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FROM<sp/>rawdata</highlight></codeline>
+<codeline lineno="54"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref><sp/>=<sp/><ref refid="df/d08/admin_batch_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;query(<ref refid="df/d08/admin_batch_update_data_8php_1ac52f8f4e9d798ceaf5b8ebbbf44651d7" kindref="member">$query</ref>)-&gt;fetchColumn();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>(<ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref>);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="df/d6f/index__refresh_8php_1a3ad230c4de9281e2e62b375d4442da90" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="df/d6f/index__refresh_8php_1a3ad230c4de9281e2e62b375d4442da90" kindref="member">batch_number_per_date</ref>(){</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>=<ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1ac52f8f4e9d798ceaf5b8ebbbf44651d7" kindref="member">$query</ref><sp/>=</highlight><highlight class="stringliteral">&quot;</highlight></codeline>
+<codeline lineno="62"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SELECT<sp/><sp/>DATE_FORMAT(bat_date,&apos;%Y-%m-%d&apos;)<sp/>AS<sp/>bat_date,<sp/>count(bat_date)<sp/>as<sp/>nb</highlight></codeline>
+<codeline lineno="63"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FROM<sp/>batch</highlight></codeline>
+<codeline lineno="64"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GROUP<sp/>BY<sp/>bat_date;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/df1/admin_batch_2admin_rawdata__database__functions_8php_1a73004ce9cd673c1bfafd1dc351134797" kindref="member">$output</ref><sp/>=<sp/>array();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//echo<sp/>$query.&quot;\n\n&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref>=<ref refid="df/d08/admin_batch_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;prepare(<ref refid="df/d08/admin_batch_update_data_8php_1ac52f8f4e9d798ceaf5b8ebbbf44651d7" kindref="member">$query</ref>);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref><sp/>-&gt;<sp/>setFetchMode(PDO::FETCH_ASSOC);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref>-&gt;execute();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/df1/admin_batch_2admin_rawdata__database__functions_8php_1ace2ec39e7df3899fa8df9640ec274b03" kindref="member">$rows</ref>=<ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref>-&gt;fetchAll();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">(<ref refid="d0/df1/admin_batch_2admin_rawdata__database__functions_8php_1ace2ec39e7df3899fa8df9640ec274b03" kindref="member">$rows</ref><sp/>as<sp/><ref refid="df/d16/insert__batch_8php_1aa1d731aa570613e5bcff831bb10e9b87" kindref="member">$row</ref>){</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>$timestamp<sp/>=<sp/>strtotime($row[&apos;bat_date&apos;]);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$nb<sp/>=<sp/>intval($row[</highlight><highlight class="stringliteral">&apos;nb&apos;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/df1/admin_batch_2admin_rawdata__database__functions_8php_1a73004ce9cd673c1bfafd1dc351134797" kindref="member">$output</ref>[]<sp/>=<sp/>[$row[</highlight><highlight class="stringliteral">&apos;bat_date&apos;</highlight><highlight class="normal">],<sp/>$nb];</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>$json=json_encode(<ref refid="d0/df1/admin_batch_2admin_rawdata__database__functions_8php_1a73004ce9cd673c1bfafd1dc351134797" kindref="member">$output</ref>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>$json;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="df/d6f/index__refresh_8php_1ad6c3d9c5db34066f67bbd2727cbf14e0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">function</highlight><highlight class="normal"><sp/><ref refid="df/d6f/index__refresh_8php_1ad6c3d9c5db34066f67bbd2727cbf14e0" kindref="member">batch_cumul_per_date</ref>(){</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>=<ref refid="dc/db1/php__functions_8php_1ace18bc10f3fd08f92688ac743e0d8c2e" kindref="member">get_connexion</ref>();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>$nb<sp/>=0;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d08/admin_batch_update_data_8php_1ac52f8f4e9d798ceaf5b8ebbbf44651d7" kindref="member">$query</ref><sp/>=</highlight><highlight class="stringliteral">&quot;</highlight></codeline>
+<codeline lineno="87"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SELECT<sp/>DATE_FORMAT(bat_date,&apos;%Y-%m-%d&apos;)<sp/>AS<sp/>bat_date,<sp/>count(bat_date)<sp/>as<sp/>nb<sp/>FROM<sp/>batch<sp/>GROUP<sp/>BY<sp/>bat_date;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/df1/admin_batch_2admin_rawdata__database__functions_8php_1a73004ce9cd673c1bfafd1dc351134797" kindref="member">$output</ref><sp/>=<sp/>array();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//echo<sp/>$query.&quot;\n\n&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref>=<ref refid="df/d08/admin_batch_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877" kindref="member">$conn</ref>-&gt;prepare(<ref refid="df/d08/admin_batch_update_data_8php_1ac52f8f4e9d798ceaf5b8ebbbf44651d7" kindref="member">$query</ref>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref><sp/>-&gt;<sp/>setFetchMode(PDO::FETCH_ASSOC);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref>-&gt;execute();</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d0/df1/admin_batch_2admin_rawdata__database__functions_8php_1ace2ec39e7df3899fa8df9640ec274b03" kindref="member">$rows</ref>=<ref refid="d5/da0/add__enzyme__to__standard_8php_1a63a7a283ea5dee8af1e2d5a3435bf370" kindref="member">$req</ref>-&gt;fetchAll();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal">(<ref refid="d0/df1/admin_batch_2admin_rawdata__database__functions_8php_1ace2ec39e7df3899fa8df9640ec274b03" kindref="member">$rows</ref><sp/>as<sp/><ref refid="df/d16/insert__batch_8php_1aa1d731aa570613e5bcff831bb10e9b87" kindref="member">$row</ref>){</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//$timestamp<sp/>=<sp/>strtotime($row[&apos;bat_date&apos;]);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>$nb<sp/>+=<sp/>intval($row[</highlight><highlight class="stringliteral">&apos;nb&apos;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//error_log($nb);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="d0/df1/admin_batch_2admin_rawdata__database__functions_8php_1a73004ce9cd673c1bfafd1dc351134797" kindref="member">$output</ref>[]<sp/>=<sp/>[$row[</highlight><highlight class="stringliteral">&apos;bat_date&apos;</highlight><highlight class="normal">],<sp/>$nb];</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>$json=json_encode(<ref refid="d0/df1/admin_batch_2admin_rawdata__database__functions_8php_1a73004ce9cd673c1bfafd1dc351134797" kindref="member">$output</ref>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>echo<sp/>$json;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($_GET[</highlight><highlight class="stringliteral">&quot;fonction&quot;</highlight><highlight class="normal">]<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;user_ctp&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d6f/index__refresh_8php_1a3ed28ef3481b2eb4af99a8411d77e5f6" kindref="member">user_ctp</ref>();</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($_GET[</highlight><highlight class="stringliteral">&quot;fonction&quot;</highlight><highlight class="normal">]<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;batch_ctp&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d6f/index__refresh_8php_1a4d75c1c7342be79d08999b9e492bfc53" kindref="member">batch_ctp</ref>();</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($_GET[</highlight><highlight class="stringliteral">&quot;fonction&quot;</highlight><highlight class="normal">]<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;batch_number_per_date&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d6f/index__refresh_8php_1a3ad230c4de9281e2e62b375d4442da90" kindref="member">batch_number_per_date</ref>();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($_GET[</highlight><highlight class="stringliteral">&quot;fonction&quot;</highlight><highlight class="normal">]<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;batch_cumul_per_date&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d6f/index__refresh_8php_1ad6c3d9c5db34066f67bbd2727cbf14e0" kindref="member">batch_cumul_per_date</ref>();</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($_GET[</highlight><highlight class="stringliteral">&quot;fonction&quot;</highlight><highlight class="normal">]<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;sample_cpt&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d6f/index__refresh_8php_1aeefc6028e12a89f41f7332e910ff7a16" kindref="member">sample_cpt</ref>();</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($_GET[</highlight><highlight class="stringliteral">&quot;fonction&quot;</highlight><highlight class="normal">]<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;rawdata_cpt&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d6f/index__refresh_8php_1a88a1fe2538ed8cb456f2da35fc9ce9fe" kindref="member">rawdata_cpt</ref>();</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">($_GET[</highlight><highlight class="stringliteral">&quot;fonction&quot;</highlight><highlight class="normal">]<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;experiment_cpt&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="df/d6f/index__refresh_8php_1ae4fef02ec0b8067b2ded6bfbcf382d50" kindref="member">experiment_cpt</ref>();</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">?&gt;</highlight></codeline>
+    </programlisting>
+    <location file="/var/www/html/plato/php/index_functions/index_refresh.php"/>
+  </compounddef>
+</doxygen>

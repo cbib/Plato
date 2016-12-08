@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_34a180d6c39e7f98fb75485bf3e97c21" kind="dir">
+    <compoundname>php/processing</compoundname>
+    <innerdir refid="dir_9151a316cc7a5bd3d21baaefc136469a">php/processing/obsolete</innerdir>
+    <innerfile refid="d3/df8/get__activity_8php">get_activity.php</innerfile>
+    <innerfile refid="dd/d5c/processing_2get__all__experiment_8php">get_all_experiment.php</innerfile>
+    <innerfile refid="d9/d86/get__declared__enzymes__for__one__batch_8php">get_declared_enzymes_for_one_batch.php</innerfile>
+    <innerfile refid="d1/d0b/insert__raw__data_8php">insert_raw_data.php</innerfile>
+    <innerfile refid="da/d62/processing_8php">processing.php</innerfile>
+    <innerfile refid="d7/da4/processing__bak_8php">processing_bak.php</innerfile>
+    <innerfile refid="d8/d93/processing__get__enzymes_8php">processing_get_enzymes.php</innerfile>
+    <innerfile refid="d3/d47/processing__get__raw_data_8php">processing_get_rawData.php</innerfile>
+    <innerfile refid="d0/d61/processing__get__single__batch_8php">processing_get_single_batch.php</innerfile>
+    <innerfile refid="d4/d1d/save__edit_8php">save_edit.php</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/var/www/html/plato/php/processing/"/>
+  </compounddef>
+</doxygen>

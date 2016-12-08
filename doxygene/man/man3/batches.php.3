@@ -1,0 +1,190 @@
+.TH "php/batches/batches.php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/batches/batches.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBresetModalTable\fP ()"
+.br
+.ti -1c
+.RI "\fBshowWaitModal\fP ()"
+.br
+.ti -1c
+.RI "\fBhideWaitModal\fP ()"
+.br
+.ti -1c
+.RI "\fBcreate_addBatch_modal\fP ()"
+.br
+.ti -1c
+.RI "\fBbatchInsert\fP (tableID)"
+.br
+.ti -1c
+.RI "\fBbatchEdition\fP (\fBbatchID\fP, tableID)"
+.br
+.ti -1c
+.RI "\fBresetBatchTable\fP ()"
+.br
+.ti -1c
+.RI "\fBmakeBatchEditable\fP ()"
+.br
+.ti -1c
+.RI "\fBmakeBatchUnEditable\fP ()"
+.br
+.ti -1c
+.RI "\fBsetup_experiment_datatable\fP ()"
+.br
+.ti -1c
+.RI "\fBdispatchAddBatchDatas\fP (\fBdata\fP)"
+.br
+.ti -1c
+.RI "\fBcheckUse\fP (\fBdata\fP)"
+.br
+.ti -1c
+.RI "\fBdisplayVals\fP ()"
+.br
+.ti -1c
+.RI "\fBchomp\fP (raw_text)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "batchEdition (\fBbatchID\fP, tableID)"
+send batch data from batchtable to \fBinsert_batch\&.php\fP
+.PP
+batchEdition 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{<type>}\fP batchID { id of the selected batch } 
+.br
+\fI{<type>}\fP tableID { id of the table to save } 
+.RE
+.PP
+
+.PP
+Definition at line 697 of file batches\&.php\&.
+.SS "batchInsert (tableID)"
+Insertion of a new batch in the database
+.PP
+batchInsert 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{<type>}\fP tableID { id of the table to save} 
+.RE
+.PP
+
+.PP
+Definition at line 616 of file batches\&.php\&.
+.SS "checkUse (\fBdata\fP)"
+Check if a aliquots are already used
+.PP
+checkUse 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{<type>}\fP data { data to send to the server for checking } 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{Promise} { description_of_the_return_value } 
+.RE
+.PP
+
+.PP
+Definition at line 1007 of file batches\&.php\&.
+.SS "chomp (raw_text)"
+Remove useless strings (retour chariot a la fin de ligne, equivalent de chomp en perl)
+.PP
+chomp 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{string}\fP raw_text { text to chomp } 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+{string} { text trimed of possible end of line (win or unix) } 
+.RE
+.PP
+
+.PP
+Definition at line 1144 of file batches\&.php\&.
+.SS "create_addBatch_modal ()"
+create and show a modal window for batch creation
+.PP
+create_addBatch_modal 
+.PP
+Definition at line 510 of file batches\&.php\&.
+.SS "dispatchAddBatchDatas (\fBdata\fP)"
+display data on row tables when past\&.
+.PP
+dispatchAddRowsDatas 
+.PP
+\fBParameters:\fP
+.RS 4
+\fI{(number|string)}\fP data { data pasted by the user } 
+.RE
+.PP
+Calculation of who is who, who is a standard, who is a blank, who is a sample etc\&.
+.PP
+Definition at line 835 of file batches\&.php\&.
+.SS "displayVals ()"
+Display batches values, add colors
+.PP
+displayVals 
+.PP
+Definition at line 1041 of file batches\&.php\&.
+.SS "hideWaitModal ()"
+Hide progress bar
+.PP
+hideWaitModal 
+.PP
+Definition at line 500 of file batches\&.php\&.
+.SS "makeBatchEditable ()"
+Allow to edit a batch
+.PP
+makeBatchEditable 
+.PP
+Definition at line 754 of file batches\&.php\&.
+.SS "makeBatchUnEditable ()"
+Remove inputs added for batch edition
+.PP
+makeBatchUnEditable 
+.PP
+Definition at line 774 of file batches\&.php\&.
+.SS "resetBatchTable ()"
+reset datatable 12*8 when click on CLEAR all
+.PP
+resetBatchTable 
+.PP
+Definition at line 739 of file batches\&.php\&.
+.SS "resetModalTable ()"
+Reset the table in the modal of batch creation
+.PP
+resetModalTable 
+.PP
+Definition at line 423 of file batches\&.php\&.
+.SS "setup_experiment_datatable ()"
+setup the table of experiments
+.PP
+setup_experiment_datatable 
+.PP
+Definition at line 796 of file batches\&.php\&.
+.SS "showWaitModal ()"
+Show a progress bar while loading
+.PP
+showWaitModal 
+.PP
+Definition at line 474 of file batches\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

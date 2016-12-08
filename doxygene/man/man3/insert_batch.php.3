@@ -1,0 +1,196 @@
+.TH "php/batches/insert_batch.php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/batches/insert_batch.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBinsert_batch_in_db\fP ($conn, $batchLayout, $\fBbatchName\fP, $batchNumber, $batchDate)"
+.br
+.ti -1c
+.RI "\fBget_experiment_id_from_name\fP ($line, $conn)"
+.br
+.ti -1c
+.RI "\fBgetBatchExists\fP ($conn, $\fBbatchName\fP, $batchNumber)"
+.br
+.ti -1c
+.RI "\fBlance_requete\fP ($query, $conn)"
+.br
+.ti -1c
+.RI "\fBget_sample_aliquot_id\fP ($line, $conn)"
+.br
+.ti -1c
+.RI "\fBbatch_pos_exist_in_db\fP ($line, $conn)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$conn\fP = \fBget_connexion\fP()"
+.br
+.ti -1c
+.RI "\fB$output\fP =''"
+.br
+.ti -1c
+.RI "\fB$status\fP = 'success'"
+.br
+.ti -1c
+.RI "\fB$action\fP =''"
+.br
+.ti -1c
+.RI "\fB$batchID\fP =''"
+.br
+.ti -1c
+.RI "\fB$rawdatas\fP = ''"
+.br
+.ti -1c
+.RI "\fB$batchName\fP =''"
+.br
+.ti -1c
+.RI "\fB$batchNumber\fP = ''"
+.br
+.ti -1c
+.RI "\fB$batchLayout\fP = ''"
+.br
+.ti -1c
+.RI "\fB$batchDate\fP = date('Y/m/d')"
+.br
+.ti -1c
+.RI "if(isset($_POST['rawdatas'])) \fBelse\fP"
+.br
+.ti -1c
+.RI "\fB$batchExists\fP = \fBgetBatchExists\fP($conn, $\fBbatchName\fP, $batchNumber)"
+.br
+.ti -1c
+.RI "\fB$spl_alq_id\fP = -1"
+.br
+.ti -1c
+.RI "\fB$expID\fP = ''"
+.br
+.ti -1c
+.RI "\fB$pos\fP = 0"
+.br
+.ti -1c
+.RI "\fB$row\fP = 0"
+.br
+.ti -1c
+.RI "\fB$col\fP = 0"
+.br
+.ti -1c
+.RI "\fB$response_array\fP ['action'] =$action"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "batch_pos_exist_in_db ($line, $conn)"
+
+.PP
+Definition at line 265 of file insert_batch\&.php\&.
+.SS "get_experiment_id_from_name ($line, $conn)"
+
+.PP
+Definition at line 169 of file insert_batch\&.php\&.
+.SS "get_sample_aliquot_id ($line, $conn)"
+
+.PP
+Definition at line 238 of file insert_batch\&.php\&.
+.SS "getBatchExists ($conn, $batchName, $batchNumber)"
+
+.PP
+Definition at line 197 of file insert_batch\&.php\&.
+.SS "insert_batch_in_db ($conn, $batchLayout, $batchName, $batchNumber, $batchDate)"
+
+.PP
+Definition at line 145 of file insert_batch\&.php\&.
+.SS "lance_requete ($query, $conn)"
+
+.PP
+Definition at line 220 of file insert_batch\&.php\&.
+.SH "Variable Documentation"
+.PP 
+.SS "if ($batchExists >0) $action =''"
+
+.PP
+Definition at line 9 of file insert_batch\&.php\&.
+.SS "$batchDate = date('Y/m/d')"
+
+.PP
+Definition at line 16 of file insert_batch\&.php\&.
+.SS "$batchExists = \fBgetBatchExists\fP($conn, $\fBbatchName\fP, $batchNumber)"
+
+.PP
+Definition at line 62 of file insert_batch\&.php\&.
+.SS "$\fBbatchID\fP =''"
+
+.PP
+Definition at line 11 of file insert_batch\&.php\&.
+.SS "$batchLayout = ''"
+
+.PP
+Definition at line 15 of file insert_batch\&.php\&.
+.SS "$\fBbatchName\fP =''"
+
+.PP
+Definition at line 13 of file insert_batch\&.php\&.
+.SS "$batchNumber = ''"
+
+.PP
+Definition at line 14 of file insert_batch\&.php\&.
+.SS "$col = 0"
+
+.PP
+Definition at line 75 of file insert_batch\&.php\&.
+.SS "$conn = \fBget_connexion\fP()"
+
+.PP
+Definition at line 5 of file insert_batch\&.php\&.
+.SS "$\fBexpID\fP = ''"
+
+.PP
+Definition at line 71 of file insert_batch\&.php\&.
+.SS "$output =''"
+
+.PP
+Definition at line 6 of file insert_batch\&.php\&.
+.SS "$pos = 0"
+
+.PP
+Definition at line 73 of file insert_batch\&.php\&.
+.SS "$rawdatas = ''"
+
+.PP
+Definition at line 12 of file insert_batch\&.php\&.
+.SS "$response_array['action'] =$action"
+
+.PP
+Definition at line 140 of file insert_batch\&.php\&.
+.SS "$row = 0"
+
+.PP
+Definition at line 74 of file insert_batch\&.php\&.
+.SS "$spl_alq_id = -1"
+
+.PP
+Definition at line 70 of file insert_batch\&.php\&.
+.SS "$status = 'success'"
+
+.PP
+Definition at line 8 of file insert_batch\&.php\&.
+.SS "if ($status!='error') else"
+\fBInitial value:\fP
+.PP
+.nf
+{
+        error_log("WRONG rawdata")
+.fi
+.PP
+Definition at line 22 of file insert_batch\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

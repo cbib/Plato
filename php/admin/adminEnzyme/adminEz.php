@@ -45,11 +45,17 @@ html_footer("../../../");
 
 <script type="text/javascript" class="init">
 
+/**
+ * Actions when document is ready
+ */
 $(document).ready(function() {
 	$('#adminPanel').removeClass('submenu');
 	$('#adminPanel').addClass('submenu open');
 	setup_datatable();
 
+	/**
+	 * Listener on datatable
+	 */
 	$('#enzyme tbody').on('click', 'button', function(event) {
 		var table = $('#enzyme').DataTable();
 		if(this.id == "editButton"){
@@ -62,65 +68,61 @@ $(document).ready(function() {
 		}
     });
 
+	/**
+ 	* Listener on creanalyte button 
+ 	*/
     $('#createAnalyte').on('click', function() {
     	var data="";
  		construct_create_modal(data, "create");
     });
 });
 
-
-	$(document).on("click", "#editSubmit", function(){
-		var id = $("#id").val();
-		var analyte = $("#analyte").val();
-		var code = $("#code").val();
-		console.log(code);
-		var slope = $("#slope").val();
-		var nature = $("#nature").val();
-		var action = $("#action").val();
-		$.ajax({
-			url: "AdminEZUpdateData.php",
-			type: "post",
-			data: { 
-				id : id,
-				analyte : analyte,
-				code : code,
-				slope : slope,
-				nature : nature,
-				action : action
-			},
-			success: function(data) {
-				var obj = data;
-				if(obj.status == 'success'){
-					$("#editRowModal").modal('hide');
-					$('#statusSpan').html('<div class="alert alert-success">'+obj.action+' Successful<a href="#" data-dismiss="alert" class="close">×</a></div>');
-					setup_datatable();
-				}
-				else if(obj.status == 'error'){
-					$("#editRowModal").modal('hide');
-					$('#statusSpan').html('<div class="alert alert-error">'+obj.action+' Failure<a href="#" data-dismiss="alert" class="close">×</a></div>');
-					setup_datatable();
-				}
-			},
-			error: function(xhr, status, error) {
+/**
+ * Listener on editsubmit
+ */
+$(document).on("click", "#editSubmit", function(){
+	var id = $("#id").val();
+	var analyte = $("#analyte").val();
+	var code = $("#code").val();
+	console.log(code);
+	var slope = $("#slope").val();
+	var nature = $("#nature").val();
+	var action = $("#action").val();
+	$.ajax({
+		url: "AdminEZUpdateData.php",
+		type: "post",
+		data: { 
+			id : id,
+			analyte : analyte,
+			code : code,
+			slope : slope,
+			nature : nature,
+			action : action
+		},
+		success: function(data) {
+			var obj = data;
+			if(obj.status == 'success'){
+				$("#editRowModal").modal('hide');
+				$('#statusSpan').html('<div class="alert alert-success">'+obj.action+' Successful<a href="#" data-dismiss="alert" class="close">×</a></div>');
+				setup_datatable();
 			}
-		});
-	 });
-
-// function setup_datatable(){
-// 	$('#enzyme').dataTable().fnDestroy();
-// 	var table = $('#enzyme').DataTable({
-// 		"Paging": false,
-// 		"dom": 'T<"clear">frtip',
-// 		"sAjaxSource": 'adminEz_database_functions.php',
-// 		"columnDefs": [ {
-//             "targets":-1,
-//             "defaultContent": "<button type=\"button\" id=\"editButton\" class=\"tabledit-edit-button btn btn-info btn-sm btn-default\" style=\"float: none;\"> <span class=\"glyphicon glyphicon-pencil\"> </span> </button>"+
-//              "&nbsp <button type= \"submit\" id=\"deleteButton\" class=\"tabledit-edit-button btn btn-danger btn-sm btn-default\" style=\"float: none;\"> <span class=\"glyphicon glyphicon-trash\"> </span> </button>"
-//         } ],
-// 	});
-// }
+			else if(obj.status == 'error'){
+				$("#editRowModal").modal('hide');
+				$('#statusSpan').html('<div class="alert alert-error">'+obj.action+' Failure<a href="#" data-dismiss="alert" class="close">×</a></div>');
+				setup_datatable();
+			}
+		},
+		error: function(xhr, status, error) {
+		}
+	});
+ });
 
 
+/**
+ * Set datatable of analyte up
+ *
+ * @method     setup_datatable
+ */
 function setup_datatable(){
 	$('#enzyme').dataTable().fnDestroy();
 	var table = $('#enzyme').DataTable({
@@ -140,6 +142,13 @@ function setup_datatable(){
 	});
 }
 
+/**
+ * Construct a modal window for analyte deletion
+ *
+ * @method     construct_delete_modal
+ * @param      {string}  data    { analyte id and name to delete }
+ * @param      {string}  action  { action associated to the submit button }
+ */
 function construct_delete_modal(data, action){
 	var modal ='<div class="modal-dialog">'+
 	'<div class="loginmodal-container">'+
@@ -161,6 +170,14 @@ function construct_delete_modal(data, action){
 	$("#editRowModal").modal("show");
 }
 
+
+/**
+ * Construction of a modal for analyte edition
+ *
+ * @method     construct_edit_modal
+ * @param      {string}  data    { all the data of the analyte selected }
+ * @param      {string}  action  { action associated to the submit button }
+ */
 function construct_edit_modal(data, action){
 	console.log(data);
 	var modal ='<div class="modal-dialog">'+
@@ -204,6 +221,13 @@ function construct_edit_modal(data, action){
 	$("#editRowModal").modal("show");
 }
 
+/**
+ * Construction of a modal for analyte creation
+ *
+ * @method     construct_create_modal
+ * @param      {<type>}  data    { useless }
+ * @param      {string}  action  { action associated to submit button }
+ */
 function construct_create_modal(data, action){	
 	var modal ='<div class="modal-dialog">'+
 		'<div class="modal-content">'+

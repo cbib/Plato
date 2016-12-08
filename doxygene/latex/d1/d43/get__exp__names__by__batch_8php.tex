@@ -1,0 +1,64 @@
+\hypertarget{get__exp__names__by__batch_8php}{\section{php/export/get\-\_\-exp\-\_\-names\-\_\-by\-\_\-batch.php File Reference}
+\label{get__exp__names__by__batch_8php}\index{php/export/get\-\_\-exp\-\_\-names\-\_\-by\-\_\-batch.\-php@{php/export/get\-\_\-exp\-\_\-names\-\_\-by\-\_\-batch.\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{get__exp__names__by__batch_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{get__exp__names__by__batch_8php_ac9fdf6f2c8fb45c1d3bb9a176802b2ad}{\$hash} =Array()
+\item 
+\hyperlink{get__exp__names__by__batch_8php_aaa6d122ea9cb55b210aadd86e5654a74}{\$batch\-I\-D} =-\/1
+\item 
+\hyperlink{get__exp__names__by__batch_8php_addb1ec3ba55e413a08cb006ce21974df}{\$ez\-I\-D} = -\/1
+\item 
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'\hyperlink{obsolete_2processing__bak_8php_a88c5bc4262b7c34f236357f5c53fc99b}{batch\-I\-D}'\mbox{]})) \\*
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'\hyperlink{admin_rawdata_8php_adf465cadf95987152966d26567509f92}{ez\-I\-D}'\mbox{]})) if((\$batch\-I\-D!=-\/1)\&\&(\$ez\-I\-D!=-\/1)) \hyperlink{get__exp__names__by__batch_8php_a1fb972d1e2547fe562f66e66a72523f2}{\$response\-\_\-array} \mbox{[}'Max\-Std'\mbox{]} =\$hash\mbox{[}\$minname\mbox{]}\mbox{[}\char`\"{}number\char`\"{}\mbox{]}
+\item 
+\hyperlink{get__exp__names__by__batch_8php_af1aae1e270d9c73099bf08cba661e291}{\$response\-\_\-array} \mbox{[}'Std\-Used'\mbox{]} =(\$hash\mbox{[}\$minname\mbox{]}\mbox{[}\char`\"{}number\char`\"{}\mbox{]}-\/\$hash\mbox{[}\$minname\mbox{]}\mbox{[}\char`\"{}excluded\char`\"{}\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{get__exp__names__by__batch_8php_aaa6d122ea9cb55b210aadd86e5654a74}{\index{get\-\_\-exp\-\_\-names\-\_\-by\-\_\-batch.\-php@{get\-\_\-exp\-\_\-names\-\_\-by\-\_\-batch.\-php}!\$batch\-I\-D@{\$batch\-I\-D}}
+\index{\$batch\-I\-D@{\$batch\-I\-D}!get_exp_names_by_batch.php@{get\-\_\-exp\-\_\-names\-\_\-by\-\_\-batch.\-php}}
+\subsubsection[{\$batch\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf batch\-I\-D} =-\/1}}\label{get__exp__names__by__batch_8php_aaa6d122ea9cb55b210aadd86e5654a74}
+
+
+Definition at line 8 of file get\-\_\-exp\-\_\-names\-\_\-by\-\_\-batch.\-php.
+
+\hypertarget{get__exp__names__by__batch_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{get\-\_\-exp\-\_\-names\-\_\-by\-\_\-batch.\-php@{get\-\_\-exp\-\_\-names\-\_\-by\-\_\-batch.\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!get_exp_names_by_batch.php@{get\-\_\-exp\-\_\-names\-\_\-by\-\_\-batch.\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{get__exp__names__by__batch_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 4 of file get\-\_\-exp\-\_\-names\-\_\-by\-\_\-batch.\-php.
+
+\hypertarget{get__exp__names__by__batch_8php_addb1ec3ba55e413a08cb006ce21974df}{\index{get\-\_\-exp\-\_\-names\-\_\-by\-\_\-batch.\-php@{get\-\_\-exp\-\_\-names\-\_\-by\-\_\-batch.\-php}!\$ez\-I\-D@{\$ez\-I\-D}}
+\index{\$ez\-I\-D@{\$ez\-I\-D}!get_exp_names_by_batch.php@{get\-\_\-exp\-\_\-names\-\_\-by\-\_\-batch.\-php}}
+\subsubsection[{\$ez\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf ez\-I\-D} = -\/1}}\label{get__exp__names__by__batch_8php_addb1ec3ba55e413a08cb006ce21974df}
+
+
+Definition at line 9 of file get\-\_\-exp\-\_\-names\-\_\-by\-\_\-batch.\-php.
+
+\hypertarget{get__exp__names__by__batch_8php_ac9fdf6f2c8fb45c1d3bb9a176802b2ad}{\index{get\-\_\-exp\-\_\-names\-\_\-by\-\_\-batch.\-php@{get\-\_\-exp\-\_\-names\-\_\-by\-\_\-batch.\-php}!\$hash@{\$hash}}
+\index{\$hash@{\$hash}!get_exp_names_by_batch.php@{get\-\_\-exp\-\_\-names\-\_\-by\-\_\-batch.\-php}}
+\subsubsection[{\$hash}]{\setlength{\rightskip}{0pt plus 5cm}\$hash =Array()}}\label{get__exp__names__by__batch_8php_ac9fdf6f2c8fb45c1d3bb9a176802b2ad}
+
+
+Definition at line 6 of file get\-\_\-exp\-\_\-names\-\_\-by\-\_\-batch.\-php.
+
+\hypertarget{get__exp__names__by__batch_8php_a1fb972d1e2547fe562f66e66a72523f2}{\index{get\-\_\-exp\-\_\-names\-\_\-by\-\_\-batch.\-php@{get\-\_\-exp\-\_\-names\-\_\-by\-\_\-batch.\-php}!\$response\-\_\-array@{\$response\-\_\-array}}
+\index{\$response\-\_\-array@{\$response\-\_\-array}!get_exp_names_by_batch.php@{get\-\_\-exp\-\_\-names\-\_\-by\-\_\-batch.\-php}}
+\subsubsection[{\$response\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'{\bf batch\-I\-D}'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'{\bf ez\-I\-D}'\mbox{]})) if ((\$batch\-I\-D!=-\/1)\&\&(\$ez\-I\-D!=-\/1)) \$response\-\_\-array\mbox{[}'Max\-Std'\mbox{]} =\$hash\mbox{[}\$minname\mbox{]}\mbox{[}\char`\"{}number\char`\"{}\mbox{]}}}\label{get__exp__names__by__batch_8php_a1fb972d1e2547fe562f66e66a72523f2}
+
+
+Definition at line 59 of file get\-\_\-exp\-\_\-names\-\_\-by\-\_\-batch.\-php.
+
+\hypertarget{get__exp__names__by__batch_8php_af1aae1e270d9c73099bf08cba661e291}{\index{get\-\_\-exp\-\_\-names\-\_\-by\-\_\-batch.\-php@{get\-\_\-exp\-\_\-names\-\_\-by\-\_\-batch.\-php}!\$response\-\_\-array@{\$response\-\_\-array}}
+\index{\$response\-\_\-array@{\$response\-\_\-array}!get_exp_names_by_batch.php@{get\-\_\-exp\-\_\-names\-\_\-by\-\_\-batch.\-php}}
+\subsubsection[{\$response\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}\$response\-\_\-array\mbox{[}'Std\-Used'\mbox{]} =(\$hash\mbox{[}\$minname\mbox{]}\mbox{[}\char`\"{}number\char`\"{}\mbox{]}-\/\$hash\mbox{[}\$minname\mbox{]}\mbox{[}\char`\"{}excluded\char`\"{}\mbox{]})}}\label{get__exp__names__by__batch_8php_af1aae1e270d9c73099bf08cba661e291}
+
+
+Definition at line 60 of file get\-\_\-exp\-\_\-names\-\_\-by\-\_\-batch.\-php.
+

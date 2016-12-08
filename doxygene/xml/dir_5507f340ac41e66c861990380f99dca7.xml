@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_5507f340ac41e66c861990380f99dca7" kind="dir">
+    <compoundname>php/standard</compoundname>
+    <innerdir refid="dir_8eb3d204df335418d1a9d443346338cd">php/standard/obsolete files</innerdir>
+    <innerfile refid="d8/d30/standard_2enzyme__from__standard_8php">enzyme_from_standard.php</innerfile>
+    <innerfile refid="d9/d7d/standard__get__all__standard_8php">standard_get_all_standard.php</innerfile>
+    <innerfile refid="db/d7e/standards_8php">standards.php</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/var/www/html/plato/php/standard/"/>
+  </compounddef>
+</doxygen>

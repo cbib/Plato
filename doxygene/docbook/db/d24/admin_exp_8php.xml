@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="db/d24/admin_exp_8php">
+    <title>adminExp.php File Reference</title>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d24/admin_exp_8php_1ae180890d7caabe9962d544350eca4638">select</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d24/admin_exp_8php_1a22f8b2e1469128cde35ac846b0b24333">getSelectStd</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d24/admin_exp_8php_1a3b7fa21c29f2265534745659558aab45">setup_experiment_datatable</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d24/admin_exp_8php_1a8a2de340effe508a796cc1c77e951d15">construct_delete_modal</link> (
+<link linkend="db/d8a/chart1_8php_1ab3ed669f4b3fdb8c88f3a190fb907de0">data</link> , action )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d24/admin_exp_8php_1a346f7d5a906acbe413b62b06af0d629b">construct_edit_modal</link> (
+<link linkend="db/d8a/chart1_8php_1ab3ed669f4b3fdb8c88f3a190fb907de0">data</link> , action , <link linkend="db/d24/admin_exp_8php_1ae180890d7caabe9962d544350eca4638">select</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="db/d24/admin_exp_8php_1a4995f7ae90fbeb24441e325a1d75e582">construct_create_modal</link> (
+<link linkend="db/d8a/chart1_8php_1ab3ed669f4b3fdb8c88f3a190fb907de0">data</link> , action , <link linkend="db/d24/admin_exp_8php_1ae180890d7caabe9962d544350eca4638">select</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /var/www/html/plato/php/admin/adminExperiment/adminExp.php</para>
+    </simplesect>
+</section>

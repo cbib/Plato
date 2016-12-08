@@ -1,0 +1,136 @@
+.TH "php/admin/adminStandard/AdminSTDUpdateData.php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/admin/adminStandard/AdminSTDUpdateData.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$conn\fP = \fBget_connexion\fP()"
+.br
+.ti -1c
+.RI "\fB$stdId\fP =''"
+.br
+.ti -1c
+.RI "\fB$stdName\fP =''"
+.br
+.ti -1c
+.RI "\fB$stdGenius\fP =''"
+.br
+.ti -1c
+.RI "\fB$stdSpecies\fP =''"
+.br
+.ti -1c
+.RI "\fB$stdGenotype\fP =''"
+.br
+.ti -1c
+.RI "\fB$stdNature\fP =''"
+.br
+.ti -1c
+.RI "\fB$stdOwner\fP =''"
+.br
+.ti -1c
+.RI "\fB$stdComment\fP =''"
+.br
+.ti -1c
+.RI "\fB$action\fP =''"
+.br
+.ti -1c
+.RI "\fB$status\fP ='success'"
+.br
+.ti -1c
+.RI "if(isset($_POST['id'])) if(isset($_POST['stdName'])) 
+.br
+if(isset($_POST['stdGenius'])) 
+.br
+if(isset($_POST['stdSpecies'])) 
+.br
+if(isset($_POST['stdGenotype'])) 
+.br
+if(isset($_POST['stdNature'])) 
+.br
+if(isset($_POST['stdOwner'])) 
+.br
+if(isset($_POST['stdComment'])) 
+.br
+if(isset($_POST['action'])) if($action=='create') 
+.br
+elseif($action=='edit') elseif($action=='delete') \fBelse\fP"
+.br
+.ti -1c
+.RI "\fB$response_array\fP ['status'] =$status"
+.br
+.ti -1c
+.RI "\fB$response_array\fP ['action'] =$action"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$action =''"
+
+.PP
+Definition at line 18 of file AdminSTDUpdateData\&.php\&.
+.SS "$conn = \fBget_connexion\fP()"
+
+.PP
+Definition at line 5 of file AdminSTDUpdateData\&.php\&.
+.SS "$response_array['status'] =$status"
+
+.PP
+Definition at line 113 of file AdminSTDUpdateData\&.php\&.
+.SS "$response_array['action'] =$action"
+
+.PP
+Definition at line 114 of file AdminSTDUpdateData\&.php\&.
+.SS "$status ='success'"
+
+.PP
+Definition at line 19 of file AdminSTDUpdateData\&.php\&.
+.SS "$stdComment =''"
+
+.PP
+Definition at line 17 of file AdminSTDUpdateData\&.php\&.
+.SS "$stdGenius =''"
+
+.PP
+Definition at line 12 of file AdminSTDUpdateData\&.php\&.
+.SS "$stdGenotype =''"
+
+.PP
+Definition at line 14 of file AdminSTDUpdateData\&.php\&.
+.SS "$stdId =''"
+
+.PP
+Definition at line 9 of file AdminSTDUpdateData\&.php\&.
+.SS "$stdName =''"
+
+.PP
+Definition at line 10 of file AdminSTDUpdateData\&.php\&.
+.SS "$stdNature =''"
+
+.PP
+Definition at line 15 of file AdminSTDUpdateData\&.php\&.
+.SS "$stdOwner =''"
+
+.PP
+Definition at line 16 of file AdminSTDUpdateData\&.php\&.
+.SS "$stdSpecies =''"
+
+.PP
+Definition at line 13 of file AdminSTDUpdateData\&.php\&.
+.SS "if (isset($_POST['id'])) if (isset($_POST['stdName'])) if (isset($_POST['stdGenius'])) if (isset($_POST['stdSpecies'])) if (isset($_POST['stdGenotype'])) if (isset($_POST['stdNature'])) if (isset($_POST['stdOwner'])) if (isset($_POST['stdComment'])) if (isset($_POST['action'])) if ($action=='create') elseif ($action=='edit') elseif ($action=='delete') else"
+\fBInitial value:\fP
+.PP
+.nf
+{
+        $status="error"
+.fi
+.PP
+Definition at line 108 of file AdminSTDUpdateData\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

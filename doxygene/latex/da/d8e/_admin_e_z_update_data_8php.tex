@@ -1,0 +1,119 @@
+\hypertarget{_admin_e_z_update_data_8php}{\section{php/admin/admin\-Enzyme/\-Admin\-E\-Z\-Update\-Data.php File Reference}
+\label{_admin_e_z_update_data_8php}\index{php/admin/admin\-Enzyme/\-Admin\-E\-Z\-Update\-Data.\-php@{php/admin/admin\-Enzyme/\-Admin\-E\-Z\-Update\-Data.\-php}}
+}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_admin_e_z_update_data_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\$conn} = \hyperlink{php__functions_8php_ace18bc10f3fd08f92688ac743e0d8c2e}{get\-\_\-connexion}()
+\item 
+\hyperlink{_admin_e_z_update_data_8php_ae9a60f2c381103ddf1a3fda7be76d890}{\$ez\-Id} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{_admin_e_z_update_data_8php_a57a9615262224b8dda435a084ba02406}{\$ez\-Name} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{_admin_e_z_update_data_8php_a1efbb279669bdab5d5eaff4f289c71a2}{\$ez\-Slope} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{_admin_e_z_update_data_8php_a1a28f4870dd5aff7acdc3184a85a30c7}{\$ez\-Code} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{_admin_e_z_update_data_8php_aee528badcb788c913ffab530a5b876cf}{\$ez\-Type} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{_admin_e_z_update_data_8php_aa698a3e72116e8e778be0e95d908ee30}{\$action} =\char`\"{}\char`\"{}
+\item 
+\hyperlink{_admin_e_z_update_data_8php_a58391ea75f2d29d5d708d7050b641c33}{\$status} =\char`\"{}\char`\"{}
+\item 
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'id'\mbox{]})) if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'analyte'\mbox{]})) \\*
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'slope'\mbox{]})) if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'code'\mbox{]})) \\*
+if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'nature'\mbox{]})) if(isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'action'\mbox{]})) \\*
+if(\$ez\-Type== 'Metabolite') \\*
+elseif(\$ez\-Type== 'Enzyme') \\*
+elseif(\$ez\-Type== 'Other') if(\$action==\char`\"{}create\char`\"{}) \\*
+elseif(\$action==\char`\"{}edit\char`\"{}) elseif(\$action==\char`\"{}delete\char`\"{}) \hyperlink{_admin_e_z_update_data_8php_ab64b785fa9f787cb880a97455db04dea}{else}
+\item 
+\hyperlink{_admin_e_z_update_data_8php_acd0903a7a32e8397aefd0ce8b7dbd1ab}{\$response\-\_\-array} \mbox{[}'status'\mbox{]} =\$status
+\item 
+\hyperlink{_admin_e_z_update_data_8php_ae768978a0cdc416c0d63d798c85c8784}{\$response\-\_\-array} \mbox{[}'action'\mbox{]} =\$action
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{_admin_e_z_update_data_8php_aa698a3e72116e8e778be0e95d908ee30}{\index{Admin\-E\-Z\-Update\-Data.\-php@{Admin\-E\-Z\-Update\-Data.\-php}!\$action@{\$action}}
+\index{\$action@{\$action}!AdminEZUpdateData.php@{Admin\-E\-Z\-Update\-Data.\-php}}
+\subsubsection[{\$action}]{\setlength{\rightskip}{0pt plus 5cm}\$action =\char`\"{}\char`\"{}}}\label{_admin_e_z_update_data_8php_aa698a3e72116e8e778be0e95d908ee30}
+
+
+Definition at line 13 of file Admin\-E\-Z\-Update\-Data.\-php.
+
+\hypertarget{_admin_e_z_update_data_8php_aa8a5a87b9c1a6a0819b88447cbe41877}{\index{Admin\-E\-Z\-Update\-Data.\-php@{Admin\-E\-Z\-Update\-Data.\-php}!\$conn@{\$conn}}
+\index{\$conn@{\$conn}!AdminEZUpdateData.php@{Admin\-E\-Z\-Update\-Data.\-php}}
+\subsubsection[{\$conn}]{\setlength{\rightskip}{0pt plus 5cm}\$conn = {\bf get\-\_\-connexion}()}}\label{_admin_e_z_update_data_8php_aa8a5a87b9c1a6a0819b88447cbe41877}
+
+
+Definition at line 5 of file Admin\-E\-Z\-Update\-Data.\-php.
+
+\hypertarget{_admin_e_z_update_data_8php_a1a28f4870dd5aff7acdc3184a85a30c7}{\index{Admin\-E\-Z\-Update\-Data.\-php@{Admin\-E\-Z\-Update\-Data.\-php}!\$ez\-Code@{\$ez\-Code}}
+\index{\$ez\-Code@{\$ez\-Code}!AdminEZUpdateData.php@{Admin\-E\-Z\-Update\-Data.\-php}}
+\subsubsection[{\$ez\-Code}]{\setlength{\rightskip}{0pt plus 5cm}\$ez\-Code =\char`\"{}\char`\"{}}}\label{_admin_e_z_update_data_8php_a1a28f4870dd5aff7acdc3184a85a30c7}
+
+
+Definition at line 11 of file Admin\-E\-Z\-Update\-Data.\-php.
+
+\hypertarget{_admin_e_z_update_data_8php_ae9a60f2c381103ddf1a3fda7be76d890}{\index{Admin\-E\-Z\-Update\-Data.\-php@{Admin\-E\-Z\-Update\-Data.\-php}!\$ez\-Id@{\$ez\-Id}}
+\index{\$ez\-Id@{\$ez\-Id}!AdminEZUpdateData.php@{Admin\-E\-Z\-Update\-Data.\-php}}
+\subsubsection[{\$ez\-Id}]{\setlength{\rightskip}{0pt plus 5cm}\$ez\-Id =\char`\"{}\char`\"{}}}\label{_admin_e_z_update_data_8php_ae9a60f2c381103ddf1a3fda7be76d890}
+
+
+Definition at line 8 of file Admin\-E\-Z\-Update\-Data.\-php.
+
+\hypertarget{_admin_e_z_update_data_8php_a57a9615262224b8dda435a084ba02406}{\index{Admin\-E\-Z\-Update\-Data.\-php@{Admin\-E\-Z\-Update\-Data.\-php}!\$ez\-Name@{\$ez\-Name}}
+\index{\$ez\-Name@{\$ez\-Name}!AdminEZUpdateData.php@{Admin\-E\-Z\-Update\-Data.\-php}}
+\subsubsection[{\$ez\-Name}]{\setlength{\rightskip}{0pt plus 5cm}\${\bf ez\-Name} =\char`\"{}\char`\"{}}}\label{_admin_e_z_update_data_8php_a57a9615262224b8dda435a084ba02406}
+
+
+Definition at line 9 of file Admin\-E\-Z\-Update\-Data.\-php.
+
+\hypertarget{_admin_e_z_update_data_8php_a1efbb279669bdab5d5eaff4f289c71a2}{\index{Admin\-E\-Z\-Update\-Data.\-php@{Admin\-E\-Z\-Update\-Data.\-php}!\$ez\-Slope@{\$ez\-Slope}}
+\index{\$ez\-Slope@{\$ez\-Slope}!AdminEZUpdateData.php@{Admin\-E\-Z\-Update\-Data.\-php}}
+\subsubsection[{\$ez\-Slope}]{\setlength{\rightskip}{0pt plus 5cm}\$ez\-Slope =\char`\"{}\char`\"{}}}\label{_admin_e_z_update_data_8php_a1efbb279669bdab5d5eaff4f289c71a2}
+
+
+Definition at line 10 of file Admin\-E\-Z\-Update\-Data.\-php.
+
+\hypertarget{_admin_e_z_update_data_8php_aee528badcb788c913ffab530a5b876cf}{\index{Admin\-E\-Z\-Update\-Data.\-php@{Admin\-E\-Z\-Update\-Data.\-php}!\$ez\-Type@{\$ez\-Type}}
+\index{\$ez\-Type@{\$ez\-Type}!AdminEZUpdateData.php@{Admin\-E\-Z\-Update\-Data.\-php}}
+\subsubsection[{\$ez\-Type}]{\setlength{\rightskip}{0pt plus 5cm}\$ez\-Type =\char`\"{}\char`\"{}}}\label{_admin_e_z_update_data_8php_aee528badcb788c913ffab530a5b876cf}
+
+
+Definition at line 12 of file Admin\-E\-Z\-Update\-Data.\-php.
+
+\hypertarget{_admin_e_z_update_data_8php_acd0903a7a32e8397aefd0ce8b7dbd1ab}{\index{Admin\-E\-Z\-Update\-Data.\-php@{Admin\-E\-Z\-Update\-Data.\-php}!\$response\-\_\-array@{\$response\-\_\-array}}
+\index{\$response\-\_\-array@{\$response\-\_\-array}!AdminEZUpdateData.php@{Admin\-E\-Z\-Update\-Data.\-php}}
+\subsubsection[{\$response\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}\$response\-\_\-array\mbox{[}'status'\mbox{]} =\$status}}\label{_admin_e_z_update_data_8php_acd0903a7a32e8397aefd0ce8b7dbd1ab}
+
+
+Definition at line 88 of file Admin\-E\-Z\-Update\-Data.\-php.
+
+\hypertarget{_admin_e_z_update_data_8php_ae768978a0cdc416c0d63d798c85c8784}{\index{Admin\-E\-Z\-Update\-Data.\-php@{Admin\-E\-Z\-Update\-Data.\-php}!\$response\-\_\-array@{\$response\-\_\-array}}
+\index{\$response\-\_\-array@{\$response\-\_\-array}!AdminEZUpdateData.php@{Admin\-E\-Z\-Update\-Data.\-php}}
+\subsubsection[{\$response\-\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}\$response\-\_\-array\mbox{[}'action'\mbox{]} =\$action}}\label{_admin_e_z_update_data_8php_ae768978a0cdc416c0d63d798c85c8784}
+
+
+Definition at line 89 of file Admin\-E\-Z\-Update\-Data.\-php.
+
+\hypertarget{_admin_e_z_update_data_8php_a58391ea75f2d29d5d708d7050b641c33}{\index{Admin\-E\-Z\-Update\-Data.\-php@{Admin\-E\-Z\-Update\-Data.\-php}!\$status@{\$status}}
+\index{\$status@{\$status}!AdminEZUpdateData.php@{Admin\-E\-Z\-Update\-Data.\-php}}
+\subsubsection[{\$status}]{\setlength{\rightskip}{0pt plus 5cm}\$status =\char`\"{}\char`\"{}}}\label{_admin_e_z_update_data_8php_a58391ea75f2d29d5d708d7050b641c33}
+
+
+Definition at line 14 of file Admin\-E\-Z\-Update\-Data.\-php.
+
+\hypertarget{_admin_e_z_update_data_8php_ab64b785fa9f787cb880a97455db04dea}{\index{Admin\-E\-Z\-Update\-Data.\-php@{Admin\-E\-Z\-Update\-Data.\-php}!else@{else}}
+\index{else@{else}!AdminEZUpdateData.php@{Admin\-E\-Z\-Update\-Data.\-php}}
+\subsubsection[{else}]{\setlength{\rightskip}{0pt plus 5cm}if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'id'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'analyte'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'slope'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'code'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'nature'\mbox{]})) if (isset(\$\-\_\-\-P\-O\-S\-T\mbox{[}'action'\mbox{]})) if (\$ez\-Type== 'Metabolite') elseif (\$ez\-Type== 'Enzyme') elseif (\$ez\-Type== 'Other') if (\$action==\char`\"{}create\char`\"{}) elseif (\$action==\char`\"{}edit\char`\"{}) elseif (\$action==\char`\"{}delete\char`\"{}) else}}\label{_admin_e_z_update_data_8php_ab64b785fa9f787cb880a97455db04dea}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+\{
+        \hyperlink{_admin_e_z_update_data_8php_a58391ea75f2d29d5d708d7050b641c33}{$status}=\textcolor{stringliteral}{"error"}
+\end{DoxyCode}
+
+
+Definition at line 83 of file Admin\-E\-Z\-Update\-Data.\-php.
+

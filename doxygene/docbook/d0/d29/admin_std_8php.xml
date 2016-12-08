@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d0/d29/admin_std_8php">
+    <title>adminStd.php File Reference</title>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d29/admin_std_8php_1a9ff77c8de996b53098750f48827c9790">setup_datatable</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d29/admin_std_8php_1aabe3eddd8b025de2d63daa48fced5407">refresh_enzyme</link> (
+standardID )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d29/admin_std_8php_1af612a5722d436678a22f7a2e6b6e9cc6">construct_addAnalyte_modal</link> (
+standardID )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d29/admin_std_8php_1a0b069c5aaabb70f5aa56f03436ec3b62">construct_delete_modal_std</link> (
+<link linkend="db/d8a/chart1_8php_1ab3ed669f4b3fdb8c88f3a190fb907de0">data</link> , action )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d29/admin_std_8php_1a731f8acb00c0ded5d82180e66261df2f">construct_delete_modal_analyte</link> (
+<link linkend="db/d8a/chart1_8php_1ab3ed669f4b3fdb8c88f3a190fb907de0">data</link> , action )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d29/admin_std_8php_1a6c7a02b3ba9cc81ddfe5c61c13ac056f">construct_edit_modal_analyte</link> (
+<link linkend="db/d8a/chart1_8php_1ab3ed669f4b3fdb8c88f3a190fb907de0">data</link> , action )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d29/admin_std_8php_1a203cc17bc013b004954fcb8d2c444b02">construct_edit_modal_std</link> (
+<link linkend="db/d8a/chart1_8php_1ab3ed669f4b3fdb8c88f3a190fb907de0">data</link> , action )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d0/d29/admin_std_8php_1a819348e44d419a2bdfe60b344c56e031">construct_create_modal</link> (
+<link linkend="db/d8a/chart1_8php_1ab3ed669f4b3fdb8c88f3a190fb907de0">data</link> , action )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /var/www/html/plato/php/admin/adminStandard/adminStd.php</para>
+    </simplesect>
+</section>

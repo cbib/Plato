@@ -53,7 +53,12 @@ $(document).ready(function() {
 	});
 });
 
-
+/**
+ * Print a chart of analyte utilisation
+ *
+ * @method     printAnalyteDistrib
+ * @param      {<type>}  data    { data returned from the server containing the list of all analyte and the number of time they are used }
+ */
 function printAnalyteDistrib(data){
 	// console.log(data);
     $('#analytesUse').highcharts({
@@ -106,7 +111,12 @@ function printAnalyteDistrib(data){
 }
 
 
-
+/**
+ * Print the chart of the database space used
+ *
+ * @method     printSize
+ * @param      {<type>}  dataSize  { size of the database  }
+ */
 function printSize(dataSize) {
 	console.log(dataSize);
     var gaugeOptions = {

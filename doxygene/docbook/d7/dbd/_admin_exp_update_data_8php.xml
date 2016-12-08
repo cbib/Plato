@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="d7/dbd/_admin_exp_update_data_8php">
+    <title>AdminExpUpdateData.php File Reference</title>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/dbd/_admin_exp_update_data_8php_1aa8a5a87b9c1a6a0819b88447cbe41877">$conn</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/dbd/_admin_exp_update_data_8php_1aa698a3e72116e8e778be0e95d908ee30">$action</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/dbd/_admin_exp_update_data_8php_1ae384d32e62e85e587cd27bf249ed3db3">$expID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/dbd/_admin_exp_update_data_8php_1a1d3cd82753ac2a11daa05848b6a2cda8">$stdID</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/dbd/_admin_exp_update_data_8php_1a6478e66386fefd0e5fd6de22d695ffca">$expName</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/dbd/_admin_exp_update_data_8php_1a58391ea75f2d29d5d708d7050b641c33">$status</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>if(isset($_POST[&apos;<link linkend="d8/d02/admin_rawdata_8php_1a888d53a6517f4272b5982c3ca9d16e8a">expID</link>&apos;])) if(isset($_POST[&apos;stdID&apos;])) if(isset($_POST[&apos;expName&apos;])) if(isset($_POST[&apos;action&apos;])) if($action==&quot;create&quot;) elseif($action==&quot;edit&quot;) elseif($action==&quot;delete&quot;) <link linkend="d7/dbd/_admin_exp_update_data_8php_1a34153a20a95674a0175d4c2447dc0a99">else</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/dbd/_admin_exp_update_data_8php_1acd0903a7a32e8397aefd0ce8b7dbd1ab">$response_array</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="d7/dbd/_admin_exp_update_data_8php_1ae768978a0cdc416c0d63d798c85c8784">$response_array</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /var/www/html/plato/php/admin/adminExperiment/AdminExpUpdateData.php</para>
+    </simplesect>
+</section>

@@ -1,0 +1,111 @@
+.TH "php/admin/adminEnzyme/AdminEZUpdateData.php" 3 "Wed Nov 30 2016" "Version V2.0" "PLATO" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+php/admin/adminEnzyme/AdminEZUpdateData.php \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fB$conn\fP = \fBget_connexion\fP()"
+.br
+.ti -1c
+.RI "\fB$ezId\fP =''"
+.br
+.ti -1c
+.RI "\fB$ezName\fP =''"
+.br
+.ti -1c
+.RI "\fB$ezSlope\fP =''"
+.br
+.ti -1c
+.RI "\fB$ezCode\fP =''"
+.br
+.ti -1c
+.RI "\fB$ezType\fP =''"
+.br
+.ti -1c
+.RI "\fB$action\fP =''"
+.br
+.ti -1c
+.RI "\fB$status\fP =''"
+.br
+.ti -1c
+.RI "if(isset($_POST['id'])) if(isset($_POST['analyte'])) 
+.br
+if(isset($_POST['slope'])) if(isset($_POST['code'])) 
+.br
+if(isset($_POST['nature'])) if(isset($_POST['action'])) 
+.br
+if($ezType== 'Metabolite') 
+.br
+elseif($ezType== 'Enzyme') 
+.br
+elseif($ezType== 'Other') if($action=='create') 
+.br
+elseif($action=='edit') elseif($action=='delete') \fBelse\fP"
+.br
+.ti -1c
+.RI "\fB$response_array\fP ['status'] =$status"
+.br
+.ti -1c
+.RI "\fB$response_array\fP ['action'] =$action"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "$action =''"
+
+.PP
+Definition at line 13 of file AdminEZUpdateData\&.php\&.
+.SS "$conn = \fBget_connexion\fP()"
+
+.PP
+Definition at line 5 of file AdminEZUpdateData\&.php\&.
+.SS "$ezCode =''"
+
+.PP
+Definition at line 11 of file AdminEZUpdateData\&.php\&.
+.SS "$ezId =''"
+
+.PP
+Definition at line 8 of file AdminEZUpdateData\&.php\&.
+.SS "$\fBezName\fP =''"
+
+.PP
+Definition at line 9 of file AdminEZUpdateData\&.php\&.
+.SS "$ezSlope =''"
+
+.PP
+Definition at line 10 of file AdminEZUpdateData\&.php\&.
+.SS "$ezType =''"
+
+.PP
+Definition at line 12 of file AdminEZUpdateData\&.php\&.
+.SS "$response_array['status'] =$status"
+
+.PP
+Definition at line 88 of file AdminEZUpdateData\&.php\&.
+.SS "$response_array['action'] =$action"
+
+.PP
+Definition at line 89 of file AdminEZUpdateData\&.php\&.
+.SS "$status =''"
+
+.PP
+Definition at line 14 of file AdminEZUpdateData\&.php\&.
+.SS "if (isset($_POST['id'])) if (isset($_POST['analyte'])) if (isset($_POST['slope'])) if (isset($_POST['code'])) if (isset($_POST['nature'])) if (isset($_POST['action'])) if ($ezType== 'Metabolite') elseif ($ezType== 'Enzyme') elseif ($ezType== 'Other') if ($action=='create') elseif ($action=='edit') elseif ($action=='delete') else"
+\fBInitial value:\fP
+.PP
+.nf
+{
+        $status="error"
+.fi
+.PP
+Definition at line 83 of file AdminEZUpdateData\&.php\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for PLATO from the source code\&.

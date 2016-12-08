@@ -3,6 +3,8 @@
 	include '../../functions/php_functions.php';
 	$conn = get_connexion();
 
+	// edit enzyme information associated to a standard
+
 	$stdEzID="";
 	$slope="";
 	$amount="";
